@@ -1,0 +1,9 @@
+@tailwind preflight;
+
+@import "components";
+
+#app {
+  @apply .max-w-lg .p-4 .mx-auto;
+}
+
+@tailwind utilities;
