@@ -23,6 +23,7 @@
 					}"
                     :disabled="disabled"
                     :id="id"
+                    :name="name"
                     :placeholder="placeholder"
                     :value="value"
                     :mask="mask"
