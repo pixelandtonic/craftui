@@ -10,17 +10,17 @@
             <div v-if="max"
                  class="text-xs text-right pr-1 absolute" style="right: 0; top: -1rem;"
                  :class="{
-					'text-grey': remainingChars >= 10,
-					'text-orange': remainingChars < 10 && remainingChars >= 0,
-					'text-red': remainingChars < 0
-				}">{{ remainingChars }}</div>
+                    'text-grey': remainingChars >= 10,
+                    'text-orange': remainingChars < 10 && remainingChars >= 0,
+                    'text-red': remainingChars < 0
+                }">{{ remainingChars }}</div>
 
             <text-input
                     :autofocus="autofocus"
                     :class="{
-						'is-invalid': errors,
-						'text-red-dark': max && max < this.value.length
-					}"
+                        'is-invalid': errors,
+                        'text-red-dark': max && max < this.value.length
+                    }"
                     :disabled="disabled"
                     :id="id"
                     :name="name"
