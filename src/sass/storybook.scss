@@ -1,0 +1,9 @@
+@tailwind preflight;
+
+@import "components";
+
+body {
+  @apply .p-8;
+}
+
+@tailwind utilities;
