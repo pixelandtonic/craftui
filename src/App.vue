@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="mb-4">Craft Components</h1>
+    <h1 class="mb-4">Craft UI</h1>
 
     <checkbox-field label="Checkbox Field" id="checkbox-field" />
     <lightswitch-field label="Lightswitch Field" />
@@ -14,14 +14,14 @@
 
 <script>
     import './sass/app.scss'
-    import CraftComponents from './components/index.js'
+    import CraftUi from './components/index.js'
 
     export default {
 
         name: 'app',
 
         components: {
-            ...CraftComponents
+            ...CraftUi
         },
 
     }

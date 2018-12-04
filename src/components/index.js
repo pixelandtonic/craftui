@@ -14,7 +14,7 @@ import TextareaInput from './inputs/TextareaInput.vue';
 import TextInput from './inputs/TextInput.vue';
 import UrlInput from './inputs/UrlInput.vue';
 
-const CraftComponents = {
+const CraftUi = {
   CheckboxField,
   CheckboxSet,
   LightswitchField,
@@ -32,4 +32,4 @@ const CraftComponents = {
   UrlInput,
 };
 
-export default CraftComponents;
+export default CraftUi;

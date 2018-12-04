@@ -1,4 +1,4 @@
-# Craft Components
+# Craft UI
 
 ## Project setup
 ```
