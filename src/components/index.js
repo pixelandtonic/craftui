@@ -1,4 +1,5 @@
 import CheckboxField from './fields/CheckboxField.vue';
+import CheckboxSet from './fields/CheckboxSet.vue';
 import LightswitchField from './fields/LightswitchField.vue';
 import PasswordField from './fields/PasswordField.vue';
 import SelectField from './fields/SelectField.vue';
@@ -15,6 +16,7 @@ import UrlInput from './inputs/UrlInput.vue';
 
 const CraftComponents = {
   CheckboxField,
+  CheckboxSet,
   LightswitchField,
   PasswordField,
   SelectField,
