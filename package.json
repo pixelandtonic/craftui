@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --name craftui ./src/components/index.js",
-    "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name craftui ./src/components/index.js",
+    "serve:app": "vue-cli-service serve ./src/app.js",
+    "build:app": "vue-cli-service build ./src/app.js",
+    "lint:app": "vue-cli-service lint ./src/app.js",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook"
   },
