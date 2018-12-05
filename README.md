@@ -5,7 +5,9 @@
 npm install
 ```
 
-## Storybook Project
+## Storybook
+
+Storybook showcases the Craft UI components.
 
 ### Compiles and hot-reloads for development
 ```
@@ -17,19 +19,21 @@ npm run serve:storybook
 npm run build:storybook
 ```
 
-## Vue CLI Project
+## App
+
+The App is an example project using Craft UI components.
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve:app
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build:app
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+npm run lint:app
 ```
