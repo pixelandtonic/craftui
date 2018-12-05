@@ -1,3 +1,5 @@
+import Btn from './Btn.vue';
+
 import CheckboxField from './fields/CheckboxField.vue';
 import CheckboxSet from './fields/CheckboxSet.vue';
 import LightswitchField from './fields/LightswitchField.vue';
@@ -14,7 +16,9 @@ import TextareaInput from './inputs/TextareaInput.vue';
 import TextInput from './inputs/TextInput.vue';
 import UrlInput from './inputs/UrlInput.vue';
 
-const CraftUi = {
+const CraftComponents = {
+  Btn,
+
   CheckboxField,
   CheckboxSet,
   LightswitchField,
@@ -32,4 +36,4 @@ const CraftUi = {
   UrlInput,
 };
 
-export default CraftUi;
+export default CraftComponents;
