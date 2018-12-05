@@ -1,3 +1,11 @@
+/* Craft UI */
+import Vue from 'vue'
+import '../../src/sass/storybook.scss';
+import CraftUi from '../../src/plugin'
+Vue.use(CraftUi)
+
+/* Stories */
+
 /* eslint-disable import/no-extraneous-dependencies */
 import { configure } from '@storybook/vue'
 
