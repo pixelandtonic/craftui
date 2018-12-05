@@ -54,5 +54,5 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "main": "./src/components/index.js"
+  "main": "src/plugin.js"
 }
