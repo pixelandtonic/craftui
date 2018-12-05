@@ -1,11 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
 
 storiesOf('Button', module)
   .add('Default', () => ({
-    template: '<btn @click="action">Hello Button</btn>',
+    template: '<btn @click="action">Default Button</btn>',
     methods: { action: action('clicked') }
   }))
   .add('Primary', () => ({
