@@ -1,7 +1,5 @@
 <template>
-    <div class="field">
-        <label v-if="label" :id="id+'-label'" :for="id">{{ label }}</label>
-
+    <field :id="id + '-label'" :label="label">
         <div v-if="instructions" class="instructions">
             <p>{{ instructions }}</p>
         </div>
@@ -11,11 +9,12 @@
         <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
             {{ error }}
         </div>
-    </div>
+    </field>
 </template>
 
 
 <script>
+    import Field from '../Field';
     import SelectInput from '../inputs/SelectInput';
 
     export default {
@@ -23,6 +22,7 @@
         props: ['label', 'instructions', 'fullwidth', 'id', 'options', 'value', 'errors'],
 
         components: {
+            Field,
             SelectInput,
         },
 

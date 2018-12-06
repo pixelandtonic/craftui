@@ -1,7 +1,5 @@
 <template>
-    <div class="field">
-        <label :id="id" v-if="label">{{ label }}</label>
-
+    <field :id="id" :label="label">
         <div v-if="instructions" class="instructions">
             <p>{{ instructions }}</p>
         </div>
@@ -19,10 +17,11 @@
         <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
             {{ error }}
         </div>
-    </div>
+    </field>
 </template>
 
 <script>
+    import Field from '../Field';
     import UrlInput from '../inputs/UrlInput';
 
     export default {
@@ -30,6 +29,7 @@
         props: ['label', 'id', 'placeholder', 'value', 'autofocus', 'errors', 'disabled', 'instructions', 'size'],
 
         components: {
+            Field,
             UrlInput,
         },
 

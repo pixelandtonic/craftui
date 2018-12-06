@@ -1,6 +1,5 @@
 <template>
-    <div class="field">
-        <label :id="id" v-if="label">{{ label }}</label>
+    <field :id="id" :label="label">
         <password-input
                 ref="input"
                 :id="id"
@@ -15,16 +14,18 @@
         <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
             {{ error }}
         </div>
-    </div>
+    </field>
 </template>
 
 <script>
+    import Field from '../Field';
     import PasswordInput from '../inputs/PasswordInput';
 
     export default {
         props: ['label', 'id', 'name', 'placeholder', 'value', 'autofocus', 'errors', 'size'],
 
         components: {
+            Field,
             PasswordInput,
         },
 
