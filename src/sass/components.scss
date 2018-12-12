@@ -39,6 +39,7 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="url"],
+input[type="number"],
 textarea {
   @apply .border .border-grey .p-2 .rounded .block;
 
@@ -50,6 +51,10 @@ textarea {
   &.is-invalid {
     @apply .border-red;
   }
+}
+
+input[type="number"] {
+  width: 60px;
 }
 
 

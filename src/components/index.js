@@ -16,6 +16,7 @@ import PasswordInput from './inputs/PasswordInput.vue';
 import SelectInput from './inputs/SelectInput.vue';
 import TextareaInput from './inputs/TextareaInput.vue';
 import TextInput from './inputs/TextInput.vue';
+import NumberInput from './inputs/NumberInput.vue';
 import UrlInput from './inputs/UrlInput.vue';
 
 const CraftComponents = {
@@ -37,6 +38,7 @@ const CraftComponents = {
   SelectInput,
   TextareaInput,
   TextInput,
+  NumberInput,
   UrlInput,
 };
 
