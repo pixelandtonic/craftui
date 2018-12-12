@@ -1,45 +1,77 @@
 <template>
-  <button :class="'c-btn '
-                      + (type ? type : 'default')
-                      + (typeof large !== 'undefined' ? ' large' : '')
-                      + (typeof block !== 'undefined' ? ' block' : '')"
-                      @click="$emit('click')">
-    <slot></slot>
-  </button>
+    <button :class="cssClass"
+            :disabled="disabled"
+            @click="$emit('click')">
+        <slot></slot>
+    </button>
 </template>
 
 <script>
     export default {
-        props: ['type', 'large', 'block'],
+        props: ['type', 'large', 'block', 'disabled', 'outline'],
+
+        computed: {
+            cssClass() {
+                return 'c-btn '
+                    + (this.type ? this.type : 'default')
+                    + (typeof this.large !== 'undefined' ? ' large' : '')
+                    + (typeof this.block !== 'undefined' ? ' block' : '')
+                    + (typeof this.outline !== 'undefined' ? ' outline' : '');
+            }
+        },
     }
 </script>
 
-<style lang="scss" scoped>
-.c-btn {
-  @apply .px-4 .py-2 .rounded .bg-grey-lighter;
+<style lang="scss">
+    .c-btn {
+        @apply .px-4 .py-2 .rounded .bg-grey-lighter;
 
-  &.block {
-    @apply .w-full;
-  }
+        &:hover {
+            @apply .cursor-pointer;
+        }
 
-  &.large {
-    @apply .text-lg .py-3;
-  }
+        &.block {
+            @apply .w-full;
+        }
 
-  &.large {
-    @apply .text-lg .py-3;
-  }
+        &.large {
+            @apply .text-lg .py-3;
+        }
 
-  &.primary {
-    @apply .bg-blue .text-white;
-  }
+        &.large {
+            @apply .text-lg .py-3;
+        }
 
-  &.warning {
-    @apply .bg-orange .text-white;
-  }
+        &.primary {
+            @apply .bg-blue .text-white;
+        }
 
-  &.danger {
-    @apply .bg-red .text-white;
-  }
-}
+        &.warning {
+            @apply .bg-orange .text-white;
+        }
+
+        &.danger {
+            @apply .bg-red .text-white;
+        }
+
+        &[disabled] {
+            @apply .opacity-50 .cursor-default;
+        }
+
+        &.outline {
+            @apply .bg-transparent;
+
+            &.primary {
+                @apply .border .border-solid .border-blue .text-blue;
+            }
+
+            &.warning {
+                @apply .border .border-solid .border-orange .text-orange;
+            }
+
+            &.danger {
+                @apply .border .border-solid .border-red .text-red;
+            }
+        }
+    }
 </style>
