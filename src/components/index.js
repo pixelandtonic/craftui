@@ -1,4 +1,5 @@
 import Btn from './Btn.vue';
+import BtnInput from './BtnInput.vue';
 import Field from './Field.vue';
 
 import CheckboxField from './fields/CheckboxField.vue';
@@ -19,6 +20,7 @@ import UrlInput from './inputs/UrlInput.vue';
 
 const CraftComponents = {
   Btn,
+  BtnInput,
   Field,
 
   CheckboxField,
