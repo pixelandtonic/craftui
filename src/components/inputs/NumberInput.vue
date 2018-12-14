@@ -9,6 +9,8 @@
             @input="$emit('input', $event.target.value)"
             @change="$emit('change', $event)"
             @keypress="$emit('keypress', $event)"
+            @keydown="$emit('keydown', $event)"
+            @keyup="$emit('keyup', $event)"
             autocomplete="off"
             ref="input"
             :readonly="readonly"
