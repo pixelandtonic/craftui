@@ -4,7 +4,7 @@
             <p>{{ instructions }}</p>
         </div>
 
-        <select-input :fullwidth="fullwidth" :options="options" :value="value" @input="$emit('input', $event.target.value)"></select-input>
+        <select-input :fullwidth="fullwidth" :options="options" :value="value" @input="$emit('input', $event)"></select-input>
 
         <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
             {{ error }}

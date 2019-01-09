@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="select">
-            <select :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event)">
+            <select :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                 <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
             </select>
         </div>
