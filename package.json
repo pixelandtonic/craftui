@@ -1,7 +1,6 @@
 {
   "name": "@pixelandtonic/craftui",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve:app": "vue-cli-service serve ./src/app.js",
     "build:app": "vue-cli-service build ./src/app.js",
