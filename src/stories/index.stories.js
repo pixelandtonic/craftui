@@ -28,6 +28,17 @@ storiesOf('Checkbox Field', module)
         template: '<checkbox-field :value="false"></checkbox-field>',
     }));
 
+const icons = ['coffee', 'times', 'th', 'bars', 'plus', 'key', 'plug', 'image', 'user', 'pencil-alt', 'exclamation-triangle', 'bug', 'shopping-cart', 'dollar-sign', 'handshake', 'link', 'check', 'book', 'search', 'copy']
+const iconStory = storiesOf('Icon', module)
+
+for (let i = 0; i < icons.length; i++) {
+    const icon = icons[i]
+
+    iconStory.add(icon, () => ({
+        template: '<icon icon="' + icon + '" size="2xl"></icon>'
+    }))
+}
+
 storiesOf('Lightswitch Field', module)
     .add('Checked', () => ({
         template: '<lightswitch-field :checked="true"></lightswitch-field>',

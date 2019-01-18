@@ -1,9 +1,34 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './components'
+import CraftComponents from './components'
 
-Vue.config.productionTip = false
+// import { library, config } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy } from '@fortawesome/free-solid-svg-icons'
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+export default {
+    install(Vue) {
+        // Craft Components
+        Object.keys(CraftComponents).forEach(name => {
+            Vue.component(name, CraftComponents[name])
+        })
+        //
+        // config.autoAddCss = false
+        // library.add([faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy])
+        //
+        // // Font Awesome
+        // Vue.component('font-awesome-icon', FontAwesomeIcon)
+    }
+}
+
+// export default CraftUi;
+
+//
+// import Vue from "vue"
+// import Test from './components/Test.vue'
+//
+// const Components = {
+//     Test,
+// }
+//
+// Vue.component('test', Test)
+//
+// export default Components

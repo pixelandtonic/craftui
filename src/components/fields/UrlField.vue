@@ -21,8 +21,8 @@
 </template>
 
 <script>
-    import Field from '../Field';
-    import UrlInput from '../inputs/UrlInput';
+    import Field from '../Field.vue';
+    import UrlInput from '../inputs/UrlInput.vue';
 
     export default {
 

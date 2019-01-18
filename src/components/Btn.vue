@@ -2,13 +2,16 @@
     <button :class="cssClass"
             :disabled="disabled"
             @click="$emit('click')">
+        <icon v-if="icon" :icon="icon" />
         <slot></slot>
     </button>
 </template>
 
 <script>
     export default {
-        props: ['type', 'large', 'block', 'disabled', 'outline'],
+        name: 'Btn',
+
+        props: ['type', 'large', 'block', 'disabled', 'outline', 'icon'],
 
         computed: {
             cssClass() {

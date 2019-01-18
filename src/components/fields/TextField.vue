@@ -39,8 +39,8 @@
 </template>
 
 <script>
-    import Field from '../Field';
-    import TextInput from '../inputs/TextInput';
+    import Field from '../Field.vue';
+    import TextInput from '../inputs/TextInput.vue';
 
     export default {
 

@@ -8,8 +8,8 @@
 </template>
 
 <script>
-    import Field from '../Field';
-    import LightswitchInput from '../inputs/LightswitchInput';
+    import Field from '../Field.vue';
+    import LightswitchInput from '../inputs/LightswitchInput.vue';
 
     export default {
 

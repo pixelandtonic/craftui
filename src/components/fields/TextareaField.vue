@@ -34,8 +34,8 @@
 </template>
 
 <script>
-    import Field from '../Field';
-    import TextareaInput from '../inputs/TextareaInput';
+    import Field from '../Field.vue';
+    import TextareaInput from '../inputs/TextareaInput.vue';
 
     export default {
 
