@@ -23,7 +23,9 @@
     "vue": "^2.5.17",
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
-    "@fortawesome/vue-fontawesome": "^0.1.1"
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-vue": "^4.6.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
