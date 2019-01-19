@@ -8,7 +8,6 @@
   "scripts": {
     "serve:app": "vue-cli-service serve ./src/app.js",
     "build:app": "vue-cli-service build ./src/app.js",
-    "build-target": "vue-cli-service build --target lib --name myLib ./src/app.js",
     "lint:app": "vue-cli-service lint ./src/app.js",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
