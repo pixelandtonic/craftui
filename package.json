@@ -10,8 +10,6 @@
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
     "bili": "bili --config bili.config.js",
-    "rollup": "rollup:build:es",
-    "rollup:es": "rollup --config build/rollup.config.es.js"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -31,10 +29,6 @@
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "node-sass": "^4.9.3",
-    "rollup-plugin-babel": "^4.3.0",
-    "rollup-plugin-postcss": "^1.6.3",
-    "rollup-plugin-sass": "^1.1.0",
-    "rollup-plugin-vue": "^4.6.1",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.6.5",
     "vue-cli-plugin-storybook": "^0.4.8",

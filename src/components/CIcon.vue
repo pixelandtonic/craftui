@@ -10,7 +10,6 @@
     }
 </script>
 
-
 <style lang="scss">
     .cicon {
         @apply .bg-red;
