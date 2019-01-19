@@ -12,7 +12,7 @@
     "lint:app": "vue-cli-service lint ./src/app.js",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
-    "bili": "bili --config bili.config.js"
+    "bili": "bili --config build/bili.config.js"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
