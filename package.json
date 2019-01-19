@@ -6,12 +6,12 @@
   "unpkg": "dist/craftui.min.js",
   "module": "dist/craftui.es.js",
   "scripts": {
-    "serve:app": "vue-cli-service serve ./src/docs.js",
-    "build:app": "vue-cli-service build ./src/docs.js",
-    "lint:app": "vue-cli-service lint ./src/app.js",
-    "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
-    "build:storybook": "vue-cli-service build:storybook -c config/storybook",
-    "bili": "bili --config build/bili.config.js"
+    "build": "bili --config build/bili.config.js",
+    "serve:docs": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
+    "build:docs": "vue-cli-service build:storybook -c config/storybook",
+    "serve:demo": "vue-cli-service serve ./src/demo.js",
+    "build:demo": "vue-cli-service build ./src/demo.js",
+    "lint:demo": "vue-cli-service lint ./src/demo.js"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",

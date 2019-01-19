@@ -1,7 +1,7 @@
 /* Craft UI */
 import Vue from 'vue'
 import '../../src/sass/storybook.scss';
-import CraftUi from '../../src/plugin'
+import CraftUi from '../../src/lib'
 Vue.use(CraftUi)
 
 /* Stories */
