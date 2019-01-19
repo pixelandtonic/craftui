@@ -19,7 +19,7 @@ module.exports = {
                 compileTemplate: true,
                 style: {
                     postcssPlugins: [
-                        require('tailwindcss')('./tailwind-config.js'),
+                        require('tailwindcss')('./tailwind.config.js'),
                     ]
                 },
                 // template: { optimizeSSR: true }
