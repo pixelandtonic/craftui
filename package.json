@@ -2,6 +2,9 @@
   "name": "@pixelandtonic/craftui",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/craftui.js",
+  "unpkg": "dist/craftui.min.js",
+  "module": "dist/craftui.es.js",
   "scripts": {
     "serve:app": "vue-cli-service serve ./src/app.js",
     "build:app": "vue-cli-service build ./src/app.js",
@@ -9,7 +12,7 @@
     "lint:app": "vue-cli-service lint ./src/app.js",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
-    "bili": "bili --config bili.config.js",
+    "bili": "bili --config bili.config.js"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -57,8 +60,5 @@
     "> 5%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "main": "dist/craftui.js",
-  "unpkg": "dist/craftui.min.js",
-  "module": "dist/craftui.es.js"
+  ]
 }
