@@ -19,17 +19,3 @@ export default {
         Vue.component('font-awesome-icon', FontAwesomeIcon)
     }
 }
-
-// export default CraftUi;
-
-//
-// import Vue from "vue"
-// import Test from './components/Test.vue'
-//
-// const Components = {
-//     Test,
-// }
-//
-// Vue.component('test', Test)
-//
-// export default Components
