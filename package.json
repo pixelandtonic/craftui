@@ -6,12 +6,12 @@
   "unpkg": "dist/craftui.min.js",
   "module": "dist/craftui.es.js",
   "scripts": {
-    "build": "bili --config build/bili.config.js",
-    "serve:docs": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
-    "build:docs": "vue-cli-service build:storybook -c config/storybook",
-    "serve:demo": "vue-cli-service serve ./src/demo.js",
-    "build:demo": "vue-cli-service build ./src/demo.js",
-    "lint:demo": "vue-cli-service lint ./src/demo.js"
+    "build": "bili --config bili.config.js",
+    "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service serve:storybook -p 6006 -c docs/config",
+    "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service build:storybook -c docs/config -o docs/dist",
+    "serve:demo": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/demo/vue.config.js vue-cli-service serve ./demo/src/index.js",
+    "build:demo": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/demo/vue.config.js vue-cli-service build ./demo/src/index.js",
+    "lint:demo": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/demo/vue.config.js vue-cli-service lint ./demo/src/index.js"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",

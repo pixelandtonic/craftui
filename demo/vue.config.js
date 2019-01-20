@@ -1,4 +1,4 @@
 module.exports = {
     filenameHashing: false,
-    outputDir: 'dist-demo'
+    outputDir: 'demo/dist/'
 }

@@ -1,6 +1,6 @@
 @tailwind preflight;
 
-@import "components";
+@import "../../../src/sass/components";
 
 body {
   @apply .p-8;

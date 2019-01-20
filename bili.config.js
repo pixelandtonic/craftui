@@ -1,5 +1,5 @@
 module.exports = {
-    input: './src/lib.js',
+    input: './src/index.js',
     moduleName: 'CraftUi',
     exports: 'named',
     format: 'umd,es,cjs,umd-min',
