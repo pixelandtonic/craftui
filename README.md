@@ -5,35 +5,44 @@
 npm install
 ```
 
-## Storybook
+## Library
+
+Build umd, es, cjs, umd-min versions of Craft UI.
+ 
+```
+npm run build
+```
+
+
+## Docs
 
 Storybook showcases the Craft UI components.
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve:storybook
+npm run serve:docs
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build:storybook
+npm run build:docs
 ```
 
-## App
+## Demo
 
-The App is an example project using Craft UI components.
+The demo is an example project using Craft UI components.
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve:app
+npm run serve:demo
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build:app
+npm run build:demo
 ```
 
 ### Lints and fixes files
 ```
-npm run lint:app
+npm run lint:demo
 ```
