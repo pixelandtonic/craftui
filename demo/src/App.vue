@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import './sass/app.scss'
+    import '../../src/sass/app.scss'
     import CraftUi from './components/index.js'
 
     export default {
