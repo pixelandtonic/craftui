@@ -1,6 +1,6 @@
 @tailwind preflight;
 
-@import "components";
+@import "../../../src/sass/components";
 
 #app {
   @apply .max-w-lg .p-4 .mx-auto;

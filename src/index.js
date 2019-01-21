@@ -3,6 +3,8 @@ import CraftComponents from './components'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy } from '@fortawesome/free-solid-svg-icons'
+// @import '~@fortawesome/fontawesome-svg-core/styles.css';
+import './sass/styles.scss'
 
 export default {
     install(Vue) {
