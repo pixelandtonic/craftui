@@ -5,13 +5,7 @@ This is a collection of components and styles meant to be used across Craft apps
 
 ## Development
 
-This package provides 3 kind of outputs:
-
-- Library
-- Docs
-- Demo
-
-To get started for the development of the Craft UI library, docs or demo, run this command:
+To get started for the development of the Craft UI library or the docs, run this command:
 
 ```
 npm install
@@ -19,7 +13,7 @@ npm install
 
 ### Library
 
-Build umd, es, cjs, umd-min versions of Craft UI.
+Build the umd, es, cjs, umd-min versions of Craft UI:
  
 ```
 npm run build
