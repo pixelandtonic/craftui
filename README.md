@@ -25,7 +25,6 @@ Build umd, es, cjs, umd-min versions of Craft UI.
 npm run build
 ```
 
-
 ### Docs
 
 Storybook showcases the Craft UI components.
