@@ -29,6 +29,7 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "bili": "^3.4.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.3",
