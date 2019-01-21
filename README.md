@@ -30,12 +30,12 @@ npm run build
 
 Storybook showcases the Craft UI components.
 
-#### Compiles and hot-reloads for development
+#### Compile and hot-reload for development
 ```
 npm run serve:docs
 ```
 
-#### Compiles and minifies for production
+#### Compile and minify for production
 ```
 npm run build:docs
 ```
@@ -44,12 +44,12 @@ npm run build:docs
 
 The demo is an example project using Craft UI components.
 
-#### Compiles and hot-reloads for development
+#### Compile and hot-reload for development
 ```
 npm run serve:demo
 ```
 
-#### Compiles and minifies for production
+#### Compile and minify for production
 ```
 npm run build:demo
 ```
