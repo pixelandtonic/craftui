@@ -39,22 +39,3 @@ npm run serve:docs
 ```
 npm run build:docs
 ```
-
-### Demo
-
-The demo is an example project using Craft UI components.
-
-#### Compile and hot-reload for development
-```
-npm run serve:demo
-```
-
-#### Compile and minify for production
-```
-npm run build:demo
-```
-
-#### Lints and fixes files
-```
-npm run lint:demo
-```
