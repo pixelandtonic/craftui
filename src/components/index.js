@@ -2,7 +2,6 @@ import Btn from './Btn.vue';
 import BtnInput from './BtnInput.vue';
 import Field from './Field.vue';
 import Icon from './Icon.vue';
-import CIcon from './CIcon.vue';
 
 import CheckboxField from './fields/CheckboxField.vue';
 import CheckboxSet from './fields/CheckboxSet.vue';
@@ -26,7 +25,6 @@ const CraftComponents = {
   BtnInput,
   Field,
   Icon,
-  CIcon,
 
   CheckboxField,
   CheckboxSet,
