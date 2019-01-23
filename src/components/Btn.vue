@@ -62,18 +62,18 @@
         }
 
         &.outline {
-            @apply .bg-transparent;
+            @apply .bg-transparent .border .border-solid;
 
             &.primary {
-                @apply .border .border-solid .border-blue .text-blue;
+                @apply .border-blue .text-blue;
             }
 
             &.warning {
-                @apply .border .border-solid .border-orange .text-orange;
+                @apply .border-orange .text-orange;
             }
 
             &.danger {
-                @apply .border .border-solid .border-red .text-red;
+                @apply .border-red .text-red;
             }
         }
     }

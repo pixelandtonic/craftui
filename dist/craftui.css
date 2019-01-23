@@ -49,25 +49,21 @@
 
 .c-btn.outline {
   background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .c-btn.outline.primary {
-  border-width: 1px;
-  border-style: solid;
   border-color: #3490dc;
   color: #3490dc;
 }
 
 .c-btn.outline.warning {
-  border-width: 1px;
-  border-style: solid;
   border-color: #f6993f;
   color: #f6993f;
 }
 
 .c-btn.outline.danger {
-  border-width: 1px;
-  border-style: solid;
   border-color: #e3342f;
   color: #e3342f;
 }
