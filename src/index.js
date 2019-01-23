@@ -2,7 +2,7 @@ import CraftComponents from './components'
 
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 // @import '~@fortawesome/fontawesome-svg-core/styles.css';
 import './sass/styles.scss'
 
@@ -15,7 +15,7 @@ export default {
 
 
         config.autoAddCss = false
-        library.add([faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy])
+        library.add([faCoffee, faTimes, faTh, faBars, faPlus, faKey, faPlug, faImage, faUser, faPencilAlt, faExclamationTriangle, faBug, faShoppingCart, faDollarSign, faHandshake, faLink, faCheck, faBook, faSearch, faCopy, faInfoCircle])
 
         // Font Awesome
         Vue.component('font-awesome-icon', FontAwesomeIcon)

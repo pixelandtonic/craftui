@@ -1120,7 +1120,7 @@ var index = {
       Vue.component(name, CraftComponents[name]);
     });
     fontawesomeSvgCore.config.autoAddCss = false;
-    fontawesomeSvgCore.library.add([freeSolidSvgIcons.faCoffee, freeSolidSvgIcons.faTimes, freeSolidSvgIcons.faTh, freeSolidSvgIcons.faBars, freeSolidSvgIcons.faPlus, freeSolidSvgIcons.faKey, freeSolidSvgIcons.faPlug, freeSolidSvgIcons.faImage, freeSolidSvgIcons.faUser, freeSolidSvgIcons.faPencilAlt, freeSolidSvgIcons.faExclamationTriangle, freeSolidSvgIcons.faBug, freeSolidSvgIcons.faShoppingCart, freeSolidSvgIcons.faDollarSign, freeSolidSvgIcons.faHandshake, freeSolidSvgIcons.faLink, freeSolidSvgIcons.faCheck, freeSolidSvgIcons.faBook, freeSolidSvgIcons.faSearch, freeSolidSvgIcons.faCopy]); // Font Awesome
+    fontawesomeSvgCore.library.add([freeSolidSvgIcons.faCoffee, freeSolidSvgIcons.faTimes, freeSolidSvgIcons.faTh, freeSolidSvgIcons.faBars, freeSolidSvgIcons.faPlus, freeSolidSvgIcons.faKey, freeSolidSvgIcons.faPlug, freeSolidSvgIcons.faImage, freeSolidSvgIcons.faUser, freeSolidSvgIcons.faPencilAlt, freeSolidSvgIcons.faExclamationTriangle, freeSolidSvgIcons.faBug, freeSolidSvgIcons.faShoppingCart, freeSolidSvgIcons.faDollarSign, freeSolidSvgIcons.faHandshake, freeSolidSvgIcons.faLink, freeSolidSvgIcons.faCheck, freeSolidSvgIcons.faBook, freeSolidSvgIcons.faSearch, freeSolidSvgIcons.faCopy, freeSolidSvgIcons.faInfoCircle]); // Font Awesome
 
     Vue.component('font-awesome-icon', vueFontawesome.FontAwesomeIcon);
   }
