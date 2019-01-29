@@ -11,8 +11,8 @@ import '../src/sass/styles.scss';
 // Stories
 
 /* eslint-disable import/no-extraneous-dependencies */
-import { configure } from '@storybook/vue'
-import { setOptions } from '@storybook/addon-options';
+import { configure, addDecorator } from '@storybook/vue'
+import { setOptions } from '@storybook/addon-options'
 
 setOptions({
   name: 'Craft UI',
