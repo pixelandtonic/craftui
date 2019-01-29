@@ -1,24 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
-import { action } from '@storybook/addon-actions'
-
-storiesOf('Button', module)
-  .add('Default', () => ({
-    template: '<btn @click="action">Default Button</btn>',
-    methods: { action: action('clicked') }
-  }))
-  .add('Primary', () => ({
-    template: '<btn type="primary" @click="action">Primary Button</btn>',
-    methods: { action: action('clicked') }
-  }))
-  .add('Warning', () => ({
-    template: '<btn type="warning" @click="action">Warning Button</btn>',
-    methods: { action: action('clicked') }
-  }))
-  .add('Danger', () => ({
-    template: '<btn type="danger" @click="action">Danger Button</btn>',
-    methods: { action: action('clicked') }
-  }))
 
 storiesOf('Checkbox Field', module)
     .add('Checked', () => ({
