@@ -92,5 +92,9 @@
                 @apply .border-teal .text-teal;
             }
         }
+
+        svg {
+            @apply .mr-2;
+        }
     }
 </style>

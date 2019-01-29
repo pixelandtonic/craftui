@@ -88,6 +88,10 @@
   color: #4dc0b5;
 }
 
+.c-btn svg {
+  margin-right: .5rem;
+}
+
 svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
