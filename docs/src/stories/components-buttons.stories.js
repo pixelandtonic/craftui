@@ -1,8 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
-import {action} from '@storybook/addon-actions';
+import {action} from '@storybook/addon-actions'
+import { withViewport } from '@storybook/addon-viewport'
 
-storiesOf('Buttons/Examples', module)
+storiesOf('Components|Buttons/Examples', module)
     .add('Default', () => ({
         template: '<btn @click="action">Default</btn>',
         methods: { action: action('clicked') }
@@ -24,7 +25,7 @@ storiesOf('Buttons/Examples', module)
         methods: { action: action('clicked') }
     }))
 
-storiesOf('Buttons/Icon', module)
+storiesOf('Components|Buttons/Icon', module)
     .add('Regular', () => ({
         template: '<btn type="primary" @click="action" icon="check">Icon Button</btn>',
         methods: { action: action('clicked') }
@@ -34,23 +35,24 @@ storiesOf('Buttons/Icon', module)
         methods: { action: action('clicked') }
     }))
 
-storiesOf('Buttons/States', module)
+storiesOf('Components|Buttons/States', module)
     .add('Disabled', () => ({
         template: '<btn type="primary" @click="action" disabled>Disabled</btn>',
         methods: { action: action('clicked') }
     }))
 
-storiesOf('Buttons/Size', module)
-    .add('Block', () => ({
-        template: '<btn type="primary" @click="action" block>Block</btn>',
-        methods: { action: action('clicked') }
-    }))
+storiesOf('Components|Buttons/Size', module)
     .add('Large', () => ({
         template: '<btn type="primary" @click="action" large>Large</btn>',
         methods: { action: action('clicked') }
     }))
+    .addDecorator(withViewport('iphonex'))
+    .add('Block', () => ({
+        template: '<btn type="primary" @click="action" block>Block</btn>',
+        methods: { action: action('clicked') }
+    }))
 
-storiesOf('Buttons/Outline', module)
+storiesOf('Components|Buttons/Outline', module)
     .add('Default', () => ({
         template: '<btn type="default" @click="action" outline>Default</btn> ',
         methods: { action: action('clicked') }

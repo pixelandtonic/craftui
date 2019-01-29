@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 
-storiesOf('Checkbox Field', module)
+storiesOf('Components|Fields/Checkbox', module)
     .add('Checked', () => ({
         template: '<checkbox-field :value="true"></checkbox-field>',
     }))
@@ -9,18 +9,7 @@ storiesOf('Checkbox Field', module)
         template: '<checkbox-field :value="false"></checkbox-field>',
     }));
 
-const icons = ['coffee', 'times', 'th', 'bars', 'plus', 'key', 'plug', 'image', 'user', 'pencil-alt', 'exclamation-triangle', 'bug', 'shopping-cart', 'dollar-sign', 'handshake', 'link', 'check', 'book', 'search', 'copy']
-const iconStory = storiesOf('Icon', module)
-
-for (let i = 0; i < icons.length; i++) {
-    const icon = icons[i]
-
-    iconStory.add(icon, () => ({
-        template: '<icon icon="' + icon + '" size="2xl"></icon>'
-    }))
-}
-
-storiesOf('Lightswitch Field', module)
+storiesOf('Components|Fields/Lightswitch', module)
     .add('Checked', () => ({
         template: '<lightswitch-field :checked="true"></lightswitch-field>',
     }))
@@ -28,18 +17,18 @@ storiesOf('Lightswitch Field', module)
         template: '<lightswitch-field :checked="false"></lightswitch-field>',
     }));
 
-storiesOf('Password Field', module)
+storiesOf('Components|Fields/Password', module)
     .add('Default', () => ({
         template: '<password-field></password-field>',
     }));
 
-storiesOf('Select Field', module)
+storiesOf('Components|Fields/Select', module)
     .add('Default', () => ({
         template: '<select-field :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></select-field>',
     }));
 
 
-storiesOf('Textarea Field', module)
+storiesOf('Components|Fields/Textarea', module)
     .add('Default', () => ({
         template: '<textarea-field id="textarea-default" label="Textarea"></textarea-field>',
     }))
@@ -52,12 +41,12 @@ storiesOf('Textarea Field', module)
         }
     }));
 
-storiesOf('Text Field', module)
+storiesOf('Components|Fields/Text', module)
     .add('Default', () => ({
         template: '<text-field></text-field>',
     }));
 
-storiesOf('URL Field', module)
+storiesOf('Components|Fields/URL', module)
     .add('Default', () => ({
         template: '<url-field></url-field>',
     }));
