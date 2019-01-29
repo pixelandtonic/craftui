@@ -9,6 +9,30 @@ storiesOf('Components|Fields/Checkbox', module)
         template: '<checkbox-field :value="false"></checkbox-field>',
     }));
 
+storiesOf('Components|Fields/Checkbox Set', module)
+    .add('Default', () => ({
+        template:
+            '<div>' +
+                '<checkbox-set label="Label" v-model="value" instructions="Instructions" :options="options"></checkbox-set>' +
+                '<pre>{{value}}</pre>' +
+            '</div>',
+        data() {
+            return {
+                value: [],
+                options: [
+                    {
+                        label: "Test",
+                        value: 'test'
+                    },
+                    {
+                        label: "Test 2",
+                        value: 'test2'
+                    }
+                ]
+            }
+        }
+    }));
+
 storiesOf('Components|Fields/Lightswitch', module)
     .add('Checked', () => ({
         template: '<lightswitch-field :checked="true"></lightswitch-field>',
