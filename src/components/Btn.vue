@@ -53,8 +53,16 @@
             @apply .bg-orange .text-white;
         }
 
+        &.success {
+            @apply .bg-green .text-white;
+        }
+
         &.danger {
             @apply .bg-red .text-white;
+        }
+
+        &.info {
+            @apply .bg-teal .text-white;
         }
 
         &[disabled] {
@@ -72,8 +80,16 @@
                 @apply .border-orange .text-orange;
             }
 
+            &.success {
+                @apply .border-green .text-green;
+            }
+
             &.danger {
                 @apply .border-red .text-red;
+            }
+
+            &.info {
+                @apply .border-teal .text-teal;
             }
         }
     }

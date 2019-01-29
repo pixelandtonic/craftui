@@ -37,8 +37,18 @@
   color: #fff;
 }
 
+.c-btn.success {
+  background-color: #38c172;
+  color: #fff;
+}
+
 .c-btn.danger {
   background-color: #e3342f;
+  color: #fff;
+}
+
+.c-btn.info {
+  background-color: #4dc0b5;
   color: #fff;
 }
 
@@ -63,9 +73,19 @@
   color: #f6993f;
 }
 
+.c-btn.outline.success {
+  border-color: #38c172;
+  color: #38c172;
+}
+
 .c-btn.outline.danger {
   border-color: #e3342f;
   color: #e3342f;
+}
+
+.c-btn.outline.info {
+  border-color: #4dc0b5;
+  color: #4dc0b5;
 }
 
 svg:not(:root).svg-inline--fa {
