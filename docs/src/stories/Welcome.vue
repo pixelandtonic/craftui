@@ -10,3 +10,13 @@
         </ul>
     </div>
 </template>
+
+<style>
+    h1, p, ul {
+        margin-bottom: 1em;
+    }
+
+    li {
+        margin-bottom: 0.25rem;
+    }
+</style>
