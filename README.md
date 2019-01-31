@@ -1,39 +1,34 @@
 # Craft UI
 
-## Project setup
+## Introduction
+This is a collection of components and styles meant to be used across Craft apps and websites.
+
+## Development
+
+To get started for the development of the Craft UI library or the docs, run this command:
+
 ```
 npm install
 ```
 
-## Storybook
+### Library
+
+Build the umd, es, cjs, umd-min versions of Craft UI:
+ 
+```
+npm run build
+```
+
+### Docs
 
 Storybook showcases the Craft UI components.
 
-### Compiles and hot-reloads for development
+#### Compile and hot-reload for development
 ```
-npm run serve:storybook
-```
-
-### Compiles and minifies for production
-```
-npm run build:storybook
+npm run serve:docs
 ```
 
-## App
-
-The App is an example project using Craft UI components.
-
-### Compiles and hot-reloads for development
+#### Compile and minify for production
 ```
-npm run serve:app
-```
-
-### Compiles and minifies for production
-```
-npm run build:app
-```
-
-### Lints and fixes files
-```
-npm run lint:app
+npm run build:docs
 ```

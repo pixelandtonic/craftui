@@ -2,13 +2,16 @@
     <button :class="cssClass"
             :disabled="disabled"
             @click="$emit('click')">
+        <icon v-if="icon" :icon="icon" />
         <slot></slot>
     </button>
 </template>
 
 <script>
     export default {
-        props: ['type', 'large', 'block', 'disabled', 'outline'],
+        name: 'Btn',
+
+        props: ['type', 'large', 'block', 'disabled', 'outline', 'icon'],
 
         computed: {
             cssClass() {
@@ -50,8 +53,16 @@
             @apply .bg-orange .text-white;
         }
 
+        &.success {
+            @apply .bg-green .text-white;
+        }
+
         &.danger {
             @apply .bg-red .text-white;
+        }
+
+        &.info {
+            @apply .bg-teal .text-white;
         }
 
         &[disabled] {
@@ -59,19 +70,31 @@
         }
 
         &.outline {
-            @apply .bg-transparent;
+            @apply .bg-transparent .border .border-solid;
 
             &.primary {
-                @apply .border .border-solid .border-blue .text-blue;
+                @apply .border-blue .text-blue;
             }
 
             &.warning {
-                @apply .border .border-solid .border-orange .text-orange;
+                @apply .border-orange .text-orange;
+            }
+
+            &.success {
+                @apply .border-green .text-green;
             }
 
             &.danger {
-                @apply .border .border-solid .border-red .text-red;
+                @apply .border-red .text-red;
             }
+
+            &.info {
+                @apply .border-teal .text-teal;
+            }
+        }
+
+        svg {
+            @apply .mr-2;
         }
     }
 </style>

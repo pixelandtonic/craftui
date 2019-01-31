@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import Inputmask from 'inputmask'
+    // import Inputmask from 'inputmask'
 
     export default {
 
@@ -35,7 +35,7 @@
             mask: {
                 bind: function(el, binding) {
                     if(binding.value) {
-                        Inputmask(binding.value).mask(el);
+                        // Inputmask(binding.value).mask(el);
                     }
                 }
             }

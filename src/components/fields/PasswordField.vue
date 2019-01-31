@@ -18,8 +18,8 @@
 </template>
 
 <script>
-    import Field from '../Field';
-    import PasswordInput from '../inputs/PasswordInput';
+    import Field from '../Field.vue';
+    import PasswordInput from '../inputs/PasswordInput.vue';
 
     export default {
         props: ['label', 'id', 'name', 'placeholder', 'value', 'autofocus', 'errors', 'size'],

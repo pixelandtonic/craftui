@@ -14,8 +14,8 @@
 
 
 <script>
-    import Field from '../Field';
-    import SelectInput from '../inputs/SelectInput';
+    import Field from '../Field.vue';
+    import SelectInput from '../inputs/SelectInput.vue';
 
     export default {
 
