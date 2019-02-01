@@ -23,21 +23,21 @@
       }
     };
 
-    function normalizeComponent(compiledTemplate, injectStyle, defaultExport, scopeId, isFunctionalTemplate, moduleIdentifier
+    function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
     /* server only */
-    , isShadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
-      if (typeof isShadowMode === 'function') {
+    , shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
+      if (typeof shadowMode !== 'boolean') {
         createInjectorSSR = createInjector;
-        createInjector = isShadowMode;
-        isShadowMode = false;
-      } // Vue.extend constructor export interop
+        createInjector = shadowMode;
+        shadowMode = false;
+      } // Vue.extend constructor export interop.
 
 
-      var options = typeof defaultExport === 'function' ? defaultExport.options : defaultExport; // render functions
+      var options = typeof script === 'function' ? script.options : script; // render functions
 
-      if (compiledTemplate && compiledTemplate.render) {
-        options.render = compiledTemplate.render;
-        options.staticRenderFns = compiledTemplate.staticRenderFns;
+      if (template && template.render) {
+        options.render = template.render;
+        options.staticRenderFns = template.staticRenderFns;
         options._compiled = true; // functional template
 
         if (isFunctionalTemplate) {
@@ -66,8 +66,8 @@
           } // inject component styles
 
 
-          if (injectStyle) {
-            injectStyle.call(this, createInjectorSSR(context));
+          if (style) {
+            style.call(this, createInjectorSSR(context));
           } // register component module identifier for async chunk inference
 
 
@@ -79,11 +79,11 @@
 
 
         options._ssrRegister = hook;
-      } else if (injectStyle) {
-        hook = isShadowMode ? function () {
-          injectStyle.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
+      } else if (style) {
+        hook = shadowMode ? function () {
+          style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
         } : function (context) {
-          injectStyle.call(this, createInjector(context));
+          style.call(this, createInjector(context));
         };
       }
 
@@ -103,8 +103,10 @@
         }
       }
 
-      return defaultExport;
+      return script;
     }
+
+    var normalizeComponent_1 = normalizeComponent;
 
     /* script */
     const __vue_script__ = script;
@@ -128,7 +130,7 @@
       
 
       
-      var Btn = normalizeComponent(
+      var Btn = normalizeComponent_1(
         { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
         __vue_inject_styles__,
         __vue_script__,
@@ -168,7 +170,7 @@
       
 
       
-      var BtnInput = normalizeComponent(
+      var BtnInput = normalizeComponent_1(
         { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
         __vue_inject_styles__$1,
         __vue_script__$1,
@@ -213,7 +215,7 @@
       
 
       
-      var Field = normalizeComponent(
+      var Field = normalizeComponent_1(
         { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
         __vue_inject_styles__$2,
         __vue_script__$2,
@@ -255,7 +257,7 @@
       
 
       
-      var Icon = normalizeComponent(
+      var Icon = normalizeComponent_1(
         { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
         __vue_inject_styles__$3,
         __vue_script__$3,
@@ -307,7 +309,7 @@
       
 
       
-      var CheckboxField = normalizeComponent(
+      var CheckboxField = normalizeComponent_1(
         { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
         __vue_inject_styles__$4,
         __vue_script__$4,
@@ -376,7 +378,7 @@
       
 
       
-      var CheckboxSet = normalizeComponent(
+      var CheckboxSet = normalizeComponent_1(
         { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
         __vue_inject_styles__$5,
         __vue_script__$5,
@@ -423,7 +425,7 @@
       
 
       
-      var LightswitchInput = normalizeComponent(
+      var LightswitchInput = normalizeComponent_1(
         { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
         __vue_inject_styles__$6,
         __vue_script__$6,
@@ -466,7 +468,7 @@
       
 
       
-      var LightswitchField = normalizeComponent(
+      var LightswitchField = normalizeComponent_1(
         { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
         __vue_inject_styles__$7,
         __vue_script__$7,
@@ -523,7 +525,7 @@
       
 
       
-      var PasswordInput = normalizeComponent(
+      var PasswordInput = normalizeComponent_1(
         { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
         __vue_inject_styles__$8,
         __vue_script__$8,
@@ -571,7 +573,7 @@
       
 
       
-      var PasswordField = normalizeComponent(
+      var PasswordField = normalizeComponent_1(
         { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
         __vue_inject_styles__$9,
         __vue_script__$9,
@@ -620,7 +622,7 @@
       
 
       
-      var SelectInput = normalizeComponent(
+      var SelectInput = normalizeComponent_1(
         { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
         __vue_inject_styles__$a,
         __vue_script__$a,
@@ -663,7 +665,7 @@
       
 
       
-      var SelectField = normalizeComponent(
+      var SelectField = normalizeComponent_1(
         { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
         __vue_inject_styles__$b,
         __vue_script__$b,
@@ -717,7 +719,7 @@
       
 
       
-      var TextareaInput = normalizeComponent(
+      var TextareaInput = normalizeComponent_1(
         { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
         __vue_inject_styles__$c,
         __vue_script__$c,
@@ -774,7 +776,7 @@
       
 
       
-      var TextareaField = normalizeComponent(
+      var TextareaField = normalizeComponent_1(
         { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
         __vue_inject_styles__$d,
         __vue_script__$d,
@@ -845,7 +847,7 @@
       
 
       
-      var TextInput = normalizeComponent(
+      var TextInput = normalizeComponent_1(
         { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
         __vue_inject_styles__$e,
         __vue_script__$e,
@@ -907,7 +909,7 @@
       
 
       
-      var TextField = normalizeComponent(
+      var TextField = normalizeComponent_1(
         { render: __vue_render__$f, staticRenderFns: __vue_staticRenderFns__$f },
         __vue_inject_styles__$f,
         __vue_script__$f,
@@ -964,7 +966,7 @@
       
 
       
-      var UrlInput = normalizeComponent(
+      var UrlInput = normalizeComponent_1(
         { render: __vue_render__$g, staticRenderFns: __vue_staticRenderFns__$g },
         __vue_inject_styles__$g,
         __vue_script__$g,
@@ -1012,7 +1014,7 @@
       
 
       
-      var UrlField = normalizeComponent(
+      var UrlField = normalizeComponent_1(
         { render: __vue_render__$h, staticRenderFns: __vue_staticRenderFns__$h },
         __vue_inject_styles__$h,
         __vue_script__$h,
@@ -1078,7 +1080,7 @@
       
 
       
-      var NumberInput = normalizeComponent(
+      var NumberInput = normalizeComponent_1(
         { render: __vue_render__$i, staticRenderFns: __vue_staticRenderFns__$i },
         __vue_inject_styles__$i,
         __vue_script__$i,
@@ -1111,13 +1113,27 @@
       UrlInput: UrlInput
     };
 
-    function _classCallCheck(instance, Constructor) {
+    function _typeof(obj) {
+      if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+        _typeof = function (obj) {
+          return typeof obj;
+        };
+      } else {
+        _typeof = function (obj) {
+          return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+        };
+      }
+
+      return _typeof(obj);
+    }
+
+    function _classCallCheck$1(instance, Constructor) {
       if (!(instance instanceof Constructor)) {
         throw new TypeError("Cannot call a class as a function");
       }
     }
 
-    function _defineProperties(target, props) {
+    function _defineProperties$1(target, props) {
       for (var i = 0; i < props.length; i++) {
         var descriptor = props[i];
         descriptor.enumerable = descriptor.enumerable || false;
@@ -1127,13 +1143,13 @@
       }
     }
 
-    function _createClass(Constructor, protoProps, staticProps) {
-      if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) _defineProperties(Constructor, staticProps);
+    function _createClass$1(Constructor, protoProps, staticProps) {
+      if (protoProps) _defineProperties$1(Constructor.prototype, protoProps);
+      if (staticProps) _defineProperties$1(Constructor, staticProps);
       return Constructor;
     }
 
-    function _defineProperty(obj, key, value) {
+    function _defineProperty$1(obj, key, value) {
       if (key in obj) {
         Object.defineProperty(obj, key, {
           value: value,
@@ -1148,7 +1164,7 @@
       return obj;
     }
 
-    function _objectSpread(target) {
+    function _objectSpread$1(target) {
       for (var i = 1; i < arguments.length; i++) {
         var source = arguments[i] != null ? arguments[i] : {};
         var ownKeys = Object.keys(source);
@@ -1160,22 +1176,22 @@
         }
 
         ownKeys.forEach(function (key) {
-          _defineProperty(target, key, source[key]);
+          _defineProperty$1(target, key, source[key]);
         });
       }
 
       return target;
     }
 
-    function _slicedToArray(arr, i) {
-      return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
+    function _slicedToArray$1(arr, i) {
+      return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _nonIterableRest$1();
     }
 
-    function _arrayWithHoles(arr) {
+    function _arrayWithHoles$1(arr) {
       if (Array.isArray(arr)) return arr;
     }
 
-    function _iterableToArrayLimit(arr, i) {
+    function _iterableToArrayLimit$1(arr, i) {
       var _arr = [];
       var _n = true;
       var _d = false;
@@ -1201,7 +1217,7 @@
       return _arr;
     }
 
-    function _nonIterableRest() {
+    function _nonIterableRest$1() {
       throw new TypeError("Invalid attempt to destructure non-iterable instance");
     }
 
@@ -1257,7 +1273,7 @@
     if (DOCUMENT && typeof DOCUMENT.querySelector === 'function') {
       var attrs = [['data-family-prefix', 'familyPrefix'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-elements', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
       attrs.forEach(function (_ref) {
-        var _ref2 = _slicedToArray(_ref, 2),
+        var _ref2 = _slicedToArray$1(_ref, 2),
             attr = _ref2[0],
             key = _ref2[1];
 
@@ -1269,7 +1285,7 @@
       });
     }
 
-    var _default = _objectSpread({
+    var _default = {
       familyPrefix: DEFAULT_FAMILY_PREFIX,
       replacementClass: DEFAULT_REPLACEMENT_CLASS,
       autoReplaceSvg: true,
@@ -1280,11 +1296,13 @@
       keepOriginalSource: true,
       measurePerformance: false,
       showMissingIcons: true
-    }, initial);
+    };
 
-    if (!_default.autoReplaceSvg) _default.observeMutations = false;
+    var _config = _objectSpread$1({}, _default, initial);
 
-    var config = _objectSpread({}, _default);
+    if (!_config.autoReplaceSvg) _config.observeMutations = false;
+
+    var config = _objectSpread$1({}, _config);
 
     WINDOW.FontAwesomeConfig = config;
     var w = WINDOW || {};
@@ -1309,6 +1327,8 @@
       loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
       if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
     }
+
+    var isNode = typeof global !== 'undefined' && typeof global.process !== 'undefined' && typeof global.process.emit === 'function';
     var meaninglessTransform = {
       size: 16,
       x: 0,
@@ -1422,30 +1442,30 @@
       });
       var maskRect = {
         tag: 'rect',
-        attributes: _objectSpread({}, ALL_SPACE, {
+        attributes: _objectSpread$1({}, ALL_SPACE, {
           fill: 'white'
         })
       };
       var maskInnerGroup = {
         tag: 'g',
-        attributes: _objectSpread({}, trans.inner),
+        attributes: _objectSpread$1({}, trans.inner),
         children: [{
           tag: 'path',
-          attributes: _objectSpread({}, mainPath.attributes, trans.path, {
+          attributes: _objectSpread$1({}, mainPath.attributes, trans.path, {
             fill: 'black'
           })
         }]
       };
       var maskOuterGroup = {
         tag: 'g',
-        attributes: _objectSpread({}, trans.outer),
+        attributes: _objectSpread$1({}, trans.outer),
         children: [maskInnerGroup]
       };
       var maskId = "mask-".concat(nextUniqueId());
       var clipId = "clip-".concat(nextUniqueId());
       var maskTag = {
         tag: 'mask',
-        attributes: _objectSpread({}, ALL_SPACE, {
+        attributes: _objectSpread$1({}, ALL_SPACE, {
           id: maskId,
           maskUnits: 'userSpaceOnUse',
           maskContentUnits: 'userSpaceOnUse'
@@ -1464,7 +1484,7 @@
       };
       children.push(defs, {
         tag: 'rect',
-        attributes: _objectSpread({
+        attributes: _objectSpread$1({
           fill: 'currentColor',
           'clip-path': "url(#".concat(clipId, ")"),
           mask: "url(#".concat(maskId, ")")
@@ -1496,14 +1516,14 @@
         });
         children.push({
           tag: 'g',
-          attributes: _objectSpread({}, trans.outer),
+          attributes: _objectSpread$1({}, trans.outer),
           children: [{
             tag: 'g',
-            attributes: _objectSpread({}, trans.inner),
+            attributes: _objectSpread$1({}, trans.inner),
             children: [{
               tag: main.icon.tag,
               children: main.icon.children,
-              attributes: _objectSpread({}, main.icon.attributes, trans.path)
+              attributes: _objectSpread$1({}, main.icon.attributes, trans.path)
             }]
           }]
         });
@@ -1532,7 +1552,7 @@
           x: width / height / 2,
           y: 0.5
         };
-        attributes['style'] = joinStyles(_objectSpread({}, styles, {
+        attributes['style'] = joinStyles(_objectSpread$1({}, styles, {
           'transform-origin': "".concat(offset.x + transform.x / 16, "em ").concat(offset.y + transform.y / 16, "em")
         }));
       }
@@ -1558,7 +1578,7 @@
         },
         children: [{
           tag: 'symbol',
-          attributes: _objectSpread({}, attributes, {
+          attributes: _objectSpread$1({}, attributes, {
             id: id
           }),
           children: children
@@ -1589,7 +1609,7 @@
       }).concat(extra.classes).join(' ');
       var content = {
         children: [],
-        attributes: _objectSpread({}, extra.attributes, {
+        attributes: _objectSpread$1({}, extra.attributes, {
           'data-prefix': prefix,
           'data-icon': iconName,
           'class': attrClass,
@@ -1611,7 +1631,7 @@
         children: [title]
       });
 
-      var args = _objectSpread({}, content, {
+      var args = _objectSpread$1({}, content, {
         prefix: prefix,
         iconName: iconName,
         main: main,
@@ -1688,6 +1708,41 @@
       return result;
     };
 
+    function defineIcons(prefix, icons) {
+      var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var _params$skipHooks = params.skipHooks,
+          skipHooks = _params$skipHooks === void 0 ? false : _params$skipHooks;
+      var normalized = Object.keys(icons).reduce(function (acc, iconName) {
+        var icon = icons[iconName];
+        var expanded = !!icon.icon;
+
+        if (expanded) {
+          acc[icon.iconName] = icon.icon;
+        } else {
+          acc[iconName] = icon;
+        }
+
+        return acc;
+      }, {});
+
+      if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
+        namespace.hooks.addPack(prefix, normalized);
+      } else {
+        namespace.styles[prefix] = _objectSpread$1({}, namespace.styles[prefix] || {}, normalized);
+      }
+      /**
+       * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
+       * of new styles we needed to differentiate between them. Prefix `fa` is now an alias
+       * for `fas` so we'll easy the upgrade process for our users by automatically defining
+       * this as well.
+       */
+
+
+      if (prefix === 'fas') {
+        defineIcons('fa', icons);
+      }
+    }
+
     var styles = namespace.styles,
         shims = namespace.shims;
     var _byUnicode = {};
@@ -1703,7 +1758,10 @@
       };
 
       _byUnicode = lookup(function (acc, icon, iconName) {
-        acc[icon[3]] = iconName;
+        if (icon[3]) {
+          acc[icon[3]] = iconName;
+        }
+
         return acc;
       });
       _byLigature = lookup(function (acc, icon, iconName) {
@@ -1847,64 +1905,66 @@
     };
     var RING = {
       tag: 'path',
-      attributes: _objectSpread({}, FILL, {
+      attributes: _objectSpread$1({}, FILL, {
         d: 'M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z'
       })
     };
 
-    var OPACITY_ANIMATE = _objectSpread({}, ANIMATION_BASE, {
+    var OPACITY_ANIMATE = _objectSpread$1({}, ANIMATION_BASE, {
       attributeName: 'opacity'
     });
 
     var DOT = {
       tag: 'circle',
-      attributes: _objectSpread({}, FILL, {
+      attributes: _objectSpread$1({}, FILL, {
         cx: '256',
         cy: '364',
         r: '28'
       }),
       children: [{
         tag: 'animate',
-        attributes: _objectSpread({}, ANIMATION_BASE, {
+        attributes: _objectSpread$1({}, ANIMATION_BASE, {
           attributeName: 'r',
           values: '28;14;28;28;14;28;'
         })
       }, {
         tag: 'animate',
-        attributes: _objectSpread({}, OPACITY_ANIMATE, {
+        attributes: _objectSpread$1({}, OPACITY_ANIMATE, {
           values: '1;0;1;1;0;1;'
         })
       }]
     };
     var QUESTION = {
       tag: 'path',
-      attributes: _objectSpread({}, FILL, {
+      attributes: _objectSpread$1({}, FILL, {
         opacity: '1',
         d: 'M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z'
       }),
       children: [{
         tag: 'animate',
-        attributes: _objectSpread({}, OPACITY_ANIMATE, {
+        attributes: _objectSpread$1({}, OPACITY_ANIMATE, {
           values: '1;0;0;0;0;1;'
         })
       }]
     };
     var EXCLAMATION = {
       tag: 'path',
-      attributes: _objectSpread({}, FILL, {
+      attributes: _objectSpread$1({}, FILL, {
         opacity: '0',
         d: 'M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z'
       }),
       children: [{
         tag: 'animate',
-        attributes: _objectSpread({}, OPACITY_ANIMATE, {
+        attributes: _objectSpread$1({}, OPACITY_ANIMATE, {
           values: '0;0;1;1;0;0;'
         })
       }]
     };
     var styles$2 = namespace.styles;
 
-    var baseStyles = "svg:not(:root).svg-inline--fa {\n  overflow: visible;\n}\n\n.svg-inline--fa {\n  display: inline-block;\n  font-size: inherit;\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.225em;\n}\n.svg-inline--fa.fa-w-1 {\n  width: 0.0625em;\n}\n.svg-inline--fa.fa-w-2 {\n  width: 0.125em;\n}\n.svg-inline--fa.fa-w-3 {\n  width: 0.1875em;\n}\n.svg-inline--fa.fa-w-4 {\n  width: 0.25em;\n}\n.svg-inline--fa.fa-w-5 {\n  width: 0.3125em;\n}\n.svg-inline--fa.fa-w-6 {\n  width: 0.375em;\n}\n.svg-inline--fa.fa-w-7 {\n  width: 0.4375em;\n}\n.svg-inline--fa.fa-w-8 {\n  width: 0.5em;\n}\n.svg-inline--fa.fa-w-9 {\n  width: 0.5625em;\n}\n.svg-inline--fa.fa-w-10 {\n  width: 0.625em;\n}\n.svg-inline--fa.fa-w-11 {\n  width: 0.6875em;\n}\n.svg-inline--fa.fa-w-12 {\n  width: 0.75em;\n}\n.svg-inline--fa.fa-w-13 {\n  width: 0.8125em;\n}\n.svg-inline--fa.fa-w-14 {\n  width: 0.875em;\n}\n.svg-inline--fa.fa-w-15 {\n  width: 0.9375em;\n}\n.svg-inline--fa.fa-w-16 {\n  width: 1em;\n}\n.svg-inline--fa.fa-w-17 {\n  width: 1.0625em;\n}\n.svg-inline--fa.fa-w-18 {\n  width: 1.125em;\n}\n.svg-inline--fa.fa-w-19 {\n  width: 1.1875em;\n}\n.svg-inline--fa.fa-w-20 {\n  width: 1.25em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: 0.3em;\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: 0.3em;\n  width: auto;\n}\n.svg-inline--fa.fa-border {\n  height: 1.5em;\n}\n.svg-inline--fa.fa-li {\n  width: 2em;\n}\n.svg-inline--fa.fa-fw {\n  width: 1.25em;\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: #ff253a;\n  border-radius: 1em;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  color: #fff;\n  height: 1.5em;\n  line-height: 1;\n  max-width: 5em;\n  min-width: 1.5em;\n  overflow: hidden;\n  padding: 0.25em;\n  right: 0;\n  text-overflow: ellipsis;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: 0;\n  right: 0;\n  top: auto;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: 0;\n  left: 0;\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  right: 0;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: 0;\n  right: auto;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-lg {\n  font-size: 1.3333333333em;\n  line-height: 0.75em;\n  vertical-align: -0.0667em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: 2.5em;\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: -2em;\n  position: absolute;\n  text-align: center;\n  width: 2em;\n  line-height: inherit;\n}\n\n.fa-border {\n  border: solid 0.08em #eee;\n  border-radius: 0.1em;\n  padding: 0.2em 0.25em 0.15em;\n}\n\n.fa-pull-left {\n  float: left;\n}\n\n.fa-pull-right {\n  float: right;\n}\n\n.fa.fa-pull-left,\n.fas.fa-pull-left,\n.far.fa-pull-left,\n.fal.fa-pull-left,\n.fab.fa-pull-left {\n  margin-right: 0.3em;\n}\n.fa.fa-pull-right,\n.fas.fa-pull-right,\n.far.fa-pull-right,\n.fal.fa-pull-right,\n.fab.fa-pull-right {\n  margin-left: 0.3em;\n}\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n          animation: fa-spin 2s infinite linear;\n}\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n          animation: fa-spin 1s infinite steps(8);\n}\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-horizontal.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  -webkit-filter: none;\n          filter: none;\n}\n\n.fa-stack {\n  display: inline-block;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: #fff;\n}\n\n.sr-only {\n  border: 0;\n  clip: rect(0, 0, 0, 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  clip: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  position: static;\n  width: auto;\n}";
+    var styles$3 = namespace.styles;
+
+    var baseStyles = "svg:not(:root).svg-inline--fa {\n  overflow: visible;\n}\n\n.svg-inline--fa {\n  display: inline-block;\n  font-size: inherit;\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.225em;\n}\n.svg-inline--fa.fa-w-1 {\n  width: 0.0625em;\n}\n.svg-inline--fa.fa-w-2 {\n  width: 0.125em;\n}\n.svg-inline--fa.fa-w-3 {\n  width: 0.1875em;\n}\n.svg-inline--fa.fa-w-4 {\n  width: 0.25em;\n}\n.svg-inline--fa.fa-w-5 {\n  width: 0.3125em;\n}\n.svg-inline--fa.fa-w-6 {\n  width: 0.375em;\n}\n.svg-inline--fa.fa-w-7 {\n  width: 0.4375em;\n}\n.svg-inline--fa.fa-w-8 {\n  width: 0.5em;\n}\n.svg-inline--fa.fa-w-9 {\n  width: 0.5625em;\n}\n.svg-inline--fa.fa-w-10 {\n  width: 0.625em;\n}\n.svg-inline--fa.fa-w-11 {\n  width: 0.6875em;\n}\n.svg-inline--fa.fa-w-12 {\n  width: 0.75em;\n}\n.svg-inline--fa.fa-w-13 {\n  width: 0.8125em;\n}\n.svg-inline--fa.fa-w-14 {\n  width: 0.875em;\n}\n.svg-inline--fa.fa-w-15 {\n  width: 0.9375em;\n}\n.svg-inline--fa.fa-w-16 {\n  width: 1em;\n}\n.svg-inline--fa.fa-w-17 {\n  width: 1.0625em;\n}\n.svg-inline--fa.fa-w-18 {\n  width: 1.125em;\n}\n.svg-inline--fa.fa-w-19 {\n  width: 1.1875em;\n}\n.svg-inline--fa.fa-w-20 {\n  width: 1.25em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: 0.3em;\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: 0.3em;\n  width: auto;\n}\n.svg-inline--fa.fa-border {\n  height: 1.5em;\n}\n.svg-inline--fa.fa-li {\n  width: 2em;\n}\n.svg-inline--fa.fa-fw {\n  width: 1.25em;\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: #ff253a;\n  border-radius: 1em;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  color: #fff;\n  height: 1.5em;\n  line-height: 1;\n  max-width: 5em;\n  min-width: 1.5em;\n  overflow: hidden;\n  padding: 0.25em;\n  right: 0;\n  text-overflow: ellipsis;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: 0;\n  right: 0;\n  top: auto;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: 0;\n  left: 0;\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  right: 0;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: 0;\n  right: auto;\n  top: 0;\n  -webkit-transform: scale(0.25);\n          transform: scale(0.25);\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-lg {\n  font-size: 1.3333333333em;\n  line-height: 0.75em;\n  vertical-align: -0.0667em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: 2.5em;\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: -2em;\n  position: absolute;\n  text-align: center;\n  width: 2em;\n  line-height: inherit;\n}\n\n.fa-border {\n  border: solid 0.08em #eee;\n  border-radius: 0.1em;\n  padding: 0.2em 0.25em 0.15em;\n}\n\n.fa-pull-left {\n  float: left;\n}\n\n.fa-pull-right {\n  float: right;\n}\n\n.fa.fa-pull-left,\n.fas.fa-pull-left,\n.far.fa-pull-left,\n.fal.fa-pull-left,\n.fab.fa-pull-left {\n  margin-right: 0.3em;\n}\n.fa.fa-pull-right,\n.fas.fa-pull-right,\n.far.fa-pull-right,\n.fal.fa-pull-right,\n.fab.fa-pull-right {\n  margin-left: 0.3em;\n}\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n          animation: fa-spin 2s infinite linear;\n}\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n          animation: fa-spin 1s infinite steps(8);\n}\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical,\n:root .fa-flip-both {\n  -webkit-filter: none;\n          filter: none;\n}\n\n.fa-stack {\n  display: inline-block;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: #fff;\n}\n\n.sr-only {\n  border: 0;\n  clip: rect(0, 0, 0, 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  clip: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  position: static;\n  width: auto;\n}";
 
     function css() {
       var dfp = DEFAULT_FAMILY_PREFIX;
@@ -1922,48 +1982,16 @@
       return s;
     }
 
-    function define(prefix, icons) {
-      var normalized = Object.keys(icons).reduce(function (acc, iconName) {
-        var icon = icons[iconName];
-        var expanded = !!icon.icon;
-
-        if (expanded) {
-          acc[icon.iconName] = icon.icon;
-        } else {
-          acc[iconName] = icon;
-        }
-
-        return acc;
-      }, {});
-
-      if (typeof namespace.hooks.addPack === 'function') {
-        namespace.hooks.addPack(prefix, normalized);
-      } else {
-        namespace.styles[prefix] = _objectSpread({}, namespace.styles[prefix] || {}, normalized);
-      }
-      /**
-       * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
-       * of new styles we needed to differentiate between them. Prefix `fa` is now an alias
-       * for `fas` so we'll easy the upgrade process for our users by automatically defining
-       * this as well.
-       */
-
-
-      if (prefix === 'fas') {
-        define('fa', icons);
-      }
-    }
-
     var Library =
     /*#__PURE__*/
     function () {
       function Library() {
-        _classCallCheck(this, Library);
+        _classCallCheck$1(this, Library);
 
         this.definitions = {};
       }
 
-      _createClass(Library, [{
+      _createClass$1(Library, [{
         key: "add",
         value: function add() {
           var _this = this;
@@ -1974,8 +2002,8 @@
 
           var additions = definitions.reduce(this._pullDefinitions, {});
           Object.keys(additions).forEach(function (key) {
-            _this.definitions[key] = _objectSpread({}, _this.definitions[key] || {}, additions[key]);
-            define(key, additions[key]);
+            _this.definitions[key] = _objectSpread$1({}, _this.definitions[key] || {}, additions[key]);
+            defineIcons(key, additions[key]);
             build();
           });
         }
@@ -2052,10 +2080,10 @@
       return val;
     }
 
-    function findIconDefinition(params) {
-      var _params$prefix = params.prefix,
-          prefix = _params$prefix === void 0 ? 'fa' : _params$prefix,
-          iconName = params.iconName;
+    function findIconDefinition(iconLookup) {
+      var _iconLookup$prefix = iconLookup.prefix,
+          prefix = _iconLookup$prefix === void 0 ? 'fa' : _iconLookup$prefix,
+          iconName = iconLookup.iconName;
       if (!iconName) return;
       return iconFromMapping(library.definitions, prefix, iconName) || iconFromMapping(namespace.styles, prefix, iconName);
     }
@@ -2070,7 +2098,7 @@
           mask = (mask || {}).icon ? mask : findIconDefinition(mask || {});
         }
 
-        return next(iconDefinition, _objectSpread({}, params, {
+        return next(iconDefinition, _objectSpread$1({}, params, {
           mask: mask
         }));
       };
@@ -2104,7 +2132,7 @@
       var prefix = iconDefinition.prefix,
           iconName = iconDefinition.iconName,
           icon = iconDefinition.icon;
-      return apiObject(_objectSpread({
+      return apiObject(_objectSpread$1({
         type: 'icon'
       }, iconDefinition), function () {
         ensureCss();
@@ -2114,6 +2142,7 @@
             attributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(nextUniqueId());
           } else {
             attributes['aria-hidden'] = 'true';
+            attributes['focusable'] = 'false';
           }
         }
 
@@ -2129,7 +2158,7 @@
           },
           prefix: prefix,
           iconName: iconName,
-          transform: _objectSpread({}, meaninglessTransform, transform),
+          transform: _objectSpread$1({}, meaninglessTransform, transform),
           symbol: symbol,
           title: title,
           extra: {
@@ -2140,20 +2169,6 @@
         });
       });
     });
-
-    function _typeof(obj) {
-      if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-        _typeof = function (obj) {
-          return typeof obj;
-        };
-      } else {
-        _typeof = function (obj) {
-          return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-        };
-      }
-
-      return _typeof(obj);
-    }
 
     var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -2298,7 +2313,7 @@
       })(commonjsGlobal);
     });
 
-    var _typeof$1 = typeof Symbol === "function" && _typeof(Symbol.iterator) === "symbol" ? function (obj) {
+    var _typeof$2 = typeof Symbol === "function" && _typeof(Symbol.iterator) === "symbol" ? function (obj) {
       return _typeof(obj);
     } : function (obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof(obj);
@@ -2471,7 +2486,7 @@
         return null;
       }
 
-      if ((typeof icon$$1 === 'undefined' ? 'undefined' : _typeof$1(icon$$1)) === 'object' && icon$$1.prefix && icon$$1.iconName) {
+      if ((typeof icon$$1 === 'undefined' ? 'undefined' : _typeof$2(icon$$1)) === 'object' && icon$$1.prefix && icon$$1.iconName) {
         return icon$$1;
       }
 

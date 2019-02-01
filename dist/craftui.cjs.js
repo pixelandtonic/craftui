@@ -25,21 +25,21 @@ var script = {
   }
 };
 
-function normalizeComponent(compiledTemplate, injectStyle, defaultExport, scopeId, isFunctionalTemplate, moduleIdentifier
+function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
 /* server only */
-, isShadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
-  if (typeof isShadowMode === 'function') {
+, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
+  if (typeof shadowMode !== 'boolean') {
     createInjectorSSR = createInjector;
-    createInjector = isShadowMode;
-    isShadowMode = false;
-  } // Vue.extend constructor export interop
+    createInjector = shadowMode;
+    shadowMode = false;
+  } // Vue.extend constructor export interop.
 
 
-  var options = typeof defaultExport === 'function' ? defaultExport.options : defaultExport; // render functions
+  var options = typeof script === 'function' ? script.options : script; // render functions
 
-  if (compiledTemplate && compiledTemplate.render) {
-    options.render = compiledTemplate.render;
-    options.staticRenderFns = compiledTemplate.staticRenderFns;
+  if (template && template.render) {
+    options.render = template.render;
+    options.staticRenderFns = template.staticRenderFns;
     options._compiled = true; // functional template
 
     if (isFunctionalTemplate) {
@@ -68,8 +68,8 @@ function normalizeComponent(compiledTemplate, injectStyle, defaultExport, scopeI
       } // inject component styles
 
 
-      if (injectStyle) {
-        injectStyle.call(this, createInjectorSSR(context));
+      if (style) {
+        style.call(this, createInjectorSSR(context));
       } // register component module identifier for async chunk inference
 
 
@@ -81,11 +81,11 @@ function normalizeComponent(compiledTemplate, injectStyle, defaultExport, scopeI
 
 
     options._ssrRegister = hook;
-  } else if (injectStyle) {
-    hook = isShadowMode ? function () {
-      injectStyle.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
+  } else if (style) {
+    hook = shadowMode ? function () {
+      style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
     } : function (context) {
-      injectStyle.call(this, createInjector(context));
+      style.call(this, createInjector(context));
     };
   }
 
@@ -105,8 +105,10 @@ function normalizeComponent(compiledTemplate, injectStyle, defaultExport, scopeI
     }
   }
 
-  return defaultExport;
+  return script;
 }
+
+var normalizeComponent_1 = normalizeComponent;
 
 /* script */
 const __vue_script__ = script;
@@ -130,7 +132,7 @@ var __vue_staticRenderFns__ = [];
   
 
   
-  var Btn = normalizeComponent(
+  var Btn = normalizeComponent_1(
     { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
     __vue_inject_styles__,
     __vue_script__,
@@ -170,7 +172,7 @@ var __vue_staticRenderFns__$1 = [];
   
 
   
-  var BtnInput = normalizeComponent(
+  var BtnInput = normalizeComponent_1(
     { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
     __vue_inject_styles__$1,
     __vue_script__$1,
@@ -215,7 +217,7 @@ var __vue_staticRenderFns__$2 = [];
   
 
   
-  var Field = normalizeComponent(
+  var Field = normalizeComponent_1(
     { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
     __vue_inject_styles__$2,
     __vue_script__$2,
@@ -257,7 +259,7 @@ var __vue_staticRenderFns__$3 = [];
   
 
   
-  var Icon = normalizeComponent(
+  var Icon = normalizeComponent_1(
     { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
     __vue_inject_styles__$3,
     __vue_script__$3,
@@ -309,7 +311,7 @@ var __vue_staticRenderFns__$4 = [];
   
 
   
-  var CheckboxField = normalizeComponent(
+  var CheckboxField = normalizeComponent_1(
     { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
     __vue_inject_styles__$4,
     __vue_script__$4,
@@ -378,7 +380,7 @@ var __vue_staticRenderFns__$5 = [];
   
 
   
-  var CheckboxSet = normalizeComponent(
+  var CheckboxSet = normalizeComponent_1(
     { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
     __vue_inject_styles__$5,
     __vue_script__$5,
@@ -425,7 +427,7 @@ var __vue_staticRenderFns__$6 = [];
   
 
   
-  var LightswitchInput = normalizeComponent(
+  var LightswitchInput = normalizeComponent_1(
     { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
     __vue_inject_styles__$6,
     __vue_script__$6,
@@ -468,7 +470,7 @@ var __vue_staticRenderFns__$7 = [];
   
 
   
-  var LightswitchField = normalizeComponent(
+  var LightswitchField = normalizeComponent_1(
     { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
     __vue_inject_styles__$7,
     __vue_script__$7,
@@ -525,7 +527,7 @@ var __vue_staticRenderFns__$8 = [];
   
 
   
-  var PasswordInput = normalizeComponent(
+  var PasswordInput = normalizeComponent_1(
     { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
     __vue_inject_styles__$8,
     __vue_script__$8,
@@ -573,7 +575,7 @@ var __vue_staticRenderFns__$9 = [];
   
 
   
-  var PasswordField = normalizeComponent(
+  var PasswordField = normalizeComponent_1(
     { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
     __vue_inject_styles__$9,
     __vue_script__$9,
@@ -622,7 +624,7 @@ var __vue_staticRenderFns__$a = [];
   
 
   
-  var SelectInput = normalizeComponent(
+  var SelectInput = normalizeComponent_1(
     { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
     __vue_inject_styles__$a,
     __vue_script__$a,
@@ -665,7 +667,7 @@ var __vue_staticRenderFns__$b = [];
   
 
   
-  var SelectField = normalizeComponent(
+  var SelectField = normalizeComponent_1(
     { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
     __vue_inject_styles__$b,
     __vue_script__$b,
@@ -719,7 +721,7 @@ var __vue_staticRenderFns__$c = [];
   
 
   
-  var TextareaInput = normalizeComponent(
+  var TextareaInput = normalizeComponent_1(
     { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
     __vue_inject_styles__$c,
     __vue_script__$c,
@@ -776,7 +778,7 @@ var __vue_staticRenderFns__$d = [];
   
 
   
-  var TextareaField = normalizeComponent(
+  var TextareaField = normalizeComponent_1(
     { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
     __vue_inject_styles__$d,
     __vue_script__$d,
@@ -847,7 +849,7 @@ var __vue_staticRenderFns__$e = [];
   
 
   
-  var TextInput = normalizeComponent(
+  var TextInput = normalizeComponent_1(
     { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
     __vue_inject_styles__$e,
     __vue_script__$e,
@@ -909,7 +911,7 @@ var __vue_staticRenderFns__$f = [];
   
 
   
-  var TextField = normalizeComponent(
+  var TextField = normalizeComponent_1(
     { render: __vue_render__$f, staticRenderFns: __vue_staticRenderFns__$f },
     __vue_inject_styles__$f,
     __vue_script__$f,
@@ -966,7 +968,7 @@ var __vue_staticRenderFns__$g = [];
   
 
   
-  var UrlInput = normalizeComponent(
+  var UrlInput = normalizeComponent_1(
     { render: __vue_render__$g, staticRenderFns: __vue_staticRenderFns__$g },
     __vue_inject_styles__$g,
     __vue_script__$g,
@@ -1014,7 +1016,7 @@ var __vue_staticRenderFns__$h = [];
   
 
   
-  var UrlField = normalizeComponent(
+  var UrlField = normalizeComponent_1(
     { render: __vue_render__$h, staticRenderFns: __vue_staticRenderFns__$h },
     __vue_inject_styles__$h,
     __vue_script__$h,
@@ -1080,7 +1082,7 @@ var __vue_staticRenderFns__$i = [];
   
 
   
-  var NumberInput = normalizeComponent(
+  var NumberInput = normalizeComponent_1(
     { render: __vue_render__$i, staticRenderFns: __vue_staticRenderFns__$i },
     __vue_inject_styles__$i,
     __vue_script__$i,
