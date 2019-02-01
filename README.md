@@ -1,7 +1,7 @@
 # Craft UI
 
 ## Introduction
-This is a collection of components and styles meant to be used across Craft apps and websites.
+This is a collection of components and styles meant to be used across Craft apps.
 
 ## Development
 
