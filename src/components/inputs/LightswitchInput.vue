@@ -15,3 +15,63 @@
     }
 
 </script>
+
+<style lang="scss" scoped>
+    .lightswitch {
+        @apply .relative .block .select-none;
+        width: 46px;
+        height: 30px;
+
+        input {
+            @apply .absolute .opacity-0;
+        }
+
+        .slider {
+            @apply .absolute .pin .cursor-pointer;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            @apply .absolute .bg-white;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 2px;
+            bottom: 2px;
+            -webkit-transition: .1s;
+            transition: .1s;
+        }
+
+        input:checked + .slider {
+            background-color: #38c172;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #38c172;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(16px);
+            -ms-transform: translateX(16px);
+            transform: translateX(16px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        &.disabled {
+            opacity: .4;
+
+            .slider {
+                @apply .cursor-default;
+            }
+        }
+    }
+</style>

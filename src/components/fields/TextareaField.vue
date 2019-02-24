@@ -4,15 +4,7 @@
             <p>{{ instructions }}</p>
         </div>
 
-        <div class="relative" :class="{'mt-4': max}">
-            <div v-if="max"
-                 class="text-xs text-right pr-1 absolute" style="right: 0; top: -1rem;"
-                 :class="{
-                    'text-grey': remainingChars >= 10,
-                    'text-orange': remainingChars < 10 && remainingChars >= 0,
-                    'text-red': remainingChars < 0
-                }">{{ remainingChars }}</div>
-
+        <div class="wrapper">
             <textarea-input
                     :autocapitalize="autocapitalize"
                     :class="{
@@ -27,6 +19,14 @@
                     :spellcheck="spellcheck"
                     :value="value"
                     @input="$emit('input', $event)"/>
+
+            <p v-if="max"
+               class="max"
+               :class="{
+                    'text-grey': remainingChars >= 20,
+                    'text-orange': remainingChars < 20 && remainingChars >= 0,
+                    'text-red': remainingChars < 0
+                }">{{ remainingChars }} character{{ remainingChars > 1 || remainingChars < 1 ? 's' : ''}} left.</p>
         </div>
 
         <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">{{ error }}</div>
@@ -56,3 +56,34 @@
 
     }
 </script>
+
+<style lang="scss" scoped>
+    .wrapper {
+        @apply .relative;
+
+        .text-red-dark {
+            @apply .text-red-dark;
+        }
+
+        .max {
+            @apply .pr-1 .mt-2;
+
+            &.floating {
+                @apply .absolute .text-xs .text-right;
+            }
+
+            &.text-grey {
+                @apply .text-grey;
+            }
+
+            &.text-orange {
+                @apply .text-orange;
+            }
+
+            &.text-red {
+                @apply .text-red;
+            }
+
+        }
+    }
+</style>

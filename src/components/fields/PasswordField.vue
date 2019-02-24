@@ -4,7 +4,6 @@
                 ref="input"
                 :id="id"
                 :name="name"
-                class="bg-white border px-2 py-1"
                 :class="{'is-invalid': errors }"
                 :placeholder="placeholder" :value="value"
                 @input="$emit('input', $event)"

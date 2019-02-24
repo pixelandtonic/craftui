@@ -7,10 +7,10 @@
                 <p>{{ instructions }}</p>
             </div>
 
-            <ul class="list-reset pl-4 pt-2">
+            <ul>
                 <li v-for="(option, index) in this.options" :key="index">
                     <label>
-                        <input type="checkbox" class="mr-2" v-model="localValue" :value="option.value" @change="$emit('input', localValue)">
+                        <input type="checkbox" v-model="localValue" :value="option.value" @change="$emit('input', localValue)">
                         {{ option.label }}
                     </label>
                 </li>
@@ -37,3 +37,13 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+    ul {
+        @apply .list-reset .pl-4 .pt-2;
+
+        input {
+            @apply .mr-2;
+        }
+    }
+</style>

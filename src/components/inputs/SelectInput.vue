@@ -16,3 +16,11 @@
 
     }
 </script>
+
+<style lang="scss" scoped>
+    select {
+        &.w-full {
+            @apply .w-full;
+        }
+    }
+</style>
