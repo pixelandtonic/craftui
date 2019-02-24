@@ -1,9 +1,23 @@
 <template>
-    <button :class="cssClass"
+    <button class="c-btn" :class="[{
+                [type]: true,
+                large,
+                block,
+                outline,
+                loading,
+            }]"
             :disabled="disabled"
-            @click="$emit('click')">
-        <icon v-if="icon" :icon="icon" />
-        <slot></slot>
+            @click="$emit('click')"
+    >
+        <icon v-if="icon" :icon="icon"/>
+
+        <template v-if="loading">
+            <loading-indicator></loading-indicator>
+        </template>
+
+        <div class="c-btn-content">
+            <slot></slot>
+        </div>
     </button>
 </template>
 
@@ -11,16 +25,35 @@
     export default {
         name: 'Btn',
 
-        props: ['type', 'large', 'block', 'disabled', 'outline', 'icon'],
-
-        computed: {
-            cssClass() {
-                return 'c-btn '
-                    + (this.type ? this.type : 'default')
-                    + (typeof this.large !== 'undefined' ? ' large' : '')
-                    + (typeof this.block !== 'undefined' ? ' block' : '')
-                    + (typeof this.outline !== 'undefined' ? ' outline' : '');
-            }
+        props: {
+            type: {
+                type: String,
+                default: null,
+            },
+            large: {
+                type: Boolean,
+                default: false,
+            },
+            block: {
+                type: Boolean,
+                default: false,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
+            outline: {
+                type: Boolean,
+                default: false,
+            },
+            icon: {
+                type: String,
+                default: null,
+            },
+            loading: {
+                type: Boolean,
+                default: false,
+            },
         },
     }
 </script>
@@ -93,8 +126,41 @@
             }
         }
 
+        &.loading {
+            @apply .relative;
+
+            &.primary,
+            &.warning,
+            &.success,
+            &.danger,
+            &.info {
+                .loading-indicator {
+                    & > .animation {
+                        border-right-color: #fff;
+                        border-bottom-color: #fff;
+                    }
+                }
+            }
+
+            .loading-indicator {
+                @apply .absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -12px;
+                margin-left: -12px;
+            }
+
+            .c-btn-content {
+                @apply .invisible;
+            }
+        }
+
         svg {
             @apply .mr-2;
+        }
+
+        .c-btn-content {
+            @apply .inline-block;
         }
     }
 </style>

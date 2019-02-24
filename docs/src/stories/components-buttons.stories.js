@@ -40,6 +40,10 @@ storiesOf('Components|Buttons/States', module)
         template: '<btn type="primary" @click="action" disabled>Disabled</btn>',
         methods: { action: action('clicked') }
     }))
+    .add('Loading', () => ({
+        template: '<btn type="primary" @click="action" loading>Button</btn>',
+        methods: { action: action('clicked') }
+    }))
 
 storiesOf('Components|Buttons/Size', module)
     .add('Large', () => ({
