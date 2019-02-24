@@ -1,5 +1,9 @@
 <template>
     <field :id="id" :label="label">
+        <div v-if="instructions" class="instructions">
+            <p>{{ instructions }}</p>
+        </div>
+
         <password-input
                 ref="input"
                 :id="id"
@@ -21,7 +25,7 @@
     import PasswordInput from '../inputs/PasswordInput.vue';
 
     export default {
-        props: ['label', 'id', 'name', 'placeholder', 'value', 'autofocus', 'errors', 'size'],
+        props: ['label', 'id', 'name', 'placeholder', 'value', 'autofocus', 'errors', 'size', 'instructions'],
 
         components: {
             Field,
