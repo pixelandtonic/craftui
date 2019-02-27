@@ -83,24 +83,56 @@
             @apply .text-lg .py-3;
         }
 
+        &.primary,
+        &.warning,
+        &.success,
+        &.danger,
+        &.info {
+            &:not(.outline) {
+                .c-icon {
+                    fill: #fff;
+                }
+            }
+        }
+
         &.primary {
             @apply .bg-blue .text-white;
+
+            .c-icon {
+                fill: #3490dc;
+            }
         }
 
         &.warning {
             @apply .bg-orange .text-white;
+
+            .c-icon {
+                fill: #f6993f;
+            }
         }
 
         &.success {
             @apply .bg-green .text-white;
+
+            .c-icon {
+                fill: #38c172;
+            }
         }
 
         &.danger {
             @apply .bg-red .text-white;
+
+            .c-icon {
+                fill: #e3342f;
+            }
         }
 
         &.info {
             @apply .bg-teal .text-white;
+
+            .c-icon {
+                fill: #4dc0b5;
+            }
         }
 
         &[disabled] {
@@ -161,7 +193,7 @@
         }
 
         svg {
-            @apply .mr-2;
+            @apply .mr-1;
         }
 
         .c-btn-content {
