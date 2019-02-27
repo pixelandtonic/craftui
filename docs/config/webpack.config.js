@@ -1,14 +1,13 @@
-const path = require('path');
+const path = require("path");
 
-module.exports = {
-    module: {
-        rules: [
-            {
-                test: [/\.stories\.js$/, /index\.js$/],
-                loaders: [require.resolve('@storybook/addon-storysource/loader')],
-                include: [path.resolve(__dirname, '../src')],
-                enforce: 'pre',
-            },
-        ],
-    },
+module.exports = (baseConfig, env, defaultConfig) => {
+    // Add support for .scss files.
+    defaultConfig.module.rules.push({
+        test: /\.(scss)$/,
+        include: path.resolve(__dirname, "../src/sass/"),
+        loaders: [require.resolve("style-loader"), require.resolve("css-loader"), require.resolve("sass-loader")],
+    });
+    defaultConfig.resolve.extensions.push(".scss");
+
+    return defaultConfig;
 };

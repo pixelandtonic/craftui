@@ -6,7 +6,8 @@
   "module": "dist/craftui.es.js",
   "scripts": {
     "build": "bili --config bili.config.js",
-    "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service storybook:serve -p 6006 -c docs/config",
+    "watch": "bili --config bili.config.js --watch",
+    "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js start-storybook -p 6006 -c docs/config",
     "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service storybook:build -c docs/config -o docs/dist"
   },
   "dependencies": {
@@ -18,9 +19,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "inputmask": "^4.0.0",
-    "rollup-plugin-babel": "^4.3.0",
-    "rollup-plugin-vue": "^4.6.1",
-    "vue": "^2.5.17"
+    "vue": "^2.6.7"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
@@ -28,15 +27,18 @@
     "@storybook/addon-options": "^4.1.11",
     "@storybook/addon-storysource": "^4.1.11",
     "@storybook/addon-viewport": "^4.1.11",
+    "@storybook/vue": "^4.1.13",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "babel-preset-vue": "^2.0.2",
     "bili": "^3.4.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.3",
-    "vue-cli-plugin-storybook": "^0.5.0",
-    "vue-template-compiler": "^2.5.22"
+    "vue-template-compiler": "^2.6.7",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-vue": "^4.7.2"
   },
   "eslintConfig": {
     "root": true,
