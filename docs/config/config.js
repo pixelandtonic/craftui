@@ -2,11 +2,10 @@
 import Vue from 'vue'
 import CraftUi from '../../dist/craftui.es'
 Vue.use(CraftUi)
-
+import '../../dist/craftui.css'
 
 // Styles
-import '../../dist/craftui.css';
-import '../src/sass/styles.scss';
+import '../src/sass/styles.scss'
 
 
 // Stories
@@ -21,7 +20,7 @@ setOptions({
   showStoriesPanel: true,
   hierarchySeparator: /\/|\./, // matches a . or /
   hierarchyRootSeparator: /\|/, //matches a |
-});
+})
 
 
 function loadStories() {
