@@ -26,12 +26,28 @@ storiesOf('Components|Buttons/Examples', module)
     }))
 
 storiesOf('Components|Buttons/Icon', module)
-    .add('Regular', () => ({
-        template: '<btn type="primary" @click="action" icon="check">Icon Button</btn>',
-        methods: { action: action('clicked') }
-    }))
+    .add('Regular', () =>
+        ({
+            template:
+                '<div>' +
+                '<btn @click="action" icon="plus">Default</btn> ' +
+                '<btn type="primary" @click="action" icon="plus">Primary</btn> ' +
+                '<btn type="warning" @click="action" icon="plus">Warning</btn> ' +
+                '<btn type="danger" @click="action" icon="plus">Danger</btn> ' +
+                '<btn type="info" @click="action" icon="plus">Info</btn>' +
+                '</div>',
+            methods: { action: action('clicked') }
+        })
+    )
     .add('Outline', () => ({
-        template: '<btn type="primary" @click="action" icon="check" outline>Icon Button</btn>',
+        template:
+            '<div>' +
+            '<btn @click="action" icon="plus" outline>Default</btn> ' +
+            '<btn type="primary" @click="action" icon="plus" outline>Primary</btn> ' +
+            '<btn type="warning" @click="action" icon="plus" outline>Warning</btn> ' +
+            '<btn type="danger" @click="action" icon="plus" outline>Danger</btn> ' +
+            '<btn type="info" @click="action" icon="plus" outline>Info</btn>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
 
