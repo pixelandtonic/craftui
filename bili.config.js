@@ -14,5 +14,8 @@ module.exports = {
         require("rollup-plugin-vue")({
             css: false,
         }),
+        require("rollup-plugin-string").string({
+            include: '**/*.svg'
+        })
     ],
 };
