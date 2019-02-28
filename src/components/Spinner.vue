@@ -1,11 +1,11 @@
 <template>
-    <div class="spinner">
+    <div class="c-spinner">
         <div class="animation"></div>
     </div>
 </template>
 
 <style lang="scss">
-    .spinner {
+    .c-spinner {
         @apply .inline-block;
 
         & > .animation {
