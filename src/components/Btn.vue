@@ -1,6 +1,5 @@
 <template>
-    <component :is="component" class="c-btn" :to="to" :class="[{
-                [type]: true,
+    <component :is="component" class="c-btn" :to="to" :type="type" :class="[{
                 large,
                 block,
                 outline,
@@ -28,7 +27,7 @@
         props: {
             type: {
                 type: String,
-                default: null,
+                default: 'button',
             },
             large: {
                 type: Boolean,
