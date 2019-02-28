@@ -1,11 +1,13 @@
 <template>
-    <div class="loading-indicator">
+    <div class="spinner">
         <div class="animation"></div>
     </div>
 </template>
 
 <style lang="scss">
-    .loading-indicator {
+    .spinner {
+        @apply .inline-block;
+
         & > .animation {
             animation: rotator .7s linear infinite;
             width: 22px;
