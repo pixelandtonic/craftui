@@ -102,8 +102,13 @@
             @apply .w-full;
         }
 
-        &.large {
-            @apply .text-lg .py-3;
+        &.small {
+            @apply .text-sm;
+
+            .c-icon {
+                width: 12px;
+                height: 12px;
+            }
         }
 
         &.large {
