@@ -68,7 +68,11 @@
         }
 
         &:hover {
-            @apply .cursor-pointer;
+            @apply .cursor-pointer .bg-grey;
+        }
+
+        &:active {
+            @apply .cursor-pointer .bg-grey-dark;
         }
 
         &.block {
@@ -98,6 +102,14 @@
         &.primary {
             @apply .bg-blue .text-white;
 
+            &:hover {
+                @apply .bg-blue-dark;
+            }
+
+            &:active {
+                @apply .bg-blue-darker;
+            }
+
             .c-icon {
                 fill: #3490dc;
             }
@@ -105,6 +117,14 @@
 
         &.warning {
             @apply .bg-orange .text-white;
+
+            &:hover {
+                @apply .bg-orange-dark;
+            }
+
+            &:active {
+                @apply .bg-orange-darker;
+            }
 
             .c-icon {
                 fill: #f6993f;
@@ -114,6 +134,14 @@
         &.success {
             @apply .bg-green .text-white;
 
+            &:hover {
+                @apply .bg-green-dark;
+            }
+
+            &:active {
+                @apply .bg-green-darker;
+            }
+
             .c-icon {
                 fill: #38c172;
             }
@@ -122,6 +150,14 @@
         &.danger {
             @apply .bg-red .text-white;
 
+            &:hover {
+                @apply .bg-red-dark;
+            }
+
+            &:active {
+                @apply .bg-red-darker;
+            }
+
             .c-icon {
                 fill: #e3342f;
             }
@@ -129,6 +165,14 @@
 
         &.info {
             @apply .bg-teal .text-white;
+
+            &:hover {
+                @apply .bg-teal-dark;
+            }
+
+            &:active {
+                @apply .bg-teal-darker;
+            }
 
             .c-icon {
                 fill: #4dc0b5;
