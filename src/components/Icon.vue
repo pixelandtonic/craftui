@@ -16,8 +16,6 @@
         width: 18px;
         height: 18px;
 
-        color: green;
-
         &.sm {
             width: 12px;
             height: 12px;
