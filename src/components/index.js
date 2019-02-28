@@ -1,7 +1,7 @@
 import Btn from './Btn.vue';
 import Field from './Field.vue';
 import Icon from './Icon.vue';
-import LoadingIndicator from './LoadingIndicator.vue';
+import Spinner from './Spinner.vue';
 
 import CheckboxField from './fields/CheckboxField.vue';
 import CheckboxSet from './fields/CheckboxSet.vue';
@@ -24,7 +24,7 @@ const CraftComponents = {
   Btn,
   Field,
   Icon,
-  LoadingIndicator,
+  Spinner,
 
   CheckboxField,
   CheckboxSet,

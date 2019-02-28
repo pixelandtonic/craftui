@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/vue'
 
 storiesOf('Components|Spinners', module)
     .add('base', () => ({
-        template: '<loading-indicator></loading-indicator>',
+        template: '<spinner></spinner>',
     }))
     .add('lg', () => ({
-        template: '<loading-indicator class="lg"></loading-indicator>',
+        template: '<spinner class="lg"></spinner>',
     }))

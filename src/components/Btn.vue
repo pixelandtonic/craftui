@@ -9,7 +9,7 @@
             @click="$emit('click')"
     >
         <template v-if="loading">
-            <loading-indicator></loading-indicator>
+            <spinner></spinner>
         </template>
 
         <div class="c-btn-content">
