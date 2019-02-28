@@ -72,8 +72,10 @@
 </script>
 
 <style lang="scss">
-    .c-btn {
-        @apply .px-4 .py-2 .rounded .bg-grey-lighter;
+    .c-btn,
+    a.c-btn,
+    button.c-btn {
+        @apply .px-4 .py-2 .rounded .bg-grey-lighter .text-black .no-underline;
 
         &:not(.outline) {
             -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
@@ -81,7 +83,7 @@
         }
 
         &:hover {
-            @apply .cursor-pointer .bg-grey;
+            @apply .cursor-pointer .bg-grey .no-underline;
         }
 
         &:active {
@@ -122,10 +124,6 @@
             &:active {
                 @apply .bg-blue-darker;
             }
-
-            .c-icon {
-                fill: #3490dc;
-            }
         }
 
         &.warning {
@@ -137,10 +135,6 @@
 
             &:active {
                 @apply .bg-orange-darker;
-            }
-
-            .c-icon {
-                fill: #f6993f;
             }
         }
 
@@ -154,10 +148,6 @@
             &:active {
                 @apply .bg-green-darker;
             }
-
-            .c-icon {
-                fill: #38c172;
-            }
         }
 
         &.danger {
@@ -170,10 +160,6 @@
             &:active {
                 @apply .bg-red-darker;
             }
-
-            .c-icon {
-                fill: #e3342f;
-            }
         }
 
         &.info {
@@ -185,10 +171,6 @@
 
             &:active {
                 @apply .bg-teal-darker;
-            }
-
-            .c-icon {
-                fill: #4dc0b5;
             }
         }
 
@@ -217,6 +199,10 @@
 
             &.info {
                 @apply .border-teal .text-teal;
+            }
+
+            .c-icon {
+                @apply .fill-current;
             }
         }
 
@@ -249,8 +235,9 @@
             }
         }
 
-        svg {
-            @apply .mr-1;
+        .c-icon {
+            @apply .mr-1 .align-middle;
+
         }
 
         .c-btn-content {
