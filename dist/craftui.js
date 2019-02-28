@@ -39,13 +39,12 @@
   //
   //
   //
-  //
   var script = {
     name: 'Btn',
     props: {
       type: {
         type: String,
-        default: null
+        default: 'button'
       },
       large: {
         type: Boolean,
@@ -70,6 +69,19 @@
       loading: {
         type: Boolean,
         default: false
+      },
+      to: {
+        type: String,
+        default: null
+      }
+    },
+    computed: {
+      component: function component() {
+        if (this.to !== null) {
+          return 'router-link';
+        }
+
+        return 'button';
       }
     }
   };
@@ -162,9 +174,12 @@
   /* script */
   const __vue_script__ = script;
   /* template */
-  var __vue_render__ = function () {
-  var _obj;
-  var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"c-btn",class:[( _obj = {}, _obj[_vm.type] = true, _obj.large = _vm.large, _obj.block = _vm.block, _obj.outline = _vm.outline, _obj.loading = _vm.loading, _obj )],attrs:{"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),(_vm.loading)?[_c('loading-indicator')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[_vm._t("default")],2)],2)};
+  var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.component,{tag:"component",staticClass:"c-btn",class:[{
+              large: _vm.large,
+              block: _vm.block,
+              outline: _vm.outline,
+              loading: _vm.loading,
+          }],attrs:{"to":_vm.to,"type":_vm.type,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('loading-indicator')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
   var __vue_staticRenderFns__ = [];
 
     /* style */
