@@ -1,5 +1,5 @@
 <template>
-    <component :is="component" class="c-btn" :to="to" :type="type" :class="[{
+    <component :is="component" class="c-btn" :to="to" :type="computedType" :class="[{
                 large,
                 block,
                 outline,
@@ -66,6 +66,14 @@
                 }
 
                 return 'button'
+            },
+
+            computedType() {
+                if (this.to !== null) {
+                    return null
+                }
+
+                return this.type
             }
         }
     }
