@@ -401,7 +401,13 @@ var __vue_staticRenderFns__$5 = [];
 //
 //
 var script$6 = {
-  props: ['id', 'checked', 'disabled']
+  props: ['id', 'checked', 'disabled'],
+  methods: {
+    onChange: function onChange($event) {
+      this.$emit('update:checked', $event.target.checked);
+      this.$emit('change', $event.target.checked);
+    }
+  }
 };
 
 /* script */
@@ -410,7 +416,7 @@ const __vue_script__$6 = script$6;
 script$6.__file = "LightswitchInput.vue";
 
 /* template */
-var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){_vm.$emit('update:checked', $event.target.checked);},"change":function($event){_vm.$emit('change', $event);}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])};
+var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"change":_vm.onChange}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])};
 var __vue_staticRenderFns__$6 = [];
 
   /* style */
