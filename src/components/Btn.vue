@@ -1,5 +1,5 @@
 <template>
-    <button class="c-btn" :class="[{
+    <component :is="component" class="c-btn" :to="to" :class="[{
                 [type]: true,
                 large,
                 block,
@@ -18,7 +18,7 @@
         <div class="c-btn-content">
             <slot></slot>
         </div>
-    </button>
+    </component>
 </template>
 
 <script>
@@ -54,7 +54,21 @@
                 type: Boolean,
                 default: false,
             },
+            to: {
+                type: String,
+                default: null,
+            }
         },
+
+        computed: {
+            component() {
+                if (this.to !== null) {
+                    return 'router-link'
+                }
+
+                return 'button'
+            }
+        }
     }
 </script>
 
