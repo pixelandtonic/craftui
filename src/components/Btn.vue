@@ -8,13 +8,13 @@
             :disabled="disabled"
             @click="$emit('click')"
     >
-        <icon v-if="icon" :icon="icon"/>
-
         <template v-if="loading">
             <loading-indicator></loading-indicator>
         </template>
 
         <div class="c-btn-content">
+            <icon v-if="icon" :icon="icon"/>
+
             <slot></slot>
         </div>
     </component>
