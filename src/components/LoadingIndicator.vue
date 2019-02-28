@@ -15,6 +15,14 @@
             border-right-color: #555;
             border-bottom-color: #555;
         }
+
+        &.lg {
+            & > .animation {
+                width: 32px;
+                height: 32px;
+                border-width: 3px;
+            }
+        }
     }
 
     @keyframes rotator {
