@@ -12,7 +12,8 @@
 
 <style lang="scss">
     .c-icon {
-        @apply .inline-block .align-bottom;
+        @apply .inline-block .align-middle .relative .fill-current;
+        top: -2px;
         width: 18px;
         height: 18px;
 
