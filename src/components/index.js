@@ -1,5 +1,4 @@
 import Btn from './Btn.vue';
-import BtnInput from './BtnInput.vue';
 import Field from './Field.vue';
 import Icon from './Icon.vue';
 import LoadingIndicator from './LoadingIndicator.vue';
@@ -23,7 +22,6 @@ import UrlInput from './inputs/UrlInput.vue';
 
 const CraftComponents = {
   Btn,
-  BtnInput,
   Field,
   Icon,
   LoadingIndicator,
