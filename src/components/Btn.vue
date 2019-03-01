@@ -208,22 +208,62 @@
 
             &.primary {
                 @apply .text-blue;
+
+                &:hover {
+                    @apply .text-white .bg-blue;
+                }
+
+                &:active {
+                    @apply .text-white .bg-blue-darker;
+                }
             }
 
             &.warning {
                 @apply .text-orange;
+
+                &:hover {
+                    @apply .text-white .bg-orange;
+                }
+
+                &:active {
+                    @apply .text-white .bg-orange-darker;
+                }
             }
 
             &.success {
                 @apply .text-green;
+
+                &:hover {
+                    @apply .text-white .bg-green;
+                }
+
+                &:active {
+                    @apply .text-white .bg-green-darker;
+                }
             }
 
             &.danger {
                 @apply .text-red;
+
+                &:hover {
+                    @apply .text-white .bg-red;
+                }
+
+                &:active {
+                    @apply .text-white .bg-red-darker;
+                }
             }
 
             &.info {
                 @apply .text-teal;
+
+                &:hover {
+                    @apply .text-white .bg-teal;
+                }
+
+                &:active {
+                    @apply .text-white .bg-teal-darker;
+                }
             }
 
             .c-icon {
