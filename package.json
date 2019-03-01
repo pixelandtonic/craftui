@@ -11,9 +11,6 @@
     "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service storybook:build -c docs/config -o docs/dist"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.4",
-    "@fortawesome/free-solid-svg-icons": "^5.3.1",
-    "@fortawesome/vue-fontawesome": "^0.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
