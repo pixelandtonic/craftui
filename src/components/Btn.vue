@@ -83,7 +83,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .px-4 .py-2 .rounded .bg-grey-lighter .text-black .no-underline;
+        @apply .px-4 .py-2 .rounded .bg-grey-lighter .text-black .no-underline .border .border-solid;
 
         &:not(.outline) {
             -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
@@ -128,62 +128,62 @@
         }
 
         &.primary {
-            @apply .bg-blue .text-white;
+            @apply .bg-blue .border-blue .text-white;
 
             &:hover {
-                @apply .bg-blue-dark;
+                @apply .bg-blue-dark .border-blue-dark;
             }
 
             &:active {
-                @apply .bg-blue-darker;
+                @apply .bg-blue-darker .border-blue-darker;
             }
         }
 
         &.warning {
-            @apply .bg-orange .text-white;
+            @apply .bg-orange .border-orange .text-white;
 
             &:hover {
-                @apply .bg-orange-dark;
+                @apply .bg-orange-dark .border-orange-dark;
             }
 
             &:active {
-                @apply .bg-orange-darker;
+                @apply .bg-orange-darker .border-orange-darker;
             }
         }
 
         &.success {
-            @apply .bg-green .text-white;
+            @apply .bg-green .border-green .text-white;
 
             &:hover {
-                @apply .bg-green-dark;
+                @apply .bg-green-dark .border-green-dark;
             }
 
             &:active {
-                @apply .bg-green-darker;
+                @apply .bg-green-darker .border-green-darker;
             }
         }
 
         &.danger {
-            @apply .bg-red .text-white;
+            @apply .bg-red .border-red .text-white;
 
             &:hover {
-                @apply .bg-red-dark;
+                @apply .bg-red-dark .border-red-dark;
             }
 
             &:active {
-                @apply .bg-red-darker;
+                @apply .bg-red-darker .border-red-darker;
             }
         }
 
         &.info {
-            @apply .bg-teal .text-white;
+            @apply .bg-teal .border-teal .text-white;
 
             &:hover {
-                @apply .bg-teal-dark;
+                @apply .bg-teal-dark .border-teal-dark;
             }
 
             &:active {
-                @apply .bg-teal-darker;
+                @apply .bg-teal-darker .border-teal-darker;
             }
         }
 
@@ -192,26 +192,26 @@
         }
 
         &.outline {
-            @apply .bg-transparent .border .border-solid;
+            @apply .bg-transparent;
 
             &.primary {
-                @apply .border-blue .text-blue;
+                @apply .text-blue;
             }
 
             &.warning {
-                @apply .border-orange .text-orange;
+                @apply .text-orange;
             }
 
             &.success {
-                @apply .border-green .text-green;
+                @apply .text-green;
             }
 
             &.danger {
-                @apply .border-red .text-red;
+                @apply .text-red;
             }
 
             &.info {
-                @apply .border-teal .text-teal;
+                @apply .text-teal;
             }
 
             .c-icon {
@@ -227,7 +227,7 @@
             &.success,
             &.danger,
             &.info {
-                .loading-indicator {
+                .c-spinner {
                     & > .animation {
                         border-right-color: #fff;
                         border-bottom-color: #fff;
@@ -235,7 +235,7 @@
                 }
             }
 
-            .loading-indicator {
+            .c-spinner {
                 @apply .absolute;
                 top: 50%;
                 left: 50%;
