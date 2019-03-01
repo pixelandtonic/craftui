@@ -1,5 +1,5 @@
 <template>
-    <component :is="component" class="c-btn" :to="to" :type="computedType" :class="[{
+    <component :is="component" class="c-btn" :to="to" :href="href" :target="target" :type="computedType" :class="[{
                 large,
                 block,
                 outline,
@@ -56,7 +56,15 @@
             to: {
                 type: String,
                 default: null,
-            }
+            },
+            href: {
+                type: String,
+                default: null,
+            },
+            target: {
+                type: String,
+                default: null,
+            },
         },
 
         computed: {
@@ -65,11 +73,15 @@
                     return 'router-link'
                 }
 
+                if (this.href !== null) {
+                    return 'a'
+                }
+
                 return 'button'
             },
 
             computedType() {
-                if (this.to !== null) {
+                if (this.to !== null || this.href !== null) {
                     return null
                 }
 
