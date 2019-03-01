@@ -41,7 +41,7 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  @apply .border .border-grey .p-2 .rounded .block;
+  @apply .bg-white .border .border-grey .p-2 .rounded .block;
 
   &:disabled,
   &[readonly] {

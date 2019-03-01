@@ -46,8 +46,6 @@
 
 <style lang="scss" scoped>
     input {
-        @apply .bg-white .border .px-2 .py-1;
-
         &.w-full {
             @apply .w-full;
         }
