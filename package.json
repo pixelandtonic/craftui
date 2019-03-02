@@ -8,7 +8,7 @@
     "build": "bili --config bili.config.js",
     "watch": "bili --config bili.config.js --watch",
     "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js start-storybook -p 6006 -c docs/config",
-    "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js vue-cli-service storybook:build -c docs/config -o docs/dist"
+    "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js build-storybook -c docs/config -o docs/dist"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
