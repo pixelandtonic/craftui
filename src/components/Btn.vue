@@ -102,12 +102,14 @@
             box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
         }
 
-        &:hover {
-            @apply .cursor-pointer .bg-grey .border-grey .no-underline;
-        }
+        &:not([disabled]) {
+            &:hover {
+                @apply .cursor-pointer .bg-grey .border-grey .no-underline;
+            }
 
-        &:active {
-            @apply .cursor-pointer .bg-grey-dark .border-grey-dark;
+            &:active {
+                @apply .cursor-pointer .bg-grey-dark .border-grey-dark;
+            }
         }
 
         &.block {
@@ -142,60 +144,70 @@
         &.primary {
             @apply .bg-blue .border-blue .text-white;
 
-            &:hover {
-                @apply .bg-blue-dark .border-blue-dark;
-            }
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-blue-dark .border-blue-dark;
+                }
 
-            &:active {
-                @apply .bg-blue-darker .border-blue-darker;
+                &:active {
+                    @apply .bg-blue-darker .border-blue-darker;
+                }
             }
         }
 
         &.warning {
             @apply .bg-orange .border-orange .text-white;
 
-            &:hover {
-                @apply .bg-orange-dark .border-orange-dark;
-            }
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-orange-dark .border-orange-dark;
+                }
 
-            &:active {
-                @apply .bg-orange-darker .border-orange-darker;
+                &:active {
+                    @apply .bg-orange-darker .border-orange-darker;
+                }
             }
         }
 
         &.success {
             @apply .bg-green .border-green .text-white;
 
-            &:hover {
-                @apply .bg-green-dark .border-green-dark;
-            }
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-green-dark .border-green-dark;
+                }
 
-            &:active {
-                @apply .bg-green-darker .border-green-darker;
+                &:active {
+                    @apply .bg-green-darker .border-green-darker;
+                }
             }
         }
 
         &.danger {
             @apply .bg-red .border-red .text-white;
 
-            &:hover {
-                @apply .bg-red-dark .border-red-dark;
-            }
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-red-dark .border-red-dark;
+                }
 
-            &:active {
-                @apply .bg-red-darker .border-red-darker;
+                &:active {
+                    @apply .bg-red-darker .border-red-darker;
+                }
             }
         }
 
         &.info {
             @apply .bg-teal .border-teal .text-white;
 
-            &:hover {
-                @apply .bg-teal-dark .border-teal-dark;
-            }
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-teal-dark .border-teal-dark;
+                }
 
-            &:active {
-                @apply .bg-teal-darker .border-teal-darker;
+                &:active {
+                    @apply .bg-teal-darker .border-teal-darker;
+                }
             }
         }
 
@@ -209,60 +221,70 @@
             &.primary {
                 @apply .text-blue;
 
-                &:hover {
-                    @apply .text-white .bg-blue;
-                }
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-blue;
+                    }
 
-                &:active {
-                    @apply .text-white .bg-blue-darker;
+                    &:active {
+                        @apply .text-white .bg-blue-darker;
+                    }
                 }
             }
 
             &.warning {
                 @apply .text-orange;
 
-                &:hover {
-                    @apply .text-white .bg-orange;
-                }
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-orange;
+                    }
 
-                &:active {
-                    @apply .text-white .bg-orange-darker;
+                    &:active {
+                        @apply .text-white .bg-orange-darker;
+                    }
                 }
             }
 
             &.success {
                 @apply .text-green;
 
-                &:hover {
-                    @apply .text-white .bg-green;
-                }
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-green;
+                    }
 
-                &:active {
-                    @apply .text-white .bg-green-darker;
+                    &:active {
+                        @apply .text-white .bg-green-darker;
+                    }
                 }
             }
 
             &.danger {
                 @apply .text-red;
 
-                &:hover {
-                    @apply .text-white .bg-red;
-                }
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-red;
+                    }
 
-                &:active {
-                    @apply .text-white .bg-red-darker;
+                    &:active {
+                        @apply .text-white .bg-red-darker;
+                    }
                 }
             }
 
             &.info {
                 @apply .text-teal;
 
-                &:hover {
-                    @apply .text-white .bg-teal;
-                }
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-teal;
+                    }
 
-                &:active {
-                    @apply .text-white .bg-teal-darker;
+                    &:active {
+                        @apply .text-white .bg-teal-darker;
+                    }
                 }
             }
 
