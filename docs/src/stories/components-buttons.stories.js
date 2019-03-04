@@ -3,97 +3,145 @@ import { storiesOf } from '@storybook/vue'
 import {action} from '@storybook/addon-actions'
 import { withViewport } from '@storybook/addon-viewport'
 
-storiesOf('Components|Buttons/Examples', module)
-    .add('Default', () => ({
-        template: '<btn @click="action">Default</btn>',
+storiesOf('Components|Buttons', module)
+    .add('Regular', () => ({
+        template:
+            '<div>' +
+            '<btn @click="action">Default</btn> ' +
+            '<btn class="primary" @click="action">Primary</btn> ' +
+            '<btn class="warning" @click="action">Warning</btn> ' +
+            '<btn class="danger" @click="action">Danger</btn> ' +
+            '<btn class="info" @click="action">Info</btn>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
-    .add('Primary', () => ({
-        template: '<btn class="primary" @click="action">Primary</btn>',
-        methods: { action: action('clicked') }
-    }))
-    .add('Warning', () => ({
-        template: '<btn class="warning" @click="action">Warning</btn>',
-        methods: { action: action('clicked') }
-    }))
-    .add('Danger', () => ({
-        template: '<btn class="danger" @click="action">Danger</btn>',
-        methods: { action: action('clicked') }
-    }))
-    .add('Info', () => ({
-        template: '<btn class="info" @click="action">Info</btn>',
-        methods: { action: action('clicked') }
-    }))
-
-storiesOf('Components|Buttons/Icon', module)
-    .add('Regular', () =>
-        ({
-            template:
-                '<div>' +
-                '<btn @click="action" icon="plus">Default</btn> ' +
-                '<btn class="primary" @click="action" icon="plus">Primary</btn> ' +
-                '<btn class="warning" @click="action" icon="plus">Warning</btn> ' +
-                '<btn class="danger" @click="action" icon="plus">Danger</btn> ' +
-                '<btn class="info" @click="action" icon="plus">Info</btn>' +
-                '</div>',
-            methods: { action: action('clicked') }
-        })
-    )
     .add('Outline', () => ({
         template:
             '<div>' +
-            '<btn @click="action" icon="plus" outline>Default</btn> ' +
-            '<btn class="primary" @click="action" icon="plus" outline>Primary</btn> ' +
-            '<btn class="warning" @click="action" icon="plus" outline>Warning</btn> ' +
-            '<btn class="danger" @click="action" icon="plus" outline>Danger</btn> ' +
-            '<btn class="info" @click="action" icon="plus" outline>Info</btn>' +
+            '<btn @click="action" outline>Default</btn> ' +
+            '<btn class="primary" @click="action" outline>Primary</btn> ' +
+            '<btn class="warning" @click="action" outline>Warning</btn> ' +
+            '<btn class="danger" @click="action" outline>Danger</btn> ' +
+            '<btn class="info" @click="action" outline>Info</btn>' +
+            '</div>',
+        methods: { action: action('clicked') }
+    }))
+    .add('Icon', () => ({
+        template:
+            '<div>' +
+            '<div>' +
+            '<btn icon="plus" @click="action">Default</btn> ' +
+            '<btn class="primary" icon="plus" @click="action">Primary</btn> ' +
+            '<btn class="warning" icon="plus" @click="action">Warning</btn> ' +
+            '<btn class="danger" icon="plus" @click="action">Danger</btn> ' +
+            '<btn class="info" icon="plus" @click="action">Info</btn>' +
+            '</div>' +
+            '<div style="margin-top: 20px;">' +
+            '<btn icon="plus" @click="action" outline>Default</btn> ' +
+            '<btn class="primary" icon="plus" @click="action" outline>Primary</btn> ' +
+            '<btn class="warning" icon="plus" @click="action" outline>Warning</btn> ' +
+            '<btn class="danger" icon="plus" @click="action" outline>Danger</btn> ' +
+            '<btn class="info" icon="plus" @click="action" outline>Info</btn>' +
+            '</div>' +
             '</div>',
         methods: { action: action('clicked') }
     }))
 
 storiesOf('Components|Buttons/States', module)
     .add('Disabled', () => ({
-        template: '<btn class="primary" @click="action" disabled>Disabled</btn>',
+        template:
+            '<div>' +
+                '<div>' +
+                    '<btn :disabled="true" @click="action">Default</btn> ' +
+                    '<btn class="primary" :disabled="true" @click="action">Primary</btn> ' +
+                    '<btn class="warning" :disabled="true" @click="action">Warning</btn> ' +
+                    '<btn class="danger" :disabled="true" @click="action">Danger</btn> ' +
+                    '<btn class="info" :disabled="true" @click="action">Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn :disabled="true" @click="action" outline>Default</btn> ' +
+                    '<btn class="primary" :disabled="true" @click="action" outline>Primary</btn> ' +
+                    '<btn class="warning" :disabled="true" @click="action" outline>Warning</btn> ' +
+                    '<btn class="danger" :disabled="true" @click="action" outline>Danger</btn> ' +
+                    '<btn class="info" :disabled="true" @click="action" outline>Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn icon="plus" :disabled="true" @click="action">Default</btn> ' +
+                    '<btn class="primary" icon="plus" :disabled="true" @click="action">Primary</btn> ' +
+                    '<btn class="warning" icon="plus" :disabled="true" @click="action">Warning</btn> ' +
+                    '<btn class="danger" icon="plus" :disabled="true" @click="action">Danger</btn> ' +
+                    '<btn class="info" icon="plus" :disabled="true" @click="action">Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn icon="plus" :disabled="true" @click="action" outline>Default</btn> ' +
+                    '<btn class="primary" icon="plus" :disabled="true" @click="action" outline>Primary</btn> ' +
+                    '<btn class="warning" icon="plus" :disabled="true" @click="action" outline>Warning</btn> ' +
+                    '<btn class="danger" icon="plus" :disabled="true" @click="action" outline>Danger</btn> ' +
+                    '<btn class="info" icon="plus" :disabled="true" @click="action" outline>Info</btn>' +
+                '</div>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
     .add('Loading', () => ({
-        template: '<btn class="primary" @click="action" loading>Button</btn>',
+        template:
+            '<div>' +
+                '<div>' +
+                    '<btn :loading="true" @click="action">Default</btn> ' +
+                    '<btn class="primary" :loading="true" @click="action">Primary</btn> ' +
+                    '<btn class="warning" :loading="true" @click="action">Warning</btn> ' +
+                    '<btn class="danger" :loading="true" @click="action">Danger</btn> ' +
+                    '<btn class="info" :loading="true" @click="action">Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn :loading="true" @click="action" outline>Default</btn> ' +
+                    '<btn class="primary" :loading="true" @click="action" outline>Primary</btn> ' +
+                    '<btn class="warning" :loading="true" @click="action" outline>Warning</btn> ' +
+                    '<btn class="danger" :loading="true" @click="action" outline>Danger</btn> ' +
+                    '<btn class="info" :loading="true" @click="action" outline>Info</btn>' +
+                '</div>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
 
 storiesOf('Components|Buttons/Size', module)
     .add('Large', () => ({
-        template: '<btn class="primary" @click="action" large>Large</btn>',
+        template:
+            '<div>' +
+                '<div>' +
+                    '<btn @click="action" large>Default</btn> ' +
+                    '<btn class="primary" @click="action" large>Primary</btn> ' +
+                    '<btn class="warning" @click="action" large>Warning</btn> ' +
+                    '<btn class="danger" @click="action" large>Danger</btn> ' +
+                    '<btn class="info" @click="action" large>Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn icon="plus" @click="action" outline large>Default</btn> ' +
+                    '<btn class="primary" icon="plus" @click="action" outline large>Primary</btn> ' +
+                    '<btn class="warning" icon="plus" @click="action" outline large>Warning</btn> ' +
+                    '<btn class="danger" icon="plus" @click="action" outline large>Danger</btn> ' +
+                    '<btn class="info" icon="plus" @click="action" outline large>Info</btn>' +
+                '</div>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
     .addDecorator(withViewport('iphonex'))
     .add('Block', () => ({
-        template: '<btn class="primary" @click="action" block>Block</btn>',
-        methods: { action: action('clicked') }
-    }))
-
-storiesOf('Components|Buttons/Outline', module)
-    .add('Default', () => ({
-        template: '<btn class="default" @click="action" outline>Default</btn> ',
-        methods: { action: action('clicked') }
-    }))
-    .add('Primary', () => ({
-        template: '<btn class="primary" @click="action" outline>Primary</btn> ',
-        methods: { action: action('clicked') }
-    }))
-    .add('Success', () => ({
-        template: '<btn class="success" @click="action" outline>Success</btn> ',
-        methods: { action: action('clicked') }
-    }))
-    .add('Warning', () => ({
-        template: '<btn class="warning" @click="action" outline>Warning</btn> ',
-        methods: { action: action('clicked') }
-    }))
-    .add('Danger', () => ({
-        template: '<btn class="danger" @click="action" outline>Danger</btn> ',
-        methods: { action: action('clicked') }
-    }))
-    .add('Info', () => ({
-        template: '<btn class="info" @click="action" outline>Info</btn> ',
+        template:
+            '<div>' +
+                '<div>' +
+                    '<btn @click="action" block>Default</btn> ' +
+                    '<btn class="primary" @click="action" block>Primary</btn> ' +
+                    '<btn class="warning" @click="action" block>Warning</btn> ' +
+                    '<btn class="danger" @click="action" block>Danger</btn> ' +
+                    '<btn class="info" @click="action" block>Info</btn>' +
+                '</div>' +
+                '<div style="margin-top: 20px;">' +
+                    '<btn icon="plus" @click="action" outline block>Default</btn> ' +
+                    '<btn class="primary" icon="plus" @click="action" outline block>Primary</btn> ' +
+                    '<btn class="warning" icon="plus" @click="action" outline block>Warning</btn> ' +
+                    '<btn class="danger" icon="plus" @click="action" outline block>Danger</btn> ' +
+                    '<btn class="info" icon="plus" @click="action" outline block>Info</btn>' +
+                '</div>' +
+            '</div>',
         methods: { action: action('clicked') }
     }))
