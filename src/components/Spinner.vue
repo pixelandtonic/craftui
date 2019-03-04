@@ -14,6 +14,8 @@
             height: 22px;
             border-radius: 50%;
             border: 2px solid transparent;
+            border-top-color: transparent !important;
+            border-left-color: transparent !important;
             border-right-color: #555;
             border-bottom-color: #555;
         }

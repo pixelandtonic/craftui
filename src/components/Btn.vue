@@ -296,16 +296,39 @@
         &.loading {
             @apply .relative;
 
-            &.primary,
-            &.warning,
-            &.success,
-            &.danger,
-            &.info {
-                .c-spinner {
-                    & > .animation {
-                        border-right-color: #fff;
-                        border-bottom-color: #fff;
+            &:not(.outline) {
+                &.primary,
+                &.warning,
+                &.success,
+                &.danger,
+                &.info {
+                    .c-spinner {
+                        & > .animation {
+                            @apply .border-white;
+                        }
                     }
+                }
+            }
+
+            &.outline {
+                &.primary .c-spinner > .animation {
+                    @apply .border-blue;
+                }
+
+                &.warning .c-spinner > .animation {
+                    @apply .border-orange;
+                }
+
+                &.success .c-spinner > .animation {
+                    @apply .border-green;
+                }
+
+                &.danger .c-spinner > .animation {
+                    @apply .border-red;
+                }
+
+                &.info .c-spinner > .animation {
+                    @apply .border-teal;
                 }
             }
 
