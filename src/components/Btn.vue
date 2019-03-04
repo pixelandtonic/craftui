@@ -113,7 +113,7 @@
         }
 
         &.block {
-            @apply .w-full;
+            @apply .w-full .my-1;
         }
 
         &.small {
