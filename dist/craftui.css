@@ -21,18 +21,18 @@ button.c-btn:not(.outline) {
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 }
 
-.c-btn:hover,
-a.c-btn:hover,
-button.c-btn:hover {
+.c-btn:not([disabled]):hover,
+a.c-btn:not([disabled]):hover,
+button.c-btn:not([disabled]):hover {
   cursor: pointer;
   background-color: #b8c2cc;
   border-color: #b8c2cc;
   text-decoration: none;
 }
 
-.c-btn:active,
-a.c-btn:active,
-button.c-btn:active {
+.c-btn:not([disabled]):active,
+a.c-btn:not([disabled]):active,
+button.c-btn:not([disabled]):active {
   cursor: pointer;
   background-color: #8795a1;
   border-color: #8795a1;
@@ -42,6 +42,8 @@ button.c-btn:active {
 a.c-btn.block,
 button.c-btn.block {
   width: 100%;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
 }
 
 .c-btn.small,
@@ -91,16 +93,16 @@ button.c-btn.primary {
   color: #fff;
 }
 
-.c-btn.primary:hover,
-a.c-btn.primary:hover,
-button.c-btn.primary:hover {
+.c-btn.primary:not([disabled]):hover,
+a.c-btn.primary:not([disabled]):hover,
+button.c-btn.primary:not([disabled]):hover {
   background-color: #2779bd;
   border-color: #2779bd;
 }
 
-.c-btn.primary:active,
-a.c-btn.primary:active,
-button.c-btn.primary:active {
+.c-btn.primary:not([disabled]):active,
+a.c-btn.primary:not([disabled]):active,
+button.c-btn.primary:not([disabled]):active {
   background-color: #1c3d5a;
   border-color: #1c3d5a;
 }
@@ -113,16 +115,16 @@ button.c-btn.warning {
   color: #fff;
 }
 
-.c-btn.warning:hover,
-a.c-btn.warning:hover,
-button.c-btn.warning:hover {
+.c-btn.warning:not([disabled]):hover,
+a.c-btn.warning:not([disabled]):hover,
+button.c-btn.warning:not([disabled]):hover {
   background-color: #de751f;
   border-color: #de751f;
 }
 
-.c-btn.warning:active,
-a.c-btn.warning:active,
-button.c-btn.warning:active {
+.c-btn.warning:not([disabled]):active,
+a.c-btn.warning:not([disabled]):active,
+button.c-btn.warning:not([disabled]):active {
   background-color: #613b1f;
   border-color: #613b1f;
 }
@@ -135,16 +137,16 @@ button.c-btn.success {
   color: #fff;
 }
 
-.c-btn.success:hover,
-a.c-btn.success:hover,
-button.c-btn.success:hover {
+.c-btn.success:not([disabled]):hover,
+a.c-btn.success:not([disabled]):hover,
+button.c-btn.success:not([disabled]):hover {
   background-color: #1f9d55;
   border-color: #1f9d55;
 }
 
-.c-btn.success:active,
-a.c-btn.success:active,
-button.c-btn.success:active {
+.c-btn.success:not([disabled]):active,
+a.c-btn.success:not([disabled]):active,
+button.c-btn.success:not([disabled]):active {
   background-color: #1a4731;
   border-color: #1a4731;
 }
@@ -157,16 +159,16 @@ button.c-btn.danger {
   color: #fff;
 }
 
-.c-btn.danger:hover,
-a.c-btn.danger:hover,
-button.c-btn.danger:hover {
+.c-btn.danger:not([disabled]):hover,
+a.c-btn.danger:not([disabled]):hover,
+button.c-btn.danger:not([disabled]):hover {
   background-color: #cc1f1a;
   border-color: #cc1f1a;
 }
 
-.c-btn.danger:active,
-a.c-btn.danger:active,
-button.c-btn.danger:active {
+.c-btn.danger:not([disabled]):active,
+a.c-btn.danger:not([disabled]):active,
+button.c-btn.danger:not([disabled]):active {
   background-color: #621b18;
   border-color: #621b18;
 }
@@ -179,16 +181,16 @@ button.c-btn.info {
   color: #fff;
 }
 
-.c-btn.info:hover,
-a.c-btn.info:hover,
-button.c-btn.info:hover {
+.c-btn.info:not([disabled]):hover,
+a.c-btn.info:not([disabled]):hover,
+button.c-btn.info:not([disabled]):hover {
   background-color: #38a89d;
   border-color: #38a89d;
 }
 
-.c-btn.info:active,
-a.c-btn.info:active,
-button.c-btn.info:active {
+.c-btn.info:not([disabled]):active,
+a.c-btn.info:not([disabled]):active,
+button.c-btn.info:not([disabled]):active {
   background-color: #20504f;
   border-color: #20504f;
 }
@@ -212,16 +214,16 @@ button.c-btn.outline.primary {
   color: #3490dc;
 }
 
-.c-btn.outline.primary:hover,
-a.c-btn.outline.primary:hover,
-button.c-btn.outline.primary:hover {
+.c-btn.outline.primary:not([disabled]):hover,
+a.c-btn.outline.primary:not([disabled]):hover,
+button.c-btn.outline.primary:not([disabled]):hover {
   color: #fff;
   background-color: #3490dc;
 }
 
-.c-btn.outline.primary:active,
-a.c-btn.outline.primary:active,
-button.c-btn.outline.primary:active {
+.c-btn.outline.primary:not([disabled]):active,
+a.c-btn.outline.primary:not([disabled]):active,
+button.c-btn.outline.primary:not([disabled]):active {
   color: #fff;
   background-color: #1c3d5a;
 }
@@ -232,16 +234,16 @@ button.c-btn.outline.warning {
   color: #f6993f;
 }
 
-.c-btn.outline.warning:hover,
-a.c-btn.outline.warning:hover,
-button.c-btn.outline.warning:hover {
+.c-btn.outline.warning:not([disabled]):hover,
+a.c-btn.outline.warning:not([disabled]):hover,
+button.c-btn.outline.warning:not([disabled]):hover {
   color: #fff;
   background-color: #f6993f;
 }
 
-.c-btn.outline.warning:active,
-a.c-btn.outline.warning:active,
-button.c-btn.outline.warning:active {
+.c-btn.outline.warning:not([disabled]):active,
+a.c-btn.outline.warning:not([disabled]):active,
+button.c-btn.outline.warning:not([disabled]):active {
   color: #fff;
   background-color: #613b1f;
 }
@@ -252,16 +254,16 @@ button.c-btn.outline.success {
   color: #38c172;
 }
 
-.c-btn.outline.success:hover,
-a.c-btn.outline.success:hover,
-button.c-btn.outline.success:hover {
+.c-btn.outline.success:not([disabled]):hover,
+a.c-btn.outline.success:not([disabled]):hover,
+button.c-btn.outline.success:not([disabled]):hover {
   color: #fff;
   background-color: #38c172;
 }
 
-.c-btn.outline.success:active,
-a.c-btn.outline.success:active,
-button.c-btn.outline.success:active {
+.c-btn.outline.success:not([disabled]):active,
+a.c-btn.outline.success:not([disabled]):active,
+button.c-btn.outline.success:not([disabled]):active {
   color: #fff;
   background-color: #1a4731;
 }
@@ -272,16 +274,16 @@ button.c-btn.outline.danger {
   color: #e3342f;
 }
 
-.c-btn.outline.danger:hover,
-a.c-btn.outline.danger:hover,
-button.c-btn.outline.danger:hover {
+.c-btn.outline.danger:not([disabled]):hover,
+a.c-btn.outline.danger:not([disabled]):hover,
+button.c-btn.outline.danger:not([disabled]):hover {
   color: #fff;
   background-color: #e3342f;
 }
 
-.c-btn.outline.danger:active,
-a.c-btn.outline.danger:active,
-button.c-btn.outline.danger:active {
+.c-btn.outline.danger:not([disabled]):active,
+a.c-btn.outline.danger:not([disabled]):active,
+button.c-btn.outline.danger:not([disabled]):active {
   color: #fff;
   background-color: #621b18;
 }
@@ -292,16 +294,16 @@ button.c-btn.outline.info {
   color: #4dc0b5;
 }
 
-.c-btn.outline.info:hover,
-a.c-btn.outline.info:hover,
-button.c-btn.outline.info:hover {
+.c-btn.outline.info:not([disabled]):hover,
+a.c-btn.outline.info:not([disabled]):hover,
+button.c-btn.outline.info:not([disabled]):hover {
   color: #fff;
   background-color: #4dc0b5;
 }
 
-.c-btn.outline.info:active,
-a.c-btn.outline.info:active,
-button.c-btn.outline.info:active {
+.c-btn.outline.info:not([disabled]):active,
+a.c-btn.outline.info:not([disabled]):active,
+button.c-btn.outline.info:not([disabled]):active {
   color: #fff;
   background-color: #20504f;
 }
@@ -318,23 +320,52 @@ button.c-btn.loading {
   position: relative;
 }
 
-.c-btn.loading.danger .c-spinner>.animation,
-.c-btn.loading.info .c-spinner>.animation,
-.c-btn.loading.primary .c-spinner>.animation,
-.c-btn.loading.success .c-spinner>.animation,
-.c-btn.loading.warning .c-spinner>.animation,
-a.c-btn.loading.danger .c-spinner>.animation,
-a.c-btn.loading.info .c-spinner>.animation,
-a.c-btn.loading.primary .c-spinner>.animation,
-a.c-btn.loading.success .c-spinner>.animation,
-a.c-btn.loading.warning .c-spinner>.animation,
-button.c-btn.loading.danger .c-spinner>.animation,
-button.c-btn.loading.info .c-spinner>.animation,
-button.c-btn.loading.primary .c-spinner>.animation,
-button.c-btn.loading.success .c-spinner>.animation,
-button.c-btn.loading.warning .c-spinner>.animation {
-  border-right-color: #fff;
-  border-bottom-color: #fff;
+.c-btn.loading:not(.outline).danger .c-spinner>.animation,
+.c-btn.loading:not(.outline).info .c-spinner>.animation,
+.c-btn.loading:not(.outline).primary .c-spinner>.animation,
+.c-btn.loading:not(.outline).success .c-spinner>.animation,
+.c-btn.loading:not(.outline).warning .c-spinner>.animation,
+a.c-btn.loading:not(.outline).danger .c-spinner>.animation,
+a.c-btn.loading:not(.outline).info .c-spinner>.animation,
+a.c-btn.loading:not(.outline).primary .c-spinner>.animation,
+a.c-btn.loading:not(.outline).success .c-spinner>.animation,
+a.c-btn.loading:not(.outline).warning .c-spinner>.animation,
+button.c-btn.loading:not(.outline).danger .c-spinner>.animation,
+button.c-btn.loading:not(.outline).info .c-spinner>.animation,
+button.c-btn.loading:not(.outline).primary .c-spinner>.animation,
+button.c-btn.loading:not(.outline).success .c-spinner>.animation,
+button.c-btn.loading:not(.outline).warning .c-spinner>.animation {
+  border-color: #fff;
+}
+
+.c-btn.loading.outline.primary .c-spinner>.animation,
+a.c-btn.loading.outline.primary .c-spinner>.animation,
+button.c-btn.loading.outline.primary .c-spinner>.animation {
+  border-color: #3490dc;
+}
+
+.c-btn.loading.outline.warning .c-spinner>.animation,
+a.c-btn.loading.outline.warning .c-spinner>.animation,
+button.c-btn.loading.outline.warning .c-spinner>.animation {
+  border-color: #f6993f;
+}
+
+.c-btn.loading.outline.success .c-spinner>.animation,
+a.c-btn.loading.outline.success .c-spinner>.animation,
+button.c-btn.loading.outline.success .c-spinner>.animation {
+  border-color: #38c172;
+}
+
+.c-btn.loading.outline.danger .c-spinner>.animation,
+a.c-btn.loading.outline.danger .c-spinner>.animation,
+button.c-btn.loading.outline.danger .c-spinner>.animation {
+  border-color: #e3342f;
+}
+
+.c-btn.loading.outline.info .c-spinner>.animation,
+a.c-btn.loading.outline.info .c-spinner>.animation,
+button.c-btn.loading.outline.info .c-spinner>.animation {
+  border-color: #4dc0b5;
 }
 
 .c-btn.loading .c-spinner,
@@ -366,36 +397,6 @@ button.c-btn .c-btn-content {
   display: inline-block;
 }
 
-.c-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  fill: currentColor;
-  top: -2px;
-  width: 18px;
-  height: 18px;
-}
-
-.c-icon.sm {
-  width: 12px;
-  height: 12px;
-}
-
-.c-icon.base {
-  width: 18px;
-  height: 18px;
-}
-
-.c-icon.lg {
-  width: 24px;
-  height: 24px;
-}
-
-.c-icon.xl {
-  width: 32px;
-  height: 32px;
-}
-
 .c-spinner {
   display: inline-block;
 }
@@ -407,6 +408,8 @@ button.c-btn .c-btn-content {
   height: 22px;
   border-radius: 50%;
   border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
   border-right-color: #555;
   border-bottom-color: #555;
 }
@@ -439,6 +442,36 @@ button.c-btn .c-btn-content {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
+}
+
+.c-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  fill: currentColor;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+}
+
+.c-icon.sm {
+  width: 12px;
+  height: 12px;
+}
+
+.c-icon.base {
+  width: 18px;
+  height: 18px;
+}
+
+.c-icon.lg {
+  width: 24px;
+  height: 24px;
+}
+
+.c-icon.xl {
+  width: 32px;
+  height: 32px;
 }
 
 @charset "UTF-8";
@@ -1039,6 +1072,17 @@ Keep it light, don't import Tailwind’s utilities.
 @tailwind utilities;
 */
 
+ul[data-v-2744c7e4] {
+  list-style: none;
+  padding: 0;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+ul input[data-v-2744c7e4] {
+  margin-right: .5rem;
+}
+
 .field input[data-v-ac5bdb82] {
   margin-right: .5rem;
 }
@@ -1108,29 +1152,6 @@ Keep it light, don't import Tailwind’s utilities.
 
 .wrapper .max.text-red[data-v-76633c9c] {
   color: #e3342f;
-}
-
-input.w-full[data-v-6a117d3d] {
-  width: 100%;
-}
-
-select.w-full[data-v-211a2741] {
-  width: 100%;
-}
-
-ul[data-v-2744c7e4] {
-  list-style: none;
-  padding: 0;
-  padding-left: 1rem;
-  padding-top: .5rem;
-}
-
-ul input[data-v-2744c7e4] {
-  margin-right: .5rem;
-}
-
-input.w-full[data-v-56acaf34] {
-  width: 100%;
 }
 
 .lightswitch[data-v-2b9d01d8] {
@@ -1204,6 +1225,18 @@ input.w-full[data-v-56acaf34] {
 }
 
 textarea.w-full[data-v-3ef58e55] {
+  width: 100%;
+}
+
+select.w-full[data-v-211a2741] {
+  width: 100%;
+}
+
+input.w-full[data-v-6a117d3d] {
+  width: 100%;
+}
+
+input.w-full[data-v-56acaf34] {
   width: 100%;
 }
 
