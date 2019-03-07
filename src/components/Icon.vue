@@ -17,24 +17,44 @@
         width: 18px;
         height: 18px;
 
-        &.sm {
-            width: 12px;
-            height: 12px;
+        &.size-sm {
+            width: .75rem;
+            height: .75rem;
         }
 
-        &.base {
-            width: 18px;
-            height: 18px;
+        &.size-base {
+            width: 1rem;
+            height: 1rem;
         }
 
-        &.lg {
-            width: 24px;
-            height: 24px;
+        &.size-lg {
+            width: 1.25rem;
+            height: 1.25rem;
         }
 
-        &.xl {
-            width: 32px;
-            height: 32px;
+        &.size-xl {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &.size-2xl {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+
+        &.size-3xl {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+
+        &.size-4xl {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &.size-5xl {
+            width: 4rem;
+            height: 4rem;
         }
     }
 </style>

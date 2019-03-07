@@ -454,24 +454,44 @@ button.c-btn .c-btn-content {
   height: 18px;
 }
 
-.c-icon.sm {
-  width: 12px;
-  height: 12px;
+.c-icon.size-sm {
+  width: .75rem;
+  height: .75rem;
 }
 
-.c-icon.base {
-  width: 18px;
-  height: 18px;
+.c-icon.size-base {
+  width: 1rem;
+  height: 1rem;
 }
 
-.c-icon.lg {
-  width: 24px;
-  height: 24px;
+.c-icon.size-lg {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
-.c-icon.xl {
-  width: 32px;
-  height: 32px;
+.c-icon.size-xl {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.c-icon.size-2xl {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.c-icon.size-3xl {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.c-icon.size-4xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+.c-icon.size-5xl {
+  width: 4rem;
+  height: 4rem;
 }
 
 @charset "UTF-8";
@@ -1072,6 +1092,15 @@ Keep it light, don't import Tailwind’s utilities.
 @tailwind utilities;
 */
 
+.field input[data-v-ac5bdb82] {
+  margin-right: .5rem;
+}
+
+.field .instructions[data-v-ac5bdb82] {
+  color: #8795a1;
+  font-size: .875rem;
+}
+
 ul[data-v-2744c7e4] {
   list-style: none;
   padding: 0;
@@ -1081,15 +1110,6 @@ ul[data-v-2744c7e4] {
 
 ul input[data-v-2744c7e4] {
   margin-right: .5rem;
-}
-
-.field input[data-v-ac5bdb82] {
-  margin-right: .5rem;
-}
-
-.field .instructions[data-v-ac5bdb82] {
-  color: #8795a1;
-  font-size: .875rem;
 }
 
 .wrapper[data-v-339cab58] {
@@ -1152,6 +1172,10 @@ ul input[data-v-2744c7e4] {
 
 .wrapper .max.text-red[data-v-76633c9c] {
   color: #e3342f;
+}
+
+input.w-full[data-v-6a117d3d] {
+  width: 100%;
 }
 
 .lightswitch[data-v-2b9d01d8] {
@@ -1224,15 +1248,11 @@ ul input[data-v-2744c7e4] {
   cursor: default;
 }
 
-textarea.w-full[data-v-3ef58e55] {
-  width: 100%;
-}
-
 select.w-full[data-v-211a2741] {
   width: 100%;
 }
 
-input.w-full[data-v-6a117d3d] {
+textarea.w-full[data-v-3ef58e55] {
   width: 100%;
 }
 

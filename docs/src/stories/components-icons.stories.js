@@ -14,14 +14,26 @@ for (let i = 0; i < icons.length; i++) {
 
 storiesOf('Components|Icon/Size', module)
     .add('sm', () => ({
-        template: '<icon icon="glass-martini-alt" class="sm"></icon>'
+        template: '<icon icon="glass-martini-alt" class="size-sm"></icon>'
     }))
     .add('base', () => ({
-        template: '<icon icon="glass-martini-alt" class="base"></icon>'
+        template: '<icon icon="glass-martini-alt" class="size-base"></icon>'
     }))
     .add('lg', () => ({
-        template: '<icon icon="glass-martini-alt" class="lg"></icon>'
+        template: '<icon icon="glass-martini-alt" class="size-lg"></icon>'
     }))
     .add('xl', () => ({
-        template: '<icon icon="glass-martini-alt" class="xl"></icon>'
+        template: '<icon icon="glass-martini-alt" class="size-xl"></icon>'
+    }))
+    .add('2xl', () => ({
+        template: '<icon icon="glass-martini-alt" class="size-2xl"></icon>'
+    }))
+    .add('3xl', () => ({
+        template: '<icon icon="glass-martini-alt" class="size-3xl"></icon>'
+    }))
+    .add('4xl', () => ({
+        template: '<icon icon="glass-martini-alt" class="size-4xl"></icon>'
+    }))
+    .add('5xl', () => ({
+        template: '<icon icon="glass-martini-alt" class="size-5xl"></icon>'
     }))
