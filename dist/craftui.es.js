@@ -353,8 +353,6 @@ var __vue_staticRenderFns__$3 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 //
-//
-//
 var script$3 = {
   props: ['errors', 'id', 'label', 'value', 'instructions']
 };
@@ -362,13 +360,13 @@ var script$3 = {
 /* script */
 const __vue_script__$3 = script$3;
 /* template */
-var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),(_vm.instructions)?_c('p',{staticClass:"instructions",domProps:{"innerHTML":_vm._s(_vm.instructions)}}):_vm._e()])};
+var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
 var __vue_staticRenderFns__$4 = [];
 
   /* style */
   const __vue_inject_styles__$4 = undefined;
   /* scoped */
-  const __vue_scope_id__$4 = "data-v-a0b0f3dc";
+  const __vue_scope_id__$4 = "data-v-61e4fad3";
   /* module identifier */
   const __vue_module_identifier__$4 = undefined;
   /* functional template */
@@ -432,7 +430,7 @@ var __vue_staticRenderFns__$5 = [];
   /* style */
   const __vue_inject_styles__$5 = undefined;
   /* scoped */
-  const __vue_scope_id__$5 = "data-v-4d0302b9";
+  const __vue_scope_id__$5 = "data-v-6a3506ad";
   /* module identifier */
   const __vue_module_identifier__$5 = undefined;
   /* functional template */
