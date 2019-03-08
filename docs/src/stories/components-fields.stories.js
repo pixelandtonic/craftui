@@ -86,7 +86,7 @@ storiesOf('Components|Fields/Text', module)
         }
     }))
     .add('Error', () => ({
-        template: '<text-field label="Label" instructions="Some instructions." :errors="[\'some error\']" value="some value"></text-field>',
+        template: '<text-field label="Label" instructions="Some instructions." :errors="[\'Error message.\']" value="some value"></text-field>',
     }));
 
 storiesOf('Components|Fields/URL', module)
