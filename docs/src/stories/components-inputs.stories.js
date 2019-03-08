@@ -28,6 +28,9 @@ storiesOf('Components|Inputs/Textarea', module)
 storiesOf('Components|Inputs/Text', module)
     .add('Default', () => ({
         template: '<text-input></text-input>',
+    }))
+    .add('Mask', () => ({
+        template: '<text-input placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text-input>',
     }));
 
 storiesOf('Components|Inputs/URL', module)

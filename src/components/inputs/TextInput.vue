@@ -19,28 +19,30 @@
 </template>
 
 <script>
-    // import Inputmask from 'inputmask'
+    import mask from 'vue-the-mask/src/directive'
 
     export default {
+        directives: {mask},
 
-        props: ['id', 'name', 'placeholder', 'value', 'autofocus', 'disabled', 'mask', 'autocapitalize', 'spellcheck', 'readonly', 'size'],
+        props: {
+            id: {type: String, default: null},
+            name: {type: String, default: null},
+            placeholder: {type: String, default: null},
+            value: {type: String, default: null},
+            autofocus: {type: Boolean, default: false},
+            disabled: {type: Boolean, default: false},
+            mask: {type: String | Object, default: ''},
+            autocapitalize: {type: Boolean, default: false},
+            spellcheck: {type: Boolean, default: false},
+            readonly: {type: Boolean, default: false},
+            size: {type: String, default: null},
+        },
 
         created() {
             this.$on('focus', function () {
                 this.$refs.input.focus()
             })
         },
-
-        directives: {
-            mask: {
-                bind: function(el, binding) {
-                    if(binding.value) {
-                        // Inputmask(binding.value).mask(el);
-                    }
-                }
-            }
-        }
-
     }
 </script>
 

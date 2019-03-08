@@ -69,7 +69,15 @@ storiesOf('Components|Fields/Text', module)
     .add('Default', () => ({
         template: '<text-field label="Label" instructions="Some instructions."></text-field>',
     }))
-    .add('with Max', () => ({
+    .add('Mask', () => ({
+        template: '<text-field id="max" label="Label" instructions="Some instructions." placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" v-model="value" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text-field>',
+        data() {
+            return {
+                value: ''
+            }
+        }
+    }))
+    .add('Max', () => ({
         template: '<text-field id="max" label="Label" instructions="Some instructions." placeholder="Max 130 characters." v-model="value" :max="130"></text-field>',
         data() {
             return {
@@ -77,7 +85,7 @@ storiesOf('Components|Fields/Text', module)
             }
         }
     }))
-    .add('with error', () => ({
+    .add('Error', () => ({
         template: '<text-field label="Label" instructions="Some instructions." :errors="[\'some error\']" value="some value"></text-field>',
     }));
 

@@ -43,8 +43,24 @@
     import TextInput from '../inputs/TextInput.vue';
 
     export default {
+        props: {
+            label: {type: String, default: null},
+            errors: {type: Array, default: null},
+            instructions: {type: String, default: null},
+            max: {type: Number, default: null},
 
-        props: ['label', 'id', 'name', 'placeholder', 'value', 'autofocus', 'errors', 'disabled', 'instructions', 'mask', 'autocapitalize', 'spellcheck', 'readonly', 'size', 'max'],
+            id: {type: String, default: null},
+            name: {type: String, default: null},
+            placeholder: {type: String, default: null},
+            value: {type: String, default: null},
+            autofocus: {type: Boolean, default: false},
+            disabled: {type: Boolean, default: false},
+            mask: {type: String | Object, default: ''},
+            autocapitalize: {type: Boolean, default: false},
+            spellcheck: {type: Boolean, default: false},
+            readonly: {type: Boolean, default: false},
+            size: {type: String, default: null},
+        },
 
         components: {
             Field,
@@ -64,7 +80,6 @@
                 this.$refs.input.$emit('focus');
             })
         }
-
     }
 </script>
 
