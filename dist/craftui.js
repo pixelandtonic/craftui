@@ -1044,7 +1044,13 @@
   //
   var script$d = {
     directives: {
-      mask: mask
+      mask: {
+        bind: function bind(el, binding, vnode) {
+          if (vnode.context.mask) {
+            return mask(el, binding);
+          }
+        }
+      }
     },
     props: {
       id: {
@@ -1072,8 +1078,8 @@
         default: false
       },
       mask: {
-        type: String | Object,
-        default: ''
+        type: String | Array,
+        default: null
       },
       autocapitalize: {
         type: Boolean,
@@ -1108,7 +1114,7 @@
     /* style */
     const __vue_inject_styles__$e = undefined;
     /* scoped */
-    const __vue_scope_id__$e = "data-v-65c7167a";
+    const __vue_scope_id__$e = "data-v-1ec4235f";
     /* module identifier */
     const __vue_module_identifier__$e = undefined;
     /* functional template */

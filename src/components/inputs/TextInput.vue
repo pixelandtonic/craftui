@@ -22,7 +22,15 @@
     import mask from 'vue-the-mask/src/directive'
 
     export default {
-        directives: {mask},
+        directives: {
+            mask: {
+                bind(el, binding, vnode) {
+                    if(vnode.context.mask) {
+                        return mask(el, binding)
+                    }
+                }
+            }
+        },
 
         props: {
             id: {type: String, default: null},
@@ -31,7 +39,7 @@
             value: {type: String, default: null},
             autofocus: {type: Boolean, default: false},
             disabled: {type: Boolean, default: false},
-            mask: {type: String | Object, default: ''},
+            mask: {type: String | Array, default: null},
             autocapitalize: {type: Boolean, default: false},
             spellcheck: {type: Boolean, default: false},
             readonly: {type: Boolean, default: false},
