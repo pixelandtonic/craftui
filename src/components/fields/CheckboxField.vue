@@ -1,15 +1,11 @@
 <template>
-    <div>
-        <div class="field">
-            <label>
-                <!--Must be @change, not @input (Safari issue)-->
-                <input :id="id" type="checkbox" :value="value" :checked="value" @change="$emit('input', $event.target.checked)">
-                {{ label }}
-            </label>
-            <p v-if="instructions" class="instructions" v-html="instructions"></p>
-            <div class="invalid-feedback" v-for="(error, index) in errors" :key="index">{{ error }}</div>
-        </div>
-    </div>
+    <field :id="id" :errors="errors">
+        <label>
+            <!--Must be @change, not @input (Safari issue)-->
+            <input :id="id" type="checkbox" :value="value" :checked="value" @change="$emit('input', $event.target.checked)">
+            {{ label }}
+        </label>
+    </field>
 </template>
 
 <script>

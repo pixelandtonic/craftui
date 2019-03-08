@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <fieldset class="checkboxes">
+    <field :errors="errors" class="checkbox-set">
+        <fieldset>
             <legend>{{ label }}</legend>
 
             <div v-if="instructions" class="instructions">
@@ -15,15 +15,12 @@
                     </label>
                 </li>
             </ul>
-
-            <div class="invalid-feedback" v-for="(error, index) in errors" :key="index">{{ error }}</div>
         </fieldset>
-    </div>
+    </field>
 </template>
 
 <script>
     export default {
-
         props: ['options', 'label', 'instructions', 'value', 'errors'],
 
         data() {
@@ -39,11 +36,15 @@
 </script>
 
 <style lang="scss" scoped>
-    ul {
-        @apply .list-reset .pl-4 .pt-2;
+    .checkbox-set {
+        fieldset {
+            ul {
+                @apply .list-reset .pl-4 .pt-2;
 
-        input {
-            @apply .mr-2;
+                input {
+                    @apply .mr-2;
+                }
+            }
         }
     }
 </style>

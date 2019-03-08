@@ -1,14 +1,6 @@
 <template>
-    <field :id="id + '-label'" :label="label">
-        <div v-if="instructions" class="instructions">
-            <p>{{ instructions }}</p>
-        </div>
-
+    <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors">
         <select-input :fullwidth="fullwidth" :options="options" :value="value" @input="$emit('input', $event)"></select-input>
-
-        <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
-            {{ error }}
-        </div>
     </field>
 </template>
 

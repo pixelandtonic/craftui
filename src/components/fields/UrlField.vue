@@ -1,9 +1,5 @@
 <template>
-    <field :id="id" :label="label">
-        <div v-if="instructions" class="instructions">
-            <p>{{ instructions }}</p>
-        </div>
-
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
         <url-input
             :autofocus="autofocus"
             :class="{'is-invalid': errors }"
@@ -13,10 +9,6 @@
             @input="$emit('input', $event)"
             :size="size"
             ref="input"/>
-
-        <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
-            {{ error }}
-        </div>
     </field>
 </template>
 

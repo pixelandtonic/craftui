@@ -1,8 +1,5 @@
 <template>
-    <field :id="id" :label="label">
-        <div v-if="instructions" class="instructions">
-            <p>{{ instructions }}</p>
-        </div>
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
         <lightswitch-input :id="id" :checked="checked" :disabled="disabled" @change="$emit('change', $event)" @update:checked="$emit('update:checked', $event)" />
     </field>
 </template>
@@ -13,7 +10,7 @@
 
     export default {
 
-        props: ['label', 'id', 'checked', 'instructions', 'disabled'],
+        props: ['label', 'id', 'checked', 'instructions', 'disabled', 'errors'],
 
         components: {
             Field,

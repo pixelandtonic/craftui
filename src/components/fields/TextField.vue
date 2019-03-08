@@ -1,9 +1,5 @@
 <template>
-    <field :id="id" :label="label">
-        <div v-if="instructions" class="instructions">
-            <p>{{ instructions }}</p>
-        </div>
-
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
         <div class="wrapper">
             <text-input
                     :autofocus="autofocus"
@@ -30,10 +26,6 @@
                     'text-orange': remainingChars < 20 && remainingChars >= 0,
                     'text-red': remainingChars < 0
                 }">{{ remainingChars }} character{{ remainingChars > 1 || remainingChars < 1 ? 's' : ''}} left.</p>
-        </div>
-
-        <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
-            {{ error }}
         </div>
     </field>
 </template>
