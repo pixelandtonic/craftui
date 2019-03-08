@@ -1,5 +1,6 @@
 <template>
     <component :is="component" class="c-btn" :to="to" :href="href" :target="target" :type="computedType" :class="[{
+                small,
                 large,
                 block,
                 outline,
@@ -28,6 +29,10 @@
             type: {
                 type: String,
                 default: 'button',
+            },
+            small: {
+                type: Boolean,
+                default: false,
             },
             large: {
                 type: Boolean,

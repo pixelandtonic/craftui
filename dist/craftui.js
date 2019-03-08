@@ -39,12 +39,17 @@
   //
   //
   //
+  //
   var script = {
     name: 'Btn',
     props: {
       type: {
         type: String,
         default: 'button'
+      },
+      small: {
+        type: Boolean,
+        default: false
       },
       large: {
         type: Boolean,
@@ -194,6 +199,7 @@
   const __vue_script__ = script;
   /* template */
   var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.component,{tag:"component",staticClass:"c-btn",class:[{
+              small: _vm.small,
               large: _vm.large,
               block: _vm.block,
               outline: _vm.outline,
@@ -700,9 +706,8 @@
 
   /* script */
   const __vue_script__$a = script$a;
-
   /* template */
-  var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('select-input',{attrs:{"fullwidth":_vm.fullwidth,"options":_vm.options,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
+  var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"select-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('select-input',{class:{'is-invalid': !!_vm.errors},attrs:{"fullwidth":_vm.fullwidth,"options":_vm.options,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
   var __vue_staticRenderFns__$b = [];
 
     /* style */
