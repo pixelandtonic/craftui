@@ -2,6 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import {action} from '@storybook/addon-actions'
 import { withViewport } from '@storybook/addon-viewport'
+import BtnNotesMD from '../notes/Btn.md'
 
 storiesOf('Components|Buttons', module)
     .add('Regular', () => ({
@@ -13,8 +14,8 @@ storiesOf('Components|Buttons', module)
             '<btn class="danger" @click="action">Danger</btn> ' +
             '<btn class="info" @click="action">Info</btn>' +
             '</div>',
-        methods: { action: action('clicked') }
-    }))
+        methods: { action: action('clicked') },
+    }), { notes: { markdown: BtnNotesMD } })
     .add('Outline', () => ({
         template:
             '<div>' +
@@ -25,7 +26,7 @@ storiesOf('Components|Buttons', module)
             '<btn class="info" @click="action" outline>Info</btn>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
     .add('Icon', () => ({
         template:
             '<div>' +
@@ -45,7 +46,7 @@ storiesOf('Components|Buttons', module)
             '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
     .addDecorator(withViewport('iphonex'))
     .add('Block', () => ({
         template:
@@ -66,7 +67,7 @@ storiesOf('Components|Buttons', module)
             '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
 
 storiesOf('Components|Buttons/States', module)
     .add('Disabled', () => ({
@@ -102,7 +103,7 @@ storiesOf('Components|Buttons/States', module)
                 '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
     .add('Loading', () => ({
         template:
             '<div>' +
@@ -122,7 +123,7 @@ storiesOf('Components|Buttons/States', module)
                 '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
 
 storiesOf('Components|Buttons/Size', module)
     .add('Small', () => ({
@@ -144,7 +145,7 @@ storiesOf('Components|Buttons/Size', module)
             '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
     .add('Default', () => ({
         template:
             '<div>' +
@@ -164,7 +165,7 @@ storiesOf('Components|Buttons/Size', module)
             '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
     .add('Large', () => ({
         template:
             '<div>' +
@@ -184,4 +185,4 @@ storiesOf('Components|Buttons/Size', module)
                 '</div>' +
             '</div>',
         methods: { action: action('clicked') }
-    }))
+    }), { notes: { markdown: BtnNotesMD } })
