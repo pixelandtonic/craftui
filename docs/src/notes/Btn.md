@@ -14,7 +14,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
 
 ## Attributes
 
-- type: 'button' (default), 'submit', reset, or 'menu'. Optional.
+- type: 'button' (default), 'submit', 'reset', or 'menu'. Optional.
 - small: If true smaller version of button. Optional.
 - large: If true larger version of button. Optional.
 - block: If true block version of button. Optional.
