@@ -5,6 +5,7 @@
                 block,
                 outline,
                 loading,
+                [kind]: true
             }]"
             :disabled="disabled"
             @click="$emit('click')"
@@ -29,6 +30,10 @@
             type: {
                 type: String,
                 default: 'button',
+            },
+            kind: {
+                type: String,
+                default: 'default',
             },
             small: {
                 type: Boolean,

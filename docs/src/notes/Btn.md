@@ -7,7 +7,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
 ## Usage
 
 ```html
-<btn small outline @click="actionClick">
+<btn kind="primary" small outline @click="actionClick">
   Hello I am a button
 </btn>
 ```
@@ -15,6 +15,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
 ## Attributes
 
 - type: 'button' (default), 'submit', 'reset', or 'menu'. Optional.
+- kind: 'default' (default), 'primary', 'warning', 'danger', or 'info'. Optional.
 - small: If true smaller version of button. Optional.
 - large: If true larger version of button. Optional.
 - block: If true block version of button. Optional.

@@ -38,12 +38,17 @@ var CraftIcons = {
 //
 //
 //
+//
 var script = {
   name: 'Btn',
   props: {
     type: {
       type: String,
       default: 'button'
+    },
+    kind: {
+      type: String,
+      default: 'default'
     },
     small: {
       type: Boolean,
@@ -196,13 +201,15 @@ var normalizeComponent_1 = normalizeComponent;
 /* script */
 const __vue_script__ = script;
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.component,{tag:"component",staticClass:"c-btn",class:[{
+var __vue_render__ = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.component,{tag:"component",staticClass:"c-btn",class:[( _obj = {
             small: _vm.small,
             large: _vm.large,
             block: _vm.block,
             outline: _vm.outline,
-            loading: _vm.loading,
-        }],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
+            loading: _vm.loading
+        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */

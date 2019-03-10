@@ -995,6 +995,53 @@ button.c-btn .c-btn-content {
   display: inline-block;
 }
 
+.c-spinner {
+  display: inline-block;
+}
+
+.c-spinner>.animation {
+  -webkit-animation: rotator .7s linear infinite;
+          animation: rotator .7s linear infinite;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: #555;
+  border-bottom-color: #555;
+}
+
+.c-spinner.lg>.animation {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 .c-icon {
   display: inline-block;
   vertical-align: middle;
@@ -1045,53 +1092,6 @@ button.c-btn .c-btn-content {
   height: 4rem;
 }
 
-.c-spinner {
-  display: inline-block;
-}
-
-.c-spinner>.animation {
-  -webkit-animation: rotator .7s linear infinite;
-          animation: rotator .7s linear infinite;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: transparent !important;
-  border-left-color: transparent !important;
-  border-right-color: #555;
-  border-bottom-color: #555;
-}
-
-.c-spinner.lg>.animation {
-  width: 32px;
-  height: 32px;
-  border-width: 3px;
-}
-
-@-webkit-keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
-@keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
 .field input[data-v-61e4fad3] {
   margin-right: .5rem;
 }
@@ -1099,10 +1099,6 @@ button.c-btn .c-btn-content {
 .field .instructions[data-v-61e4fad3] {
   color: #8795a1;
   font-size: .875rem;
-}
-
-.select-field .is-invalid select {
-  border-color: #e3342f;
 }
 
 .checkbox-set fieldset ul[data-v-6a3506ad] {
@@ -1114,6 +1110,10 @@ button.c-btn .c-btn-content {
 
 .checkbox-set fieldset ul input[data-v-6a3506ad] {
   margin-right: .5rem;
+}
+
+.select-field .is-invalid select {
+  border-color: #e3342f;
 }
 
 .wrapper[data-v-78008a84] {
@@ -1252,11 +1252,11 @@ input.w-full[data-v-6a117d3d] {
   width: 100%;
 }
 
-textarea.w-full[data-v-3ef58e55] {
+select.w-full[data-v-211a2741] {
   width: 100%;
 }
 
-select.w-full[data-v-211a2741] {
+textarea.w-full[data-v-3ef58e55] {
   width: 100%;
 }
 
