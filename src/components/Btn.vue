@@ -142,10 +142,7 @@
         }
 
         &.primary,
-        &.warning,
-        &.success,
-        &.danger,
-        &.info {
+        &.danger {
             &:not(.outline) {
                 .c-icon {
                     fill: #fff;
@@ -167,34 +164,6 @@
             }
         }
 
-        &.warning {
-            @apply .bg-orange .border-orange .text-white;
-
-            &:not([disabled]) {
-                &:hover {
-                    @apply .bg-orange-dark .border-orange-dark;
-                }
-
-                &:active {
-                    @apply .bg-orange-darker .border-orange-darker;
-                }
-            }
-        }
-
-        &.success {
-            @apply .bg-green .border-green .text-white;
-
-            &:not([disabled]) {
-                &:hover {
-                    @apply .bg-green-dark .border-green-dark;
-                }
-
-                &:active {
-                    @apply .bg-green-darker .border-green-darker;
-                }
-            }
-        }
-
         &.danger {
             @apply .bg-red .border-red .text-white;
 
@@ -205,20 +174,6 @@
 
                 &:active {
                     @apply .bg-red-darker .border-red-darker;
-                }
-            }
-        }
-
-        &.info {
-            @apply .bg-teal .border-teal .text-white;
-
-            &:not([disabled]) {
-                &:hover {
-                    @apply .bg-teal-dark .border-teal-dark;
-                }
-
-                &:active {
-                    @apply .bg-teal-darker .border-teal-darker;
                 }
             }
         }
@@ -244,34 +199,6 @@
                 }
             }
 
-            &.warning {
-                @apply .text-orange;
-
-                &:not([disabled]) {
-                    &:hover {
-                        @apply .text-white .bg-orange;
-                    }
-
-                    &:active {
-                        @apply .text-white .bg-orange-darker;
-                    }
-                }
-            }
-
-            &.success {
-                @apply .text-green;
-
-                &:not([disabled]) {
-                    &:hover {
-                        @apply .text-white .bg-green;
-                    }
-
-                    &:active {
-                        @apply .text-white .bg-green-darker;
-                    }
-                }
-            }
-
             &.danger {
                 @apply .text-red;
 
@@ -286,20 +213,6 @@
                 }
             }
 
-            &.info {
-                @apply .text-teal;
-
-                &:not([disabled]) {
-                    &:hover {
-                        @apply .text-white .bg-teal;
-                    }
-
-                    &:active {
-                        @apply .text-white .bg-teal-darker;
-                    }
-                }
-            }
-
             .c-icon {
                 @apply .fill-current;
             }
@@ -310,10 +223,7 @@
 
             &:not(.outline) {
                 &.primary,
-                &.warning,
-                &.success,
-                &.danger,
-                &.info {
+                &.danger {
                     .c-spinner {
                         & > .animation {
                             @apply .border-white;
@@ -327,20 +237,8 @@
                     @apply .border-blue;
                 }
 
-                &.warning .c-spinner > .animation {
-                    @apply .border-orange;
-                }
-
-                &.success .c-spinner > .animation {
-                    @apply .border-green;
-                }
-
                 &.danger .c-spinner > .animation {
                     @apply .border-red;
-                }
-
-                &.info .c-spinner > .animation {
-                    @apply .border-teal;
                 }
             }
 
