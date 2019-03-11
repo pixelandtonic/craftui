@@ -1,5 +1,5 @@
 <template>
-    <div :id="'field-' + id" class="field">
+    <div :id="'field-' + id" class="c-field">
         <label v-if="label" :for="id">{{label}}</label>
 
         <div v-if="instructions" class="instructions">

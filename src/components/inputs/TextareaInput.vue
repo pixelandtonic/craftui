@@ -1,5 +1,6 @@
 <template>
     <textarea
+            class="c-textarea-input"
             :cols="cols"
             :disabled="disabled"
             :id="id"
@@ -22,8 +23,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    textarea {
+<style lang="scss">
+    textarea.c-textarea-input {
         &.w-full {
             @apply .w-full;
         }

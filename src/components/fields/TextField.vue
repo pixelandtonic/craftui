@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
         <div class="wrapper">
             <text-input
                     :autofocus="autofocus"
@@ -78,33 +78,35 @@
 <style lang="scss">
     @import "../../sass/mixins";
 
-    .wrapper {
-        @apply .relative;
+    .c-text-field {
+        .wrapper {
+            @apply .relative;
 
-        .text-red-dark {
-            @apply .text-red-dark;
-        }
-
-        .max {
-            @apply .mt-2;
-            @include pr(1);
-
-            &.floating {
-                @apply .absolute .text-xs .text-right;
+            .text-red-dark {
+                @apply .text-red-dark;
             }
 
-            &.text-grey {
-                @apply .text-grey;
-            }
+            .max {
+                @apply .mt-2;
+                @include pr(1);
 
-            &.text-orange {
-                @apply .text-orange;
-            }
+                &.floating {
+                    @apply .absolute .text-xs .text-right;
+                }
 
-            &.text-red {
-                @apply .text-red;
-            }
+                &.text-grey {
+                    @apply .text-grey;
+                }
 
+                &.text-orange {
+                    @apply .text-orange;
+                }
+
+                &.text-red {
+                    @apply .text-red;
+                }
+
+            }
         }
     }
 </style>

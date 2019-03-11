@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-password-field">
         <password-input
                 ref="input"
                 :id="id"

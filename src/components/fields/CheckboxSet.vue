@@ -1,5 +1,5 @@
 <template>
-    <field :errors="errors" class="checkbox-set">
+    <field :errors="errors" class="c-checkbox-set">
         <fieldset>
             <legend>{{ label }}</legend>
 
@@ -38,7 +38,7 @@
 <style lang="scss">
     @import "../../sass/mixins";
 
-    .checkbox-set {
+    .c-checkbox-set {
         fieldset {
             ul {
                 @apply .list-reset .pt-2;

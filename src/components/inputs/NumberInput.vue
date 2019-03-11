@@ -1,5 +1,6 @@
 <template>
     <input
+            class="c-number-input"
             :autofocus="autofocus"
             :disabled="disabled"
             :id="id"

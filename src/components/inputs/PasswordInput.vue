@@ -1,15 +1,16 @@
 <template>
     <input
-        :autofocus="autofocus"
-        :id="id"
-        :name="name"
-        :placeholder="placeholder"
-        :value="value"
-        @input="$emit('input', $event.target.value)"
-        autocomplete="off"
-        :class="{'w-full': !size }"
-        ref="input"
-        type="password"/>
+            class="c-password-input"
+            :autofocus="autofocus"
+            :id="id"
+            :name="name"
+            :placeholder="placeholder"
+            :value="value"
+            @input="$emit('input', $event.target.value)"
+            autocomplete="off"
+            :class="{'w-full': !size }"
+            ref="input"
+            type="password"/>
 </template>
 
 <script>
@@ -26,8 +27,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    input {
+<style lang="scss">
+    input.c-password-input {
         &.w-full {
             @apply .w-full;
         }

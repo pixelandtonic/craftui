@@ -1,15 +1,16 @@
 <template>
     <input
-        :autofocus="autofocus"
-        :disabled="disabled"
-        :id="id"
-        :placeholder="placeholder"
-        :value="value"
-        @input="$emit('input', $event.target.value)"
-        autocomplete="off"
-        :class="{'w-full': !size }"
-        ref="input"
-        type="url"/>
+            class="c-url-input"
+            :autofocus="autofocus"
+            :disabled="disabled"
+            :id="id"
+            :placeholder="placeholder"
+            :value="value"
+            @input="$emit('input', $event.target.value)"
+            autocomplete="off"
+            :class="{'w-full': !size }"
+            ref="input"
+            type="url"/>
 </template>
 
 <script>
@@ -26,7 +27,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     input {
         &.w-full {
             @apply .w-full;

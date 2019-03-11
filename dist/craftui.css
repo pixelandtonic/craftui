@@ -971,9 +971,31 @@ a.c-btn.loading .c-spinner,
 button.c-btn.loading .c-spinner {
   position: absolute;
   top: 50%;
-  left: 50%;
   margin-top: -12px;
+}
+
+body.ltr .c-btn.loading .c-spinner,
+body.ltr a.c-btn.loading .c-spinner,
+body.ltr button.c-btn.loading .c-spinner {
+  left: 50%;
+}
+
+body.rtl .c-btn.loading .c-spinner,
+body.rtl a.c-btn.loading .c-spinner,
+body.rtl button.c-btn.loading .c-spinner {
+  right: 50%;
+}
+
+body.ltr .c-btn.loading .c-spinner,
+body.ltr a.c-btn.loading .c-spinner,
+body.ltr button.c-btn.loading .c-spinner {
   margin-left: -12px;
+}
+
+body.rtl .c-btn.loading .c-spinner,
+body.rtl a.c-btn.loading .c-spinner,
+body.rtl button.c-btn.loading .c-spinner {
+  margin-right: -12px;
 }
 
 .c-btn.loading .c-btn-content,
@@ -985,61 +1007,25 @@ button.c-btn.loading .c-btn-content {
 .c-btn .c-icon,
 a.c-btn .c-icon,
 button.c-btn .c-icon {
-  margin-right: .25rem;
   vertical-align: middle;
+}
+
+body.ltr .c-btn .c-icon,
+body.ltr a.c-btn .c-icon,
+body.ltr button.c-btn .c-icon {
+  margin-right: .25rem;
+}
+
+body.rtl .c-btn .c-icon,
+body.rtl a.c-btn .c-icon,
+body.rtl button.c-btn .c-icon {
+  margin-left: .25rem;
 }
 
 .c-btn .c-btn-content,
 a.c-btn .c-btn-content,
 button.c-btn .c-btn-content {
   display: inline-block;
-}
-
-.c-spinner {
-  display: inline-block;
-}
-
-.c-spinner>.animation {
-  -webkit-animation: rotator .7s linear infinite;
-          animation: rotator .7s linear infinite;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: transparent !important;
-  border-left-color: transparent !important;
-  border-right-color: #555;
-  border-bottom-color: #555;
-}
-
-.c-spinner.lg>.animation {
-  width: 32px;
-  height: 32px;
-  border-width: 3px;
-}
-
-@-webkit-keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
-@keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
 }
 
 .c-icon {
@@ -1092,93 +1078,169 @@ button.c-btn .c-btn-content {
   height: 4rem;
 }
 
-.field input[data-v-61e4fad3] {
+.c-spinner {
+  display: inline-block;
+}
+
+.c-spinner>.animation {
+  -webkit-animation: rotator .7s linear infinite;
+          animation: rotator .7s linear infinite;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: #555;
+  border-bottom-color: #555;
+}
+
+.c-spinner.lg>.animation {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.c-checkbox-set fieldset ul {
+  list-style: none;
+  padding: 0;
+  padding-top: .5rem;
+}
+
+body.ltr .c-checkbox-set fieldset ul {
+  padding-left: 1rem;
+}
+
+body.rtl .c-checkbox-set fieldset ul {
+  padding-right: 1rem;
+}
+
+body.ltr .c-checkbox-set fieldset ul input {
   margin-right: .5rem;
 }
 
-.field .instructions[data-v-61e4fad3] {
+body.rtl .c-checkbox-set fieldset ul input {
+  margin-left: .5rem;
+}
+
+body.ltr .c-checkbox-field input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-checkbox-field input {
+  margin-left: .5rem;
+}
+
+.c-checkbox-field .instructions {
   color: #8795a1;
   font-size: .875rem;
 }
 
-.checkbox-set fieldset ul[data-v-6a3506ad] {
-  list-style: none;
-  padding: 0;
-  padding-left: 1rem;
-  padding-top: .5rem;
-}
-
-.checkbox-set fieldset ul input[data-v-6a3506ad] {
-  margin-right: .5rem;
-}
-
-.select-field .is-invalid select {
+.c-select-field .is-invalid select {
   border-color: #e3342f;
 }
 
-.wrapper[data-v-78008a84] {
+.c-textarea-field .wrapper {
   position: relative;
 }
 
-.wrapper .text-red-dark[data-v-78008a84] {
+.c-textarea-field .wrapper .text-red-dark {
   color: #cc1f1a;
 }
 
-.wrapper .max[data-v-78008a84] {
-  padding-right: .25rem;
+.c-textarea-field .wrapper .max {
   margin-top: .5rem;
 }
 
-.wrapper .max.floating[data-v-78008a84] {
+body.ltr .c-textarea-field .wrapper .max {
+  padding-right: .25rem;
+}
+
+body.rtl .c-textarea-field .wrapper .max {
+  padding-left: .25rem;
+}
+
+.c-textarea-field .wrapper .max.floating {
   position: absolute;
   font-size: .75rem;
   text-align: right;
 }
 
-.wrapper .max.text-grey[data-v-78008a84] {
+.c-textarea-field .wrapper .max.text-grey {
   color: #b8c2cc;
 }
 
-.wrapper .max.text-orange[data-v-78008a84] {
+.c-textarea-field .wrapper .max.text-orange {
   color: #f6993f;
 }
 
-.wrapper .max.text-red[data-v-78008a84] {
+.c-textarea-field .wrapper .max.text-red {
   color: #e3342f;
 }
 
-.wrapper[data-v-f18aa4ac] {
+.c-text-field .wrapper {
   position: relative;
 }
 
-.wrapper .text-red-dark[data-v-f18aa4ac] {
+.c-text-field .wrapper .text-red-dark {
   color: #cc1f1a;
 }
 
-.wrapper .max[data-v-f18aa4ac] {
-  padding-right: .25rem;
+.c-text-field .wrapper .max {
   margin-top: .5rem;
 }
 
-.wrapper .max.floating[data-v-f18aa4ac] {
+body.ltr .c-text-field .wrapper .max {
+  padding-right: .25rem;
+}
+
+body.rtl .c-text-field .wrapper .max {
+  padding-left: .25rem;
+}
+
+.c-text-field .wrapper .max.floating {
   position: absolute;
   font-size: .75rem;
   text-align: right;
 }
 
-.wrapper .max.text-grey[data-v-f18aa4ac] {
+.c-text-field .wrapper .max.text-grey {
   color: #b8c2cc;
 }
 
-.wrapper .max.text-orange[data-v-f18aa4ac] {
+.c-text-field .wrapper .max.text-orange {
   color: #f6993f;
 }
 
-.wrapper .max.text-red[data-v-f18aa4ac] {
+.c-text-field .wrapper .max.text-red {
   color: #e3342f;
 }
 
-.lightswitch[data-v-2b9d01d8] {
+.c-lightswitch-input label {
   position: relative;
   display: block;
   -webkit-user-select: none;
@@ -1189,12 +1251,12 @@ button.c-btn .c-btn-content {
   height: 30px;
 }
 
-.lightswitch input[data-v-2b9d01d8] {
+.c-lightswitch-input label input {
   position: absolute;
   opacity: 0;
 }
 
-.lightswitch .slider[data-v-2b9d01d8] {
+.c-lightswitch-input label .slider {
   position: absolute;
   top: 0;
   right: 0;
@@ -1206,64 +1268,71 @@ button.c-btn .c-btn-content {
           transition: .4s;
 }
 
-.lightswitch .slider[data-v-2b9d01d8]:before {
+.c-lightswitch-input label .slider:before {
   position: absolute;
   background-color: #fff;
   content: "";
   height: 26px;
   width: 26px;
-  left: 2px;
   bottom: 2px;
   -webkit-transition: .1s;
           transition: .1s;
 }
 
-.lightswitch input:checked+.slider[data-v-2b9d01d8] {
+body.ltr .c-lightswitch-input label .slider:before {
+  left: 2px;
+}
+
+body.rtl .c-lightswitch-input label .slider:before {
+  right: 2px;
+}
+
+.c-lightswitch-input label input:checked+.slider {
   background-color: #38c172;
 }
 
-.lightswitch input:focus+.slider[data-v-2b9d01d8] {
+.c-lightswitch-input label input:focus+.slider {
   -webkit-box-shadow: 0 0 1px #38c172;
           box-shadow: 0 0 1px #38c172;
 }
 
-.lightswitch input:checked+.slider[data-v-2b9d01d8]:before {
+.c-lightswitch-input label input:checked+.slider:before {
   -webkit-transform: translateX(16px);
           transform: translateX(16px);
 }
 
-.lightswitch .slider.round[data-v-2b9d01d8] {
+.c-lightswitch-input label .slider.round {
   border-radius: 34px;
 }
 
-.lightswitch .slider.round[data-v-2b9d01d8]:before {
+.c-lightswitch-input label .slider.round:before {
   border-radius: 50%;
 }
 
-.lightswitch.disabled[data-v-2b9d01d8] {
+.c-lightswitch-input label.disabled {
   opacity: .4;
 }
 
-.lightswitch.disabled .slider[data-v-2b9d01d8] {
+.c-lightswitch-input label.disabled .slider {
   cursor: default;
 }
 
-input.w-full[data-v-6a117d3d] {
+input.c-password-input.w-full {
   width: 100%;
 }
 
-select.w-full[data-v-211a2741] {
+.c-select-input select.w-full {
   width: 100%;
 }
 
-textarea.w-full[data-v-3ef58e55] {
+textarea.c-textarea-input.w-full {
   width: 100%;
 }
 
-input.w-full[data-v-1ec4235f] {
+input.w-full {
   width: 100%;
 }
 
-input.w-full[data-v-e2a7d0c8] {
+input.w-full {
   width: 100%;
 }

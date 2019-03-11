@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-lightswitch-field">
         <lightswitch-input :id="id" :checked="checked" :disabled="disabled" @change="$emit('change', $event)" @update:checked="$emit('update:checked', $event)" />
     </field>
 </template>

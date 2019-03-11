@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-url-field">
         <url-input
             :autofocus="autofocus"
             :class="{'is-invalid': errors }"
