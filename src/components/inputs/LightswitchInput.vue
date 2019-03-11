@@ -9,11 +9,8 @@
 
 <script>
     export default {
-
         props: ['id', 'checked', 'disabled'],
-
     }
-
 </script>
 
 <style lang="scss">

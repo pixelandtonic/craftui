@@ -9,13 +9,11 @@
     import LightswitchInput from '../inputs/LightswitchInput.vue';
 
     export default {
-
         props: ['label', 'id', 'checked', 'instructions', 'disabled', 'errors'],
 
         components: {
             Field,
             LightswitchInput,
         },
-
     }
 </script>

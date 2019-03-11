@@ -16,8 +16,6 @@
 
 <script>
     export default {
-
         props: ['id', 'label', 'instructions', 'errors']
-
     }
 </script>

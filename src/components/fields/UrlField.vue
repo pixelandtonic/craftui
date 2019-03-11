@@ -17,7 +17,6 @@
     import UrlInput from '../inputs/UrlInput.vue';
 
     export default {
-
         props: ['label', 'id', 'placeholder', 'value', 'autofocus', 'errors', 'disabled', 'instructions', 'size'],
 
         components: {
@@ -30,6 +29,5 @@
                 this.$refs.input.$emit('focus');
             })
         }
-
     }
 </script>

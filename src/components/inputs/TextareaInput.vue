@@ -17,9 +17,7 @@
 
 <script>
     export default {
-
         props: ['id', 'placeholder', 'value', 'cols', 'disabled', 'autocapitalize', 'spellcheck', 'size'],
-
     }
 </script>
 

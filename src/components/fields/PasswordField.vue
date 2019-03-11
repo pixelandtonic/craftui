@@ -29,6 +29,5 @@
                 this.$refs.input.$emit('focus');
             })
         }
-
     }
 </script>

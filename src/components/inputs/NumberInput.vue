@@ -23,9 +23,7 @@
 </template>
 
 <script>
-
     export default {
-
         props: ['id', 'name', 'placeholder', 'value', 'autofocus', 'disabled', 'readonly', 'min', 'max', 'step', 'pattern'],
 
         created() {
@@ -33,7 +31,5 @@
                 this.$refs.input.focus()
             })
         },
-
     }
-
 </script>

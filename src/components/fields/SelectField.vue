@@ -10,14 +10,12 @@
     import SelectInput from '../inputs/SelectInput.vue';
 
     export default {
-
         props: ['label', 'instructions', 'fullwidth', 'id', 'options', 'value', 'errors'],
 
         components: {
             Field,
             SelectInput,
         },
-
     }
 </script>
 

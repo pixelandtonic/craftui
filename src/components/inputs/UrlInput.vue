@@ -15,7 +15,6 @@
 
 <script>
     export default {
-
         props: ['id', 'placeholder', 'value', 'autofocus', 'disabled', 'size'],
 
         created() {
@@ -23,7 +22,6 @@
                 this.$refs.input.focus()
             })
         }
-
     }
 </script>
 

@@ -32,7 +32,6 @@
     import TextareaInput from '../inputs/TextareaInput.vue';
 
     export default {
-
         props: ['label', 'instructions', 'id', 'placeholder', 'value', 'cols', 'rows', 'errors', 'disabled', 'autocapitalize', 'spellcheck', 'size', 'max'],
 
         components: {
@@ -47,7 +46,6 @@
                 }
             }
         }
-
     }
 </script>
 
