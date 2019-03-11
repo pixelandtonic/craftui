@@ -51,7 +51,9 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    @import "../../sass/mixins";
+
     .wrapper {
         @apply .relative;
 
@@ -60,7 +62,8 @@
         }
 
         .max {
-            @apply .pr-1 .mt-2;
+            @apply .mt-2;
+            @include pr(1);
 
             &.floating {
                 @apply .absolute .text-xs .text-right;
@@ -77,7 +80,6 @@
             &.text-red {
                 @apply .text-red;
             }
-
         }
     }
 </style>

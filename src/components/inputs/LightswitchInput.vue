@@ -16,7 +16,9 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    @import "../../sass/mixins";
+
     .lightswitch {
         @apply .relative .block .select-none;
         width: 46px;
@@ -38,7 +40,7 @@
             content: "";
             height: 26px;
             width: 26px;
-            left: 2px;
+            @include left(2px);
             bottom: 2px;
             -webkit-transition: .1s;
             transition: .1s;

@@ -102,6 +102,8 @@
 </script>
 
 <style lang="scss">
+    @import "../sass/mixins";
+
     .c-btn,
     a.c-btn,
     button.c-btn {
@@ -345,9 +347,9 @@
             .c-spinner {
                 @apply .absolute;
                 top: 50%;
-                left: 50%;
+                @include left(50%);
                 margin-top: -12px;
-                margin-left: -12px;
+                @include ml(-12px);
             }
 
             .c-btn-content {
@@ -356,7 +358,8 @@
         }
 
         .c-icon {
-            @apply .mr-1 .align-middle;
+            @apply .align-middle;
+            @include mr(1);
 
         }
 

@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :errors="errors">
+    <field :id="id" :errors="errors" class="c-checkbox-field">
         <label>
             <!--Must be @change, not @input (Safari issue)-->
             <input :id="id" type="checkbox" :value="value" :checked="value" @change="$emit('input', $event.target.checked)">
@@ -14,10 +14,12 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    .field {
+<style lang="scss">
+    @import '../../sass/mixins';
+
+    .c-checkbox-field {
         input {
-            @apply .mr-2;
+            @include mr(2);
         }
 
         .instructions {

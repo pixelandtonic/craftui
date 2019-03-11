@@ -35,14 +35,17 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    @import "../../sass/mixins";
+
     .checkbox-set {
         fieldset {
             ul {
-                @apply .list-reset .pl-4 .pt-2;
+                @apply .list-reset .pt-2;
+                @include pl(4);
 
                 input {
-                    @apply .mr-2;
+                    @include mr(2);
                 }
             }
         }
