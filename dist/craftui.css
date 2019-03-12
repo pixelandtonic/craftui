@@ -666,20 +666,11 @@ button.c-btn.large {
 }
 
 .c-btn.danger:not(.outline) .c-icon,
-.c-btn.info:not(.outline) .c-icon,
 .c-btn.primary:not(.outline) .c-icon,
-.c-btn.success:not(.outline) .c-icon,
-.c-btn.warning:not(.outline) .c-icon,
 a.c-btn.danger:not(.outline) .c-icon,
-a.c-btn.info:not(.outline) .c-icon,
 a.c-btn.primary:not(.outline) .c-icon,
-a.c-btn.success:not(.outline) .c-icon,
-a.c-btn.warning:not(.outline) .c-icon,
 button.c-btn.danger:not(.outline) .c-icon,
-button.c-btn.info:not(.outline) .c-icon,
-button.c-btn.primary:not(.outline) .c-icon,
-button.c-btn.success:not(.outline) .c-icon,
-button.c-btn.warning:not(.outline) .c-icon {
+button.c-btn.primary:not(.outline) .c-icon {
   fill: #fff;
 }
 
@@ -705,50 +696,6 @@ button.c-btn.primary:not([disabled]):active {
   border-color: #1c3d5a;
 }
 
-.c-btn.warning,
-a.c-btn.warning,
-button.c-btn.warning {
-  background-color: #f6993f;
-  border-color: #f6993f;
-  color: #fff;
-}
-
-.c-btn.warning:not([disabled]):hover,
-a.c-btn.warning:not([disabled]):hover,
-button.c-btn.warning:not([disabled]):hover {
-  background-color: #de751f;
-  border-color: #de751f;
-}
-
-.c-btn.warning:not([disabled]):active,
-a.c-btn.warning:not([disabled]):active,
-button.c-btn.warning:not([disabled]):active {
-  background-color: #613b1f;
-  border-color: #613b1f;
-}
-
-.c-btn.success,
-a.c-btn.success,
-button.c-btn.success {
-  background-color: #38c172;
-  border-color: #38c172;
-  color: #fff;
-}
-
-.c-btn.success:not([disabled]):hover,
-a.c-btn.success:not([disabled]):hover,
-button.c-btn.success:not([disabled]):hover {
-  background-color: #1f9d55;
-  border-color: #1f9d55;
-}
-
-.c-btn.success:not([disabled]):active,
-a.c-btn.success:not([disabled]):active,
-button.c-btn.success:not([disabled]):active {
-  background-color: #1a4731;
-  border-color: #1a4731;
-}
-
 .c-btn.danger,
 a.c-btn.danger,
 button.c-btn.danger {
@@ -769,28 +716,6 @@ a.c-btn.danger:not([disabled]):active,
 button.c-btn.danger:not([disabled]):active {
   background-color: #621b18;
   border-color: #621b18;
-}
-
-.c-btn.info,
-a.c-btn.info,
-button.c-btn.info {
-  background-color: #4dc0b5;
-  border-color: #4dc0b5;
-  color: #fff;
-}
-
-.c-btn.info:not([disabled]):hover,
-a.c-btn.info:not([disabled]):hover,
-button.c-btn.info:not([disabled]):hover {
-  background-color: #38a89d;
-  border-color: #38a89d;
-}
-
-.c-btn.info:not([disabled]):active,
-a.c-btn.info:not([disabled]):active,
-button.c-btn.info:not([disabled]):active {
-  background-color: #20504f;
-  border-color: #20504f;
 }
 
 .c-btn[disabled],
@@ -826,46 +751,6 @@ button.c-btn.outline.primary:not([disabled]):active {
   background-color: #1c3d5a;
 }
 
-.c-btn.outline.warning,
-a.c-btn.outline.warning,
-button.c-btn.outline.warning {
-  color: #f6993f;
-}
-
-.c-btn.outline.warning:not([disabled]):hover,
-a.c-btn.outline.warning:not([disabled]):hover,
-button.c-btn.outline.warning:not([disabled]):hover {
-  color: #fff;
-  background-color: #f6993f;
-}
-
-.c-btn.outline.warning:not([disabled]):active,
-a.c-btn.outline.warning:not([disabled]):active,
-button.c-btn.outline.warning:not([disabled]):active {
-  color: #fff;
-  background-color: #613b1f;
-}
-
-.c-btn.outline.success,
-a.c-btn.outline.success,
-button.c-btn.outline.success {
-  color: #38c172;
-}
-
-.c-btn.outline.success:not([disabled]):hover,
-a.c-btn.outline.success:not([disabled]):hover,
-button.c-btn.outline.success:not([disabled]):hover {
-  color: #fff;
-  background-color: #38c172;
-}
-
-.c-btn.outline.success:not([disabled]):active,
-a.c-btn.outline.success:not([disabled]):active,
-button.c-btn.outline.success:not([disabled]):active {
-  color: #fff;
-  background-color: #1a4731;
-}
-
 .c-btn.outline.danger,
 a.c-btn.outline.danger,
 button.c-btn.outline.danger {
@@ -886,26 +771,6 @@ button.c-btn.outline.danger:not([disabled]):active {
   background-color: #621b18;
 }
 
-.c-btn.outline.info,
-a.c-btn.outline.info,
-button.c-btn.outline.info {
-  color: #4dc0b5;
-}
-
-.c-btn.outline.info:not([disabled]):hover,
-a.c-btn.outline.info:not([disabled]):hover,
-button.c-btn.outline.info:not([disabled]):hover {
-  color: #fff;
-  background-color: #4dc0b5;
-}
-
-.c-btn.outline.info:not([disabled]):active,
-a.c-btn.outline.info:not([disabled]):active,
-button.c-btn.outline.info:not([disabled]):active {
-  color: #fff;
-  background-color: #20504f;
-}
-
 .c-btn.outline .c-icon,
 a.c-btn.outline .c-icon,
 button.c-btn.outline .c-icon {
@@ -919,20 +784,11 @@ button.c-btn.loading {
 }
 
 .c-btn.loading:not(.outline).danger .c-spinner>.animation,
-.c-btn.loading:not(.outline).info .c-spinner>.animation,
 .c-btn.loading:not(.outline).primary .c-spinner>.animation,
-.c-btn.loading:not(.outline).success .c-spinner>.animation,
-.c-btn.loading:not(.outline).warning .c-spinner>.animation,
 a.c-btn.loading:not(.outline).danger .c-spinner>.animation,
-a.c-btn.loading:not(.outline).info .c-spinner>.animation,
 a.c-btn.loading:not(.outline).primary .c-spinner>.animation,
-a.c-btn.loading:not(.outline).success .c-spinner>.animation,
-a.c-btn.loading:not(.outline).warning .c-spinner>.animation,
 button.c-btn.loading:not(.outline).danger .c-spinner>.animation,
-button.c-btn.loading:not(.outline).info .c-spinner>.animation,
-button.c-btn.loading:not(.outline).primary .c-spinner>.animation,
-button.c-btn.loading:not(.outline).success .c-spinner>.animation,
-button.c-btn.loading:not(.outline).warning .c-spinner>.animation {
+button.c-btn.loading:not(.outline).primary .c-spinner>.animation {
   border-color: #fff;
 }
 
@@ -942,28 +798,10 @@ button.c-btn.loading.outline.primary .c-spinner>.animation {
   border-color: #3490dc;
 }
 
-.c-btn.loading.outline.warning .c-spinner>.animation,
-a.c-btn.loading.outline.warning .c-spinner>.animation,
-button.c-btn.loading.outline.warning .c-spinner>.animation {
-  border-color: #f6993f;
-}
-
-.c-btn.loading.outline.success .c-spinner>.animation,
-a.c-btn.loading.outline.success .c-spinner>.animation,
-button.c-btn.loading.outline.success .c-spinner>.animation {
-  border-color: #38c172;
-}
-
 .c-btn.loading.outline.danger .c-spinner>.animation,
 a.c-btn.loading.outline.danger .c-spinner>.animation,
 button.c-btn.loading.outline.danger .c-spinner>.animation {
   border-color: #e3342f;
-}
-
-.c-btn.loading.outline.info .c-spinner>.animation,
-a.c-btn.loading.outline.info .c-spinner>.animation,
-button.c-btn.loading.outline.info .c-spinner>.animation {
-  border-color: #4dc0b5;
 }
 
 .c-btn.loading .c-spinner,
@@ -1125,6 +963,19 @@ button.c-btn .c-btn-content {
   }
 }
 
+body.ltr .c-checkbox-field input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-checkbox-field input {
+  margin-left: .5rem;
+}
+
+.c-checkbox-field .instructions {
+  color: #8795a1;
+  font-size: .875rem;
+}
+
 .c-checkbox-set fieldset ul {
   list-style: none;
   padding: 0;
@@ -1145,19 +996,6 @@ body.ltr .c-checkbox-set fieldset ul input {
 
 body.rtl .c-checkbox-set fieldset ul input {
   margin-left: .5rem;
-}
-
-body.ltr .c-checkbox-field input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-checkbox-field input {
-  margin-left: .5rem;
-}
-
-.c-checkbox-field .instructions {
-  color: #8795a1;
-  font-size: .875rem;
 }
 
 .c-select-field .is-invalid select {
@@ -1315,10 +1153,6 @@ body.rtl .c-lightswitch-input label .slider:before {
 
 .c-lightswitch-input label.disabled .slider {
   cursor: default;
-}
-
-input.c-password-input.w-full {
-  width: 100%;
 }
 
 .c-select-input select.w-full {
