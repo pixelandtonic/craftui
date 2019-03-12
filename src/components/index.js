@@ -6,8 +6,7 @@ import Icon from './Icon.vue';
 import Lightswitch from './Lightswitch.vue';
 import Dropdown from './Dropdown.vue';
 import Spinner from './Spinner.vue';
-import TextareaField from './TextareaField.vue';
-import Text from './Text.vue';
+import TextField from './TextField.vue';
 
 const CraftComponents = {
   Btn,
@@ -18,8 +17,7 @@ const CraftComponents = {
   Lightswitch,
   Dropdown,
   Spinner,
-  TextareaField,
-  Text,
+  TextField,
 };
 
 export default CraftComponents;

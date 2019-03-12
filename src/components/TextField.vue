@@ -1,7 +1,9 @@
 <template>
     <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
         <div class="wrapper">
-            <input
+            <component
+                    :is="computedComponent"
+
                     :autocapitalize="autocapitalize"
                     :autofocus="autofocus"
                     :class="{
@@ -9,6 +11,7 @@
                         'is-invalid': errors,
                         'text-red-dark': max && max < this.value.length
                     }"
+                    :cols="computedCols"
                     :disabled="disabled"
                     :id="id"
                     :mask="mask"
@@ -18,10 +21,11 @@
                     :pattern="pattern"
                     :placeholder="placeholder"
                     :readonly="readonly"
+                    :rows="computedRows"
                     :size="size"
                     :spellcheck="spellcheck"
                     :step="step"
-                    :type="type"
+                    :type="computedType"
                     :value="value"
                     @change="$emit('change', $event)"
                     @input="$emit('input', $event.target.value)"
@@ -68,6 +72,10 @@
             autofocus: {
                 type: Boolean,
                 default: false
+            },
+            cols: {
+                type: Number,
+                default: null,
             },
             disabled: {
                 type: Boolean,
@@ -117,6 +125,10 @@
                 type: Boolean,
                 default: false
             },
+            rows: {
+                type: Number,
+                default: null,
+            },
             size: {
                 type: String,
                 default: null
@@ -148,6 +160,38 @@
                 if (this.max) {
                     return this.max - this.value.length
                 }
+            },
+
+            computedComponent() {
+                if (this.type === 'textarea') {
+                    return 'textarea'
+                }
+
+                return 'input'
+            },
+
+            computedType() {
+                if (this.type === 'textarea') {
+                    return null
+                }
+
+                return this.type
+            },
+
+            computedCols() {
+                if (this.type !== 'textarea') {
+                    return null
+                }
+
+                return this.cols
+            },
+
+            computedRows() {
+                if (this.type !== 'textarea') {
+                    return null
+                }
+
+                return this.rows ? this.rows : 4
             }
         },
 
