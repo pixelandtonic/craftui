@@ -947,7 +947,7 @@ var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _
                 'text-grey': _vm.remainingChars >= 20,
                 'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                 'text-red': _vm.remainingChars < 0
-            }},[_vm._v(_vm._s(_vm.remainingChars)+" character"+_vm._s(_vm.remainingChars > 1 || _vm.remainingChars < 1 ? 's' : '')+" left.")]):_vm._e()],1)])};
+            }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
 var __vue_staticRenderFns__$b = [];
 
   /* style */
@@ -1395,7 +1395,7 @@ var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _
                 'text-grey': _vm.remainingChars >= 20,
                 'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                 'text-red': _vm.remainingChars < 0
-            }},[_vm._v(_vm._s(_vm.remainingChars)+" character"+_vm._s(_vm.remainingChars > 1 || _vm.remainingChars < 1 ? 's' : '')+" left.")]):_vm._e()],1)])};
+            }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
 var __vue_staticRenderFns__$d = [];
 
   /* style */

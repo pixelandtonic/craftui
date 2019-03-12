@@ -26,7 +26,7 @@
                     'text-grey': remainingChars >= 20,
                     'text-orange': remainingChars < 20 && remainingChars >= 0,
                     'text-red': remainingChars < 0
-                }">{{ remainingChars }} character{{ remainingChars > 1 || remainingChars < 1 ? 's' : ''}} left.</p>
+                }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
     </c-field>
 </template>
@@ -57,7 +57,6 @@
                 type: Number,
                 default: null
             },
-
             id: {
                 type: String,
                 default: null
