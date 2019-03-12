@@ -17,6 +17,7 @@
                     :autocapitalize="autocapitalize"
                     :spellcheck="spellcheck"
                     :readonly="readonly"
+                    :type="type"
                     ref="input"/>
 
             <p v-if="max"
@@ -36,6 +37,7 @@
 
     export default {
         props: {
+            type: {type: String, default: 'text'},
             label: {type: String, default: null},
             errors: {type: Array, default: null},
             instructions: {type: String, default: null},
