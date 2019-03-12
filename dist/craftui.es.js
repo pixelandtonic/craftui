@@ -1010,6 +1010,22 @@ var script$b = {
     size: {
       type: String,
       default: null
+    },
+    max: {
+      type: String,
+      default: null
+    },
+    min: {
+      type: String,
+      default: null
+    },
+    pattern: {
+      type: String,
+      default: null
+    },
+    step: {
+      type: String,
+      default: null
     }
   },
   created: function created() {
@@ -1022,7 +1038,7 @@ var script$b = {
 /* script */
 const __vue_script__$b = script$b;
 /* template */
-var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",staticClass:"c-text-input",class:{'w-full': !_vm.size },attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"autocomplete":"off","autocapitalize":_vm.autocapitalize,"spellcheck":_vm.spellcheck,"readonly":_vm.readonly,"size":_vm.size,"type":_vm.type},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)}}})};
+var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",staticClass:"c-text-input",class:{'w-full': !_vm.size },attrs:{"autocomplete":"off","autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.type},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}})};
 var __vue_staticRenderFns__$c = [];
 
   /* style */
@@ -1174,71 +1190,6 @@ var __vue_staticRenderFns__$d = [];
     undefined
   );
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var script$d = {
-  props: ['id', 'name', 'placeholder', 'value', 'autofocus', 'disabled', 'readonly', 'min', 'max', 'step', 'pattern'],
-  created: function created() {
-    this.$on('focus', function () {
-      this.$refs.input.focus();
-    });
-  }
-};
-
-/* script */
-const __vue_script__$d = script$d;
-
-/* template */
-var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{ref:"input",staticClass:"c-number-input",attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"autocomplete":"off","readonly":_vm.readonly,"min":_vm.min,"max":_vm.max,"step":_vm.step,"pattern":_vm.pattern,"type":"number"},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)},"change":function($event){return _vm.$emit('change', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}})};
-var __vue_staticRenderFns__$e = [];
-
-  /* style */
-  const __vue_inject_styles__$e = undefined;
-  /* scoped */
-  const __vue_scope_id__$e = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$e = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$e = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var NumberInput = normalizeComponent_1(
-    { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
-    __vue_inject_styles__$e,
-    __vue_script__$d,
-    __vue_scope_id__$e,
-    __vue_is_functional_template__$e,
-    __vue_module_identifier__$e,
-    undefined,
-    undefined
-  );
-
 var CraftComponents = {
   Btn: Btn,
   Field: Field,
@@ -1253,8 +1204,7 @@ var CraftComponents = {
   LightswitchInput: LightswitchInput,
   SelectInput: SelectInput,
   TextareaInput: TextareaInput,
-  TextInput: TextInput,
-  NumberInput: NumberInput
+  TextInput: TextInput
 };
 
 var index = {

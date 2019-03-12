@@ -14,7 +14,6 @@ import LightswitchInput from './inputs/LightswitchInput.vue';
 import SelectInput from './inputs/SelectInput.vue';
 import TextareaInput from './inputs/TextareaInput.vue';
 import TextInput from './inputs/TextInput.vue';
-import NumberInput from './inputs/NumberInput.vue';
 
 const CraftComponents = {
   Btn,
@@ -33,7 +32,6 @@ const CraftComponents = {
   SelectInput,
   TextareaInput,
   TextInput,
-  NumberInput,
 };
 
 export default CraftComponents;

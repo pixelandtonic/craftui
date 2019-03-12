@@ -1155,11 +1155,11 @@ body.rtl .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-.c-select-input select.w-full {
+textarea.c-textarea-input.w-full {
   width: 100%;
 }
 
-textarea.c-textarea-input.w-full {
+.c-select-input select.w-full {
   width: 100%;
 }
 

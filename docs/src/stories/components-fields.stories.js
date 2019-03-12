@@ -122,5 +122,8 @@ storiesOf('Components|Fields/Text', module)
     }))
     .add('URL', () => ({
         template: '<text-field type="url" label="Label" instructions="Some instructions."></text-field>',
+    }))
+    .add('Number', () => ({
+        template: '<text-field type="number" label="Label" instructions="Some instructions."></text-field>',
     }));
 

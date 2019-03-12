@@ -32,4 +32,7 @@ storiesOf('Components|Inputs/Text', module)
     }))
     .add('URL', () => ({
         template: '<text-input type="url"></text-input>',
+    }))
+    .add('Number', () => ({
+        template: '<text-input type="number"></text-input>',
     }));
