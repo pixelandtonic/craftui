@@ -3,36 +3,36 @@ import { storiesOf } from '@storybook/vue'
 
 storiesOf('Components|Inputs/Lightswitch', module)
     .add('Checked', () => ({
-        template: '<c-lightswitch-input :checked="true"></c-lightswitch-input>',
+        template: '<lightswitch-input :checked="true"></lightswitch-input>',
     }))
     .add('Unchecked', () => ({
-        template: '<c-lightswitch-input :checked="false"></c-lightswitch-input>',
+        template: '<lightswitch-input :checked="false"></lightswitch-input>',
     }));
 
 storiesOf('Components|Inputs/Select', module)
     .add('Default', () => ({
-        template: '<c-select-input :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></c-select-input>',
+        template: '<select-input :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></select-input>',
     }));
 
 
 storiesOf('Components|Inputs/Textarea', module)
     .add('Default', () => ({
-        template: '<c-textarea-input id="textarea-default" label="Textarea"></c-textarea-input>',
+        template: '<textarea-input id="textarea-default" label="Textarea"></textarea-input>',
     }));
 
 storiesOf('Components|Inputs/Text', module)
     .add('Default', () => ({
-        template: '<c-text-input></c-text-input>',
+        template: '<text-input></text-input>',
     }))
     .add('Mask', () => ({
-        template: '<c-text-input placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></c-text-input>',
+        template: '<text-input placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text-input>',
     }))
     .add('Password', () => ({
-        template: '<c-text-input type="password"></c-text-input>',
+        template: '<text-input type="password"></text-input>',
     }))
     .add('URL', () => ({
-        template: '<c-text-input type="url"></c-text-input>',
+        template: '<text-input type="url"></text-input>',
     }))
     .add('Number', () => ({
-        template: '<c-text-input type="number"></c-text-input>',
+        template: '<text-input type="number"></text-input>',
     }));

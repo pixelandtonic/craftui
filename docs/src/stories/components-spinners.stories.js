@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
-import CSpinnerNotesMD from '../notes/CSpinner.md'
+import SpinnerNotesMD from '../notes/Spinner.md'
 
 storiesOf('Components|Spinners', module)
     .add('base', () => ({
-        template: '<c-spinner></c-spinner>',
-    }), { notes: { markdown: CSpinnerNotesMD } })
+        template: '<spinner></spinner>',
+    }), { notes: { markdown: SpinnerNotesMD } })
     .add('lg', () => ({
-        template: '<c-spinner class="lg"></c-spinner>',
-    }), { notes: { markdown: CSpinnerNotesMD } })
+        template: '<spinner class="lg"></spinner>',
+    }), { notes: { markdown: SpinnerNotesMD } })

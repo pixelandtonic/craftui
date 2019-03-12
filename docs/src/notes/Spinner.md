@@ -7,7 +7,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Spinner.vue
 ## Usage
 
 ```html
-<c-spinner size="lg" />
+<spinner size="lg" />
 ```
 
 ## Attributes

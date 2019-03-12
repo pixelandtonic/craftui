@@ -6,8 +6,8 @@
 
 
 <script>
-    import CField from '../CField.vue';
-    import CSelectInput from '../inputs/CSelectInput.vue';
+    import Field from '../Field.vue';
+    import SelectInput from '../inputs/SelectInput.vue';
 
     export default {
         props: {
@@ -42,8 +42,8 @@
         },
 
         components: {
-            CField,
-            CSelectInput,
+            Field,
+            SelectInput,
         },
     }
 </script>

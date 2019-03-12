@@ -1,15 +1,15 @@
-# c-btn
+# btn
 
 A Vue implementation of a Craft UI button.
 
-https://github.com/pixelandtonic/craftui/blob/master/src/components/CBtn.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
 
 ## Usage
 
 ```html
-<c-btn kind="primary" small outline @click="actionClick">
+<btn kind="primary" small outline @click="actionClick">
   Hello I am a button
-</c-btn>
+</btn>
 ```
 
 ## Attributes

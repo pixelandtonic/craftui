@@ -1,13 +1,13 @@
-# c-icon
+# icon
 
 A Vue implementation of a Craft UI icon.
 
-https://github.com/pixelandtonic/craftui/blob/master/src/components/CIcon.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Icon.vue
 
 ## Usage
 
 ```html
-<c-icon icon="glass-martini-alt" />
+<icon icon="glass-martini-alt" />
 ```
 
 ## Attributes

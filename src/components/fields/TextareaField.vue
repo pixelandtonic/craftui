@@ -28,8 +28,8 @@
 </template>
 
 <script>
-    import CField from '../CField.vue';
-    import CTextareaInput from '../inputs/CTextareaInput.vue';
+    import Field from '../Field.vue';
+    import TextareaInput from '../inputs/TextareaInput.vue';
 
     export default {
         props: {
@@ -88,8 +88,8 @@
         },
 
         components: {
-            CField,
-            CTextareaInput,
+            Field,
+            TextareaInput,
         },
 
         computed: {

@@ -228,7 +228,7 @@
     
 
     
-    var CBtn = normalizeComponent_1(
+    var Btn = normalizeComponent_1(
       { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
       __vue_inject_styles__,
       __vue_script__,
@@ -297,7 +297,7 @@
     
 
     
-    var CField = normalizeComponent_1(
+    var Field = normalizeComponent_1(
       { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
       __vue_inject_styles__$1,
       __vue_script__$1,
@@ -343,7 +343,7 @@
     
 
     
-    var CIcon = normalizeComponent_1(
+    var Icon = normalizeComponent_1(
       { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
       __vue_inject_styles__$2,
       __vue_script__$2,
@@ -373,7 +373,7 @@
     
 
     
-    var CSpinner = normalizeComponent_1(
+    var Spinner = normalizeComponent_1(
       { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
       __vue_inject_styles__$3,
       {},
@@ -439,7 +439,7 @@
     
 
     
-    var CCheckboxField = normalizeComponent_1(
+    var CheckboxField = normalizeComponent_1(
       { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
       __vue_inject_styles__$4,
       __vue_script__$3,
@@ -524,7 +524,7 @@
     
 
     
-    var CCheckboxSet = normalizeComponent_1(
+    var CheckboxSet = normalizeComponent_1(
       { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
       __vue_inject_styles__$5,
       __vue_script__$4,
@@ -581,7 +581,7 @@
     
 
     
-    var CLightswitchInput = normalizeComponent_1(
+    var LightswitchInput = normalizeComponent_1(
       { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
       __vue_inject_styles__$6,
       __vue_script__$5,
@@ -621,8 +621,8 @@
       }
     },
     components: {
-      CField: CField,
-      CLightswitchInput: CLightswitchInput
+      Field: Field,
+      LightswitchInput: LightswitchInput
     }
   };
 
@@ -647,7 +647,7 @@
     
 
     
-    var CLightswitchField = normalizeComponent_1(
+    var LightswitchField = normalizeComponent_1(
       { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
       __vue_inject_styles__$7,
       __vue_script__$6,
@@ -705,7 +705,7 @@
     
 
     
-    var CSelectInput = normalizeComponent_1(
+    var SelectInput = normalizeComponent_1(
       { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
       __vue_inject_styles__$8,
       __vue_script__$7,
@@ -749,8 +749,8 @@
       }
     },
     components: {
-      CField: CField,
-      CSelectInput: CSelectInput
+      Field: Field,
+      SelectInput: SelectInput
     }
   };
 
@@ -774,7 +774,7 @@
     
 
     
-    var CSelectField = normalizeComponent_1(
+    var SelectField = normalizeComponent_1(
       { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
       __vue_inject_styles__$9,
       __vue_script__$8,
@@ -859,7 +859,7 @@
     
 
     
-    var CTextareaInput = normalizeComponent_1(
+    var TextareaInput = normalizeComponent_1(
       { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
       __vue_inject_styles__$a,
       __vue_script__$9,
@@ -927,8 +927,8 @@
       }
     },
     components: {
-      CField: CField,
-      CTextareaInput: CTextareaInput
+      Field: Field,
+      TextareaInput: TextareaInput
     },
     computed: {
       remainingChars: function remainingChars() {
@@ -966,7 +966,7 @@
     
 
     
-    var CTextareaField = normalizeComponent_1(
+    var TextareaField = normalizeComponent_1(
       { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
       __vue_inject_styles__$b,
       __vue_script__$a,
@@ -1290,7 +1290,7 @@
     
 
     
-    var CTextInput = normalizeComponent_1(
+    var TextInput = normalizeComponent_1(
       { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
       __vue_inject_styles__$c,
       __vue_script__$b,
@@ -1370,8 +1370,8 @@
       }
     },
     components: {
-      CField: CField,
-      CTextInput: CTextInput
+      Field: Field,
+      TextInput: TextInput
     },
     computed: {
       remainingChars: function remainingChars() {
@@ -1414,7 +1414,7 @@
     
 
     
-    var CTextField = normalizeComponent_1(
+    var TextField = normalizeComponent_1(
       { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
       __vue_inject_styles__$d,
       __vue_script__$c,
@@ -1426,20 +1426,20 @@
     );
 
   var CraftComponents = {
-    CBtn: CBtn,
-    CField: CField,
-    CIcon: CIcon,
-    CSpinner: CSpinner,
-    CCheckboxField: CCheckboxField,
-    CCheckboxSet: CCheckboxSet,
-    CLightswitchField: CLightswitchField,
-    CSelectField: CSelectField,
-    CTextareaField: CTextareaField,
-    CTextField: CTextField,
-    CLightswitchInput: CLightswitchInput,
-    CSelectInput: CSelectInput,
-    CTextareaInput: CTextareaInput,
-    CTextInput: CTextInput
+    Btn: Btn,
+    Field: Field,
+    Icon: Icon,
+    Spinner: Spinner,
+    CheckboxField: CheckboxField,
+    CheckboxSet: CheckboxSet,
+    LightswitchField: LightswitchField,
+    SelectField: SelectField,
+    TextareaField: TextareaField,
+    TextField: TextField,
+    LightswitchInput: LightswitchInput,
+    SelectInput: SelectInput,
+    TextareaInput: TextareaInput,
+    TextInput: TextInput
   };
 
   var index = {

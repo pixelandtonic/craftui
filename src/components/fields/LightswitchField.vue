@@ -5,8 +5,8 @@
 </template>
 
 <script>
-    import CField from '../CField.vue';
-    import CLightswitchInput from '../inputs/CLightswitchInput.vue';
+    import Field from '../Field.vue';
+    import LightswitchInput from '../inputs/LightswitchInput.vue';
 
     export default {
         props: {
@@ -36,8 +36,8 @@
             },
         },
         components: {
-            CField,
-            CLightswitchInput,
+            Field,
+            LightswitchInput,
         },
     }
 </script>
