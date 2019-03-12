@@ -211,7 +211,7 @@
               block: _vm.block,
               outline: _vm.outline,
               loading: _vm.loading
-          }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('c-spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('c-icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
+          }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
   var __vue_staticRenderFns__ = [];
 
     /* style */
@@ -249,152 +249,7 @@
   //
   //
   //
-  //
-  //
-  //
-  //
-  //
-  //
   var script$1 = {
-    props: {
-      errors: {
-        type: Array,
-        default: null
-      },
-      id: {
-        type: String,
-        default: null
-      },
-      instructions: {
-        type: String,
-        default: null
-      },
-      label: {
-        type: String,
-        default: null
-      }
-    }
-  };
-
-  /* script */
-  const __vue_script__$1 = script$1;
-
-  /* template */
-  var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return _c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v("\n        "+_vm._s(error)+"\n    ")])})],2)};
-  var __vue_staticRenderFns__$1 = [];
-
-    /* style */
-    const __vue_inject_styles__$1 = undefined;
-    /* scoped */
-    const __vue_scope_id__$1 = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$1 = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$1 = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var Field = normalizeComponent_1(
-      { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
-      __vue_inject_styles__$1,
-      __vue_script__$1,
-      __vue_scope_id__$1,
-      __vue_is_functional_template__$1,
-      __vue_module_identifier__$1,
-      undefined,
-      undefined
-    );
-
-  //
-  //
-  //
-  //
-  //
-  //
-  var script$2 = {
-    props: {
-      icon: {
-        type: String,
-        default: null
-      }
-    }
-  };
-
-  /* script */
-  const __vue_script__$2 = script$2;
-  /* template */
-  var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
-  var __vue_staticRenderFns__$2 = [];
-
-    /* style */
-    const __vue_inject_styles__$2 = undefined;
-    /* scoped */
-    const __vue_scope_id__$2 = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$2 = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$2 = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var Icon = normalizeComponent_1(
-      { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-      __vue_inject_styles__$2,
-      __vue_script__$2,
-      __vue_scope_id__$2,
-      __vue_is_functional_template__$2,
-      __vue_module_identifier__$2,
-      undefined,
-      undefined
-    );
-
-  /* script */
-  /* template */
-  var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-  var __vue_staticRenderFns__$3 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner"},[_c('div',{staticClass:"animation"})])}];
-
-    /* style */
-    const __vue_inject_styles__$3 = undefined;
-    /* scoped */
-    const __vue_scope_id__$3 = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$3 = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$3 = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var Spinner = normalizeComponent_1(
-      { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-      __vue_inject_styles__$3,
-      {},
-      __vue_scope_id__$3,
-      __vue_is_functional_template__$3,
-      __vue_module_identifier__$3,
-      undefined,
-      undefined
-    );
-
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  var script$3 = {
     props: {
       errors: {
         type: Array,
@@ -420,32 +275,32 @@
   };
 
   /* script */
-  const __vue_script__$3 = script$3;
+  const __vue_script__$1 = script$1;
   /* template */
-  var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-checkbox-field",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
-  var __vue_staticRenderFns__$4 = [];
+  var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-field",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
+  var __vue_staticRenderFns__$1 = [];
 
     /* style */
-    const __vue_inject_styles__$4 = undefined;
+    const __vue_inject_styles__$1 = undefined;
     /* scoped */
-    const __vue_scope_id__$4 = undefined;
+    const __vue_scope_id__$1 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$4 = undefined;
+    const __vue_module_identifier__$1 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$4 = false;
+    const __vue_is_functional_template__$1 = false;
     /* style inject */
     
     /* style inject SSR */
     
 
     
-    var CheckboxField = normalizeComponent_1(
-      { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-      __vue_inject_styles__$4,
-      __vue_script__$3,
-      __vue_scope_id__$4,
-      __vue_is_functional_template__$4,
-      __vue_module_identifier__$4,
+    var Checkbox = normalizeComponent_1(
+      { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
+      __vue_inject_styles__$1,
+      __vue_script__$1,
+      __vue_scope_id__$1,
+      __vue_is_functional_template__$1,
+      __vue_module_identifier__$1,
       undefined,
       undefined
     );
@@ -471,7 +326,7 @@
   //
   //
   //
-  var script$4 = {
+  var script$2 = {
     props: {
       options: {
         type: Array,
@@ -505,9 +360,188 @@
   };
 
   /* script */
+  const __vue_script__$2 = script$2;
+  /* template */
+  var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-set",attrs:{"errors":_vm.errors}},[_c('fieldset',[_c('legend',[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_c('ul',_vm._l((_vm.options),function(option,index){return _c('li',{key:index},[_c('label',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.localValue),expression:"localValue"}],attrs:{"type":"checkbox"},domProps:{"value":option.value,"checked":Array.isArray(_vm.localValue)?_vm._i(_vm.localValue,option.value)>-1:(_vm.localValue)},on:{"change":[function($event){var $$a=_vm.localValue,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=option.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.localValue=$$a.concat([$$v]));}else{$$i>-1&&(_vm.localValue=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.localValue=$$c;}},function($event){return _vm.$emit('input', _vm.localValue)}]}}),_vm._v("\n                    "+_vm._s(option.label)+"\n                ")])])}),0)])])};
+  var __vue_staticRenderFns__$2 = [];
+
+    /* style */
+    const __vue_inject_styles__$2 = undefined;
+    /* scoped */
+    const __vue_scope_id__$2 = undefined;
+    /* module identifier */
+    const __vue_module_identifier__$2 = undefined;
+    /* functional template */
+    const __vue_is_functional_template__$2 = false;
+    /* style inject */
+    
+    /* style inject SSR */
+    
+
+    
+    var CheckboxSet = normalizeComponent_1(
+      { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
+      __vue_inject_styles__$2,
+      __vue_script__$2,
+      __vue_scope_id__$2,
+      __vue_is_functional_template__$2,
+      __vue_module_identifier__$2,
+      undefined,
+      undefined
+    );
+
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  var script$3 = {
+    props: {
+      errors: {
+        type: Array,
+        default: null
+      },
+      id: {
+        type: String,
+        default: null
+      },
+      instructions: {
+        type: String,
+        default: null
+      },
+      label: {
+        type: String,
+        default: null
+      }
+    }
+  };
+
+  /* script */
+  const __vue_script__$3 = script$3;
+
+  /* template */
+  var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return _c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v("\n        "+_vm._s(error)+"\n    ")])})],2)};
+  var __vue_staticRenderFns__$3 = [];
+
+    /* style */
+    const __vue_inject_styles__$3 = undefined;
+    /* scoped */
+    const __vue_scope_id__$3 = undefined;
+    /* module identifier */
+    const __vue_module_identifier__$3 = undefined;
+    /* functional template */
+    const __vue_is_functional_template__$3 = false;
+    /* style inject */
+    
+    /* style inject SSR */
+    
+
+    
+    var Field = normalizeComponent_1(
+      { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
+      __vue_inject_styles__$3,
+      __vue_script__$3,
+      __vue_scope_id__$3,
+      __vue_is_functional_template__$3,
+      __vue_module_identifier__$3,
+      undefined,
+      undefined
+    );
+
+  //
+  //
+  //
+  //
+  //
+  //
+  var script$4 = {
+    props: {
+      icon: {
+        type: String,
+        default: null
+      }
+    }
+  };
+
+  /* script */
   const __vue_script__$4 = script$4;
   /* template */
-  var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-checkbox-set",attrs:{"errors":_vm.errors}},[_c('fieldset',[_c('legend',[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_c('ul',_vm._l((_vm.options),function(option,index){return _c('li',{key:index},[_c('label',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.localValue),expression:"localValue"}],attrs:{"type":"checkbox"},domProps:{"value":option.value,"checked":Array.isArray(_vm.localValue)?_vm._i(_vm.localValue,option.value)>-1:(_vm.localValue)},on:{"change":[function($event){var $$a=_vm.localValue,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=option.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.localValue=$$a.concat([$$v]));}else{$$i>-1&&(_vm.localValue=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.localValue=$$c;}},function($event){return _vm.$emit('input', _vm.localValue)}]}}),_vm._v("\n                    "+_vm._s(option.label)+"\n                ")])])}),0)])])};
+  var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
+  var __vue_staticRenderFns__$4 = [];
+
+    /* style */
+    const __vue_inject_styles__$4 = undefined;
+    /* scoped */
+    const __vue_scope_id__$4 = undefined;
+    /* module identifier */
+    const __vue_module_identifier__$4 = undefined;
+    /* functional template */
+    const __vue_is_functional_template__$4 = false;
+    /* style inject */
+    
+    /* style inject SSR */
+    
+
+    
+    var Icon = normalizeComponent_1(
+      { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
+      __vue_inject_styles__$4,
+      __vue_script__$4,
+      __vue_scope_id__$4,
+      __vue_is_functional_template__$4,
+      __vue_module_identifier__$4,
+      undefined,
+      undefined
+    );
+
+  //
+  var script$5 = {
+    props: {
+      checked: {
+        type: Boolean,
+        default: null
+      },
+      disabled: {
+        type: Boolean,
+        default: null
+      },
+      errors: {
+        type: Array,
+        default: null
+      },
+      id: {
+        type: String,
+        default: null
+      },
+      instructions: {
+        type: String,
+        default: null
+      },
+      label: {
+        type: String,
+        default: null
+      }
+    },
+    components: {
+      Field: Field
+    }
+  };
+
+  /* script */
+  const __vue_script__$5 = script$5;
+  /* template */
+  var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
   var __vue_staticRenderFns__$5 = [];
 
     /* style */
@@ -524,10 +558,10 @@
     
 
     
-    var CheckboxSet = normalizeComponent_1(
+    var Lightswitch = normalizeComponent_1(
       { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
       __vue_inject_styles__$5,
-      __vue_script__$4,
+      __vue_script__$5,
       __vue_scope_id__$5,
       __vue_is_functional_template__$5,
       __vue_module_identifier__$5,
@@ -536,35 +570,46 @@
     );
 
   //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  var script$5 = {
+  var script$6 = {
     props: {
-      checked: {
-        type: Boolean,
-        default: false
+      errors: {
+        type: Array,
+        default: null
       },
-      disabled: {
+      fullwidth: {
         type: Boolean,
         default: false
       },
       id: {
         type: String,
         default: null
+      },
+      instructions: {
+        type: String,
+        default: null
+      },
+      label: {
+        type: String,
+        default: null
+      },
+      options: {
+        type: Array,
+        default: null
+      },
+      value: {
+        type: String,
+        default: null
       }
+    },
+    components: {
+      Field: Field
     }
   };
 
   /* script */
-  const __vue_script__$5 = script$5;
+  const __vue_script__$6 = script$6;
   /* template */
-  var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])};
+  var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': !!_vm.errors}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
   var __vue_staticRenderFns__$6 = [];
 
     /* style */
@@ -581,10 +626,10 @@
     
 
     
-    var LightswitchInput = normalizeComponent_1(
+    var Dropdown = normalizeComponent_1(
       { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
       __vue_inject_styles__$6,
-      __vue_script__$5,
+      __vue_script__$6,
       __vue_scope_id__$6,
       __vue_is_functional_template__$6,
       __vue_module_identifier__$6,
@@ -592,46 +637,10 @@
       undefined
     );
 
-  //
-  var script$6 = {
-    props: {
-      checked: {
-        type: Boolean,
-        default: null
-      },
-      disabled: {
-        type: Boolean,
-        default: null
-      },
-      errors: {
-        type: Array,
-        default: null
-      },
-      id: {
-        type: String,
-        default: null
-      },
-      instructions: {
-        type: String,
-        default: null
-      },
-      label: {
-        type: String,
-        default: null
-      }
-    },
-    components: {
-      Field: Field,
-      LightswitchInput: LightswitchInput
-    }
-  };
-
   /* script */
-  const __vue_script__$6 = script$6;
-
   /* template */
-  var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('c-lightswitch-input',{attrs:{"id":_vm.id,"checked":_vm.checked,"disabled":_vm.disabled},on:{"change":function($event){return _vm.$emit('change', $event)},"update:checked":function($event){return _vm.$emit('update:checked', $event)}}})],1)};
-  var __vue_staticRenderFns__$7 = [];
+  var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+  var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner"},[_c('div',{staticClass:"animation"})])}];
 
     /* style */
     const __vue_inject_styles__$7 = undefined;
@@ -647,10 +656,10 @@
     
 
     
-    var LightswitchField = normalizeComponent_1(
+    var Spinner = normalizeComponent_1(
       { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
       __vue_inject_styles__$7,
-      __vue_script__$6,
+      {},
       __vue_scope_id__$7,
       __vue_is_functional_template__$7,
       __vue_module_identifier__$7,
@@ -659,219 +668,7 @@
     );
 
   //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
   var script$7 = {
-    props: {
-      fullwidth: {
-        type: Boolean,
-        default: false
-      },
-      options: {
-        type: Array,
-        default: null
-      },
-      value: {
-        type: String,
-        default: null
-      }
-    }
-  };
-
-  /* script */
-  const __vue_script__$7 = script$7;
-  /* template */
-  var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-select-input"},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])};
-  var __vue_staticRenderFns__$8 = [];
-
-    /* style */
-    const __vue_inject_styles__$8 = undefined;
-    /* scoped */
-    const __vue_scope_id__$8 = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$8 = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$8 = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var SelectInput = normalizeComponent_1(
-      { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-      __vue_inject_styles__$8,
-      __vue_script__$7,
-      __vue_scope_id__$8,
-      __vue_is_functional_template__$8,
-      __vue_module_identifier__$8,
-      undefined,
-      undefined
-    );
-
-  //
-  var script$8 = {
-    props: {
-      errors: {
-        type: Array,
-        default: null
-      },
-      fullwidth: {
-        type: Boolean,
-        default: false
-      },
-      id: {
-        type: String,
-        default: null
-      },
-      instructions: {
-        type: String,
-        default: null
-      },
-      label: {
-        type: String,
-        default: null
-      },
-      options: {
-        type: Array,
-        default: null
-      },
-      value: {
-        type: String,
-        default: null
-      }
-    },
-    components: {
-      Field: Field,
-      SelectInput: SelectInput
-    }
-  };
-
-  /* script */
-  const __vue_script__$8 = script$8;
-  /* template */
-  var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-select-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('c-select-input',{class:{'is-invalid': !!_vm.errors},attrs:{"fullwidth":_vm.fullwidth,"options":_vm.options,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
-  var __vue_staticRenderFns__$9 = [];
-
-    /* style */
-    const __vue_inject_styles__$9 = undefined;
-    /* scoped */
-    const __vue_scope_id__$9 = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$9 = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$9 = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var SelectField = normalizeComponent_1(
-      { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
-      __vue_inject_styles__$9,
-      __vue_script__$8,
-      __vue_scope_id__$9,
-      __vue_is_functional_template__$9,
-      __vue_module_identifier__$9,
-      undefined,
-      undefined
-    );
-
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  var script$9 = {
-    props: {
-      autocapitalize: {
-        type: Boolean,
-        default: false
-      },
-      cols: {
-        type: Number,
-        default: null
-      },
-      disabled: {
-        type: Boolean,
-        default: false
-      },
-      id: {
-        type: String,
-        default: null
-      },
-      placeholder: {
-        type: String,
-        default: null
-      },
-      size: {
-        size: Number,
-        default: null
-      },
-      spellcheck: {
-        type: Boolean,
-        default: false
-      },
-      value: {
-        type: String,
-        default: null
-      }
-    }
-  };
-
-  /* script */
-  const __vue_script__$9 = script$9;
-  /* template */
-  var __vue_render__$a = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('textarea',{staticClass:"c-textarea-input",class:{'w-full': !_vm.size },attrs:{"cols":_vm.cols,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"autocapitalize":_vm.autocapitalize,"spellcheck":_vm.spellcheck,"autocomplete":"off","type":"text"},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)}}})};
-  var __vue_staticRenderFns__$a = [];
-
-    /* style */
-    const __vue_inject_styles__$a = undefined;
-    /* scoped */
-    const __vue_scope_id__$a = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$a = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$a = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var TextareaInput = normalizeComponent_1(
-      { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
-      __vue_inject_styles__$a,
-      __vue_script__$9,
-      __vue_scope_id__$a,
-      __vue_is_functional_template__$a,
-      __vue_module_identifier__$a,
-      undefined,
-      undefined
-    );
-
-  //
-  var script$a = {
     props: {
       autocapitalize: {
         type: Boolean,
@@ -927,8 +724,7 @@
       }
     },
     components: {
-      Field: Field,
-      TextareaInput: TextareaInput
+      Field: Field
     },
     computed: {
       remainingChars: function remainingChars() {
@@ -940,26 +736,27 @@
   };
 
   /* script */
-  const __vue_script__$a = script$a;
+  const __vue_script__$7 = script$7;
   /* template */
-  var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-textarea-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('c-textarea-input',{class:{
+  var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textarea-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('textarea',{staticClass:"c-textarea-input",class:{
+                      'w-full': !_vm.size,
                       'is-invalid': _vm.errors,
                       'text-red-dark': _vm.max && _vm.max < this.value.length
-                  },attrs:{"autocapitalize":_vm.autocapitalize,"cols":_vm.cols,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"rows":_vm.rows ? _vm.rows : 4,"spellcheck":_vm.spellcheck,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
+                  },attrs:{"autocomplete":"off","type":"text","autocapitalize":_vm.autocapitalize,"cols":_vm.cols,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"rows":_vm.rows ? _vm.rows : 4,"spellcheck":_vm.spellcheck},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
                   'text-grey': _vm.remainingChars >= 20,
                   'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                   'text-red': _vm.remainingChars < 0
-              }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
-  var __vue_staticRenderFns__$b = [];
+              }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()])])};
+  var __vue_staticRenderFns__$8 = [];
 
     /* style */
-    const __vue_inject_styles__$b = undefined;
+    const __vue_inject_styles__$8 = undefined;
     /* scoped */
-    const __vue_scope_id__$b = undefined;
+    const __vue_scope_id__$8 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$b = undefined;
+    const __vue_module_identifier__$8 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$b = false;
+    const __vue_is_functional_template__$8 = false;
     /* style inject */
     
     /* style inject SSR */
@@ -967,12 +764,12 @@
 
     
     var TextareaField = normalizeComponent_1(
-      { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
-      __vue_inject_styles__$b,
-      __vue_script__$a,
-      __vue_scope_id__$b,
-      __vue_is_functional_template__$b,
-      __vue_module_identifier__$b,
+      { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+      __vue_inject_styles__$8,
+      __vue_script__$7,
+      __vue_scope_id__$8,
+      __vue_is_functional_template__$8,
+      __vue_module_identifier__$8,
       undefined,
       undefined
     );
@@ -1187,7 +984,7 @@
   }
 
   //
-  var script$b = {
+  var script$8 = {
     directives: {
       mask: {
         bind: function bind(el, binding, vnode) {
@@ -1210,16 +1007,28 @@
         type: Boolean,
         default: false
       },
+      errors: {
+        type: Array,
+        default: null
+      },
       id: {
         type: String,
         default: null
       },
-      mask: {
-        type: String | Array,
+      instructions: {
+        type: String,
         default: null
       },
-      max: {
+      label: {
         type: String,
+        default: null
+      },
+      mask: {
+        type: String | Object,
+        default: ''
+      },
+      max: {
+        type: Number,
         default: null
       },
       min: {
@@ -1263,115 +1072,8 @@
         default: null
       }
     },
-    created: function created() {
-      this.$on('focus', function () {
-        this.$refs.input.focus();
-      });
-    }
-  };
-
-  /* script */
-  const __vue_script__$b = script$b;
-  /* template */
-  var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",staticClass:"c-text-input",class:{'w-full': !_vm.size },attrs:{"autocomplete":"off","autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.type},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}})};
-  var __vue_staticRenderFns__$c = [];
-
-    /* style */
-    const __vue_inject_styles__$c = undefined;
-    /* scoped */
-    const __vue_scope_id__$c = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$c = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$c = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var TextInput = normalizeComponent_1(
-      { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
-      __vue_inject_styles__$c,
-      __vue_script__$b,
-      __vue_scope_id__$c,
-      __vue_is_functional_template__$c,
-      __vue_module_identifier__$c,
-      undefined,
-      undefined
-    );
-
-  //
-  var script$c = {
-    props: {
-      type: {
-        type: String,
-        default: 'text'
-      },
-      label: {
-        type: String,
-        default: null
-      },
-      errors: {
-        type: Array,
-        default: null
-      },
-      instructions: {
-        type: String,
-        default: null
-      },
-      max: {
-        type: Number,
-        default: null
-      },
-      id: {
-        type: String,
-        default: null
-      },
-      name: {
-        type: String,
-        default: null
-      },
-      placeholder: {
-        type: String,
-        default: null
-      },
-      value: {
-        type: String,
-        default: null
-      },
-      autofocus: {
-        type: Boolean,
-        default: false
-      },
-      disabled: {
-        type: Boolean,
-        default: false
-      },
-      mask: {
-        type: String | Object,
-        default: ''
-      },
-      autocapitalize: {
-        type: Boolean,
-        default: false
-      },
-      spellcheck: {
-        type: Boolean,
-        default: false
-      },
-      readonly: {
-        type: Boolean,
-        default: false
-      },
-      size: {
-        type: String,
-        default: null
-      }
-    },
     components: {
-      Field: Field,
-      TextInput: TextInput
+      Field: Field
     },
     computed: {
       remainingChars: function remainingChars() {
@@ -1388,58 +1090,55 @@
   };
 
   /* script */
-  const __vue_script__$c = script$c;
+  const __vue_script__$8 = script$8;
   /* template */
-  var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('c-text-input',{ref:"input",class:{
+  var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",staticClass:"c-text-input",class:{
+                      'w-full': !_vm.size,
                       'is-invalid': _vm.errors,
                       'text-red-dark': _vm.max && _vm.max < this.value.length
-                  },attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"value":_vm.value,"mask":_vm.mask,"autocapitalize":_vm.autocapitalize,"spellcheck":_vm.spellcheck,"readonly":_vm.readonly,"type":_vm.type},on:{"input":function($event){return _vm.$emit('input', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
+                  },attrs:{"autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.type,"autocomplete":"off"},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
                   'text-grey': _vm.remainingChars >= 20,
                   'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                   'text-red': _vm.remainingChars < 0
-              }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
-  var __vue_staticRenderFns__$d = [];
+              }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()])])};
+  var __vue_staticRenderFns__$9 = [];
 
     /* style */
-    const __vue_inject_styles__$d = undefined;
+    const __vue_inject_styles__$9 = undefined;
     /* scoped */
-    const __vue_scope_id__$d = undefined;
+    const __vue_scope_id__$9 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$d = undefined;
+    const __vue_module_identifier__$9 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$d = false;
+    const __vue_is_functional_template__$9 = false;
     /* style inject */
     
     /* style inject SSR */
     
 
     
-    var TextField = normalizeComponent_1(
-      { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
-      __vue_inject_styles__$d,
-      __vue_script__$c,
-      __vue_scope_id__$d,
-      __vue_is_functional_template__$d,
-      __vue_module_identifier__$d,
+    var Text = normalizeComponent_1(
+      { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
+      __vue_inject_styles__$9,
+      __vue_script__$8,
+      __vue_scope_id__$9,
+      __vue_is_functional_template__$9,
+      __vue_module_identifier__$9,
       undefined,
       undefined
     );
 
   var CraftComponents = {
     Btn: Btn,
+    Checkbox: Checkbox,
+    CheckboxSet: CheckboxSet,
     Field: Field,
     Icon: Icon,
+    Lightswitch: Lightswitch,
+    Dropdown: Dropdown,
     Spinner: Spinner,
-    CheckboxField: CheckboxField,
-    CheckboxSet: CheckboxSet,
-    LightswitchField: LightswitchField,
-    SelectField: SelectField,
     TextareaField: TextareaField,
-    TextField: TextField,
-    LightswitchInput: LightswitchInput,
-    SelectInput: SelectInput,
-    TextareaInput: TextareaInput,
-    TextInput: TextInput
+    Text: Text
   };
 
   var index = {

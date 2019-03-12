@@ -1,18 +1,18 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 
-storiesOf('Components|Fields/Checkbox', module)
+storiesOf('Components|Checkbox', module)
     .add('Checked', () => ({
-        template: '<checkbox-field label="Label" :value="true" label="Item" instructions="Some instructions."></checkbox-field>',
+        template: '<checkbox label="Label" :value="true" label="Item" instructions="Some instructions."></checkbox>',
     }))
     .add('Unchecked', () => ({
-        template: '<checkbox-field label="Label" :value="false" label="Item" instructions="Some instructions."></checkbox-field>',
+        template: '<checkbox label="Label" :value="false" label="Item" instructions="Some instructions."></checkbox>',
     }))
     .add('Error', () => ({
-        template: '<checkbox-field label="Label" :value="false" label="Item" instructions="Some instructions." :errors="[\'Error message.\']"></checkbox-field>',
+        template: '<checkbox label="Label" :value="false" label="Item" instructions="Some instructions." :errors="[\'Error message.\']"></checkbox>',
     }));
 
-storiesOf('Components|Fields/Checkbox Set', module)
+storiesOf('Components|CheckboxSet', module)
     .add('Default', () => ({
         template:
             '<div>' +
@@ -58,27 +58,27 @@ storiesOf('Components|Fields/Checkbox Set', module)
         }
     }));
 
-storiesOf('Components|Fields/Lightswitch', module)
+storiesOf('Components|Lightswitch', module)
     .add('Checked', () => ({
-        template: '<lightswitch-field label="Label" instructions="Some instructions." :checked="true"></lightswitch-field>',
+        template: '<lightswitch label="Label" instructions="Some instructions." :checked="true"></lightswitch>',
     }))
     .add('Unchecked', () => ({
-        template: '<lightswitch-field label="Label" instructions="Some instructions." :checked="false"></lightswitch-field>',
+        template: '<lightswitch label="Label" instructions="Some instructions." :checked="false"></lightswitch>',
     }))
     .add('Error', () => ({
-        template: '<lightswitch-field label="Label" instructions="Some instructions." :checked="false" :errors="[\'Error message.\']"></lightswitch-field>',
+        template: '<lightswitch label="Label" instructions="Some instructions." :checked="false" :errors="[\'Error message.\']"></lightswitch>',
     }));
 
-storiesOf('Components|Fields/Select', module)
+storiesOf('Components|Dropdown', module)
     .add('Default', () => ({
-        template: '<select-field label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></select-field>',
+        template: '<dropdown label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></dropdown>',
     }))
     .add('Error', () => ({
-        template: '<select-field label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]" :errors="[\'Error message.\']"></select-field>',
+        template: '<dropdown label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]" :errors="[\'Error message.\']"></dropdown>',
     }));
 
 
-storiesOf('Components|Fields/Textarea', module)
+storiesOf('Components|TextareaField', module)
     .add('Default', () => ({
         template: '<textarea-field id="textarea-default" label="Label" instructions="Some instructions."></textarea-field>',
     }))
@@ -94,15 +94,15 @@ storiesOf('Components|Fields/Textarea', module)
         }
     }));
 
-storiesOf('Components|Fields/Text', module)
+storiesOf('Components|Text', module)
     .add('Default', () => ({
-        template: '<text-field label="Label" instructions="Some instructions."></text-field>',
+        template: '<text label="Label" instructions="Some instructions."></text>',
     }))
     .add('Error', () => ({
-        template: '<text-field label="Label" instructions="Some instructions." :errors="[\'Error message.\']" value="some value"></text-field>',
+        template: '<text label="Label" instructions="Some instructions." :errors="[\'Error message.\']" value="some value"></text>',
     }))
     .add('Mask', () => ({
-        template: '<text-field id="max" label="Label" instructions="Some instructions." placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" v-model="value" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text-field>',
+        template: '<text id="max" label="Label" instructions="Some instructions." placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" v-model="value" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text>',
         data() {
             return {
                 value: ''
@@ -110,7 +110,7 @@ storiesOf('Components|Fields/Text', module)
         }
     }))
     .add('Max', () => ({
-        template: '<text-field id="max" label="Label" instructions="Some instructions." placeholder="Max 130 characters." v-model="value" :max="130"></text-field>',
+        template: '<text id="max" label="Label" instructions="Some instructions." placeholder="Max 130 characters." v-model="value" :max="130"></text>',
         data() {
             return {
                 value: ''
@@ -118,12 +118,12 @@ storiesOf('Components|Fields/Text', module)
         }
     }))
     .add('Password', () => ({
-        template: '<text-field type="password" label="Label" instructions="Some instructions."></text-field>',
+        template: '<text type="password" label="Label" instructions="Some instructions."></text>',
     }))
     .add('URL', () => ({
-        template: '<text-field type="url" label="Label" instructions="Some instructions."></text-field>',
+        template: '<text type="url" label="Label" instructions="Some instructions."></text>',
     }))
     .add('Number', () => ({
-        template: '<text-field type="number" label="Label" instructions="Some instructions."></text-field>',
+        template: '<text type="number" label="Label" instructions="Some instructions."></text>',
     }));
 

@@ -4,7 +4,7 @@ import {action} from '@storybook/addon-actions'
 import { withViewport } from '@storybook/addon-viewport'
 import BtnNotesMD from '../notes/Btn.md'
 
-storiesOf('Components|Buttons', module)
+storiesOf('Components|Btn', module)
     .add('Regular', () => ({
         template:
             '<div>' +
@@ -57,7 +57,7 @@ storiesOf('Components|Buttons', module)
         methods: { action: action('clicked') }
     }), { notes: { markdown: BtnNotesMD } })
 
-storiesOf('Components|Buttons/States', module)
+storiesOf('Components|Btn/States', module)
     .add('Disabled', () => ({
         template:
             '<div>' +
@@ -101,7 +101,7 @@ storiesOf('Components|Buttons/States', module)
         methods: { action: action('clicked') }
     }), { notes: { markdown: BtnNotesMD } })
 
-storiesOf('Components|Buttons/Size', module)
+storiesOf('Components|Btn/Size', module)
     .add('Small', () => ({
         template:
             '<div>' +

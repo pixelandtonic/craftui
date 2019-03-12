@@ -57,7 +57,7 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/mixins";
+    @import "../sass/mixins";
 
     .c-checkbox-set {
         fieldset {

@@ -1,9 +1,13 @@
 <template>
     <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-textarea-field">
         <div class="wrapper">
-            <textarea-input
+            <textarea
+                    autocomplete="off"
+                    class="c-textarea-input"
+                    type="text"
                     :autocapitalize="autocapitalize"
                     :class="{
+                        'w-full': !size,
                         'is-invalid': errors,
                         'text-red-dark': max && max < this.value.length
                     }"
@@ -14,7 +18,9 @@
                     :rows="rows ? rows : 4"
                     :spellcheck="spellcheck"
                     :value="value"
-                    @input="$emit('input', $event)"/>
+                    @input="$emit('input', $event.target.value)"
+            >
+            </textarea>
 
             <p v-if="max"
                class="max"
@@ -28,8 +34,7 @@
 </template>
 
 <script>
-    import Field from '../Field.vue';
-    import TextareaInput from '../inputs/TextareaInput.vue';
+    import Field from './Field.vue';
 
     export default {
         props: {
@@ -89,7 +94,6 @@
 
         components: {
             Field,
-            TextareaInput,
         },
 
         computed: {
@@ -103,11 +107,17 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/mixins";
+    @import "../sass/mixins";
 
     .c-textarea-field {
         .wrapper {
             @apply .relative;
+
+            textarea.c-textarea-input {
+                &.w-full {
+                    @apply .w-full;
+                }
+            }
 
             .text-red-dark {
                 @apply .text-red-dark;
