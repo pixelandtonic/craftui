@@ -1195,8 +1195,17 @@
   //
   //
   //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
   var script$d = {
-    props: ['id', 'placeholder', 'value', 'autofocus', 'disabled', 'size'],
+    props: ['id', 'name', 'placeholder', 'value', 'autofocus', 'disabled', 'readonly', 'min', 'max', 'step', 'pattern'],
     created: function created() {
       this.$on('focus', function () {
         this.$refs.input.focus();
@@ -1206,8 +1215,9 @@
 
   /* script */
   const __vue_script__$d = script$d;
+
   /* template */
-  var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{ref:"input",staticClass:"c-url-input",class:{'w-full': !_vm.size },attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"autocomplete":"off","type":"url"},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)}}})};
+  var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{ref:"input",staticClass:"c-number-input",attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"autocomplete":"off","readonly":_vm.readonly,"min":_vm.min,"max":_vm.max,"step":_vm.step,"pattern":_vm.pattern,"type":"number"},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)},"change":function($event){return _vm.$emit('change', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}})};
   var __vue_staticRenderFns__$e = [];
 
     /* style */
@@ -1224,124 +1234,13 @@
     
 
     
-    var UrlInput = normalizeComponent_1(
+    var NumberInput = normalizeComponent_1(
       { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
       __vue_inject_styles__$e,
       __vue_script__$d,
       __vue_scope_id__$e,
       __vue_is_functional_template__$e,
       __vue_module_identifier__$e,
-      undefined,
-      undefined
-    );
-
-  //
-  var script$e = {
-    props: ['label', 'id', 'placeholder', 'value', 'autofocus', 'errors', 'disabled', 'instructions', 'size'],
-    components: {
-      Field: Field,
-      UrlInput: UrlInput
-    },
-    created: function created() {
-      this.$on('focus', function () {
-        this.$refs.input.$emit('focus');
-      });
-    }
-  };
-
-  /* script */
-  const __vue_script__$e = script$e;
-
-  /* template */
-  var __vue_render__$f = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-url-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('url-input',{ref:"input",class:{'is-invalid': _vm.errors },attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"value":_vm.value,"size":_vm.size},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
-  var __vue_staticRenderFns__$f = [];
-
-    /* style */
-    const __vue_inject_styles__$f = undefined;
-    /* scoped */
-    const __vue_scope_id__$f = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$f = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$f = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var UrlField = normalizeComponent_1(
-      { render: __vue_render__$f, staticRenderFns: __vue_staticRenderFns__$f },
-      __vue_inject_styles__$f,
-      __vue_script__$e,
-      __vue_scope_id__$f,
-      __vue_is_functional_template__$f,
-      __vue_module_identifier__$f,
-      undefined,
-      undefined
-    );
-
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  var script$f = {
-    props: ['id', 'name', 'placeholder', 'value', 'autofocus', 'disabled', 'readonly', 'min', 'max', 'step', 'pattern'],
-    created: function created() {
-      this.$on('focus', function () {
-        this.$refs.input.focus();
-      });
-    }
-  };
-
-  /* script */
-  const __vue_script__$f = script$f;
-
-  /* template */
-  var __vue_render__$g = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{ref:"input",staticClass:"c-number-input",attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"autocomplete":"off","readonly":_vm.readonly,"min":_vm.min,"max":_vm.max,"step":_vm.step,"pattern":_vm.pattern,"type":"number"},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)},"change":function($event){return _vm.$emit('change', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}})};
-  var __vue_staticRenderFns__$g = [];
-
-    /* style */
-    const __vue_inject_styles__$g = undefined;
-    /* scoped */
-    const __vue_scope_id__$g = undefined;
-    /* module identifier */
-    const __vue_module_identifier__$g = undefined;
-    /* functional template */
-    const __vue_is_functional_template__$g = false;
-    /* style inject */
-    
-    /* style inject SSR */
-    
-
-    
-    var NumberInput = normalizeComponent_1(
-      { render: __vue_render__$g, staticRenderFns: __vue_staticRenderFns__$g },
-      __vue_inject_styles__$g,
-      __vue_script__$f,
-      __vue_scope_id__$g,
-      __vue_is_functional_template__$g,
-      __vue_module_identifier__$g,
       undefined,
       undefined
     );
@@ -1357,13 +1256,11 @@
     SelectField: SelectField,
     TextareaField: TextareaField,
     TextField: TextField,
-    UrlField: UrlField,
     LightswitchInput: LightswitchInput,
     SelectInput: SelectInput,
     TextareaInput: TextareaInput,
     TextInput: TextInput,
-    NumberInput: NumberInput,
-    UrlInput: UrlInput
+    NumberInput: NumberInput
   };
 
   var index = {

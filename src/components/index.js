@@ -9,14 +9,12 @@ import LightswitchField from './fields/LightswitchField.vue';
 import SelectField from './fields/SelectField.vue';
 import TextareaField from './fields/TextareaField.vue';
 import TextField from './fields/TextField.vue';
-import UrlField from './fields/UrlField.vue';
 
 import LightswitchInput from './inputs/LightswitchInput.vue';
 import SelectInput from './inputs/SelectInput.vue';
 import TextareaInput from './inputs/TextareaInput.vue';
 import TextInput from './inputs/TextInput.vue';
 import NumberInput from './inputs/NumberInput.vue';
-import UrlInput from './inputs/UrlInput.vue';
 
 const CraftComponents = {
   Btn,
@@ -30,14 +28,12 @@ const CraftComponents = {
   SelectField,
   TextareaField,
   TextField,
-  UrlField,
 
   LightswitchInput,
   SelectInput,
   TextareaInput,
   TextInput,
   NumberInput,
-  UrlInput,
 };
 
 export default CraftComponents;

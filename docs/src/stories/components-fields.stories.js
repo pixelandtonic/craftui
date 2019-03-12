@@ -119,12 +119,8 @@ storiesOf('Components|Fields/Text', module)
     }))
     .add('Password', () => ({
         template: '<text-field type="password" label="Label" instructions="Some instructions."></text-field>',
+    }))
+    .add('URL', () => ({
+        template: '<text-field type="url" label="Label" instructions="Some instructions."></text-field>',
     }));
 
-storiesOf('Components|Fields/URL', module)
-    .add('Default', () => ({
-        template: '<url-field label="Label" instructions="Some instructions."></url-field>',
-    }))
-    .add('Error', () => ({
-        template: '<url-field label="Label" instructions="Some instructions." :errors="[\'Error message.\']"></url-field>',
-    }));

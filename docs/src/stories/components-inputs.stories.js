@@ -29,9 +29,7 @@ storiesOf('Components|Inputs/Text', module)
     }))
     .add('Password', () => ({
         template: '<text-input type="password"></text-input>',
-    }));
-
-storiesOf('Components|Inputs/URL', module)
-    .add('Default', () => ({
-        template: '<url-input></url-input>',
+    }))
+    .add('URL', () => ({
+        template: '<text-input type="url"></text-input>',
     }));
