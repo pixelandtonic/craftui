@@ -1028,14 +1028,6 @@ body.rtl .c-lightswitch-field .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-.c-dropdown-field .c-dropdown-input select.w-full {
-  width: 100%;
-}
-
-.c-dropdown-field .is-invalid select {
-  border-color: #e3342f;
-}
-
 .c-spinner {
   display: inline-block;
 }
@@ -1083,46 +1075,12 @@ body.rtl .c-lightswitch-field .c-lightswitch-input label .slider:before {
   }
 }
 
-.c-textarea-field .wrapper {
-  position: relative;
-}
-
-.c-textarea-field .wrapper textarea.c-textarea-input.w-full {
+.c-dropdown-field .c-dropdown-input select.w-full {
   width: 100%;
 }
 
-.c-textarea-field .wrapper .text-red-dark {
-  color: #cc1f1a;
-}
-
-.c-textarea-field .wrapper .max {
-  margin-top: .5rem;
-}
-
-body.ltr .c-textarea-field .wrapper .max {
-  padding-right: .25rem;
-}
-
-body.rtl .c-textarea-field .wrapper .max {
-  padding-left: .25rem;
-}
-
-.c-textarea-field .wrapper .max.floating {
-  position: absolute;
-  font-size: .75rem;
-  text-align: right;
-}
-
-.c-textarea-field .wrapper .max.text-grey {
-  color: #b8c2cc;
-}
-
-.c-textarea-field .wrapper .max.text-orange {
-  color: #f6993f;
-}
-
-.c-textarea-field .wrapper .max.text-red {
-  color: #e3342f;
+.c-dropdown-field .is-invalid select {
+  border-color: #e3342f;
 }
 
 .c-text-field .wrapper {

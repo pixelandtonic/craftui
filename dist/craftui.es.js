@@ -661,113 +661,6 @@ var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createEle
     undefined
   );
 
-//
-var script$7 = {
-  props: {
-    autocapitalize: {
-      type: Boolean,
-      default: false
-    },
-    cols: {
-      type: Number,
-      default: null
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    rows: {
-      type: Number,
-      default: null
-    },
-    errors: {
-      type: Array,
-      default: null
-    },
-    id: {
-      type: String,
-      default: null
-    },
-    instructions: {
-      type: String,
-      default: null
-    },
-    label: {
-      type: String,
-      default: null
-    },
-    max: {
-      type: Number,
-      default: null
-    },
-    placeholder: {
-      type: String,
-      default: null
-    },
-    size: {
-      size: Number,
-      default: null
-    },
-    spellcheck: {
-      type: Boolean,
-      default: false
-    },
-    value: {
-      type: String,
-      default: null
-    }
-  },
-  components: {
-    Field: Field
-  },
-  computed: {
-    remainingChars: function remainingChars() {
-      if (this.max) {
-        return this.max - this.value.length;
-      }
-    }
-  }
-};
-
-/* script */
-const __vue_script__$7 = script$7;
-/* template */
-var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textarea-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('textarea',{staticClass:"c-textarea-input",class:{
-                    'w-full': !_vm.size,
-                    'is-invalid': _vm.errors,
-                    'text-red-dark': _vm.max && _vm.max < this.value.length
-                },attrs:{"autocomplete":"off","type":"text","autocapitalize":_vm.autocapitalize,"cols":_vm.cols,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"rows":_vm.rows ? _vm.rows : 4,"spellcheck":_vm.spellcheck},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target.value)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
-                'text-grey': _vm.remainingChars >= 20,
-                'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
-                'text-red': _vm.remainingChars < 0
-            }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()])])};
-var __vue_staticRenderFns__$8 = [];
-
-  /* style */
-  const __vue_inject_styles__$8 = undefined;
-  /* scoped */
-  const __vue_scope_id__$8 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$8 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$8 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var TextareaField = normalizeComponent_1(
-    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-    __vue_inject_styles__$8,
-    __vue_script__$7,
-    __vue_scope_id__$8,
-    __vue_is_functional_template__$8,
-    __vue_module_identifier__$8,
-    undefined,
-    undefined
-  );
-
 function maskit(value, mask) {
   var masked = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
   var tokens = arguments.length > 3 ? arguments[3] : undefined;
@@ -978,7 +871,7 @@ function mask (el, binding) {
 }
 
 //
-var script$8 = {
+var script$7 = {
   directives: {
     mask: {
       bind: function bind(el, binding, vnode) {
@@ -996,6 +889,10 @@ var script$8 = {
     autofocus: {
       type: Boolean,
       default: false
+    },
+    cols: {
+      type: Number,
+      default: null
     },
     disabled: {
       type: Boolean,
@@ -1045,6 +942,10 @@ var script$8 = {
       type: Boolean,
       default: false
     },
+    rows: {
+      type: Number,
+      default: null
+    },
     size: {
       type: String,
       default: null
@@ -1074,6 +975,34 @@ var script$8 = {
       if (this.max) {
         return this.max - this.value.length;
       }
+    },
+    computedComponent: function computedComponent() {
+      if (this.type === 'textarea') {
+        return 'textarea';
+      }
+
+      return 'input';
+    },
+    computedType: function computedType() {
+      if (this.type === 'textarea') {
+        return null;
+      }
+
+      return this.type;
+    },
+    computedCols: function computedCols() {
+      if (this.type !== 'textarea') {
+        return null;
+      }
+
+      return this.cols;
+    },
+    computedRows: function computedRows() {
+      if (this.type !== 'textarea') {
+        return null;
+      }
+
+      return this.rows ? this.rows : 4;
     }
   },
   created: function created() {
@@ -1084,40 +1013,40 @@ var script$8 = {
 };
 
 /* script */
-const __vue_script__$8 = script$8;
+const __vue_script__$7 = script$7;
 /* template */
-var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",staticClass:"c-text-input",class:{
+var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",staticClass:"c-text-input",class:{
                     'w-full': !_vm.size,
                     'is-invalid': _vm.errors,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
-                },attrs:{"autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.type,"autocomplete":"off"},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
+                },attrs:{"autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"cols":_vm.computedCols,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"rows":_vm.computedRows,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.computedType,"value":_vm.value,"autocomplete":"off"},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
                 'text-grey': _vm.remainingChars >= 20,
                 'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                 'text-red': _vm.remainingChars < 0
-            }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()])])};
-var __vue_staticRenderFns__$9 = [];
+            }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
+var __vue_staticRenderFns__$8 = [];
 
   /* style */
-  const __vue_inject_styles__$9 = undefined;
+  const __vue_inject_styles__$8 = undefined;
   /* scoped */
-  const __vue_scope_id__$9 = undefined;
+  const __vue_scope_id__$8 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$9 = undefined;
+  const __vue_module_identifier__$8 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$9 = false;
+  const __vue_is_functional_template__$8 = false;
   /* style inject */
   
   /* style inject SSR */
   
 
   
-  var Text = normalizeComponent_1(
-    { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
-    __vue_inject_styles__$9,
-    __vue_script__$8,
-    __vue_scope_id__$9,
-    __vue_is_functional_template__$9,
-    __vue_module_identifier__$9,
+  var TextField = normalizeComponent_1(
+    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+    __vue_inject_styles__$8,
+    __vue_script__$7,
+    __vue_scope_id__$8,
+    __vue_is_functional_template__$8,
+    __vue_module_identifier__$8,
     undefined,
     undefined
   );
@@ -1131,8 +1060,7 @@ var CraftComponents = {
   Lightswitch: Lightswitch,
   Dropdown: Dropdown,
   Spinner: Spinner,
-  TextareaField: TextareaField,
-  Text: Text
+  TextField: TextField
 };
 
 var index = {
