@@ -9,11 +9,6 @@ storiesOf('Components|Inputs/Lightswitch', module)
         template: '<lightswitch-input :checked="false"></lightswitch-input>',
     }));
 
-storiesOf('Components|Inputs/Password', module)
-    .add('Default', () => ({
-        template: '<password-input></password-input>',
-    }));
-
 storiesOf('Components|Inputs/Select', module)
     .add('Default', () => ({
         template: '<select-input :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></select-input>',
@@ -31,6 +26,9 @@ storiesOf('Components|Inputs/Text', module)
     }))
     .add('Mask', () => ({
         template: '<text-input placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" mask="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"></text-input>',
+    }))
+    .add('Password', () => ({
+        template: '<text-input type="password"></text-input>',
     }));
 
 storiesOf('Components|Inputs/URL', module)

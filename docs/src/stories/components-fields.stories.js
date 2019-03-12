@@ -69,14 +69,6 @@ storiesOf('Components|Fields/Lightswitch', module)
         template: '<lightswitch-field label="Label" instructions="Some instructions." :checked="false" :errors="[\'Error message.\']"></lightswitch-field>',
     }));
 
-storiesOf('Components|Fields/Password', module)
-    .add('Default', () => ({
-        template: '<password-field label="Label" instructions="Some instructions."></password-field>',
-    }))
-    .add('Error', () => ({
-        template: '<password-field label="Label" instructions="Some instructions." :errors="[\'Error message.\']"></password-field>',
-    }));
-
 storiesOf('Components|Fields/Select', module)
     .add('Default', () => ({
         template: '<select-field label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]"></select-field>',
@@ -124,6 +116,9 @@ storiesOf('Components|Fields/Text', module)
                 value: ''
             }
         }
+    }))
+    .add('Password', () => ({
+        template: '<text-field type="password" label="Label" instructions="Some instructions."></text-field>',
     }));
 
 storiesOf('Components|Fields/URL', module)
