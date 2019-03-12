@@ -1,7 +1,7 @@
 <template>
-    <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-textarea-field">
+    <c-field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-textarea-field">
         <div class="wrapper">
-            <textarea-input
+            <c-textarea-input
                     :autocapitalize="autocapitalize"
                     :class="{
                         'is-invalid': errors,
@@ -24,7 +24,7 @@
                     'text-red': remainingChars < 0
                 }">{{ remainingChars }} character{{ remainingChars > 1 || remainingChars < 1 ? 's' : ''}} left.</p>
         </div>
-    </field>
+    </c-field>
 </template>
 
 <script>

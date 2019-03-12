@@ -1,7 +1,7 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
+    <c-field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
         <div class="wrapper">
-            <text-input
+            <c-text-input
                     :autofocus="autofocus"
                     :class="{
                         'is-invalid': errors,
@@ -28,7 +28,7 @@
                     'text-red': remainingChars < 0
                 }">{{ remainingChars }} character{{ remainingChars > 1 || remainingChars < 1 ? 's' : ''}} left.</p>
         </div>
-    </field>
+    </c-field>
 </template>
 
 <script>

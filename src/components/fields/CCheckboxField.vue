@@ -1,11 +1,11 @@
 <template>
-    <field :id="id" :errors="errors" class="c-checkbox-field">
+    <c-field :id="id" :errors="errors" class="c-checkbox-field">
         <label>
             <!--Must be @change, not @input (Safari issue)-->
             <input :id="id" type="checkbox" :value="value" :checked="value" @change="$emit('input', $event.target.checked)">
             {{ label }}
         </label>
-    </field>
+    </c-field>
 </template>
 
 <script>
