@@ -16,7 +16,7 @@
             :spellcheck="spellcheck"
             :readonly="readonly"
             :size="size"
-            type="text"/>
+            :type="type" />
 </template>
 
 <script>
@@ -34,6 +34,7 @@
         },
 
         props: {
+            type: {type: String, default: 'text'},
             id: {type: String, default: null},
             name: {type: String, default: null},
             placeholder: {type: String, default: null},
