@@ -1040,7 +1040,7 @@ var __vue_staticRenderFns__$8 = [];
   
 
   
-  var TextField = normalizeComponent_1(
+  var Textbox = normalizeComponent_1(
     { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
     __vue_inject_styles__$8,
     __vue_script__$7,
@@ -1060,7 +1060,7 @@ var CraftComponents = {
   Lightswitch: Lightswitch,
   Dropdown: Dropdown,
   Spinner: Spinner,
-  TextField: TextField
+  Textbox: Textbox
 };
 
 var index = {
