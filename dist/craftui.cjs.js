@@ -209,7 +209,7 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.com
             block: _vm.block,
             outline: _vm.outline,
             loading: _vm.loading
-        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
+        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('c-spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('c-icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -254,7 +254,24 @@ var __vue_staticRenderFns__ = [];
 //
 //
 var script$1 = {
-  props: ['id', 'label', 'instructions', 'errors']
+  props: {
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
@@ -296,7 +313,12 @@ var __vue_staticRenderFns__$1 = [];
 //
 //
 var script$2 = {
-  props: ['icon', 'cssClass']
+  props: {
+    icon: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
@@ -371,13 +393,34 @@ var __vue_staticRenderFns__$3 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 var script$3 = {
-  props: ['errors', 'id', 'label', 'value', 'instructions']
+  props: {
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    },
+    value: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
 const __vue_script__$3 = script$3;
 /* template */
-var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-field",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-checkbox-field",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
 var __vue_staticRenderFns__$4 = [];
 
   /* style */
@@ -427,7 +470,28 @@ var __vue_staticRenderFns__$4 = [];
 //
 //
 var script$4 = {
-  props: ['options', 'label', 'instructions', 'value', 'errors'],
+  props: {
+    options: {
+      type: Array,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    value: {
+      type: String,
+      default: null
+    },
+    errors: {
+      type: Array,
+      default: null
+    }
+  },
   data: function data() {
     return {
       localValue: []
@@ -441,7 +505,7 @@ var script$4 = {
 /* script */
 const __vue_script__$4 = script$4;
 /* template */
-var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-set",attrs:{"errors":_vm.errors}},[_c('fieldset',[_c('legend',[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_c('ul',_vm._l((this.options),function(option,index){return _c('li',{key:index},[_c('label',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.localValue),expression:"localValue"}],attrs:{"type":"checkbox"},domProps:{"value":option.value,"checked":Array.isArray(_vm.localValue)?_vm._i(_vm.localValue,option.value)>-1:(_vm.localValue)},on:{"change":[function($event){var $$a=_vm.localValue,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=option.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.localValue=$$a.concat([$$v]));}else{$$i>-1&&(_vm.localValue=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.localValue=$$c;}},function($event){return _vm.$emit('input', _vm.localValue)}]}}),_vm._v("\n                    "+_vm._s(option.label)+"\n                ")])])}),0)])])};
+var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-checkbox-set",attrs:{"errors":_vm.errors}},[_c('fieldset',[_c('legend',[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_c('ul',_vm._l((_vm.options),function(option,index){return _c('li',{key:index},[_c('label',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.localValue),expression:"localValue"}],attrs:{"type":"checkbox"},domProps:{"value":option.value,"checked":Array.isArray(_vm.localValue)?_vm._i(_vm.localValue,option.value)>-1:(_vm.localValue)},on:{"change":[function($event){var $$a=_vm.localValue,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=option.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.localValue=$$a.concat([$$v]));}else{$$i>-1&&(_vm.localValue=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.localValue=$$c;}},function($event){return _vm.$emit('input', _vm.localValue)}]}}),_vm._v("\n                    "+_vm._s(option.label)+"\n                ")])])}),0)])])};
 var __vue_staticRenderFns__$5 = [];
 
   /* style */
@@ -479,7 +543,20 @@ var __vue_staticRenderFns__$5 = [];
 //
 //
 var script$5 = {
-  props: ['id', 'checked', 'disabled']
+  props: {
+    checked: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    id: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
@@ -515,7 +592,32 @@ var __vue_staticRenderFns__$6 = [];
 
 //
 var script$6 = {
-  props: ['label', 'id', 'checked', 'instructions', 'disabled', 'errors'],
+  props: {
+    checked: {
+      type: Boolean,
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: null
+    },
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    }
+  },
   components: {
     CField: CField,
     CLightswitchInput: CLightswitchInput
@@ -526,7 +628,7 @@ var script$6 = {
 const __vue_script__$6 = script$6;
 
 /* template */
-var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('lightswitch-input',{attrs:{"id":_vm.id,"checked":_vm.checked,"disabled":_vm.disabled},on:{"change":function($event){return _vm.$emit('change', $event)},"update:checked":function($event){return _vm.$emit('update:checked', $event)}}})],1)};
+var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('c-lightswitch-input',{attrs:{"id":_vm.id,"checked":_vm.checked,"disabled":_vm.disabled},on:{"change":function($event){return _vm.$emit('change', $event)},"update:checked":function($event){return _vm.$emit('update:checked', $event)}}})],1)};
 var __vue_staticRenderFns__$7 = [];
 
   /* style */
@@ -564,9 +666,21 @@ var __vue_staticRenderFns__$7 = [];
 //
 //
 //
-//
 var script$7 = {
-  props: ['fullwidth', 'options', 'value']
+  props: {
+    fullwidth: {
+      type: Boolean,
+      default: false
+    },
+    options: {
+      type: Array,
+      default: null
+    },
+    value: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
@@ -602,7 +716,36 @@ var __vue_staticRenderFns__$8 = [];
 
 //
 var script$8 = {
-  props: ['label', 'instructions', 'fullwidth', 'id', 'options', 'value', 'errors'],
+  props: {
+    errors: {
+      type: Array,
+      default: null
+    },
+    fullwidth: {
+      type: Boolean,
+      default: false
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    },
+    options: {
+      type: Array,
+      default: null
+    },
+    value: {
+      type: String,
+      default: null
+    }
+  },
   components: {
     CField: CField,
     CSelectInput: CSelectInput
@@ -612,7 +755,7 @@ var script$8 = {
 /* script */
 const __vue_script__$8 = script$8;
 /* template */
-var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-select-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('select-input',{class:{'is-invalid': !!_vm.errors},attrs:{"fullwidth":_vm.fullwidth,"options":_vm.options,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
+var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-select-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('c-select-input',{class:{'is-invalid': !!_vm.errors},attrs:{"fullwidth":_vm.fullwidth,"options":_vm.options,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}})],1)};
 var __vue_staticRenderFns__$9 = [];
 
   /* style */
@@ -658,7 +801,40 @@ var __vue_staticRenderFns__$9 = [];
 //
 //
 var script$9 = {
-  props: ['id', 'placeholder', 'value', 'cols', 'disabled', 'autocapitalize', 'spellcheck', 'size']
+  props: {
+    autocapitalize: {
+      type: Boolean,
+      default: false
+    },
+    cols: {
+      type: Number,
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    placeholder: {
+      type: String,
+      default: null
+    },
+    size: {
+      size: Number,
+      default: null
+    },
+    spellcheck: {
+      type: Boolean,
+      default: false
+    },
+    value: {
+      type: String,
+      default: null
+    }
+  }
 };
 
 /* script */
@@ -694,7 +870,60 @@ var __vue_staticRenderFns__$a = [];
 
 //
 var script$a = {
-  props: ['label', 'instructions', 'id', 'placeholder', 'value', 'cols', 'rows', 'errors', 'disabled', 'autocapitalize', 'spellcheck', 'size', 'max'],
+  props: {
+    autocapitalize: {
+      type: Boolean,
+      default: false
+    },
+    cols: {
+      type: Number,
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    rows: {
+      type: Number,
+      default: null
+    },
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    },
+    max: {
+      type: Number,
+      default: null
+    },
+    placeholder: {
+      type: String,
+      default: null
+    },
+    size: {
+      size: Number,
+      default: null
+    },
+    spellcheck: {
+      type: Boolean,
+      default: false
+    },
+    value: {
+      type: String,
+      default: null
+    }
+  },
   components: {
     CField: CField,
     CTextareaInput: CTextareaInput
@@ -711,7 +940,7 @@ var script$a = {
 /* script */
 const __vue_script__$a = script$a;
 /* template */
-var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textarea-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('textarea-input',{class:{
+var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-textarea-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('c-textarea-input',{class:{
                     'is-invalid': _vm.errors,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
                 },attrs:{"autocapitalize":_vm.autocapitalize,"cols":_vm.cols,"disabled":_vm.disabled,"id":_vm.id,"placeholder":_vm.placeholder,"rows":_vm.rows ? _vm.rows : 4,"spellcheck":_vm.spellcheck,"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
@@ -967,25 +1196,9 @@ var script$b = {
     }
   },
   props: {
-    type: {
-      type: String,
-      default: 'text'
-    },
-    id: {
-      type: String,
-      default: null
-    },
-    name: {
-      type: String,
-      default: null
-    },
-    placeholder: {
-      type: String,
-      default: null
-    },
-    value: {
-      type: String,
-      default: null
+    autocapitalize: {
+      type: Boolean,
+      default: false
     },
     autofocus: {
       type: Boolean,
@@ -995,24 +1208,12 @@ var script$b = {
       type: Boolean,
       default: false
     },
-    mask: {
-      type: String | Array,
+    id: {
+      type: String,
       default: null
     },
-    autocapitalize: {
-      type: Boolean,
-      default: false
-    },
-    spellcheck: {
-      type: Boolean,
-      default: false
-    },
-    readonly: {
-      type: Boolean,
-      default: false
-    },
-    size: {
-      type: String,
+    mask: {
+      type: String | Array,
       default: null
     },
     max: {
@@ -1023,11 +1224,39 @@ var script$b = {
       type: String,
       default: null
     },
+    name: {
+      type: String,
+      default: null
+    },
     pattern: {
       type: String,
       default: null
     },
+    placeholder: {
+      type: String,
+      default: null
+    },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
+    size: {
+      type: String,
+      default: null
+    },
+    spellcheck: {
+      type: Boolean,
+      default: false
+    },
     step: {
+      type: String,
+      default: null
+    },
+    type: {
+      type: String,
+      default: 'text'
+    },
+    value: {
       type: String,
       default: null
     }
@@ -1159,7 +1388,7 @@ var script$c = {
 /* script */
 const __vue_script__$c = script$c;
 /* template */
-var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('text-input',{ref:"input",class:{
+var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('c-field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c('c-text-input',{ref:"input",class:{
                     'is-invalid': _vm.errors,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
                 },attrs:{"autofocus":_vm.autofocus,"disabled":_vm.disabled,"id":_vm.id,"name":_vm.name,"placeholder":_vm.placeholder,"value":_vm.value,"mask":_vm.mask,"autocapitalize":_vm.autocapitalize,"spellcheck":_vm.spellcheck,"readonly":_vm.readonly,"type":_vm.type},on:{"input":function($event){return _vm.$emit('input', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
