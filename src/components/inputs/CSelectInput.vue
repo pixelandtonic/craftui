@@ -8,10 +8,22 @@
     </div>
 </template>
 
-
 <script>
     export default {
-        props: ['fullwidth', 'options', 'value'],
+        props: {
+            fullwidth: {
+                type: Boolean,
+                default: false,
+            },
+            options: {
+                type: Array,
+                default: null,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+        },
     }
 </script>
 

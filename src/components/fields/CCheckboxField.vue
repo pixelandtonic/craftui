@@ -10,7 +10,28 @@
 
 <script>
     export default {
-        props: ['errors', 'id', 'label', 'value', 'instructions'],
+        props: {
+            errors: {
+                type: Array,
+                default: null,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+            label: {
+                type: String,
+                default: null,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+            instructions: {
+                type: String,
+                default: null,
+            },
+        },
     }
 </script>
 

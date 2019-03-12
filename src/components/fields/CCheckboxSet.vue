@@ -8,7 +8,7 @@
             </div>
 
             <ul>
-                <li v-for="(option, index) in this.options" :key="index">
+                <li v-for="(option, index) in options" :key="index">
                     <label>
                         <input type="checkbox" v-model="localValue" :value="option.value" @change="$emit('input', localValue)">
                         {{ option.label }}
@@ -21,7 +21,28 @@
 
 <script>
     export default {
-        props: ['options', 'label', 'instructions', 'value', 'errors'],
+        props: {
+            options: {
+                type: Array,
+                default: null,
+            },
+            label: {
+                type: String,
+                default: null,
+            },
+            instructions: {
+                type: String,
+                default: null,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+            errors: {
+                type: Array,
+                default: null,
+            },
+        },
 
         data() {
             return {

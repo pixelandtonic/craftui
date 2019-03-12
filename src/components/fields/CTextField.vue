@@ -37,23 +37,71 @@
 
     export default {
         props: {
-            type: {type: String, default: 'text'},
-            label: {type: String, default: null},
-            errors: {type: Array, default: null},
-            instructions: {type: String, default: null},
-            max: {type: Number, default: null},
+            type: {
+                type: String,
+                default: 'text'
+            },
+            label: {
+                type: String,
+                default: null
+            },
+            errors: {
+                type: Array,
+                default: null
+            },
+            instructions: {
+                type: String,
+                default: null
+            },
+            max: {
+                type: Number,
+                default: null
+            },
 
-            id: {type: String, default: null},
-            name: {type: String, default: null},
-            placeholder: {type: String, default: null},
-            value: {type: String, default: null},
-            autofocus: {type: Boolean, default: false},
-            disabled: {type: Boolean, default: false},
-            mask: {type: String | Object, default: ''},
-            autocapitalize: {type: Boolean, default: false},
-            spellcheck: {type: Boolean, default: false},
-            readonly: {type: Boolean, default: false},
-            size: {type: String, default: null},
+            id: {
+                type: String,
+                default: null
+            },
+            name: {
+                type: String,
+                default: null
+            },
+            placeholder: {
+                type: String,
+                default: null
+            },
+            value: {
+                type: String,
+                default: null
+            },
+            autofocus: {
+                type: Boolean,
+                default: false
+            },
+            disabled: {
+                type: Boolean,
+                default: false
+            },
+            mask: {
+                type: String |
+                    Object, default: ''
+            },
+            autocapitalize: {
+                type: Boolean,
+                default: false
+            },
+            spellcheck: {
+                type: Boolean,
+                default: false
+            },
+            readonly: {
+                type: Boolean,
+                default: false
+            },
+            size: {
+                type: String,
+                default: null
+            },
         },
 
         components: {

@@ -9,8 +9,32 @@
     import CLightswitchInput from '../inputs/CLightswitchInput.vue';
 
     export default {
-        props: ['label', 'id', 'checked', 'instructions', 'disabled', 'errors'],
-
+        props: {
+            checked: {
+                type: Boolean,
+                default: null,
+            },
+            disabled: {
+                type: Boolean,
+                default: null,
+            },
+            errors: {
+                type: Array,
+                default: null,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+            instructions: {
+                type: String,
+                default: null,
+            },
+            label: {
+                type: String,
+                default: null,
+            },
+        },
         components: {
             CField,
             CLightswitchInput,

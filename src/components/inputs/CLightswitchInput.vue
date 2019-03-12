@@ -9,7 +9,20 @@
 
 <script>
     export default {
-        props: ['id', 'checked', 'disabled'],
+        props: {
+            checked: {
+                type: Boolean,
+                default: false,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+        },
     }
 </script>
 

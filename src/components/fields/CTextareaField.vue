@@ -32,7 +32,60 @@
     import CTextareaInput from '../inputs/CTextareaInput.vue';
 
     export default {
-        props: ['label', 'instructions', 'id', 'placeholder', 'value', 'cols', 'rows', 'errors', 'disabled', 'autocapitalize', 'spellcheck', 'size', 'max'],
+        props: {
+            autocapitalize: {
+                type: Boolean,
+                default: false,
+            },
+            cols: {
+                type: Number,
+                default: null,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
+            rows: {
+                type: Number,
+                default: null,
+            },
+            errors: {
+                type: Array,
+                default: null,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+            instructions: {
+                type: String,
+                default: null,
+            },
+            label: {
+                type: String,
+                default: null,
+            },
+            max: {
+                type: Number,
+                default: null,
+            },
+            placeholder: {
+                type: String,
+                default: null,
+            },
+            size: {
+                size: Number,
+                default: null,
+            },
+            spellcheck: {
+                type: Boolean,
+                default: false,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+        },
 
         components: {
             CField,

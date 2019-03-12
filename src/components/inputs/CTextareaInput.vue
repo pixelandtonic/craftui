@@ -17,7 +17,40 @@
 
 <script>
     export default {
-        props: ['id', 'placeholder', 'value', 'cols', 'disabled', 'autocapitalize', 'spellcheck', 'size'],
+        props: {
+            autocapitalize: {
+                type: Boolean,
+                default: false,
+            },
+            cols: {
+                type: Number,
+                default: null,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+            placeholder: {
+                type: String,
+                default: null,
+            },
+            size: {
+                size: Number,
+                default: null,
+            },
+            spellcheck: {
+                type: Boolean,
+                default: false,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+        },
     }
 </script>
 

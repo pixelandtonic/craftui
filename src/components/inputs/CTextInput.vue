@@ -43,22 +43,70 @@
         },
 
         props: {
-            type: {type: String, default: 'text'},
-            id: {type: String, default: null},
-            name: {type: String, default: null},
-            placeholder: {type: String, default: null},
-            value: {type: String, default: null},
-            autofocus: {type: Boolean, default: false},
-            disabled: {type: Boolean, default: false},
-            mask: {type: String | Array, default: null},
-            autocapitalize: {type: Boolean, default: false},
-            spellcheck: {type: Boolean, default: false},
-            readonly: {type: Boolean, default: false},
-            size: {type: String, default: null},
-            max: {type: String, default: null},
-            min: {type: String, default: null},
-            pattern: {type: String, default: null},
-            step: {type: String, default: null},
+            autocapitalize: {
+                type: Boolean,
+                default: false
+            },
+            autofocus: {
+                type: Boolean,
+                default: false
+            },
+            disabled: {
+                type: Boolean,
+                default: false
+            },
+            id: {
+                type: String,
+                default: null
+            },
+            mask: {
+                type: String |
+                    Array, default: null
+            },
+            max: {
+                type: String,
+                default: null
+            },
+            min: {
+                type: String,
+                default: null
+            },
+            name: {
+                type: String,
+                default: null
+            },
+            pattern: {
+                type: String,
+                default: null
+            },
+            placeholder: {
+                type: String,
+                default: null
+            },
+            readonly: {
+                type: Boolean,
+                default: false
+            },
+            size: {
+                type: String,
+                default: null
+            },
+            spellcheck: {
+                type: Boolean,
+                default: false
+            },
+            step: {
+                type: String,
+                default: null
+            },
+            type: {
+                type: String,
+                default: 'text'
+            },
+            value: {
+                type: String,
+                default: null
+            },
         },
 
         created() {

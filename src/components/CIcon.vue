@@ -6,7 +6,12 @@
 
 <script>
     export default {
-        props: ['icon', 'cssClass'],
+        props: {
+            icon: {
+                type: String,
+                default: null,
+            },
+        },
     }
 </script>
 

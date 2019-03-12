@@ -10,7 +10,36 @@
     import CSelectInput from '../inputs/CSelectInput.vue';
 
     export default {
-        props: ['label', 'instructions', 'fullwidth', 'id', 'options', 'value', 'errors'],
+        props: {
+            errors: {
+                type: Array,
+                default: null,
+            },
+            fullwidth: {
+                type: Boolean,
+                default: false,
+            },
+            id: {
+                type: String,
+                default: null,
+            },
+            instructions: {
+                type: String,
+                default: null,
+            },
+            label: {
+                type: String,
+                default: null,
+            },
+            options: {
+                type: Array,
+                default: null,
+            },
+            value: {
+                type: String,
+                default: null,
+            },
+        },
 
         components: {
             CField,
