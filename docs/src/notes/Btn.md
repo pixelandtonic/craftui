@@ -2,7 +2,7 @@
 
 A Vue implementation of a Craft UI button.
 
-https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
+https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Btn.vue
 
 ## Usage
 
