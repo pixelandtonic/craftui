@@ -36,4 +36,4 @@ storiesOf('Components|Textbox', module)
     }), { notes: { markdown: TextboxNotesMD } })
     .add('Textarea', () => ({
         template: '<textbox type="textarea" label="Label" instructions="Some instructions."></textbox>',
-    }), { notes: { markdown: TextboxNotesMD } });
+    }), { notes: { markdown: TextboxNotesMD } })

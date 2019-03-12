@@ -51,7 +51,7 @@
         },
 
         mounted() {
-            this.localValue = JSON.parse(JSON.stringify(this.value));
+            this.localValue = JSON.parse(JSON.stringify(this.value))
         }
     }
 </script>

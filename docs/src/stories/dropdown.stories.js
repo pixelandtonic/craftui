@@ -8,4 +8,4 @@ storiesOf('Components|Dropdown', module)
     }), { notes: { markdown: DropdownNotesMD } })
     .add('Error', () => ({
         template: '<dropdown label="Label" instructions="Some instructions." :options="[{label:\'One\', value:1}, {label:\'Two\', value:2}, {label:\'Three\', value:3}]" :errors="[\'Error message.\']"></dropdown>',
-    }), { notes: { markdown: DropdownNotesMD } });
+    }), { notes: { markdown: DropdownNotesMD } })

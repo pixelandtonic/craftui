@@ -11,4 +11,4 @@ storiesOf('Components|Lightswitch', module)
     }), { notes: { markdown: LightswitchNotesMD } })
     .add('Error', () => ({
         template: '<lightswitch label="Label" instructions="Some instructions." :checked="false" :errors="[\'Error message.\']" />',
-    }), { notes: { markdown: LightswitchNotesMD } });
+    }), { notes: { markdown: LightswitchNotesMD } })

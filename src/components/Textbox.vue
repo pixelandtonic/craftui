@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import Field from './Field.vue';
+    import Field from './Field.vue'
     import mask from 'vue-the-mask/src/directive'
 
     export default {
@@ -197,7 +197,7 @@
 
         created() {
             this.$on('focus', function() {
-                this.$refs.input.$emit('focus');
+                this.$refs.input.$emit('focus')
             })
         }
     }
