@@ -5,7 +5,7 @@ storiesOf('Components|CheckboxSet', module)
     .add('Default', () => ({
         template:
             '<div>' +
-            '<checkbox-set label="Label" v-model="value" instructions="Some instructions." :options="options"></checkbox-set>' +
+            '<checkbox-set label="Label" v-model="value" instructions="Some instructions." :options="options" />' +
             '<pre>{{value}}</pre>' +
             '</div>',
         data() {
@@ -27,7 +27,7 @@ storiesOf('Components|CheckboxSet', module)
     .add('Error', () => ({
         template:
             '<div>' +
-            '<checkbox-set label="Label" v-model="value" instructions="Some instructions." :options="options" :errors="[\'Error message.\']"></checkbox-set>' +
+            '<checkbox-set label="Label" v-model="value" instructions="Some instructions." :options="options" :errors="[\'Error message.\']" />' +
             '<pre>{{value}}</pre>' +
             '</div>',
         data() {
