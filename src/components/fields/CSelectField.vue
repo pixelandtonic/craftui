@@ -6,15 +6,15 @@
 
 
 <script>
-    import Field from '../Field.vue';
-    import SelectInput from '../inputs/SelectInput.vue';
+    import CField from '../CField.vue';
+    import CSelectInput from '../inputs/CSelectInput.vue';
 
     export default {
         props: ['label', 'instructions', 'fullwidth', 'id', 'options', 'value', 'errors'],
 
         components: {
-            Field,
-            SelectInput,
+            CField,
+            CSelectInput,
         },
     }
 </script>

@@ -32,8 +32,8 @@
 </template>
 
 <script>
-    import Field from '../Field.vue';
-    import TextInput from '../inputs/TextInput.vue';
+    import CField from '../CField.vue';
+    import CTextInput from '../inputs/CTextInput.vue';
 
     export default {
         props: {
@@ -57,8 +57,8 @@
         },
 
         components: {
-            Field,
-            TextInput,
+            CField,
+            CTextInput,
         },
 
         computed: {

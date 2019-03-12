@@ -963,19 +963,6 @@ button.c-btn .c-btn-content {
   }
 }
 
-body.ltr .c-checkbox-field input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-checkbox-field input {
-  margin-left: .5rem;
-}
-
-.c-checkbox-field .instructions {
-  color: #8795a1;
-  font-size: .875rem;
-}
-
 .c-checkbox-set fieldset ul {
   list-style: none;
   padding: 0;
@@ -998,46 +985,21 @@ body.rtl .c-checkbox-set fieldset ul input {
   margin-left: .5rem;
 }
 
+body.ltr .c-checkbox-field input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-checkbox-field input {
+  margin-left: .5rem;
+}
+
+.c-checkbox-field .instructions {
+  color: #8795a1;
+  font-size: .875rem;
+}
+
 .c-select-field .is-invalid select {
   border-color: #e3342f;
-}
-
-.c-textarea-field .wrapper {
-  position: relative;
-}
-
-.c-textarea-field .wrapper .text-red-dark {
-  color: #cc1f1a;
-}
-
-.c-textarea-field .wrapper .max {
-  margin-top: .5rem;
-}
-
-body.ltr .c-textarea-field .wrapper .max {
-  padding-right: .25rem;
-}
-
-body.rtl .c-textarea-field .wrapper .max {
-  padding-left: .25rem;
-}
-
-.c-textarea-field .wrapper .max.floating {
-  position: absolute;
-  font-size: .75rem;
-  text-align: right;
-}
-
-.c-textarea-field .wrapper .max.text-grey {
-  color: #b8c2cc;
-}
-
-.c-textarea-field .wrapper .max.text-orange {
-  color: #f6993f;
-}
-
-.c-textarea-field .wrapper .max.text-red {
-  color: #e3342f;
 }
 
 .c-text-field .wrapper {
@@ -1075,6 +1037,44 @@ body.rtl .c-text-field .wrapper .max {
 }
 
 .c-text-field .wrapper .max.text-red {
+  color: #e3342f;
+}
+
+.c-textarea-field .wrapper {
+  position: relative;
+}
+
+.c-textarea-field .wrapper .text-red-dark {
+  color: #cc1f1a;
+}
+
+.c-textarea-field .wrapper .max {
+  margin-top: .5rem;
+}
+
+body.ltr .c-textarea-field .wrapper .max {
+  padding-right: .25rem;
+}
+
+body.rtl .c-textarea-field .wrapper .max {
+  padding-left: .25rem;
+}
+
+.c-textarea-field .wrapper .max.floating {
+  position: absolute;
+  font-size: .75rem;
+  text-align: right;
+}
+
+.c-textarea-field .wrapper .max.text-grey {
+  color: #b8c2cc;
+}
+
+.c-textarea-field .wrapper .max.text-orange {
+  color: #f6993f;
+}
+
+.c-textarea-field .wrapper .max.text-red {
   color: #e3342f;
 }
 
@@ -1155,11 +1155,11 @@ body.rtl .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-textarea.c-textarea-input.w-full {
+.c-select-input select.w-full {
   width: 100%;
 }
 
-.c-select-input select.w-full {
+textarea.c-textarea-input.w-full {
   width: 100%;
 }
 

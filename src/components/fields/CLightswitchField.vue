@@ -5,15 +5,15 @@
 </template>
 
 <script>
-    import Field from '../Field.vue';
-    import LightswitchInput from '../inputs/LightswitchInput.vue';
+    import CField from '../CField.vue';
+    import CLightswitchInput from '../inputs/CLightswitchInput.vue';
 
     export default {
         props: ['label', 'id', 'checked', 'instructions', 'disabled', 'errors'],
 
         components: {
-            Field,
-            LightswitchInput,
+            CField,
+            CLightswitchInput,
         },
     }
 </script>

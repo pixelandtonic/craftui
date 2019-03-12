@@ -28,15 +28,15 @@
 </template>
 
 <script>
-    import Field from '../Field.vue';
-    import TextareaInput from '../inputs/TextareaInput.vue';
+    import CField from '../CField.vue';
+    import CTextareaInput from '../inputs/CTextareaInput.vue';
 
     export default {
         props: ['label', 'instructions', 'id', 'placeholder', 'value', 'cols', 'rows', 'errors', 'disabled', 'autocapitalize', 'spellcheck', 'size', 'max'],
 
         components: {
-            Field,
-            TextareaInput,
+            CField,
+            CTextareaInput,
         },
 
         computed: {

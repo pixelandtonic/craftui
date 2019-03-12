@@ -1,37 +1,37 @@
-import Btn from './Btn.vue';
-import Field from './Field.vue';
-import Icon from './Icon.vue';
-import Spinner from './Spinner.vue';
+import CBtn from './CBtn.vue';
+import CField from './CField.vue';
+import CIcon from './CIcon.vue';
+import CSpinner from './CSpinner.vue';
 
-import CheckboxField from './fields/CheckboxField.vue';
-import CheckboxSet from './fields/CheckboxSet.vue';
-import LightswitchField from './fields/LightswitchField.vue';
-import SelectField from './fields/SelectField.vue';
-import TextareaField from './fields/TextareaField.vue';
-import TextField from './fields/TextField.vue';
+import CCheckboxField from './fields/CCheckboxField.vue';
+import CCheckboxSet from './fields/CCheckboxSet.vue';
+import CLightswitchField from './fields/CLightswitchField.vue';
+import CSelectField from './fields/CSelectField.vue';
+import CTextareaField from './fields/CTextareaField.vue';
+import CTextField from './fields/CTextField.vue';
 
-import LightswitchInput from './inputs/LightswitchInput.vue';
-import SelectInput from './inputs/SelectInput.vue';
-import TextareaInput from './inputs/TextareaInput.vue';
-import TextInput from './inputs/TextInput.vue';
+import CLightswitchInput from './inputs/CLightswitchInput.vue';
+import CSelectInput from './inputs/CSelectInput.vue';
+import CTextareaInput from './inputs/CTextareaInput.vue';
+import CTextInput from './inputs/CTextInput.vue';
 
 const CraftComponents = {
-  Btn,
-  Field,
-  Icon,
-  Spinner,
+  CBtn,
+  CField,
+  CIcon,
+  CSpinner,
 
-  CheckboxField,
-  CheckboxSet,
-  LightswitchField,
-  SelectField,
-  TextareaField,
-  TextField,
+  CCheckboxField,
+  CCheckboxSet,
+  CLightswitchField,
+  CSelectField,
+  CTextareaField,
+  CTextField,
 
-  LightswitchInput,
-  SelectInput,
-  TextareaInput,
-  TextInput,
+  CLightswitchInput,
+  CSelectInput,
+  CTextareaInput,
+  CTextInput,
 };
 
 export default CraftComponents;
