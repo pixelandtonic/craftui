@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import SpinnerNotesMD from '../notes/Spinner.md'
 
-storiesOf('Components|Spinners', module)
+storiesOf('Components|Spinner', module)
     .add('base', () => ({
         template: '<spinner></spinner>',
     }), { notes: { markdown: SpinnerNotesMD } })
