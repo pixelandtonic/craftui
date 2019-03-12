@@ -1,7 +1,7 @@
 <template>
-    <c-field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-select-field">
-        <c-select-input :class="{'is-invalid': !!errors}" :fullwidth="fullwidth" :options="options" :value="value" @input="$emit('input', $event)"></c-select-input>
-    </c-field>
+    <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-select-field">
+        <select-input :class="{'is-invalid': !!errors}" :fullwidth="fullwidth" :options="options" :value="value" @input="$emit('input', $event)"></select-input>
+    </field>
 </template>
 
 

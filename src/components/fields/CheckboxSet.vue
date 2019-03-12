@@ -1,5 +1,5 @@
 <template>
-    <c-field :errors="errors" class="c-checkbox-set">
+    <field :errors="errors" class="c-checkbox-set">
         <fieldset>
             <legend>{{ label }}</legend>
 
@@ -16,7 +16,7 @@
                 </li>
             </ul>
         </fieldset>
-    </c-field>
+    </field>
 </template>
 
 <script>

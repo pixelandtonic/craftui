@@ -1,7 +1,7 @@
 <template>
-    <c-field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-textarea-field">
+    <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-textarea-field">
         <div class="wrapper">
-            <c-textarea-input
+            <textarea-input
                     :autocapitalize="autocapitalize"
                     :class="{
                         'is-invalid': errors,
@@ -24,7 +24,7 @@
                     'text-red': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
-    </c-field>
+    </field>
 </template>
 
 <script>

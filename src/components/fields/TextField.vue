@@ -1,7 +1,7 @@
 <template>
-    <c-field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
         <div class="wrapper">
-            <c-text-input
+            <text-input
                     :autofocus="autofocus"
                     :class="{
                         'is-invalid': errors,
@@ -28,7 +28,7 @@
                     'text-red': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
-    </c-field>
+    </field>
 </template>
 
 <script>

@@ -11,11 +11,11 @@
             @click="$emit('click')"
     >
         <template v-if="loading">
-            <c-spinner></c-spinner>
+            <spinner></spinner>
         </template>
 
         <div class="c-btn-content">
-            <c-icon v-if="icon" :icon="icon"/>
+            <icon v-if="icon" :icon="icon"/>
 
             <slot></slot>
         </div>
