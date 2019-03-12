@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
+import CheckboxSetNotesMD from '../notes/CheckboxSet.md'
 
 storiesOf('Components|CheckboxSet', module)
     .add('Default', () => ({
@@ -23,7 +24,7 @@ storiesOf('Components|CheckboxSet', module)
                 ]
             }
         }
-    }))
+    }), { notes: { markdown: CheckboxSetNotesMD } })
     .add('Error', () => ({
         template:
             '<div>' +
@@ -45,4 +46,4 @@ storiesOf('Components|CheckboxSet', module)
                 ]
             }
         }
-    }));
+    }), { notes: { markdown: CheckboxSetNotesMD } })

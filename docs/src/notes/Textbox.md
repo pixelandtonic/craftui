@@ -1,8 +1,8 @@
-# text-field
+# textbox
 
-A Vue implementation of a Craft UI text field.
+A Vue implementation of a Craft UI text box.
 
-https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/TextField.vue
+https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Textbox.vue
 
 ## Usage
 
