@@ -2,10 +2,11 @@
     <field :id="id" :errors="errors" class="c-radio">
         <label>
             <input type="radio"
-                    :id="id"
-                    :value="value"
-                    :checked="state"
-                    @change="onChange"
+                   :id="id"
+                   :value="value"
+                   :checked="state"
+                   :disabled="disabled"
+                   @change="onChange"
             />
 
             {{ label }}
@@ -21,6 +22,14 @@
         },
 
         props: {
+            checked: {
+                type: Boolean,
+                default: false,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
             errors: {
                 type: Array,
                 default: null,
@@ -29,23 +38,19 @@
                 type: String,
                 default: null,
             },
-            label: {
+            instructions: {
                 type: String,
                 default: null,
             },
-            checked: {
-                type: Boolean,
-                default: false,
-            },
-            value: {
-                default: '',
-            },
-            instructions: {
+            label: {
                 type: String,
                 default: null,
             },
             modelValue: {
                 default: undefined,
+            },
+            value: {
+                default: '',
             },
         },
 
