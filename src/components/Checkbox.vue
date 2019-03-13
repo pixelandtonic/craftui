@@ -1,8 +1,14 @@
 <template>
-    <field :id="id" :errors="errors" class="c-checkbox-field">
+    <field :id="id" :errors="errors" class="c-checkbox">
         <label>
-            <!--Must be @change, not @input (Safari issue)-->
-            <input :id="id" type="checkbox" :value="value" :checked="value" @change="$emit('input', $event.target.checked)">
+            <input type="checkbox"
+                   :id="id"
+                   :value="value"
+                   :checked="state"
+                   :disabled="disabled"
+                   @change="onChange"
+            />
+
             {{ label }}
         </label>
     </field>
@@ -10,7 +16,20 @@
 
 <script>
     export default {
+        model: {
+            prop: 'modelValue',
+            event: 'input'
+        },
+
         props: {
+            checked: {
+                type: Boolean,
+                default: false,
+            },
+            disabled: {
+                type: Boolean,
+                default: false,
+            },
             errors: {
                 type: Array,
                 default: null,
@@ -19,18 +38,67 @@
                 type: String,
                 default: null,
             },
+            instructions: {
+                type: String,
+                default: null,
+            },
             label: {
                 type: String,
                 default: null,
+            },
+            modelValue: {
+                default: undefined,
             },
             value: {
                 type: String,
                 default: null,
             },
-            instructions: {
-                type: String,
-                default: null,
+        },
+
+        computed: {
+            state() {
+                if (this.modelValue === undefined) {
+                    return this.checked;
+                }
+                if (Array.isArray(this.modelValue)) {
+                    return this.modelValue.indexOf(this.value) > -1;
+                }
+                return !!this.modelValue;
+            }
+        },
+
+        methods: {
+            onChange() {
+                this.toggle();
             },
+            toggle() {
+                let value;
+                if (Array.isArray(this.modelValue)) {
+                    value = this.modelValue.slice(0);
+                    if (this.state) {
+                        value.splice(value.indexOf(this.value), 1);
+                    } else {
+                        value.push(this.value);
+                    }
+                } else {
+                    value = !this.state;
+                }
+                this.$emit('input', value);
+            }
+        },
+
+        watch: {
+            checked(newValue) {
+                if (newValue !== this.state) {
+                    this.toggle();
+                }
+            }
+        },
+
+        mounted() {
+            if (this.checked && !this.state) {
+                this.toggle();
+            }
         },
     }
 </script>
@@ -38,7 +106,7 @@
 <style lang="scss">
     @import "../sass/mixins";
 
-    .c-checkbox-field {
+    .c-checkbox {
         input {
             @include mr(2);
         }

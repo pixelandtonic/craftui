@@ -12,8 +12,10 @@ https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Check
 
 ## Attributes
 
+- checked: Optional.
+- disabled: Optional.
 - errors: Optional.
 - id: Optional.
+- instructions: Optional.
 - label: Optional.
 - value: Optional.
-- instructions: Optional.
