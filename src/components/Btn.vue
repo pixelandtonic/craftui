@@ -15,7 +15,7 @@
         </template>
 
         <div class="c-btn-content">
-            <icon v-if="icon" :icon="icon"/>
+            <icon v-if="icon && icon.length > 0" :icon="icon"/>
 
             <slot></slot>
         </div>
