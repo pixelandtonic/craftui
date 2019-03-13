@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
+    "@storybook/addon-knobs": "^4.1.11",
     "@storybook/addon-links": "4.0.0-alpha.20",
     "@storybook/addon-notes": "^4.1.11",
     "@storybook/addon-options": "^4.1.11",
