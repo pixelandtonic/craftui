@@ -205,7 +205,7 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.com
             block: _vm.block,
             outline: _vm.outline,
             loading: _vm.loading
-        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
+        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon && _vm.icon.length > 0)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -243,8 +243,26 @@ var __vue_staticRenderFns__ = [];
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var script$1 = {
+  model: {
+    prop: 'modelValue',
+    event: 'input'
+  },
   props: {
+    checked: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
     errors: {
       type: Array,
       default: null
@@ -253,17 +271,67 @@ var script$1 = {
       type: String,
       default: null
     },
+    instructions: {
+      type: String,
+      default: null
+    },
     label: {
       type: String,
       default: null
     },
+    modelValue: {
+      default: undefined
+    },
     value: {
       type: String,
       default: null
+    }
+  },
+  computed: {
+    state: function state() {
+      if (this.modelValue === undefined) {
+        return this.checked;
+      }
+
+      if (Array.isArray(this.modelValue)) {
+        return this.modelValue.indexOf(this.value) > -1;
+      }
+
+      return !!this.modelValue;
+    }
+  },
+  methods: {
+    onChange: function onChange() {
+      this.toggle();
     },
-    instructions: {
-      type: String,
-      default: null
+    toggle: function toggle() {
+      var value;
+
+      if (Array.isArray(this.modelValue)) {
+        value = this.modelValue.slice(0);
+
+        if (this.state) {
+          value.splice(value.indexOf(this.value), 1);
+        } else {
+          value.push(this.value);
+        }
+      } else {
+        value = !this.state;
+      }
+
+      this.$emit('input', value);
+    }
+  },
+  watch: {
+    checked: function checked(newValue) {
+      if (newValue !== this.state) {
+        this.toggle();
+      }
+    }
+  },
+  mounted: function mounted() {
+    if (this.checked && !this.state) {
+      this.toggle();
     }
   }
 };
@@ -271,7 +339,7 @@ var script$1 = {
 /* script */
 const __vue_script__$1 = script$1;
 /* template */
-var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-field",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"id":_vm.id,"type":"checkbox"},domProps:{"value":_vm.value,"checked":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.checked)}}}),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"checkbox","id":_vm.id,"disabled":_vm.disabled},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
 var __vue_staticRenderFns__$1 = [];
 
   /* style */
@@ -454,117 +522,7 @@ var __vue_staticRenderFns__$3 = [];
   );
 
 //
-//
-//
-//
-//
-//
 var script$4 = {
-  props: {
-    icon: {
-      type: String,
-      default: null
-    }
-  }
-};
-
-/* script */
-const __vue_script__$4 = script$4;
-/* template */
-var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
-var __vue_staticRenderFns__$4 = [];
-
-  /* style */
-  const __vue_inject_styles__$4 = undefined;
-  /* scoped */
-  const __vue_scope_id__$4 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$4 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$4 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var Icon = normalizeComponent_1(
-    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-    __vue_inject_styles__$4,
-    __vue_script__$4,
-    __vue_scope_id__$4,
-    __vue_is_functional_template__$4,
-    __vue_module_identifier__$4,
-    undefined,
-    undefined
-  );
-
-//
-var script$5 = {
-  props: {
-    checked: {
-      type: Boolean,
-      default: null
-    },
-    disabled: {
-      type: Boolean,
-      default: null
-    },
-    errors: {
-      type: Array,
-      default: null
-    },
-    id: {
-      type: String,
-      default: null
-    },
-    instructions: {
-      type: String,
-      default: null
-    },
-    label: {
-      type: String,
-      default: null
-    }
-  },
-  components: {
-    Field: Field
-  }
-};
-
-/* script */
-const __vue_script__$5 = script$5;
-/* template */
-var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
-var __vue_staticRenderFns__$5 = [];
-
-  /* style */
-  const __vue_inject_styles__$5 = undefined;
-  /* scoped */
-  const __vue_scope_id__$5 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$5 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$5 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var Lightswitch = normalizeComponent_1(
-    { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
-    __vue_inject_styles__$5,
-    __vue_script__$5,
-    __vue_scope_id__$5,
-    __vue_is_functional_template__$5,
-    __vue_module_identifier__$5,
-    undefined,
-    undefined
-  );
-
-//
-var script$6 = {
   props: {
     errors: {
       type: Array,
@@ -601,9 +559,119 @@ var script$6 = {
 };
 
 /* script */
+const __vue_script__$4 = script$4;
+/* template */
+var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': !!_vm.errors}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
+var __vue_staticRenderFns__$4 = [];
+
+  /* style */
+  const __vue_inject_styles__$4 = undefined;
+  /* scoped */
+  const __vue_scope_id__$4 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$4 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$4 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var Dropdown = normalizeComponent_1(
+    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
+    __vue_inject_styles__$4,
+    __vue_script__$4,
+    __vue_scope_id__$4,
+    __vue_is_functional_template__$4,
+    __vue_module_identifier__$4,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+var script$5 = {
+  props: {
+    icon: {
+      type: String,
+      default: null
+    }
+  }
+};
+
+/* script */
+const __vue_script__$5 = script$5;
+/* template */
+var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
+var __vue_staticRenderFns__$5 = [];
+
+  /* style */
+  const __vue_inject_styles__$5 = undefined;
+  /* scoped */
+  const __vue_scope_id__$5 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$5 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$5 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var Icon = normalizeComponent_1(
+    { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
+    __vue_inject_styles__$5,
+    __vue_script__$5,
+    __vue_scope_id__$5,
+    __vue_is_functional_template__$5,
+    __vue_module_identifier__$5,
+    undefined,
+    undefined
+  );
+
+//
+var script$6 = {
+  props: {
+    checked: {
+      type: Boolean,
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: null
+    },
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    }
+  },
+  components: {
+    Field: Field
+  }
+};
+
+/* script */
 const __vue_script__$6 = script$6;
 /* template */
-var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown-field",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': !!_vm.errors}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
+var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
 var __vue_staticRenderFns__$6 = [];
 
   /* style */
@@ -620,7 +688,7 @@ var __vue_staticRenderFns__$6 = [];
   
 
   
-  var Dropdown = normalizeComponent_1(
+  var Lightswitch = normalizeComponent_1(
     { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
     __vue_inject_styles__$6,
     __vue_script__$6,
@@ -646,12 +714,21 @@ var __vue_staticRenderFns__$6 = [];
 //
 //
 //
+//
 var script$7 = {
   model: {
     prop: 'modelValue',
     event: 'input'
   },
   props: {
+    checked: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
     errors: {
       type: Array,
       default: null
@@ -660,23 +737,19 @@ var script$7 = {
       type: String,
       default: null
     },
-    label: {
+    instructions: {
       type: String,
       default: null
     },
-    checked: {
-      type: Boolean,
-      default: false
-    },
-    value: {
-      default: ''
-    },
-    instructions: {
+    label: {
       type: String,
       default: null
     },
     modelValue: {
       default: undefined
+    },
+    value: {
+      default: ''
     }
   },
   computed: {
@@ -713,7 +786,7 @@ var script$7 = {
 /* script */
 const __vue_script__$7 = script$7;
 /* template */
-var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-radio",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"radio","id":_vm.id},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-radio",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"radio","id":_vm.id,"disabled":_vm.disabled},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
 var __vue_staticRenderFns__$7 = [];
 
   /* style */
@@ -1169,10 +1242,10 @@ var CraftComponents = {
   Btn: Btn,
   Checkbox: Checkbox,
   CheckboxSet: CheckboxSet,
+  Dropdown: Dropdown,
   Field: Field,
   Icon: Icon,
   Lightswitch: Lightswitch,
-  Dropdown: Dropdown,
   Radio: Radio,
   Spinner: Spinner,
   Textbox: Textbox
