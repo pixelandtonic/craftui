@@ -5,6 +5,7 @@ import Field from './Field.vue';
 import Icon from './Icon.vue';
 import Lightswitch from './Lightswitch.vue';
 import Dropdown from './Dropdown.vue';
+import Radio from './Radio.vue';
 import Spinner from './Spinner.vue';
 import Textbox from './Textbox.vue';
 
@@ -16,6 +17,7 @@ const CraftComponents = {
   Icon,
   Lightswitch,
   Dropdown,
+  Radio,
   Spinner,
   Textbox,
 };

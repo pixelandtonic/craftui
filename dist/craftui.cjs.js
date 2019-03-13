@@ -635,10 +635,90 @@ var __vue_staticRenderFns__$6 = [];
     undefined
   );
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$7 = {
+  model: {
+    prop: 'modelValue',
+    event: 'input'
+  },
+  props: {
+    errors: {
+      type: Array,
+      default: null
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    label: {
+      type: String,
+      default: null
+    },
+    checked: {
+      type: Boolean,
+      default: false
+    },
+    value: {
+      default: ''
+    },
+    instructions: {
+      type: String,
+      default: null
+    },
+    modelValue: {
+      default: undefined
+    }
+  },
+  computed: {
+    state: function state() {
+      if (this.modelValue === undefined) {
+        return this.checked;
+      }
+
+      return this.modelValue === this.value;
+    }
+  },
+  methods: {
+    onChange: function onChange() {
+      this.toggle();
+    },
+    toggle: function toggle() {
+      this.$emit('input', this.state ? '' : this.value);
+    }
+  },
+  watch: {
+    checked: function checked(newValue) {
+      if (newValue !== this.state) {
+        this.toggle();
+      }
+    }
+  },
+  mounted: function mounted() {
+    if (this.checked && !this.state) {
+      this.toggle();
+    }
+  }
+};
+
 /* script */
+const __vue_script__$7 = script$7;
 /* template */
-var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner"},[_c('div',{staticClass:"animation"})])}];
+var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-radio",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"radio","id":_vm.id},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_staticRenderFns__$7 = [];
 
   /* style */
   const __vue_inject_styles__$7 = undefined;
@@ -654,13 +734,43 @@ var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createEle
   
 
   
-  var Spinner = normalizeComponent_1(
+  var Radio = normalizeComponent_1(
     { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
     __vue_inject_styles__$7,
-    {},
+    __vue_script__$7,
     __vue_scope_id__$7,
     __vue_is_functional_template__$7,
     __vue_module_identifier__$7,
+    undefined,
+    undefined
+  );
+
+/* script */
+/* template */
+var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+var __vue_staticRenderFns__$8 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner"},[_c('div',{staticClass:"animation"})])}];
+
+  /* style */
+  const __vue_inject_styles__$8 = undefined;
+  /* scoped */
+  const __vue_scope_id__$8 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$8 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$8 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var Spinner = normalizeComponent_1(
+    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+    __vue_inject_styles__$8,
+    {},
+    __vue_scope_id__$8,
+    __vue_is_functional_template__$8,
+    __vue_module_identifier__$8,
     undefined,
     undefined
   );
@@ -875,7 +985,7 @@ function mask (el, binding) {
 }
 
 //
-var script$7 = {
+var script$8 = {
   directives: {
     mask: {
       bind: function bind(el, binding, vnode) {
@@ -1021,9 +1131,9 @@ var script$7 = {
 };
 
 /* script */
-const __vue_script__$7 = script$7;
+const __vue_script__$8 = script$8;
 /* template */
-var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
+var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
                     'w-full': !_vm.size,
                     'is-invalid': _vm.errors,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
@@ -1032,16 +1142,16 @@ var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _
                 'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                 'text-red': _vm.remainingChars < 0
             }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
-var __vue_staticRenderFns__$8 = [];
+var __vue_staticRenderFns__$9 = [];
 
   /* style */
-  const __vue_inject_styles__$8 = undefined;
+  const __vue_inject_styles__$9 = undefined;
   /* scoped */
-  const __vue_scope_id__$8 = undefined;
+  const __vue_scope_id__$9 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$8 = undefined;
+  const __vue_module_identifier__$9 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$8 = false;
+  const __vue_is_functional_template__$9 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -1049,12 +1159,12 @@ var __vue_staticRenderFns__$8 = [];
 
   
   var Textbox = normalizeComponent_1(
-    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-    __vue_inject_styles__$8,
-    __vue_script__$7,
-    __vue_scope_id__$8,
-    __vue_is_functional_template__$8,
-    __vue_module_identifier__$8,
+    { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
+    __vue_inject_styles__$9,
+    __vue_script__$8,
+    __vue_scope_id__$9,
+    __vue_is_functional_template__$9,
+    __vue_module_identifier__$9,
     undefined,
     undefined
   );
@@ -1067,6 +1177,7 @@ var CraftComponents = {
   Icon: Icon,
   Lightswitch: Lightswitch,
   Dropdown: Dropdown,
+  Radio: Radio,
   Spinner: Spinner,
   Textbox: Textbox
 };

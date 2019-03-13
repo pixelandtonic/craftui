@@ -901,56 +901,6 @@ body.rtl .c-checkbox-set fieldset ul input {
   margin-left: .5rem;
 }
 
-.c-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  fill: currentColor;
-  top: -2px;
-  width: 18px;
-  height: 18px;
-}
-
-.c-icon.size-sm {
-  width: .75rem;
-  height: .75rem;
-}
-
-.c-icon.size-base {
-  width: 1rem;
-  height: 1rem;
-}
-
-.c-icon.size-lg {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c-icon.size-xl {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.c-icon.size-2xl {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-
-.c-icon.size-3xl {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.c-icon.size-4xl {
-  width: 3rem;
-  height: 3rem;
-}
-
-.c-icon.size-5xl {
-  width: 4rem;
-  height: 4rem;
-}
-
 .c-lightswitch-field .c-lightswitch-input label {
   position: relative;
   display: block;
@@ -1028,12 +978,75 @@ body.rtl .c-lightswitch-field .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
+.c-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  fill: currentColor;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+}
+
+.c-icon.size-sm {
+  width: .75rem;
+  height: .75rem;
+}
+
+.c-icon.size-base {
+  width: 1rem;
+  height: 1rem;
+}
+
+.c-icon.size-lg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c-icon.size-xl {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.c-icon.size-2xl {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.c-icon.size-3xl {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.c-icon.size-4xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+.c-icon.size-5xl {
+  width: 4rem;
+  height: 4rem;
+}
+
 .c-dropdown-field .c-dropdown-input select.w-full {
   width: 100%;
 }
 
 .c-dropdown-field .is-invalid select {
   border-color: #e3342f;
+}
+
+body.ltr .c-radio input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-radio input {
+  margin-left: .5rem;
+}
+
+.c-radio .instructions {
+  color: #8795a1;
+  font-size: .875rem;
 }
 
 .c-spinner {
