@@ -1028,6 +1028,14 @@ body.rtl .c-lightswitch-field .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
+.c-dropdown-field .c-dropdown-input select.w-full {
+  width: 100%;
+}
+
+.c-dropdown-field .is-invalid select {
+  border-color: #e3342f;
+}
+
 .c-spinner {
   display: inline-block;
 }
@@ -1075,52 +1083,44 @@ body.rtl .c-lightswitch-field .c-lightswitch-input label .slider:before {
   }
 }
 
-.c-dropdown-field .c-dropdown-input select.w-full {
-  width: 100%;
-}
-
-.c-dropdown-field .is-invalid select {
-  border-color: #e3342f;
-}
-
-.c-text-field .wrapper {
+.c-textbox .wrapper {
   position: relative;
 }
 
-.c-text-field .wrapper input.c-text-input.w-full {
+.c-textbox .wrapper input.c-textbox.w-full {
   width: 100%;
 }
 
-.c-text-field .wrapper .text-red-dark {
+.c-textbox .wrapper .text-red-dark {
   color: #cc1f1a;
 }
 
-.c-text-field .wrapper .max {
+.c-textbox .wrapper .max {
   margin-top: .5rem;
 }
 
-body.ltr .c-text-field .wrapper .max {
+body.ltr .c-textbox .wrapper .max {
   padding-right: .25rem;
 }
 
-body.rtl .c-text-field .wrapper .max {
+body.rtl .c-textbox .wrapper .max {
   padding-left: .25rem;
 }
 
-.c-text-field .wrapper .max.floating {
+.c-textbox .wrapper .max.floating {
   position: absolute;
   font-size: .75rem;
   text-align: right;
 }
 
-.c-text-field .wrapper .max.text-grey {
+.c-textbox .wrapper .max.text-grey {
   color: #b8c2cc;
 }
 
-.c-text-field .wrapper .max.text-orange {
+.c-textbox .wrapper .max.text-orange {
   color: #f6993f;
 }
 
-.c-text-field .wrapper .max.text-red {
+.c-textbox .wrapper .max.text-red {
   color: #e3342f;
 }

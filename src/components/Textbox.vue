@@ -1,10 +1,11 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-text-field">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-textbox">
         <div class="wrapper">
             <component
                     :is="computedComponent"
 
                     :autocapitalize="autocapitalize"
+                    :autocomplete="autocomplete"
                     :autofocus="autofocus"
                     :class="{
                         'w-full': !size,
@@ -27,15 +28,15 @@
                     :step="step"
                     :type="computedType"
                     :value="value"
+                    ref="input"
+                    v-mask="mask"
+                    @blur="$emit('blur', $event)"
+                    @focus="$emit('focus', $event.target.value)"
                     @change="$emit('change', $event)"
                     @input="$emit('input', $event.target.value)"
                     @keydown="$emit('keydown', $event)"
                     @keypress="$emit('keypress', $event)"
                     @keyup="$emit('keyup', $event)"
-                    autocomplete="off"
-                    class="c-text-input"
-                    ref="input"
-                    v-mask="mask"
             />
 
             <p v-if="max"
@@ -68,6 +69,10 @@
             autocapitalize: {
                 type: Boolean,
                 default: false
+            },
+            autocomplete: {
+                type: String,
+                default: 'on'
             },
             autofocus: {
                 type: Boolean,
@@ -102,11 +107,11 @@
                 default: ''
             },
             max: {
-                type: Number,
+                type: Number | String,
                 default: null
             },
             min: {
-                type: String,
+                type: Number | String,
                 default: null
             },
             name: {
@@ -126,11 +131,11 @@
                 default: false
             },
             rows: {
-                type: Number,
+                type: Number | String,
                 default: null,
             },
             size: {
-                type: String,
+                type: Number | String,
                 default: null
             },
             spellcheck: {
@@ -138,7 +143,7 @@
                 default: false
             },
             step: {
-                type: String,
+                type: Number | String,
                 default: null
             },
             type: {
@@ -197,7 +202,7 @@
 
         created() {
             this.$on('focus', function() {
-                this.$refs.input.$emit('focus')
+                this.$refs.input.focus()
             })
         }
     }
@@ -206,11 +211,11 @@
 <style lang="scss">
     @import "../sass/mixins";
 
-    .c-text-field {
+    .c-textbox {
         .wrapper {
             @apply .relative;
 
-            input.c-text-input {
+            input.c-textbox {
                 &.w-full {
                     @apply .w-full;
                 }

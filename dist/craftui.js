@@ -892,6 +892,10 @@
         type: Boolean,
         default: false
       },
+      autocomplete: {
+        type: String,
+        default: 'on'
+      },
       autofocus: {
         type: Boolean,
         default: false
@@ -925,11 +929,11 @@
         default: ''
       },
       max: {
-        type: Number,
+        type: Number | String,
         default: null
       },
       min: {
-        type: String,
+        type: Number | String,
         default: null
       },
       name: {
@@ -949,11 +953,11 @@
         default: false
       },
       rows: {
-        type: Number,
+        type: Number | String,
         default: null
       },
       size: {
-        type: String,
+        type: Number | String,
         default: null
       },
       spellcheck: {
@@ -961,7 +965,7 @@
         default: false
       },
       step: {
-        type: String,
+        type: Number | String,
         default: null
       },
       type: {
@@ -1013,7 +1017,7 @@
     },
     created: function created() {
       this.$on('focus', function () {
-        this.$refs.input.$emit('focus');
+        this.$refs.input.focus();
       });
     }
   };
@@ -1021,11 +1025,11 @@
   /* script */
   const __vue_script__$7 = script$7;
   /* template */
-  var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-text-field",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",staticClass:"c-text-input",class:{
+  var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
                       'w-full': !_vm.size,
                       'is-invalid': _vm.errors,
                       'text-red-dark': _vm.max && _vm.max < this.value.length
-                  },attrs:{"autocapitalize":_vm.autocapitalize,"autofocus":_vm.autofocus,"cols":_vm.computedCols,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"rows":_vm.computedRows,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.computedType,"value":_vm.value,"autocomplete":"off"},on:{"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
+                  },attrs:{"autocapitalize":_vm.autocapitalize,"autocomplete":_vm.autocomplete,"autofocus":_vm.autofocus,"cols":_vm.computedCols,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"rows":_vm.computedRows,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.computedType,"value":_vm.value},on:{"blur":function($event){return _vm.$emit('blur', $event)},"focus":function($event){return _vm.$emit('focus', $event.target.value)},"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
                   'text-grey': _vm.remainingChars >= 20,
                   'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                   'text-red': _vm.remainingChars < 0
