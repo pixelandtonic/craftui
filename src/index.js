@@ -1,4 +1,4 @@
-import CraftIcons from './icons'
+import CraftIcons from './plugins/icons'
 import CraftComponents from './components'
 
 import './sass/styles.scss'

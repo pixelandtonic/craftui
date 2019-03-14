@@ -1,4 +1,4 @@
-import regularSvg from './sprites/solid.svg'
+import regularSvg from '../sprites/solid.svg'
 
 export default {
     install (Vue) {
