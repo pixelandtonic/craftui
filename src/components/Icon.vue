@@ -1,5 +1,7 @@
 <template>
-    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon">
+    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="{
+        ['size-' + size]: true,
+    }">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + icon"></use>
     </svg>
 </template>
@@ -10,6 +12,10 @@
             icon: {
                 type: String,
                 default: null,
+            },
+            size: {
+                type: String,
+                default: 'base',
             },
         },
     }
