@@ -1,5 +1,5 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-lightswitch-field">
+    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-lightswitch">
         <div class="c-lightswitch-input">
             <label :for="id" class="lightswitch" :class="{disabled: disabled}">
                 <input :id="id" type="checkbox" :checked="checked" :disabled="disabled" @input="$emit('update:checked', $event.target.checked)" @change="$emit('change', $event)" />
@@ -49,7 +49,7 @@
 <style lang="scss">
     @import "../sass/mixins";
 
-    .c-lightswitch-field {
+    .c-lightswitch {
         .c-lightswitch-input {
             label {
                 @apply .relative .block .select-none;
