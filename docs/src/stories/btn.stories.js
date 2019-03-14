@@ -1,12 +1,22 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue'
+import {storiesOf} from '@storybook/vue'
 import {action} from '@storybook/addon-actions'
 import BtnNotesMD from '../notes/Btn.md'
-import { text, boolean, select } from '@storybook/addon-knobs'
+import {text, boolean, select} from '@storybook/addon-knobs'
 
 storiesOf('Components|Btn', module)
     .add('Default', () => ({
-        template:`<btn :icon="icon" :block="block" :small="small" :large="large" :outline="outline" :kind="kind" :disabled="disabled" :loading="loading" @click="action">{{label}}</btn>`,
+        template: `<btn 
+                        :icon="icon" 
+                        :block="block" 
+                        :small="small" 
+                        :large="large" 
+                        :outline="outline" 
+                        :kind="kind" 
+                        :disabled="disabled" 
+                        :loading="loading" 
+                        @click="action"
+                   >{{slot}}</btn>`,
         props: {
             kind: {
                 type: String,
@@ -20,9 +30,9 @@ storiesOf('Components|Btn', module)
                 type: Boolean,
                 default: boolean('disabled', false)
             },
-            label: {
+            slot: {
                 type: String,
-                default: text('label', 'Button')
+                default: text('slot', 'Button')
             },
             loading: {
                 type: Boolean,
@@ -45,5 +55,5 @@ storiesOf('Components|Btn', module)
                 default: boolean('block', false)
             },
         },
-        methods: { action: action('clicked') },
-    }), { notes: { markdown: BtnNotesMD } })
+        methods: {action: action('clicked')},
+    }), {notes: {markdown: BtnNotesMD}})
