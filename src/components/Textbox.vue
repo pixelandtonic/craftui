@@ -92,7 +92,9 @@
             },
             id: {
                 type: String,
-                default: null
+                default: function () {
+                    return 'c-textbox-id-' + this._uid;
+                },
             },
             instructions: {
                 type: String,

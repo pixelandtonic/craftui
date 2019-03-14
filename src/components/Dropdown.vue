@@ -30,7 +30,9 @@
             },
             id: {
                 type: String,
-                default: null,
+                default: function () {
+                    return 'c-dropdown-id-' + this._uid;
+                },
             },
             instructions: {
                 type: String,

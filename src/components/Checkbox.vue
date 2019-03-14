@@ -36,7 +36,9 @@
             },
             id: {
                 type: String,
-                default: null,
+                default: function () {
+                    return 'c-checkbox-id-' + this._uid;
+                },
             },
             label: {
                 type: String,

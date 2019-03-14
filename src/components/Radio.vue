@@ -36,7 +36,9 @@
             },
             id: {
                 type: String,
-                default: null,
+                default: function () {
+                    return 'c-lightswitch-id-' + this._uid;
+                },
             },
             instructions: {
                 type: String,

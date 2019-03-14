@@ -23,7 +23,9 @@
             },
             id: {
                 type: String,
-                default: null,
+                default: function () {
+                    return 'c-field-id-' + this._uid;
+                },
             },
             instructions: {
                 type: String,
