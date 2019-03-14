@@ -12,6 +12,7 @@ https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Dropd
 
 ## Attributes
 
+- disabled: Optional.
 - errors: Optional.
 - fullwidth: Optional.
 - id: Optional.
