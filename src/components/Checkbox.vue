@@ -38,10 +38,6 @@
                 type: String,
                 default: null,
             },
-            instructions: {
-                type: String,
-                default: null,
-            },
             label: {
                 type: String,
                 default: null,
@@ -109,10 +105,6 @@
     .c-checkbox {
         input {
             @include mr(2);
-        }
-
-        .instructions {
-            @apply .text-grey-dark .text-sm;
         }
     }
 </style>
