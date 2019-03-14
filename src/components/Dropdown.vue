@@ -1,6 +1,6 @@
 <template>
     <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-dropdown-field">
-        <div class="c-dropdown-input" :class="{'is-invalid': !!errors}">
+        <div class="c-dropdown-input" :class="{'is-invalid': (errors && errors.length > 0)}">
             <div class="select">
                 <select :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                     <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
