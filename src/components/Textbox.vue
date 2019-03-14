@@ -9,7 +9,7 @@
                     :autofocus="autofocus"
                     :class="{
                         'w-full': !size,
-                        'is-invalid': errors,
+                        'is-invalid': errors && errors.length > 0,
                         'text-red-dark': max && max < this.value.length
                     }"
                     :cols="computedCols"
