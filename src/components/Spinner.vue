@@ -1,8 +1,21 @@
 <template>
-    <div class="c-spinner">
+    <div class="c-spinner" :class="{
+        [size]: true
+    }">
         <div class="animation"></div>
     </div>
 </template>
+
+<script>
+    export default {
+        props: {
+            size: {
+                type: String,
+                default: 'base',
+            },
+        },
+    }
+</script>
 
 <style lang="scss">
     .c-spinner {
@@ -20,7 +33,7 @@
             border-bottom-color: #555;
         }
 
-        &.lg {
+        &.large {
             & > .animation {
                 width: 32px;
                 height: 32px;
