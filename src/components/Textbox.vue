@@ -153,8 +153,8 @@
                 default: 'text'
             },
             value: {
-                type: String,
-                default: null
+                type: String | Number,
+                default: ''
             },
         },
 
