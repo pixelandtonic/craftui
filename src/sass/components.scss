@@ -1,11 +1,11 @@
 /* Fields */
 
-.field {
+.c-field {
   margin-bottom: 1rem;
 }
 
-.field.mono input,
-.field.mono textarea {
+.c-field.mono input,
+.c-field.mono textarea {
   @apply .font-mono;
 }
 
@@ -21,7 +21,7 @@ label {
   @apply .inline-block .mb-1;
 }
 
-.field {
+.c-field {
   .checkbox {
     @apply .mr-2;
   }
