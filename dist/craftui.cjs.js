@@ -268,7 +268,7 @@ var script$1 = {
       default: false
     },
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     },
     id: {
@@ -285,7 +285,7 @@ var script$1 = {
       default: undefined
     },
     value: {
-      type: String,
+      type: String | Boolean,
       default: null
     }
   },
@@ -409,7 +409,7 @@ var script$2 = {
       default: null
     },
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     }
   },
@@ -473,7 +473,7 @@ var __vue_staticRenderFns__$2 = [];
 var script$3 = {
   props: {
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     },
     id: {
@@ -497,7 +497,7 @@ var script$3 = {
 const __vue_script__$3 = script$3;
 
 /* template */
-var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return _c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v("\n        "+_vm._s(error)+"\n    ")])})],2)};
+var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return (_vm.errors)?[_c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v(_vm._s(error))])]:_vm._e()})],2)};
 var __vue_staticRenderFns__$3 = [];
 
   /* style */
@@ -533,7 +533,7 @@ var script$4 = {
       default: false
     },
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     },
     fullwidth: {
@@ -665,7 +665,7 @@ var script$6 = {
       default: null
     },
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     },
     id: {
@@ -750,7 +750,7 @@ var script$7 = {
       default: false
     },
     errors: {
-      type: Array,
+      type: Array | Boolean,
       default: null
     },
     id: {
@@ -1248,7 +1248,7 @@ const __vue_script__$9 = script$9;
 /* template */
 var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
                     'w-full': !_vm.size,
-                    'is-invalid': _vm.errors && _vm.errors.lengtha > 0,
+                    'is-invalid': _vm.errors && _vm.errors.length > 0,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
                 },attrs:{"autocapitalize":_vm.autocapitalize,"autocomplete":_vm.autocomplete,"autofocus":_vm.autofocus,"cols":_vm.computedCols,"disabled":_vm.disabled,"id":_vm.id,"mask":_vm.mask,"max":_vm.max,"min":_vm.min,"name":_vm.name,"pattern":_vm.pattern,"placeholder":_vm.placeholder,"readonly":_vm.readonly,"rows":_vm.computedRows,"size":_vm.size,"spellcheck":_vm.spellcheck,"step":_vm.step,"type":_vm.computedType,"value":_vm.value},on:{"blur":function($event){return _vm.$emit('blur', $event)},"focus":function($event){return _vm.$emit('focus', $event.target.value)},"change":function($event){return _vm.$emit('change', $event)},"input":function($event){return _vm.$emit('input', $event.target.value)},"keydown":function($event){return _vm.$emit('keydown', $event)},"keypress":function($event){return _vm.$emit('keypress', $event)},"keyup":function($event){return _vm.$emit('keyup', $event)}}}),_vm._v(" "),(_vm.max)?_c('p',{staticClass:"max",class:{
                 'text-grey': _vm.remainingChars >= 20,

@@ -511,12 +511,12 @@ table {
 
 /* Fields */
 
-.field {
+.c-field {
   margin-bottom: 1rem;
 }
 
-.field.mono input,
-.field.mono textarea {
+.c-field.mono input,
+.c-field.mono textarea {
   font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
@@ -536,7 +536,7 @@ label {
   margin-bottom: .25rem;
 }
 
-.field .checkbox {
+.c-field .checkbox {
   margin-right: .5rem;
 }
 
