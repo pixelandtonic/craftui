@@ -8,9 +8,9 @@
 
         <slot></slot>
 
-        <div class="invalid-feedback" v-for="(error, key) in errors" :key="key">
-            {{ error }}
-        </div>
+        <template v-if="errors" v-for="(error, key) in errors">
+            <div class="invalid-feedback" :key="key">{{ error }}</div>
+        </template>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
     export default {
         props: {
             errors: {
-                type: Array,
+                type: Array | Boolean,
                 default: null,
             },
             id: {

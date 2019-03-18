@@ -23,7 +23,7 @@
                 default: null,
             },
             errors: {
-                type: Array,
+                type: Array | Boolean,
                 default: null,
             },
             id: {

@@ -31,7 +31,7 @@
                 default: false,
             },
             errors: {
-                type: Array,
+                type: Array | Boolean,
                 default: null,
             },
             id: {
@@ -48,7 +48,7 @@
                 default: undefined,
             },
             value: {
-                type: String,
+                type: String | Boolean,
                 default: null,
             },
         },

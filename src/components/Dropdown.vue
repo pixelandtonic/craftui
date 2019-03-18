@@ -21,7 +21,7 @@
                 default: false,
             },
             errors: {
-                type: Array,
+                type: Array | Boolean,
                 default: null,
             },
             fullwidth: {
