@@ -549,6 +549,7 @@ select {
 
 /* Inputs */
 
+input[type="email"],
 input[type="text"],
 input[type="password"],
 input[type="tel"],
@@ -563,6 +564,8 @@ textarea {
   display: block;
 }
 
+input[type="email"]:disabled,
+input[type="email"][readonly],
 input[type="text"]:disabled,
 input[type="text"][readonly],
 input[type="password"]:disabled,
@@ -578,6 +581,7 @@ textarea[readonly] {
   background-color: #f8fafc;
 }
 
+input[type="email"].is-invalid,
 input[type="text"].is-invalid,
 input[type="password"].is-invalid,
 input[type="tel"].is-invalid,
