@@ -35,6 +35,7 @@ var CraftIcons = {
 //
 //
 //
+//
 var script = {
   name: 'Btn',
   props: {
@@ -205,7 +206,7 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.com
             block: _vm.block,
             outline: _vm.outline,
             loading: _vm.loading
-        }, _obj[_vm.kind] = true, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon && _vm.icon.length > 0)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
+        }, _obj[_vm.kind] = true, _obj['c-btn-icon'] =  _vm.icon && !_vm.$slots.default, _obj )],attrs:{"to":_vm.to,"href":_vm.href,"target":_vm.target,"type":_vm.computedType,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?[_c('spinner')]:_vm._e(),_vm._v(" "),_c('div',{staticClass:"c-btn-content"},[(_vm.icon && _vm.icon.length > 0)?_c('icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -381,92 +382,7 @@ var __vue_staticRenderFns__$1 = [];
 //
 //
 //
-//
-//
-//
-//
-//
 var script$2 = {
-  props: {
-    options: {
-      type: Array,
-      default: null
-    },
-    label: {
-      type: String,
-      default: null
-    },
-    instructions: {
-      type: String,
-      default: null
-    },
-    value: {
-      type: String,
-      default: null
-    },
-    errors: {
-      type: Array | Boolean,
-      default: null
-    }
-  },
-  data: function data() {
-    return {
-      localValue: []
-    };
-  },
-  mounted: function mounted() {
-    this.localValue = JSON.parse(JSON.stringify(this.value));
-  }
-};
-
-/* script */
-const __vue_script__$2 = script$2;
-/* template */
-var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-checkbox-set",attrs:{"errors":_vm.errors}},[_c('fieldset',[_c('legend',[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_c('ul',_vm._l((_vm.options),function(option,index){return _c('li',{key:index},[_c('label',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.localValue),expression:"localValue"}],attrs:{"type":"checkbox"},domProps:{"value":option.value,"checked":Array.isArray(_vm.localValue)?_vm._i(_vm.localValue,option.value)>-1:(_vm.localValue)},on:{"change":[function($event){var $$a=_vm.localValue,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=option.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.localValue=$$a.concat([$$v]));}else{$$i>-1&&(_vm.localValue=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.localValue=$$c;}},function($event){return _vm.$emit('input', _vm.localValue)}]}}),_vm._v("\n                    "+_vm._s(option.label)+"\n                ")])])}),0)])])};
-var __vue_staticRenderFns__$2 = [];
-
-  /* style */
-  const __vue_inject_styles__$2 = undefined;
-  /* scoped */
-  const __vue_scope_id__$2 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$2 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$2 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var CheckboxSet = normalizeComponent_1(
-    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-    __vue_inject_styles__$2,
-    __vue_script__$2,
-    __vue_scope_id__$2,
-    __vue_is_functional_template__$2,
-    __vue_module_identifier__$2,
-    undefined,
-    undefined
-  );
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var script$3 = {
   props: {
     errors: {
       type: Array | Boolean,
@@ -490,20 +406,20 @@ var script$3 = {
 };
 
 /* script */
-const __vue_script__$3 = script$3;
+const __vue_script__$2 = script$2;
 
 /* template */
-var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return (_vm.errors)?[_c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v(_vm._s(error))])]:_vm._e()})],2)};
-var __vue_staticRenderFns__$3 = [];
+var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-field",attrs:{"id":'field-' + _vm.id}},[(_vm.label)?_c('label',{attrs:{"for":_vm.id}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),(_vm.instructions)?_c('div',{staticClass:"instructions"},[_c('p',[_vm._v(_vm._s(_vm.instructions))])]):_vm._e(),_vm._v(" "),_vm._t("default"),_vm._v(" "),_vm._l((_vm.errors),function(error,key){return (_vm.errors)?[_c('div',{key:key,staticClass:"invalid-feedback"},[_vm._v(_vm._s(error))])]:_vm._e()})],2)};
+var __vue_staticRenderFns__$2 = [];
 
   /* style */
-  const __vue_inject_styles__$3 = undefined;
+  const __vue_inject_styles__$2 = undefined;
   /* scoped */
-  const __vue_scope_id__$3 = undefined;
+  const __vue_scope_id__$2 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$3 = undefined;
+  const __vue_module_identifier__$2 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$3 = false;
+  const __vue_is_functional_template__$2 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -511,18 +427,18 @@ var __vue_staticRenderFns__$3 = [];
 
   
   var Field = normalizeComponent_1(
-    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-    __vue_inject_styles__$3,
-    __vue_script__$3,
-    __vue_scope_id__$3,
-    __vue_is_functional_template__$3,
-    __vue_module_identifier__$3,
+    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
+    __vue_inject_styles__$2,
+    __vue_script__$2,
+    __vue_scope_id__$2,
+    __vue_is_functional_template__$2,
+    __vue_module_identifier__$2,
     undefined,
     undefined
   );
 
 //
-var script$4 = {
+var script$3 = {
   props: {
     disabled: {
       type: Boolean,
@@ -565,9 +481,63 @@ var script$4 = {
 };
 
 /* script */
+const __vue_script__$3 = script$3;
+/* template */
+var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': (_vm.errors && _vm.errors.length > 0)}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },attrs:{"disabled":_vm.disabled},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
+var __vue_staticRenderFns__$3 = [];
+
+  /* style */
+  const __vue_inject_styles__$3 = undefined;
+  /* scoped */
+  const __vue_scope_id__$3 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$3 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$3 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var Dropdown = normalizeComponent_1(
+    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
+    __vue_inject_styles__$3,
+    __vue_script__$3,
+    __vue_scope_id__$3,
+    __vue_is_functional_template__$3,
+    __vue_module_identifier__$3,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+//
+//
+var script$4 = {
+  props: {
+    icon: {
+      type: String,
+      default: null
+    },
+    size: {
+      type: String,
+      default: 'base'
+    }
+  }
+};
+
+/* script */
 const __vue_script__$4 = script$4;
 /* template */
-var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': (_vm.errors && _vm.errors.length > 0)}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },attrs:{"disabled":_vm.disabled},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
+var __vue_render__$4 = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",class:( _obj = {}, _obj['size-' + _vm.size] = true, _obj ),attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
 var __vue_staticRenderFns__$4 = [];
 
   /* style */
@@ -584,7 +554,7 @@ var __vue_staticRenderFns__$4 = [];
   
 
   
-  var Dropdown = normalizeComponent_1(
+  var Icon = normalizeComponent_1(
     { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
     __vue_inject_styles__$4,
     __vue_script__$4,
@@ -596,61 +566,7 @@ var __vue_staticRenderFns__$4 = [];
   );
 
 //
-//
-//
-//
-//
-//
-//
-//
 var script$5 = {
-  props: {
-    icon: {
-      type: String,
-      default: null
-    },
-    size: {
-      type: String,
-      default: 'base'
-    }
-  }
-};
-
-/* script */
-const __vue_script__$5 = script$5;
-/* template */
-var __vue_render__$5 = function () {
-var _obj;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"c-icon",class:( _obj = {}, _obj['size-' + _vm.size] = true, _obj ),attrs:{"viewBox":"0 0 18 18","width":"18","height":"18","role":"presentation"}},[_c('use',{attrs:{"xmlns:xlink":"http://www.w3.org/1999/xlink","xlink:href":'#' + _vm.icon}})])};
-var __vue_staticRenderFns__$5 = [];
-
-  /* style */
-  const __vue_inject_styles__$5 = undefined;
-  /* scoped */
-  const __vue_scope_id__$5 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$5 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$5 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var Icon = normalizeComponent_1(
-    { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
-    __vue_inject_styles__$5,
-    __vue_script__$5,
-    __vue_scope_id__$5,
-    __vue_is_functional_template__$5,
-    __vue_module_identifier__$5,
-    undefined,
-    undefined
-  );
-
-//
-var script$6 = {
   props: {
     checked: {
       type: Boolean,
@@ -685,19 +601,19 @@ var script$6 = {
 };
 
 /* script */
-const __vue_script__$6 = script$6;
+const __vue_script__$5 = script$5;
 /* template */
-var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
-var __vue_staticRenderFns__$6 = [];
+var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
+var __vue_staticRenderFns__$5 = [];
 
   /* style */
-  const __vue_inject_styles__$6 = undefined;
+  const __vue_inject_styles__$5 = undefined;
   /* scoped */
-  const __vue_scope_id__$6 = undefined;
+  const __vue_scope_id__$5 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$6 = undefined;
+  const __vue_module_identifier__$5 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$6 = false;
+  const __vue_is_functional_template__$5 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -705,12 +621,12 @@ var __vue_staticRenderFns__$6 = [];
 
   
   var Lightswitch = normalizeComponent_1(
-    { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
-    __vue_inject_styles__$6,
-    __vue_script__$6,
-    __vue_scope_id__$6,
-    __vue_is_functional_template__$6,
-    __vue_module_identifier__$6,
+    { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
+    __vue_inject_styles__$5,
+    __vue_script__$5,
+    __vue_scope_id__$5,
+    __vue_is_functional_template__$5,
+    __vue_module_identifier__$5,
     undefined,
     undefined
   );
@@ -731,7 +647,7 @@ var __vue_staticRenderFns__$6 = [];
 //
 //
 //
-var script$7 = {
+var script$6 = {
   model: {
     prop: 'modelValue',
     event: 'input'
@@ -802,9 +718,59 @@ var script$7 = {
 };
 
 /* script */
+const __vue_script__$6 = script$6;
+/* template */
+var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-radio",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"radio","id":_vm.id,"disabled":_vm.disabled},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_staticRenderFns__$6 = [];
+
+  /* style */
+  const __vue_inject_styles__$6 = undefined;
+  /* scoped */
+  const __vue_scope_id__$6 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$6 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$6 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var Radio = normalizeComponent_1(
+    { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
+    __vue_inject_styles__$6,
+    __vue_script__$6,
+    __vue_scope_id__$6,
+    __vue_is_functional_template__$6,
+    __vue_module_identifier__$6,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+//
+//
+var script$7 = {
+  props: {
+    size: {
+      type: String,
+      default: 'base'
+    }
+  }
+};
+
+/* script */
 const __vue_script__$7 = script$7;
 /* template */
-var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-radio",attrs:{"id":_vm.id,"errors":_vm.errors}},[_c('label',[_c('input',{attrs:{"type":"radio","id":_vm.id,"disabled":_vm.disabled},domProps:{"value":_vm.value,"checked":_vm.state},on:{"change":_vm.onChange}}),_vm._v("\n\n        "+_vm._s(_vm.label)+"\n    ")])])};
+var __vue_render__$7 = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner",class:( _obj = {}, _obj[_vm.size] = true, _obj )},[_c('div',{staticClass:"animation"})])};
 var __vue_staticRenderFns__$7 = [];
 
   /* style */
@@ -821,63 +787,13 @@ var __vue_staticRenderFns__$7 = [];
   
 
   
-  var Radio = normalizeComponent_1(
+  var Spinner = normalizeComponent_1(
     { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
     __vue_inject_styles__$7,
     __vue_script__$7,
     __vue_scope_id__$7,
     __vue_is_functional_template__$7,
     __vue_module_identifier__$7,
-    undefined,
-    undefined
-  );
-
-//
-//
-//
-//
-//
-//
-//
-//
-var script$8 = {
-  props: {
-    size: {
-      type: String,
-      default: 'base'
-    }
-  }
-};
-
-/* script */
-const __vue_script__$8 = script$8;
-/* template */
-var __vue_render__$8 = function () {
-var _obj;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-spinner",class:( _obj = {}, _obj[_vm.size] = true, _obj )},[_c('div',{staticClass:"animation"})])};
-var __vue_staticRenderFns__$8 = [];
-
-  /* style */
-  const __vue_inject_styles__$8 = undefined;
-  /* scoped */
-  const __vue_scope_id__$8 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$8 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$8 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var Spinner = normalizeComponent_1(
-    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-    __vue_inject_styles__$8,
-    __vue_script__$8,
-    __vue_scope_id__$8,
-    __vue_is_functional_template__$8,
-    __vue_module_identifier__$8,
     undefined,
     undefined
   );
@@ -1092,7 +1008,7 @@ function mask (el, binding) {
 }
 
 //
-var script$9 = {
+var script$8 = {
   directives: {
     mask: {
       bind: function bind(el, binding, vnode) {
@@ -1240,9 +1156,9 @@ var script$9 = {
 };
 
 /* script */
-const __vue_script__$9 = script$9;
+const __vue_script__$8 = script$8;
 /* template */
-var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
+var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-textbox",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"wrapper"},[_c(_vm.computedComponent,{directives:[{name:"mask",rawName:"v-mask",value:(_vm.mask),expression:"mask"}],ref:"input",tag:"component",class:{
                     'w-full': !_vm.size,
                     'is-invalid': _vm.errors && _vm.errors.length > 0,
                     'text-red-dark': _vm.max && _vm.max < this.value.length
@@ -1251,16 +1167,16 @@ var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _
                 'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
                 'text-red': _vm.remainingChars < 0
             }},[_c('small',[_vm._v(_vm._s((_vm.max - _vm.remainingChars))+"/"+_vm._s(_vm.max))])]):_vm._e()],1)])};
-var __vue_staticRenderFns__$9 = [];
+var __vue_staticRenderFns__$8 = [];
 
   /* style */
-  const __vue_inject_styles__$9 = undefined;
+  const __vue_inject_styles__$8 = undefined;
   /* scoped */
-  const __vue_scope_id__$9 = undefined;
+  const __vue_scope_id__$8 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$9 = undefined;
+  const __vue_module_identifier__$8 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$9 = false;
+  const __vue_is_functional_template__$8 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -1268,12 +1184,12 @@ var __vue_staticRenderFns__$9 = [];
 
   
   var Textbox = normalizeComponent_1(
-    { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
-    __vue_inject_styles__$9,
-    __vue_script__$9,
-    __vue_scope_id__$9,
-    __vue_is_functional_template__$9,
-    __vue_module_identifier__$9,
+    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+    __vue_inject_styles__$8,
+    __vue_script__$8,
+    __vue_scope_id__$8,
+    __vue_is_functional_template__$8,
+    __vue_module_identifier__$8,
     undefined,
     undefined
   );
@@ -1281,7 +1197,6 @@ var __vue_staticRenderFns__$9 = [];
 var CraftComponents = {
   Btn: Btn,
   Checkbox: Checkbox,
-  CheckboxSet: CheckboxSet,
   Dropdown: Dropdown,
   Field: Field,
   Icon: Icon,

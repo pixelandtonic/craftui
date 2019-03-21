@@ -640,8 +640,8 @@ button.c-btn:not([disabled]):active {
 a.c-btn.block,
 button.c-btn.block {
   width: 100%;
-  margin-top: .25rem;
-  margin-bottom: .25rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .c-btn.small,
@@ -674,24 +674,24 @@ button.c-btn.primary:not(.outline) .c-icon {
   fill: #fff;
 }
 
-.c-btn.primary,
-a.c-btn.primary,
-button.c-btn.primary {
+.c-btn.primary:not(.outline),
+a.c-btn.primary:not(.outline),
+button.c-btn.primary:not(.outline) {
   background-color: #3490dc;
   border-color: #3490dc;
   color: #fff;
 }
 
-.c-btn.primary:not([disabled]):hover,
-a.c-btn.primary:not([disabled]):hover,
-button.c-btn.primary:not([disabled]):hover {
+.c-btn.primary:not(.outline):not([disabled]):hover,
+a.c-btn.primary:not(.outline):not([disabled]):hover,
+button.c-btn.primary:not(.outline):not([disabled]):hover {
   background-color: #2779bd;
   border-color: #2779bd;
 }
 
-.c-btn.primary:not([disabled]):active,
-a.c-btn.primary:not([disabled]):active,
-button.c-btn.primary:not([disabled]):active {
+.c-btn.primary:not(.outline):not([disabled]):active,
+a.c-btn.primary:not(.outline):not([disabled]):active,
+button.c-btn.primary:not(.outline):not([disabled]):active {
   background-color: #1c3d5a;
   border-color: #1c3d5a;
 }
@@ -848,15 +848,15 @@ button.c-btn .c-icon {
   vertical-align: middle;
 }
 
-body.ltr .c-btn .c-icon,
-body.ltr a.c-btn .c-icon,
-body.ltr button.c-btn .c-icon {
+body.ltr .c-btn:not(.c-btn-icon) .c-icon,
+body.ltr a.c-btn:not(.c-btn-icon) .c-icon,
+body.ltr button.c-btn:not(.c-btn-icon) .c-icon {
   margin-right: .25rem;
 }
 
-body.rtl .c-btn .c-icon,
-body.rtl a.c-btn .c-icon,
-body.rtl button.c-btn .c-icon {
+body.rtl .c-btn:not(.c-btn-icon) .c-icon,
+body.rtl a.c-btn:not(.c-btn-icon) .c-icon,
+body.rtl button.c-btn:not(.c-btn-icon) .c-icon {
   margin-left: .25rem;
 }
 
@@ -871,28 +871,6 @@ body.ltr .c-checkbox input {
 }
 
 body.rtl .c-checkbox input {
-  margin-left: .5rem;
-}
-
-.c-checkbox-set fieldset ul {
-  list-style: none;
-  padding: 0;
-  padding-top: .5rem;
-}
-
-body.ltr .c-checkbox-set fieldset ul {
-  padding-left: 1rem;
-}
-
-body.rtl .c-checkbox-set fieldset ul {
-  padding-right: 1rem;
-}
-
-body.ltr .c-checkbox-set fieldset ul input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-checkbox-set fieldset ul input {
   margin-left: .5rem;
 }
 
