@@ -812,32 +812,19 @@ button.c-btn.loading.outline.danger .c-spinner>.animation {
 a.c-btn.loading .c-spinner,
 button.c-btn.loading .c-spinner {
   position: absolute;
-  top: 50%;
-  margin-top: -12px;
-}
-
-body.ltr .c-btn.loading .c-spinner,
-body.ltr a.c-btn.loading .c-spinner,
-body.ltr button.c-btn.loading .c-spinner {
-  left: 50%;
-}
-
-body.rtl .c-btn.loading .c-spinner,
-body.rtl a.c-btn.loading .c-spinner,
-body.rtl button.c-btn.loading .c-spinner {
-  right: 50%;
-}
-
-body.ltr .c-btn.loading .c-spinner,
-body.ltr a.c-btn.loading .c-spinner,
-body.ltr button.c-btn.loading .c-spinner {
-  margin-left: -12px;
-}
-
-body.rtl .c-btn.loading .c-spinner,
-body.rtl a.c-btn.loading .c-spinner,
-body.rtl button.c-btn.loading .c-spinner {
-  margin-right: -12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-btn.loading .c-btn-content,
@@ -1013,19 +1000,6 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-body.ltr .c-radio input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-radio input {
-  margin-left: .5rem;
-}
-
-.c-radio .instructions {
-  color: #8795a1;
-  font-size: .875rem;
-}
-
 .c-spinner {
   display: inline-block;
 }
@@ -1071,6 +1045,19 @@ body.rtl .c-radio input {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
+}
+
+body.ltr .c-radio input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-radio input {
+  margin-left: .5rem;
+}
+
+.c-radio .instructions {
+  color: #8795a1;
+  font-size: .875rem;
 }
 
 .c-textbox .wrapper {

@@ -244,11 +244,7 @@
             }
 
             .c-spinner {
-                @apply .absolute;
-                top: 50%;
-                @include left(50%);
-                margin-top: -12px;
-                @include ml(-12px);
+                @apply .absolute .pin .flex .justify-center .items-center;
             }
 
             .c-btn-content {
