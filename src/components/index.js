@@ -1,6 +1,5 @@
 import Btn from './Btn.vue';
 import Checkbox from './Checkbox.vue';
-import CheckboxSet from './CheckboxSet.vue';
 import Dropdown from './Dropdown.vue';
 import Field from './Field.vue';
 import Icon from './Icon.vue';
@@ -12,7 +11,6 @@ import Textbox from './Textbox.vue';
 const CraftComponents = {
     Btn,
     Checkbox,
-    CheckboxSet,
     Dropdown,
     Field,
     Icon,
