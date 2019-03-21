@@ -5,7 +5,8 @@
                 block,
                 outline,
                 loading,
-                [kind]: true
+                [kind]: true,
+                'c-btn-icon': icon && !$slots.default
             }]"
             :disabled="disabled"
             @click="$emit('click')"
@@ -15,7 +16,7 @@
         </template>
 
         <div class="c-btn-content">
-            <icon v-if="icon && icon.length > 0" :icon="icon"/>
+            <icon v-if="icon && icon.length > 0" :icon="icon" />
 
             <slot></slot>
         </div>
@@ -125,7 +126,7 @@
         }
 
         &.block {
-            @apply .w-full .my-1;
+            @apply .w-full .my-2;
         }
 
         &.small {
@@ -150,7 +151,7 @@
             }
         }
 
-        &.primary {
+        &.primary:not(.outline) {
             @apply .bg-blue .border-blue .text-white;
 
             &:not([disabled]) {
@@ -257,9 +258,14 @@
 
         .c-icon {
             @apply .align-middle;
-            @include mr(1);
-
         }
+
+        &:not(.c-btn-icon) {
+            .c-icon {
+                @include mr(1);
+            }
+        }
+
 
         .c-btn-content {
             @apply .inline-block;
