@@ -8,7 +8,6 @@ storiesOf('Components|Dropdown', module)
         template: `<dropdown 
                         :disabled="disabled" 
                         :errors="errors" 
-                        :id="id" 
                         :instructions="instructions" 
                         :label="label" 
                         :options="options" 
@@ -40,10 +39,6 @@ storiesOf('Components|Dropdown', module)
             errors: {
                 type: Array,
                 default: array('errors', [])
-            },
-            id: {
-                type: String,
-                default: text('id', '')
             },
             instructions: {
                 type: String,

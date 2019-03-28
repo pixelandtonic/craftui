@@ -9,7 +9,6 @@ storiesOf('Components|Lightswitch', module)
                         :checked="checked"
                         :disabled="disabled"
                         :errors="errors"
-                        :id="id"
                         :instructions="instructions" 
                         :label="label" 
                    />`,
@@ -25,10 +24,6 @@ storiesOf('Components|Lightswitch', module)
             errors: {
                 type: Array,
                 default: array('errors', [])
-            },
-            id: {
-                type: String,
-                default: text('id', '')
             },
             instructions: {
                 type: String,

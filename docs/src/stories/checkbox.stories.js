@@ -9,7 +9,6 @@ storiesOf('Components|Checkbox', module)
                         :checked="checked" 
                         :disabled="disabled" 
                         :errors="errors" 
-                        :id="id" 
                         :label="label" 
                         :value="value" 
                    />`,
@@ -25,10 +24,6 @@ storiesOf('Components|Checkbox', module)
             errors: {
                 type: Array,
                 default: array('errors', [])
-            },
-            id: {
-                type: String,
-                default: text('id', '')
             },
             label: {
                 type: String,

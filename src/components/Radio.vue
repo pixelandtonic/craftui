@@ -37,7 +37,7 @@
             id: {
                 type: String,
                 default: function () {
-                    return 'c-lightswitch-id-' + this._uid;
+                    return 'c-radio-id-' + this._uid;
                 },
             },
             instructions: {

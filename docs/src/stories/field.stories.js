@@ -7,7 +7,6 @@ storiesOf('Components|Field', module)
     .add('Default', () => ({
         template: `<field 
                         :errors="errors"
-                        :id="id"
                         :instructions="instructions"
                         :label="label" 
                    >{{slot}}</field>`,
@@ -15,10 +14,6 @@ storiesOf('Components|Field', module)
             errors: {
                 type: Array,
                 default: array('errors', [])
-            },
-            id: {
-                type: String,
-                default: text('id', '')
             },
             instructions: {
                 type: String,

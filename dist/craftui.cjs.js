@@ -601,13 +601,19 @@ var script$5 = {
   },
   components: {
     Field: Field
+  },
+  methods: {
+    onChange: function onChange($event) {
+      this.$emit('update:checked', $event.target.checked);
+      this.$emit('change', $event.target.checked);
+    }
   }
 };
 
 /* script */
 const __vue_script__$5 = script$5;
 /* template */
-var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"input":function($event){return _vm.$emit('update:checked', $event.target.checked)},"change":function($event){return _vm.$emit('change', $event)}}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
+var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-lightswitch",attrs:{"id":_vm.id,"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-lightswitch-input"},[_c('label',{staticClass:"lightswitch",class:{disabled: _vm.disabled},attrs:{"for":_vm.id}},[_c('input',{attrs:{"id":_vm.id,"type":"checkbox","disabled":_vm.disabled},domProps:{"checked":_vm.checked},on:{"change":_vm.onChange}}),_vm._v(" "),_c('div',{staticClass:"slider round"})])])])};
 var __vue_staticRenderFns__$5 = [];
 
   /* style */
@@ -672,7 +678,7 @@ var script$6 = {
     id: {
       type: String,
       default: function _default() {
-        return 'c-lightswitch-id-' + this._uid;
+        return 'c-radio-id-' + this._uid;
       }
     },
     instructions: {
