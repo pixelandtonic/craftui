@@ -2,7 +2,7 @@
 
 A Vue implementation of a Craft UI lightswitch.
 
-https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Lightswitch.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Lightswitch.vue
 
 ## Usage
 

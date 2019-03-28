@@ -2,7 +2,7 @@
 
 A Vue implementation of a Craft UI dropdown.
 
-https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Dropdown.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Dropdown.vue
 
 ## Usage
 

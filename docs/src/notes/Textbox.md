@@ -2,7 +2,7 @@
 
 A Vue implementation of a Craft UI text box.
 
-https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Textbox.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Textbox.vue
 
 ## Usage
 
