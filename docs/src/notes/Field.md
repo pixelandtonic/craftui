@@ -2,7 +2,7 @@
 
 A Vue implementation of a Craft UI field.
 
-https://github.com/pixelandtonic/craftui/blob/feature/0.3.0/src/components/Field.vue
+https://github.com/pixelandtonic/craftui/blob/master/src/components/Field.vue
 
 ## Usage
 
