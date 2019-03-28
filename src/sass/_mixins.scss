@@ -1,0 +1,118 @@
+@function parsetailwindValue($tailwindValue) {
+  $value: 0;
+
+  @if $tailwindValue == 1 {
+    $value: 0.25rem;
+  } @else if $tailwindValue == 2 {
+    $value: 0.5rem;
+  } @else if $tailwindValue == 3 {
+    $value: 0.75rem;
+  } @else if $tailwindValue == 4 {
+    $value: 1rem;
+  } @else if $tailwindValue == 5 {
+    $value: 1.25rem;
+  } @else if $tailwindValue == 6 {
+    $value: 1.5rem;
+  } @else if $tailwindValue == 8 {
+    $value: 2rem;
+  } @else if $tailwindValue == 10 {
+    $value: 2.5rem;
+  } @else if $tailwindValue == 12 {
+    $value: 3rem;
+  } @else if $tailwindValue == 16 {
+    $value: 4rem;
+  } @else if $tailwindValue == 20 {
+    $value: 5rem;
+  } @else if $tailwindValue == 24 {
+    $value: 6rem;
+  } @else if $tailwindValue == 32 {
+    $value: 8rem;
+  } @else if $tailwindValue == px {
+    $value: 1px;
+  } @else {
+    // not a tailwind value, pass it unchanged
+    $value: $tailwindValue;
+  }
+
+  @return $value;
+}
+
+@mixin ml($tailwindMargin) {
+  $margin: parsetailwindValue($tailwindMargin);
+
+  body.ltr & {
+    margin-left: $margin;
+  }
+  body.rtl & {
+    margin-right: $margin;
+  }
+}
+
+@mixin mr($tailwindMargin) {
+  $margin: parsetailwindValue($tailwindMargin);
+
+  body.ltr & {
+    margin-right: $margin;
+  }
+  body.rtl & {
+    margin-left: $margin;
+  }
+}
+
+@mixin pl($tailwindPadding) {
+  $padding: parsetailwindValue($tailwindPadding);
+
+  body.ltr & {
+    padding-left: $padding;
+  }
+  body.rtl & {
+    padding-right: $padding;
+  }
+}
+
+@mixin pr($tailwindPadding) {
+  $padding: parsetailwindValue($tailwindPadding);
+
+  body.ltr & {
+    padding-right: $padding;
+  }
+  body.rtl & {
+    padding-left: $padding;
+  }
+}
+
+@mixin left($left) {
+  body.ltr & {
+    left: $left;
+  }
+  body.rtl & {
+    right: $left;
+  }
+}
+
+@mixin right($right) {
+  body.ltr & {
+    right: $right;
+  }
+  body.rtl & {
+    left: $right;
+  }
+}
+
+@mixin alignleft {
+  body.ltr & {
+    text-align: left;
+  }
+  body.rtl & {
+    text-align: right;
+  }
+}
+
+@mixin alignright {
+  body.ltr & {
+    text-align: right;
+  }
+  body.rtl & {
+    text-align: left;
+  }
+}
