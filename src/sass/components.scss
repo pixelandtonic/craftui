@@ -1,11 +1,11 @@
 /* Fields */
 
-.field {
+.c-field {
   margin-bottom: 1rem;
 }
 
-.field.mono input,
-.field.mono textarea {
+.c-field.mono input,
+.c-field.mono textarea {
   @apply .font-mono;
 }
 
@@ -21,7 +21,7 @@ label {
   @apply .inline-block .mb-1;
 }
 
-.field {
+.c-field {
   .checkbox {
     @apply .mr-2;
   }
@@ -35,13 +35,14 @@ select {
 
 /* Inputs */
 
+input[type="email"],
 input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  @apply .border .border-grey .p-2 .rounded .block;
+  @apply .bg-white .border .border-grey .p-2 .rounded .block;
 
   &:disabled,
   &[readonly] {
@@ -55,65 +56,4 @@ textarea {
 
 input[type="number"] {
   width: 60px;
-}
-
-
-/* Lightswitches */
-
-.lightswitch {
-  @apply .relative .block .select-none;
-  width: 46px;
-  height: 30px;
-
-  input {
-    @apply .absolute .opacity-0;
-  }
-
-  .slider {
-    @apply .absolute .pin .cursor-pointer;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  .slider:before {
-    @apply .absolute .bg-white;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 2px;
-    bottom: 2px;
-    -webkit-transition: .1s;
-    transition: .1s;
-  }
-
-  input:checked + .slider {
-    background-color: #38c172;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #38c172;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
-  }
-
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
-  &.disabled {
-    opacity: .4;
-
-    .slider {
-      @apply .cursor-default;
-    }
-  }
 }
