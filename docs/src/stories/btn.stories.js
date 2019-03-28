@@ -16,7 +16,7 @@ storiesOf('Components|Btn', module)
                         :disabled="disabled" 
                         :loading="loading" 
                         @click="action"
-                   >{{slot}}</btn>`,
+                   >{{slotContent}}</btn>`,
         props: {
             kind: {
                 type: String,
@@ -30,7 +30,7 @@ storiesOf('Components|Btn', module)
                 type: Boolean,
                 default: boolean('disabled', false)
             },
-            slot: {
+            slotContent: {
                 type: String,
                 default: text('slot', 'Button')
             },
