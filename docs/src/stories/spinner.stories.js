@@ -9,7 +9,7 @@ storiesOf('Components|Spinner', module)
         props: {
             size: {
                 type: String,
-                default: select('size', ['base', 'large'], 'base')
+                default: select('size', ['base', 'lg'], 'base')
             },
         },
     }), { notes: { markdown: SpinnerNotesMD } })

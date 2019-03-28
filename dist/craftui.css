@@ -1000,6 +1000,19 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
+body.ltr .c-radio input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-radio input {
+  margin-left: .5rem;
+}
+
+.c-radio .instructions {
+  color: #8795a1;
+  font-size: .875rem;
+}
+
 .c-spinner {
   display: inline-block;
 }
@@ -1017,7 +1030,7 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   border-bottom-color: #555;
 }
 
-.c-spinner.large>.animation {
+.c-spinner.lg>.animation {
   width: 32px;
   height: 32px;
   border-width: 3px;
@@ -1045,19 +1058,6 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
-}
-
-body.ltr .c-radio input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-radio input {
-  margin-left: .5rem;
-}
-
-.c-radio .instructions {
-  color: #8795a1;
-  font-size: .875rem;
 }
 
 .c-textbox .wrapper {
