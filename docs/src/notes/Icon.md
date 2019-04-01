@@ -7,7 +7,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Icon.vue
 ## Usage
 
 ```html
-<icon icon="glass-martini-alt" />
+<icon icon="glass-martini" />
 ```
 
 ## Attributes
