@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import IconNotesMD from '../notes/Icon.md'
 import {select} from '@storybook/addon-knobs'
-import icons from '../../../src/sprites/regular'
+import icons from '../../../src/sprites/icons'
 
 storiesOf('Components|Icon', module)
     .add('Default', () => ({
@@ -10,7 +10,7 @@ storiesOf('Components|Icon', module)
         props: {
             icon: {
                 type: String,
-                default: select('icon', icons, 'glass-martini-alt')
+                default: select('icon', icons, 'glass-martini')
             },
             size: {
                 type: String,

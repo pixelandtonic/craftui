@@ -24,7 +24,7 @@ storiesOf('Components|Btn', module)
             },
             icon: {
                 type: String,
-                default: select('icon', ['', 'plus', 'glass-martini-alt'], '')
+                default: select('icon', ['', 'plus', 'glass-martini'], '')
             },
             disabled: {
                 type: Boolean,
