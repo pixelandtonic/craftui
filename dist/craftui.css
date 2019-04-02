@@ -1013,53 +1013,6 @@ body.rtl .c-radio input {
   font-size: .875rem;
 }
 
-.c-spinner {
-  display: inline-block;
-}
-
-.c-spinner>.animation {
-  -webkit-animation: rotator .7s linear infinite;
-          animation: rotator .7s linear infinite;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: transparent !important;
-  border-left-color: transparent !important;
-  border-right-color: #555;
-  border-bottom-color: #555;
-}
-
-.c-spinner.lg>.animation {
-  width: 32px;
-  height: 32px;
-  border-width: 3px;
-}
-
-@-webkit-keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
-@keyframes rotator {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
 .c-textbox .wrapper {
   position: relative;
 }
@@ -1100,4 +1053,56 @@ body.rtl .c-textbox .wrapper .max {
 
 .c-textbox .wrapper .max.text-red {
   color: #e3342f;
+}
+
+.c-spinner {
+  display: inline-block;
+}
+
+.c-spinner>.animation {
+  -webkit-animation: rotator .7s linear infinite;
+          animation: rotator .7s linear infinite;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: #555;
+  border-bottom-color: #555;
+}
+
+.c-spinner.sm>.animation {
+  width: 16px;
+  height: 16px;
+}
+
+.c-spinner.lg>.animation {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
