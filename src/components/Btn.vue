@@ -111,8 +111,7 @@
         @apply .px-4 .py-2 .rounded .bg-grey-lighter .text-black .no-underline .border .border-solid .border-grey-lighter;
 
         &:not(.outline) {
-            -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
-            box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+            @apply .shadow;
         }
 
         &:not([disabled]) {
