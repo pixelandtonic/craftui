@@ -619,8 +619,8 @@ button.c-btn {
 .c-btn:not(.outline),
 a.c-btn:not(.outline),
 button.c-btn:not(.outline) {
-  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
-          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
 }
 
 .c-btn:not([disabled]):hover,
@@ -857,14 +857,6 @@ button.c-btn .c-btn-content {
   display: inline-block;
 }
 
-body.ltr .c-checkbox input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-checkbox input {
-  margin-left: .5rem;
-}
-
 .c-dropdown .c-dropdown-input select.w-full {
   width: 100%;
 }
@@ -873,54 +865,12 @@ body.rtl .c-checkbox input {
   border-color: #e3342f;
 }
 
-.c-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  fill: currentColor;
-  top: -2px;
-  width: 18px;
-  height: 18px;
+body.ltr .c-checkbox input {
+  margin-right: .5rem;
 }
 
-.c-icon.size-sm {
-  width: .75rem;
-  height: .75rem;
-}
-
-.c-icon.size-base {
-  width: 1rem;
-  height: 1rem;
-}
-
-.c-icon.size-lg {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c-icon.size-xl {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.c-icon.size-2xl {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-
-.c-icon.size-3xl {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.c-icon.size-4xl {
-  width: 3rem;
-  height: 3rem;
-}
-
-.c-icon.size-5xl {
-  width: 4rem;
-  height: 4rem;
+body.rtl .c-checkbox input {
+  margin-left: .5rem;
 }
 
 .c-lightswitch .c-lightswitch-input label {
@@ -974,9 +924,10 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   background-color: #38c172;
 }
 
+.c-lightswitch .c-lightswitch-input label input:active+.slider,
 .c-lightswitch .c-lightswitch-input label input:focus+.slider {
-  -webkit-box-shadow: 0 0 1px #38c172;
-          box-shadow: 0 0 1px #38c172;
+  -webkit-box-shadow: 0 0 0 2px rgba(52, 144, 220, .5);
+          box-shadow: 0 0 0 2px rgba(52, 144, 220, .5);
 }
 
 .c-lightswitch .c-lightswitch-input label input:checked+.slider:before {
@@ -1000,6 +951,56 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
+.c-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  fill: currentColor;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+}
+
+.c-icon.size-sm {
+  width: .75rem;
+  height: .75rem;
+}
+
+.c-icon.size-base {
+  width: 1rem;
+  height: 1rem;
+}
+
+.c-icon.size-lg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c-icon.size-xl {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.c-icon.size-2xl {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.c-icon.size-3xl {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.c-icon.size-4xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+.c-icon.size-5xl {
+  width: 4rem;
+  height: 4rem;
+}
+
 body.ltr .c-radio input {
   margin-right: .5rem;
 }
@@ -1011,48 +1012,6 @@ body.rtl .c-radio input {
 .c-radio .instructions {
   color: #8795a1;
   font-size: .875rem;
-}
-
-.c-textbox .wrapper {
-  position: relative;
-}
-
-.c-textbox .wrapper input.c-textbox.w-full {
-  width: 100%;
-}
-
-.c-textbox .wrapper .text-red-dark {
-  color: #cc1f1a;
-}
-
-.c-textbox .wrapper .max {
-  margin-top: .5rem;
-}
-
-body.ltr .c-textbox .wrapper .max {
-  padding-right: .25rem;
-}
-
-body.rtl .c-textbox .wrapper .max {
-  padding-left: .25rem;
-}
-
-.c-textbox .wrapper .max.floating {
-  position: absolute;
-  font-size: .75rem;
-  text-align: right;
-}
-
-.c-textbox .wrapper .max.text-grey {
-  color: #b8c2cc;
-}
-
-.c-textbox .wrapper .max.text-orange {
-  color: #f6993f;
-}
-
-.c-textbox .wrapper .max.text-red {
-  color: #e3342f;
 }
 
 .c-spinner {
@@ -1105,4 +1064,46 @@ body.rtl .c-textbox .wrapper .max {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
+}
+
+.c-textbox .wrapper {
+  position: relative;
+}
+
+.c-textbox .wrapper input.c-textbox.w-full {
+  width: 100%;
+}
+
+.c-textbox .wrapper .text-red-dark {
+  color: #cc1f1a;
+}
+
+.c-textbox .wrapper .max {
+  margin-top: .5rem;
+}
+
+body.ltr .c-textbox .wrapper .max {
+  padding-right: .25rem;
+}
+
+body.rtl .c-textbox .wrapper .max {
+  padding-left: .25rem;
+}
+
+.c-textbox .wrapper .max.floating {
+  position: absolute;
+  font-size: .75rem;
+  text-align: right;
+}
+
+.c-textbox .wrapper .max.text-grey {
+  color: #b8c2cc;
+}
+
+.c-textbox .wrapper .max.text-orange {
+  color: #f6993f;
+}
+
+.c-textbox .wrapper .max.text-red {
+  color: #e3342f;
 }
