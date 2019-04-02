@@ -23,14 +23,21 @@
 
         & > .animation {
             animation: rotator .7s linear infinite;
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             border: 2px solid transparent;
             border-top-color: transparent !important;
             border-left-color: transparent !important;
             border-right-color: #555;
             border-bottom-color: #555;
+        }
+
+        &.sm {
+            & > .animation {
+                width: 16px;
+                height: 16px;
+            }
         }
 
         &.lg {

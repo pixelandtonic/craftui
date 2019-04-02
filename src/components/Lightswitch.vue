@@ -91,8 +91,9 @@
                     background-color: #38c172;
                 }
 
-                input:focus + .slider {
-                    box-shadow: 0 0 1px #38c172;
+                input:focus + .slider,
+                input:active + .slider {
+                    box-shadow: 0 0 0 2px rgba(52,144,220,.5);
                 }
 
                 input:checked + .slider:before {

@@ -619,8 +619,8 @@ button.c-btn {
 .c-btn:not(.outline),
 a.c-btn:not(.outline),
 button.c-btn:not(.outline) {
-  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
-          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
 }
 
 .c-btn:not([disabled]):hover,
@@ -923,6 +923,19 @@ body.rtl .c-checkbox input {
   height: 4rem;
 }
 
+body.ltr .c-radio input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-radio input {
+  margin-left: .5rem;
+}
+
+.c-radio .instructions {
+  color: #8795a1;
+  font-size: .875rem;
+}
+
 .c-lightswitch .c-lightswitch-input label {
   position: relative;
   display: block;
@@ -974,9 +987,10 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   background-color: #38c172;
 }
 
+.c-lightswitch .c-lightswitch-input label input:active+.slider,
 .c-lightswitch .c-lightswitch-input label input:focus+.slider {
-  -webkit-box-shadow: 0 0 1px #38c172;
-          box-shadow: 0 0 1px #38c172;
+  -webkit-box-shadow: 0 0 0 2px rgba(52, 144, 220, .5);
+          box-shadow: 0 0 0 2px rgba(52, 144, 220, .5);
 }
 
 .c-lightswitch .c-lightswitch-input label input:checked+.slider:before {
@@ -1000,19 +1014,6 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-body.ltr .c-radio input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-radio input {
-  margin-left: .5rem;
-}
-
-.c-radio .instructions {
-  color: #8795a1;
-  font-size: .875rem;
-}
-
 .c-spinner {
   display: inline-block;
 }
@@ -1020,14 +1021,19 @@ body.rtl .c-radio input {
 .c-spinner>.animation {
   -webkit-animation: rotator .7s linear infinite;
           animation: rotator .7s linear infinite;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: 2px solid transparent;
   border-top-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: #555;
   border-bottom-color: #555;
+}
+
+.c-spinner.sm>.animation {
+  width: 16px;
+  height: 16px;
 }
 
 .c-spinner.lg>.animation {

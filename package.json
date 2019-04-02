@@ -1,6 +1,6 @@
 {
   "name": "@pixelandtonic/craftui",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "dist/craftui.js",
   "unpkg": "dist/craftui.min.js",
   "module": "dist/craftui.es.js",
