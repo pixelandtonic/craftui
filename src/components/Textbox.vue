@@ -37,7 +37,7 @@
                     @keydown="$emit('keydown', $event)"
                     @keypress="$emit('keypress', $event)"
                     @keyup="$emit('keyup', $event)"
-            />
+            ><template v-if="type === 'textarea'">{{value}}</template></component>
 
             <p v-if="max"
                class="max"
