@@ -56,5 +56,11 @@ storiesOf('Components|Textbox', module)
         template: '<textbox type="number" label="Label" instructions="Some instructions." :value="0"></textbox>',
     }), { notes: { markdown: TextboxNotesMD } })
     .add('Textarea', () => ({
-        template: '<textbox type="textarea" label="Label" instructions="Some instructions."></textbox>',
+        template: '<textbox type="textarea" label="Label" :value="value" instructions="Some instructions."></textbox>',
+        props: {
+            value: {
+                type: String,
+                default: text('value', 'Some value')
+            },
+        }
     }), { notes: { markdown: TextboxNotesMD } })
