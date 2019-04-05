@@ -1014,48 +1014,6 @@ body.rtl .c-radio input {
   font-size: .875rem;
 }
 
-.c-textbox .wrapper {
-  position: relative;
-}
-
-.c-textbox .wrapper input.c-textbox.w-full {
-  width: 100%;
-}
-
-.c-textbox .wrapper .text-red-dark {
-  color: #cc1f1a;
-}
-
-.c-textbox .wrapper .max {
-  margin-top: .5rem;
-}
-
-body.ltr .c-textbox .wrapper .max {
-  padding-right: .25rem;
-}
-
-body.rtl .c-textbox .wrapper .max {
-  padding-left: .25rem;
-}
-
-.c-textbox .wrapper .max.floating {
-  position: absolute;
-  font-size: .75rem;
-  text-align: right;
-}
-
-.c-textbox .wrapper .max.text-grey {
-  color: #b8c2cc;
-}
-
-.c-textbox .wrapper .max.text-orange {
-  color: #f6993f;
-}
-
-.c-textbox .wrapper .max.text-red {
-  color: #e3342f;
-}
-
 .c-spinner {
   display: inline-block;
 }
@@ -1106,4 +1064,46 @@ body.rtl .c-textbox .wrapper .max {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
+}
+
+.c-textbox .wrapper {
+  position: relative;
+}
+
+.c-textbox .wrapper input.c-textbox.w-full {
+  width: 100%;
+}
+
+.c-textbox .wrapper .text-red-dark {
+  color: #cc1f1a;
+}
+
+.c-textbox .wrapper .max {
+  margin-top: .5rem;
+}
+
+body.ltr .c-textbox .wrapper .max {
+  padding-right: .25rem;
+}
+
+body.rtl .c-textbox .wrapper .max {
+  padding-left: .25rem;
+}
+
+.c-textbox .wrapper .max.floating {
+  position: absolute;
+  font-size: .75rem;
+  text-align: right;
+}
+
+.c-textbox .wrapper .max.text-grey {
+  color: #b8c2cc;
+}
+
+.c-textbox .wrapper .max.text-orange {
+  color: #f6993f;
+}
+
+.c-textbox .wrapper .max.text-red {
+  color: #e3342f;
 }
