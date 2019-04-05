@@ -475,7 +475,7 @@ var script$3 = {
       default: null
     },
     value: {
-      type: String,
+      type: String | Number,
       default: null
     }
   },
