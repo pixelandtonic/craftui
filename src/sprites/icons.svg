@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
     <symbol id="angle-double-left" viewBox="0 0 448 512">
         <title id="angle-double-left-title">Angle Double Left</title>
         <path d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path>
@@ -55,6 +55,10 @@
     <symbol id="heart" viewBox="0 0 640 512">
         <title id="heart-title">Heart</title>
         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+    </symbol>
+    <symbol id="line-lightbulb" viewBox="0 0 352 512">
+        <title id="line-lightbulb-title">Line Lightbulb</title>
+        <path d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"></path>
     </symbol>
     <symbol id="line-heart" viewBox="0 0 640 512">
         <title id="line-heart-title">Line Heart</title>
@@ -132,4 +136,74 @@
         <title id="user-title">User</title>
         <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
     </symbol>
+
+    <view id="angle-double-left-view" viewBox="0 0 448 512" />
+    <view id="angle-double-right-view" viewBox="0 513 448 512" />
+    <view id="angle-left-view" viewBox="0 1026 256 512" />
+    <view id="angle-right-view" viewBox="0 1539 256 512" />
+    <view id="bars-view" viewBox="0 2052 448 512" />
+    <view id="book-view" viewBox="0 2565 448 512" />
+    <view id="check-view" viewBox="0 3078 512 512" />
+    <view id="check-circle-view" viewBox="0 3591 512 512" />
+    <view id="copy-view" viewBox="0 4104 448 512" />
+    <view id="exclamation-circle-view" viewBox="0 4617 512 512" />
+    <view id="exclamation-triangle-view" viewBox="0 5130 576 512" />
+    <view id="glass-martini-view" viewBox="0 5643 512 512" />
+    <view id="handshake-view" viewBox="0 6156 640 512" />
+    <view id="heart-view" viewBox="0 6669 640 512" />
+    <view id="line-heart-view" viewBox="0 7182 640 512" />
+    <view id="image-view" viewBox="0 7695 512 512" />
+    <view id="info-circle-view" viewBox="0 8208 512 512" />
+    <view id="key-view" viewBox="0 8721 512 512" />
+    <view id="line-check-circle-view" viewBox="0 9234 512 512" />
+    <view id="line-exclamation-circle-view" viewBox="0 9747 512 512" />
+    <view id="line-exclamation-triangle-view" viewBox="0 10260 512 512" />
+    <view id="line-info-circle-view" viewBox="0 10773 512 512" />
+    <view id="link-view" viewBox="0 11286 512 512" />
+    <view id="pencil-view" viewBox="0 11799 512 512" />
+    <view id="plug-view" viewBox="0 12312 384 512" />
+    <view id="plus-view" viewBox="0 12825 448 512" />
+    <view id="search-view" viewBox="0 13338 512 512" />
+    <view id="shopping-cart-view" viewBox="0 13851 576 512" />
+    <view id="sort-amount-down-view" viewBox="0 14364 512 512" />
+    <view id="sort-amount-up-view" viewBox="0 14877 512 512" />
+    <view id="th-view" viewBox="0 15390 512 512" />
+    <view id="times-view" viewBox="0 15903 352 512" />
+    <view id="user-view" viewBox="0 16416 448 512" />
+    <view id="line-lightbulb-view" viewBox="0 16929 352 512" />
+
+    <use xlink:href="#angle-double-left" id="angle-double-left" x="0" y="0" width="448" height="512"></use>
+    <use xlink:href="#angle-double-right" id="angle-double-right" x="0" y="513" width="448" height="512"></use>
+    <use xlink:href="#angle-left" id="angle-left" x="0" y="1026" width="256" height="512"></use>
+    <use xlink:href="#angle-right" id="angle-right" x="0" y="1539" width="256" height="512"></use>
+    <use xlink:href="#bars" id="bars" x="0" y="2052" width="448" height="512"></use>
+    <use xlink:href="#book" id="book" x="0" y="2565" width="448" height="512"></use>
+    <use xlink:href="#check" id="check" x="0" y="3078" width="512" height="512"></use>
+    <use xlink:href="#check-circle" id="check-circle" x="0" y="3591" width="512" height="512"></use>
+    <use xlink:href="#copy" id="copy" x="0" y="4104" width="448" height="512"></use>
+    <use xlink:href="#exclamation-circle" id="exclamation-circle" x="0" y="4617" width="512" height="512"></use>
+    <use xlink:href="#exclamation-triangle" id="exclamation-triangle" x="0" y="5130" width="576" height="512"></use>
+    <use xlink:href="#glass-martini" id="glass-martini" x="0" y="5643" width="512" height="512"></use>
+    <use xlink:href="#handshake" id="handshake" x="0" y="6156" width="640" height="512"></use>
+    <use xlink:href="#heart" id="heart" x="0" y="6669" width="640" height="512"></use>
+    <use xlink:href="#line-heart" id="line-heart" x="0" y="7182" width="640" height="512"></use>
+    <use xlink:href="#image" id="image" x="0" y="7695" width="512" height="512"></use>
+    <use xlink:href="#info-circle" id="info-circle" x="0" y="8208" width="512" height="512"></use>
+    <use xlink:href="#key" id="key" x="0" y="8721" width="512" height="512"></use>
+    <use xlink:href="#line-check-circle" id="line-check-circle" x="0" y="9234" width="512" height="512"></use>
+    <use xlink:href="#line-exclamation-circle" id="line-exclamation-circle" x="0" y="9747" width="512" height="512"></use>
+    <use xlink:href="#line-exclamation-triangle" id="line-exclamation-triangle" x="0" y="10260" width="512" height="512"></use>
+    <use xlink:href="#line-info-circle" id="line-info-circle" x="0" y="10773" width="512" height="512"></use>
+    <use xlink:href="#link" id="link" x="0" y="11286" width="512" height="512"></use>
+    <use xlink:href="#pencil" id="pencil" x="0" y="11799" width="512" height="512"></use>
+    <use xlink:href="#plug" id="plug" x="0" y="12312" width="384" height="512"></use>
+    <use xlink:href="#plus" id="plus" x="0" y="12825" width="448" height="512"></use>
+    <use xlink:href="#search" id="search" x="0" y="13338" width="512" height="512"></use>
+    <use xlink:href="#shopping-cart" id="shopping-cart" x="0" y="13851" width="576" height="512"></use>
+    <use xlink:href="#sort-amount-down" id="sort-amount-down" x="0" y="14364" width="512" height="512"></use>
+    <use xlink:href="#sort-amount-up" id="sort-amount-up" x="0" y="14877" width="512" height="512"></use>
+    <use xlink:href="#th" id="th" x="0" y="15390" width="512" height="512"></use>
+    <use xlink:href="#times" id="times" x="0" y="15903" width="352" height="512"></use>
+    <use xlink:href="#user" id="user" x="0" y="16416" width="448" height="512"></use>
+    <use xlink:href="#line-lightbulb" id="line-lightbulb" x="0" y="16929" width="352" height="512"></use>
 </svg>

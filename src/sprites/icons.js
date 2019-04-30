@@ -21,6 +21,7 @@ export default [
     'line-exclamation-triangle',
     'line-heart',
     'line-info-circle',
+    'line-lightbulb',
     'link',
     'pencil',
     'plug',
