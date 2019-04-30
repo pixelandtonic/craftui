@@ -1,5 +1,8 @@
-@import '~@fortawesome/fontawesome-svg-core/styles';
-
 @tailwind preflight;
+@import "mixins";
 @import "components";
+
+/*
+Keep it light, don't import Tailwind’s utilities.
 @tailwind utilities;
+*/

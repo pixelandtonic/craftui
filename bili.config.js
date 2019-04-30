@@ -10,9 +10,13 @@ module.exports = {
         ]
     },
     plugins: [
-        "babel",
+        'babel',
+        'node-resolve',
         require("rollup-plugin-vue")({
             css: false,
+        }),
+        require("rollup-plugin-string").string({
+            include: '**/*.svg'
         }),
     ],
 };
