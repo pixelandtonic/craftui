@@ -857,20 +857,20 @@ button.c-btn .c-btn-content {
   display: inline-block;
 }
 
-.c-dropdown .c-dropdown-input select.w-full {
-  width: 100%;
-}
-
-.c-dropdown .is-invalid select {
-  border-color: #e3342f;
-}
-
 body.ltr .c-checkbox input {
   margin-right: .5rem;
 }
 
 body.rtl .c-checkbox input {
   margin-left: .5rem;
+}
+
+.c-dropdown .c-dropdown-input select.w-full {
+  width: 100%;
+}
+
+.c-dropdown .is-invalid select {
+  border-color: #e3342f;
 }
 
 .c-icon {
