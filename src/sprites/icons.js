@@ -7,6 +7,8 @@ export default [
     'book',
     'check',
     'check-circle',
+    'chevron-left',
+    'chevron-right',
     'copy',
     'exclamation-circle',
     'exclamation-triangle',
