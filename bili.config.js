@@ -5,12 +5,6 @@ module.exports = {
         // format: 'umd,es,cjs,umd-min',
         moduleName: 'CraftUi',
     },
-    postcss: {
-        extract: true,
-        plugins: [
-            require('tailwindcss')('./tailwind.config.js'),
-        ]
-    },
     plugins: {
         babel: true,
         'node-resolve': true,
@@ -18,5 +12,11 @@ module.exports = {
             css: false,
         },
         svg: true,
+        postcss: {
+            extract: true,
+            plugins: [
+                require('tailwindcss')('./tailwind.config.js'),
+            ]
+        }
     },
 };
