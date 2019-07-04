@@ -29,14 +29,10 @@ addParameters({
             base: 'light',
             brandTitle: 'Craft UI',
             brandUrl: 'https://github.com/pixelandtonic/craftui',
-            // To control appearance:
-            // brandImage: 'http://url.of/some.svg',
         }),
         showNav: true,
         isFullscreen: false,
-        panelPosition: 'right',
         isToolshown: true,
-
         hierarchySeparator: /\/|\./, // matches a . or /
         hierarchyRootSeparator: /\|/, //matches a |
     },
