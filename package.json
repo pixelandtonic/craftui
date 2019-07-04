@@ -1,9 +1,9 @@
 {
   "name": "@pixelandtonic/craftui",
   "version": "0.3.6",
-  "main": "dist/craftui.js",
-  "unpkg": "dist/craftui.min.js",
-  "module": "dist/craftui.es.js",
+  "main": "dist/craftui.umd.js",
+  "unpkg": "dist/craftui.iife.min.js",
+  "module": "dist/craftui.esm.min.js",
   "scripts": {
     "build": "bili --config bili.config.js",
     "watch": "bili --config bili.config.js --watch",

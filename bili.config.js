@@ -1,8 +1,10 @@
 module.exports = {
-    input: './src/index.js',
-    moduleName: 'CraftUi',
-    exports: 'named',
-    format: 'umd,es,cjs,umd-min',
+    input: './src/craftui.js',
+    output: {
+        format: ['umd', 'umd-min', 'es', 'es-min', 'cjs', 'cjs-min', 'iife', 'iife-min'],
+        // format: 'umd,es,cjs,umd-min',
+        moduleName: 'CraftUi',
+    },
     postcss: {
         extract: true,
         plugins: [
