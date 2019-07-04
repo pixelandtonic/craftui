@@ -41,15 +41,6 @@ addParameters({
         hierarchyRootSeparator: /\|/, //matches a |
     },
 })
-// import {setOptions} from '@storybook/addon-options'
-//
-// setOptions({
-//     name: 'Craft UI',
-//     url: 'https://github.com/pixelandtonic/craftui',
-//     showStoriesPanel: true,
-//     hierarchySeparator: /\/|\./, // matches a . or /
-//     hierarchyRootSeparator: /\|/, //matches a |
-// })
 
 // Load stories
 function loadStories() {

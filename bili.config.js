@@ -9,14 +9,12 @@ module.exports = {
             require('tailwindcss')('./tailwind.config.js'),
         ]
     },
-    plugins: [
-        'babel',
-        'node-resolve',
-        require("rollup-plugin-vue")({
+    plugins: {
+        babel: true,
+        'node-resolve': true,
+        vue: {
             css: false,
-        }),
-        require("rollup-plugin-string").string({
-            include: '**/*.svg'
-        }),
-    ],
+        },
+        svg: true,
+    },
 };
