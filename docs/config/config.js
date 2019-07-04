@@ -1,7 +1,6 @@
 // Craft UI
 import Vue from 'vue'
 import CraftUi from '../../dist/craftui.es'
-
 Vue.use(CraftUi)
 import '../../dist/craftui.css'
 
@@ -13,13 +12,18 @@ import '../src/sass/styles.scss'
 
 /* eslint-disable import/no-extraneous-dependencies */
 import {configure, addDecorator} from '@storybook/vue'
-import {setOptions} from '@storybook/addon-options'
-import {withNotes} from '@storybook/addon-notes'
-import {withKnobs} from '@storybook/addon-knobs'
 
+// Knobs
+import {withKnobs} from '@storybook/addon-knobs'
 addDecorator(withKnobs)
 
+// Notes
+import {withNotes} from '@storybook/addon-notes'
 addDecorator(withNotes)
+
+
+// Options
+import {setOptions} from '@storybook/addon-options'
 
 setOptions({
     name: 'Craft UI',
@@ -29,12 +33,12 @@ setOptions({
     hierarchyRootSeparator: /\|/, //matches a |
 })
 
-
+// Load stories
 function loadStories() {
     require('../src/stories')
-
     const req = require.context('../src/stories', true, /.stories.js$/)
     req.keys().forEach(filename => req(filename))
 }
 
+// Configure
 configure(loadStories, module)
