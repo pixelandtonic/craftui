@@ -70,7 +70,7 @@
 
         .is-invalid {
             select {
-                @apply .border-red;
+                @apply .border-red-500;
             }
         }
     }

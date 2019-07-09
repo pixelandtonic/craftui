@@ -10,7 +10,7 @@
 }
 
 .invalid-feedback {
-  @apply .text-red .text-sm .mt-2 .mb-4;
+  @apply .text-red-500 .text-sm .mt-2 .mb-4;
 }
 
 .instructions {
@@ -28,7 +28,7 @@ label {
 }
 
 select {
-  @apply .border .border-grey-light .bg-white;
+  @apply .border .border-gray-400 .bg-white;
   height: calc(2.25rem + 2px);
 }
 
@@ -42,15 +42,15 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  @apply .bg-white .border .border-grey .p-2 .rounded .block;
+  @apply .bg-white .border .border-gray-500 .p-2 .rounded .block;
 
   &:disabled,
   &[readonly] {
-    @apply .bg-grey-lightest;
+    @apply .bg-gray-100;
   }
 
   &.is-invalid {
-    @apply .border-red;
+    @apply .border-red-500;
   }
 }
 

@@ -101,7 +101,7 @@
         }
 
         .instructions {
-            @apply .text-grey-dark .text-sm;
+            @apply .text-gray-600 .text-sm;
         }
     }
 </style>

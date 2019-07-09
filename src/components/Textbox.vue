@@ -10,7 +10,7 @@
                     :class="{
                         'w-full': !size,
                         'is-invalid': errors && errors.length > 0,
-                        'text-red-dark': max && max < this.value.length
+                        'text-red-600': max && max < this.value.length
                     }"
                     :cols="computedCols"
                     :disabled="disabled"
@@ -42,9 +42,9 @@
             <p v-if="max"
                class="max"
                :class="{
-                    'text-grey': remainingChars >= 20,
-                    'text-orange': remainingChars < 20 && remainingChars >= 0,
-                    'text-red': remainingChars < 0
+                    'text-gray-500': remainingChars >= 20,
+                    'text-orange-500': remainingChars < 20 && remainingChars >= 0,
+                    'text-red-500': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
     </field>
@@ -223,8 +223,8 @@
                 }
             }
 
-            .text-red-dark {
-                @apply .text-red-dark;
+            .text-red-600 {
+                @apply .text-red-600;
             }
 
             .max {
@@ -235,16 +235,16 @@
                     @apply .absolute .text-xs .text-right;
                 }
 
-                &.text-grey {
-                    @apply .text-grey;
+                &.text-gray-500 {
+                    @apply .text-gray-500;
                 }
 
-                &.text-orange {
-                    @apply .text-orange;
+                &.text-orange-500 {
+                    @apply .text-orange-500;
                 }
 
-                &.text-red {
-                    @apply .text-red;
+                &.text-red-500 {
+                    @apply .text-red-500;
                 }
             }
         }

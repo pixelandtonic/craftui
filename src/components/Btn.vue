@@ -108,7 +108,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .px-4 .py-2 .rounded .bg-grey-lighter .text-black .no-underline .border .border-solid .border-grey-lighter;
+        @apply .px-4 .py-2 .rounded .bg-gray-200 .text-black .no-underline .border .border-solid .border-gray-200;
 
         &:not(.outline) {
             @apply .shadow;
@@ -116,11 +116,11 @@
 
         &:not([disabled]) {
             &:hover {
-                @apply .cursor-pointer .bg-grey .border-grey .no-underline;
+                @apply .cursor-pointer .bg-gray-500 .border-gray-500 .no-underline;
             }
 
             &:active {
-                @apply .cursor-pointer .bg-grey-dark .border-grey-dark;
+                @apply .cursor-pointer .bg-gray-600 .border-gray-600;
             }
         }
 
@@ -151,29 +151,29 @@
         }
 
         &.primary:not(.outline) {
-            @apply .bg-blue .border-blue .text-white;
+            @apply .bg-blue-500 .border-blue-500 .text-white;
 
             &:not([disabled]) {
                 &:hover {
-                    @apply .bg-blue-dark .border-blue-dark;
+                    @apply .bg-blue-600 .border-blue-600;
                 }
 
                 &:active {
-                    @apply .bg-blue-darker .border-blue-darker;
+                    @apply .bg-blue-800 .border-blue-800;
                 }
             }
         }
 
         &.danger {
-            @apply .bg-red .border-red .text-white;
+            @apply .bg-red-500 .border-red-500 .text-white;
 
             &:not([disabled]) {
                 &:hover {
-                    @apply .bg-red-dark .border-red-dark;
+                    @apply .bg-red-600 .border-red-600;
                 }
 
                 &:active {
-                    @apply .bg-red-darker .border-red-darker;
+                    @apply .bg-red-800 .border-red-800;
                 }
             }
         }
@@ -186,29 +186,29 @@
             @apply .bg-transparent;
 
             &.primary {
-                @apply .text-blue;
+                @apply .text-blue-500;
 
                 &:not([disabled]) {
                     &:hover {
-                        @apply .text-white .bg-blue;
+                        @apply .text-white .bg-blue-500;
                     }
 
                     &:active {
-                        @apply .text-white .bg-blue-darker;
+                        @apply .text-white .bg-blue-800;
                     }
                 }
             }
 
             &.danger {
-                @apply .text-red;
+                @apply .text-red-500;
 
                 &:not([disabled]) {
                     &:hover {
-                        @apply .text-white .bg-red;
+                        @apply .text-white .bg-red-500;
                     }
 
                     &:active {
-                        @apply .text-white .bg-red-darker;
+                        @apply .text-white .bg-red-800;
                     }
                 }
             }
@@ -234,16 +234,16 @@
 
             &.outline {
                 &.primary .c-spinner > .animation {
-                    @apply .border-blue;
+                    @apply .border-blue-500;
                 }
 
                 &.danger .c-spinner > .animation {
-                    @apply .border-red;
+                    @apply .border-red-500;
                 }
             }
 
             .c-spinner {
-                @apply .absolute .pin .flex .justify-center .items-center;
+                @apply .absolute .inset-0 .flex .justify-center .items-center;
             }
 
             .c-btn-content {

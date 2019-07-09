@@ -70,7 +70,7 @@
                 }
 
                 .slider {
-                    @apply .absolute .pin .cursor-pointer;
+                    @apply .absolute .inset-0 .cursor-pointer;
                     background-color: #ccc;
                     -webkit-transition: .4s;
                     transition: .4s;

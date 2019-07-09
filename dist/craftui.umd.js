@@ -1333,7 +1333,7 @@
         class: {
           'w-full': !_vm.size,
           'is-invalid': _vm.errors && _vm.errors.length > 0,
-          'text-red-dark': _vm.max && _vm.max < this.value.length
+          'text-red-600': _vm.max && _vm.max < this.value.length
         },
         attrs: {
           "autocapitalize": _vm.autocapitalize,
@@ -1382,9 +1382,9 @@
       }, [_vm.type === 'textarea' ? [_vm._v(_vm._s(_vm.value))] : _vm._e()], 2), _vm._v(" "), _vm.max ? _c('p', {
         staticClass: "max",
         class: {
-          'text-grey': _vm.remainingChars >= 20,
-          'text-orange': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
-          'text-red': _vm.remainingChars < 0
+          'text-gray-500': _vm.remainingChars >= 20,
+          'text-orange-500': _vm.remainingChars < 20 && _vm.remainingChars >= 0,
+          'text-red-500': _vm.remainingChars < 0
         }
       }, [_c('small', [_vm._v(_vm._s(_vm.max - _vm.remainingChars) + "/" + _vm._s(_vm.max))])]) : _vm._e()], 1)]);
     };
