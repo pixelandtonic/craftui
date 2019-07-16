@@ -10,11 +10,16 @@
   border-width:1px;
   border-style:solid;
   border-color:#edf2f7;
+  background-color:var(--craftui-btn-default-background);
+  border-color:var(--craftui-btn-default-background);
+  color:var(--craftui-btn-default-text)
 }
 
 .c-btn:not(.outline),a.c-btn:not(.outline),button.c-btn:not(.outline){
   -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
           box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow:0 1px 3px 0 var(--craftui-shadow-1),0 1px 2px 0 var(--craftui-shadow-2);
+          box-shadow:0 1px 3px 0 var(--craftui-shadow-1),0 1px 2px 0 var(--craftui-shadow-2)
 }
 
 .c-btn:not([disabled]):hover,a.c-btn:not([disabled]):hover,button.c-btn:not([disabled]):hover{
@@ -22,6 +27,8 @@
   background-color:#a0aec0;
   border-color:#a0aec0;
   text-decoration:none;
+  background-color:var(--craftui-btn-default-hover-background);
+  border-color:var(--craftui-btn-default-hover-background)
 }
 
 .c-btn:not([disabled]):active,a.c-btn:not([disabled]):active,button.c-btn:not([disabled]):active{
@@ -59,32 +66,46 @@
   background-color:#4299e1;
   border-color:#4299e1;
   color:#fff;
+  background-color:var(--craftui-primary);
+  border-color:var(--craftui-primary);
+  color:var(--craftui-primary-text)
 }
 
 .c-btn.primary:not(.outline):not([disabled]):hover,a.c-btn.primary:not(.outline):not([disabled]):hover,button.c-btn.primary:not(.outline):not([disabled]):hover{
   background-color:#3182ce;
   border-color:#3182ce;
+  background-color:var(--craftui-primary-hover);
+  border-color:var(--craftui-primary-hover)
 }
 
 .c-btn.primary:not(.outline):not([disabled]):active,a.c-btn.primary:not(.outline):not([disabled]):active,button.c-btn.primary:not(.outline):not([disabled]):active{
   background-color:#2c5282;
   border-color:#2c5282;
+  background-color:var(--craftui-primary-active);
+  border-color:var(--craftui-primary-active)
 }
 
 .c-btn.danger,a.c-btn.danger,button.c-btn.danger{
   background-color:#f56565;
   border-color:#f56565;
   color:#fff;
+  background-color:var(--craftui-danger);
+  border-color:var(--craftui-danger);
+  color:var(--craftui-danger-text)
 }
 
 .c-btn.danger:not([disabled]):hover,a.c-btn.danger:not([disabled]):hover,button.c-btn.danger:not([disabled]):hover{
   background-color:#e53e3e;
   border-color:#e53e3e;
+  background-color:var(--craftui-danger-hover);
+  border-color:var(--craftui-danger-hover)
 }
 
 .c-btn.danger:not([disabled]):active,a.c-btn.danger:not([disabled]):active,button.c-btn.danger:not([disabled]):active{
   background-color:#9b2c2c;
   border-color:#9b2c2c;
+  background-color:var(--craftui-danger-active);
+  border-color:var(--craftui-danger-active)
 }
 
 .c-btn[disabled],a.c-btn[disabled],button.c-btn[disabled]{
@@ -344,8 +365,8 @@ body.rtl .c-radio input{
   border:2px solid transparent;
   border-top-color:transparent!important;
   border-left-color:transparent!important;
-  border-right-color:#555;
-  border-bottom-color:#555
+  border-right-color:var(--craftui-spinner);
+  border-bottom-color:var(--craftui-spinner)
 }
 
 .c-spinner.sm>.animation{
@@ -1031,6 +1052,280 @@ video {
   height: auto;
 }
 
+/* Variables */
+
+body {
+  supported-color-schemes: light only;
+  /* Tailwind CSS 1.0 colors (default/light) */
+  --craftui-transparent: transparent;
+  --craftui-black: #000;
+  --craftui-white: #fff;
+  --craftui-gray-100: rgba(247, 250, 252, 1);
+  --craftui-gray-200: #edf2f7;
+  --craftui-gray-300: #e2e8f0;
+  --craftui-gray-400: #cbd5e0;
+  --craftui-gray-500: #a0aec0;
+  --craftui-gray-600: #718096;
+  --craftui-gray-700: #4a5568;
+  --craftui-gray-800: #2d3748;
+  --craftui-gray-900: #1a202c;
+  --craftui-red-100: #fff5f5;
+  --craftui-red-200: #fed7d7;
+  --craftui-red-300: #feb2b2;
+  --craftui-red-400: #fc8181;
+  --craftui-red-500: #f56565;
+  --craftui-red-600: #e53e3e;
+  --craftui-red-700: #c53030;
+  --craftui-red-800: #9b2c2c;
+  --craftui-red-900: #742a2a;
+  --craftui-orange-100: #fffaf0;
+  --craftui-orange-200: #feebc8;
+  --craftui-orange-300: #fbd38d;
+  --craftui-orange-400: #f6ad55;
+  --craftui-orange-500: #ed8936;
+  --craftui-orange-600: #dd6b20;
+  --craftui-orange-700: #c05621;
+  --craftui-orange-800: #9c4221;
+  --craftui-orange-900: #7b341e;
+  --craftui-yellow-100: #fffff0;
+  --craftui-yellow-200: #fefcbf;
+  --craftui-yellow-300: #faf089;
+  --craftui-yellow-400: #f6e05e;
+  --craftui-yellow-500: #ecc94b;
+  --craftui-yellow-600: #d69e2e;
+  --craftui-yellow-700: #b7791f;
+  --craftui-yellow-800: #975a16;
+  --craftui-yellow-900: #744210;
+  --craftui-green-100: #f0fff4;
+  --craftui-green-200: #c6f6d5;
+  --craftui-green-300: #9ae6b4;
+  --craftui-green-400: #68d391;
+  --craftui-green-500: #48bb78;
+  --craftui-green-600: #38a169;
+  --craftui-green-700: #2f855a;
+  --craftui-green-800: #276749;
+  --craftui-green-900: #22543d;
+  --craftui-teal-100: #e6fffa;
+  --craftui-teal-200: #b2f5ea;
+  --craftui-teal-300: #81e6d9;
+  --craftui-teal-400: #4fd1c5;
+  --craftui-teal-500: #38b2ac;
+  --craftui-teal-600: #319795;
+  --craftui-teal-700: #2c7a7b;
+  --craftui-teal-800: #285e61;
+  --craftui-teal-900: #234e52;
+  --craftui-blue-100: #ebf8ff;
+  --craftui-blue-200: #bee3f8;
+  --craftui-blue-300: #90cdf4;
+  --craftui-blue-400: #63b3ed;
+  --craftui-blue-500: #4299e1;
+  --craftui-blue-600: #3182ce;
+  --craftui-blue-700: #2b6cb0;
+  --craftui-blue-800: #2c5282;
+  --craftui-blue-900: #2a4365;
+  --craftui-indigo-100: #ebf4ff;
+  --craftui-indigo-200: #c3dafe;
+  --craftui-indigo-300: #a3bffa;
+  --craftui-indigo-400: #7f9cf5;
+  --craftui-indigo-500: #667eea;
+  --craftui-indigo-600: #5a67d8;
+  --craftui-indigo-700: #4c51bf;
+  --craftui-indigo-800: #434190;
+  --craftui-indigo-900: #3c366b;
+  --craftui-purple-100: #faf5ff;
+  --craftui-purple-200: #e9d8fd;
+  --craftui-purple-300: #d6bcfa;
+  --craftui-purple-400: #b794f4;
+  --craftui-purple-500: #9f7aea;
+  --craftui-purple-600: #805ad5;
+  --craftui-purple-700: #6b46c1;
+  --craftui-purple-800: #553c9a;
+  --craftui-purple-900: #44337a;
+  --craftui-pink-100: #fff5f7;
+  --craftui-pink-200: #fed7e2;
+  --craftui-pink-300: #fbb6ce;
+  --craftui-pink-400: #f687b3;
+  --craftui-pink-500: #ed64a6;
+  --craftui-pink-600: #d53f8c;
+  --craftui-pink-700: #b83280;
+  --craftui-pink-800: #97266d;
+  --craftui-pink-900: #702459;
+}
+
+body.theme-dark {
+  supported-color-schemes: dark only;
+  /* Tailwind CSS 1.0 colors (dark) */
+  --craftui-black: #fff;
+  --craftui-white: #000;
+  --craftui-gray-100: #1a202c;
+  --craftui-gray-200: #2d3748;
+  --craftui-gray-300: #4a5568;
+  --craftui-gray-400: #718096;
+  --craftui-gray-500: #a0aec0;
+  --craftui-gray-600: #cbd5e0;
+  --craftui-gray-700: #e2e8f0;
+  --craftui-gray-800: #edf2f7;
+  --craftui-gray-900: #f7fafc;
+  --craftui-red-100: #742a2a;
+  --craftui-red-200: #9b2c2c;
+  --craftui-red-300: #c53030;
+  --craftui-red-400: #e53e3e;
+  --craftui-red-500: #f56565;
+  --craftui-red-600: #fc8181;
+  --craftui-red-700: #feb2b2;
+  --craftui-red-800: #fed7d7;
+  --craftui-red-900: #fff5f5;
+  --craftui-orange-100: #7b341e;
+  --craftui-orange-200: #9c4221;
+  --craftui-orange-300: #c05621;
+  --craftui-orange-400: #dd6b20;
+  --craftui-orange-500: #ed8936;
+  --craftui-orange-600: #f6ad55;
+  --craftui-orange-700: #fbd38d;
+  --craftui-orange-800: #feebc8;
+  --craftui-orange-900: #fffaf0;
+  --craftui-yellow-100: #744210;
+  --craftui-yellow-200: #975a16;
+  --craftui-yellow-300: #b7791f;
+  --craftui-yellow-400: #d69e2e;
+  --craftui-yellow-500: #ecc94b;
+  --craftui-yellow-600: #f6e05e;
+  --craftui-yellow-700: #faf089;
+  --craftui-yellow-800: #fefcbf;
+  --craftui-yellow-900: #fffff0;
+  --craftui-green-100: #22543d;
+  --craftui-green-200: #276749;
+  --craftui-green-300: #2f855a;
+  --craftui-green-400: #38a169;
+  --craftui-green-500: #48bb78;
+  --craftui-green-600: #68d391;
+  --craftui-green-700: #9ae6b4;
+  --craftui-green-800: #c6f6d5;
+  --craftui-green-900: #f0fff4;
+  --craftui-teal-100: #234e52;
+  --craftui-teal-200: #285e61;
+  --craftui-teal-300: #2c7a7b;
+  --craftui-teal-400: #319795;
+  --craftui-teal-500: #38b2ac;
+  --craftui-teal-600: #4fd1c5;
+  --craftui-teal-700: #81e6d9;
+  --craftui-teal-800: #b2f5ea;
+  --craftui-teal-900: #e6fffa;
+  --craftui-blue-100: #2a4365;
+  --craftui-blue-200: #2c5282;
+  --craftui-blue-300: #2b6cb0;
+  --craftui-blue-400: #3182ce;
+  --craftui-blue-500: #4299e1;
+  --craftui-blue-600: #63b3ed;
+  --craftui-blue-700: #90cdf4;
+  --craftui-blue-800: #bee3f8;
+  --craftui-blue-900: #ebf8ff;
+  --craftui-indigo-100: #3c366b;
+  --craftui-indigo-200: #434190;
+  --craftui-indigo-300: #4c51bf;
+  --craftui-indigo-400: #5a67d8;
+  --craftui-indigo-500: #667eea;
+  --craftui-indigo-600: #7f9cf5;
+  --craftui-indigo-700: #a3bffa;
+  --craftui-indigo-800: #c3dafe;
+  --craftui-indigo-900: #ebf4ff;
+  --craftui-purple-100: #44337a;
+  --craftui-purple-200: #553c9a;
+  --craftui-purple-300: #6b46c1;
+  --craftui-purple-400: #805ad5;
+  --craftui-purple-500: #9f7aea;
+  --craftui-purple-600: #b794f4;
+  --craftui-purple-700: #d6bcfa;
+  --craftui-purple-800: #e9d8fd;
+  --craftui-purple-900: #faf5ff;
+  --craftui-pink-100: #702459;
+  --craftui-pink-200: #97266d;
+  --craftui-pink-300: #b83280;
+  --craftui-pink-400: #d53f8c;
+  --craftui-pink-500: #ed64a6;
+  --craftui-pink-600: #f687b3;
+  --craftui-pink-700: #fbb6ce;
+  --craftui-pink-800: #fed7e2;
+  --craftui-pink-900: #fff5f7;
+}
+
+body {
+  --craftui-separator: var(--craftui-gray-400);
+  --craftui-opaque-separator: var(--craftui-gray-300);
+  --craftui-background-primary: var(--craftui-white);
+  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
+  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
+  --craftui-background-secondary: var(--craftui-gray-100);
+  --craftui-input-background: var(--craftui-white);
+  --craftui-input-disabled-background: var(--craftui-gray-200);
+  --craftui-input-border: var(--craftui-gray-500);
+  --craftui-text: var(--craftui-black);
+  --craftui-text-light: var(--craftui-gray-500);
+  --craftui-link: var(--craftui-blue-600);
+  --craftui-link-hover: var(--craftui-blue-800);
+  --craftui-nav-text: var(--craftui-gray-800);
+  --craftui-nav-hover-text: var(--craftui-black);
+  --craftui-nav-active-background: var(--craftui-gray-300);
+  --craftui-nav-disabled-text: var(--craftui-gray-500);
+  --craftui-btn-default-background: var(--craftui-gray-200);
+  --craftui-btn-default-text: var(--craftui-black);
+  --craftui-btn-default-hover-background: var(--craftui-gray-500);
+  --craftui-btn-default-active-background: var(--craftui-gray-400);
+  --craftui-btn-default-disabled-background: var(--craftui-gray-100);
+  --craftui-spinner: var(--craftui-gray-500);
+  --craftui-badge-background: var(--craftui-gray-600);
+  --craftui-badge-text: var(--craftui-white);
+  --craftui-badge-success-background: var(--craftui-green-500);
+  --craftui-alert-background: var(--craftui-gray-400);
+  --craftui-alert-border: var(--craftui-gray-500);
+  --craftui-alert-text: var(--craftui-gray-800);
+  --craftui-info-background: var(--craftui-blue-200);
+  --craftui-info-border: var(--craftui-blue-400);
+  --craftui-info-text: var(--craftui-blue-800);
+  --craftui-warning-background: var(--craftui-orange-200);
+  --craftui-warning-border: var(--craftui-orange-400);
+  --craftui-warning-text: var(--craftui-orange-800);
+  --craftui-primary: var(--craftui-blue-500);
+  --craftui-primary-hover: var(--craftui-blue-600);
+  --craftui-primary-active: var(--craftui-blue-800);
+  --craftui-primary-text: var(--craftui-white);
+  --craftui-danger: var(--craftui-red-500);
+  --craftui-danger-hover: var(--craftui-red-600);
+  --craftui-danger-active: var(--craftui-red-800);
+  --craftui-danger-text: var(--craftui-white);
+  --craftui-shadow-1: rgba(0, 0, 0, 0.1);
+  --craftui-shadow-2: rgba(0, 0, 0, 0.06);
+  --craftui-icon: var(--craftui-gray-500);
+  --craftui-card-header-background: var(--craftui-gray-100);
+  --craftui-card-header-border: var(--craftui-gray-400);
+  --craftui-card-danger-border: var(--craftui-red-500);
+  --craftui-card-danger-header-background: var(--craftui-red-500);
+  --craftui-card-danger-header-text: var(--craftui-text);
+}
+
+body.high-contrast, body.theme-dark.high-contrast {
+  --craftui-separator: var(--craftui-gray-600);
+  --craftui-opaque-separator: var(--craftui-gray-500);
+}
+
+body.theme-dark {
+  --craftui-opaque-separator: var(--craftui-white);
+  --craftui-background-primary: var(--craftui-gray-100);
+  --craftui-background-primary-gradient-1: rgba(26, 32, 44, 0);
+  --craftui-background-primary-gradient-2: rgba(26, 32, 44, 1);
+  --craftui-background-secondary: var(--craftui-gray-200);
+  --craftui-input-background: var(--craftui-gray-200);
+  --craftui-input-disabled-background: var(--craftui-gray-300);
+  --craftui-primary-text: var(--craftui-black);
+  --craftui-danger-text: var(--craftui-black);
+}
+
+/* Color classes */
+
+.text-light {
+  color: var(--craftui-text-light);
+}
+
 /* Fields */
 
 .c-field {
@@ -1066,17 +1361,19 @@ select {
   border-width: 1px;
   border-color: #cbd5e0;
   background-color: #fff;
+  background-color: var(--craftui-input-background);
+  border-color: var(--craftui-separator);
   height: calc(2.25rem + 2px);
 }
 
 /* Inputs */
 
-input[type="email"],
-input[type="text"],
-input[type="password"],
-input[type="tel"],
-input[type="url"],
-input[type="number"],
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=number],
 textarea {
   background-color: #fff;
   border-width: 1px;
@@ -1084,36 +1381,93 @@ textarea {
   padding: 0.5rem;
   border-radius: 0.25rem;
   display: block;
+  background-color: var(--craftui-input-background);
+  border-color: var(--craftui-input-border);
 }
 
-input[type="email"]:disabled, input[type="email"][readonly],
-  input[type="text"]:disabled,
-  input[type="text"][readonly],
-  input[type="password"]:disabled,
-  input[type="password"][readonly],
-  input[type="tel"]:disabled,
-  input[type="tel"][readonly],
-  input[type="url"]:disabled,
-  input[type="url"][readonly],
-  input[type="number"]:disabled,
-  input[type="number"][readonly],
-  textarea:disabled,
-  textarea[readonly] {
+input[type=email]:disabled, input[type=email][readonly],
+input[type=text]:disabled,
+input[type=text][readonly],
+input[type=password]:disabled,
+input[type=password][readonly],
+input[type=tel]:disabled,
+input[type=tel][readonly],
+input[type=url]:disabled,
+input[type=url][readonly],
+input[type=number]:disabled,
+input[type=number][readonly],
+textarea:disabled,
+textarea[readonly] {
   background-color: #f7fafc;
+  background-color: var(--craftui-input-disabled-background);
 }
 
-input[type="email"].is-invalid,
-  input[type="text"].is-invalid,
-  input[type="password"].is-invalid,
-  input[type="tel"].is-invalid,
-  input[type="url"].is-invalid,
-  input[type="number"].is-invalid,
-  textarea.is-invalid {
+input[type=email].is-invalid,
+input[type=text].is-invalid,
+input[type=password].is-invalid,
+input[type=tel].is-invalid,
+input[type=url].is-invalid,
+input[type=number].is-invalid,
+textarea.is-invalid {
   border-color: #f56565;
 }
 
-input[type="number"] {
+input[type=email]::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--craftui-text);
+}
+
+input[type=email]::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=url]::-moz-placeholder,
+input[type=number]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: var(--craftui-text);
+}
+
+input[type=email]:-ms-input-placeholder,
+input[type=text]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=url]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: var(--craftui-text);
+}
+
+input[type=email]::-ms-input-placeholder,
+input[type=text]::-ms-input-placeholder,
+input[type=password]::-ms-input-placeholder,
+input[type=tel]::-ms-input-placeholder,
+input[type=url]::-ms-input-placeholder,
+input[type=number]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: var(--craftui-text);
+}
+
+input[type=email]::placeholder,
+input[type=text]::placeholder,
+input[type=password]::placeholder,
+input[type=tel]::placeholder,
+input[type=url]::placeholder,
+input[type=number]::placeholder,
+textarea::placeholder {
+  color: var(--craftui-text);
+}
+
+input[type=number] {
   width: 60px;
+}
+
+body {
+  color: var(--craftui-text);
 }
 
 /*

@@ -109,14 +109,20 @@
     a.c-btn,
     button.c-btn {
         @apply .px-4 .py-2 .rounded .bg-gray-200 .text-black .no-underline .border .border-solid .border-gray-200;
+        background-color: var(--craftui-btn-default-background);
+        border-color: var(--craftui-btn-default-background);
+        color: var(--craftui-btn-default-text);
 
         &:not(.outline) {
             @apply .shadow;
+            box-shadow: 0 1px 3px 0 var(--craftui-shadow-1), 0 1px 2px 0 var(--craftui-shadow-2);
         }
 
         &:not([disabled]) {
             &:hover {
                 @apply .cursor-pointer .bg-gray-500 .border-gray-500 .no-underline;
+                background-color: var(--craftui-btn-default-hover-background);
+                border-color: var(--craftui-btn-default-hover-background);
             }
 
             &:active {
@@ -152,28 +158,42 @@
 
         &.primary:not(.outline) {
             @apply .bg-blue-500 .border-blue-500 .text-white;
+            background-color: var(--craftui-primary);
+            border-color: var(--craftui-primary);
+            color: var(--craftui-primary-text);
 
             &:not([disabled]) {
                 &:hover {
                     @apply .bg-blue-600 .border-blue-600;
+                    background-color: var(--craftui-primary-hover);
+                    border-color: var(--craftui-primary-hover);
                 }
 
                 &:active {
                     @apply .bg-blue-800 .border-blue-800;
+                    background-color: var(--craftui-primary-active);
+                    border-color: var(--craftui-primary-active);
                 }
             }
         }
 
         &.danger {
             @apply .bg-red-500 .border-red-500 .text-white;
+            background-color: var(--craftui-danger);
+            border-color: var(--craftui-danger);
+            color: var(--craftui-danger-text);
 
             &:not([disabled]) {
                 &:hover {
                     @apply .bg-red-600 .border-red-600;
+                    background-color: var(--craftui-danger-hover);
+                    border-color: var(--craftui-danger-hover);
                 }
 
                 &:active {
                     @apply .bg-red-800 .border-red-800;
+                    background-color: var(--craftui-danger-active);
+                    border-color: var(--craftui-danger-active);
                 }
             }
         }
