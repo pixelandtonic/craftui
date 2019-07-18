@@ -19,17 +19,18 @@ body {
   --craftui-success-text: var(--craftui-green-800);
   --craftui-notice-text: var(--craftui-gray-800);
 
-  // Backgrounds
-  --craftui-background-primary: var(--craftui-white);
-  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
-  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
-  --craftui-background-secondary: var(--craftui-gray-100);
+  // Placeholder Text Color
 
-  --craftui-info-background: var(--craftui-blue-200);
-  --craftui-warning-background: var(--craftui-orange-200);
+  // Backgrounds
   --craftui-danger-background: var(--craftui-red-200);
-  --craftui-success-background: var(--craftui-green-200);
+  --craftui-info-background: var(--craftui-blue-200);
   --craftui-notice-background: var(--craftui-gray-400);
+  --craftui-primary-background-gradient-1: rgba(255, 255, 255, 0);
+  --craftui-primary-background-gradient-2: rgba(255, 255, 255, 1);
+  --craftui-primary-background: var(--craftui-white);
+  --craftui-secondary-background: var(--craftui-gray-100);
+  --craftui-success-background: var(--craftui-green-200);
+  --craftui-warning-background: var(--craftui-orange-200);
 
   // Separators
   --craftui-danger-separator: var(--craftui-red-400);
@@ -98,11 +99,11 @@ body {
 
 // Dark mode
 body.theme-dark {
-  --craftui-background-primary-gradient-1: rgba(26, 32, 44, 0);
-  --craftui-background-primary-gradient-2: rgba(26, 32, 44, 1);
-  --craftui-background-primary: var(--craftui-gray-100);
-  --craftui-background-primary: var(--craftui-gray-200);
-  --craftui-background-secondary: var(--craftui-gray-200);
+  --craftui-primary-background-gradient-1: rgba(26, 32, 44, 0);
+  --craftui-primary-background-gradient-2: rgba(26, 32, 44, 1);
+  --craftui-primary-background: var(--craftui-gray-100);
+  --craftui-primary-background: var(--craftui-gray-200);
+  --craftui-secondary-background: var(--craftui-gray-200);
   --craftui-field-disabled: var(--craftui-gray-300);
   --craftui-interactive-danger-text: var(--craftui-black);
   --craftui-interactive-primary-text: var(--craftui-black);
@@ -151,7 +152,7 @@ label {
 
 select {
   @apply .border .border-gray-400 .bg-white;
-  background-color: var(--craftui-background-primary);
+  background-color: var(--craftui-primary-background);
   border-color: var(--craftui-separator);
   height: calc(2.25rem + 2px);
 }
@@ -167,7 +168,7 @@ input[type="url"],
 input[type="number"],
 textarea {
   @apply .bg-white .border .border-gray-500 .p-2 .rounded .block;
-  background-color: var(--craftui-background-primary);
+  background-color: var(--craftui-primary-background);
   border-color: var(--craftui-field);
 
   &:disabled,
