@@ -3,17 +3,6 @@
 @import "tailwind-system-colors";
 
 body {
-  // Color palette
-  --craftui-error: var(--craftui-red-500);
-  --craftui-error-dark: var(--craftui-red-600);
-  --craftui-error-darker: var(--craftui-red-800);
-  --craftui-warning: var(--craftui-orange-400);
-  --craftui-warning-lighter: var(--craftui-orange-200);
-  --craftui-warning-darker: var(--craftui-orange-800);
-  --craftui-info: var(--craftui-blue-400);
-}
-
-body {
   // Semantic colors
 
   // Text
@@ -25,6 +14,8 @@ body {
   // UI
   --craftui-background-primary: var(--craftui-white);
   --craftui-background-secondary: var(--craftui-gray-100);
+  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
+  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
 
   --craftui-field: var(--craftui-gray-500);
   --craftui-field-disabled: var(--craftui-gray-200);
@@ -63,9 +54,6 @@ body {
   --craftui-shadow-1: rgba(0, 0, 0, 0.1);
   --craftui-shadow-2: rgba(0, 0, 0, 0.06);
   --craftui-shadow-3: rgba(0, 0, 0, 0.3);
-
-  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
-  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
 
   // Interactive
   --craftui-interactive-primary: var(--craftui-blue-500);
