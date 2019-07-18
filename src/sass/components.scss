@@ -32,14 +32,13 @@ body {
   --craftui-notice-background: var(--craftui-gray-400);
 
   // Separators
+  --craftui-danger-separator: var(--craftui-red-400);
+  --craftui-info-separator: var(--craftui-blue-400);
+  --craftui-notice-separator: var(--craftui-gray-500);
   --craftui-opaque-separator: var(--craftui-gray-300);
   --craftui-separator: var(--craftui-gray-400);
-
-  --craftui-info-border: var(--craftui-blue-400);
-  --craftui-warning-border: var(--craftui-orange-400);
-  --craftui-danger-border: var(--craftui-red-400);
-  --craftui-success-border: var(--craftui-green-400);
-  --craftui-notice-border: var(--craftui-gray-500);
+  --craftui-success-separator: var(--craftui-green-400);
+  --craftui-warning-separator: var(--craftui-orange-400);
 
   // Other
   --craftui-field: var(--craftui-gray-500);
