@@ -112,16 +112,15 @@ body {
 
 // Dark mode
 body.theme-dark {
-  --craftui-interactive-danger-text: var(--craftui-black);
-
   --craftui-background-primary-gradient-1: rgba(26, 32, 44, 0);
   --craftui-background-primary-gradient-2: rgba(26, 32, 44, 1);
   --craftui-background-primary: var(--craftui-gray-100);
-  --craftui-background-secondary: var(--craftui-gray-200);
   --craftui-background-primary: var(--craftui-gray-200);
+  --craftui-background-secondary: var(--craftui-gray-200);
   --craftui-field-disabled: var(--craftui-gray-300);
-  --craftui-opaque-separator: var(--craftui-white);
+  --craftui-interactive-danger-text: var(--craftui-black);
   --craftui-interactive-primary-text: var(--craftui-black);
+  --craftui-opaque-separator: var(--craftui-white);
   --craftui-shadow-3: rgba(255, 255, 255, 0.3);
 
   &.high-contrast {
