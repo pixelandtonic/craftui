@@ -29,8 +29,8 @@
             border: 2px solid transparent;
             border-top-color: transparent !important;
             border-left-color: transparent !important;
-            border-right-color: var(--craftui-spinner);
-            border-bottom-color: var(--craftui-spinner);
+            border-right-color: var(--craftui-icon);
+            border-bottom-color: var(--craftui-icon);
         }
 
         &.sm {
