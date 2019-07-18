@@ -8,19 +8,16 @@ body {
   // UI
 
   // Text
-  --craftui-text-dark: var(--craftui-gray-800);
-  --craftui-text-light: var(--craftui-gray-500);
-  --craftui-text: var(--craftui-black);
-  --craftui-text-inverse: var(--craftui-white);
-
-  --craftui-info-text: var(--craftui-blue-800);
-  --craftui-warning-text: var(--craftui-orange-800);
   --craftui-danger-text: var(--craftui-red-800);
-  --craftui-success-text: var(--craftui-green-800);
+  --craftui-dark-text: var(--craftui-gray-800);
+  --craftui-info-text: var(--craftui-blue-800);
+  --craftui-light-text: var(--craftui-gray-500);
   --craftui-notice-text: var(--craftui-gray-800);
-
-  // Placeholder Text Color
-
+  --craftui-success-text: var(--craftui-green-800);
+  --craftui-text-inverse: var(--craftui-white);
+  --craftui-text: var(--craftui-black);
+  --craftui-warning-text: var(--craftui-orange-800);
+  
   // Backgrounds
   --craftui-danger-background: var(--craftui-red-200);
   --craftui-info-background: var(--craftui-blue-200);
@@ -117,7 +114,7 @@ body.theme-dark {
 
 /* Color classes */
 .text-light {
-  color: var(--craftui-text-light);
+  color: var(--craftui-light-text);
 }
 
 
