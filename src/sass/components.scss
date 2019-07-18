@@ -198,58 +198,174 @@ body.theme-dark {
 }
 
 body {
-  --craftui-separator: var(--craftui-gray-400);
+  // Color palette
+  --craftui-success: var(--craftui-green-500);
+  --craftui-error: var(--craftui-red-500);
+  --craftui-error-dark: var(--craftui-red-600);
+  --craftui-error-darker: var(--craftui-red-800);
+  --craftui-warning: var(--craftui-orange-400);
+  --craftui-warning-lighter: var(--craftui-orange-200);
+  --craftui-warning-darker: var(--craftui-orange-800);
+  --craftui-info: var(--craftui-blue-400);
+}
+
+body {
+  // -------------------------------------------------------
+
+  // Semantic colors
+
+  // UI backgrounds
+  --craftwi-ui-background-primary: var(--craftui-white);
+  --craftwi-ui-background-secondary: var(--craftui-gray-100);
+
+  // Fields
+  --craftui-field: var(--craftui-gray-500);
+  --craftui-field-disabled: var(--craftui-gray-200);
+
+  // Interactive Primary
+  --craftwi-interactive-primary: var(--craftui-blue-500);
+  --craftwi-interactive-primary-active: var(--craftui-blue-800);
+  --craftwi-interactive-primary-hover: var(--craftui-blue-600);
+  --craftwi-interactive-primary-text: var(--craftui-white);
+
+  // Interactive Secondary
+  --craftwi-interactive-secondary: var(--craftui-gray-200);
+  --craftwi-interactive-secondary-active: var(--craftui-gray-700);
+  --craftwi-interactive-secondary-hover: var(--craftui-gray-500);
+  --craftwi-interactive-secondary-text: var(--craftui-black);
+
+  // Interactive Tertiary
+  --craftwi-interactive-tertiary: var(--craftui-gray-600);
+  --craftwi-interactive-tertiary-active: var(--craftui-gray-900);
+  --craftwi-interactive-tertiary-hover: var(--craftui-gray-700);
+  --craftwi-interactive-tertiary-text: var(--craftui-white);
+
+  // Interactive Danger
+  --craftwi-interactive-danger: var(--craftui-red-500);
+  --craftwi-interactive-danger-active: var(--craftui-red-800);
+  --craftwi-interactive-danger-hover: var(--craftui-red-600);
+  --craftwi-interactive-danger-text: var(--craftui-white);
+
+  // Interactive Link
+  --craftwi-interactive-link: var(--craftui-blue-600);
+  --craftwi-interactive-link-hover: var(--craftui-blue-800);
+
+  // Interactive Nav
+  --craftwi-interactive-nav-active-background: var(--craftui-gray-300);
+  --craftwi-interactive-nav-disabled-text: var(--craftui-gray-500);
+  --craftwi-interactive-nav-hover-text: var(--craftui-black);
+  --craftwi-interactive-nav-text: var(--craftui-gray-800);
+
+  // Separator
   --craftui-opaque-separator: var(--craftui-gray-300);
-  --craftui-background-primary: var(--craftui-white);
-  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
-  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
-  --craftui-background-secondary: var(--craftui-gray-100);
-  --craftui-input-background: var(--craftui-white);
-  --craftui-input-disabled-background: var(--craftui-gray-200);
-  --craftui-input-border: var(--craftui-gray-500);
-  --craftui-text: var(--craftui-black);
+  --craftui-separator: var(--craftui-gray-400);
+
+  // Text
+  --craftui-text-dark: var(--craftui-gray-800);
   --craftui-text-light: var(--craftui-gray-500);
-  --craftui-link: var(--craftui-blue-600);
-  --craftui-link-hover: var(--craftui-blue-800);
-  --craftui-nav-text: var(--craftui-gray-800);
-  --craftui-nav-hover-text: var(--craftui-black);
-  --craftui-nav-active-background: var(--craftui-gray-300);
-  --craftui-nav-disabled-text: var(--craftui-gray-500);
-  --craftui-btn-default-background: var(--craftui-gray-200);
-  --craftui-btn-default-text: var(--craftui-black);
-  --craftui-btn-default-hover-background: var(--craftui-gray-500);
-  --craftui-btn-default-active-background: var(--craftui-gray-400);
-  --craftui-btn-default-disabled-background: var(--craftui-gray-100);
-  --craftui-spinner: var(--craftui-gray-500);
-  --craftui-badge-background: var(--craftui-gray-600);
-  --craftui-badge-text: var(--craftui-white);
-  --craftui-badge-success-background: var(--craftui-green-500);
-  --craftui-alert-background: var(--craftui-gray-400);
-  --craftui-alert-border: var(--craftui-gray-500);
-  --craftui-alert-text: var(--craftui-gray-800);
-  --craftui-info-background: var(--craftui-blue-200);
-  --craftui-info-border: var(--craftui-blue-400);
-  --craftui-info-text: var(--craftui-blue-800);
-  --craftui-warning-background: var(--craftui-orange-200);
-  --craftui-warning-border: var(--craftui-orange-400);
-  --craftui-warning-text: var(--craftui-orange-800);
-  --craftui-primary: var(--craftui-blue-500);
-  --craftui-primary-hover: var(--craftui-blue-600);
-  --craftui-primary-active: var(--craftui-blue-800);
-  --craftui-primary-text: var(--craftui-white);
-  --craftui-danger: var(--craftui-red-500);
-  --craftui-danger-hover: var(--craftui-red-600);
-  --craftui-danger-active: var(--craftui-red-800);
-  --craftui-danger-text: var(--craftui-white);
+  --craftui-text: var(--craftui-black);
+  --craftui-text-inverse: var(--craftui-white);
+
+  // Icon
+  --craftwi-ui-icon: var(--craftui-gray-500);
+
+  // UI Secondary
+  --craftwi-ui-secondary: var(--craftui-gray-500);
+  --craftwi-ui-secondary-background: var(--craftui-gray-200);
+  --craftwi-ui-secondary-border: var(--craftui-gray-400);
+  --craftwi-ui-secondary-text: var(--craftui-gray-800);
+
+  // UI Info
+  --craftwi-ui-info-background: var(--craftui-blue-200);
+  --craftwi-ui-info-border: var(--craftui-blue-400);
+  --craftwi-ui-info-text: var(--craftui-blue-800);
+
+  // UI Warning
+  --craftwi-ui-warning-background: var(--craftui-orange-200);
+  --craftwi-ui-warning-border: var(--craftui-orange-400);
+  --craftwi-ui-warning-text: var(--craftui-orange-800);
+
+  // UI Danger
+  --craftwi-ui-danger: var(--craftui-red-500);
+  --craftwi-ui-danger-background: var(--craftui-red-200);
+  --craftwi-ui-danger-border: var(--craftui-red-400);
+  --craftwi-ui-danger-text: var(--craftui-red-800);
+
+  // UI Success
+  --craftwi-ui-success: var(--craftui-green-500);
+  --craftwi-ui-success-background: var(--craftui-green-200);
+  --craftwi-ui-success-border: var(--craftui-green-400);
+  --craftwi-ui-success-text: var(--craftui-green-800);
+
+  // UI Notice
+  --craftwi-ui-notice-background: var(--craftui-gray-400);
+  --craftwi-ui-notice-border: var(--craftui-gray-500);
+  --craftwi-ui-notice-text: var(--craftui-gray-800);
+
+  // -------------------------------------------------------
+
+  // UI
   --craftui-shadow-1: rgba(0, 0, 0, 0.1);
   --craftui-shadow-2: rgba(0, 0, 0, 0.06);
-  --craftui-icon: var(--craftui-gray-500);
-  --craftui-card-header-background: var(--craftui-gray-100);
-  --craftui-card-header-border: var(--craftui-gray-400);
-  --craftui-card-danger-border: var(--craftui-red-500);
-  --craftui-card-danger-header-background: var(--craftui-red-500);
-  --craftui-card-danger-header-text: var(--craftui-text);
+  --craftui-shadow-3: rgba(0, 0, 0, 0.3); // Craft ID
 
+  // Craft ID, Craft Plugins
+  --craftui-background-primary: var(--craftwi-ui-background-primary);
+  --craftui-background-secondary: var(--craftwi-ui-background-secondary);
+  --craftui-btn-default-background: var(--craftwi-interactive-secondary);
+  --craftui-btn-default-hover-background: var(--craftwi-interactive-secondary-hover);
+  --craftui-btn-default-text: var(--craftwi-interactive-secondary-text);
+  --craftui-danger-active: var(--craftwi-interactive-danger-active);
+  --craftui-danger-hover: var(--craftwi-interactive-danger-hover);
+  --craftui-danger-text: var(--craftwi-interactive-danger-text);
+  --craftui-danger: var(--craftwi-interactive-danger);
+  --craftui-input-background: var(--craftwi-ui-background-primary);
+  --craftui-input-border: var(--craftui-field);
+  --craftui-input-disabled-background: var(--craftui-field-disabled);
+  --craftui-nav-active-background: var(--craftwi-ui-nav-active-background);
+  --craftui-nav-disabled-text: var(--craftwi-ui-nav-disabled-text);
+  --craftui-nav-hover-text: var(--craftwi-ui-nav-hover-text);
+  --craftui-nav-text: var(--craftwi-ui-nav-text);
+  --craftui-primary-active: var(--craftwi-interactive-primary-active);
+  --craftui-primary-hover: var(--craftwi-interactive-primary-hover);
+  --craftui-primary-text: var(--craftwi-interactive-primary-text);
+  --craftui-primary: var(--craftwi-interactive-primary);
+  --craftui-spinner: var(--craftwi-ui-icon);
+
+  // Craft ID
+  --craftui-alert-background: var(--craftwi-ui-notice-background);
+  --craftui-alert-border: var(--craftwi-ui-notice-border);
+  --craftui-alert-text: var(--craftwi-ui-notice-text);
+  --craftui-badge-background: var(--craftwi-interactive-tertiary);
+  --craftui-badge-success-background: var(--craftwi-ui-success);
+  --craftui-badge-text: var(--craftwi-interactive-tertiary-text);
+  --craftui-btn-default-disabled-background: var(--craftwi-ui-background-secondary);
+  --craftui-card-danger-border: var(--craftwi-ui-danger);
+  --craftui-card-danger-header-background: var(--craftwi-ui-danger);
+  --craftui-card-danger-header-text: var(--craftui-text);
+  --craftui-card-element-border: var(--craftui-separator);
+  --craftui-card-header-background: var(--craftwi-ui-background-secondary);
+  --craftui-card-header-border: var(--craftui-separator);
+  --craftui-edition-badge-border: var(--craftui-separator);
+  --craftui-edition-badge-text: var(--craftwi-ui-secondary-text);
+  --craftui-icon: var(--craftwi-ui-icon);
+  --craftui-info-background: var(--craftwi-ui-info-background);
+  --craftui-info-border: var(--craftwi-ui-info-border);
+  --craftui-info-text: var(--craftwi-ui-info-text);
+  --craftui-link-hover: var(--craftwi-interactive-link-hover);
+  --craftui-link: var(--craftwi-interactive-link);
+  --craftui-warning-background: var(--craftwi-ui-warning-background);
+  --craftui-warning-border: var(--craftwi-ui-warning-border);
+  --craftui-warning-text: var(--craftwi-ui-warning-text);
+
+  // Craft Plugins
+  --craftui-background-primary-gradient-1: rgba(255, 255, 255, 0);
+  --craftui-background-primary-gradient-2: rgba(255, 255, 255, 1);
+
+  // Unused
+  --craftui-btn-default-active-background: var(--craftui-gray-400);
+
+  // High contrast
   &.high-contrast,
   &.theme-dark.high-contrast {
     --craftui-separator: var(--craftui-gray-600);
@@ -258,15 +374,16 @@ body {
 }
 
 body.theme-dark {
-  --craftui-opaque-separator: var(--craftui-white);
-  --craftui-background-primary: var(--craftui-gray-100);
   --craftui-background-primary-gradient-1: rgba(26, 32, 44, 0);
   --craftui-background-primary-gradient-2: rgba(26, 32, 44, 1);
+  --craftui-background-primary: var(--craftui-gray-100);
   --craftui-background-secondary: var(--craftui-gray-200);
+  --craftui-danger-text: var(--craftui-black);
   --craftui-input-background: var(--craftui-gray-200);
   --craftui-input-disabled-background: var(--craftui-gray-300);
+  --craftui-opaque-separator: var(--craftui-white);
   --craftui-primary-text: var(--craftui-black);
-  --craftui-danger-text: var(--craftui-black);
+  --craftui-shadow-3: rgba(255, 255, 255, 0.3);
 
   &.high-contrast {
   }
