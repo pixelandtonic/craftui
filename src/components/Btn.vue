@@ -127,6 +127,8 @@
 
             &:active {
                 @apply .cursor-pointer .bg-gray-600 .border-gray-600;
+                background-color: var(--craftui-interactive-secondary-active);
+                border-color: var(--craftui-interactive-secondary-active);
             }
         }
 
