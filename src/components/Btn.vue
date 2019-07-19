@@ -108,7 +108,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .px-4 .py-2 .rounded .bg-gray-200 .text-black .no-underline .border .border-solid .border-gray-200;
+        @apply .inline-block .px-4 .py-2 .rounded .bg-gray-200 .text-black .no-underline .border .border-solid .border-gray-200;
         background-color: var(--craftui-interactive-secondary);
         border-color: var(--craftui-interactive-secondary);
         color: var(--craftui-interactive-secondary-text);
