@@ -17,7 +17,7 @@ body {
   --craftui-text-inverse: var(--craftui-white);
   --craftui-text: var(--craftui-black);
   --craftui-warning-text: var(--craftui-orange-800);
-  
+
   // Backgrounds
   --craftui-danger-background: var(--craftui-red-200);
   --craftui-info-background: var(--craftui-blue-200);
@@ -99,7 +99,6 @@ body.theme-dark {
   --craftui-primary-background-gradient-1: rgba(26, 32, 44, 0);
   --craftui-primary-background-gradient-2: rgba(26, 32, 44, 1);
   --craftui-primary-background: var(--craftui-gray-100);
-  --craftui-primary-background: var(--craftui-gray-200);
   --craftui-secondary-background: var(--craftui-gray-200);
   --craftui-field-disabled: var(--craftui-gray-300);
   --craftui-interactive-danger-text: var(--craftui-black);
