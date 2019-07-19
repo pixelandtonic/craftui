@@ -98,7 +98,9 @@ body.theme-dark {
   --craftui-interactive-danger-text: var(--craftui-black);
   --craftui-interactive-primary-text: var(--craftui-black);
   --craftui-opaque-separator: var(--craftui-white);
-  --craftui-shadow-3: rgba(255, 255, 255, 0.3);
+  --craftui-shadow-1: var(--craftui-white);
+  --craftui-shadow-2: var(--craftui-100);
+  --craftui-shadow-3: var(--craftui-gray-400);
 
   &.high-contrast {
   }
