@@ -32,7 +32,7 @@ body {
   --craftui-warning-separator: var(--craftui-orange-400);
 
   // Field
-  --craftui-field-background: var(--craftui-gray-200);
+  --craftui-field-background: var(--craftui-gray-100);
   --craftui-field-border: var(--craftui-gray-500);
   --craftui-field-disabled-background: var(--craftui-gray-400);
   --craftui-field-disabled-border: var(--craftui-gray-500);
@@ -96,6 +96,7 @@ body.theme-dark {
   --craftui-primary-background-gradient-2: rgba(26, 32, 44, 1);
   --craftui-primary-background: var(--craftui-gray-100);
   --craftui-secondary-background: var(--craftui-gray-200);
+  --craftui-field-background: var(--craftui-gray-200);
   --craftui-field-disabled-background: var(--craftui-gray-300);
   --craftui-interactive-danger-text: var(--craftui-black);
   --craftui-interactive-primary-text: var(--craftui-black);
