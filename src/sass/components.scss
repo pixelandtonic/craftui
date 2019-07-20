@@ -56,14 +56,15 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  background-color: var(--craftui-primary-background);
-  border-color: var(--craftui-field);
   @apply .bg-white .border .border-gray-500 .px-3 py-2 .rounded .block .leading-tight;
+  background-color: var(--craftui-field-background);
+  border-color: var(--craftui-field-border);
 
   &:disabled,
   &[readonly] {
     @apply .bg-gray-100;
-    background-color: var(--craftui-field-disabled);
+    background-color: var(--craftui-field-disabled-background);
+    border-color: var(--craftui-field-disabled-border);
   }
 
   &.is-invalid {
