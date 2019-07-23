@@ -26,8 +26,8 @@ body {
   --craftui-danger-separator: var(--craftui-red-400);
   --craftui-info-separator: var(--craftui-blue-400);
   --craftui-notice-separator: var(--craftui-gray-500);
-  --craftui-opaque-separator: var(--craftui-gray-300);
-  --craftui-separator: var(--craftui-gray-400);
+  --craftui-opaque-separator: var(--craftui-gray-400);
+  --craftui-separator: var(--craftui-gray-300);
   --craftui-success-separator: var(--craftui-green-400);
   --craftui-warning-separator: var(--craftui-orange-400);
 
@@ -85,7 +85,7 @@ body {
   // High contrast
   &.high-contrast,
   &.theme-dark.high-contrast {
-    --craftui-separator: var(--craftui-gray-600);
+    --craftui-separator: var(--craftui-gray-500);
     --craftui-opaque-separator: var(--craftui-gray-500);
   }
 }
