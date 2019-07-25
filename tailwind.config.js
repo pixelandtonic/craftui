@@ -1,5 +1,4 @@
 const { borderColor } = require('tailwindcss/defaultTheme')
-
 const semanticTailwindColors = require('./src/semanticTailwindColors')
 const semanticColors = require('./src/semanticColors')
 
@@ -23,43 +22,38 @@ module.exports = {
     plugins: [
         // Add base styles
         function({ addBase}) {
-            let lightLowContrastColors = {}
-
-            for (let key in semanticColors.light.lowContrast) {
-                if (semanticColors.light.lowContrast.hasOwnProperty(key)) {
-                    lightLowContrastColors['--craftui-'+key] = semanticColors.light.lowContrast[key]
-                }
+            let baseStyleColors = {
+                light: {},
+                highContrast: {},
+                dark: {},
+                darkHighContrast: {},
             }
 
-            let lightHighContrastColors = {}
+            for (let key in semanticColors) {
+                if (semanticColors.hasOwnProperty(key)) {
+                    if (semanticColors[key].light) {
+                        baseStyleColors.light['--craftui-'+key] = semanticColors[key].light
+                    }
 
-            for (let key in semanticColors.light.highContrast) {
-                if (semanticColors.light.highContrast.hasOwnProperty(key)) {
-                    lightHighContrastColors['--craftui-'+key] = semanticColors.light.highContrast[key]
-                }
-            }
+                    if (semanticColors[key].highContrast) {
+                        baseStyleColors.highContrast['--craftui-'+key] = semanticColors[key].highContrast
+                    }
 
-            let darkLowContrastColors = {}
+                    if (semanticColors[key].dark) {
+                        baseStyleColors.dark['--craftui-'+key] = semanticColors[key].dark
+                    }
 
-            for (let key in semanticColors.dark.lowContrast) {
-                if (semanticColors.dark.lowContrast.hasOwnProperty(key)) {
-                    darkLowContrastColors['--craftui-'+key] = semanticColors.dark.lowContrast[key]
-                }
-            }
-
-            let darkHighContrastColors = {}
-
-            for (let key in semanticColors.dark.highContrast) {
-                if (semanticColors.dark.highContrast.hasOwnProperty(key)) {
-                    darkHighContrastColors['--craftui-'+key] = semanticColors.dark.highContrast[key]
+                    if (semanticColors[key].darkHighContrast) {
+                        baseStyleColors.darkHighContrast['--craftui-'+key] = semanticColors[key].darkHighContrast
+                    }
                 }
             }
 
             addBase({
-                'body': lightLowContrastColors,
-                'body.high-contrast, body.theme-dark.high-contrast': lightHighContrastColors,
-                'body.theme-dark': darkLowContrastColors,
-                'body.theme-dark.high-contrast': darkHighContrastColors,
+                'body': baseStyleColors.light,
+                'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
+                'body.theme-dark': baseStyleColors.dark,
+                'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
             })
         },
 

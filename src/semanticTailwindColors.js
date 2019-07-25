@@ -1,10 +1,9 @@
-// const { colors } = require('tailwindcss/defaultTheme')
 const semanticColors = require('./semanticColors')
 
 let semanticTailwindColors = {};
 
-for (let key in semanticColors.light.lowContrast) {
-    if (semanticColors.light.lowContrast.hasOwnProperty(key)) {
+for (let key in semanticColors) {
+    if (semanticColors.hasOwnProperty(key)) {
         semanticTailwindColors[key] = 'var(--craftui-'+key+')'
     }
 }

@@ -1,95 +1,203 @@
-// const { colors } = require('tailwindcss/defaultTheme')
-// 'danger'': 'colors.green['600']',
 module.exports = {
-    light: {
-        lowContrast: {
-            'danger': 'var(--craftui-red-600)',
-            'danger-background': 'var(--craftui-red-200)',
-            'danger-separator': 'var(--craftui-red-400)',
-            'danger-text': 'var(--craftui-red-800)',
-            'dark-text': 'var(--craftui-gray-800)',
-            'field-background': 'var(--craftui-primary-background)',
-            'field-disabled-background': 'var(--craftui-gray-200)',
-            'field-disabled-separator': 'var(--craftui-gray-500)',
-            'field-separator': 'var(--craftui-gray-500)',
-            'icon': 'var(--craftui-gray-500)',
-            'info': 'var(--craftui-blue-600)',
-            'info-background': 'var(--craftui-blue-200)',
-            'info-separator': 'var(--craftui-blue-400)',
-            'info-text': 'var(--craftui-blue-800)',
-            'interactive-danger': 'var(--craftui-red-600)',
-            'interactive-danger-active': 'var(--craftui-red-800)',
-            'interactive-danger-hover': 'var(--craftui-red-700)',
-            'interactive-link': 'var(--craftui-blue-600)',
-            'interactive-link-hover': 'var(--craftui-blue-800)',
-            'interactive-nav-active-background': 'var(--craftui-gray-300)',
-            'interactive-nav-disabled-text': 'var(--craftui-gray-500)',
-            'interactive-nav-hover-text': 'var(--craftui-blue-500)',
-            'interactive-nav-text': 'var(--craftui-gray-800)',
-            'interactive-primary': 'var(--craftui-blue-500)',
-            'interactive-primary-active': 'var(--craftui-blue-800)',
-            'interactive-primary-hover': 'var(--craftui-blue-600)',
-            'interactive-secondary': 'var(--craftui-gray-200)',
-            'interactive-secondary-active': 'var(--craftui-gray-400)',
-            'interactive-secondary-hover': 'var(--craftui-gray-300)',
-            'interactive-success': 'var(--craftui-green-500)',
-            'interactive-success-active': 'var(--craftui-green-800)',
-            'interactive-success-hover': 'var(--craftui-green-600)',
-            'interactive-tertiary': 'var(--craftui-gray-600)',
-            'interactive-tertiary-active': 'var(--craftui-gray-900)',
-            'interactive-tertiary-hover': 'var(--craftui-gray-700)',
-            'interactive-text': 'var(--craftui-black)',
-            'interactive-text-inverse': 'var(--craftui-white)',
-            'light-text': 'var(--craftui-gray-500)',
-            'notice': 'var(--craftui-gray-600)',
-            'notice-background': 'var(--craftui-gray-400)',
-            'notice-separator': 'var(--craftui-gray-500)',
-            'notice-text': 'var(--craftui-gray-800)',
-            'opaque-separator': 'var(--craftui-gray-400)',
-            'primary-background': 'var(--craftui-white)',
-            'primary-background-gradient-1': 'rgba(255, 255, 255, 0)',
-            'primary-background-gradient-2': 'rgba(255, 255, 255, 1)',
-            'secondary-background': 'var(--craftui-gray-100)',
-            'separator': 'var(--craftui-gray-300)',
-            'shadow-1': 'var(--craftui-gray-400)',
-            'shadow-2': 'var(--craftui-gray-200)',
-            'shadow-3': 'var(--craftui-gray-400)',
-            'success': 'var(--craftui-green-600)',
-            'success-background': 'var(--craftui-green-200)',
-            'success-separator': 'var(--craftui-green-400)',
-            'success-text': 'var(--craftui-green-800)',
-            'text': 'var(--craftui-black)',
-            'text-inverse': 'var(--craftui-white)',
-            'warning': 'var(--craftui-orange-600)',
-            'warning-background': 'var(--craftui-orange-200)',
-            'warning-separator': 'var(--craftui-orange-400)',
-            'warning-text': 'var(--craftui-orange-800)',
-        },
-        highContrast: {
-            'opaque-separator': 'var(--craftui-gray-500)',
-            'separator': 'var(--craftui-gray-500)',
-        },
+    'danger': {
+        light: 'var(--craftui-red-600)',
     },
-    dark: {
-        lowContrast: {
-            'field-background': 'var(--craftui-gray-200)',
-            'field-disabled-background': 'var(--craftui-gray-300)',
-            'interactive-danger': 'var(--craftui-red-400)',
-            'interactive-danger-active': 'var(--craftui-red-200)',
-            'interactive-danger-hover': 'var(--craftui-red-300)',
-            'interactive-text-inverse': 'var(--craftui-black)',
-            'opaque-separator': 'var(--craftui-white)',
-            'primary-background': 'var(--craftui-gray-100)',
-            'primary-background-gradient-1': 'rgba(26, 32, 44, 0)',
-            'primary-background-gradient-2': 'rgba(26, 32, 44, 1)',
-            'secondary-background': 'var(--craftui-gray-200)',
-            'shadow-1': 'var(--craftui-white)',
-            'shadow-2': 'var(--craftui-100)',
-            'shadow-3': 'var(--craftui-gray-400)',
-        },
-        highContrast: {
-            'opaque-separator': 'var(--craftui-gray-500)',
-            'separator': 'var(--craftui-gray-500)',
-        },
+    'danger-background': {
+        light: 'var(--craftui-red-200)',
+    },
+    'danger-separator': {
+        light: 'var(--craftui-red-400)',
+    },
+    'danger-text': {
+        light: 'var(--craftui-red-800)',
+    },
+    'dark-text': {
+        light: 'var(--craftui-gray-800)',
+    },
+    'field-background': {
+        light: 'var(--craftui-primary-background)',
+        dark: 'var(--craftui-gray-200)',
+    },
+    'field-disabled-background': {
+        light: 'var(--craftui-gray-200)',
+        dark: 'var(--craftui-gray-300)',
+    },
+    'field-disabled-separator': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'field-separator': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'icon': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'info': {
+        light: 'var(--craftui-blue-600)',
+    },
+    'info-background': {
+        light: 'var(--craftui-blue-200)',
+    },
+    'info-separator': {
+        light: 'var(--craftui-blue-400)',
+    },
+    'info-text': {
+        light: 'var(--craftui-blue-800)',
+    },
+    'interactive-danger': {
+        light: 'var(--craftui-red-600)',
+        dark: 'var(--craftui-red-400)',
+    },
+    'interactive-danger-active': {
+        light: 'var(--craftui-red-800)',
+        dark: 'var(--craftui-red-200)',
+    },
+    'interactive-danger-hover': {
+        light: 'var(--craftui-red-700)',
+        dark: 'var(--craftui-red-300)',
+    },
+    'interactive-link': {
+        light: 'var(--craftui-blue-600)',
+    },
+    'interactive-link-hover': {
+        light: 'var(--craftui-blue-800)',
+    },
+    'interactive-nav-active-background': {
+        light: 'var(--craftui-gray-300)',
+    },
+    'interactive-nav-disabled-text': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'interactive-nav-hover-text': {
+        light: 'var(--craftui-blue-500)',
+    },
+    'interactive-nav-text': {
+        light: 'var(--craftui-gray-800)',
+    },
+    'interactive-primary': {
+        light: 'var(--craftui-blue-500)',
+    },
+    'interactive-primary-active': {
+        light: 'var(--craftui-blue-800)',
+    },
+    'interactive-primary-hover': {
+        light: 'var(--craftui-blue-600)',
+    },
+    'interactive-secondary': {
+        light: 'var(--craftui-gray-200)',
+    },
+    'interactive-secondary-active': {
+        light: 'var(--craftui-gray-400)',
+    },
+    'interactive-secondary-hover': {
+        light: 'var(--craftui-gray-300)',
+    },
+    'interactive-success': {
+        light: 'var(--craftui-green-500)',
+    },
+    'interactive-success-active': {
+        light: 'var(--craftui-green-800)',
+    },
+    'interactive-success-hover': {
+        light: 'var(--craftui-green-600)',
+    },
+    'interactive-tertiary': {
+        light: 'var(--craftui-gray-600)',
+    },
+    'interactive-tertiary-active': {
+        light: 'var(--craftui-gray-900)',
+    },
+    'interactive-tertiary-hover': {
+        light: 'var(--craftui-gray-700)',
+    },
+    'interactive-text': {
+        light: 'var(--craftui-black)',
+    },
+    'interactive-text-inverse': {
+        light: 'var(--craftui-white)',
+        dark: 'var(--craftui-black)',
+    },
+    'light-text': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'notice': {
+        light: 'var(--craftui-gray-600)',
+    },
+    'notice-background': {
+        light: 'var(--craftui-gray-400)',
+    },
+    'notice-separator': {
+        light: 'var(--craftui-gray-500)',
+    },
+    'notice-text': {
+        light: 'var(--craftui-gray-800)',
+    },
+    'opaque-separator': {
+        light: 'var(--craftui-gray-400)',
+        highContrast: 'var(--craftui-gray-500)',
+        dark: 'var(--craftui-white)',
+        darkHighContrast: 'var(--craftui-gray-500)',
+    },
+    'primary-background': {
+        light: 'var(--craftui-white)',
+        dark: 'var(--craftui-gray-100)',
+    },
+    'primary-background-gradient-1': {
+        light: 'rgba(255, 255, 255, 0)',
+        dark: 'rgba(26, 32, 44, 0)',
+    },
+    'primary-background-gradient-2': {
+        light: 'rgba(255, 255, 255, 1)',
+        dark: 'rgba(26, 32, 44, 1)',
+    },
+    'secondary-background': {
+        light: 'var(--craftui-gray-100)',
+        dark: 'var(--craftui-gray-200)',
+    },
+    'separator': {
+        light: 'var(--craftui-gray-300)',
+        highContrast: 'var(--craftui-gray-500)',
+        darkHighContrast: 'var(--craftui-gray-500)',
+    },
+    'shadow-1': {
+        light: 'var(--craftui-gray-400)',
+        dark: 'var(--craftui-white)',
+    },
+    'shadow-2': {
+        light: 'var(--craftui-gray-200)',
+        dark: 'var(--craftui-100)',
+    },
+    'shadow-3': {
+        light: 'var(--craftui-gray-400)',
+        dark: 'var(--craftui-gray-400)',
+    },
+    'success': {
+        light: 'var(--craftui-green-600)',
+    },
+    'success-background': {
+        light: 'var(--craftui-green-200)',
+    },
+    'success-separator': {
+        light: 'var(--craftui-green-400)',
+    },
+    'success-text': {
+        light: 'var(--craftui-green-800)',
+    },
+    'text': {
+        light: 'var(--craftui-black)',
+    },
+    'text-inverse': {
+        light: 'var(--craftui-white)',
+    },
+    'warning': {
+        light: 'var(--craftui-orange-600)',
+    },
+    'warning-background': {
+        light: 'var(--craftui-orange-200)',
+    },
+    'warning-separator': {
+        light: 'var(--craftui-orange-400)',
+    },
+    'warning-text': {
+        light: 'var(--craftui-orange-800)',
     },
 }
