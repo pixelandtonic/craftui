@@ -2,7 +2,6 @@ module.exports = {
     'danger-background': 'var(--craftui-danger-background)',
     'danger-separator': 'var(--craftui-danger-separator)',
     'danger-support': 'var(--craftui-danger-support)',
-    'danger-support-text': 'var(--craftui-danger-support-text)',
     'danger-text': 'var(--craftui-danger-text)',
     'dark-text': 'var(--craftui-dark-text)',
     'field-background': 'var(--craftui-field-background)',
