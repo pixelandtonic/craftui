@@ -1,5 +1,4 @@
 module.exports = {
-    'danger': 'var(--craftui-danger)',
     'danger-background': 'var(--craftui-danger-background)',
     'danger-separator': 'var(--craftui-danger-separator)',
     'danger-support': 'var(--craftui-danger-support)',
