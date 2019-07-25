@@ -108,7 +108,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .inline-block .px-4 .py-2 .rounded .bg-interactive-secondary .text-interactive-secondary-text .no-underline .border .border-solid .border-interactive-secondary;
+        @apply .inline-block .px-4 .py-2 .rounded .bg-interactive-secondary .text-interactive-text .no-underline .border .border-solid .border-interactive-secondary;
 
         &:not(.outline) {
             @apply .shadow;
@@ -152,7 +152,7 @@
         }
 
         &.primary:not(.outline) {
-            @apply .bg-interactive-primary .border-interactive-primary .text-interactive-primary-text;
+            @apply .bg-interactive-primary .border-interactive-primary .text-interactive-text-inverse;
 
             &:not([disabled]) {
                 &:hover {
@@ -166,7 +166,7 @@
         }
 
         &.danger {
-            @apply .bg-interactive-danger .border-interactive-danger .text-interactive-danger-text;
+            @apply .bg-interactive-danger .border-interactive-danger .text-interactive-text-inverse;
 
             &:not([disabled]) {
                 &:hover {

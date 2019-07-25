@@ -48,11 +48,11 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  @apply .bg-field-background .border .border-field-border .px-3 py-2 .rounded .block .leading-tight;
+  @apply .bg-field-background .border .border-field-separator .px-3 py-2 .rounded .block .leading-tight;
 
   &:disabled,
   &[readonly] {
-    @apply .bg-field-disabled-background .border-field-disabled-border;
+    @apply .bg-field-disabled-background .border-field-disabled-separator;
   }
 
   &.is-invalid {

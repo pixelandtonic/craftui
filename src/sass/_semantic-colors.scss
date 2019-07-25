@@ -33,9 +33,9 @@ body {
 
   // Field
   --craftui-field-background: var(--craftui-primary-background);
-  --craftui-field-border: var(--craftui-gray-500);
+  --craftui-field-separator: var(--craftui-gray-500);
   --craftui-field-disabled-background: var(--craftui-gray-200);
-  --craftui-field-disabled-border: var(--craftui-gray-500);
+  --craftui-field-disabled-separator: var(--craftui-gray-500);
 
   // Icon
   --craftui-icon: var(--craftui-gray-500);
@@ -49,30 +49,28 @@ body {
   --craftui-shadow-3: var(--craftui-gray-400);
 
   // Interactive
+  --craftui-interactive-text: var(--craftui-black);
+  --craftui-interactive-text-inverse: var(--craftui-white);
+
   --craftui-interactive-primary: var(--craftui-blue-500);
   --craftui-interactive-primary-active: var(--craftui-blue-800);
   --craftui-interactive-primary-hover: var(--craftui-blue-600);
-  --craftui-interactive-primary-text: var(--craftui-white);
 
   --craftui-interactive-secondary: var(--craftui-gray-200);
   --craftui-interactive-secondary-active: var(--craftui-gray-400);
   --craftui-interactive-secondary-hover: var(--craftui-gray-300);
-  --craftui-interactive-secondary-text: var(--craftui-black);
 
   --craftui-interactive-tertiary: var(--craftui-gray-600);
   --craftui-interactive-tertiary-active: var(--craftui-gray-900);
   --craftui-interactive-tertiary-hover: var(--craftui-gray-700);
-  --craftui-interactive-tertiary-text: var(--craftui-white);
 
   --craftui-interactive-danger: var(--craftui-red-600);
   --craftui-interactive-danger-active: var(--craftui-red-800);
   --craftui-interactive-danger-hover: var(--craftui-red-700);
-  --craftui-interactive-danger-text: var(--craftui-white);
 
   --craftui-interactive-success: var(--craftui-green-500);
   --craftui-interactive-success-active: var(--craftui-green-800);
   --craftui-interactive-success-hover: var(--craftui-green-600);
-  --craftui-interactive-success-text: var(--craftui-white);
 
   --craftui-interactive-link: var(--craftui-blue-600);
   --craftui-interactive-link-hover: var(--craftui-blue-800);
@@ -105,9 +103,9 @@ body.theme-dark {
   --craftui-interactive-danger: var(--craftui-red-400);
   --craftui-interactive-danger-active: var(--craftui-red-200);
   --craftui-interactive-danger-hover: var(--craftui-red-300);
-  --craftui-interactive-danger-text: var(--craftui-black);
 
-  --craftui-interactive-primary-text: var(--craftui-black);
+  --craftui-interactive-text-inverse: var(--craftui-black);
+
   --craftui-opaque-separator: var(--craftui-white);
   --craftui-shadow-1: var(--craftui-white);
   --craftui-shadow-2: var(--craftui-100);
