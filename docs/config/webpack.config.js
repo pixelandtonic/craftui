@@ -9,18 +9,6 @@ module.exports = ({config}) => {
             require.resolve("style-loader"),
             require.resolve("css-loader"),
             require.resolve("sass-loader"),
-            {
-                loader: require.resolve("postcss-loader"),
-                options: {
-                    // Enable source maps
-                    sourceMap: true,
-
-                    // Set postcss.config.js config path && ctx
-                    config: {
-                        path: './docs/config/',
-                    },
-                },
-            },
         ],
     });
     config.resolve.extensions.push(".scss");
