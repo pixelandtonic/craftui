@@ -1,8 +1,10 @@
 const { borderColor } = require('tailwindcss/defaultTheme')
 
+const semanticTailwindColors = require('./src/semanticTailwindColors')
 const semanticColors = require('./src/semanticColors')
 
 module.exports = {
+    // Variants
     variants: {
         backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     },
@@ -10,15 +12,57 @@ module.exports = {
     // Extend colors
     theme: {
         extend: {
-            colors: semanticColors,
+            colors: semanticTailwindColors,
             borderColor: {
                 ...borderColor,
-                default: semanticColors['separator']
+                default: semanticTailwindColors['separator']
             }
         }
     },
 
     plugins: [
+        // Add base styles
+        function({ addBase}) {
+            let lightLowContrastColors = {}
+
+            for (let key in semanticColors.light.lowContrast) {
+                if (semanticColors.light.lowContrast.hasOwnProperty(key)) {
+                    lightLowContrastColors['--craftui-'+key] = semanticColors.light.lowContrast[key]
+                }
+            }
+
+            let lightHighContrastColors = {}
+
+            for (let key in semanticColors.light.highContrast) {
+                if (semanticColors.light.highContrast.hasOwnProperty(key)) {
+                    lightHighContrastColors['--craftui-'+key] = semanticColors.light.highContrast[key]
+                }
+            }
+
+            let darkLowContrastColors = {}
+
+            for (let key in semanticColors.dark.lowContrast) {
+                if (semanticColors.dark.lowContrast.hasOwnProperty(key)) {
+                    darkLowContrastColors['--craftui-'+key] = semanticColors.dark.lowContrast[key]
+                }
+            }
+
+            let darkHighContrastColors = {}
+
+            for (let key in semanticColors.dark.highContrast) {
+                if (semanticColors.dark.highContrast.hasOwnProperty(key)) {
+                    darkHighContrastColors['--craftui-'+key] = semanticColors.dark.highContrast[key]
+                }
+            }
+
+            addBase({
+                'body': lightLowContrastColors,
+                'body.high-contrast, body.theme-dark.high-contrast': lightHighContrastColors,
+                'body.theme-dark': darkLowContrastColors,
+                'body.theme-dark.high-contrast': darkHighContrastColors,
+            })
+        },
+
         // Add components
         function({ addComponents, theme }) {
             const buttons = {
