@@ -108,10 +108,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .inline-block .px-4 .py-2 .rounded .bg-gray-200 .text-black .no-underline .border .border-solid .border-gray-200;
-        background-color: var(--craftui-interactive-secondary);
-        border-color: var(--craftui-interactive-secondary);
-        color: var(--craftui-interactive-secondary-text);
+        @apply .inline-block .px-4 .py-2 .rounded .bg-interactive-secondary .text-interactive-secondary-text .no-underline .border .border-solid .border-interactive-secondary;
 
         &:not(.outline) {
             @apply .shadow;
@@ -120,15 +117,11 @@
 
         &:not([disabled]) {
             &:hover {
-                @apply .cursor-pointer .bg-gray-500 .border-gray-500 .no-underline;
-                background-color: var(--craftui-interactive-secondary-hover);
-                border-color: var(--craftui-interactive-secondary-hover);
+                @apply .cursor-pointer .bg-interactive-secondary-hover .border-interactive-secondary-hover .no-underline;
             }
 
             &:active {
-                @apply .cursor-pointer .bg-gray-600 .border-gray-600;
-                background-color: var(--craftui-interactive-secondary-active);
-                border-color: var(--craftui-interactive-secondary-active);
+                @apply .cursor-pointer .bg-interactive-secondary-active .border-interactive-secondary-active;
             }
         }
 
@@ -159,43 +152,29 @@
         }
 
         &.primary:not(.outline) {
-            @apply .bg-blue-500 .border-blue-500 .text-white;
-            background-color: var(--craftui-interactive-primary);
-            border-color: var(--craftui-interactive-primary);
-            color: var(--craftui-interactive-primary-text);
+            @apply .bg-interactive-primary .border-interactive-primary .text-interactive-primary-text;
 
             &:not([disabled]) {
                 &:hover {
-                    @apply .bg-blue-600 .border-blue-600;
-                    background-color: var(--craftui-interactive-primary-hover);
-                    border-color: var(--craftui-interactive-primary-hover);
+                    @apply .bg-interactive-primary-hover .border-interactive-primary-hover;
                 }
 
                 &:active {
-                    @apply .bg-blue-800 .border-blue-800;
-                    background-color: var(--craftui-interactive-primary-active);
-                    border-color: var(--craftui-interactive-primary-active);
+                    @apply .bg-interactive-primary-active .border-interactive-primary-active;
                 }
             }
         }
 
         &.danger {
-            @apply .bg-red-500 .border-red-500 .text-white;
-            background-color: var(--craftui-interactive-danger);
-            border-color: var(--craftui-interactive-danger);
-            color: var(--craftui-interactive-danger-text);
+            @apply .bg-interactive-danger .border-interactive-danger .text-interactive-danger-text;
 
             &:not([disabled]) {
                 &:hover {
-                    @apply .bg-red-600 .border-red-600;
-                    background-color: var(--craftui-interactive-danger-hover);
-                    border-color: var(--craftui-interactive-danger-hover);
+                    @apply .bg-interactive-danger-hover .border-interactive-danger-hover;
                 }
 
                 &:active {
-                    @apply .bg-red-800 .border-red-800;
-                    background-color: var(--craftui-interactive-danger-active);
-                    border-color: var(--craftui-interactive-danger-active);
+                    @apply .bg-interactive-danger-active .border-interactive-danger-active;
                 }
             }
         }

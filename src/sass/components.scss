@@ -34,9 +34,7 @@ label {
 }
 
 select {
-  @apply .border .border-gray-400 .bg-white;
-  background-color: var(--craftui-primary-background);
-  border-color: var(--craftui-separator);
+  @apply .border .border-separator .bg-primary-background;
   height: calc(2.25rem + 2px);
 }
 
@@ -50,23 +48,19 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-  @apply .bg-white .border .border-gray-500 .px-3 py-2 .rounded .block .leading-tight;
-  background-color: var(--craftui-field-background);
-  border-color: var(--craftui-field-border);
+  @apply .bg-field-background .border .border-field-border .px-3 py-2 .rounded .block .leading-tight;
 
   &:disabled,
   &[readonly] {
-    @apply .bg-gray-100;
-    background-color: var(--craftui-field-disabled-background);
-    border-color: var(--craftui-field-disabled-border);
+    @apply .bg-field-disabled-background .border-field-disabled-border;
   }
 
   &.is-invalid {
-    @apply .border-red-500;
+    @apply .border-danger-support;
   }
 
   &::placeholder {
-    color: var(--craftui-text);
+    @apply .text-text;
   }
 }
 
