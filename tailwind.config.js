@@ -3,6 +3,10 @@ const { borderColor } = require('tailwindcss/defaultTheme')
 const semanticColors = require('./src/semanticColors')
 
 module.exports = {
+    variants: {
+        backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    },
+
     // Extend colors
     theme: {
         extend: {
