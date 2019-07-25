@@ -41,8 +41,8 @@ body {
   --craftui-icon: var(--craftui-gray-500);
 
   // UI
-  --craftui-support-danger: var(--craftui-red-600);
-  --craftui-support-danger-text: var(--craftui-text-inverse);
+  --craftui-danger-support: var(--craftui-red-600);
+  --craftui-danger-support-text: var(--craftui-text-inverse);
   --craftui-danger: var(--craftui-red-500);
   --craftui-shadow-1: var(--craftui-gray-400);
   --craftui-shadow-2: var(--craftui-gray-200);
@@ -100,8 +100,8 @@ body.theme-dark {
   --craftui-field-background: var(--craftui-gray-200);
   --craftui-field-disabled-background: var(--craftui-gray-300);
 
-  --craftui-support-danger: var(--craftui-red-400);
-  --craftui-support-danger-text: var(--craftui-text);
+  --craftui-danger-support: var(--craftui-red-400);
+  --craftui-danger-support-text: var(--craftui-text);
   --craftui-interactive-danger: var(--craftui-red-400);
   --craftui-interactive-danger-active: var(--craftui-red-200);
   --craftui-interactive-danger-hover: var(--craftui-red-300);
