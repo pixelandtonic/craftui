@@ -24,7 +24,7 @@
 </template>
 
 <script>
-    import semanticColors from '../../../src/semanticTailwindColors'
+    import semanticColors from '../../../src/colors/semanticColors'
 
     export default {
         computed: {

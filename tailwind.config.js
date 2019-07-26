@@ -1,6 +1,8 @@
 const { borderColor } = require('tailwindcss/defaultTheme')
-const semanticTailwindColors = require('./src/semanticTailwindColors')
-const semanticColors = require('./src/semanticColors')
+const semanticTailwindColors = require('./src/colors/semanticTailwindColors')
+const semanticColors = require('./src/colors/semanticColors')
+
+
 
 module.exports = {
     // Variants
