@@ -226,6 +226,10 @@
             textarea {
                 @apply .bg-field-background .border .border-field-separator .px-3 py-2 .rounded .block .leading-tight;
 
+                &:focus {
+                    @apply .outline-none .shadow-outline;
+                }
+
                 &:disabled,
                 &[readonly] {
                     @apply .bg-field-disabled-background .border-field-disabled-separator;

@@ -110,7 +110,11 @@
     button.c-btn {
         @apply .inline-block .px-4 .py-2 .rounded .bg-interactive-secondary .text-interactive-text .no-underline .border .border-solid .border-interactive-secondary;
 
-        &:not(.outline) {
+        &:focus {
+            @apply .outline-none .shadow-outline;
+        }
+
+        &:not(.outline, :focus) {
             @apply .shadow;
             box-shadow: 0 1px 3px 0 var(--craftui-shadow-1), 0 1px 2px 0 var(--craftui-shadow-2);
         }
