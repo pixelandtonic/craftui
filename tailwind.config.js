@@ -23,7 +23,7 @@ module.exports = {
 
     plugins: [
         // Add base styles
-        function({ addBase}) {
+        function({addBase, theme}) {
             let baseStyleColors = {
                 light: {},
                 highContrast: {},
@@ -56,6 +56,10 @@ module.exports = {
                 'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
                 'body.theme-dark': baseStyleColors.dark,
                 'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
+                'label': {
+                    display: 'inline-block',
+                    marginBottom: theme('margin.1'),
+                },
             })
         },
 

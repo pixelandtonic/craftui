@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 
+@import "tailwind-system-colors";
 @import "mixins";
-@import "components";
 
 body {
   @apply .text-text;

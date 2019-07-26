@@ -62,15 +62,18 @@
     .c-dropdown {
         .c-dropdown-input {
             select {
+                @apply .border .border-separator .bg-primary-background;
+                height: calc(2.25rem + 2px);
+
                 &.w-full {
                     @apply .w-full;
                 }
             }
-        }
 
-        .is-invalid {
-            select {
-                @apply .border-red-500;
+            &.is-invalid {
+                select {
+                    @apply .border-red-500;
+                }
             }
         }
     }

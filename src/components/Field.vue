@@ -38,3 +38,22 @@
         },
     }
 </script>
+
+<style lang="scss">
+    .c-field {
+        margin-bottom: 1rem;
+
+        .instructions {
+            color: #8f98a3;
+        }
+
+        .invalid-feedback {
+            @apply .text-red-500 .text-sm .mt-2 .mb-4;
+        }
+
+        &.mono input,
+        &.mono textarea {
+            @apply .font-mono;
+        }
+    }
+</style>
