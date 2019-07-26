@@ -36,33 +36,3 @@ select {
   @apply .border .border-separator .bg-primary-background;
   height: calc(2.25rem + 2px);
 }
-
-
-/* Inputs */
-
-input[type="email"],
-input[type="text"],
-input[type="password"],
-input[type="tel"],
-input[type="url"],
-input[type="number"],
-textarea {
-  @apply .bg-field-background .border .border-field-separator .px-3 py-2 .rounded .block .leading-tight;
-
-  &:disabled,
-  &[readonly] {
-    @apply .bg-field-disabled-background .border-field-disabled-separator;
-  }
-
-  &.is-invalid {
-    @apply .border-danger;
-  }
-
-  &::placeholder {
-    @apply .text-text;
-  }
-}
-
-input[type="number"] {
-  width: 60px;
-}
