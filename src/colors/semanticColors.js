@@ -19,14 +19,17 @@ module.exports = {
         dark: 'var(--craftui-gray-200)',
     },
     'field-disabled-background': {
-        light: 'var(--craftui-gray-200)',
+        light: 'var(--craftui-gray-100)',
         dark: 'var(--craftui-gray-300)',
     },
     'field-disabled-separator': {
-        light: 'var(--craftui-gray-500)',
+        light: 'var(--craftui-gray-300)',
+        dark: 'var(--craftui-gray-400)',
+        highContrast: 'var(--craftui-gray-500)'
     },
     'field-separator': {
-        light: 'var(--craftui-gray-500)',
+        light: 'var(--craftui-gray-400)',
+        highContrast: 'var(--craftui-gray-500)'
     },
     'icon': {
         light: 'var(--craftui-gray-500)',
