@@ -52,10 +52,35 @@ module.exports = {
             }
 
             addBase({
+                // 'body': baseStyleColors.light,
+                // 'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
+                // 'body.theme-dark': baseStyleColors.dark,
+                // 'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
+                //
+                // `light` color scheme
                 'body': baseStyleColors.light,
-                'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
+
+                // `dark` color scheme
+                '@media (prefers-color-scheme: dark)': {
+                    'body': baseStyleColors.dark,
+                },
+
+                // `high` contrast
+                '@media (prefers-contrast: high)': {
+                    'body': baseStyleColors.highContrast,
+                },
+                '@media (prefers-color-scheme: dark) and (prefers-contrast: high)': {
+                    'body': baseStyleColors.darkHighContrast,
+                },
+
+                // Add support for `.theme-dark` when browser don’t support `prefers-color-scheme`
                 'body.theme-dark': baseStyleColors.dark,
+
+                // Add support for `.high-contrast` when browser don’t support `prefers-contrast`
+                'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
                 'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
+
+                // Misc
                 'label': {
                     display: 'inline-block',
                     marginBottom: theme('margin.1'),
