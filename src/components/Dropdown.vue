@@ -2,7 +2,7 @@
     <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-dropdown">
         <div class="c-dropdown-input" :class="{'is-invalid': (errors && errors.length > 0)}">
             <div class="select">
-                <select :disabled="disabled" :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
+                <select :disabled="disabled" :value="value" :class="{ 'w-full': fullwidth }" @change="$emit('input', $event.target.value)">
                     <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
                 </select>
             </div>
