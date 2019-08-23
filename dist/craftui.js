@@ -489,7 +489,7 @@
     /* script */
     const __vue_script__$3 = script$3;
     /* template */
-    var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': (_vm.errors && _vm.errors.length > 0)}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },attrs:{"disabled":_vm.disabled},domProps:{"value":_vm.value},on:{"input":function($event){return _vm.$emit('input', $event.target[$event.target.selectedIndex].value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
+    var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('field',{staticClass:"c-dropdown",attrs:{"id":_vm.id + '-label',"label":_vm.label,"instructions":_vm.instructions,"errors":_vm.errors}},[_c('div',{staticClass:"c-dropdown-input",class:{'is-invalid': (_vm.errors && _vm.errors.length > 0)}},[_c('div',{staticClass:"select"},[_c('select',{class:{ 'w-full': _vm.fullwidth },attrs:{"disabled":_vm.disabled},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('input', $event.target.value)}}},_vm._l((_vm.options),function(option,key){return _c('option',{key:key,domProps:{"value":option.value}},[_vm._v(_vm._s(option.label))])}),0)])])])};
     var __vue_staticRenderFns__$3 = [];
 
       /* style */
