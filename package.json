@@ -4,6 +4,11 @@
   "main": "dist/craftui.js",
   "unpkg": "dist/craftui.min.js",
   "module": "dist/craftui.es.js",
+  "repository": {
+    "url": "git@github.com:pixelandtonic/craftui.git",
+    "type": "git"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "bili --config bili.config.js",
     "watch": "bili --config bili.config.js --watch",
