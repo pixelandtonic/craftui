@@ -39,7 +39,8 @@
     "rollup-plugin-vue": "^4.7.2",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.3",
-    "vue-template-compiler": "^2.6.7"
+    "vue-template-compiler": "^2.6.7",
+    "serialize-javascript": "1.6.1"
   },
   "eslintConfig": {
     "root": true,
