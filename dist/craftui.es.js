@@ -1024,6 +1024,13 @@ var script$8 = {
       }
     }
   },
+  watch: {
+    value: function value(newVal) {
+      if (this.$refs.input.value !== newVal) {
+        this.$refs.input.value = newVal;
+      }
+    }
+  },
   props: {
     autocapitalize: {
       type: Boolean,

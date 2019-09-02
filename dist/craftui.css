@@ -606,6 +606,14 @@ Keep it light, don't import Tailwind’s utilities.
 @tailwind utilities;
 */
 
+body.ltr .c-checkbox input {
+  margin-right: .5rem;
+}
+
+body.rtl .c-checkbox input {
+  margin-left: .5rem;
+}
+
 .c-btn,
 a.c-btn,
 button.c-btn {
@@ -999,12 +1007,17 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   cursor: default;
 }
 
-body.ltr .c-checkbox input {
+body.ltr .c-radio input {
   margin-right: .5rem;
 }
 
-body.rtl .c-checkbox input {
+body.rtl .c-radio input {
   margin-left: .5rem;
+}
+
+.c-radio .instructions {
+  color: #8795a1;
+  font-size: .875rem;
 }
 
 .c-spinner {
@@ -1057,19 +1070,6 @@ body.rtl .c-checkbox input {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
-}
-
-body.ltr .c-radio input {
-  margin-right: .5rem;
-}
-
-body.rtl .c-radio input {
-  margin-left: .5rem;
-}
-
-.c-radio .instructions {
-  color: #8795a1;
-  font-size: .875rem;
 }
 
 .c-textbox .wrapper {

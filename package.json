@@ -1,9 +1,14 @@
 {
   "name": "@pixelandtonic/craftui",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "main": "dist/craftui.js",
   "unpkg": "dist/craftui.min.js",
   "module": "dist/craftui.es.js",
+  "repository": {
+    "url": "git@github.com:pixelandtonic/craftui.git",
+    "type": "git"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "bili --config bili.config.js",
     "watch": "bili --config bili.config.js --watch",
@@ -39,7 +44,8 @@
     "rollup-plugin-vue": "^4.7.2",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.3",
-    "vue-template-compiler": "^2.6.7"
+    "vue-template-compiler": "^2.6.7",
+    "serialize-javascript": "1.6.1"
   },
   "eslintConfig": {
     "root": true,
