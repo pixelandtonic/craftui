@@ -13,7 +13,10 @@ module.exports = {
     // Extend colors
     theme: {
         extend: {
+            // Add semantic colors to the existing Tailwind color palette
             colors: semanticTailwindColors,
+
+            // Tweak border’s default color
             borderColor: {
                 ...borderColor,
                 default: semanticTailwindColors['separator']
@@ -22,8 +25,8 @@ module.exports = {
     },
 
     plugins: [
-        // Add base styles
         function({addBase, theme}) {
+            // Define CSS variables
             let baseStyleColors = {
                 light: {},
                 highContrast: {},
@@ -51,12 +54,8 @@ module.exports = {
                 }
             }
 
+            // Set colors for each context (light, dark, high contrast)
             addBase({
-                // 'body': baseStyleColors.light,
-                // 'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
-                // 'body.theme-dark': baseStyleColors.dark,
-                // 'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
-                //
                 // `light` color scheme
                 'body': baseStyleColors.light,
 
