@@ -4,7 +4,7 @@
 @import "mixins";
 
 body {
-  @apply .text-text;
+  @apply .bg-primary-background .text-text;
 }
 
 @tailwind utilities;
