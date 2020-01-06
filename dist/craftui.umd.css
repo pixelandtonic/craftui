@@ -1265,6 +1265,70 @@ body {
   }
 }
 
+body.theme-light {
+  --craftui-danger: #e53e3e;
+  --craftui-danger-background: #fed7d7;
+  --craftui-danger-separator: #fc8181;
+  --craftui-danger-text: #9b2c2c;
+  --craftui-dark-text: #2d3748;
+  --craftui-field-background: #fff;
+  --craftui-field-disabled-background: #f7fafc;
+  --craftui-field-disabled-separator: #e2e8f0;
+  --craftui-field-separator: #cbd5e0;
+  --craftui-icon: #a0aec0;
+  --craftui-info: #3182ce;
+  --craftui-info-background: #bee3f8;
+  --craftui-info-separator: #63b3ed;
+  --craftui-info-text: #2c5282;
+  --craftui-interactive-danger: #e53e3e;
+  --craftui-interactive-danger-active: #9b2c2c;
+  --craftui-interactive-danger-hover: #c53030;
+  --craftui-interactive-link: #3182ce;
+  --craftui-interactive-link-hover: #2c5282;
+  --craftui-interactive-nav-active-background: #e2e8f0;
+  --craftui-interactive-nav-disabled-text: #a0aec0;
+  --craftui-interactive-nav-hover-text: #4299e1;
+  --craftui-interactive-nav-text: #2d3748;
+  --craftui-interactive-primary: #4299e1;
+  --craftui-interactive-primary-active: #2c5282;
+  --craftui-interactive-primary-hover: #3182ce;
+  --craftui-interactive-secondary: #edf2f7;
+  --craftui-interactive-secondary-active: #cbd5e0;
+  --craftui-interactive-secondary-hover: #e2e8f0;
+  --craftui-interactive-success: #48bb78;
+  --craftui-interactive-success-active: #276749;
+  --craftui-interactive-success-hover: #38a169;
+  --craftui-interactive-tertiary: #718096;
+  --craftui-interactive-tertiary-active: #1a202c;
+  --craftui-interactive-tertiary-hover: #4a5568;
+  --craftui-interactive-text: #000;
+  --craftui-interactive-text-inverse: #fff;
+  --craftui-light-text: #a0aec0;
+  --craftui-notice: #718096;
+  --craftui-notice-background: #cbd5e0;
+  --craftui-notice-separator: #a0aec0;
+  --craftui-notice-text: #2d3748;
+  --craftui-opaque-separator: #cbd5e0;
+  --craftui-primary-background: #fff;
+  --craftui-primary-background-gradient-1: rgba(255, 255, 255, 0);
+  --craftui-primary-background-gradient-2: rgba(255, 255, 255, 1);
+  --craftui-secondary-background: #f7fafc;
+  --craftui-separator: #e2e8f0;
+  --craftui-shadow-1: #cbd5e0;
+  --craftui-shadow-2: #edf2f7;
+  --craftui-shadow-3: #cbd5e0;
+  --craftui-success: #38a169;
+  --craftui-success-background: #c6f6d5;
+  --craftui-success-separator: #68d391;
+  --craftui-success-text: #276749;
+  --craftui-text: #000;
+  --craftui-text-inverse: #fff;
+  --craftui-warning: #dd6b20;
+  --craftui-warning-background: #feebc8;
+  --craftui-warning-separator: #f6ad55;
+  --craftui-warning-text: #9c4221;
+}
+
 body.theme-dark {
   --craftui-danger: #fc8181;
   --craftui-danger-background: #9b2c2c;
@@ -1414,6 +1478,7 @@ label {
 }
 
 body {
+  background-color: var(--craftui-primary-background);
   color: var(--craftui-text);
 }
 
