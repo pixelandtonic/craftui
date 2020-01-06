@@ -72,7 +72,10 @@ module.exports = {
                     'body': baseStyleColors.darkHighContrast,
                 },
 
-                // Add support for `.theme-dark` when browser don’t support `prefers-color-scheme`
+                // Add support for `.theme-light` to force `light` context
+                'body.theme-light': baseStyleColors.light,
+
+                // Add support for `.theme-dark` to force `dark` context
                 'body.theme-dark': baseStyleColors.dark,
 
                 // Add support for `.high-contrast` when browser don’t support `prefers-contrast`
