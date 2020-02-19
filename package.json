@@ -5,11 +5,9 @@
   "unpkg": "dist/craftui.iife.min.js",
   "module": "dist/craftui.esm.min.js",
   "scripts": {
-    "build": "bili --config bili.config.js",
-    "watch": "bili --config bili.config.js --watch",
+    "build": "rollup --config",
     "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js start-storybook -p 6006 -c docs/config",
-    "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js build-storybook -c docs/config -o docs/dist",
-    "rollup": "rollup --config"
+    "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js build-storybook -c docs/config -o docs/dist"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -35,7 +33,6 @@
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "babel-preset-vue": "^2.0.2",
-    "bili": "^4.8.0",
     "node-sass": "^4.13.1",
     "rollup": "^1.29.1",
     "rollup-plugin-babel": "^4.3.0",
