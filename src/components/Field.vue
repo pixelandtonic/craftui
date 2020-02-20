@@ -44,6 +44,7 @@
         margin-bottom: 1rem;
 
         .instructions {
+            @apply .mb-4;
             color: #8f98a3;
         }
 
