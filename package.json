@@ -37,6 +37,7 @@
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-vue": "^5.1.6",
     "sass-loader": "^7.1.0",
+    "storybook-dark-mode": "^0.3.0",
     "tailwindcss": "^1.0.4",
     "vue-loader": "^15.9.0",
     "vue-template-compiler": "^2.6.11"
