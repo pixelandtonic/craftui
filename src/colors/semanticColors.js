@@ -113,7 +113,7 @@ module.exports = {
     },
     'interactive-secondary-active': {
         light: colors.gray[400],
-        dark: colors.gray[400],
+        dark: colors.gray[600],
     },
     'interactive-secondary-hover': {
         light: colors.gray[300],

@@ -1315,7 +1315,7 @@ body {
     --craftui-interactive-primary-active: #bee3f8;
     --craftui-interactive-primary-hover: #63b3ed;
     --craftui-interactive-secondary: #2d3748;
-    --craftui-interactive-secondary-active: #cbd5e0;
+    --craftui-interactive-secondary-active: #718096;
     --craftui-interactive-secondary-hover: #4a5568;
     --craftui-interactive-success: #48bb78;
     --craftui-interactive-success-active: #c6f6d5;
@@ -1460,7 +1460,7 @@ body.theme-dark {
   --craftui-interactive-primary-active: #bee3f8;
   --craftui-interactive-primary-hover: #63b3ed;
   --craftui-interactive-secondary: #2d3748;
-  --craftui-interactive-secondary-active: #cbd5e0;
+  --craftui-interactive-secondary-active: #718096;
   --craftui-interactive-secondary-hover: #4a5568;
   --craftui-interactive-success: #48bb78;
   --craftui-interactive-success-active: #c6f6d5;
