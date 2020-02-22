@@ -101,11 +101,11 @@ module.exports = {
     },
     'interactive-primary-active': {
         light: colors.blue[800],
-        dark: colors.blue[200],
+        dark: colors.blue[800],
     },
     'interactive-primary-hover': {
         light: colors.blue[600],
-        dark: colors.blue[400],
+        dark: colors.blue[600],
     },
     'interactive-secondary': {
         light: colors.gray[200],
