@@ -240,7 +240,7 @@
                 }
 
                 &::placeholder {
-                    @apply .text-text;
+                    @apply .text-light-text;
                 }
             }
 
