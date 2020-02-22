@@ -5,6 +5,7 @@ import BtnNotesMD from '../notes/Btn.md'
 
 export default {
     title: 'Components/Btn',
+    component: Btn,
     decorators: [withKnobs],
     parameters: {notes: {markdown: BtnNotesMD}},
 }

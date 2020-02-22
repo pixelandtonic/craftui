@@ -8,6 +8,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-notes/register',
     '@storybook/addon-viewport/register',
+    '@storybook/addon-docs',
     'storybook-dark-mode/register'
   ],
   webpackFinal: async (config, { configType }) => {
