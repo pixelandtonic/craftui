@@ -4,7 +4,7 @@ import {action} from '@storybook/addon-actions'
 import BtnNotesMD from '../notes/Btn.md'
 
 export default {
-    title: 'Components/Btn New',
+    title: 'Components/Btn',
     decorators: [withKnobs],
     parameters: {notes: {markdown: BtnNotesMD}},
 }
@@ -12,16 +12,16 @@ export default {
 export const Default = () => ({
     components: { Btn },
     template: `<btn 
-                        :icon="icon" 
-                        :block="block" 
-                        :small="small" 
-                        :large="large" 
-                        :outline="outline" 
-                        :kind="kind" 
-                        :disabled="disabled" 
-                        :loading="loading" 
-                        @click="action"
-                   >{{slotContent}}</btn>`,
+                    :icon="icon" 
+                    :block="block" 
+                    :small="small" 
+                    :large="large" 
+                    :outline="outline" 
+                    :kind="kind" 
+                    :disabled="disabled" 
+                    :loading="loading" 
+                    @click="action"
+               >{{slotContent}}</btn>`,
     props: {
         kind: {
             type: String,
