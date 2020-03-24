@@ -1,4 +1,4 @@
-import './sass/styles.scss'
+import './sass/styles.standalone.scss'
 import craftUi from './craftui.base'
 
 export default craftUi

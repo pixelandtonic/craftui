@@ -12,6 +12,7 @@ export default [
     'copy',
     'exclamation-circle',
     'exclamation-triangle',
+    'external-link',
     'glass-martini',
     'handshake',
     'heart',

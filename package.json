@@ -6,11 +6,13 @@
   "module": "dist/craftui.esm.min.js",
   "scripts": {
     "build": "rollup --config",
+    "watch": "rollup --config --watch",
     "serve:docs": "start-storybook -p 6006 -c docs/.storybook",
     "build:docs": "build-storybook -c docs/.storybook -o docs/dist"
   },
   "dependencies": {
     "@storybook/addon-knobs": "^5.3.13",
+    "@tailwindcss/ui": "^0.1.3",
     "vue": "^2.6.11",
     "vue-the-mask": "^0.11.1"
   },

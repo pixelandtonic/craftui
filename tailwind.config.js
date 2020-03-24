@@ -2,8 +2,6 @@ const { borderColor } = require('tailwindcss/defaultTheme')
 const semanticTailwindColors = require('./src/colors/semanticTailwindColors')
 const semanticColors = require('./src/colors/semanticColors')
 
-
-
 module.exports = {
     // Variants
     variants: {
@@ -25,6 +23,8 @@ module.exports = {
     },
 
     plugins: [
+        require('@tailwindcss/ui'),
+
         function({addBase, theme}) {
             // Define CSS variables
             let baseStyleColors = {
@@ -130,6 +130,17 @@ module.exports = {
             }
 
             addComponents(buttons)
+        },
+
+        // Override Tailwind UI utilities
+        function ({ addUtilities, theme }) {
+            const newUtility = {
+                '.form-select': {
+                    'border-radius': theme('borderRadius.default')
+                }
+            }
+
+            addUtilities(newUtility)
         }
     ]
 }
