@@ -1,10 +1,5 @@
-@tailwind base;
-@tailwind components;
-
 @import "mixins";
 
 body {
   @apply .bg-primary-background .text-text;
 }
-
-@tailwind utilities;
