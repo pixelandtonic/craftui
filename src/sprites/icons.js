@@ -15,7 +15,7 @@ export default [
     'external-link',
     'glass-martini',
     'handshake',
-    'heart
+    'heart',
     'image',
     'info-circle',
     'key',
