@@ -1,19 +1,25 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue'
+import {Pane} from '../../../dist/craftui.esm'
 import PaneNotesMD from '../notes/Pane.md'
-import {array, boolean, text} from '@storybook/addon-knobs';
+import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
-storiesOf('Components|Pane', module)
-    .add('Default', () => ({
-        template: `<pane :padded="padded">{{slot}}</pane>`,
-        props: {
-            padded: {
-                type: Boolean,
-                default: boolean('padded', true)
-            },
-            slot: {
-                type: String,
-                default: text('slot', 'Use the default slot to add an input or an element.')
-            },
+export default {
+    title: 'Components/Pane',
+    decorators: [withKnobs],
+    parameters: {notes: {markdown: PaneNotesMD}},
+}
+
+export const Default = () => ({
+    components: {Pane},
+    template: `
+        <pane :padded="padded">{{slot}}</pane>`,
+    props: {
+        padded: {
+            type: Boolean,
+            default: boolean('padded', true)
         },
-    }), { notes: { markdown: PaneNotesMD } })
+        slot: {
+            type: String,
+            default: text('slot', 'Use the default slot to add an input or an element.')
+        },
+    },
+})

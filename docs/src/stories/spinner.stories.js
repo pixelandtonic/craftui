@@ -1,15 +1,20 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue'
+import {Spinner} from '../../../dist/craftui.esm'
 import SpinnerNotesMD from '../notes/Spinner.md'
-import {select} from '@storybook/addon-knobs';
+import {withKnobs, select} from '@storybook/addon-knobs'
 
-storiesOf('Components|Spinner', module)
-    .add('Default', () => ({
-        template: `<spinner :size="size"></spinner>`,
-        props: {
-            size: {
-                type: String,
-                default: select('size', ['sm', 'base', 'lg'], 'base')
-            },
+export default {
+    title: 'Components/Spinner',
+    decorators: [withKnobs],
+    parameters: {notes: {markdown: SpinnerNotesMD}},
+}
+
+export const Default = () => ({
+    components: {Spinner},
+    template: `<spinner :size="size"></spinner>`,
+    props: {
+        size: {
+            type: String,
+            default: select('size', ['sm', 'base', 'lg'], 'base')
         },
-    }), { notes: { markdown: SpinnerNotesMD } })
+    },
+})
