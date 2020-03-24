@@ -20,7 +20,17 @@ module.exports = {
     // Make whatever fine-grained changes you need
     config.module.rules.push({
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader'],
+      use: ['style-loader', 'css-loader', 'sass-loader', {
+        loader: "postcss-loader",
+        options: {
+          ident: "postcss",
+          plugins: [
+            require("postcss-import"),
+            require("tailwindcss"),
+            require("autoprefixer")
+          ]
+        }
+      }],
       include: path.resolve(__dirname, '../src/sass/'),
     });
 
