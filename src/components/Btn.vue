@@ -108,7 +108,7 @@
     .c-btn,
     a.c-btn,
     button.c-btn {
-        @apply .inline-block .px-4 .py-2 .rounded .bg-interactive-secondary .text-interactive-text .no-underline .border .border-solid .border-interactive-secondary;
+        @apply .inline-block .px-4 .py-2 .text-sm .leading-5 .rounded .bg-interactive-secondary .text-interactive-text .no-underline .border .border-solid .border-interactive-secondary;
 
         &:focus {
             @apply .outline-none .shadow-outline;
@@ -134,7 +134,7 @@
         }
 
         &.small {
-            @apply .text-sm;
+            @apply .px-3 .leading-4;
 
             .c-icon {
                 width: 12px;
@@ -143,7 +143,7 @@
         }
 
         &.large {
-            @apply .text-lg .py-3;
+            @apply .text-base .leading-6;
         }
 
         &.primary,
