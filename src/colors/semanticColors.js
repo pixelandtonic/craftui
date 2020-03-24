@@ -23,7 +23,7 @@ module.exports = {
     },
     'field-background': {
         light: colors.white,
-        dark: colors.gray[800],
+        dark: colors.gray[700],
     },
     'field-disabled-background': {
         light: colors.gray[100],
@@ -79,45 +79,65 @@ module.exports = {
         light: colors.blue[800],
         dark: colors.blue[200],
     },
-    'interactive-nav-active-background': {
-        light: colors.gray[300],
-        dark: colors.gray[700],
+    'interactive-nav-item-text': {
+        light: colors.gray[600],
+        dark: colors.gray[400],
     },
-    'interactive-nav-disabled-text': {
-        light: colors.gray[500],
-        dark: colors.gray[500],
+    'interactive-nav-item-hover-text': {
+        light: colors.gray[900],
+        dark: colors.gray[100],
     },
-    'interactive-nav-hover-text': {
-        light: colors.blue[500],
-        dark: colors.blue[500],
+    'interactive-nav-item-active-text': {
+        light: colors.red[600],
+        dark: colors.red[600],
     },
-    'interactive-nav-text': {
-        light: colors.gray[800],
-        dark: colors.gray[200],
-    },
-    'interactive-primary': {
-        light: colors.blue[500],
-        dark: colors.blue[500],
-    },
-    'interactive-primary-active': {
-        light: colors.blue[800],
-        dark: colors.blue[800],
-    },
-    'interactive-primary-hover': {
-        light: colors.blue[600],
-        dark: colors.blue[600],
-    },
-    'interactive-secondary': {
-        light: colors.gray[200],
-        dark: colors.gray[800],
-    },
-    'interactive-secondary-active': {
+    'interactive-nav-item-disabled-text': {
         light: colors.gray[400],
         dark: colors.gray[600],
     },
-    'interactive-secondary-hover': {
+    'interactive-navbar-item-active-text': {
+        light: colors.gray[900],
+        dark: colors.gray[100],
+    },
+    'interactive-navbar-item-active-border': {
+        light: colors.red[600],
+        dark: colors.red[600],
+    },
+    'interactive-navbar-item-hover-border': {
+        light: colors.gray[400],
+        dark: colors.gray[600],
+    },
+    'interactive-navbar-item-hover-text': {
+        light: colors.gray[900],
+        dark: colors.gray[100],
+    },
+    'interactive-navbar-item-text': {
+        light: colors.gray[600],
+        dark: colors.gray[400],
+    },
+    'interactive-primary': {
+        light: colors.red[600],
+        dark: colors.red[600],
+    },
+    'interactive-primary-active': {
+        light: colors.red[800],
+        dark: colors.red[800],
+    },
+    'interactive-primary-hover': {
+        light: colors.red[700],
+        dark: colors.red[700],
+    },
+    'interactive-secondary': {
         light: colors.gray[300],
         dark: colors.gray[700],
+    },
+    'interactive-secondary-active': {
+        light: colors.gray[500],
+        dark: colors.gray[500],
+    },
+    'interactive-secondary-hover': {
+        light: colors.gray[400],
+        dark: colors.gray[600],
     },
     'interactive-success': {
         light: colors.green[500],
@@ -179,7 +199,7 @@ module.exports = {
     },
     'primary-background': {
         light: colors.white,
-        dark: colors.gray[900],
+        dark: colors.gray[800],
     },
     'primary-background-gradient-1': {
         light: 'rgba(255, 255, 255, 0)',
@@ -191,7 +211,11 @@ module.exports = {
     },
     'secondary-background': {
         light: colors.gray[100],
-        dark: colors.gray[800],
+        dark: colors.gray[900],
+    },
+    'tertiary-background': {
+        light: colors.gray[100],
+        dark: colors.gray[700],
     },
     'separator': {
         light: colors.gray[300],
@@ -250,5 +274,17 @@ module.exports = {
     'warning-text': {
         light: colors.orange[800],
         dark: colors.orange[200],
+    },
+    'default-background': {
+        light: colors.gray[300],
+        dark: colors.gray[800],
+    },
+    'default-separator': {
+        light: colors.gray[400],
+        dark: colors.gray[600],
+    },
+    'default-text': {
+        light: colors.gray[800],
+        dark: colors.gray[200],
     },
 }
