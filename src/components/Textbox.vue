@@ -1,15 +1,15 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-textbox">
+    <div class="c-textbox">
         <div class="wrapper">
             <component
+                    class="form-input block full sm:text-sm sm:leading-5"
                     :is="computedComponent"
-
                     :autocapitalize="autocapitalize"
                     :autocomplete="autocomplete"
                     :autofocus="autofocus"
                     :class="{
                         'w-full': !size,
-                        'is-invalid': errors && errors.length > 0,
+                        'is-invalid': invalid,
                         'text-red-600': max && max < this.value.length
                     }"
                     :cols="computedCols"
@@ -47,7 +47,7 @@
                     'text-red-500': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
-    </field>
+    </div>
 </template>
 
 <script>
@@ -86,9 +86,9 @@
                 type: Boolean,
                 default: false
             },
-            errors: {
-                type: Array | Boolean,
-                default: null
+            invalid: {
+                type: Boolean,
+                default: false
             },
             id: {
                 type: String,
@@ -206,7 +206,7 @@
             this.$on('focus', function() {
                 this.$refs.input.focus()
             })
-        }
+        },
     }
 </script>
 
@@ -224,7 +224,7 @@
             input[type="url"],
             input[type="number"],
             textarea {
-                @apply .bg-field-background .border .border-field-separator .px-3 py-2 .rounded .block .leading-tight;
+                @apply .bg-field-background .border .border-field-separator .rounded .block;
 
                 &:focus {
                     @apply .outline-none .shadow-outline;

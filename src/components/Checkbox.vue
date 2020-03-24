@@ -1,17 +1,22 @@
 <template>
-    <field :id="id" :errors="errors" class="c-checkbox">
-        <label>
+    <div class="c-checkbox relative flex items-start my-2">
+        <div class="absolute flex items-center h-5">
             <input type="checkbox"
+                   class="form-checkbox h-4 w-4"
                    :id="id"
                    :value="value"
                    :checked="state"
                    :disabled="disabled"
                    @change="onChange"
             />
+        </div>
 
-            {{ label }}
-        </label>
-    </field>
+        <div class="pl-7 text-sm leading-5">
+            <label class="mb-0" :for="id">
+                {{ label }}
+            </label>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -100,13 +105,3 @@
         },
     }
 </script>
-
-<style lang="scss">
-    @import "../sass/mixins";
-
-    .c-checkbox {
-        input {
-            @include mr(2);
-        }
-    }
-</style>

@@ -1,16 +1,31 @@
 <template>
-    <div :id="'field-' + id" class="c-field">
-        <label v-if="label" :for="id">{{label}}</label>
+    <div :id="'field-' + labelFor" class="c-field" :class="{
+        'sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start': horizontal,
+        'sm:border-t sm:border-separator sm:pt-5 mt-6 sm:mt-5': !first
+    }">
+        <div>
+            <label v-if="label" :for="labelFor" :class="{
+                'block text-sm font-medium leading-5 text-text sm:mt-px sm:pt-2': horizontal
+            }">{{label}}</label>
 
-        <div v-if="instructions" class="instructions">
-            <p>{{ instructions }}</p>
+            <div v-if="instructions" class="instructions">
+                <p>{{ instructions }}</p>
+            </div>
         </div>
 
-        <slot></slot>
+        <div class="mt-1 sm:mt-0 sm:col-span-2">
+            <div class="max-w-xs">
+                <slot></slot>
 
-        <template v-if="errors" v-for="(error, key) in errors">
-            <div class="invalid-feedback" :key="key">{{ error }}</div>
-        </template>
+                <template v-if="errors && errors.length > 0">
+                    <ul class="invalid-feedback">
+                        <template v-if="errors" v-for="(error, key) in errors">
+                            <li :key="key">{{ error }}</li>
+                        </template>
+                    </ul>
+                </template>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -21,7 +36,7 @@
                 type: Array | Boolean,
                 default: null,
             },
-            id: {
+            labelFor: {
                 type: String,
                 default: function () {
                     return 'c-field-id-' + this._uid;
@@ -35,6 +50,14 @@
                 type: String,
                 default: null,
             },
+            horizontal: {
+                type: Boolean,
+                default: true,
+            },
+            first: {
+                type: Boolean,
+                default: false,
+            }
         },
     }
 </script>
@@ -49,7 +72,7 @@
         }
 
         .invalid-feedback {
-            @apply .text-red-500 .text-sm .mt-2 .mb-4;
+            @apply .text-red-500 .text-sm mt-2 ml-5 list-disc;
         }
 
         &.mono input,

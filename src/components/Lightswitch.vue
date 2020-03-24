@@ -1,12 +1,12 @@
 <template>
-    <field :id="id" :label="label" :instructions="instructions" :errors="errors" class="c-lightswitch">
+    <div class="c-lightswitch mt-1">
         <div class="c-lightswitch-input">
             <label :for="id" class="lightswitch" :class="{disabled: disabled}">
                 <input :id="id" type="checkbox" :checked="checked" :disabled="disabled" @change="onChange" />
                 <div class="slider round"></div>
             </label>
         </div>
-    </field>
+    </div>
 </template>
 
 <script>
@@ -62,8 +62,8 @@
         .c-lightswitch-input {
             label {
                 @apply .relative .block .select-none;
-                width: 46px;
-                height: 30px;
+                width: 40px;
+                height: 24px;
 
                 input {
                     @apply .absolute .opacity-0;
@@ -79,8 +79,8 @@
                 .slider:before {
                     @apply .absolute .bg-white;
                     content: "";
-                    height: 26px;
-                    width: 26px;
+                    height: 20px;
+                    width: 20px;
                     @include left(2px);
                     bottom: 2px;
                     -webkit-transition: .1s;

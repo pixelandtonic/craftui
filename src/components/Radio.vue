@@ -1,17 +1,19 @@
 <template>
-    <field :id="id" :errors="errors" class="c-radio">
-        <label>
-            <input type="radio"
-                   :id="id"
-                   :value="value"
-                   :checked="state"
-                   :disabled="disabled"
-                   @change="onChange"
-            />
+    <div class="c-radio flex items-center my-2">
+        <input type="radio"
+               class="form-radio h-4 w-4"
+               :id="id"
+               :name="name"
+               :value="value"
+               :checked="state"
+               :disabled="disabled"
+               @change="onChange"
+        />
 
-            {{ label }}
+        <label :for="id" class="mb-0 pl-3 ml-0">
+            <span class="block text-sm leading-5 font-medium text-text">{{ label }}</span>
         </label>
-    </field>
+    </div>
 </template>
 
 <script>
@@ -39,6 +41,10 @@
                 default: function () {
                     return 'c-radio-id-' + this._uid;
                 },
+            },
+            name: {
+                type: String,
+                default: null,
             },
             instructions: {
                 type: String,
@@ -91,17 +97,3 @@
         },
     }
 </script>
-
-<style lang="scss">
-    @import "../sass/mixins";
-
-    .c-radio {
-        input {
-            @include mr(2);
-        }
-
-        .instructions {
-            @apply .text-gray-600 .text-sm;
-        }
-    }
-</style>

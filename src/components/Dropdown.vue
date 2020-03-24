@@ -1,13 +1,13 @@
 <template>
-    <field :id="id + '-label'" :label="label" :instructions="instructions" :errors="errors" class="c-dropdown">
-        <div class="c-dropdown-input" :class="{'is-invalid': (errors && errors.length > 0)}">
+    <div class="c-dropdown">
+        <div class="c-dropdown-input" :class="{'is-invalid': invalid}">
             <div class="select">
-                <select :disabled="disabled" :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
+                <select class="form-select sm:text-sm sm:leading-5" :disabled="disabled" :value="value" :class="{ 'w-full': fullwidth }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                     <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
                 </select>
             </div>
         </div>
-    </field>
+    </div>
 </template>
 
 
@@ -20,9 +20,9 @@
                 type: Boolean,
                 default: false,
             },
-            errors: {
-                type: Array | Boolean,
-                default: null,
+            invalid: {
+                type: Boolean,
+                default: false,
             },
             fullwidth: {
                 type: Boolean,
@@ -62,7 +62,7 @@
     .c-dropdown {
         .c-dropdown-input {
             select {
-                @apply .border .border-separator .bg-primary-background;
+                @apply .border .border-field-separator .bg-field-background;
                 height: calc(2.25rem + 2px);
 
                 &.w-full {
