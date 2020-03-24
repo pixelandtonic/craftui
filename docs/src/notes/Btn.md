@@ -22,6 +22,7 @@ https://github.com/pixelandtonic/craftui/blob/master/src/components/Btn.vue
 - disabled: If true disabled version of button. Optional.
 - outline: If true outline version of button. Optional.
 - icon: Optional.
+- trailingIcon: Optional.
 - loading: Optional.
 - to: Optional.
 - href: Optional.

@@ -16,9 +16,11 @@
         </template>
 
         <div class="c-btn-content">
-            <icon v-if="icon && icon.length > 0" :icon="icon" />
+            <icon v-if="icon && icon.length > 0" :icon="icon" size="sm" />
 
             <slot></slot>
+
+            <icon class="ml-1" v-if="trailingIcon && trailingIcon.length > 0" :icon="trailingIcon" size="sm" />
         </div>
     </component>
 </template>
@@ -57,6 +59,10 @@
                 default: false,
             },
             icon: {
+                type: String,
+                default: null,
+            },
+            trailingIcon: {
                 type: String,
                 default: null,
             },
