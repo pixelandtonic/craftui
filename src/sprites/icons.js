@@ -12,9 +12,10 @@ export default [
     'copy',
     'exclamation-circle',
     'exclamation-triangle',
+    'external-link',
     'glass-martini',
     'handshake',
-    'heart',
+    'heart
     'image',
     'info-circle',
     'key',
