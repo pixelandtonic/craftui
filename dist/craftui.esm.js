@@ -1772,4 +1772,4 @@ var craftUi = {
 };
 
 export default craftUi;
-export { __vue_component__$1 as Btn, __vue_component__$2 as Checkbox, __vue_component__$4 as Dropdown, __vue_component__$3 as Field, __vue_component__$5 as Icon, __vue_component__$6 as Lightswitch, __vue_component__$8 as Radio, __vue_component__$9 as Spinner, __vue_component__$a as Textbox };
+export { __vue_component__ as Badge, __vue_component__$1 as Btn, __vue_component__$2 as Checkbox, __vue_component__$4 as Dropdown, __vue_component__$3 as Field, __vue_component__$5 as Icon, __vue_component__$6 as Lightswitch, __vue_component__$7 as Pane, __vue_component__$8 as Radio, __vue_component__$9 as Spinner, __vue_component__$a as Textbox };

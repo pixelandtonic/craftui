@@ -25,3 +25,17 @@ const CraftComponents = {
 };
 
 export default CraftComponents;
+
+export {
+    Badge,
+    Btn,
+    Checkbox,
+    Dropdown,
+    Field,
+    Icon,
+    Lightswitch,
+    Pane,
+    Radio,
+    Spinner,
+    Textbox,
+}

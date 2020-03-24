@@ -1777,12 +1777,14 @@
       }
     };
 
+    exports.Badge = __vue_component__;
     exports.Btn = __vue_component__$1;
     exports.Checkbox = __vue_component__$2;
     exports.Dropdown = __vue_component__$4;
     exports.Field = __vue_component__$3;
     exports.Icon = __vue_component__$5;
     exports.Lightswitch = __vue_component__$6;
+    exports.Pane = __vue_component__$7;
     exports.Radio = __vue_component__$8;
     exports.Spinner = __vue_component__$9;
     exports.Textbox = __vue_component__$a;
