@@ -1,3 +1,4 @@
+import Badge from './Badge.vue';
 import Btn from './Btn.vue';
 import Checkbox from './Checkbox.vue';
 import Dropdown from './Dropdown.vue';
@@ -9,6 +10,7 @@ import Spinner from './Spinner.vue';
 import Textbox from './Textbox.vue';
 
 const CraftComponents = {
+    Badge,
     Btn,
     Checkbox,
     Dropdown,
