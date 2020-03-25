@@ -99,7 +99,19 @@ module.exports = plugin.withOptions(
                     borderColor: {
                         ...borderColor,
                         default: semanticTailwindColors['success']
-                    }
+                    },
+
+                    // Tweak custom form defaults
+                    customForms: theme => ({
+                        default: {
+                            input: {
+                                '&::placeholder': {
+                                    color: theme('colors.light-text'),
+                                    opacity: '1',
+                                },
+                            },
+                        },
+                    }),
                 }
             },
 

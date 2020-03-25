@@ -2,15 +2,19 @@
     <div class="c-textbox">
         <div class="wrapper">
             <component
-                    class="form-input block full sm:text-sm sm:leading-5"
+                    class="form-input block full sm:text-sm sm:leading-5 border rounded"
                     :is="computedComponent"
                     :autocapitalize="autocapitalize"
                     :autocomplete="autocomplete"
                     :autofocus="autofocus"
                     :class="{
-                        'w-full': !size,
-                        'is-invalid': invalid,
-                        'text-red-600': max && max < this.value.length
+                        'w-full': !size && type !== 'number',
+                        'w-16': type === 'number',
+                        'is-invalid border-danger': invalid,
+                        'border-field-separator': !invalid && !disabled,
+                        'text-red-600': max && max < this.value.length,
+                        'bg-field-disabled-background border-field-disabled-separator': disabled,
+                        'bg-field-background': !disabled
                     }"
                     :cols="computedCols"
                     :disabled="disabled"
@@ -202,74 +206,3 @@
     }
 </script>
 
-<style lang="scss">
-    @import "../sass/mixins";
-
-    .c-textbox {
-        .wrapper {
-            @apply .relative;
-
-            input[type="email"],
-            input[type="text"],
-            input[type="password"],
-            input[type="tel"],
-            input[type="url"],
-            input[type="number"],
-            textarea {
-                @apply .bg-field-background .border .border-field-separator .rounded .block;
-
-                &:focus {
-                    @apply .outline-none .shadow-outline;
-                }
-
-                &:disabled,
-                &[readonly] {
-                    @apply .bg-field-disabled-background .border-field-disabled-separator;
-                }
-
-                &.is-invalid {
-                    @apply .border-danger;
-                }
-
-                &::placeholder {
-                    @apply .text-light-text;
-                }
-            }
-
-            input[type="number"] {
-                width: 60px;
-            }
-
-            input.c-textbox {
-                &.w-full {
-                    @apply .w-full;
-                }
-            }
-
-            .text-red-600 {
-                @apply .text-red-600;
-            }
-
-            .max {
-                @apply .mt-2;
-                @include pr(1);
-
-                &.floating {
-                    @apply .absolute .text-xs .text-right;
-                }
-
-                &.text-gray-500 {
-                    @apply .text-gray-500;
-                }
-
-                &.text-orange-500 {
-                    @apply .text-orange-500;
-                }
-
-                &.text-red-500 {
-                    @apply .text-red-500;
-                }
-            }
-        }
-    }
-</style>

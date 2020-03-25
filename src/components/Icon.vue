@@ -1,6 +1,13 @@
 <template>
-    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="{
-        ['size-' + size]: true,
+    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon inline-block align-middle relative fill-current" :class="{
+        ['w-3 h-3']: size === 'sm',
+        ['w-4 h-4']: size === 'base',
+        ['w-5 h-5']: size === 'lg',
+        ['w-6 h-6']: size === 'xl',
+        ['w-8 h-8']: size === '2xl',
+        ['w-10 h-10']: size === '3xl',
+        ['w-12 h-12']: size === '4xl',
+        ['w-16 h-16']: size === '5xl',
     }">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + icon"></use>
     </svg>
@@ -27,51 +34,3 @@
     }
 </script>
 
-<style lang="scss">
-    .c-icon {
-        @apply .inline-block .align-middle .relative .fill-current;
-        top: -2px;
-        width: 18px;
-        height: 18px;
-
-        &.size-sm {
-            width: .75rem;
-            height: .75rem;
-        }
-
-        &.size-base {
-            width: 1rem;
-            height: 1rem;
-        }
-
-        &.size-lg {
-            width: 1.25rem;
-            height: 1.25rem;
-        }
-
-        &.size-xl {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
-        &.size-2xl {
-            width: 1.75rem;
-            height: 1.75rem;
-        }
-
-        &.size-3xl {
-            width: 2.25rem;
-            height: 2.25rem;
-        }
-
-        &.size-4xl {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        &.size-5xl {
-            width: 4rem;
-            height: 4rem;
-        }
-    }
-</style>

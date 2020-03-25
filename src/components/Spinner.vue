@@ -1,5 +1,5 @@
 <template>
-    <div class="c-spinner" :class="{
+    <div class="c-spinner inline-block" :class="{
         [size]: true
     }">
         <div class="animation"></div>
@@ -22,8 +22,6 @@
 
 <style lang="scss">
     .c-spinner {
-        @apply .inline-block;
-
         & > .animation {
             animation: rotator .7s linear infinite;
             width: 20px;

@@ -1,5 +1,5 @@
 <template>
-    <div :id="'field-' + labelFor" class="c-field" :class="{
+    <div :id="'field-' + labelFor" class="c-field mb-4" :class="{
         'sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start': horizontal,
         'sm:border-t sm:border-separator sm:pt-5 mt-6 sm:mt-5': !first
     }">
@@ -8,7 +8,7 @@
                 'block text-sm font-medium leading-5 text-text sm:mt-px sm:pt-2': horizontal
             }">{{label}}</label>
 
-            <div v-if="instructions" class="instructions">
+            <div v-if="instructions" class="instructions mb-4 text-light-text">
                 <p>{{ instructions }}</p>
             </div>
         </div>
@@ -18,7 +18,7 @@
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul class="invalid-feedback">
+                    <ul class="invalid-feedback text-red-500 text-sm mt-2 ml-5 list-disc">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>
@@ -61,23 +61,3 @@
         },
     }
 </script>
-
-<style lang="scss">
-    .c-field {
-        margin-bottom: 1rem;
-
-        .instructions {
-            @apply .mb-4;
-            color: #8f98a3;
-        }
-
-        .invalid-feedback {
-            @apply .text-red-500 .text-sm mt-2 ml-5 list-disc;
-        }
-
-        &.mono input,
-        &.mono textarea {
-            @apply .font-mono;
-        }
-    }
-</style>
