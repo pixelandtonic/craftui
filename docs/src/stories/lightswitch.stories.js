@@ -1,5 +1,5 @@
 import Lightswitch from '../../../src/components/Lightswitch'
-import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
+import {withKnobs, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Lightswitch',
@@ -13,7 +13,6 @@ export const Default = () => ({
         <lightswitch
                 :checked="checked"
                 :disabled="disabled"
-                :errors="errors"
                 :instructions="instructions"
                 :label="label"
         />`,
@@ -25,18 +24,6 @@ export const Default = () => ({
         disabled: {
             type: Boolean,
             default: boolean('disabled', false)
-        },
-        errors: {
-            type: Array,
-            default: array('errors', [])
-        },
-        instructions: {
-            type: String,
-            default: text('instructions', 'Some instructions.')
-        },
-        label: {
-            type: String,
-            default: text('label', 'Label')
         },
     },
 })

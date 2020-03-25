@@ -96,14 +96,6 @@
                     return 'c-textbox-id-' + this._uid;
                 },
             },
-            instructions: {
-                type: String,
-                default: null
-            },
-            label: {
-                type: String,
-                default: null
-            },
             mask: {
                 type: String | Object,
                 default: ''

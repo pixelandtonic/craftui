@@ -1,5 +1,5 @@
 import Textbox from '../../../src/components/Textbox'
-import {withKnobs, array, text} from '@storybook/addon-knobs'
+import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Textbox',
@@ -11,23 +11,15 @@ export default {
 export const Default = () => ({
     components: {Textbox},
     template: `<textbox
-            :errors="errors"
+            :invalid="invalid"
             :instructions="instructions"
             :label="label"
             :value="value"
     />`,
     props: {
-        errors: {
-            type: Array,
-            default: array('errors', [])
-        },
-        instructions: {
-            type: String,
-            default: text('instructions', 'Some instructions.')
-        },
-        label: {
-            type: String,
-            default: text('label', 'Label')
+        invalid: {
+            type: Boolean,
+            default: boolean('invalid', false)
         },
         value: {
             type: String,

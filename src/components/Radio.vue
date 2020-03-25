@@ -32,10 +32,6 @@
                 type: Boolean,
                 default: false,
             },
-            errors: {
-                type: Array | Boolean,
-                default: null,
-            },
             id: {
                 type: String,
                 default: function () {
@@ -43,10 +39,6 @@
                 },
             },
             name: {
-                type: String,
-                default: null,
-            },
-            instructions: {
                 type: String,
                 default: null,
             },

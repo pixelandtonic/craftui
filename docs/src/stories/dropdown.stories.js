@@ -1,5 +1,5 @@
 import Dropdown from '../../../src/components/Dropdown'
-import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
+import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Dropdown',
@@ -11,7 +11,7 @@ export const Default = () => ({
     components: {Dropdown},
     template: `<dropdown
             :disabled="disabled"
-            :errors="errors"
+            :invalid="invalid"
             :instructions="instructions"
             :label="label"
             :options="options"
@@ -40,17 +40,9 @@ export const Default = () => ({
             type: Boolean,
             default: boolean('disabled', false)
         },
-        errors: {
-            type: Array,
-            default: array('errors', [])
-        },
-        instructions: {
-            type: String,
-            default: text('instructions', 'Some instructions.')
-        },
-        label: {
-            type: String,
-            default: text('label', 'Label')
+        invalid: {
+            type: Boolean,
+            default: boolean('invalid', false)
         },
         value: {
             type: String,

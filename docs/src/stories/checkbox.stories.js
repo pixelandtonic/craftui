@@ -1,5 +1,5 @@
 import Checkbox from '../../../src/components/Checkbox'
-import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
+import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Checkbox',
@@ -13,7 +13,7 @@ export const Default = () => ({
         <checkbox
                 :checked="checked"
                 :disabled="disabled"
-                :errors="errors"
+                :invalid="invalid"
                 :label="label"
                 :value="value"
         />`,
@@ -26,9 +26,9 @@ export const Default = () => ({
             type: Boolean,
             default: boolean('disabled', false)
         },
-        errors: {
-            type: Array,
-            default: array('errors', [])
+        invalid: {
+            type: Boolean,
+            default: boolean('invalid', false)
         },
         label: {
             type: String,

@@ -11,7 +11,7 @@
             />
         </div>
 
-        <div class="pl-7 text-sm leading-5">
+        <div class="pl-7 text-sm leading-5" :class="{'text-danger': invalid}">
             <label class="mb-0" :for="id">
                 {{ label }}
             </label>
@@ -35,15 +35,15 @@
                 type: Boolean,
                 default: false,
             },
-            errors: {
-                type: Array | Boolean,
-                default: null,
-            },
             id: {
                 type: String,
                 default: function () {
                     return 'c-checkbox-id-' + this._uid;
                 },
+            },
+            invalid: {
+                type: Boolean,
+                default: false,
             },
             label: {
                 type: String,
