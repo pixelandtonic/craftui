@@ -15,7 +15,7 @@ export const Default = () => ({
                 :errors="errors"
                 :instructions="instructions"
                 :label="label"
-        >{{slot}}</field>`,
+        >{{slotContent}}</field>`,
     props: {
         errors: {
             type: Array,
@@ -29,7 +29,7 @@ export const Default = () => ({
             type: String,
             default: text('label', 'Label')
         },
-        slot: {
+        slotContent: {
             type: String,
             default: text('slot', 'Use the default slot to add an input or an element.')
         },

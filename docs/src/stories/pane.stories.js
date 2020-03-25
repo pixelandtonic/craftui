@@ -10,13 +10,13 @@ export default {
 export const Default = () => ({
     components: {Pane},
     template: `
-        <pane :padded="padded">{{slot}}</pane>`,
+        <pane :padded="padded">{{slotContent}}</pane>`,
     props: {
         padded: {
             type: Boolean,
             default: boolean('padded', true)
         },
-        slot: {
+        slotContent: {
             type: String,
             default: text('slot', 'Use the default slot to add an input or an element.')
         },
