@@ -86,6 +86,7 @@ module.exports = plugin.withOptions(
     function(options = {}) {
         return {
             variants: {
+                // Add `active` variant to `backgroundColor`
                 backgroundColor: ['responsive', 'hover', 'focus', 'active'],
             },
 
