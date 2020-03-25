@@ -11,15 +11,23 @@ export default {
 export const Default = () => ({
     components: {Textbox},
     template: `<textbox
+            :disabled="disabled"
             :invalid="invalid"
-            :instructions="instructions"
-            :label="label"
+            :placeholder="placeholder"
             :value="value"
     />`,
     props: {
+        disabled: {
+            type: Boolean,
+            default: boolean('disabled', false)
+        },
         invalid: {
             type: Boolean,
             default: boolean('invalid', false)
+        },
+        placeholder: {
+            type: String,
+            default: text('placeholder', 'Placeholder')
         },
         value: {
             type: String,

@@ -12,8 +12,6 @@ export const Default = () => ({
     template: `<dropdown
             :disabled="disabled"
             :invalid="invalid"
-            :instructions="instructions"
-            :label="label"
             :options="options"
             :value="value"
     />`,
