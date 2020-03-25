@@ -10,8 +10,6 @@
 </template>
 
 <script>
-    import Field from './Field.vue';
-
     export default {
         props: {
             checked: {
@@ -22,28 +20,12 @@
                 type: Boolean,
                 default: null,
             },
-            errors: {
-                type: Array | Boolean,
-                default: null,
-            },
             id: {
                 type: String,
                 default: function () {
                     return 'c-lightswitch-id-' + this._uid;
                 },
             },
-            instructions: {
-                type: String,
-                default: null,
-            },
-            label: {
-                type: String,
-                default: null,
-            },
-        },
-
-        components: {
-            Field,
         },
 
         methods: {
