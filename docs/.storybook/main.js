@@ -6,7 +6,6 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-knobs',
     '@storybook/addon-links',
-    '@storybook/addon-notes/register',
     '@storybook/addon-viewport/register',
     '@storybook/addon-docs',
     'storybook-dark-mode/register'
@@ -22,7 +21,7 @@ module.exports = {
     config.module.rules.push({
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
-      include: path.resolve(__dirname, '../src/sass/'),
+      include: [path.resolve(__dirname, '../src/sass/'), path.resolve(__dirname, '../../src/')],
     });
 
     // Return the altered config

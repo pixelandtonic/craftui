@@ -1,13 +1,11 @@
-import {Btn} from '../../../dist/craftui.esm'
+import Btn from '../../../src/components/Btn'
 import {withKnobs, text, boolean, select} from '@storybook/addon-knobs'
 import {action} from '@storybook/addon-actions'
-import BtnNotesMD from '../notes/Btn.md'
 
 export default {
     title: 'Components/Btn',
     component: Btn,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: BtnNotesMD}},
 }
 
 export const Default = () => ({

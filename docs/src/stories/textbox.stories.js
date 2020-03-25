@@ -1,11 +1,10 @@
-import {Textbox} from '../../../dist/craftui.esm'
-import TextboxNotesMD from '../notes/Textbox.md'
+import Textbox from '../../../src/components/Textbox'
 import {withKnobs, array, text} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Textbox',
+    component: Textbox,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: TextboxNotesMD}},
 }
 
 

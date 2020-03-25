@@ -9,10 +9,16 @@
 <script>
     export default {
         props: {
+            /**
+             * The ID of the icon.
+             */
             icon: {
                 type: String,
                 default: null,
             },
+            /**
+             * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
+             */
             size: {
                 type: String,
                 default: 'base',

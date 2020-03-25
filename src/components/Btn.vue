@@ -30,30 +30,51 @@
         name: 'Btn',
 
         props: {
+            /**
+             * 'button', 'submit', 'reset', or 'menu'
+             */
             type: {
                 type: String,
                 default: 'button',
             },
+            /**
+             * 'default', 'primary', or 'danger'
+             */
             kind: {
                 type: String,
                 default: 'default',
             },
+            /**
+             * Smaller version of button if set to `true`.
+             */
             small: {
                 type: Boolean,
                 default: false,
             },
+            /**
+             * Larger version of button if set to `true`.
+             */
             large: {
                 type: Boolean,
                 default: false,
             },
+            /**
+             * Block version of button if set to `true`.
+             */
             block: {
                 type: Boolean,
                 default: false,
             },
+            /**
+             * Disabled version of button if set to `true`.
+             */
             disabled: {
                 type: Boolean,
                 default: false,
             },
+            /**
+             * Outline version of button if set to `true`.
+             */
             outline: {
                 type: Boolean,
                 default: false,

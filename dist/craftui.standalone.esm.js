@@ -206,6 +206,10 @@ __vue_render__._withStripped = true;
 //
 //
 //
+
+/**
+ * Btn component description
+ */
 var script$1 = {
   name: 'Btn',
   props: {

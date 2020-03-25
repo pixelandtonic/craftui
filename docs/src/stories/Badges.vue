@@ -1,6 +1,5 @@
 <template>
     <div>
-        <btn trailing-icon="external-link">Test</btn>
         <div>
             <badge type="default">Badge</badge>
             <badge type="success">Badge</badge>

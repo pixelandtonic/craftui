@@ -1,11 +1,10 @@
-import {Spinner} from '../../../dist/craftui.esm'
-import SpinnerNotesMD from '../notes/Spinner.md'
+import Spinner from '../../../src/components/Spinner'
 import {withKnobs, select} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Spinner',
+    component: Spinner,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: SpinnerNotesMD}},
 }
 
 export const Default = () => ({

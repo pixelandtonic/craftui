@@ -1,11 +1,10 @@
-import {Radio} from '../../../dist/craftui.esm'
-import RadioNotesMD from '../notes/Radio.md'
+import Radio from '../../../src/components/Radio'
 import {withKnobs, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Radio',
+    component: Radio,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: RadioNotesMD}},
 }
 
 export const Default = () => ({

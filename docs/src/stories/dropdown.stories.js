@@ -1,11 +1,10 @@
-import {Dropdown} from '../../../dist/craftui.esm'
-import DropdownNotesMD from '../notes/Dropdown.md'
+import Dropdown from '../../../src/components/Dropdown'
 import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Dropdown',
+    component: Dropdown,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: DropdownNotesMD}},
 }
 
 export const Default = () => ({

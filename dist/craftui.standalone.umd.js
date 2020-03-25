@@ -212,6 +212,10 @@
     //
     //
     //
+
+    /**
+     * Btn component description
+     */
     var script$1 = {
       name: 'Btn',
       props: {

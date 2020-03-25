@@ -15,10 +15,16 @@
 <script>
     export default {
         props: {
+            /**
+             * 'default', 'success', 'info', 'warning', or 'danger'
+             */
             type: {
                 type: String,
                 default: 'default',
             },
+            /**
+             * Larger version of badge if set to `true`.
+             */
             large: {
                 type: Boolean,
                 default: false,

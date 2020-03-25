@@ -9,6 +9,9 @@
 <script>
     export default {
         props: {
+            /**
+             * 'base' or 'lg'
+             */
             size: {
                 type: String,
                 default: 'base',

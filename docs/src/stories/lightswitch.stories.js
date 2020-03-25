@@ -1,11 +1,10 @@
-import {Lightswitch} from '../../../dist/craftui.esm'
-import LightswitchNotesMD from '../notes/Lightswitch.md'
+import Lightswitch from '../../../src/components/Lightswitch'
 import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Lightswitch',
+    component: Lightswitch,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: LightswitchNotesMD}},
 }
 
 export const Default = () => ({

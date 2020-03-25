@@ -1,12 +1,11 @@
-import {Icon} from '../../../dist/craftui.esm'
-import IconNotesMD from '../notes/Icon.md'
+import Icon from '../../../src/components/Icon'
 import {withKnobs, select} from '@storybook/addon-knobs'
 import icons from '../../../src/sprites/icons'
 
 export default {
     title: 'Components/Icon',
+    component: Icon,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: IconNotesMD}},
 }
 
 export const Default = () => ({
@@ -19,7 +18,7 @@ export const Default = () => ({
         },
         size: {
             type: String,
-            default: select('size', ['sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'], '5xl')
+            default: select('size', ['sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'], 'base')
         },
     },
 })

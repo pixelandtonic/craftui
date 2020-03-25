@@ -1,11 +1,10 @@
-import {Checkbox} from '../../../dist/craftui.esm'
-import CheckboxNotesMD from '../notes/Checkbox.md'
+import Checkbox from '../../../src/components/Checkbox'
 import {withKnobs, text, boolean, array} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Checkbox',
+    component: Checkbox,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: CheckboxNotesMD}},
 }
 
 export const Default = () => ({

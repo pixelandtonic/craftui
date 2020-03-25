@@ -1,12 +1,11 @@
-import {Field} from '../../../dist/craftui.esm'
-import FieldNotesMD from '../notes/Field.md'
+import Field from '../../../src/components/Field'
 import {withKnobs, text, array} from '@storybook/addon-knobs'
 
 
 export default {
     title: 'Components/Field',
+    component: Field,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: FieldNotesMD}},
 }
 
 export const Default = () => ({

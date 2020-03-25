@@ -1,11 +1,10 @@
-import {Pane} from '../../../dist/craftui.esm'
-import PaneNotesMD from '../notes/Pane.md'
+import Pane from '../../../src/components/Pane'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 export default {
     title: 'Components/Pane',
+    component: Pane,
     decorators: [withKnobs],
-    parameters: {notes: {markdown: PaneNotesMD}},
 }
 
 export const Default = () => ({
