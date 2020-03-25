@@ -33,10 +33,17 @@
     //
     var script = {
       props: {
+        /**
+         * 'default', 'success', 'info', 'warning', or 'danger'
+         */
         type: {
           type: String,
           default: 'default'
         },
+
+        /**
+         * Larger version of badge if set to `true`.
+         */
         large: {
           type: Boolean,
           default: false
@@ -212,37 +219,60 @@
     //
     //
     //
-
-    /**
-     * Btn component description
-     */
     var script$1 = {
       name: 'Btn',
       props: {
+        /**
+         * 'button', 'submit', 'reset', or 'menu'
+         */
         type: {
           type: String,
           default: 'button'
         },
+
+        /**
+         * 'default', 'primary', or 'danger'
+         */
         kind: {
           type: String,
           default: 'default'
         },
+
+        /**
+         * Smaller version of button if set to `true`.
+         */
         small: {
           type: Boolean,
           default: false
         },
+
+        /**
+         * Larger version of button if set to `true`.
+         */
         large: {
           type: Boolean,
           default: false
         },
+
+        /**
+         * Block version of button if set to `true`.
+         */
         block: {
           type: Boolean,
           default: false
         },
+
+        /**
+         * Disabled version of button if set to `true`.
+         */
         disabled: {
           type: Boolean,
           default: false
         },
+
+        /**
+         * Outline version of button if set to `true`.
+         */
         outline: {
           type: Boolean,
           default: false
@@ -425,15 +455,15 @@
           type: Boolean,
           default: false
         },
-        errors: {
-          type: Array | Boolean,
-          default: null
-        },
         id: {
           type: String,
           default: function _default() {
             return 'c-checkbox-id-' + this._uid;
           }
+        },
+        invalid: {
+          type: Boolean,
+          default: false
         },
         label: {
           type: String,
@@ -517,11 +547,18 @@
             })
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "pl-7 text-sm leading-5" }, [
-            _c("label", { staticClass: "mb-0", attrs: { for: _vm.id } }, [
-              _vm._v("\n            " + _vm._s(_vm.label) + "\n        ")
-            ])
-          ])
+          _c(
+            "div",
+            {
+              staticClass: "pl-7 text-sm leading-5",
+              class: { "text-danger": _vm.invalid }
+            },
+            [
+              _c("label", { staticClass: "mb-0", attrs: { for: _vm.id } }, [
+                _vm._v("\n            " + _vm._s(_vm.label) + "\n        ")
+              ])
+            ]
+          )
         ]
       )
     };
@@ -621,6 +658,7 @@
 
     /* script */
     const __vue_script__$3 = script$3;
+
     /* template */
     var __vue_render__$3 = function() {
       var _vm = this;
@@ -629,7 +667,7 @@
       return _c(
         "div",
         {
-          staticClass: "c-field",
+          staticClass: "c-field mb-4",
           class: {
             "sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start": _vm.horizontal,
             "sm:border-t sm:border-separator sm:pt-5 mt-6 sm:mt-5": !_vm.first
@@ -653,7 +691,7 @@
               : _vm._e(),
             _vm._v(" "),
             _vm.instructions
-              ? _c("div", { staticClass: "instructions" }, [
+              ? _c("div", { staticClass: "instructions mb-4 text-light-text" }, [
                   _c("p", [_vm._v(_vm._s(_vm.instructions))])
                 ])
               : _vm._e()
@@ -670,7 +708,10 @@
                   ? [
                       _c(
                         "ul",
-                        { staticClass: "invalid-feedback" },
+                        {
+                          staticClass:
+                            "invalid-feedback text-red-500 text-sm mt-2 ml-5 list-disc"
+                        },
                         [
                           _vm._l(_vm.errors, function(error, key) {
                             return _vm.errors
@@ -742,14 +783,6 @@
             return 'c-dropdown-id-' + this._uid;
           }
         },
-        instructions: {
-          type: String,
-          default: null
-        },
-        label: {
-          type: String,
-          default: null
-        },
         options: {
           type: Array,
           default: null
@@ -766,46 +799,50 @@
 
     /* script */
     const __vue_script__$4 = script$4;
+
     /* template */
     var __vue_render__$4 = function() {
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
-      return _c("div", { staticClass: "c-dropdown" }, [
-        _c(
-          "div",
-          { staticClass: "c-dropdown-input", class: { "is-invalid": _vm.invalid } },
-          [
-            _c("div", { staticClass: "select" }, [
-              _c(
-                "select",
-                {
-                  staticClass: "form-select sm:text-sm sm:leading-5",
-                  class: { "w-full": _vm.fullwidth },
-                  attrs: { disabled: _vm.disabled },
-                  domProps: { value: _vm.value },
-                  on: {
-                    input: function($event) {
-                      return _vm.$emit(
-                        "input",
-                        $event.target[$event.target.selectedIndex].value
-                      )
-                    }
-                  }
+      return _c(
+        "div",
+        { staticClass: "c-dropdown", class: { "is-invalid": _vm.invalid } },
+        [
+          _c("div", { staticClass: "select" }, [
+            _c(
+              "select",
+              {
+                staticClass:
+                  "form-select sm:text-sm sm:leading-5 border bg-field-background",
+                class: {
+                  "w-full": _vm.fullwidth,
+                  "border-red-500": _vm.invalid,
+                  "border-field-separator": !_vm.invalid
                 },
-                _vm._l(_vm.options, function(option, key) {
-                  return _c(
-                    "option",
-                    { key: key, domProps: { value: option.value } },
-                    [_vm._v(_vm._s(option.label))]
-                  )
-                }),
-                0
-              )
-            ])
-          ]
-        )
-      ])
+                attrs: { disabled: _vm.disabled },
+                domProps: { value: _vm.value },
+                on: {
+                  input: function($event) {
+                    return _vm.$emit(
+                      "input",
+                      $event.target[$event.target.selectedIndex].value
+                    )
+                  }
+                }
+              },
+              _vm._l(_vm.options, function(option, key) {
+                return _c(
+                  "option",
+                  { key: key, domProps: { value: option.value } },
+                  [_vm._v(_vm._s(option.label))]
+                )
+              }),
+              0
+            )
+          ])
+        ]
+      )
     };
     var __vue_staticRenderFns__$4 = [];
     __vue_render__$4._withStripped = true;
@@ -847,12 +884,26 @@
     //
     //
     //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
     var script$5 = {
       props: {
+        /**
+         * The ID of the icon.
+         */
         icon: {
           type: String,
           default: null
         },
+
+        /**
+         * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
+         */
         size: {
           type: String,
           default: 'base'
@@ -862,6 +913,7 @@
 
     /* script */
     const __vue_script__$5 = script$5;
+
     /* template */
     var __vue_render__$5 = function() {
       var _obj;
@@ -871,8 +923,18 @@
       return _c(
         "svg",
         {
-          staticClass: "c-icon",
-          class: ((_obj = {}), (_obj["size-" + _vm.size] = true), _obj),
+          staticClass: "c-icon inline-block align-middle relative fill-current",
+          class:
+            ((_obj = {}),
+            (_obj["w-3 h-3"] = _vm.size === "sm"),
+            (_obj["w-4 h-4"] = _vm.size === "base"),
+            (_obj["w-5 h-5"] = _vm.size === "lg"),
+            (_obj["w-6 h-6"] = _vm.size === "xl"),
+            (_obj["w-8 h-8"] = _vm.size === "2xl"),
+            (_obj["w-10 h-10"] = _vm.size === "3xl"),
+            (_obj["w-12 h-12"] = _vm.size === "4xl"),
+            (_obj["w-16 h-16"] = _vm.size === "5xl"),
+            _obj),
           attrs: {
             viewBox: "0 0 18 18",
             width: "18",
@@ -923,6 +985,16 @@
       );
 
     //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
     var script$6 = {
       props: {
         checked: {
@@ -933,27 +1005,12 @@
           type: Boolean,
           default: null
         },
-        errors: {
-          type: Array | Boolean,
-          default: null
-        },
         id: {
           type: String,
           default: function _default() {
             return 'c-lightswitch-id-' + this._uid;
           }
-        },
-        instructions: {
-          type: String,
-          default: null
-        },
-        label: {
-          type: String,
-          default: null
         }
-      },
-      components: {
-        Field: __vue_component__$3
       },
       methods: {
         onChange: function onChange($event) {
@@ -1117,10 +1174,6 @@
           type: Boolean,
           default: false
         },
-        errors: {
-          type: Array | Boolean,
-          default: null
-        },
         id: {
           type: String,
           default: function _default() {
@@ -1128,10 +1181,6 @@
           }
         },
         name: {
-          type: String,
-          default: null
-        },
-        instructions: {
           type: String,
           default: null
         },
@@ -1249,6 +1298,9 @@
     //
     var script$9 = {
       props: {
+        /**
+         * 'base' or 'lg'
+         */
         size: {
           type: String,
           default: 'base'
@@ -1267,7 +1319,7 @@
       return _c(
         "div",
         {
-          staticClass: "c-spinner",
+          staticClass: "c-spinner inline-block",
           class: ((_obj = {}), (_obj[_vm.size] = true), _obj)
         },
         [_c("div", { staticClass: "animation" })]
@@ -1513,14 +1565,6 @@
             return 'c-textbox-id-' + this._uid;
           }
         },
-        instructions: {
-          type: String,
-          default: null
-        },
-        label: {
-          type: String,
-          default: null
-        },
         mask: {
           type: String | Object,
           default: ''
@@ -1621,6 +1665,7 @@
 
     /* script */
     const __vue_script__$a = script$a;
+
     /* template */
     var __vue_render__$a = function() {
       var _vm = this;
@@ -1644,11 +1689,17 @@
                 ],
                 ref: "input",
                 tag: "component",
-                staticClass: "form-input block full sm:text-sm sm:leading-5",
+                staticClass:
+                  "form-input block full sm:text-sm sm:leading-5 border rounded",
                 class: {
-                  "w-full": !_vm.size,
-                  "is-invalid": _vm.invalid,
-                  "text-red-600": _vm.max && _vm.max < this.value.length
+                  "w-full": !_vm.size && _vm.type !== "number",
+                  "w-16": _vm.type === "number",
+                  "is-invalid border-danger": _vm.invalid,
+                  "border-field-separator": !_vm.invalid && !_vm.disabled,
+                  "text-red-600": _vm.max && _vm.max < this.value.length,
+                  "bg-field-disabled-background border-field-disabled-separator":
+                    _vm.disabled,
+                  "bg-field-background": !_vm.disabled
                 },
                 attrs: {
                   autocapitalize: _vm.autocapitalize,

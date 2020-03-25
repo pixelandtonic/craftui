@@ -455,7 +455,7 @@ html {
           box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: var(--craftui-separator); /* 2 */
+  border-color: var(--craftui-success); /* 2 */
 }
 
 /*
@@ -958,10 +958,10 @@ label {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
-  border-radius: 0.375rem;
+  border-radius: 0.25rem;
   padding-top: 0.5rem;
   padding-right: 0.75rem;
   padding-bottom: 0.5rem;
@@ -971,45 +971,45 @@ label {
 }
 
 .form-input::-webkit-input-placeholder {
-  color: #9fa6b2;
+  color: var(--craftui-light-text);
   opacity: 1;
 }
 
 .form-input::-moz-placeholder {
-  color: #9fa6b2;
+  color: var(--craftui-light-text);
   opacity: 1;
 }
 
 .form-input:-ms-input-placeholder {
-  color: #9fa6b2;
+  color: var(--craftui-light-text);
   opacity: 1;
 }
 
 .form-input::-ms-input-placeholder {
-  color: #9fa6b2;
+  color: var(--craftui-light-text);
   opacity: 1;
 }
 
 .form-input::placeholder {
-  color: #9fa6b2;
+  color: var(--craftui-light-text);
   opacity: 1;
 }
 
 .form-input:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 .form-textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
-  border-radius: 0.375rem;
+  border-radius: 0.25rem;
   padding-top: 0.5rem;
   padding-right: 0.75rem;
   padding-bottom: 0.5rem;
@@ -1019,45 +1019,45 @@ label {
 }
 
 .form-textarea::-webkit-input-placeholder {
-  color: #9fa6b2;
+  color: #a0aec0;
   opacity: 1;
 }
 
 .form-textarea::-moz-placeholder {
-  color: #9fa6b2;
+  color: #a0aec0;
   opacity: 1;
 }
 
 .form-textarea:-ms-input-placeholder {
-  color: #9fa6b2;
+  color: #a0aec0;
   opacity: 1;
 }
 
 .form-textarea::-ms-input-placeholder {
-  color: #9fa6b2;
+  color: #a0aec0;
   opacity: 1;
 }
 
 .form-textarea::placeholder {
-  color: #9fa6b2;
+  color: #a0aec0;
   opacity: 1;
 }
 
 .form-textarea:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 .form-multiselect {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
-  border-radius: 0.375rem;
+  border-radius: 0.25rem;
   padding-top: 0.5rem;
   padding-right: 0.75rem;
   padding-bottom: 0.5rem;
@@ -1068,23 +1068,23 @@ label {
 
 .form-multiselect:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 .form-select {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3e%3cpath d='M7 7l3-3 3 3m0 6l-3 3-3-3' stroke='%239fa6b2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0aec0'%3e%3cpath d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/%3e%3c/svg%3e");
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
           color-adjust: exact;
   background-repeat: no-repeat;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
-  border-radius: 0.375rem;
+  border-radius: 0.25rem;
   padding-top: 0.5rem;
   padding-right: 2.5rem;
   padding-bottom: 0.5rem;
@@ -1096,7 +1096,7 @@ label {
 }
 
 .form-select::-ms-expand {
-  color: #9fa6b2;
+  color: #a0aec0;
   border: none;
 }
 
@@ -1114,9 +1114,9 @@ label {
 
 .form-select:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 .form-checkbox {
@@ -1134,11 +1134,11 @@ label {
           user-select: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 1rem;
-  width: 1rem;
-  color: #3f83f8;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  height: 1em;
+  width: 1em;
+  color: #4299e1;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
   border-radius: 0.25rem;
 }
@@ -1164,13 +1164,9 @@ label {
 
 .form-checkbox:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
-}
-
-.form-checkbox:checked:focus {
-  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 .form-radio {
@@ -1189,11 +1185,11 @@ label {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 100%;
-  height: 1rem;
-  width: 1rem;
-  color: #3f83f8;
-  background-color: #ffffff;
-  border-color: #d2d6dc;
+  height: 1em;
+  width: 1em;
+  color: #4299e1;
+  background-color: #fff;
+  border-color: #e2e8f0;
   border-width: 1px;
 }
 
@@ -1218,52 +1214,9 @@ label {
 
 .form-radio:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-          box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
-  border-color: #a4cafe;
-}
-
-.form-radio:checked:focus {
-  border-color: transparent;
-}
-
-.xbtn {
-  background-color: var(--craftui-secondary-background);
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.xbtn > .xicon {
-  width: 20px;
-  height: 20px;
-  background: red;
-  display: inline-block  ;
-}
-
-.xbtn-primary {
-  background-color: var(--craftui-interactive-primary);
-}
-
-.xbtn-primary:hover {
-  background-color: var(--craftui-interactive-primary-hover);
-  cursor: pointer;
-}
-
-.xbtn-primary:active {
-  background-color: var(--craftui-interactive-primary-active);
-}
-
-.xbtn-danger {
-  background-color: var(--craftui-interactive-danger);
-}
-
-.xbtn-danger:hover {
-  background-color: var(--craftui-interactive-danger-hover);
-  cursor: pointer;
-}
-
-.xbtn-danger:active {
-  background-color: var(--craftui-interactive-danger-active);
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
 }
 
 body {
@@ -2064,6 +2017,1470 @@ body {
 }
 
 .bg-default-text {
+  background-color: var(--craftui-default-text);
+}
+
+.group:hover .group-hover\:bg-transparent {
+  background-color: transparent;
+}
+
+.group:hover .group-hover\:bg-white {
+  background-color: #ffffff;
+}
+
+.group:hover .group-hover\:bg-black {
+  background-color: #000000;
+}
+
+.group:hover .group-hover\:bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.group:hover .group-hover\:bg-gray-100 {
+  background-color: #f4f5f7;
+}
+
+.group:hover .group-hover\:bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.group:hover .group-hover\:bg-gray-300 {
+  background-color: #d2d6dc;
+}
+
+.group:hover .group-hover\:bg-gray-400 {
+  background-color: #9fa6b2;
+}
+
+.group:hover .group-hover\:bg-gray-500 {
+  background-color: #6b7280;
+}
+
+.group:hover .group-hover\:bg-gray-600 {
+  background-color: #4b5563;
+}
+
+.group:hover .group-hover\:bg-gray-700 {
+  background-color: #374151;
+}
+
+.group:hover .group-hover\:bg-gray-800 {
+  background-color: #252f3f;
+}
+
+.group:hover .group-hover\:bg-gray-900 {
+  background-color: #161e2e;
+}
+
+.group:hover .group-hover\:bg-cool-gray-50 {
+  background-color: #fbfdfe;
+}
+
+.group:hover .group-hover\:bg-cool-gray-100 {
+  background-color: #f1f5f9;
+}
+
+.group:hover .group-hover\:bg-cool-gray-200 {
+  background-color: #e2e8f0;
+}
+
+.group:hover .group-hover\:bg-cool-gray-300 {
+  background-color: #cfd8e3;
+}
+
+.group:hover .group-hover\:bg-cool-gray-400 {
+  background-color: #97a6ba;
+}
+
+.group:hover .group-hover\:bg-cool-gray-500 {
+  background-color: #64748b;
+}
+
+.group:hover .group-hover\:bg-cool-gray-600 {
+  background-color: #475569;
+}
+
+.group:hover .group-hover\:bg-cool-gray-700 {
+  background-color: #364152;
+}
+
+.group:hover .group-hover\:bg-cool-gray-800 {
+  background-color: #27303f;
+}
+
+.group:hover .group-hover\:bg-cool-gray-900 {
+  background-color: #1a202e;
+}
+
+.group:hover .group-hover\:bg-red-50 {
+  background-color: #fdf2f2;
+}
+
+.group:hover .group-hover\:bg-red-100 {
+  background-color: #fde8e8;
+}
+
+.group:hover .group-hover\:bg-red-200 {
+  background-color: #fbd5d5;
+}
+
+.group:hover .group-hover\:bg-red-300 {
+  background-color: #f8b4b4;
+}
+
+.group:hover .group-hover\:bg-red-400 {
+  background-color: #f98080;
+}
+
+.group:hover .group-hover\:bg-red-500 {
+  background-color: #f05252;
+}
+
+.group:hover .group-hover\:bg-red-600 {
+  background-color: #e02424;
+}
+
+.group:hover .group-hover\:bg-red-700 {
+  background-color: #c81e1e;
+}
+
+.group:hover .group-hover\:bg-red-800 {
+  background-color: #9b1c1c;
+}
+
+.group:hover .group-hover\:bg-red-900 {
+  background-color: #771d1d;
+}
+
+.group:hover .group-hover\:bg-orange-50 {
+  background-color: #fff8f1;
+}
+
+.group:hover .group-hover\:bg-orange-100 {
+  background-color: #feecdc;
+}
+
+.group:hover .group-hover\:bg-orange-200 {
+  background-color: #fcd9bd;
+}
+
+.group:hover .group-hover\:bg-orange-300 {
+  background-color: #fdba8c;
+}
+
+.group:hover .group-hover\:bg-orange-400 {
+  background-color: #ff8a4c;
+}
+
+.group:hover .group-hover\:bg-orange-500 {
+  background-color: #ff5a1f;
+}
+
+.group:hover .group-hover\:bg-orange-600 {
+  background-color: #d03801;
+}
+
+.group:hover .group-hover\:bg-orange-700 {
+  background-color: #b43403;
+}
+
+.group:hover .group-hover\:bg-orange-800 {
+  background-color: #8a2c0d;
+}
+
+.group:hover .group-hover\:bg-orange-900 {
+  background-color: #771d1d;
+}
+
+.group:hover .group-hover\:bg-yellow-50 {
+  background-color: #fdfdea;
+}
+
+.group:hover .group-hover\:bg-yellow-100 {
+  background-color: #fdf6b2;
+}
+
+.group:hover .group-hover\:bg-yellow-200 {
+  background-color: #fce96a;
+}
+
+.group:hover .group-hover\:bg-yellow-300 {
+  background-color: #faca15;
+}
+
+.group:hover .group-hover\:bg-yellow-400 {
+  background-color: #e3a008;
+}
+
+.group:hover .group-hover\:bg-yellow-500 {
+  background-color: #c27803;
+}
+
+.group:hover .group-hover\:bg-yellow-600 {
+  background-color: #9f580a;
+}
+
+.group:hover .group-hover\:bg-yellow-700 {
+  background-color: #8e4b10;
+}
+
+.group:hover .group-hover\:bg-yellow-800 {
+  background-color: #723b13;
+}
+
+.group:hover .group-hover\:bg-yellow-900 {
+  background-color: #633112;
+}
+
+.group:hover .group-hover\:bg-green-50 {
+  background-color: #f3faf7;
+}
+
+.group:hover .group-hover\:bg-green-100 {
+  background-color: #def7ec;
+}
+
+.group:hover .group-hover\:bg-green-200 {
+  background-color: #bcf0da;
+}
+
+.group:hover .group-hover\:bg-green-300 {
+  background-color: #84e1bc;
+}
+
+.group:hover .group-hover\:bg-green-400 {
+  background-color: #31c48d;
+}
+
+.group:hover .group-hover\:bg-green-500 {
+  background-color: #0e9f6e;
+}
+
+.group:hover .group-hover\:bg-green-600 {
+  background-color: #057a55;
+}
+
+.group:hover .group-hover\:bg-green-700 {
+  background-color: #046c4e;
+}
+
+.group:hover .group-hover\:bg-green-800 {
+  background-color: #03543f;
+}
+
+.group:hover .group-hover\:bg-green-900 {
+  background-color: #014737;
+}
+
+.group:hover .group-hover\:bg-teal-50 {
+  background-color: #edfafa;
+}
+
+.group:hover .group-hover\:bg-teal-100 {
+  background-color: #d5f5f6;
+}
+
+.group:hover .group-hover\:bg-teal-200 {
+  background-color: #afecef;
+}
+
+.group:hover .group-hover\:bg-teal-300 {
+  background-color: #7edce2;
+}
+
+.group:hover .group-hover\:bg-teal-400 {
+  background-color: #16bdca;
+}
+
+.group:hover .group-hover\:bg-teal-500 {
+  background-color: #0694a2;
+}
+
+.group:hover .group-hover\:bg-teal-600 {
+  background-color: #047481;
+}
+
+.group:hover .group-hover\:bg-teal-700 {
+  background-color: #036672;
+}
+
+.group:hover .group-hover\:bg-teal-800 {
+  background-color: #05505c;
+}
+
+.group:hover .group-hover\:bg-teal-900 {
+  background-color: #014451;
+}
+
+.group:hover .group-hover\:bg-blue-50 {
+  background-color: #ebf5ff;
+}
+
+.group:hover .group-hover\:bg-blue-100 {
+  background-color: #e1effe;
+}
+
+.group:hover .group-hover\:bg-blue-200 {
+  background-color: #c3ddfd;
+}
+
+.group:hover .group-hover\:bg-blue-300 {
+  background-color: #a4cafe;
+}
+
+.group:hover .group-hover\:bg-blue-400 {
+  background-color: #76a9fa;
+}
+
+.group:hover .group-hover\:bg-blue-500 {
+  background-color: #3f83f8;
+}
+
+.group:hover .group-hover\:bg-blue-600 {
+  background-color: #1c64f2;
+}
+
+.group:hover .group-hover\:bg-blue-700 {
+  background-color: #1a56db;
+}
+
+.group:hover .group-hover\:bg-blue-800 {
+  background-color: #1e429f;
+}
+
+.group:hover .group-hover\:bg-blue-900 {
+  background-color: #233876;
+}
+
+.group:hover .group-hover\:bg-indigo-50 {
+  background-color: #f0f5ff;
+}
+
+.group:hover .group-hover\:bg-indigo-100 {
+  background-color: #e5edff;
+}
+
+.group:hover .group-hover\:bg-indigo-200 {
+  background-color: #cddbfe;
+}
+
+.group:hover .group-hover\:bg-indigo-300 {
+  background-color: #b4c6fc;
+}
+
+.group:hover .group-hover\:bg-indigo-400 {
+  background-color: #8da2fb;
+}
+
+.group:hover .group-hover\:bg-indigo-500 {
+  background-color: #6875f5;
+}
+
+.group:hover .group-hover\:bg-indigo-600 {
+  background-color: #5850ec;
+}
+
+.group:hover .group-hover\:bg-indigo-700 {
+  background-color: #5145cd;
+}
+
+.group:hover .group-hover\:bg-indigo-800 {
+  background-color: #42389d;
+}
+
+.group:hover .group-hover\:bg-indigo-900 {
+  background-color: #362f78;
+}
+
+.group:hover .group-hover\:bg-purple-50 {
+  background-color: #f6f5ff;
+}
+
+.group:hover .group-hover\:bg-purple-100 {
+  background-color: #edebfe;
+}
+
+.group:hover .group-hover\:bg-purple-200 {
+  background-color: #dcd7fe;
+}
+
+.group:hover .group-hover\:bg-purple-300 {
+  background-color: #cabffd;
+}
+
+.group:hover .group-hover\:bg-purple-400 {
+  background-color: #ac94fa;
+}
+
+.group:hover .group-hover\:bg-purple-500 {
+  background-color: #9061f9;
+}
+
+.group:hover .group-hover\:bg-purple-600 {
+  background-color: #7e3af2;
+}
+
+.group:hover .group-hover\:bg-purple-700 {
+  background-color: #6c2bd9;
+}
+
+.group:hover .group-hover\:bg-purple-800 {
+  background-color: #5521b5;
+}
+
+.group:hover .group-hover\:bg-purple-900 {
+  background-color: #4a1d96;
+}
+
+.group:hover .group-hover\:bg-pink-50 {
+  background-color: #fdf2f8;
+}
+
+.group:hover .group-hover\:bg-pink-100 {
+  background-color: #fce8f3;
+}
+
+.group:hover .group-hover\:bg-pink-200 {
+  background-color: #fad1e8;
+}
+
+.group:hover .group-hover\:bg-pink-300 {
+  background-color: #f8b4d9;
+}
+
+.group:hover .group-hover\:bg-pink-400 {
+  background-color: #f17eb8;
+}
+
+.group:hover .group-hover\:bg-pink-500 {
+  background-color: #e74694;
+}
+
+.group:hover .group-hover\:bg-pink-600 {
+  background-color: #d61f69;
+}
+
+.group:hover .group-hover\:bg-pink-700 {
+  background-color: #bf125d;
+}
+
+.group:hover .group-hover\:bg-pink-800 {
+  background-color: #99154b;
+}
+
+.group:hover .group-hover\:bg-pink-900 {
+  background-color: #751a3d;
+}
+
+.group:hover .group-hover\:bg-danger {
+  background-color: var(--craftui-danger);
+}
+
+.group:hover .group-hover\:bg-danger-background {
+  background-color: var(--craftui-danger-background);
+}
+
+.group:hover .group-hover\:bg-danger-separator {
+  background-color: var(--craftui-danger-separator);
+}
+
+.group:hover .group-hover\:bg-danger-text {
+  background-color: var(--craftui-danger-text);
+}
+
+.group:hover .group-hover\:bg-dark-text {
+  background-color: var(--craftui-dark-text);
+}
+
+.group:hover .group-hover\:bg-field-background {
+  background-color: var(--craftui-field-background);
+}
+
+.group:hover .group-hover\:bg-field-disabled-background {
+  background-color: var(--craftui-field-disabled-background);
+}
+
+.group:hover .group-hover\:bg-field-disabled-separator {
+  background-color: var(--craftui-field-disabled-separator);
+}
+
+.group:hover .group-hover\:bg-field-separator {
+  background-color: var(--craftui-field-separator);
+}
+
+.group:hover .group-hover\:bg-icon {
+  background-color: var(--craftui-icon);
+}
+
+.group:hover .group-hover\:bg-info {
+  background-color: var(--craftui-info);
+}
+
+.group:hover .group-hover\:bg-info-background {
+  background-color: var(--craftui-info-background);
+}
+
+.group:hover .group-hover\:bg-info-separator {
+  background-color: var(--craftui-info-separator);
+}
+
+.group:hover .group-hover\:bg-info-text {
+  background-color: var(--craftui-info-text);
+}
+
+.group:hover .group-hover\:bg-interactive-danger {
+  background-color: var(--craftui-interactive-danger);
+}
+
+.group:hover .group-hover\:bg-interactive-danger-active {
+  background-color: var(--craftui-interactive-danger-active);
+}
+
+.group:hover .group-hover\:bg-interactive-danger-hover {
+  background-color: var(--craftui-interactive-danger-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-link {
+  background-color: var(--craftui-interactive-link);
+}
+
+.group:hover .group-hover\:bg-interactive-link-hover {
+  background-color: var(--craftui-interactive-link-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-nav-item-text {
+  background-color: var(--craftui-interactive-nav-item-text);
+}
+
+.group:hover .group-hover\:bg-interactive-nav-item-hover-text {
+  background-color: var(--craftui-interactive-nav-item-hover-text);
+}
+
+.group:hover .group-hover\:bg-interactive-nav-item-active-text {
+  background-color: var(--craftui-interactive-nav-item-active-text);
+}
+
+.group:hover .group-hover\:bg-interactive-nav-item-disabled-text {
+  background-color: var(--craftui-interactive-nav-item-disabled-text);
+}
+
+.group:hover .group-hover\:bg-interactive-navbar-item-active-text {
+  background-color: var(--craftui-interactive-navbar-item-active-text);
+}
+
+.group:hover .group-hover\:bg-interactive-navbar-item-active-border {
+  background-color: var(--craftui-interactive-navbar-item-active-border);
+}
+
+.group:hover .group-hover\:bg-interactive-navbar-item-hover-border {
+  background-color: var(--craftui-interactive-navbar-item-hover-border);
+}
+
+.group:hover .group-hover\:bg-interactive-navbar-item-hover-text {
+  background-color: var(--craftui-interactive-navbar-item-hover-text);
+}
+
+.group:hover .group-hover\:bg-interactive-navbar-item-text {
+  background-color: var(--craftui-interactive-navbar-item-text);
+}
+
+.group:hover .group-hover\:bg-interactive-primary {
+  background-color: var(--craftui-interactive-primary);
+}
+
+.group:hover .group-hover\:bg-interactive-primary-active {
+  background-color: var(--craftui-interactive-primary-active);
+}
+
+.group:hover .group-hover\:bg-interactive-primary-hover {
+  background-color: var(--craftui-interactive-primary-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-secondary {
+  background-color: var(--craftui-interactive-secondary);
+}
+
+.group:hover .group-hover\:bg-interactive-secondary-active {
+  background-color: var(--craftui-interactive-secondary-active);
+}
+
+.group:hover .group-hover\:bg-interactive-secondary-hover {
+  background-color: var(--craftui-interactive-secondary-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-success {
+  background-color: var(--craftui-interactive-success);
+}
+
+.group:hover .group-hover\:bg-interactive-success-active {
+  background-color: var(--craftui-interactive-success-active);
+}
+
+.group:hover .group-hover\:bg-interactive-success-hover {
+  background-color: var(--craftui-interactive-success-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-tertiary {
+  background-color: var(--craftui-interactive-tertiary);
+}
+
+.group:hover .group-hover\:bg-interactive-tertiary-active {
+  background-color: var(--craftui-interactive-tertiary-active);
+}
+
+.group:hover .group-hover\:bg-interactive-tertiary-hover {
+  background-color: var(--craftui-interactive-tertiary-hover);
+}
+
+.group:hover .group-hover\:bg-interactive-text {
+  background-color: var(--craftui-interactive-text);
+}
+
+.group:hover .group-hover\:bg-interactive-text-inverse {
+  background-color: var(--craftui-interactive-text-inverse);
+}
+
+.group:hover .group-hover\:bg-light-text {
+  background-color: var(--craftui-light-text);
+}
+
+.group:hover .group-hover\:bg-notice {
+  background-color: var(--craftui-notice);
+}
+
+.group:hover .group-hover\:bg-notice-background {
+  background-color: var(--craftui-notice-background);
+}
+
+.group:hover .group-hover\:bg-notice-separator {
+  background-color: var(--craftui-notice-separator);
+}
+
+.group:hover .group-hover\:bg-notice-text {
+  background-color: var(--craftui-notice-text);
+}
+
+.group:hover .group-hover\:bg-opaque-separator {
+  background-color: var(--craftui-opaque-separator);
+}
+
+.group:hover .group-hover\:bg-primary-background {
+  background-color: var(--craftui-primary-background);
+}
+
+.group:hover .group-hover\:bg-primary-background-gradient-1 {
+  background-color: var(--craftui-primary-background-gradient-1);
+}
+
+.group:hover .group-hover\:bg-primary-background-gradient-2 {
+  background-color: var(--craftui-primary-background-gradient-2);
+}
+
+.group:hover .group-hover\:bg-secondary-background {
+  background-color: var(--craftui-secondary-background);
+}
+
+.group:hover .group-hover\:bg-tertiary-background {
+  background-color: var(--craftui-tertiary-background);
+}
+
+.group:hover .group-hover\:bg-separator {
+  background-color: var(--craftui-separator);
+}
+
+.group:hover .group-hover\:bg-shadow-1 {
+  background-color: var(--craftui-shadow-1);
+}
+
+.group:hover .group-hover\:bg-shadow-2 {
+  background-color: var(--craftui-shadow-2);
+}
+
+.group:hover .group-hover\:bg-shadow-3 {
+  background-color: var(--craftui-shadow-3);
+}
+
+.group:hover .group-hover\:bg-success {
+  background-color: var(--craftui-success);
+}
+
+.group:hover .group-hover\:bg-success-background {
+  background-color: var(--craftui-success-background);
+}
+
+.group:hover .group-hover\:bg-success-separator {
+  background-color: var(--craftui-success-separator);
+}
+
+.group:hover .group-hover\:bg-success-text {
+  background-color: var(--craftui-success-text);
+}
+
+.group:hover .group-hover\:bg-text {
+  background-color: var(--craftui-text);
+}
+
+.group:hover .group-hover\:bg-text-inverse {
+  background-color: var(--craftui-text-inverse);
+}
+
+.group:hover .group-hover\:bg-warning {
+  background-color: var(--craftui-warning);
+}
+
+.group:hover .group-hover\:bg-warning-background {
+  background-color: var(--craftui-warning-background);
+}
+
+.group:hover .group-hover\:bg-warning-separator {
+  background-color: var(--craftui-warning-separator);
+}
+
+.group:hover .group-hover\:bg-warning-text {
+  background-color: var(--craftui-warning-text);
+}
+
+.group:hover .group-hover\:bg-default-background {
+  background-color: var(--craftui-default-background);
+}
+
+.group:hover .group-hover\:bg-default-separator {
+  background-color: var(--craftui-default-separator);
+}
+
+.group:hover .group-hover\:bg-default-text {
+  background-color: var(--craftui-default-text);
+}
+
+.group:focus .group-focus\:bg-transparent {
+  background-color: transparent;
+}
+
+.group:focus .group-focus\:bg-white {
+  background-color: #ffffff;
+}
+
+.group:focus .group-focus\:bg-black {
+  background-color: #000000;
+}
+
+.group:focus .group-focus\:bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.group:focus .group-focus\:bg-gray-100 {
+  background-color: #f4f5f7;
+}
+
+.group:focus .group-focus\:bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.group:focus .group-focus\:bg-gray-300 {
+  background-color: #d2d6dc;
+}
+
+.group:focus .group-focus\:bg-gray-400 {
+  background-color: #9fa6b2;
+}
+
+.group:focus .group-focus\:bg-gray-500 {
+  background-color: #6b7280;
+}
+
+.group:focus .group-focus\:bg-gray-600 {
+  background-color: #4b5563;
+}
+
+.group:focus .group-focus\:bg-gray-700 {
+  background-color: #374151;
+}
+
+.group:focus .group-focus\:bg-gray-800 {
+  background-color: #252f3f;
+}
+
+.group:focus .group-focus\:bg-gray-900 {
+  background-color: #161e2e;
+}
+
+.group:focus .group-focus\:bg-cool-gray-50 {
+  background-color: #fbfdfe;
+}
+
+.group:focus .group-focus\:bg-cool-gray-100 {
+  background-color: #f1f5f9;
+}
+
+.group:focus .group-focus\:bg-cool-gray-200 {
+  background-color: #e2e8f0;
+}
+
+.group:focus .group-focus\:bg-cool-gray-300 {
+  background-color: #cfd8e3;
+}
+
+.group:focus .group-focus\:bg-cool-gray-400 {
+  background-color: #97a6ba;
+}
+
+.group:focus .group-focus\:bg-cool-gray-500 {
+  background-color: #64748b;
+}
+
+.group:focus .group-focus\:bg-cool-gray-600 {
+  background-color: #475569;
+}
+
+.group:focus .group-focus\:bg-cool-gray-700 {
+  background-color: #364152;
+}
+
+.group:focus .group-focus\:bg-cool-gray-800 {
+  background-color: #27303f;
+}
+
+.group:focus .group-focus\:bg-cool-gray-900 {
+  background-color: #1a202e;
+}
+
+.group:focus .group-focus\:bg-red-50 {
+  background-color: #fdf2f2;
+}
+
+.group:focus .group-focus\:bg-red-100 {
+  background-color: #fde8e8;
+}
+
+.group:focus .group-focus\:bg-red-200 {
+  background-color: #fbd5d5;
+}
+
+.group:focus .group-focus\:bg-red-300 {
+  background-color: #f8b4b4;
+}
+
+.group:focus .group-focus\:bg-red-400 {
+  background-color: #f98080;
+}
+
+.group:focus .group-focus\:bg-red-500 {
+  background-color: #f05252;
+}
+
+.group:focus .group-focus\:bg-red-600 {
+  background-color: #e02424;
+}
+
+.group:focus .group-focus\:bg-red-700 {
+  background-color: #c81e1e;
+}
+
+.group:focus .group-focus\:bg-red-800 {
+  background-color: #9b1c1c;
+}
+
+.group:focus .group-focus\:bg-red-900 {
+  background-color: #771d1d;
+}
+
+.group:focus .group-focus\:bg-orange-50 {
+  background-color: #fff8f1;
+}
+
+.group:focus .group-focus\:bg-orange-100 {
+  background-color: #feecdc;
+}
+
+.group:focus .group-focus\:bg-orange-200 {
+  background-color: #fcd9bd;
+}
+
+.group:focus .group-focus\:bg-orange-300 {
+  background-color: #fdba8c;
+}
+
+.group:focus .group-focus\:bg-orange-400 {
+  background-color: #ff8a4c;
+}
+
+.group:focus .group-focus\:bg-orange-500 {
+  background-color: #ff5a1f;
+}
+
+.group:focus .group-focus\:bg-orange-600 {
+  background-color: #d03801;
+}
+
+.group:focus .group-focus\:bg-orange-700 {
+  background-color: #b43403;
+}
+
+.group:focus .group-focus\:bg-orange-800 {
+  background-color: #8a2c0d;
+}
+
+.group:focus .group-focus\:bg-orange-900 {
+  background-color: #771d1d;
+}
+
+.group:focus .group-focus\:bg-yellow-50 {
+  background-color: #fdfdea;
+}
+
+.group:focus .group-focus\:bg-yellow-100 {
+  background-color: #fdf6b2;
+}
+
+.group:focus .group-focus\:bg-yellow-200 {
+  background-color: #fce96a;
+}
+
+.group:focus .group-focus\:bg-yellow-300 {
+  background-color: #faca15;
+}
+
+.group:focus .group-focus\:bg-yellow-400 {
+  background-color: #e3a008;
+}
+
+.group:focus .group-focus\:bg-yellow-500 {
+  background-color: #c27803;
+}
+
+.group:focus .group-focus\:bg-yellow-600 {
+  background-color: #9f580a;
+}
+
+.group:focus .group-focus\:bg-yellow-700 {
+  background-color: #8e4b10;
+}
+
+.group:focus .group-focus\:bg-yellow-800 {
+  background-color: #723b13;
+}
+
+.group:focus .group-focus\:bg-yellow-900 {
+  background-color: #633112;
+}
+
+.group:focus .group-focus\:bg-green-50 {
+  background-color: #f3faf7;
+}
+
+.group:focus .group-focus\:bg-green-100 {
+  background-color: #def7ec;
+}
+
+.group:focus .group-focus\:bg-green-200 {
+  background-color: #bcf0da;
+}
+
+.group:focus .group-focus\:bg-green-300 {
+  background-color: #84e1bc;
+}
+
+.group:focus .group-focus\:bg-green-400 {
+  background-color: #31c48d;
+}
+
+.group:focus .group-focus\:bg-green-500 {
+  background-color: #0e9f6e;
+}
+
+.group:focus .group-focus\:bg-green-600 {
+  background-color: #057a55;
+}
+
+.group:focus .group-focus\:bg-green-700 {
+  background-color: #046c4e;
+}
+
+.group:focus .group-focus\:bg-green-800 {
+  background-color: #03543f;
+}
+
+.group:focus .group-focus\:bg-green-900 {
+  background-color: #014737;
+}
+
+.group:focus .group-focus\:bg-teal-50 {
+  background-color: #edfafa;
+}
+
+.group:focus .group-focus\:bg-teal-100 {
+  background-color: #d5f5f6;
+}
+
+.group:focus .group-focus\:bg-teal-200 {
+  background-color: #afecef;
+}
+
+.group:focus .group-focus\:bg-teal-300 {
+  background-color: #7edce2;
+}
+
+.group:focus .group-focus\:bg-teal-400 {
+  background-color: #16bdca;
+}
+
+.group:focus .group-focus\:bg-teal-500 {
+  background-color: #0694a2;
+}
+
+.group:focus .group-focus\:bg-teal-600 {
+  background-color: #047481;
+}
+
+.group:focus .group-focus\:bg-teal-700 {
+  background-color: #036672;
+}
+
+.group:focus .group-focus\:bg-teal-800 {
+  background-color: #05505c;
+}
+
+.group:focus .group-focus\:bg-teal-900 {
+  background-color: #014451;
+}
+
+.group:focus .group-focus\:bg-blue-50 {
+  background-color: #ebf5ff;
+}
+
+.group:focus .group-focus\:bg-blue-100 {
+  background-color: #e1effe;
+}
+
+.group:focus .group-focus\:bg-blue-200 {
+  background-color: #c3ddfd;
+}
+
+.group:focus .group-focus\:bg-blue-300 {
+  background-color: #a4cafe;
+}
+
+.group:focus .group-focus\:bg-blue-400 {
+  background-color: #76a9fa;
+}
+
+.group:focus .group-focus\:bg-blue-500 {
+  background-color: #3f83f8;
+}
+
+.group:focus .group-focus\:bg-blue-600 {
+  background-color: #1c64f2;
+}
+
+.group:focus .group-focus\:bg-blue-700 {
+  background-color: #1a56db;
+}
+
+.group:focus .group-focus\:bg-blue-800 {
+  background-color: #1e429f;
+}
+
+.group:focus .group-focus\:bg-blue-900 {
+  background-color: #233876;
+}
+
+.group:focus .group-focus\:bg-indigo-50 {
+  background-color: #f0f5ff;
+}
+
+.group:focus .group-focus\:bg-indigo-100 {
+  background-color: #e5edff;
+}
+
+.group:focus .group-focus\:bg-indigo-200 {
+  background-color: #cddbfe;
+}
+
+.group:focus .group-focus\:bg-indigo-300 {
+  background-color: #b4c6fc;
+}
+
+.group:focus .group-focus\:bg-indigo-400 {
+  background-color: #8da2fb;
+}
+
+.group:focus .group-focus\:bg-indigo-500 {
+  background-color: #6875f5;
+}
+
+.group:focus .group-focus\:bg-indigo-600 {
+  background-color: #5850ec;
+}
+
+.group:focus .group-focus\:bg-indigo-700 {
+  background-color: #5145cd;
+}
+
+.group:focus .group-focus\:bg-indigo-800 {
+  background-color: #42389d;
+}
+
+.group:focus .group-focus\:bg-indigo-900 {
+  background-color: #362f78;
+}
+
+.group:focus .group-focus\:bg-purple-50 {
+  background-color: #f6f5ff;
+}
+
+.group:focus .group-focus\:bg-purple-100 {
+  background-color: #edebfe;
+}
+
+.group:focus .group-focus\:bg-purple-200 {
+  background-color: #dcd7fe;
+}
+
+.group:focus .group-focus\:bg-purple-300 {
+  background-color: #cabffd;
+}
+
+.group:focus .group-focus\:bg-purple-400 {
+  background-color: #ac94fa;
+}
+
+.group:focus .group-focus\:bg-purple-500 {
+  background-color: #9061f9;
+}
+
+.group:focus .group-focus\:bg-purple-600 {
+  background-color: #7e3af2;
+}
+
+.group:focus .group-focus\:bg-purple-700 {
+  background-color: #6c2bd9;
+}
+
+.group:focus .group-focus\:bg-purple-800 {
+  background-color: #5521b5;
+}
+
+.group:focus .group-focus\:bg-purple-900 {
+  background-color: #4a1d96;
+}
+
+.group:focus .group-focus\:bg-pink-50 {
+  background-color: #fdf2f8;
+}
+
+.group:focus .group-focus\:bg-pink-100 {
+  background-color: #fce8f3;
+}
+
+.group:focus .group-focus\:bg-pink-200 {
+  background-color: #fad1e8;
+}
+
+.group:focus .group-focus\:bg-pink-300 {
+  background-color: #f8b4d9;
+}
+
+.group:focus .group-focus\:bg-pink-400 {
+  background-color: #f17eb8;
+}
+
+.group:focus .group-focus\:bg-pink-500 {
+  background-color: #e74694;
+}
+
+.group:focus .group-focus\:bg-pink-600 {
+  background-color: #d61f69;
+}
+
+.group:focus .group-focus\:bg-pink-700 {
+  background-color: #bf125d;
+}
+
+.group:focus .group-focus\:bg-pink-800 {
+  background-color: #99154b;
+}
+
+.group:focus .group-focus\:bg-pink-900 {
+  background-color: #751a3d;
+}
+
+.group:focus .group-focus\:bg-danger {
+  background-color: var(--craftui-danger);
+}
+
+.group:focus .group-focus\:bg-danger-background {
+  background-color: var(--craftui-danger-background);
+}
+
+.group:focus .group-focus\:bg-danger-separator {
+  background-color: var(--craftui-danger-separator);
+}
+
+.group:focus .group-focus\:bg-danger-text {
+  background-color: var(--craftui-danger-text);
+}
+
+.group:focus .group-focus\:bg-dark-text {
+  background-color: var(--craftui-dark-text);
+}
+
+.group:focus .group-focus\:bg-field-background {
+  background-color: var(--craftui-field-background);
+}
+
+.group:focus .group-focus\:bg-field-disabled-background {
+  background-color: var(--craftui-field-disabled-background);
+}
+
+.group:focus .group-focus\:bg-field-disabled-separator {
+  background-color: var(--craftui-field-disabled-separator);
+}
+
+.group:focus .group-focus\:bg-field-separator {
+  background-color: var(--craftui-field-separator);
+}
+
+.group:focus .group-focus\:bg-icon {
+  background-color: var(--craftui-icon);
+}
+
+.group:focus .group-focus\:bg-info {
+  background-color: var(--craftui-info);
+}
+
+.group:focus .group-focus\:bg-info-background {
+  background-color: var(--craftui-info-background);
+}
+
+.group:focus .group-focus\:bg-info-separator {
+  background-color: var(--craftui-info-separator);
+}
+
+.group:focus .group-focus\:bg-info-text {
+  background-color: var(--craftui-info-text);
+}
+
+.group:focus .group-focus\:bg-interactive-danger {
+  background-color: var(--craftui-interactive-danger);
+}
+
+.group:focus .group-focus\:bg-interactive-danger-active {
+  background-color: var(--craftui-interactive-danger-active);
+}
+
+.group:focus .group-focus\:bg-interactive-danger-hover {
+  background-color: var(--craftui-interactive-danger-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-link {
+  background-color: var(--craftui-interactive-link);
+}
+
+.group:focus .group-focus\:bg-interactive-link-hover {
+  background-color: var(--craftui-interactive-link-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-nav-item-text {
+  background-color: var(--craftui-interactive-nav-item-text);
+}
+
+.group:focus .group-focus\:bg-interactive-nav-item-hover-text {
+  background-color: var(--craftui-interactive-nav-item-hover-text);
+}
+
+.group:focus .group-focus\:bg-interactive-nav-item-active-text {
+  background-color: var(--craftui-interactive-nav-item-active-text);
+}
+
+.group:focus .group-focus\:bg-interactive-nav-item-disabled-text {
+  background-color: var(--craftui-interactive-nav-item-disabled-text);
+}
+
+.group:focus .group-focus\:bg-interactive-navbar-item-active-text {
+  background-color: var(--craftui-interactive-navbar-item-active-text);
+}
+
+.group:focus .group-focus\:bg-interactive-navbar-item-active-border {
+  background-color: var(--craftui-interactive-navbar-item-active-border);
+}
+
+.group:focus .group-focus\:bg-interactive-navbar-item-hover-border {
+  background-color: var(--craftui-interactive-navbar-item-hover-border);
+}
+
+.group:focus .group-focus\:bg-interactive-navbar-item-hover-text {
+  background-color: var(--craftui-interactive-navbar-item-hover-text);
+}
+
+.group:focus .group-focus\:bg-interactive-navbar-item-text {
+  background-color: var(--craftui-interactive-navbar-item-text);
+}
+
+.group:focus .group-focus\:bg-interactive-primary {
+  background-color: var(--craftui-interactive-primary);
+}
+
+.group:focus .group-focus\:bg-interactive-primary-active {
+  background-color: var(--craftui-interactive-primary-active);
+}
+
+.group:focus .group-focus\:bg-interactive-primary-hover {
+  background-color: var(--craftui-interactive-primary-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-secondary {
+  background-color: var(--craftui-interactive-secondary);
+}
+
+.group:focus .group-focus\:bg-interactive-secondary-active {
+  background-color: var(--craftui-interactive-secondary-active);
+}
+
+.group:focus .group-focus\:bg-interactive-secondary-hover {
+  background-color: var(--craftui-interactive-secondary-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-success {
+  background-color: var(--craftui-interactive-success);
+}
+
+.group:focus .group-focus\:bg-interactive-success-active {
+  background-color: var(--craftui-interactive-success-active);
+}
+
+.group:focus .group-focus\:bg-interactive-success-hover {
+  background-color: var(--craftui-interactive-success-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-tertiary {
+  background-color: var(--craftui-interactive-tertiary);
+}
+
+.group:focus .group-focus\:bg-interactive-tertiary-active {
+  background-color: var(--craftui-interactive-tertiary-active);
+}
+
+.group:focus .group-focus\:bg-interactive-tertiary-hover {
+  background-color: var(--craftui-interactive-tertiary-hover);
+}
+
+.group:focus .group-focus\:bg-interactive-text {
+  background-color: var(--craftui-interactive-text);
+}
+
+.group:focus .group-focus\:bg-interactive-text-inverse {
+  background-color: var(--craftui-interactive-text-inverse);
+}
+
+.group:focus .group-focus\:bg-light-text {
+  background-color: var(--craftui-light-text);
+}
+
+.group:focus .group-focus\:bg-notice {
+  background-color: var(--craftui-notice);
+}
+
+.group:focus .group-focus\:bg-notice-background {
+  background-color: var(--craftui-notice-background);
+}
+
+.group:focus .group-focus\:bg-notice-separator {
+  background-color: var(--craftui-notice-separator);
+}
+
+.group:focus .group-focus\:bg-notice-text {
+  background-color: var(--craftui-notice-text);
+}
+
+.group:focus .group-focus\:bg-opaque-separator {
+  background-color: var(--craftui-opaque-separator);
+}
+
+.group:focus .group-focus\:bg-primary-background {
+  background-color: var(--craftui-primary-background);
+}
+
+.group:focus .group-focus\:bg-primary-background-gradient-1 {
+  background-color: var(--craftui-primary-background-gradient-1);
+}
+
+.group:focus .group-focus\:bg-primary-background-gradient-2 {
+  background-color: var(--craftui-primary-background-gradient-2);
+}
+
+.group:focus .group-focus\:bg-secondary-background {
+  background-color: var(--craftui-secondary-background);
+}
+
+.group:focus .group-focus\:bg-tertiary-background {
+  background-color: var(--craftui-tertiary-background);
+}
+
+.group:focus .group-focus\:bg-separator {
+  background-color: var(--craftui-separator);
+}
+
+.group:focus .group-focus\:bg-shadow-1 {
+  background-color: var(--craftui-shadow-1);
+}
+
+.group:focus .group-focus\:bg-shadow-2 {
+  background-color: var(--craftui-shadow-2);
+}
+
+.group:focus .group-focus\:bg-shadow-3 {
+  background-color: var(--craftui-shadow-3);
+}
+
+.group:focus .group-focus\:bg-success {
+  background-color: var(--craftui-success);
+}
+
+.group:focus .group-focus\:bg-success-background {
+  background-color: var(--craftui-success-background);
+}
+
+.group:focus .group-focus\:bg-success-separator {
+  background-color: var(--craftui-success-separator);
+}
+
+.group:focus .group-focus\:bg-success-text {
+  background-color: var(--craftui-success-text);
+}
+
+.group:focus .group-focus\:bg-text {
+  background-color: var(--craftui-text);
+}
+
+.group:focus .group-focus\:bg-text-inverse {
+  background-color: var(--craftui-text-inverse);
+}
+
+.group:focus .group-focus\:bg-warning {
+  background-color: var(--craftui-warning);
+}
+
+.group:focus .group-focus\:bg-warning-background {
+  background-color: var(--craftui-warning-background);
+}
+
+.group:focus .group-focus\:bg-warning-separator {
+  background-color: var(--craftui-warning-separator);
+}
+
+.group:focus .group-focus\:bg-warning-text {
+  background-color: var(--craftui-warning-text);
+}
+
+.group:focus .group-focus\:bg-default-background {
+  background-color: var(--craftui-default-background);
+}
+
+.group:focus .group-focus\:bg-default-separator {
+  background-color: var(--craftui-default-separator);
+}
+
+.group:focus .group-focus\:bg-default-text {
   background-color: var(--craftui-default-text);
 }
 
@@ -36847,6 +38264,1470 @@ body {
     background-color: var(--craftui-default-text);
   }
 
+  .group:hover .sm\:group-hover\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:hover .sm\:group-hover\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:hover .sm\:group-hover\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:hover .sm\:group-hover\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:hover .sm\:group-hover\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:hover .sm\:group-hover\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:hover .sm\:group-hover\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:hover .sm\:group-hover\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:hover .sm\:group-hover\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:hover .sm\:group-hover\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:hover .sm\:group-hover\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:hover .sm\:group-hover\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:hover .sm\:group-hover\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:hover .sm\:group-hover\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:hover .sm\:group-hover\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:hover .sm\:group-hover\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:hover .sm\:group-hover\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:hover .sm\:group-hover\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:hover .sm\:group-hover\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:hover .sm\:group-hover\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:hover .sm\:group-hover\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:hover .sm\:group-hover\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:hover .sm\:group-hover\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:hover .sm\:group-hover\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:hover .sm\:group-hover\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:hover .sm\:group-hover\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:hover .sm\:group-hover\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:focus .sm\:group-focus\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:focus .sm\:group-focus\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:focus .sm\:group-focus\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:focus .sm\:group-focus\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:focus .sm\:group-focus\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:focus .sm\:group-focus\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:focus .sm\:group-focus\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:focus .sm\:group-focus\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:focus .sm\:group-focus\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:focus .sm\:group-focus\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:focus .sm\:group-focus\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:focus .sm\:group-focus\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:focus .sm\:group-focus\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:focus .sm\:group-focus\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:focus .sm\:group-focus\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:focus .sm\:group-focus\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:focus .sm\:group-focus\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:focus .sm\:group-focus\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:focus .sm\:group-focus\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:focus .sm\:group-focus\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:focus .sm\:group-focus\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:focus .sm\:group-focus\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:focus .sm\:group-focus\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:focus .sm\:group-focus\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:focus .sm\:group-focus\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:focus .sm\:group-focus\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:focus .sm\:group-focus\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:focus .sm\:group-focus\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -71621,6 +74502,1470 @@ body {
   }
 
   .md\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:hover .md\:group-hover\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:hover .md\:group-hover\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:hover .md\:group-hover\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:hover .md\:group-hover\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:hover .md\:group-hover\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:hover .md\:group-hover\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:hover .md\:group-hover\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:hover .md\:group-hover\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:hover .md\:group-hover\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:hover .md\:group-hover\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:hover .md\:group-hover\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:hover .md\:group-hover\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:hover .md\:group-hover\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:hover .md\:group-hover\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:hover .md\:group-hover\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:hover .md\:group-hover\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:hover .md\:group-hover\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:hover .md\:group-hover\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:hover .md\:group-hover\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:hover .md\:group-hover\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:hover .md\:group-hover\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:hover .md\:group-hover\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:hover .md\:group-hover\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:hover .md\:group-hover\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:hover .md\:group-hover\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:hover .md\:group-hover\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:hover .md\:group-hover\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:hover .md\:group-hover\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:focus .md\:group-focus\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:focus .md\:group-focus\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:focus .md\:group-focus\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:focus .md\:group-focus\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:focus .md\:group-focus\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:focus .md\:group-focus\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:focus .md\:group-focus\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:focus .md\:group-focus\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:focus .md\:group-focus\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:focus .md\:group-focus\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:focus .md\:group-focus\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:focus .md\:group-focus\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:focus .md\:group-focus\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:focus .md\:group-focus\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:focus .md\:group-focus\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:focus .md\:group-focus\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:focus .md\:group-focus\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:focus .md\:group-focus\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:focus .md\:group-focus\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:focus .md\:group-focus\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:focus .md\:group-focus\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:focus .md\:group-focus\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:focus .md\:group-focus\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:focus .md\:group-focus\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:focus .md\:group-focus\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:focus .md\:group-focus\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:focus .md\:group-focus\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:focus .md\:group-focus\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:focus .md\:group-focus\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:focus .md\:group-focus\:bg-default-text {
     background-color: var(--craftui-default-text);
   }
 
@@ -106401,6 +110746,1470 @@ body {
     background-color: var(--craftui-default-text);
   }
 
+  .group:hover .lg\:group-hover\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:hover .lg\:group-hover\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:hover .lg\:group-hover\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:hover .lg\:group-hover\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:hover .lg\:group-hover\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:hover .lg\:group-hover\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:hover .lg\:group-hover\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:hover .lg\:group-hover\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:hover .lg\:group-hover\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:hover .lg\:group-hover\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:hover .lg\:group-hover\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:hover .lg\:group-hover\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:hover .lg\:group-hover\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:hover .lg\:group-hover\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:hover .lg\:group-hover\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:hover .lg\:group-hover\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:hover .lg\:group-hover\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:hover .lg\:group-hover\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:hover .lg\:group-hover\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:hover .lg\:group-hover\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:hover .lg\:group-hover\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:hover .lg\:group-hover\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:hover .lg\:group-hover\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:hover .lg\:group-hover\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:hover .lg\:group-hover\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:hover .lg\:group-hover\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:hover .lg\:group-hover\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:focus .lg\:group-focus\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:focus .lg\:group-focus\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:focus .lg\:group-focus\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:focus .lg\:group-focus\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:focus .lg\:group-focus\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:focus .lg\:group-focus\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:focus .lg\:group-focus\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:focus .lg\:group-focus\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:focus .lg\:group-focus\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:focus .lg\:group-focus\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:focus .lg\:group-focus\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:focus .lg\:group-focus\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:focus .lg\:group-focus\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:focus .lg\:group-focus\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:focus .lg\:group-focus\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:focus .lg\:group-focus\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:focus .lg\:group-focus\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:focus .lg\:group-focus\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:focus .lg\:group-focus\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:focus .lg\:group-focus\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:focus .lg\:group-focus\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:focus .lg\:group-focus\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:focus .lg\:group-focus\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:focus .lg\:group-focus\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:focus .lg\:group-focus\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:focus .lg\:group-focus\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:focus .lg\:group-focus\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:focus .lg\:group-focus\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -141178,6 +146987,1470 @@ body {
     background-color: var(--craftui-default-text);
   }
 
+  .group:hover .xl\:group-hover\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:hover .xl\:group-hover\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:hover .xl\:group-hover\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:hover .xl\:group-hover\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:hover .xl\:group-hover\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:hover .xl\:group-hover\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:hover .xl\:group-hover\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:hover .xl\:group-hover\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:hover .xl\:group-hover\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:hover .xl\:group-hover\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:hover .xl\:group-hover\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:hover .xl\:group-hover\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:hover .xl\:group-hover\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:hover .xl\:group-hover\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:hover .xl\:group-hover\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:hover .xl\:group-hover\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:hover .xl\:group-hover\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:hover .xl\:group-hover\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:hover .xl\:group-hover\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:hover .xl\:group-hover\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:hover .xl\:group-hover\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:hover .xl\:group-hover\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:hover .xl\:group-hover\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:hover .xl\:group-hover\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:hover .xl\:group-hover\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:hover .xl\:group-hover\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:hover .xl\:group-hover\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .group:focus .xl\:group-focus\:bg-white {
+    background-color: #ffffff;
+  }
+
+  .group:focus .xl\:group-focus\:bg-black {
+    background-color: #000000;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-50 {
+    background-color: #f9fafb;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-100 {
+    background-color: #f4f5f7;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-300 {
+    background-color: #d2d6dc;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-400 {
+    background-color: #9fa6b2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-600 {
+    background-color: #4b5563;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-800 {
+    background-color: #252f3f;
+  }
+
+  .group:focus .xl\:group-focus\:bg-gray-900 {
+    background-color: #161e2e;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-50 {
+    background-color: #fbfdfe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-100 {
+    background-color: #f1f5f9;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-200 {
+    background-color: #e2e8f0;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-300 {
+    background-color: #cfd8e3;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-400 {
+    background-color: #97a6ba;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-500 {
+    background-color: #64748b;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-600 {
+    background-color: #475569;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-700 {
+    background-color: #364152;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-800 {
+    background-color: #27303f;
+  }
+
+  .group:focus .xl\:group-focus\:bg-cool-gray-900 {
+    background-color: #1a202e;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-50 {
+    background-color: #fdf2f2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-100 {
+    background-color: #fde8e8;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-200 {
+    background-color: #fbd5d5;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-300 {
+    background-color: #f8b4b4;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-400 {
+    background-color: #f98080;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-500 {
+    background-color: #f05252;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-600 {
+    background-color: #e02424;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-700 {
+    background-color: #c81e1e;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-800 {
+    background-color: #9b1c1c;
+  }
+
+  .group:focus .xl\:group-focus\:bg-red-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-50 {
+    background-color: #fff8f1;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-100 {
+    background-color: #feecdc;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-200 {
+    background-color: #fcd9bd;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-300 {
+    background-color: #fdba8c;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-400 {
+    background-color: #ff8a4c;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-500 {
+    background-color: #ff5a1f;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-600 {
+    background-color: #d03801;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-700 {
+    background-color: #b43403;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-800 {
+    background-color: #8a2c0d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-orange-900 {
+    background-color: #771d1d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-50 {
+    background-color: #fdfdea;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-100 {
+    background-color: #fdf6b2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-200 {
+    background-color: #fce96a;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-300 {
+    background-color: #faca15;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-400 {
+    background-color: #e3a008;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-500 {
+    background-color: #c27803;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-600 {
+    background-color: #9f580a;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-700 {
+    background-color: #8e4b10;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-800 {
+    background-color: #723b13;
+  }
+
+  .group:focus .xl\:group-focus\:bg-yellow-900 {
+    background-color: #633112;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-50 {
+    background-color: #f3faf7;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-100 {
+    background-color: #def7ec;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-200 {
+    background-color: #bcf0da;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-300 {
+    background-color: #84e1bc;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-400 {
+    background-color: #31c48d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-500 {
+    background-color: #0e9f6e;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-600 {
+    background-color: #057a55;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-700 {
+    background-color: #046c4e;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-800 {
+    background-color: #03543f;
+  }
+
+  .group:focus .xl\:group-focus\:bg-green-900 {
+    background-color: #014737;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-50 {
+    background-color: #edfafa;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-100 {
+    background-color: #d5f5f6;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-200 {
+    background-color: #afecef;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-300 {
+    background-color: #7edce2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-400 {
+    background-color: #16bdca;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-500 {
+    background-color: #0694a2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-600 {
+    background-color: #047481;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-700 {
+    background-color: #036672;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-800 {
+    background-color: #05505c;
+  }
+
+  .group:focus .xl\:group-focus\:bg-teal-900 {
+    background-color: #014451;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-50 {
+    background-color: #ebf5ff;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-100 {
+    background-color: #e1effe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-200 {
+    background-color: #c3ddfd;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-300 {
+    background-color: #a4cafe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-400 {
+    background-color: #76a9fa;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-500 {
+    background-color: #3f83f8;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-600 {
+    background-color: #1c64f2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-700 {
+    background-color: #1a56db;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-800 {
+    background-color: #1e429f;
+  }
+
+  .group:focus .xl\:group-focus\:bg-blue-900 {
+    background-color: #233876;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-50 {
+    background-color: #f0f5ff;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-100 {
+    background-color: #e5edff;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-200 {
+    background-color: #cddbfe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-300 {
+    background-color: #b4c6fc;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-400 {
+    background-color: #8da2fb;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-500 {
+    background-color: #6875f5;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-600 {
+    background-color: #5850ec;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-700 {
+    background-color: #5145cd;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-800 {
+    background-color: #42389d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-indigo-900 {
+    background-color: #362f78;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-50 {
+    background-color: #f6f5ff;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-100 {
+    background-color: #edebfe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-200 {
+    background-color: #dcd7fe;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-300 {
+    background-color: #cabffd;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-400 {
+    background-color: #ac94fa;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-500 {
+    background-color: #9061f9;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-600 {
+    background-color: #7e3af2;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-700 {
+    background-color: #6c2bd9;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-800 {
+    background-color: #5521b5;
+  }
+
+  .group:focus .xl\:group-focus\:bg-purple-900 {
+    background-color: #4a1d96;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-50 {
+    background-color: #fdf2f8;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-100 {
+    background-color: #fce8f3;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-200 {
+    background-color: #fad1e8;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-300 {
+    background-color: #f8b4d9;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-400 {
+    background-color: #f17eb8;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-500 {
+    background-color: #e74694;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-600 {
+    background-color: #d61f69;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-700 {
+    background-color: #bf125d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-800 {
+    background-color: #99154b;
+  }
+
+  .group:focus .xl\:group-focus\:bg-pink-900 {
+    background-color: #751a3d;
+  }
+
+  .group:focus .xl\:group-focus\:bg-danger {
+    background-color: var(--craftui-danger);
+  }
+
+  .group:focus .xl\:group-focus\:bg-danger-background {
+    background-color: var(--craftui-danger-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-danger-separator {
+    background-color: var(--craftui-danger-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-danger-text {
+    background-color: var(--craftui-danger-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-dark-text {
+    background-color: var(--craftui-dark-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-field-background {
+    background-color: var(--craftui-field-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-field-disabled-background {
+    background-color: var(--craftui-field-disabled-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-field-disabled-separator {
+    background-color: var(--craftui-field-disabled-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-field-separator {
+    background-color: var(--craftui-field-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-icon {
+    background-color: var(--craftui-icon);
+  }
+
+  .group:focus .xl\:group-focus\:bg-info {
+    background-color: var(--craftui-info);
+  }
+
+  .group:focus .xl\:group-focus\:bg-info-background {
+    background-color: var(--craftui-info-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-info-separator {
+    background-color: var(--craftui-info-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-info-text {
+    background-color: var(--craftui-info-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-danger {
+    background-color: var(--craftui-interactive-danger);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-danger-active {
+    background-color: var(--craftui-interactive-danger-active);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-danger-hover {
+    background-color: var(--craftui-interactive-danger-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-link {
+    background-color: var(--craftui-interactive-link);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-link-hover {
+    background-color: var(--craftui-interactive-link-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-nav-item-text {
+    background-color: var(--craftui-interactive-nav-item-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-nav-item-hover-text {
+    background-color: var(--craftui-interactive-nav-item-hover-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-nav-item-active-text {
+    background-color: var(--craftui-interactive-nav-item-active-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-nav-item-disabled-text {
+    background-color: var(--craftui-interactive-nav-item-disabled-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-navbar-item-active-text {
+    background-color: var(--craftui-interactive-navbar-item-active-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-navbar-item-active-border {
+    background-color: var(--craftui-interactive-navbar-item-active-border);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-navbar-item-hover-border {
+    background-color: var(--craftui-interactive-navbar-item-hover-border);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-navbar-item-hover-text {
+    background-color: var(--craftui-interactive-navbar-item-hover-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-navbar-item-text {
+    background-color: var(--craftui-interactive-navbar-item-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-primary {
+    background-color: var(--craftui-interactive-primary);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-primary-active {
+    background-color: var(--craftui-interactive-primary-active);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-primary-hover {
+    background-color: var(--craftui-interactive-primary-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-secondary {
+    background-color: var(--craftui-interactive-secondary);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-secondary-active {
+    background-color: var(--craftui-interactive-secondary-active);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-secondary-hover {
+    background-color: var(--craftui-interactive-secondary-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-success {
+    background-color: var(--craftui-interactive-success);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-success-active {
+    background-color: var(--craftui-interactive-success-active);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-success-hover {
+    background-color: var(--craftui-interactive-success-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-tertiary {
+    background-color: var(--craftui-interactive-tertiary);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-tertiary-active {
+    background-color: var(--craftui-interactive-tertiary-active);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-tertiary-hover {
+    background-color: var(--craftui-interactive-tertiary-hover);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-text {
+    background-color: var(--craftui-interactive-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-interactive-text-inverse {
+    background-color: var(--craftui-interactive-text-inverse);
+  }
+
+  .group:focus .xl\:group-focus\:bg-light-text {
+    background-color: var(--craftui-light-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-notice {
+    background-color: var(--craftui-notice);
+  }
+
+  .group:focus .xl\:group-focus\:bg-notice-background {
+    background-color: var(--craftui-notice-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-notice-separator {
+    background-color: var(--craftui-notice-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-notice-text {
+    background-color: var(--craftui-notice-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-opaque-separator {
+    background-color: var(--craftui-opaque-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-primary-background {
+    background-color: var(--craftui-primary-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-primary-background-gradient-1 {
+    background-color: var(--craftui-primary-background-gradient-1);
+  }
+
+  .group:focus .xl\:group-focus\:bg-primary-background-gradient-2 {
+    background-color: var(--craftui-primary-background-gradient-2);
+  }
+
+  .group:focus .xl\:group-focus\:bg-secondary-background {
+    background-color: var(--craftui-secondary-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-tertiary-background {
+    background-color: var(--craftui-tertiary-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-separator {
+    background-color: var(--craftui-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-shadow-1 {
+    background-color: var(--craftui-shadow-1);
+  }
+
+  .group:focus .xl\:group-focus\:bg-shadow-2 {
+    background-color: var(--craftui-shadow-2);
+  }
+
+  .group:focus .xl\:group-focus\:bg-shadow-3 {
+    background-color: var(--craftui-shadow-3);
+  }
+
+  .group:focus .xl\:group-focus\:bg-success {
+    background-color: var(--craftui-success);
+  }
+
+  .group:focus .xl\:group-focus\:bg-success-background {
+    background-color: var(--craftui-success-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-success-separator {
+    background-color: var(--craftui-success-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-success-text {
+    background-color: var(--craftui-success-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-text {
+    background-color: var(--craftui-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-text-inverse {
+    background-color: var(--craftui-text-inverse);
+  }
+
+  .group:focus .xl\:group-focus\:bg-warning {
+    background-color: var(--craftui-warning);
+  }
+
+  .group:focus .xl\:group-focus\:bg-warning-background {
+    background-color: var(--craftui-warning-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-warning-separator {
+    background-color: var(--craftui-warning-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-warning-text {
+    background-color: var(--craftui-warning-text);
+  }
+
+  .group:focus .xl\:group-focus\:bg-default-background {
+    background-color: var(--craftui-default-background);
+  }
+
+  .group:focus .xl\:group-focus\:bg-default-separator {
+    background-color: var(--craftui-default-separator);
+  }
+
+  .group:focus .xl\:group-focus\:bg-default-text {
+    background-color: var(--craftui-default-text);
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -175426,89 +182699,6 @@ a.c-btn .c-btn-content,
 button.c-btn .c-btn-content {
   display: inline-block;
 }
-.c-field {
-  margin-bottom: 1rem;
-}
-
-.c-field .instructions {
-  margin-bottom: 1rem;
-  color: #8f98a3;
-}
-
-.c-field .invalid-feedback {
-  color: #f05252;
-  font-size: 0.875rem;
-  margin-top: 0.5rem;
-  margin-left: 1.25rem;
-  list-style-type: disc;
-}
-
-.c-field.mono input, .c-field.mono textarea {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-.c-dropdown .c-dropdown-input select {
-  border-width: 1px;
-  border-color: var(--craftui-field-separator);
-  background-color: var(--craftui-field-background);
-  height: calc(2.25rem + 2px);
-}
-
-.c-dropdown .c-dropdown-input select.w-full {
-  width: 100%;
-}
-
-.c-dropdown .c-dropdown-input.is-invalid select {
-  border-color: #f05252;
-}
-.c-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  fill: currentColor;
-  top: -2px;
-  width: 18px;
-  height: 18px;
-}
-
-.c-icon.size-sm {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c-icon.size-base {
-  width: 1rem;
-  height: 1rem;
-}
-
-.c-icon.size-lg {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c-icon.size-xl {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.c-icon.size-2xl {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-
-.c-icon.size-3xl {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.c-icon.size-4xl {
-  width: 3rem;
-  height: 3rem;
-}
-
-.c-icon.size-5xl {
-  width: 4rem;
-  height: 4rem;
-}
 .c-lightswitch .c-lightswitch-input label {
   position: relative;
   display: block;
@@ -175586,10 +182776,6 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
 .c-lightswitch .c-lightswitch-input label.disabled .slider {
   cursor: default;
 }
-.c-spinner {
-  display: inline-block;
-}
-
 .c-spinner > .animation {
   -webkit-animation: rotator 0.7s linear infinite;
           animation: rotator 0.7s linear infinite;
@@ -175636,128 +182822,4 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
   }
-}
-.c-textbox .wrapper {
-  position: relative;
-}
-
-.c-textbox .wrapper input[type=email],
-.c-textbox .wrapper input[type=text],
-.c-textbox .wrapper input[type=password],
-.c-textbox .wrapper input[type=tel],
-.c-textbox .wrapper input[type=url],
-.c-textbox .wrapper input[type=number],
-.c-textbox .wrapper textarea {
-  background-color: var(--craftui-field-background);
-  border-width: 1px;
-  border-color: var(--craftui-field-separator);
-  border-radius: 0.25rem;
-  display: block;
-}
-
-.c-textbox .wrapper input[type=email]:focus,
-.c-textbox .wrapper input[type=text]:focus,
-.c-textbox .wrapper input[type=password]:focus,
-.c-textbox .wrapper input[type=tel]:focus,
-.c-textbox .wrapper input[type=url]:focus,
-.c-textbox .wrapper input[type=number]:focus,
-.c-textbox .wrapper textarea:focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
-          box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
-}
-
-.c-textbox .wrapper input[type=email]:disabled, .c-textbox .wrapper input[type=email][readonly],
-.c-textbox .wrapper input[type=text]:disabled,
-.c-textbox .wrapper input[type=text][readonly],
-.c-textbox .wrapper input[type=password]:disabled,
-.c-textbox .wrapper input[type=password][readonly],
-.c-textbox .wrapper input[type=tel]:disabled,
-.c-textbox .wrapper input[type=tel][readonly],
-.c-textbox .wrapper input[type=url]:disabled,
-.c-textbox .wrapper input[type=url][readonly],
-.c-textbox .wrapper input[type=number]:disabled,
-.c-textbox .wrapper input[type=number][readonly],
-.c-textbox .wrapper textarea:disabled,
-.c-textbox .wrapper textarea[readonly] {
-  background-color: var(--craftui-field-disabled-background);
-  border-color: var(--craftui-field-disabled-separator);
-}
-
-.c-textbox .wrapper input[type=email].is-invalid,
-.c-textbox .wrapper input[type=text].is-invalid,
-.c-textbox .wrapper input[type=password].is-invalid,
-.c-textbox .wrapper input[type=tel].is-invalid,
-.c-textbox .wrapper input[type=url].is-invalid,
-.c-textbox .wrapper input[type=number].is-invalid,
-.c-textbox .wrapper textarea.is-invalid {
-  border-color: var(--craftui-danger);
-}
-
-.c-textbox .wrapper input[type=email]::-webkit-input-placeholder, .c-textbox .wrapper input[type=text]::-webkit-input-placeholder, .c-textbox .wrapper input[type=password]::-webkit-input-placeholder, .c-textbox .wrapper input[type=tel]::-webkit-input-placeholder, .c-textbox .wrapper input[type=url]::-webkit-input-placeholder, .c-textbox .wrapper input[type=number]::-webkit-input-placeholder, .c-textbox .wrapper textarea::-webkit-input-placeholder {
-  color: var(--craftui-light-text);
-}
-
-.c-textbox .wrapper input[type=email]::-moz-placeholder, .c-textbox .wrapper input[type=text]::-moz-placeholder, .c-textbox .wrapper input[type=password]::-moz-placeholder, .c-textbox .wrapper input[type=tel]::-moz-placeholder, .c-textbox .wrapper input[type=url]::-moz-placeholder, .c-textbox .wrapper input[type=number]::-moz-placeholder, .c-textbox .wrapper textarea::-moz-placeholder {
-  color: var(--craftui-light-text);
-}
-
-.c-textbox .wrapper input[type=email]:-ms-input-placeholder, .c-textbox .wrapper input[type=text]:-ms-input-placeholder, .c-textbox .wrapper input[type=password]:-ms-input-placeholder, .c-textbox .wrapper input[type=tel]:-ms-input-placeholder, .c-textbox .wrapper input[type=url]:-ms-input-placeholder, .c-textbox .wrapper input[type=number]:-ms-input-placeholder, .c-textbox .wrapper textarea:-ms-input-placeholder {
-  color: var(--craftui-light-text);
-}
-
-.c-textbox .wrapper input[type=email]::-ms-input-placeholder, .c-textbox .wrapper input[type=text]::-ms-input-placeholder, .c-textbox .wrapper input[type=password]::-ms-input-placeholder, .c-textbox .wrapper input[type=tel]::-ms-input-placeholder, .c-textbox .wrapper input[type=url]::-ms-input-placeholder, .c-textbox .wrapper input[type=number]::-ms-input-placeholder, .c-textbox .wrapper textarea::-ms-input-placeholder {
-  color: var(--craftui-light-text);
-}
-
-.c-textbox .wrapper input[type=email]::placeholder,
-.c-textbox .wrapper input[type=text]::placeholder,
-.c-textbox .wrapper input[type=password]::placeholder,
-.c-textbox .wrapper input[type=tel]::placeholder,
-.c-textbox .wrapper input[type=url]::placeholder,
-.c-textbox .wrapper input[type=number]::placeholder,
-.c-textbox .wrapper textarea::placeholder {
-  color: var(--craftui-light-text);
-}
-
-.c-textbox .wrapper input[type=number] {
-  width: 60px;
-}
-
-.c-textbox .wrapper input.c-textbox.w-full {
-  width: 100%;
-}
-
-.c-textbox .wrapper .text-red-600 {
-  color: #e02424;
-}
-
-.c-textbox .wrapper .max {
-  margin-top: 0.5rem;
-}
-
-body.ltr .c-textbox .wrapper .max {
-  padding-right: 0.25rem;
-}
-
-body.rtl .c-textbox .wrapper .max {
-  padding-left: 0.25rem;
-}
-
-.c-textbox .wrapper .max.floating {
-  position: absolute;
-  font-size: 0.75rem;
-  text-align: right;
-}
-
-.c-textbox .wrapper .max.text-gray-500 {
-  color: #6b7280;
-}
-
-.c-textbox .wrapper .max.text-orange-500 {
-  color: #ff5a1f;
-}
-
-.c-textbox .wrapper .max.text-red-500 {
-  color: #f05252;
 }
