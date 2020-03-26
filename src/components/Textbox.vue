@@ -46,9 +46,9 @@
             <p v-if="max"
                class="max"
                :class="{
-                    'text-gray-500': remainingChars >= 20,
-                    'text-orange-500': remainingChars < 20 && remainingChars >= 0,
-                    'text-red-500': remainingChars < 0
+                    'text-light-text': remainingChars >= 20,
+                    'text-warning': remainingChars < 20 && remainingChars >= 0,
+                    'text-danger': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
     </div>

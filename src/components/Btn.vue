@@ -232,15 +232,15 @@
             }
 
             &.danger {
-                @apply .text-red-500;
+                @apply .text-interactive-danger;
 
                 &:not([disabled]) {
                     &:hover {
-                        @apply .text-white .bg-red-500;
+                        @apply .text-white .bg-interactive-danger;
                     }
 
                     &:active {
-                        @apply .text-white .bg-red-800;
+                        @apply .text-white .bg-interactive-danger-active;
                     }
                 }
             }

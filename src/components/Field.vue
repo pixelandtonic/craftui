@@ -18,7 +18,7 @@
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul class="invalid-feedback text-red-500 text-sm mt-2 ml-5 list-disc">
+                    <ul class="invalid-feedback text-danger text-sm mt-2 ml-5 list-disc">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>
