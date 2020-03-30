@@ -98,7 +98,7 @@ module.exports = plugin.withOptions(
                     // Tweak border’s default color
                     borderColor: {
                         ...borderColor,
-                        default: semanticTailwindColors['success']
+                        default: semanticTailwindColors['separator']
                     },
 
                     // Tweak custom form defaults
