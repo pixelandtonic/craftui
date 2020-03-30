@@ -1,6 +1,5 @@
 {
   "name": "@pixelandtonic/craftui",
-  "version": "0.3.6",
   "main": "dist/craftui.js",
   "unpkg": "dist/craftui.iife.min.js",
   "module": "dist/craftui.esm.min.js",
