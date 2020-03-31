@@ -1,10 +1,11 @@
 import Checkbox from '../../../src/components/Checkbox'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
+import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Checkbox',
     component: Checkbox,
-    decorators: [withKnobs],
+    decorators: [withKnobs, withA11y],
 }
 
 export const Default = () => ({

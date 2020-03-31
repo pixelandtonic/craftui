@@ -1,10 +1,11 @@
 import Radio from '../../../src/components/Radio'
 import {withKnobs, boolean} from '@storybook/addon-knobs'
+import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Radio',
     component: Radio,
-    decorators: [withKnobs],
+    decorators: [withKnobs, withA11y],
 }
 
 export const Default = () => ({

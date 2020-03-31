@@ -1,10 +1,11 @@
 import Textbox from '../../../src/components/Textbox'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
+import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Textbox',
     component: Textbox,
-    decorators: [withKnobs],
+    decorators: [withKnobs, withA11y],
 }
 
 

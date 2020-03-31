@@ -1,11 +1,12 @@
 import Btn from '../../../src/components/Btn'
 import {withKnobs, text, boolean, select} from '@storybook/addon-knobs'
 import {action} from '@storybook/addon-actions'
+import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Btn',
     component: Btn,
-    decorators: [withKnobs],
+    decorators: [withKnobs, withA11y],
 }
 
 export const Default = () => ({

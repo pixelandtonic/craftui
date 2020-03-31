@@ -1,10 +1,11 @@
 import Pane from '../../../src/components/Pane'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
+import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Pane',
     component: Pane,
-    decorators: [withKnobs],
+    decorators: [withKnobs, withA11y],
 }
 
 export const Default = () => ({
