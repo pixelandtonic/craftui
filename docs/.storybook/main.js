@@ -7,7 +7,8 @@ module.exports = {
     '@storybook/addon-knobs',
     '@storybook/addon-links',
     '@storybook/addon-docs',
-    'storybook-dark-mode/register'
+    '@storybook/addon-a11y',
+    'storybook-dark-mode/register',
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
