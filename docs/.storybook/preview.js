@@ -1,6 +1,6 @@
 // Craft UI
 import Vue from 'vue'
-import CraftUi from '../../dist/craftui.esm'
+import CraftUi from '../../dist/craftui.standalone.esm'
 Vue.use(CraftUi)
 import '../../dist/craftui.standalone.css'
 
