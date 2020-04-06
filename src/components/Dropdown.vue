@@ -14,8 +14,6 @@
 
 
 <script>
-    import Field from './Field.vue';
-
     export default {
         props: {
             disabled: {
@@ -44,10 +42,6 @@
                 type: String | Number,
                 default: null,
             },
-        },
-
-        components: {
-            Field,
         },
     }
 </script>

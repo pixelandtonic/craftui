@@ -55,7 +55,6 @@
 </template>
 
 <script>
-    import Field from './Field.vue'
     import mask from 'vue-the-mask/src/directive'
 
     export default {
@@ -152,10 +151,6 @@
                 type: String | Number,
                 default: ''
             },
-        },
-
-        components: {
-            Field,
         },
 
         computed: {
