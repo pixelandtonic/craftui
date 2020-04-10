@@ -1,6 +1,6 @@
 <template>
     <div class="c-textbox">
-        <div class="wrapper">
+        <div class="c-textbox-wrapper">
             <component
                     class="form-input block full sm:text-sm sm:leading-5 border rounded"
                     :is="computedComponent"
