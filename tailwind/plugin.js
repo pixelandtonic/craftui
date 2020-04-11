@@ -88,6 +88,9 @@ module.exports = plugin.withOptions(
             variants: {
                 // Add `active` variant to `backgroundColor`
                 backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+
+                // Add `hover` variant to `inset`
+                inset: ['responsive', 'hover'],
             },
 
             theme: {
