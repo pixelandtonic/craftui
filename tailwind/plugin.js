@@ -112,7 +112,12 @@ module.exports = plugin.withOptions(
                             },
                         },
                     }),
-                }
+
+                    // Negative inset
+                    inset: (theme, {negative}) => ({
+                        ...negative(theme('spacing')),
+                    }),
+                },
             },
 
         }
