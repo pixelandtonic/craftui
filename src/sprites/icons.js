@@ -9,6 +9,7 @@ export default [
     'check-circle',
     'chevron-left',
     'chevron-right',
+    'cog',
     'copy',
     'exclamation-circle',
     'exclamation-triangle',
