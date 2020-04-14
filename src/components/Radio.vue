@@ -3,11 +3,10 @@
         <input type="radio"
                class="form-radio h-4 w-4"
                :id="id"
-               :name="name"
                :value="value"
-               :checked="state"
+               :checked="checked"
                :disabled="disabled"
-               @change="onChange"
+               @input="onInput"
         />
 
         <label :for="id" class="mb-0 pl-3 ml-0">
@@ -24,67 +23,22 @@
         },
 
         props: {
-            checked: {
-                type: Boolean,
-                default: false,
-            },
-            disabled: {
-                type: Boolean,
-                default: false,
-            },
-            id: {
-                type: String,
-                default: function () {
-                    return 'c-radio-id-' + this._uid;
-                },
-            },
-            name: {
-                type: String,
-                default: null,
-            },
-            label: {
-                type: String,
-                default: null,
-            },
-            modelValue: {
-                default: undefined,
-            },
-            value: {
-                default: '',
-            },
+            disabled: Boolean,
+            id: String,
+            label: String,
+            modelValue: String,
+            value: String,
         },
 
         computed: {
-            state() {
-                if (this.modelValue === undefined) {
-                    return this.checked;
-                }
-
-                return this.modelValue === this.value;
+            checked() {
+                return this.modelValue === this.value
             }
         },
 
         methods: {
-            onChange() {
-                this.toggle()
-            },
-
-            toggle() {
-                this.$emit('input', this.state ? '' : this.value);
-            }
-        },
-
-        watch: {
-            checked(newValue) {
-                if (newValue !== this.state) {
-                    this.toggle();
-                }
-            }
-        },
-
-        mounted() {
-            if (this.checked && !this.state) {
-                this.toggle();
+            onInput($event) {
+                this.$emit('input', $event.target.value)
             }
         },
     }

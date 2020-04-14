@@ -5,9 +5,9 @@
                    class="form-checkbox h-4 w-4"
                    :id="id"
                    :value="value"
-                   :checked="state"
+                   :checked="checked"
                    :disabled="disabled"
-                   @change="onChange"
+                   @input="onInput"
             />
         </div>
 
@@ -22,85 +22,22 @@
 <script>
     export default {
         model: {
-            prop: 'modelValue',
+            prop: 'checked',
             event: 'input'
         },
 
         props: {
-            checked: {
-                type: Boolean,
-                default: false,
-            },
-            disabled: {
-                type: Boolean,
-                default: false,
-            },
-            id: {
-                type: String,
-                default: function () {
-                    return 'c-checkbox-id-' + this._uid;
-                },
-            },
-            invalid: {
-                type: Boolean,
-                default: false,
-            },
-            label: {
-                type: String,
-                default: null,
-            },
-            modelValue: {
-                default: undefined,
-            },
-            value: {
-                type: String | Boolean,
-                default: null,
-            },
-        },
-
-        computed: {
-            state() {
-                if (this.modelValue === undefined) {
-                    return this.checked;
-                }
-                if (Array.isArray(this.modelValue)) {
-                    return this.modelValue.indexOf(this.value) > -1;
-                }
-                return !!this.modelValue;
-            }
+            checked: Boolean,
+            disabled: Boolean,
+            id: String,
+            invalid: Boolean,
+            label: String,
+            value: String,
         },
 
         methods: {
-            onChange() {
-                this.toggle();
-            },
-            toggle() {
-                let value;
-                if (Array.isArray(this.modelValue)) {
-                    value = this.modelValue.slice(0);
-                    if (this.state) {
-                        value.splice(value.indexOf(this.value), 1);
-                    } else {
-                        value.push(this.value);
-                    }
-                } else {
-                    value = !this.state;
-                }
-                this.$emit('input', value);
-            }
-        },
-
-        watch: {
-            checked(newValue) {
-                if (newValue !== this.state) {
-                    this.toggle();
-                }
-            }
-        },
-
-        mounted() {
-            if (this.checked && !this.state) {
-                this.toggle();
+            onInput($event) {
+                this.$emit('input', $event.target.checked)
             }
         },
     }
