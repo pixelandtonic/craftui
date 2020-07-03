@@ -180,12 +180,12 @@ module.exports = {
         dark: colors.blue[400],
     },
     'interactive-primary': {
-        light: colors.red[600],
-        dark: colors.red[600],
+        light: colors.red[500],
+        dark: colors.red[500],
     },
     'interactive-secondary': {
-        light: colors.gray[300],
-        dark: colors.gray[700],
+        light: colors.gray[200],
+        dark: colors.gray[800],
     },
     'interactive-success': {
         light: colors.green[500],
@@ -218,8 +218,8 @@ module.exports = {
         dark: colors.red[800],
     },
     'interactive-secondary-active': {
-        light: colors.gray[500],
-        dark: colors.gray[500],
+        light: colors.gray[400],
+        dark: colors.gray[600],
     },
     'interactive-success-active': {
         light: colors.green[800],
@@ -256,8 +256,8 @@ module.exports = {
         dark: colors.red[700],
     },
     'interactive-secondary-hover': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
+        light: colors.gray[300],
+        dark: colors.gray[700],
     },
     'interactive-success-hover': {
         light: colors.green[600],
@@ -304,5 +304,24 @@ module.exports = {
     'shadow-3': {
         light: colors.gray[400],
         dark: colors.gray[600],
+    },
+
+
+    // Temp
+    'interactive-nav-text': {
+        light: colors.purple[500],
+        dark: colors.purple[500],
+    },
+    'interactive-nav-hover-text': {
+        light: colors.purple[500],
+        dark: colors.purple[500],
+    },
+    'interactive-nav-disabled-text': {
+        light: colors.purple[500],
+        dark: colors.purple[500],
+    },
+    'interactive-nav-active-background': {
+        light: colors.purple[500],
+        dark: colors.purple[500],
     },
 }

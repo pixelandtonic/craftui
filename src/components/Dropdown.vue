@@ -1,14 +1,15 @@
 <template>
-    <div class="c-dropdown" :class="{'is-invalid': invalid}">
-        <div class="select">
-            <select class="form-select sm:text-sm sm:leading-5 border bg-field-background" :disabled="disabled" :value="value" :class="{
-                'w-full': fullwidth,
-                'border-danger-separator': invalid,
-                'border-field-separator': !invalid,
+    <div class="c-dropdown" :class="{
+        'is-invalid': invalid,
+        'tw-w-full': fullwidth,
+    }">
+            <select class="tw-form-select test sm:tw-text-sm sm:tw-leading-5" :disabled="disabled" :value="value" :class="{
+                'tw-w-full': fullwidth,
+                'tw-border-danger-separator': invalid,
+                'tw-border-field-separator': !invalid,
             }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                 <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
             </select>
-        </div>
     </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
-    <div class="c-checkbox relative flex items-start my-2">
-        <div class="absolute flex items-center h-5">
+    <div class="c-checkbox tw-relative tw-flex tw-items-start tw-my-2">
+        <div class="tw-flex tw-items-center tw-h-5">
             <input type="checkbox"
-                   class="form-checkbox h-4 w-4"
+                   class="tw-form-checkbox tw-h-4 tw-w-4"
                    :id="id"
                    :value="value"
                    :checked="checked"
@@ -11,8 +11,8 @@
             />
         </div>
 
-        <div class="pl-7 text-sm leading-5" :class="{'text-danger': invalid}">
-            <label class="mb-0" :for="id">
+        <div class="tw-ml-2 tw-text-sm tw-leading-5" :class="{'tw-text-danger': invalid}">
+            <label class="tw-mb-0" :for="id">
                 {{ label }}
             </label>
         </div>

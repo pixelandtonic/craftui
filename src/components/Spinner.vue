@@ -1,5 +1,5 @@
 <template>
-    <div class="c-spinner inline-block" :class="{
+    <div class="c-spinner tw-inline-block" :class="{
         [size]: true
     }">
         <div class="animation"></div>

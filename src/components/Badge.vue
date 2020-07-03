@@ -1,11 +1,11 @@
 <template>
     <span
-            class="inline-flex items-center rounded font-medium"
+            class="tw-inline-flex tw-items-center tw-rounded tw-font-medium"
             :class="[{
-                ['px-2 py-0.5 leading-4 text-xs']: !large,
-                ['px-2.5 py-0.5 leading-5 text-sm']: large,
-                ['bg-'+type+'-background']: true,
-                ['text-'+type+'-text']: true
+                ['tw-px-2 tw-py-0.5 tw-leading-4 tw-text-xs']: !large,
+                ['tw-px-3 tw-py-0.5 tw-leading-5 tw-text-sm']: large,
+                ['tw-bg-'+type+'-background']: true,
+                ['tw-text-'+type+'-text']: true
             }]"
     >
         <slot></slot>

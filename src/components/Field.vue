@@ -1,24 +1,24 @@
 <template>
     <div :id="'field-' + labelFor" class="c-field mb-4" :class="{
-        'sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start': horizontal,
-        'sm:border-t sm:border-separator sm:pt-5 mt-6 sm:mt-5': !first
+        'sm:tw-grid sm:tw-grid-cols-3 sm:tw-gap-4 sm:tw-items-start': horizontal,
+        'sm:tw-border-t sm:tw-border-separator sm:tw-pt-5 mt-6 sm:tw-mt-5': !first
     }">
         <div>
             <label v-if="label" :for="labelFor" :class="{
-                'block text-sm font-medium leading-5 text-text sm:mt-px sm:pt-2': horizontal
+                'tw-block tw-text-sm tw-font-medium tw-leading-5 tw-text-text sm:tw-mt-px sm:tw-pt-2': horizontal
             }">{{label}}</label>
 
-            <div v-if="instructions" class="instructions mb-4 text-light-text">
+            <div v-if="instructions" class="instructions tw-mb-4 tw-text-light-text">
                 <p>{{ instructions }}</p>
             </div>
         </div>
 
-        <div class="mt-1 sm:mt-0 sm:col-span-2">
-            <div class="max-w-xs">
+        <div class="tw-mt-1 sm:tw-mt-0 sm:tw-col-span-2">
+            <div class="tw-max-w-xs">
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul class="invalid-feedback text-danger text-sm mt-2 ml-5 list-disc">
+                    <ul class="invalid-feedback tw-text-danger tw-text-sm tw-mt-2 tw-ml-5 tw-list-disc">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>

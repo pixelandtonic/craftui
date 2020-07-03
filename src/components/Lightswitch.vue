@@ -44,8 +44,8 @@
         .c-lightswitch-input {
             label {
                 @apply .relative .block .select-none;
-                width: 40px;
-                height: 24px;
+                width: 34px;
+                height: 22px;
 
                 input {
                     @apply .absolute .opacity-0;
@@ -63,8 +63,8 @@
                     content: "";
                     height: 20px;
                     width: 20px;
-                    @include left(2px);
-                    bottom: 2px;
+                    @include left(1px);
+                    bottom: 1px;
                     -webkit-transition: .1s;
                     transition: .1s;
                 }
@@ -79,9 +79,9 @@
                 }
 
                 input:checked + .slider:before {
-                    -webkit-transform: translateX(16px);
-                    -ms-transform: translateX(16px);
-                    transform: translateX(16px);
+                    -webkit-transform: translateX(12px);
+                    -ms-transform: translateX(12px);
+                    transform: translateX(12px);
                 }
 
                 .slider.round {

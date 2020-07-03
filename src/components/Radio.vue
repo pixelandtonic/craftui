@@ -1,7 +1,7 @@
 <template>
-    <div class="c-radio flex items-center my-2">
+    <div class="c-radio tw-flex tw-items-center tw-my-2">
         <input type="radio"
-               class="form-radio h-4 w-4"
+               class="tw-form-radio tw-h-4 tw-w-4"
                :id="id"
                :value="value"
                :checked="checked"
@@ -9,8 +9,8 @@
                @input="onInput"
         />
 
-        <label :for="id" class="mb-0 pl-3 ml-0">
-            <span class="block text-sm leading-5 font-medium text-text">{{ label }}</span>
+        <label :for="id" class="tw-mb-0 tw-pl-3 tw-ml-0">
+            <span class="tw-block tw-text-sm tw-leading-5 tw-text-text">{{ label }}</span>
         </label>
     </div>
 </template>
