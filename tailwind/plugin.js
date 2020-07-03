@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const colors = require('../src/colors/colors')
 const { borderColor } = require('tailwindcss/defaultTheme')
 const semanticTailwindColors = require('../src/colors/semanticTailwindColors')
 const semanticColors = require('../src/colors/semanticColors')
@@ -101,6 +102,8 @@ module.exports = plugin.withOptions(
             },
 
             theme: {
+                colors,
+
                 extend: {
                     // Add semantic colors to the existing Tailwind color palette
                     colors: semanticTailwindColors,
