@@ -1,6 +1,62 @@
-body {
-  background-color: var(--craftui-secondary-background);
-  color: var(--craftui-text);
+.tw-form-input {
+  line-height: .75rem;
+}
+
+.tw-form-checkbox {
+  border-radius: 0.20rem;
+}
+
+.tw-form-checkbox:checked {
+  --bg-opacity: 1;
+  background-color: #3f83f8;
+  background-color: rgba(63, 131, 248, var(--bg-opacity));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='white' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 80% 80%;
+}
+
+.tw-form-radio:checked {
+  --bg-opacity: 1;
+  background-color: #3f83f8;
+  background-color: rgba(63, 131, 248, var(--bg-opacity));
+}
+
+.tw-form-select {
+  --bg-opacity: 1;
+  background-color: #e2e8f0;
+  background-color: rgba(226, 232, 240, var(--bg-opacity));
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.375rem !important;
+  background-image: none;
+}
+
+.tw-form-select:hover {
+  --bg-opacity: 1;
+  background-color: #cfd8e3;
+  background-color: rgba(207, 216, 227, var(--bg-opacity));
+  border-color: #cfd8e3 !important;
+}
+
+.c-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.c-dropdown:after {
+  z-index: 10000;
+  content: ' ';
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 0.75rem;
+  width: 8px;
+  height: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .c-btn,
@@ -13,7 +69,7 @@ button.c-btn {
   padding-bottom: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   background-color: var(--craftui-interactive-secondary);
   color: var(--craftui-interactive-text);
   text-decoration: none;
@@ -26,17 +82,8 @@ button.c-btn {
 a.c-btn:focus,
 button.c-btn:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
-          box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
-}
-
-.c-btn:not(.outline, :focus),
-a.c-btn:not(.outline, :focus),
-button.c-btn:not(.outline, :focus) {
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  -webkit-box-shadow: 0 1px 3px 0 var(--craftui-shadow-1), 0 1px 2px 0 var(--craftui-shadow-2);
-          box-shadow: 0 1px 3px 0 var(--craftui-shadow-1), 0 1px 2px 0 var(--craftui-shadow-2);
+  -webkit-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 .c-btn:not([disabled]):hover,
@@ -154,41 +201,55 @@ button.c-btn.outline {
 .c-btn.outline.primary,
 a.c-btn.outline.primary,
 button.c-btn.outline.primary {
+  --text-opacity: 1;
   color: #3f83f8;
+  color: rgba(63, 131, 248, var(--text-opacity));
 }
 
 .c-btn.outline.primary:not([disabled]):hover,
 a.c-btn.outline.primary:not([disabled]):hover,
 button.c-btn.outline.primary:not([disabled]):hover {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
   background-color: #3f83f8;
+  background-color: rgba(63, 131, 248, var(--bg-opacity));
 }
 
 .c-btn.outline.primary:not([disabled]):active,
 a.c-btn.outline.primary:not([disabled]):active,
 button.c-btn.outline.primary:not([disabled]):active {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
   background-color: #1e429f;
+  background-color: rgba(30, 66, 159, var(--bg-opacity));
 }
 
 .c-btn.outline.danger,
 a.c-btn.outline.danger,
 button.c-btn.outline.danger {
-  color: #f05252;
+  color: var(--craftui-interactive-danger);
 }
 
 .c-btn.outline.danger:not([disabled]):hover,
 a.c-btn.outline.danger:not([disabled]):hover,
 button.c-btn.outline.danger:not([disabled]):hover {
+  --text-opacity: 1;
   color: #ffffff;
-  background-color: #f05252;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  background-color: var(--craftui-interactive-danger);
 }
 
 .c-btn.outline.danger:not([disabled]):active,
 a.c-btn.outline.danger:not([disabled]):active,
 button.c-btn.outline.danger:not([disabled]):active {
+  --text-opacity: 1;
   color: #ffffff;
-  background-color: #9b1c1c;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  background-color: var(--craftui-interactive-danger-active);
 }
 
 .c-btn.outline .c-icon,
@@ -208,19 +269,25 @@ a.c-btn.loading:not(.outline).primary .c-spinner > .animation,
 a.c-btn.loading:not(.outline).danger .c-spinner > .animation,
 button.c-btn.loading:not(.outline).primary .c-spinner > .animation,
 button.c-btn.loading:not(.outline).danger .c-spinner > .animation {
+  --border-opacity: 1;
   border-color: #ffffff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 .c-btn.loading.outline.primary .c-spinner > .animation,
 a.c-btn.loading.outline.primary .c-spinner > .animation,
 button.c-btn.loading.outline.primary .c-spinner > .animation {
+  --border-opacity: 1;
   border-color: #3f83f8;
+  border-color: rgba(63, 131, 248, var(--border-opacity));
 }
 
 .c-btn.loading.outline.danger .c-spinner > .animation,
 a.c-btn.loading.outline.danger .c-spinner > .animation,
 button.c-btn.loading.outline.danger .c-spinner > .animation {
-  border-color: #f05252;
+  --border-opacity: 1;
+  border-color: #E5422B;
+  border-color: rgba(229, 66, 43, var(--border-opacity));
 }
 
 .c-btn.loading .c-spinner,
@@ -278,8 +345,8 @@ button.c-btn .c-btn-content {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: 40px;
-  height: 24px;
+  width: 34px;
+  height: 22px;
 }
 
 .c-lightswitch .c-lightswitch-input label input {
@@ -301,21 +368,23 @@ button.c-btn .c-btn-content {
 
 .c-lightswitch .c-lightswitch-input label .slider:before {
   position: absolute;
+  --bg-opacity: 1;
   background-color: #ffffff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
   content: "";
   height: 20px;
   width: 20px;
-  bottom: 2px;
+  bottom: 1px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 body.ltr .c-lightswitch .c-lightswitch-input label .slider:before {
-  left: 2px;
+  left: 1px;
 }
 
 body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
-  right: 2px;
+  right: 1px;
 }
 
 .c-lightswitch .c-lightswitch-input label input:checked + .slider {
@@ -329,8 +398,8 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
 }
 
 .c-lightswitch .c-lightswitch-input label input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  transform: translateX(16px);
+  -webkit-transform: translateX(12px);
+  transform: translateX(12px);
 }
 
 .c-lightswitch .c-lightswitch-input label .slider.round {
