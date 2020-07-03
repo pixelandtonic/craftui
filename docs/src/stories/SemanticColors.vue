@@ -1,20 +1,20 @@
 <template>
     <div>
-        <h1>Semantic Colors</h1>
+        <h1 class="tw-text-3xl tw-font-medium tw-mb-2">Semantic Colors</h1>
 
-        <table class="w-full mb-6 border-t border-b border-gray-400 table-collapse">
+        <table class="tw-w-full tw-mb-6 tw-border-t tw-border-b tw-border-gray-400 tw-table-collapse">
             <thead>
             <tr>
-                <th class="text-left">Color</th>
+                <th class="tw-text-left">Color</th>
                 <th></th>
             </tr>
             </thead>
             <tbody>
             <template v-for="(colorValue, colorName) in semanticColors">
                 <tr>
-                    <td class="border-t border-gray-400">{{colorName}}</td>
-                    <td class="w-24 border-t border-gray-400">
-                        <div class="color" :class="{['bg-'+colorName]: true}"></div>
+                    <td class="tw-border-t tw-border-gray-400">{{colorName}}</td>
+                    <td class="tw-w-24 tw-border-t tw-border-gray-400">
+                        <div class="color" :class="{['tw-bg-'+colorName]: true}"></div>
                     </td>
                 </tr>
             </template>

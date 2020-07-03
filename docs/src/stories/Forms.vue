@@ -28,15 +28,15 @@
             </field>
 
             <field label="Push Notifications">
-                <radio name="pushNotifications" label="Everything"></radio>
-                <radio name="pushNotifications" label="Same as email"></radio>
-                <radio name="pushNotifications" label="No push notifications"></radio>
+                <radio v-model="pushNotifications" value="everything" label="Everything"></radio>
+                <radio v-model="pushNotifications" value="sameAsEmail" label="Same as email"></radio>
+                <radio v-model="pushNotifications" value="noPushNotifications" label="No push notifications"></radio>
             </field>
 
-            <div class="mt-5 border-t border-separator pt-5">
-                <div class="flex justify-end">
+            <div class="tw-mt-5 tw-border-t tw-border-separator tw-pt-5">
+                <div class="tw-flex tw-justify-end">
                     <btn>Cancel</btn>
-                    <btn class="ml-3" kind="primary">Save</btn>
+                    <btn class="tw-ml-3" kind="primary">Save</btn>
                 </div>
             </div>
         </pane>
@@ -47,7 +47,8 @@
     export default {
         data() {
             return {
-                errors: ['Error 1', 'Error 2']
+                errors: ['Error 1', 'Error 2'],
+                pushNotifications: 'everything'
             }
         }
     }

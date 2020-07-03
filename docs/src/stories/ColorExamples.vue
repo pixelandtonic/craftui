@@ -1,147 +1,147 @@
 <template>
     <div>
-        <h1 class="text-3xl font-medium mb-2">Examples</h1>
+        <h1 class="tw-text-3xl tw-font-medium tw-mb-2">Examples</h1>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Base</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Base</h2>
         <template v-for="base in bases">
-            <div :key="'base-' + base" :class="'inline-flex rounded items-center justify-center mr-2 w-24 h-24 text-text-inverse bg-' + base">
+            <div :key="'base-' + base" :class="'tw-inline-flex tw-rounded tw-items-center tw-justify-center tw-mr-2 tw-w-24 tw-h-24 tw-text-text-inverse tw-bg-' + base">
                 <div>{{base}}</div>
             </div>
         </template>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Background</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Background</h2>
         <template v-for="background in backgrounds">
-            <div :key="'background-' + background" :class="'mb-2 p-8 border border-opaque-separator text-center bg-'+background">{{background}}</div>
+            <div :key="'background-' + background" :class="'tw-mb-2 tw-p-8 tw-border tw-border-opaque-separator tw-text-center tw-bg-'+background">{{background}}</div>
         </template>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Text</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Text</h2>
         <template v-for="text in texts">
-            <div :key="'text-' + text" :class="'mb-2 text-' + text">{{text}}</div>
+            <div :key="'text-' + text" :class="'tw-mb-2 tw-text-' + text">{{text}}</div>
         </template>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Separators</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Separators</h2>
         <template v-for="separator in separators">
-            <div :key="'separator-' + separator" :class="'rounded mb-2 p-4 border border-' + separator">{{separator}}</div>
+            <div :key="'separator-' + separator" :class="'tw-rounded tw-mb-2 tw-p-4 tw-border tw-border-' + separator">{{separator}}</div>
         </template>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Interactive</h2>
-        <table class="w-full">
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Interactive</h2>
+        <table class="tw-w-full">
             <thead>
-            <tr class="border-b">
-                <th class="text-left py-2">Default</th>
-                <th class="text-left py-2">Hover</th>
-                <th class="text-left py-2">Active</th>
-                <th class="text-left py-2">Preview</th>
+            <tr class="tw-border-b">
+                <th class="tw-text-left tw-py-2">Default</th>
+                <th class="tw-text-left tw-py-2">Hover</th>
+                <th class="tw-text-left tw-py-2">Active</th>
+                <th class="tw-text-left tw-py-2">Preview</th>
             </tr>
             </thead>
             <template v-for="interactive in interactives">
-                <tr :key="'interactive-' + interactive" class="border-b">
-                    <td class="py-2">
-                        <button :class="'px-4 py-2 rounded bg-interactive-'+interactive+' text-interactive-text-inverse'">{{interactive}}</button>
+                <tr :key="'interactive-' + interactive" class="tw-border-b">
+                    <td class="tw-py-2">
+                        <button :class="'tw-px-4 tw-py-2 tw-rounded tw-bg-interactive-'+interactive+' tw-text-interactive-text-inverse'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'px-4 py-2 rounded bg-interactive-'+interactive+'-hover text-interactive-text-inverse'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-px-4 tw-py-2 tw-rounded tw-bg-interactive-'+interactive+'-hover tw-text-interactive-text-inverse'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'px-4 py-2 rounded bg-interactive-'+interactive+'-active text-interactive-text-inverse'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-px-4 tw-py-2 tw-rounded tw-bg-interactive-'+interactive+'-active tw-text-interactive-text-inverse'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'px-4 py-2 rounded bg-interactive-'+interactive+' text-interactive-text-inverse hover:bg-interactive-'+interactive+'-hover active:bg-interactive-'+interactive+'-active'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-px-4 tw-py-2 tw-rounded tw-bg-interactive-'+interactive+' tw-text-interactive-text-inverse hover:tw-bg-interactive-'+interactive+'-hover active:bg-interactive-'+interactive+'-active'">{{interactive}}</button>
                     </td>
                 </tr>
             </template>
         </table>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Interactive Texts</h2>
-        <table class="w-full">
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Interactive Texts</h2>
+        <table class="tw-w-full">
             <thead>
-            <tr class="border-b">
-                <th class="text-left py-2">Default</th>
-                <th class="text-left py-2">Hover</th>
-                <th class="text-left py-2">Active</th>
-                <th class="text-left py-2">Preview</th>
+            <tr class="tw-border-b">
+                <th class="tw-text-left tw-py-2">Default</th>
+                <th class="tw-text-left tw-py-2">Hover</th>
+                <th class="tw-text-left tw-py-2">Active</th>
+                <th class="tw-text-left tw-py-2">Preview</th>
             </tr>
             </thead>
             <tbody>
             <template v-for="interactive in interactiveTexts">
-                <tr :key="'interactive-' + interactive" class="border-b">
-                    <td class="py-2">
-                        <button :class="'text-interactive-'+interactive+'-text'">{{interactive}}</button>
+                <tr :key="'interactive-' + interactive" class="tw-border-b">
+                    <td class="tw-py-2">
+                        <button :class="'tw-text-interactive-'+interactive+'-text'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'text-interactive-'+interactive+'-hover-text border-b-2 border-transparent border-interactive-'+interactive+'-hover-border'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-text-interactive-'+interactive+'-hover-text tw-border-b-2 tw-border-transparent tw-border-interactive-'+interactive+'-hover-border'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'text-interactive-'+interactive+'-active-text border-b-2 border-transparent border-interactive-'+interactive+'-active-border'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-text-interactive-'+interactive+'-active-text tw-border-b-2 tw-border-transparent tw-border-interactive-'+interactive+'-active-border'">{{interactive}}</button>
                     </td>
-                    <td class="py-2">
-                        <button :class="'text-interactive-'+interactive+'-text hover:text-interactive-'+interactive+'-hover-text active:text-interactive-'+interactive+'-active-text border-b-2 border-transparent hover:border-interactive-'+interactive+'-hover-border active:border-interactive-'+interactive+'-active-border'">{{interactive}}</button>
+                    <td class="tw-py-2">
+                        <button :class="'tw-text-interactive-'+interactive+'-text hover:tw-text-interactive-'+interactive+'-hover-text active:tw-text-interactive-'+interactive+'-active-text tw-border-b-2 tw-border-transparent hover:tw-border-interactive-'+interactive+'-hover-border active:tw-border-interactive-'+interactive+'-active-border'">{{interactive}}</button>
                     </td>
                 </tr>
             </template>
 
             <tr>
-                <td class="py-2">
-                    <a href="#" class="text-interactive-link">Link</a>
+                <td class="tw-py-2">
+                    <a href="#" class="tw-text-interactive-link">Link</a>
                 </td>
-                <td class="py-2">
-                    <a href="#" class="text-interactive-link-hover">Link</a>
+                <td class="tw-py-2">
+                    <a href="#" class="tw-text-interactive-link-hover">Link</a>
                 </td>
-                <td class="py-2">
-                    <a href="#" class="text-interactive-link-active">Link</a>
+                <td class="tw-py-2">
+                    <a href="#" class="tw-text-interactive-link-active">Link</a>
                 </td>
-                <td class="py-2">
-                    <a href="#" class="text-interactive-link hover:text-interactive-link-hover active:text-interactive-link-active">Link</a>
+                <td class="tw-py-2">
+                    <a href="#" class="tw-text-interactive-link hover:tw-text-interactive-link-hover active:tw-text-interactive-link-active">Link</a>
                 </td>
             </tr>
             </tbody>
         </table>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Disabled</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Disabled</h2>
         <div>
             <template v-for="color in disabled">
-                <div :key="'disabled-' + color" :class="'rounded mb-2 p-4 border border-opaque-separator text-text bg-' + color">
+                <div :key="'disabled-' + color" :class="'tw-rounded tw-mb-2 tw-p-4 tw-border tw-border-opaque-separator tw-text-text tw-bg-' + color">
                     <div>{{color}}</div>
                 </div>
             </template>
         </div>
 
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Misc</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Misc</h2>
         <div>
             <template v-for="color in misc">
-                <div :key="'misc-' + color" :class="'rounded mb-2 p-4 border border-opaque-separator text-text bg-' + color">
+                <div :key="'misc-' + color" :class="'tw-rounded tw-mb-2 tw-p-4 tw-border tw-border-opaque-separator tw-text-text tw-bg-' + color">
                     <div>{{color}}</div>
                 </div>
             </template>
         </div>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">UI</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">UI</h2>
         <template v-for="ui in uis">
-            <div :key="'ui-' + ui" :class="'mb-2 p-4 border border-'+ui+'-separator bg-'+ui+'-background text-'+ui+'-text'">{{ui}}</div>
+            <div :key="'ui-' + ui" :class="'tw-mb-2 tw-p-4 tw-border tw-border-'+ui+'-separator tw-bg-'+ui+'-background text-'+ui+'-text'">{{ui}}</div>
         </template>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Fields</h2>
-        <div class="mb-2">
-            <input type="text" value="Some value in a text input" class="px-3 py-2 rounded bg-field-background border border-field-separator" />
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Fields</h2>
+        <div class="tw-mb-2">
+            <input type="text" value="Some value in a text input" class="tw-px-3 tw-py-2 tw-rounded tw-bg-field-background tw-border border-field-separator" />
         </div>
 
-        <div class="mb-2">
-            <input type="text" value="Some value in a disabled text input" disabled="true" class="px-3 py-2 rounded bg-field-disabled-background border border-field-disabled-separator" />
+        <div class="tw-mb-2">
+            <input type="text" value="Some value in a disabled text input" disabled="true" class="tw-px-3 tw-py-2 tw-rounded tw-bg-field-disabled-background tw-border tw-border-field-disabled-separator" />
         </div>
 
 
-        <div class="mb-2">
-            <a href="#" class="text-interactive-link hover:text-interactive-link-hover hover:underline">Link</a>
+        <div class="tw-mb-2">
+            <a href="#" class="tw-text-interactive-link hover:tw-text-interactive-link-hover hover:tw-underline">Link</a>
         </div>
 
-        <h2 class="text-2xl font-medium mt-6 mb-2">Other</h2>
+        <h2 class="tw-text-2xl tw-font-medium tw-mt-6 tw-mb-2">Other</h2>
 
-        <div class="mb-2">
-            <ul class="border border-separator">
-                <li><a href="#" class="block px-4 py-2 text-interactive-nav-text hover:text-interactive-nav-hover-text">Nav Item</a></li>
-                <li><a href="#" class="block px-4 py-2 text-interactive-nav-text hover:text-interactive-nav-hover-text bg-interactive-nav-active-background">Active Nav Item</a></li>
-                <li><a href="#" class="block px-4 py-2 text-interactive-nav-disabled-text">Disabled Nav Item</a></li>
+        <div class="tw-mb-2">
+            <ul class="tw-border tw-border-separator">
+                <li><a href="#" class="tw-block tw-px-4 tw-py-2 tw-text-interactive-nav-text hover:tw-text-interactive-nav-hover-text">Nav Item</a></li>
+                <li><a href="#" class="tw-block tw-px-4 tw-py-2 tw-text-interactive-nav-text hover:tw-text-interactive-nav-hover-text tw-bg-interactive-nav-active-background">Active Nav Item</a></li>
+                <li><a href="#" class="tw-block tw-px-4 tw-py-2 tw-text-interactive-nav-disabled-text">Disabled Nav Item</a></li>
             </ul>
         </div>
     </div>

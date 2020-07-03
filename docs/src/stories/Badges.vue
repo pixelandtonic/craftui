@@ -8,7 +8,7 @@
             <badge type="danger">Badge</badge>
         </div>
 
-        <div class="mt-8">
+        <div class="tw-mt-8">
             <badge type="default" large>Badge</badge>
             <badge type="success" large>Badge</badge>
             <badge type="info" large>Badge</badge>
