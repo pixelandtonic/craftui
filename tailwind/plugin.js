@@ -4,7 +4,7 @@ const semanticTailwindColors = require('../src/colors/semanticTailwindColors')
 const semanticColors = require('../src/colors/semanticColors')
 
 module.exports = plugin.withOptions(
-    function() {
+    function(pluginOptions) {
         return function(options) {
             const { addBase, addUtilities, theme } = options
 
@@ -38,33 +38,40 @@ module.exports = plugin.withOptions(
 
 
             // Set colors for each context (light, dark, high contrast)
+
             addBase({
                 // `light` color scheme
                 'body': baseStyleColors.light,
+            })
 
-                // `dark` color scheme
-                '@media (prefers-color-scheme: dark)': {
-                    'body': baseStyleColors.dark,
-                },
+            if (pluginOptions.darkModeSupport === true) {
+                addBase({
+                    // `dark` color scheme
+                    '@media (prefers-color-scheme: dark)': {
+                        'body': baseStyleColors.dark,
+                    },
 
-                // `high` contrast
-                '@media (prefers-contrast: high)': {
-                    'body': baseStyleColors.highContrast,
-                },
-                '@media (prefers-color-scheme: dark) and (prefers-contrast: high)': {
-                    'body': baseStyleColors.darkHighContrast,
-                },
+                    // `high` contrast
+                    '@media (prefers-contrast: high)': {
+                        'body': baseStyleColors.highContrast,
+                    },
+                    '@media (prefers-color-scheme: dark) and (prefers-contrast: high)': {
+                        'body': baseStyleColors.darkHighContrast,
+                    },
 
-                // Add support for `.theme-light` to force `light` context
-                'body.theme-light': baseStyleColors.light,
+                    // Add support for `.theme-light` to force `light` context
+                    'body.theme-light': baseStyleColors.light,
 
-                // Add support for `.theme-dark` to force `dark` context
-                'body.theme-dark': baseStyleColors.dark,
+                    // Add support for `.theme-dark` to force `dark` context
+                    'body.theme-dark': baseStyleColors.dark,
 
-                // Add support for `.high-contrast` when browser don’t support `prefers-contrast`
-                'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
-                'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
+                    // Add support for `.high-contrast` when browser don’t support `prefers-contrast`
+                    'body.high-contrast, body.theme-dark.high-contrast': baseStyleColors.highContrast,
+                    'body.theme-dark.high-contrast': baseStyleColors.darkHighContrast,
+                })
+            }
 
+            addBase({
                 // Misc
                 'label': {
                     display: 'inline-block',
