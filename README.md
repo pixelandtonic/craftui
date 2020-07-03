@@ -32,3 +32,15 @@ npm run serve:docs
 ```
 npm run build:docs
 ```
+
+## Usage
+
+Using Craft UI’s next branch:
+```
+"@pixelandtonic/craftui": "pixelandtonic/craftui#next",
+```
+
+Using Craft UI as a repo:
+```
+"@pixelandtonic/craftui": "file:/path/to/craftui",
+```
