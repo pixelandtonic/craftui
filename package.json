@@ -24,6 +24,7 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/vue": "^5.3.18",
+    "@tailwindcss/custom-forms": "^0.2.1",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "node-sass": "^4.13.1",
