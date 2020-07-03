@@ -10,7 +10,6 @@
     "build:docs": "build-storybook -c docs/.storybook -o docs/dist"
   },
   "dependencies": {
-    "@tailwindcss/ui": "^0.1.3",
     "vue": "^2.6.11",
     "vue-the-mask": "^0.11.1"
   },
