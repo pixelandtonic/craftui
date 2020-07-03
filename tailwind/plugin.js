@@ -45,7 +45,7 @@ module.exports = plugin.withOptions(
                 'body': baseStyleColors.light,
             })
 
-            if (pluginOptions.darkModeSupport === true) {
+            if (pluginOptions && pluginOptions.darkModeSupport && pluginOptions.darkModeSupport === true) {
                 addBase({
                     // `dark` color scheme
                     '@media (prefers-color-scheme: dark)': {
