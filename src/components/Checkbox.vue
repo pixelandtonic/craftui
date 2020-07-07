@@ -29,7 +29,12 @@
         props: {
             checked: Boolean,
             disabled: Boolean,
-            id: String,
+            id: {
+                type: String,
+                default: function() {
+                    return this._uid
+                }
+            },
             invalid: Boolean,
             label: String,
             value: String,

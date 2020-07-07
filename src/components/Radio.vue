@@ -24,7 +24,12 @@
 
         props: {
             disabled: Boolean,
-            id: String,
+            id: {
+                type: String,
+                default: function() {
+                    return this._uid
+                }
+            },
             label: String,
             modelValue: String,
             value: String,

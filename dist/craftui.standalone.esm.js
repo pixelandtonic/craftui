@@ -443,7 +443,12 @@ var script$2 = {
   props: {
     checked: Boolean,
     disabled: Boolean,
-    id: String,
+    id: {
+      type: String,
+      default: function _default() {
+        return this._uid;
+      }
+    },
     invalid: Boolean,
     label: String,
     value: String
@@ -1114,7 +1119,12 @@ var script$8 = {
   },
   props: {
     disabled: Boolean,
-    id: String,
+    id: {
+      type: String,
+      default: function _default() {
+        return this._uid;
+      }
+    },
     label: String,
     modelValue: String,
     value: String
