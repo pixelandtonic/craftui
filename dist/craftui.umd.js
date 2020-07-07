@@ -1165,7 +1165,7 @@
         _vm._v(" "),
         _c(
           "label",
-          { staticClass: "tw-mb-0 tw-pl-3 tw-ml-0", attrs: { for: _vm.id } },
+          { staticClass: "tw-mb-0 tw-pl-2 tw-ml-0", attrs: { for: _vm.id } },
           [
             _c(
               "span",
