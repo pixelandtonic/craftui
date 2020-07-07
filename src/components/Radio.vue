@@ -9,7 +9,7 @@
                @input="onInput"
         />
 
-        <label :for="id" class="tw-mb-0 tw-pl-3 tw-ml-0">
+        <label :for="id" class="tw-mb-0 tw-pl-2 tw-ml-0">
             <span class="tw-block tw-text-sm tw-leading-5 tw-text-text">{{ label }}</span>
         </label>
     </div>
