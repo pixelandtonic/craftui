@@ -278,6 +278,9 @@ a.c-btn .c-btn-content,
 button.c-btn .c-btn-content {
   display: inline-block;
 }
+.c-checkbox.disabled {
+  opacity: 0.5;
+}
 .c-dropdown {
   display: inline-block;
   position: relative;
@@ -378,6 +381,9 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
 
 .c-lightswitch .c-lightswitch-input label.disabled .slider {
   cursor: default;
+}
+.c-radio.disabled {
+  opacity: 0.5;
 }
 .c-spinner > .animation {
   -webkit-animation: rotator 0.7s linear infinite;

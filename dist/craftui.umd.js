@@ -441,6 +441,8 @@
     //
     //
     //
+    //
+    //
     var script$2 = {
       model: {
         prop: 'checked',
@@ -468,7 +470,6 @@
 
     /* script */
     const __vue_script__$2 = script$2;
-
     /* template */
     var __vue_render__$2 = function() {
       var _vm = this;
@@ -476,7 +477,12 @@
       var _c = _vm._self._c || _h;
       return _c(
         "div",
-        { staticClass: "c-checkbox tw-relative tw-flex tw-items-start tw-my-2" },
+        {
+          staticClass: "c-checkbox tw-relative tw-flex tw-items-start tw-my-2",
+          class: {
+            disabled: _vm.disabled
+          }
+        },
         [
           _c("div", { staticClass: "tw-flex tw-items-center tw-h-5" }, [
             _c("input", {
@@ -1117,6 +1123,8 @@
     //
     //
     //
+    //
+    //
     var script$8 = {
       model: {
         prop: 'modelValue',
@@ -1148,32 +1156,40 @@
 
     /* script */
     const __vue_script__$8 = script$8;
-
     /* template */
     var __vue_render__$8 = function() {
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
-      return _c("div", { staticClass: "c-radio tw-flex tw-items-center tw-my-2" }, [
-        _c("input", {
-          staticClass: "tw-form-radio tw-h-4 tw-w-4",
-          attrs: { type: "radio", id: _vm.id, disabled: _vm.disabled },
-          domProps: { value: _vm.value, checked: _vm.checked },
-          on: { input: _vm.onInput }
-        }),
-        _vm._v(" "),
-        _c(
-          "label",
-          { staticClass: "tw-mb-0 tw-pl-2 tw-ml-0", attrs: { for: _vm.id } },
-          [
-            _c(
-              "span",
-              { staticClass: "tw-block tw-text-sm tw-leading-5 tw-text-text" },
-              [_vm._v(_vm._s(_vm.label))]
-            )
-          ]
-        )
-      ])
+      return _c(
+        "div",
+        {
+          staticClass: "c-radio tw-flex tw-items-center tw-my-2",
+          class: {
+            disabled: _vm.disabled
+          }
+        },
+        [
+          _c("input", {
+            staticClass: "tw-form-radio tw-h-4 tw-w-4",
+            attrs: { type: "radio", id: _vm.id, disabled: _vm.disabled },
+            domProps: { value: _vm.value, checked: _vm.checked },
+            on: { input: _vm.onInput }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "tw-mb-0 tw-pl-2 tw-ml-0", attrs: { for: _vm.id } },
+            [
+              _c(
+                "span",
+                { staticClass: "tw-block tw-text-sm tw-leading-5 tw-text-text" },
+                [_vm._v(_vm._s(_vm.label))]
+              )
+            ]
+          )
+        ]
+      )
     };
     var __vue_staticRenderFns__$8 = [];
     __vue_render__$8._withStripped = true;

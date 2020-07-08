@@ -1,5 +1,7 @@
 <template>
-    <div class="c-checkbox tw-relative tw-flex tw-items-start tw-my-2">
+    <div class="c-checkbox tw-relative tw-flex tw-items-start tw-my-2" :class="{
+        disabled,
+    }">
         <div class="tw-flex tw-items-center tw-h-5">
             <input type="checkbox"
                    class="tw-form-checkbox tw-h-4 tw-w-4"
@@ -47,3 +49,11 @@
         },
     }
 </script>
+
+<style lang="scss">
+    .c-checkbox {
+        &.disabled {
+            @apply opacity-50;
+        }
+    }
+</style>

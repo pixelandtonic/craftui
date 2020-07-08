@@ -1,5 +1,7 @@
 <template>
-    <div class="c-radio tw-flex tw-items-center tw-my-2">
+    <div class="c-radio tw-flex tw-items-center tw-my-2" :class="{
+        disabled,
+    }">
         <input type="radio"
                class="tw-form-radio tw-h-4 tw-w-4"
                :id="id"
@@ -48,3 +50,11 @@
         },
     }
 </script>
+
+<style lang="scss">
+    .c-radio {
+        &.disabled {
+            @apply opacity-50;
+        }
+    }
+</style>
