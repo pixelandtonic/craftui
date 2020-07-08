@@ -164,7 +164,7 @@ module.exports = plugin.withOptions(
                     // Add semantic colors to the existing Tailwind color palette
                     colors: semanticTailwindColors,
 
-                    // Tweak border’s default color
+                    // Tweak default border color
                     borderColor: {
                         ...borderColor,
                         default: semanticTailwindColors['separator']
