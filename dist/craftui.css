@@ -330,7 +330,9 @@ button.c-btn .c-btn-content {
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: #ccc;
+  --bg-opacity: 1;
+  background-color: #9fa6b2;
+  background-color: rgba(159, 166, 178, var(--bg-opacity));
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

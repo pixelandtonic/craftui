@@ -52,8 +52,7 @@
                 }
 
                 .slider {
-                    @apply .absolute .inset-0 .cursor-pointer;
-                    background-color: #ccc;
+                    @apply .absolute .inset-0 .cursor-pointer .bg-gray-400;
                     -webkit-transition: .4s;
                     transition: .4s;
                 }
