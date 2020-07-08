@@ -3,7 +3,7 @@
             class="tw-inline-flex tw-items-center tw-rounded tw-font-medium"
             :class="[{
                 ['tw-px-2 tw-py-0.5 tw-leading-4 tw-text-xs']: !large,
-                ['tw-px-3 tw-py-0.5 tw-leading-5 tw-text-sm']: large,
+                ['tw-px-2.5 tw-py-0.5 tw-leading-5 tw-text-sm']: large,
                 ['tw-bg-'+type+'-background']: true,
                 ['tw-text-'+type+'-text']: true
             }]"
