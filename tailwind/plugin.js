@@ -121,7 +121,6 @@ module.exports = plugin.withOptions(
                                     backgroundSize: '80% 80%',
                                 },
                             },
-
                             radio: {
                                 borderColor: theme('colors.gray.300'),
                             },
