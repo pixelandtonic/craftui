@@ -286,6 +286,10 @@ button.c-btn .c-btn-content {
   position: relative;
 }
 
+.c-dropdown.disabled {
+  opacity: 0.5;
+}
+
 .c-dropdown:after {
   z-index: 10000;
   content: " ";

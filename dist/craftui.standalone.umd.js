@@ -556,6 +556,7 @@
     //
     //
     //
+    //
     var script$3 = {
       props: {
         disabled: {
@@ -600,7 +601,8 @@
           staticClass: "c-dropdown",
           class: {
             "is-invalid": _vm.invalid,
-            "tw-w-full": _vm.fullwidth
+            "tw-w-full": _vm.fullwidth,
+            disabled: _vm.disabled
           }
         },
         [

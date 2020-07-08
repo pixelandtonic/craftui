@@ -192,9 +192,14 @@ module.exports = plugin.withOptions(
                                 backgroundColor: theme('colors.cool-gray.200'),
                                 backgroundImage: undefined,
                                 borderRadius: theme('borderRadius.md'),
-                                '&:hover': {
-                                    backgroundColor: theme('colors.cool-gray.300'),
-                                    borderColor: theme('colors.cool-gray.300'),
+                                '&:disabled': {
+                                    opacity: theme('opacity.100'),
+                                },
+                                '&:not([disabled])': {
+                                    '&:hover': {
+                                        backgroundColor: theme('colors.cool-gray.300'),
+                                        borderColor: theme('colors.cool-gray.300'),
+                                    }
                                 }
                             }
                         },

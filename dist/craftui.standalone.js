@@ -554,6 +554,7 @@ __vue_render__$2._withStripped = true;
 //
 //
 //
+//
 var script$3 = {
   props: {
     disabled: {
@@ -598,7 +599,8 @@ var __vue_render__$3 = function() {
       staticClass: "c-dropdown",
       class: {
         "is-invalid": _vm.invalid,
-        "tw-w-full": _vm.fullwidth
+        "tw-w-full": _vm.fullwidth,
+        disabled: _vm.disabled
       }
     },
     [
