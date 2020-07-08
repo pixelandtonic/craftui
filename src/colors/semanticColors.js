@@ -99,8 +99,8 @@ module.exports = {
         dark: colors.white,
     },
     'light-text': {
-        light: colors.gray[500],
-        dark: colors.gray[500],
+        light: colors.gray[400],
+        dark: colors.gray[600],
     },
     'notice-text': {
         light: colors.gray[800],
@@ -133,9 +133,9 @@ module.exports = {
         dark: colors.red[600],
     },
     'field-separator': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
-        highContrast: colors.gray[500]
+        light: colors['cool-gray'][200],
+        dark: colors['cool-gray'][800],
+        highContrast: colors['cool-gray'][500]
     },
     'info-separator': {
         light: colors.blue[400],

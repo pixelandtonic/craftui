@@ -2,7 +2,7 @@
     <div class="c-textbox">
         <div class="c-textbox-wrapper tw-w-full">
             <component
-                    class="tw-form-input tw-block sm:tw-text-sm sm:tw-leading-5 tw-border tw-rounded"
+                    class="tw-form-input tw-block sm:tw-text-sm tw-rounded"
                     :is="computedComponent"
                     :autocapitalize="autocapitalize"
                     :autocomplete="autocomplete"

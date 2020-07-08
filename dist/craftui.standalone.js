@@ -581,7 +581,6 @@ var script$3 = {
 
 /* script */
 const __vue_script__$3 = script$3;
-
 /* template */
 var __vue_render__$3 = function() {
   var _vm = this;
@@ -1604,8 +1603,7 @@ var __vue_render__$a = function() {
             ],
             ref: "input",
             tag: "component",
-            staticClass:
-              "tw-form-input tw-block sm:tw-text-sm sm:tw-leading-5 tw-border tw-rounded",
+            staticClass: "tw-form-input tw-block sm:tw-text-sm tw-rounded",
             class: {
               "tw-w-full": !_vm.size && _vm.type !== "number",
               "tw-w-16": _vm.type === "number",
