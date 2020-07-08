@@ -174,6 +174,7 @@ module.exports = plugin.withOptions(
                     customForms: theme => ({
                         default: {
                             input: {
+                                lineHeight: theme('lineHeight.5'),
                                 '&::placeholder': {
                                     color: theme('colors.light-text'),
                                     opacity: '1',
