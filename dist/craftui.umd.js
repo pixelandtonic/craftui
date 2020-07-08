@@ -150,7 +150,7 @@
           class: [
             ((_obj = {}),
             (_obj["tw-px-2 tw-py-0.5 tw-leading-4 tw-text-xs"] = !_vm.large),
-            (_obj["tw-px-3 tw-py-0.5 tw-leading-5 tw-text-sm"] = _vm.large),
+            (_obj["tw-px-2.5 tw-py-0.5 tw-leading-5 tw-text-sm"] = _vm.large),
             (_obj["tw-bg-" + _vm.type + "-background"] = true),
             (_obj["tw-text-" + _vm.type + "-text"] = true),
             _obj)
