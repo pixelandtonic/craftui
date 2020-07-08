@@ -29,7 +29,7 @@ module.exports = {
 
     // Background
     'danger-background': {
-        light: colors.red[200],
+        light: colors.red[100],
         dark: colors.red[800],
     },
     'field-background': {
@@ -37,7 +37,7 @@ module.exports = {
         dark: colors.gray[700],
     },
     'info-background': {
-        light: colors.blue[200],
+        light: colors.blue[100],
         dark: colors.blue[800],
     },
     'notice-background': {
@@ -57,15 +57,15 @@ module.exports = {
         dark: colors.gray[700],
     },
     'success-background': {
-        light: colors.green[200],
+        light: colors.green[100],
         dark: colors.green[800],
     },
     'warning-background': {
-        light: colors.orange[200],
+        light: colors.orange[100],
         dark: colors.orange[800],
     },
     'default-background': {
-        light: colors.gray[300],
+        light: colors.gray[100],
         dark: colors.gray[800],
     },
 
