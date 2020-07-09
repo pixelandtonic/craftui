@@ -452,7 +452,7 @@ var script$2 = {
     id: {
       type: String,
       default: function _default() {
-        return this._uid;
+        return 'checkbox-' + this._uid;
       }
     },
     invalid: Boolean,
@@ -1140,7 +1140,7 @@ var script$8 = {
     id: {
       type: String,
       default: function _default() {
-        return this._uid;
+        return 'radio-' + this._uid;
       }
     },
     label: String,

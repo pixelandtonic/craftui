@@ -454,7 +454,7 @@
         id: {
           type: String,
           default: function _default() {
-            return this._uid;
+            return 'checkbox-' + this._uid;
           }
         },
         invalid: Boolean,
@@ -1142,7 +1142,7 @@
         id: {
           type: String,
           default: function _default() {
-            return this._uid;
+            return 'radio-' + this._uid;
           }
         },
         label: String,
