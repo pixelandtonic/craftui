@@ -34,7 +34,7 @@
             id: {
                 type: String,
                 default: function() {
-                    return this._uid
+                    return 'checkbox-' + this._uid
                 }
             },
             invalid: Boolean,

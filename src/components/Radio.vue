@@ -29,7 +29,7 @@
             id: {
                 type: String,
                 default: function() {
-                    return this._uid
+                    return 'radio-' + this._uid
                 }
             },
             label: String,
