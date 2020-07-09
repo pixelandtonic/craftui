@@ -699,6 +699,8 @@
     //
     //
     //
+    //
+    //
     var script$4 = {
       props: {
         errors: {
@@ -719,9 +721,9 @@
           type: String,
           default: null
         },
-        horizontal: {
+        vertical: {
           type: Boolean,
-          default: true
+          default: false
         },
         first: {
           type: Boolean,
@@ -743,9 +745,8 @@
         {
           staticClass: "c-field mb-4",
           class: {
-            "sm:tw-grid sm:tw-grid-cols-3 sm:tw-gap-4 sm:tw-items-start":
-              _vm.horizontal,
-            "sm:tw-border-t sm:tw-border-separator sm:tw-pt-5 mt-6 sm:tw-mt-5": !_vm.first
+            "sm:tw-border-t sm:tw-border-separator sm:tw-pt-5 mt-6 sm:tw-mt-5 sm:tw-grid sm:tw-grid-cols-3 sm:tw-gap-4 sm:tw-items-start": !_vm.vertical,
+            "mt-6 sm:tw-mt-5": !_vm.first
           },
           attrs: { id: "field-" + _vm.labelFor }
         },
@@ -755,9 +756,9 @@
               ? _c(
                   "label",
                   {
+                    staticClass: "tw-text-sm tw-font-medium tw-text-text tw-mb-0",
                     class: {
-                      "tw-block tw-text-sm tw-font-medium tw-leading-5 tw-text-text sm:tw-mt-px sm:tw-pt-2":
-                        _vm.horizontal
+                      "tw-block tw-leading-5 sm:tw-mt-px sm:tw-pt-2": !_vm.vertical
                     },
                     attrs: { for: _vm.labelFor }
                   },
@@ -768,16 +769,20 @@
             _vm.instructions
               ? _c(
                   "div",
-                  { staticClass: "instructions tw-mb-4 tw-text-light-text" },
+                  { staticClass: "instructions tw-text-sm tw-text-light-text" },
                   [_c("p", [_vm._v(_vm._s(_vm.instructions))])]
                 )
               : _vm._e()
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "tw-mt-1 sm:tw-mt-0 sm:tw-col-span-2" }, [
+          _c("div", { staticClass: "tw-mt-1 sm:tw-col-span-2" }, [
             _c(
               "div",
-              { staticClass: "tw-max-w-xs" },
+              {
+                class: {
+                  "tw-max-w-xs": !_vm.vertical
+                }
+              },
               [
                 _vm._t("default"),
                 _vm._v(" "),
@@ -787,7 +792,7 @@
                         "ul",
                         {
                           staticClass:
-                            "invalid-feedback tw-text-danger tw-text-sm tw-mt-2 tw-ml-5 tw-list-disc"
+                            "invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ml-5 tw-list-disc"
                         },
                         [
                           _vm._l(_vm.errors, function(error, key) {

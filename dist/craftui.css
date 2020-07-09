@@ -286,6 +286,12 @@ button.c-btn .c-btn-content {
   position: relative;
 }
 
+.c-dropdown .tw-border-field-separator {
+  --border-opacity: 1;
+  border-color: #e2e8f0;
+  border-color: rgba(226, 232, 240, var(--border-opacity));
+}
+
 .c-dropdown.disabled {
   opacity: 0.5;
 }

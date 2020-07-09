@@ -14,8 +14,6 @@ export const Default = () => ({
         <lightswitch
                 :checked="checked"
                 :disabled="disabled"
-                :instructions="instructions"
-                :label="label"
         />`,
     props: {
         checked: {
