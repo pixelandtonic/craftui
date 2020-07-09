@@ -152,8 +152,8 @@ module.exports = {
         darkHighContrast: colors.gray[500],
     },
     'separator': {
-        light: colors.gray[300],
-        dark: colors.gray[700],
+        light: colors.gray[200],
+        dark: colors.gray[800],
         highContrast: colors.gray[500],
         darkHighContrast: colors.gray[500],
     },
