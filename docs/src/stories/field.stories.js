@@ -1,5 +1,5 @@
 import Field from '../../../src/components/Field'
-import {withKnobs, text, array} from '@storybook/addon-knobs'
+import {withKnobs, text, array, boolean} from '@storybook/addon-knobs'
 import {withA11y} from '@storybook/addon-a11y'
 
 export default {
@@ -12,11 +12,16 @@ export const Default = () => ({
     components: {Field},
     template: `
         <field
+                :vertical="vertical"
                 :errors="errors"
                 :instructions="instructions"
                 :label="label"
         >{{slotContent}}</field>`,
     props: {
+        vertical: {
+            type: Boolean,
+            default: boolean('vertical', false)
+        },
         errors: {
             type: Array,
             default: array('errors', [])
