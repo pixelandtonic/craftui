@@ -53,6 +53,10 @@
         display: inline-block;
         position: relative;
 
+        .tw-border-field-separator {
+            @apply .border-cool-gray-200;
+        }
+
         &.disabled {
             @apply opacity-50;
         }

@@ -133,8 +133,8 @@ module.exports = {
         dark: colors.red[600],
     },
     'field-separator': {
-        light: colors['cool-gray'][200],
-        dark: colors['cool-gray'][800],
+        light: colors['cool-gray'][300],
+        dark: colors['cool-gray'][700],
         highContrast: colors['cool-gray'][500]
     },
     'info-separator': {
