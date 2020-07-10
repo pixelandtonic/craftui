@@ -4,5 +4,4 @@ module.exports = {
         require('@tailwindcss/custom-forms'),
         require('./tailwind/plugin'),
     ],
-    prefix: 'tw-',
 }
