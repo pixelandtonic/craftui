@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "vue": "^2.6.11",
+    "tailwindcss": "^1.2.0",
     "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
@@ -37,7 +38,6 @@
     "sass-loader": "^8.0.2",
     "storybook-dark-mode": "^0.3.0",
     "storybook-rtl-addon": "^0.1.5",
-    "tailwindcss": "^1.2.0",
     "tailwindcss-rtl": "^0.3.0",
     "vue-loader": "^15.9.0"
   },
