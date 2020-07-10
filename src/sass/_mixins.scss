@@ -116,3 +116,15 @@
     text-align: left;
   }
 }
+
+@mixin ltr {
+  [dir='ltr'] & {
+    @content;
+  }
+}
+
+@mixin rtl {
+  [dir='rtl'] & {
+    @content;
+  }
+}

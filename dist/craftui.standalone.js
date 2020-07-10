@@ -177,7 +177,7 @@ __vue_render__._withStripped = true;
   
 
   
-  const __vue_component__ = normalizeComponent(
+  const __vue_component__ = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
     __vue_inject_styles__,
     __vue_script__,
@@ -405,7 +405,7 @@ __vue_render__$1._withStripped = true;
   
 
   
-  const __vue_component__$1 = normalizeComponent(
+  const __vue_component__$1 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
     __vue_inject_styles__$1,
     __vue_script__$1,
@@ -494,7 +494,7 @@ var __vue_render__$2 = function() {
       _c(
         "div",
         {
-          staticClass: "tw-ml-2 tw-text-sm tw-leading-5",
+          staticClass: "tw-ms-2 tw-text-sm tw-leading-5",
           class: { "tw-text-danger": _vm.invalid }
         },
         [
@@ -525,7 +525,7 @@ __vue_render__$2._withStripped = true;
   
 
   
-  const __vue_component__$2 = normalizeComponent(
+  const __vue_component__$2 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
     __vue_inject_styles__$2,
     __vue_script__$2,
@@ -538,7 +538,6 @@ __vue_render__$2._withStripped = true;
     undefined
   );
 
-//
 //
 //
 //
@@ -607,7 +606,8 @@ var __vue_render__$3 = function() {
       _c(
         "select",
         {
-          staticClass: "tw-form-select test sm:tw-text-sm sm:tw-leading-5",
+          staticClass:
+            "tw-form-select test sm:tw-text-sm sm:tw-leading-5 tw-ps-3 tw-pe-10",
           class: {
             "tw-w-full": _vm.fullwidth,
             "tw-border-danger-separator": _vm.invalid,
@@ -653,7 +653,7 @@ __vue_render__$3._withStripped = true;
   
 
   
-  const __vue_component__$3 = normalizeComponent(
+  const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
     __vue_inject_styles__$3,
     __vue_script__$3,
@@ -790,7 +790,7 @@ var __vue_render__$4 = function() {
                     "ul",
                     {
                       staticClass:
-                        "invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ml-5 tw-list-disc"
+                        "invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ms-5 tw-list-disc"
                     },
                     [
                       _vm._l(_vm.errors, function(error, key) {
@@ -829,7 +829,7 @@ __vue_render__$4._withStripped = true;
   
 
   
-  const __vue_component__$4 = normalizeComponent(
+  const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
     __vue_inject_styles__$4,
     __vue_script__$4,
@@ -938,7 +938,7 @@ __vue_render__$5._withStripped = true;
   
 
   
-  const __vue_component__$5 = normalizeComponent(
+  const __vue_component__$5 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
     __vue_inject_styles__$5,
     __vue_script__$5,
@@ -1035,7 +1035,7 @@ __vue_render__$6._withStripped = true;
   
 
   
-  const __vue_component__$6 = normalizeComponent(
+  const __vue_component__$6 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
     __vue_inject_styles__$6,
     __vue_script__$6,
@@ -1098,7 +1098,7 @@ __vue_render__$7._withStripped = true;
   
 
   
-  const __vue_component__$7 = normalizeComponent(
+  const __vue_component__$7 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
     __vue_inject_styles__$7,
     __vue_script__$7,
@@ -1184,7 +1184,7 @@ var __vue_render__$8 = function() {
       _vm._v(" "),
       _c(
         "label",
-        { staticClass: "tw-mb-0 tw-pl-2 tw-ml-0", attrs: { for: _vm.id } },
+        { staticClass: "tw-mb-0 tw-ps-2 tw-ml-0", attrs: { for: _vm.id } },
         [
           _c(
             "span",
@@ -1215,7 +1215,7 @@ __vue_render__$8._withStripped = true;
   
 
   
-  const __vue_component__$8 = normalizeComponent(
+  const __vue_component__$8 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
     __vue_inject_styles__$8,
     __vue_script__$8,
@@ -1284,7 +1284,7 @@ __vue_render__$9._withStripped = true;
   
 
   
-  const __vue_component__$9 = normalizeComponent(
+  const __vue_component__$9 = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
     __vue_inject_styles__$9,
     __vue_script__$9,
@@ -1731,7 +1731,7 @@ __vue_render__$a._withStripped = true;
   
 
   
-  const __vue_component__$a = normalizeComponent(
+  const __vue_component__$a = /*#__PURE__*/normalizeComponent(
     { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
     __vue_inject_styles__$a,
     __vue_script__$a,

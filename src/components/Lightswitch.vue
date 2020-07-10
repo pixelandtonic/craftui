@@ -66,6 +66,18 @@
                     bottom: 1px;
                     -webkit-transition: .1s;
                     transition: .1s;
+
+                    @include ltr() {
+                        -webkit-transform: translateX(0px);
+                        -ms-transform: translateX(0px);
+                        transform: translateX(0px);
+                    }
+
+                    @include rtl() {
+                        -webkit-transform: translateX(12px);
+                        -ms-transform: translateX(12px);
+                        transform: translateX(12px);
+                    }
                 }
 
                 input:checked + .slider {
@@ -78,9 +90,17 @@
                 }
 
                 input:checked + .slider:before {
-                    -webkit-transform: translateX(12px);
-                    -ms-transform: translateX(12px);
-                    transform: translateX(12px);
+                    @include ltr() {
+                        -webkit-transform: translateX(12px);
+                        -ms-transform: translateX(12px);
+                        transform: translateX(12px);
+                    }
+
+                    @include rtl() {
+                        -webkit-transform: translateX(0px);
+                        -ms-transform: translateX(0px);
+                        transform: translateX(0px);
+                    }
                 }
 
                 .slider.round {

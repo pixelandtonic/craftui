@@ -19,7 +19,7 @@
                 <div class="tw-mt-8 tw-border-t tw-border-separator tw-pt-5">
                     <div class="tw-flex tw-justify-end">
                         <btn>Cancel</btn>
-                        <btn class="tw-ml-3" kind="primary">Save</btn>
+                        <btn class="tw-ms-3" kind="primary">Save</btn>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="tw-mt-5 tw-border-t tw-border-separator tw-pt-5">
                     <div class="tw-flex tw-justify-end">
                         <btn>Cancel</btn>
-                        <btn class="tw-ml-3" kind="primary">Save</btn>
+                        <btn class="tw-ms-3" kind="primary">Save</btn>
                     </div>
                 </div>
             </div>

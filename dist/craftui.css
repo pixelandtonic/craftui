@@ -141,21 +141,31 @@ button.c-btn.outline {
 .c-btn.outline.primary,
 a.c-btn.outline.primary,
 button.c-btn.outline.primary {
+  --text-opacity: 1;
   color: #3f83f8;
+  color: rgba(63, 131, 248, var(--text-opacity));
 }
 
 .c-btn.outline.primary:not([disabled]):hover,
 a.c-btn.outline.primary:not([disabled]):hover,
 button.c-btn.outline.primary:not([disabled]):hover {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
   background-color: #3f83f8;
+  background-color: rgba(63, 131, 248, var(--bg-opacity));
 }
 
 .c-btn.outline.primary:not([disabled]):active,
 a.c-btn.outline.primary:not([disabled]):active,
 button.c-btn.outline.primary:not([disabled]):active {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
   background-color: #1e429f;
+  background-color: rgba(30, 66, 159, var(--bg-opacity));
 }
 
 .c-btn.outline.danger,
@@ -167,14 +177,18 @@ button.c-btn.outline.danger {
 .c-btn.outline.danger:not([disabled]):hover,
 a.c-btn.outline.danger:not([disabled]):hover,
 button.c-btn.outline.danger:not([disabled]):hover {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
   background-color: var(--craftui-interactive-danger);
 }
 
 .c-btn.outline.danger:not([disabled]):active,
 a.c-btn.outline.danger:not([disabled]):active,
 button.c-btn.outline.danger:not([disabled]):active {
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
   background-color: var(--craftui-interactive-danger-active);
 }
 
@@ -195,19 +209,25 @@ a.c-btn.loading:not(.outline).primary .c-spinner > .animation,
 a.c-btn.loading:not(.outline).danger .c-spinner > .animation,
 button.c-btn.loading:not(.outline).primary .c-spinner > .animation,
 button.c-btn.loading:not(.outline).danger .c-spinner > .animation {
+  --border-opacity: 1;
   border-color: #ffffff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 .c-btn.loading.outline.primary .c-spinner > .animation,
 a.c-btn.loading.outline.primary .c-spinner > .animation,
 button.c-btn.loading.outline.primary .c-spinner > .animation {
+  --border-opacity: 1;
   border-color: #3f83f8;
+  border-color: rgba(63, 131, 248, var(--border-opacity));
 }
 
 .c-btn.loading.outline.danger .c-spinner > .animation,
 a.c-btn.loading.outline.danger .c-spinner > .animation,
 button.c-btn.loading.outline.danger .c-spinner > .animation {
+  --border-opacity: 1;
   border-color: #E5422B;
+  border-color: rgba(229, 66, 43, var(--border-opacity));
 }
 
 .c-btn.loading .c-spinner,
@@ -267,29 +287,21 @@ button.c-btn .c-btn-content {
 }
 
 .c-dropdown .tw-border-field-separator {
+  --border-opacity: 1;
   border-color: #e2e8f0;
+  border-color: rgba(226, 232, 240, var(--border-opacity));
 }
 
 .c-dropdown.disabled {
   opacity: 0.5;
 }
 
-.c-dropdown:after {
-  z-index: 10000;
-  content: " ";
-  position: absolute;
-  top: calc(50% - 4px);
-  right: 0.75rem;
-  width: 8px;
-  height: 8px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  pointer-events: none;
+[dir=ltr] .c-dropdown select {
+  background-position: right 0.5rem center;
+}
+
+[dir=rtl] .c-dropdown select {
+  background-position: left 0.5rem center;
 }
 .c-lightswitch .c-lightswitch-input label {
   position: relative;
@@ -314,14 +326,18 @@ button.c-btn .c-btn-content {
   bottom: 0;
   left: 0;
   cursor: pointer;
+  --bg-opacity: 1;
   background-color: #9fa6b2;
+  background-color: rgba(159, 166, 178, var(--bg-opacity));
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .c-lightswitch .c-lightswitch-input label .slider:before {
   position: absolute;
+  --bg-opacity: 1;
   background-color: #ffffff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
   content: "";
   height: 20px;
   width: 20px;
@@ -338,6 +354,16 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
   right: 1px;
 }
 
+[dir=ltr] .c-lightswitch .c-lightswitch-input label .slider:before {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+[dir=rtl] .c-lightswitch .c-lightswitch-input label .slider:before {
+  -webkit-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
 .c-lightswitch .c-lightswitch-input label input:checked + .slider {
   background-color: #38c172;
 }
@@ -348,9 +374,14 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
           box-shadow: 0 0 0 2px rgba(52, 144, 220, 0.5);
 }
 
-.c-lightswitch .c-lightswitch-input label input:checked + .slider:before {
+[dir=ltr] .c-lightswitch .c-lightswitch-input label input:checked + .slider:before {
   -webkit-transform: translateX(12px);
   transform: translateX(12px);
+}
+
+[dir=rtl] .c-lightswitch .c-lightswitch-input label input:checked + .slider:before {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .c-lightswitch .c-lightswitch-input label .slider.round {

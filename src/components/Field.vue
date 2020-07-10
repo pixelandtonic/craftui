@@ -20,7 +20,7 @@
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul class="invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ml-5 tw-list-disc">
+                    <ul class="invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ms-5 tw-list-disc">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>

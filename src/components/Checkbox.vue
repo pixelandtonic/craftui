@@ -13,7 +13,7 @@
             />
         </div>
 
-        <div class="tw-ml-2 tw-text-sm tw-leading-5" :class="{'tw-text-danger': invalid}">
+        <div class="tw-ms-2 tw-text-sm tw-leading-5" :class="{'tw-text-danger': invalid}">
             <label class="tw-mb-0" :for="id">
                 {{ label }}
             </label>
