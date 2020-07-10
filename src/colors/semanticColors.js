@@ -309,19 +309,24 @@ module.exports = {
 
     // Temp
     'interactive-nav-text': {
-        light: colors.purple[500],
-        dark: colors.purple[500],
+        light: colors['cool-gray'][600],
+        dark: colors['cool-gray'][400],
     },
     'interactive-nav-hover-text': {
-        light: colors.purple[500],
-        dark: colors.purple[500],
+        light: colors['cool-gray'][600],
+        dark: colors['cool-gray'][400],
     },
     'interactive-nav-disabled-text': {
-        light: colors.purple[500],
-        dark: colors.purple[500],
+        light: colors['cool-gray'][300],
+        dark: colors['cool-gray'][700],
     },
     'interactive-nav-active-background': {
-        light: colors.purple[500],
-        dark: colors.purple[500],
+        light: colors['cool-gray'][200],
+        dark: colors['cool-gray'][800],
+    },
+    'interactive-nav-active-text': {
+        light: colors['cool-gray'][600],
+        dark: colors['cool-gray'][400],
+
     },
 }
