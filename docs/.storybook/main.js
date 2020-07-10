@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-docs',
     '@storybook/addon-a11y',
     'storybook-dark-mode/register',
+    'storybook-rtl-addon/register'
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'

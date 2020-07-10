@@ -6,3 +6,8 @@ import '../../dist/craftui.standalone.css'
 
 // Styles
 import '../src/sass/styles.scss'
+
+import {addDecorator} from '@storybook/vue'
+import {withDirection} from 'storybook-rtl-addon/dist';
+
+addDecorator(withDirection)
