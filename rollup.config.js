@@ -5,6 +5,7 @@ import VuePlugin from 'rollup-plugin-vue'
 import commonjs from '@rollup/plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 import { terser } from "rollup-plugin-terser"
+import replace from '@rollup/plugin-replace'
 
 module.exports = [
     {
@@ -33,6 +34,9 @@ module.exports = [
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
+            }),
+            replace({
+                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,
@@ -67,6 +71,9 @@ module.exports = [
                     require('tailwindcss')('./tailwind-prefixed.config.js'),
                 ],
             }),
+            replace({
+                '__PREFIX__': 'tw-',
+            }),
             VuePlugin({
                 css: false,
             }),
@@ -99,6 +106,9 @@ module.exports = [
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
+            }),
+            replace({
+                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,
@@ -136,6 +146,9 @@ module.exports = [
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
+            }),
+            replace({
+                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,

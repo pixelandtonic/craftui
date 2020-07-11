@@ -3,6 +3,7 @@ import CraftComponents from './components'
 
 export default {
     install(Vue) {
+        Vue.prototype.PREFIX = '__PREFIX__'
         Vue.use(CraftIcons)
 
         // Craft Components

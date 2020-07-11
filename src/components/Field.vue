@@ -1,26 +1,28 @@
 <template>
-    <div :id="'field-' + labelFor" class="c-field mb-4" :class="{
-        'sm:tw-border-t sm:tw-border-separator sm:tw-pt-5 mt-6 sm:tw-mt-5 sm:tw-grid sm:tw-grid-cols-3 sm:tw-gap-4 sm:tw-items-start': !vertical,
-        'mt-6 sm:tw-mt-5': !first
+    <div :id="'field-' + labelFor" class="c-field" :class="{
+        [`${PREFIX}mb-4`]: true,
+        [`sm:${PREFIX}border-t sm:${PREFIX}border-separator sm:${PREFIX}pt-5 mt-6 sm:${PREFIX}mt-5 sm:${PREFIX}grid sm:${PREFIX}grid-cols-3 sm:${PREFIX}gap-4 sm:${PREFIX}items-start`]: !vertical,
+        [`${PREFIX}mt-6 sm:${PREFIX}mt-5`]: !first
     }">
         <div>
-            <label v-if="label" :for="labelFor" class="tw-text-sm tw-font-medium tw-text-text tw-mb-0" :class="{
-                'tw-block tw-leading-5 sm:tw-mt-px sm:tw-pt-2': !vertical
+            <label v-if="label" :for="labelFor" :class="{
+                [`${PREFIX}text-sm ${PREFIX}font-medium ${PREFIX}text-text ${PREFIX}mb-0`] : true,
+                [`${PREFIX}block ${PREFIX}leading-5 sm:${PREFIX}mt-px sm:${PREFIX}pt-2`]: !vertical
             }">{{label}}</label>
 
-            <div v-if="instructions" class="instructions tw-text-sm tw-text-light-text">
+            <div v-if="instructions" class="instructions" :class="`${PREFIX}text-sm ${PREFIX}text-light-text`">
                 <p>{{ instructions }}</p>
             </div>
         </div>
 
-        <div class="tw-mt-1 sm:tw-col-span-2">
+        <div :class="`${PREFIX}mt-1 sm:${PREFIX}col-span-2`">
             <div :class="{
-                'tw-max-w-xs': !vertical,
+                '${PREFIX}max-w-xs': !vertical,
             }">
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul class="invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ms-5 tw-list-disc">
+                    <ul :class="`invalid-feedback ${PREFIX}text-danger ${PREFIX}text-sm ${PREFIX}mt-1 ${PREFIX}ms-5 ${PREFIX}list-disc`">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>

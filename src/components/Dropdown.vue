@@ -1,13 +1,14 @@
 <template>
     <div class="c-dropdown" :class="{
         'is-invalid': invalid,
-        'tw-w-full': fullwidth,
+        [`${PREFIX}w-full`]: fullwidth,
         disabled,
     }">
-            <select class="tw-form-select test sm:tw-text-sm sm:tw-leading-5 tw-ps-3 tw-pe-10" :disabled="disabled" :value="value" :class="{
-                'tw-w-full': fullwidth,
-                'tw-border-danger-separator': invalid,
-                'tw-border-field-separator': !invalid,
+            <select :disabled="disabled" :value="value" :class="{
+                [`${PREFIX}form-select test sm:${PREFIX}text-sm sm:${PREFIX}leading-5 ${PREFIX}ps-3 ${PREFIX}pe-10`]: true,
+                [`${PREFIX}w-full`]: fullwidth,
+                [`${PREFIX}border-danger-separator`]: invalid,
+                [`${PREFIX}border-field-separator`]: !invalid,
             }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                 <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
             </select>
@@ -54,15 +55,13 @@
         display: inline-block;
         position: relative;
 
-        .tw-border-field-separator {
-            @apply .border-cool-gray-200;
-        }
-
         &.disabled {
             @apply opacity-50;
         }
 
         select {
+            @apply .border-cool-gray-200;
+
             @include ltr() {
                 background-position: right 0.5rem center;
             }

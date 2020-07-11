@@ -1,5 +1,8 @@
 <template>
-    <div class="tw-bg-primary-background tw-rounded-lg tw-shadow-md tw-mb-6 tw-overflow-hidden" :class="{'tw-px-6 tw-py-5': (padded === undefined||padded === true)}">
+    <div :class="{
+        [`${PREFIX}bg-primary-background ${PREFIX}rounded-lg ${PREFIX}shadow-md ${PREFIX}mb-6 ${PREFIX}overflow-hidden`]: true,
+        [`${PREFIX}px-6 ${PREFIX}py-5`]: (padded === undefined||padded === true)
+    }">
         <slot></slot>
     </div>
 </template>

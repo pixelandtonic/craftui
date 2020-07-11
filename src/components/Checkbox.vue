@@ -1,10 +1,11 @@
 <template>
-    <div class="c-checkbox tw-relative tw-flex tw-items-start tw-my-2" :class="{
+    <div class="c-checkbox" :class="{
+        [`${PREFIX}relative ${PREFIX}flex ${PREFIX}items-start ${PREFIX}my-2`]: true,
         disabled,
     }">
-        <div class="tw-flex tw-items-center tw-h-5">
+        <div :class="`${PREFIX}flex ${PREFIX}items-center ${PREFIX}h-5`">
             <input type="checkbox"
-                   class="tw-form-checkbox tw-h-4 tw-w-4"
+                   :class="`${PREFIX}form-checkbox ${PREFIX}h-4 ${PREFIX}w-4`"
                    :id="id"
                    :value="value"
                    :checked="checked"
@@ -13,8 +14,11 @@
             />
         </div>
 
-        <div class="tw-ms-2 tw-text-sm tw-leading-5" :class="{'tw-text-danger': invalid}">
-            <label class="tw-mb-0" :for="id">
+        <div :class="{
+            [`${PREFIX}ms-2 ${PREFIX}text-sm ${PREFIX}leading-5`]: true,
+            [`${PREFIX}text-danger`]: invalid
+        }">
+            <label :class="`${PREFIX}mb-0`" :for="id">
                 {{ label }}
             </label>
         </div>
