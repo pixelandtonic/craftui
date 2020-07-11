@@ -1,9 +1,9 @@
 <template>
     <div>
         <pane>
-            <h2 class="tw-text-lg tw-leading-6 tw-font-medium tw-text-gray-900">Vertical Form</h2>
+            <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Vertical Form</h2>
 
-            <div class="tw-mt-6">
+            <div class="`${PREFIX}mt-6`">
                 <field :vertical="true" instructions="Some instructions." label-for="firstName" label="First Name" :errors="errors" :first="true">
                     <textbox id="firstName" :invalid="!!errors"></textbox>
                 </field>
@@ -16,18 +16,18 @@
                     <textbox id="email"></textbox>
                 </field>
 
-                <div class="tw-mt-8 tw-border-t tw-border-separator tw-pt-5">
-                    <div class="tw-flex tw-justify-end">
+                <div :class="`${PREFIX}mt-8 ${PREFIX}border-t ${PREFIX}border-separator ${PREFIX}pt-5`">
+                    <div :class="`${PREFIX}flex ${PREFIX}justify-end`">
                         <btn>Cancel</btn>
-                        <btn class="tw-ms-3" kind="primary">Save</btn>
+                        <btn :class="`${PREFIX}ms-3`" kind="primary">Save</btn>
                     </div>
                 </div>
             </div>
         </pane>
         <pane>
-            <h2 class="tw-text-lg tw-leading-6 tw-font-medium tw-text-gray-900">Horizontal Form</h2>
+            <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Horizontal Form</h2>
 
-            <div class="tw-mt-6">
+            <div class="`${PREFIX}mt-6`">
 
                 <field label-for="firstName" label="First Name" :errors="errors" :first="true">
                     <textbox id="firstName" :invalid="!!errors"></textbox>
@@ -61,10 +61,10 @@
                     <radio v-model="pushNotifications" value="noPushNotifications" label="No push notifications"></radio>
                 </field>
 
-                <div class="tw-mt-5 tw-border-t tw-border-separator tw-pt-5">
-                    <div class="tw-flex tw-justify-end">
+                <div :class="`${PREFIX}mt-8 ${PREFIX}border-t ${PREFIX}border-separator ${PREFIX}pt-5`">
+                    <div :class="`${PREFIX}flex ${PREFIX}justify-end`">
                         <btn>Cancel</btn>
-                        <btn class="tw-ms-3" kind="primary">Save</btn>
+                        <btn :class="`${PREFIX}ms-3`" kind="primary">Save</btn>
                     </div>
                 </div>
             </div>

@@ -29,14 +29,14 @@ module.exports = [
             resolve(),
             babel(),
             svg(),
+            replace({
+                '__PREFIX__': '',
+            }),
             postcss({
                 extract: true,
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
-            }),
-            replace({
-                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,
@@ -65,14 +65,14 @@ module.exports = [
             resolve(),
             babel(),
             svg(),
+            replace({
+                '__PREFIX__': 'tw-',
+            }),
             postcss({
                 extract: true,
                 plugins: [
                     require('tailwindcss')('./tailwind-prefixed.config.js'),
                 ],
-            }),
-            replace({
-                '__PREFIX__': 'tw-',
             }),
             VuePlugin({
                 css: false,
@@ -101,14 +101,14 @@ module.exports = [
             resolve(),
             babel(),
             svg(),
+            replace({
+                '__PREFIX__': '',
+            }),
             postcss({
                 extract: true,
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
-            }),
-            replace({
-                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,
@@ -140,15 +140,15 @@ module.exports = [
             resolve(),
             babel(),
             svg(),
+            replace({
+                '__PREFIX__': '',
+            }),
             postcss({
                 extract: true,
                 minimize: true,
                 plugins: [
                     require('tailwindcss')('./tailwind.config.js'),
                 ],
-            }),
-            replace({
-                '__PREFIX__': '',
             }),
             VuePlugin({
                 css: false,
