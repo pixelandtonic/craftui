@@ -146,13 +146,40 @@
       return _c(
         "span",
         {
-          staticClass: "tw-inline-flex tw-items-center tw-rounded tw-font-medium",
           class: [
             ((_obj = {}),
-            (_obj["tw-px-2 tw-py-0.5 tw-leading-4 tw-text-xs"] = !_vm.large),
-            (_obj["tw-px-2.5 tw-py-0.5 tw-leading-5 tw-text-sm"] = _vm.large),
-            (_obj["tw-bg-" + _vm.type + "-background"] = true),
-            (_obj["tw-text-" + _vm.type + "-text"] = true),
+            (_obj[
+              _vm.PREFIX +
+                "inline-flex " +
+                _vm.PREFIX +
+                "items-center " +
+                _vm.PREFIX +
+                "rounded " +
+                _vm.PREFIX +
+                "font-medium"
+            ] = true),
+            (_obj[
+              _vm.PREFIX +
+                "px-2 " +
+                _vm.PREFIX +
+                "py-0.5 " +
+                _vm.PREFIX +
+                "leading-4 " +
+                _vm.PREFIX +
+                "text-xs"
+            ] = !_vm.large),
+            (_obj[
+              _vm.PREFIX +
+                "px-2.5 " +
+                _vm.PREFIX +
+                "py-0.5 " +
+                _vm.PREFIX +
+                "leading-5 " +
+                _vm.PREFIX +
+                "text-sm"
+            ] = _vm.large),
+            (_obj[_vm.PREFIX + "bg-" + _vm.type + "-background"] = true),
+            (_obj[_vm.PREFIX + "text-" + _vm.type + "-text"] = true),
             _obj)
           ]
         },
@@ -443,6 +470,10 @@
     //
     //
     //
+    //
+    //
+    //
+    //
     var script$2 = {
       model: {
         prop: 'checked',
@@ -472,35 +503,75 @@
     const __vue_script__$2 = script$2;
     /* template */
     var __vue_render__$2 = function() {
+      var _obj, _obj$1;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c(
         "div",
         {
-          staticClass: "c-checkbox tw-relative tw-flex tw-items-start tw-my-2",
-          class: {
-            disabled: _vm.disabled
-          }
+          staticClass: "c-checkbox",
+          class:
+            ((_obj = {}),
+            (_obj[
+              _vm.PREFIX +
+                "relative " +
+                _vm.PREFIX +
+                "flex " +
+                _vm.PREFIX +
+                "items-start " +
+                _vm.PREFIX +
+                "my-2"
+            ] = true),
+            (_obj.disabled = _vm.disabled),
+            _obj)
         },
         [
-          _c("div", { staticClass: "tw-flex tw-items-center tw-h-5" }, [
-            _c("input", {
-              staticClass: "tw-form-checkbox tw-h-4 tw-w-4",
-              attrs: { type: "checkbox", id: _vm.id, disabled: _vm.disabled },
-              domProps: { value: _vm.value, checked: _vm.checked },
-              on: { input: _vm.onInput }
-            })
-          ]),
+          _c(
+            "div",
+            {
+              class:
+                _vm.PREFIX +
+                "flex " +
+                _vm.PREFIX +
+                "items-center " +
+                _vm.PREFIX +
+                "h-5"
+            },
+            [
+              _c("input", {
+                class:
+                  _vm.PREFIX +
+                  "form-checkbox " +
+                  _vm.PREFIX +
+                  "h-4 " +
+                  _vm.PREFIX +
+                  "w-4",
+                attrs: { type: "checkbox", id: _vm.id, disabled: _vm.disabled },
+                domProps: { value: _vm.value, checked: _vm.checked },
+                on: { input: _vm.onInput }
+              })
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
             {
-              staticClass: "tw-ms-2 tw-text-sm tw-leading-5",
-              class: { "tw-text-danger": _vm.invalid }
+              class:
+                ((_obj$1 = {}),
+                (_obj$1[
+                  _vm.PREFIX +
+                    "ms-2 " +
+                    _vm.PREFIX +
+                    "text-sm " +
+                    _vm.PREFIX +
+                    "leading-5"
+                ] = true),
+                (_obj$1[_vm.PREFIX + "text-danger"] = _vm.invalid),
+                _obj$1)
             },
             [
-              _c("label", { staticClass: "tw-mb-0", attrs: { for: _vm.id } }, [
+              _c("label", { class: _vm.PREFIX + "mb-0", attrs: { for: _vm.id } }, [
                 _vm._v("\n            " + _vm._s(_vm.label) + "\n        ")
               ])
             ]
@@ -556,6 +627,7 @@
     //
     //
     //
+    //
     var script$3 = {
       props: {
         disabled: {
@@ -591,6 +663,7 @@
     const __vue_script__$3 = script$3;
     /* template */
     var __vue_render__$3 = function() {
+      var _obj, _obj$1;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
@@ -598,23 +671,36 @@
         "div",
         {
           staticClass: "c-dropdown",
-          class: {
-            "is-invalid": _vm.invalid,
-            "tw-w-full": _vm.fullwidth,
-            disabled: _vm.disabled
-          }
+          class:
+            ((_obj = {
+              "is-invalid": _vm.invalid
+            }),
+            (_obj[_vm.PREFIX + "w-full"] = _vm.fullwidth),
+            (_obj.disabled = _vm.disabled),
+            _obj)
         },
         [
           _c(
             "select",
             {
-              staticClass:
-                "tw-form-select test sm:tw-text-sm sm:tw-leading-5 tw-ps-3 tw-pe-10",
-              class: {
-                "tw-w-full": _vm.fullwidth,
-                "tw-border-danger-separator": _vm.invalid,
-                "tw-border-field-separator": !_vm.invalid
-              },
+              class:
+                ((_obj$1 = {}),
+                (_obj$1[
+                  _vm.PREFIX +
+                    "form-select test sm:" +
+                    _vm.PREFIX +
+                    "text-sm sm:" +
+                    _vm.PREFIX +
+                    "leading-5 " +
+                    _vm.PREFIX +
+                    "ps-3 " +
+                    _vm.PREFIX +
+                    "pe-10"
+                ] = true),
+                (_obj$1[_vm.PREFIX + "w-full"] = _vm.fullwidth),
+                (_obj$1[_vm.PREFIX + "border-danger-separator"] = _vm.invalid),
+                (_obj$1[_vm.PREFIX + "border-field-separator"] = !_vm.invalid),
+                _obj$1),
               attrs: { disabled: _vm.disabled },
               domProps: { value: _vm.value },
               on: {
@@ -701,6 +787,8 @@
     //
     //
     //
+    //
+    //
     var script$4 = {
       props: {
         errors: {
@@ -737,17 +825,38 @@
 
     /* template */
     var __vue_render__$4 = function() {
+      var _obj, _obj$1;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c(
         "div",
         {
-          staticClass: "c-field mb-4",
-          class: {
-            "sm:tw-border-t sm:tw-border-separator sm:tw-pt-5 mt-6 sm:tw-mt-5 sm:tw-grid sm:tw-grid-cols-3 sm:tw-gap-4 sm:tw-items-start": !_vm.vertical,
-            "mt-6 sm:tw-mt-5": !_vm.first
-          },
+          staticClass: "c-field",
+          class:
+            ((_obj = {}),
+            (_obj[_vm.PREFIX + "mb-4"] = true),
+            (_obj[
+              "sm:" +
+                _vm.PREFIX +
+                "border-t sm:" +
+                _vm.PREFIX +
+                "border-separator sm:" +
+                _vm.PREFIX +
+                "pt-5 mt-6 sm:" +
+                _vm.PREFIX +
+                "mt-5 sm:" +
+                _vm.PREFIX +
+                "grid sm:" +
+                _vm.PREFIX +
+                "grid-cols-3 sm:" +
+                _vm.PREFIX +
+                "gap-4 sm:" +
+                _vm.PREFIX +
+                "items-start"
+            ] = !_vm.vertical),
+            (_obj[_vm.PREFIX + "mt-6 sm:" + _vm.PREFIX + "mt-5"] = !_vm.first),
+            _obj),
           attrs: { id: "field-" + _vm.labelFor }
         },
         [
@@ -756,10 +865,29 @@
               ? _c(
                   "label",
                   {
-                    staticClass: "tw-text-sm tw-font-medium tw-text-text tw-mb-0",
-                    class: {
-                      "tw-block tw-leading-5 sm:tw-mt-px sm:tw-pt-2": !_vm.vertical
-                    },
+                    class:
+                      ((_obj$1 = {}),
+                      (_obj$1[
+                        _vm.PREFIX +
+                          "text-sm " +
+                          _vm.PREFIX +
+                          "font-medium " +
+                          _vm.PREFIX +
+                          "text-text " +
+                          _vm.PREFIX +
+                          "mb-0"
+                      ] = true),
+                      (_obj$1[
+                        _vm.PREFIX +
+                          "block " +
+                          _vm.PREFIX +
+                          "leading-5 sm:" +
+                          _vm.PREFIX +
+                          "mt-px sm:" +
+                          _vm.PREFIX +
+                          "pt-2"
+                      ] = !_vm.vertical),
+                      _obj$1),
                     attrs: { for: _vm.labelFor }
                   },
                   [_vm._v(_vm._s(_vm.label))]
@@ -769,46 +897,63 @@
             _vm.instructions
               ? _c(
                   "div",
-                  { staticClass: "instructions tw-text-sm tw-text-light-text" },
+                  {
+                    staticClass: "instructions",
+                    class: _vm.PREFIX + "text-sm " + _vm.PREFIX + "text-light-text"
+                  },
                   [_c("p", [_vm._v(_vm._s(_vm.instructions))])]
                 )
               : _vm._e()
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "tw-mt-1 sm:tw-col-span-2" }, [
-            _c(
-              "div",
-              {
-                class: {
-                  "tw-max-w-xs": !_vm.vertical
-                }
-              },
-              [
-                _vm._t("default"),
-                _vm._v(" "),
-                _vm.errors && _vm.errors.length > 0
-                  ? [
-                      _c(
-                        "ul",
-                        {
-                          staticClass:
-                            "invalid-feedback tw-text-danger tw-text-sm tw-mt-1 tw-ms-5 tw-list-disc"
-                        },
-                        [
-                          _vm._l(_vm.errors, function(error, key) {
-                            return _vm.errors
-                              ? [_c("li", { key: key }, [_vm._v(_vm._s(error))])]
-                              : _vm._e()
-                          })
-                        ],
-                        2
-                      )
-                    ]
-                  : _vm._e()
-              ],
-              2
-            )
-          ])
+          _c(
+            "div",
+            { class: _vm.PREFIX + "mt-1 sm:" + _vm.PREFIX + "col-span-2" },
+            [
+              _c(
+                "div",
+                {
+                  class: {
+                    "${PREFIX}max-w-xs": !_vm.vertical
+                  }
+                },
+                [
+                  _vm._t("default"),
+                  _vm._v(" "),
+                  _vm.errors && _vm.errors.length > 0
+                    ? [
+                        _c(
+                          "ul",
+                          {
+                            class:
+                              "invalid-feedback " +
+                              _vm.PREFIX +
+                              "text-danger " +
+                              _vm.PREFIX +
+                              "text-sm " +
+                              _vm.PREFIX +
+                              "mt-1 " +
+                              _vm.PREFIX +
+                              "ms-5 " +
+                              _vm.PREFIX +
+                              "list-disc"
+                          },
+                          [
+                            _vm._l(_vm.errors, function(error, key) {
+                              return _vm.errors
+                                ? [_c("li", { key: key }, [_vm._v(_vm._s(error))])]
+                                : _vm._e()
+                            })
+                          ],
+                          2
+                        )
+                      ]
+                    : _vm._e()
+                ],
+                2
+              )
+            ]
+          )
         ]
       )
     };
@@ -881,7 +1026,6 @@
 
     /* script */
     const __vue_script__$5 = script$5;
-
     /* template */
     var __vue_render__$5 = function() {
       var _obj;
@@ -891,18 +1035,17 @@
       return _c(
         "svg",
         {
-          staticClass:
-            "c-icon tw-inline-block tw-align-middle tw-relative tw-fill-current",
+          staticClass: "c-icon",
           class:
             ((_obj = {}),
-            (_obj["tw-w-3 tw-h-3"] = _vm.size === "sm"),
-            (_obj["tw-w-4 tw-h-4"] = _vm.size === "base"),
-            (_obj["tw-w-5 tw-h-5"] = _vm.size === "lg"),
-            (_obj["tw-w-6 tw-h-6"] = _vm.size === "xl"),
-            (_obj["tw-w-8 tw-h-8"] = _vm.size === "2xl"),
-            (_obj["tw-w-10 tw-h-10"] = _vm.size === "3xl"),
-            (_obj["tw-w-12 tw-h-12"] = _vm.size === "4xl"),
-            (_obj["tw-w-16 tw-h-16"] = _vm.size === "5xl"),
+            (_obj[_vm.PREFIX + "w-3 " + _vm.PREFIX + "h-3"] = _vm.size === "sm"),
+            (_obj[_vm.PREFIX + "w-4 " + _vm.PREFIX + "h-4"] = _vm.size === "base"),
+            (_obj[_vm.PREFIX + "w-5 " + _vm.PREFIX + "h-5"] = _vm.size === "lg"),
+            (_obj[_vm.PREFIX + "w-6 " + _vm.PREFIX + "h-6"] = _vm.size === "xl"),
+            (_obj[_vm.PREFIX + "w-8 " + _vm.PREFIX + "h-8"] = _vm.size === "2xl"),
+            (_obj[_vm.PREFIX + "w-10 " + _vm.PREFIX + "h-10"] = _vm.size === "3xl"),
+            (_obj[_vm.PREFIX + "w-12 " + _vm.PREFIX + "h-12"] = _vm.size === "4xl"),
+            (_obj[_vm.PREFIX + "w-16 " + _vm.PREFIX + "h-16"] = _vm.size === "5xl"),
             _obj),
           attrs: {
             viewBox: "0 0 18 18",
@@ -1056,6 +1199,9 @@
     //
     //
     //
+    //
+    //
+    //
     var script$7 = {
       props: ['padded']
     };
@@ -1065,17 +1211,30 @@
 
     /* template */
     var __vue_render__$7 = function() {
+      var _obj;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c(
         "div",
         {
-          staticClass:
-            "tw-bg-primary-background tw-rounded-lg tw-shadow-md tw-mb-6 tw-overflow-hidden",
-          class: {
-            "tw-px-6 tw-py-5": _vm.padded === undefined || _vm.padded === true
-          }
+          class:
+            ((_obj = {}),
+            (_obj[
+              _vm.PREFIX +
+                "bg-primary-background " +
+                _vm.PREFIX +
+                "rounded-lg " +
+                _vm.PREFIX +
+                "shadow-md " +
+                _vm.PREFIX +
+                "mb-6 " +
+                _vm.PREFIX +
+                "overflow-hidden"
+            ] = true),
+            (_obj[_vm.PREFIX + "px-6 " + _vm.PREFIX + "py-5"] =
+              _vm.padded === undefined || _vm.padded === true),
+            _obj)
         },
         [_vm._t("default")],
         2
@@ -1132,6 +1291,7 @@
     //
     //
     //
+    //
     var script$8 = {
       model: {
         prop: 'modelValue',
@@ -1165,20 +1325,31 @@
     const __vue_script__$8 = script$8;
     /* template */
     var __vue_render__$8 = function() {
+      var _obj;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c(
         "div",
         {
-          staticClass: "c-radio tw-flex tw-items-center tw-my-2",
-          class: {
-            disabled: _vm.disabled
-          }
+          staticClass: "c-radio",
+          class:
+            ((_obj = {}),
+            (_obj[
+              _vm.PREFIX +
+                "flex " +
+                _vm.PREFIX +
+                "items-center " +
+                _vm.PREFIX +
+                "my-2"
+            ] = true),
+            (_obj.disabled = _vm.disabled),
+            _obj)
         },
         [
           _c("input", {
-            staticClass: "tw-form-radio tw-h-4 tw-w-4",
+            class:
+              _vm.PREFIX + "form-radio " + _vm.PREFIX + "h-4 " + _vm.PREFIX + "w-4",
             attrs: { type: "radio", id: _vm.id, disabled: _vm.disabled },
             domProps: { value: _vm.value, checked: _vm.checked },
             on: { input: _vm.onInput }
@@ -1186,11 +1357,25 @@
           _vm._v(" "),
           _c(
             "label",
-            { staticClass: "tw-mb-0 tw-ps-2 tw-ml-0", attrs: { for: _vm.id } },
+            {
+              class:
+                _vm.PREFIX + "mb-0 " + _vm.PREFIX + "ps-2 " + _vm.PREFIX + "ml-0",
+              attrs: { for: _vm.id }
+            },
             [
               _c(
                 "span",
-                { staticClass: "tw-block tw-text-sm tw-leading-5 tw-text-text" },
+                {
+                  class:
+                    _vm.PREFIX +
+                    "block " +
+                    _vm.PREFIX +
+                    "text-sm " +
+                    _vm.PREFIX +
+                    "leading-5 " +
+                    _vm.PREFIX +
+                    "text-text"
+                },
                 [_vm._v(_vm._s(_vm.label))]
               )
             ]
@@ -1238,6 +1423,7 @@
     //
     //
     //
+    //
     var script$9 = {
       props: {
         /**
@@ -1261,8 +1447,12 @@
       return _c(
         "div",
         {
-          staticClass: "c-spinner tw-inline-block",
-          class: ((_obj = {}), (_obj[_vm.size] = true), _obj)
+          staticClass: "c-spinner",
+          class:
+            ((_obj = {}),
+            (_obj[_vm.PREFIX + "inline-block"] = true),
+            (_obj[_vm.size] = true),
+            _obj)
         },
         [_c("div", { staticClass: "animation" })]
       )
@@ -1607,13 +1797,14 @@
 
     /* template */
     var __vue_render__$a = function() {
+      var _obj, _obj$1;
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c("div", { staticClass: "c-textbox" }, [
         _c(
           "div",
-          { staticClass: "c-textbox-wrapper tw-w-full" },
+          { staticClass: "c-textbox-wrapper", class: _vm.PREFIX + " w-full" },
           [
             _c(
               _vm.computedComponent,
@@ -1628,17 +1819,33 @@
                 ],
                 ref: "input",
                 tag: "component",
-                staticClass: "tw-form-input tw-block sm:tw-text-sm tw-rounded",
-                class: {
-                  "tw-w-full": !_vm.size && _vm.type !== "number",
-                  "tw-w-16": _vm.type === "number",
-                  "is-invalid tw-border-danger": _vm.invalid,
-                  "tw-border-field-separator": !_vm.invalid && !_vm.disabled,
-                  "tw-text-red-600": _vm.max && _vm.max < this.value.length,
-                  "tw-bg-field-disabled-background border-field-disabled-separator":
-                    _vm.disabled,
-                  "tw-bg-field-background": !_vm.disabled
-                },
+                class:
+                  ((_obj = {}),
+                  (_obj[
+                    _vm.PREFIX +
+                      "form-input " +
+                      _vm.PREFIX +
+                      "block sm:" +
+                      _vm.PREFIX +
+                      "text-sm " +
+                      _vm.PREFIX +
+                      "rounded"
+                  ] = true),
+                  (_obj[_vm.PREFIX + "w-full"] =
+                    !_vm.size && _vm.type !== "number"),
+                  (_obj[_vm.PREFIX + "w-16"] = _vm.type === "number"),
+                  (_obj["is-invalid " + _vm.PREFIX + "border-danger"] =
+                    _vm.invalid),
+                  (_obj[_vm.PREFIX + "border-field-separator"] =
+                    !_vm.invalid && !_vm.disabled),
+                  (_obj[_vm.PREFIX + "text-red-600"] =
+                    _vm.max && _vm.max < this.value.length),
+                  (_obj[
+                    _vm.PREFIX +
+                      "bg-field-disabled-background border-field-disabled-separator"
+                  ] = _vm.disabled),
+                  (_obj[_vm.PREFIX + "bg-field-background"] = !_vm.disabled),
+                  _obj),
                 attrs: {
                   autocapitalize: _vm.autocapitalize,
                   autocomplete: _vm.autocomplete,
@@ -1693,12 +1900,14 @@
                   "p",
                   {
                     staticClass: "max",
-                    class: {
-                      "tw-text-light-text": _vm.remainingChars >= 20,
-                      "tw-text-warning":
-                        _vm.remainingChars < 20 && _vm.remainingChars >= 0,
-                      "tw-text-danger": _vm.remainingChars < 0
-                    }
+                    class:
+                      ((_obj$1 = {}),
+                      (_obj$1[_vm.PREFIX + "text-light-text"] =
+                        _vm.remainingChars >= 20),
+                      (_obj$1[_vm.PREFIX + "text-warning"] =
+                        _vm.remainingChars < 20 && _vm.remainingChars >= 0),
+                      (_obj$1[_vm.PREFIX + "text-danger"] = _vm.remainingChars < 0),
+                      _obj$1)
                   },
                   [
                     _c("small", [
@@ -1762,6 +1971,7 @@
 
     var craftUi = {
       install: function install(Vue) {
+        Vue.prototype.PREFIX = '';
         Vue.use(CraftIcons); // Craft Components
 
         Object.keys(CraftComponents).forEach(function (name) {

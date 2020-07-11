@@ -286,14 +286,14 @@ button.c-btn .c-btn-content {
   position: relative;
 }
 
-.c-dropdown .tw-border-field-separator {
+.c-dropdown.disabled {
+  opacity: 0.5;
+}
+
+.c-dropdown select {
   --border-opacity: 1;
   border-color: #e2e8f0;
   border-color: rgba(226, 232, 240, var(--border-opacity));
-}
-
-.c-dropdown.disabled {
-  opacity: 0.5;
 }
 
 [dir=ltr] .c-dropdown select {
@@ -302,6 +302,12 @@ button.c-btn .c-btn-content {
 
 [dir=rtl] .c-dropdown select {
   background-position: left 0.5rem center;
+}
+.c-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  fill: currentColor;
 }
 .c-lightswitch .c-lightswitch-input label {
   position: relative;
