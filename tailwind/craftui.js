@@ -1,13 +1,20 @@
-const plugin = require('tailwindcss/plugin')
+const craftui = require('tailwindcss/plugin')
 const colors = require('../src/colors/colors')
 const { borderColor } = require('tailwindcss/defaultTheme')
 const semanticTailwindColors = require('../src/colors/semanticTailwindColors')
 const semanticColors = require('../src/colors/semanticColors')
 
-module.exports = plugin.withOptions(
+const rtlPlugin = require('tailwindcss-rtl')
+const customFormsPlugin = require('@tailwindcss/custom-forms')
+
+module.exports = craftui.withOptions(
     function(pluginOptions) {
         return function(options) {
             const { addBase, addUtilities, theme } = options
+
+            // Call other plugins
+            rtlPlugin.handler(options)
+            customFormsPlugin(options)
 
             // Define CSS variables
             let baseStyleColors = {
