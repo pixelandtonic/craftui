@@ -46,7 +46,7 @@ module.exports = {
     },
     'primary-background': {
         light: colors.white,
-        dark: colors.gray[800],
+        dark: colors['cool-gray'][800],
     },
     'secondary-background': {
         light: colors['cool-gray'][100],
@@ -152,10 +152,10 @@ module.exports = {
         darkHighContrast: colors.gray[500],
     },
     'separator': {
-        light: colors.gray[200],
-        dark: colors.gray[800],
-        highContrast: colors.gray[500],
-        darkHighContrast: colors.gray[500],
+        light: colors['cool-gray'][200],
+        dark: colors.black,
+        highContrast: colors['cool-gray'][500],
+        darkHighContrast: colors['cool-gray'][500],
     },
     'success-separator': {
         light: colors.green[400],
@@ -309,24 +309,24 @@ module.exports = {
 
     // Temp
     'interactive-nav-text': {
-        light: colors['cool-gray'][600],
-        dark: colors['cool-gray'][400],
+        light: colors['cool-gray'][800],
+        dark: colors['cool-gray'][200],
     },
     'interactive-nav-hover-text': {
-        light: colors['cool-gray'][600],
-        dark: colors['cool-gray'][400],
+        light: colors['cool-gray'][800],
+        dark: colors['cool-gray'][200],
     },
     'interactive-nav-disabled-text': {
         light: colors['cool-gray'][300],
         dark: colors['cool-gray'][700],
     },
     'interactive-nav-active-background': {
-        light: colors['cool-gray'][200],
-        dark: colors['cool-gray'][800],
+        light: colors['cool-gray'][100],
+        dark: colors['cool-gray'][600],
     },
     'interactive-nav-active-text': {
-        light: colors['cool-gray'][600],
-        dark: colors['cool-gray'][400],
+        light: colors['cool-gray'][800],
+        dark: colors['cool-gray'][200],
 
     },
 }
