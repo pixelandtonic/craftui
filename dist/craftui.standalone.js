@@ -837,14 +837,6 @@ var __vue_render__$4 = function() {
         (_obj[
           "sm:" +
             _vm.PREFIX +
-            "border-t sm:" +
-            _vm.PREFIX +
-            "border-separator sm:" +
-            _vm.PREFIX +
-            "pt-5 mt-6 sm:" +
-            _vm.PREFIX +
-            "mt-5 sm:" +
-            _vm.PREFIX +
             "grid sm:" +
             _vm.PREFIX +
             "grid-cols-3 sm:" +
@@ -853,7 +845,19 @@ var __vue_render__$4 = function() {
             _vm.PREFIX +
             "items-start"
         ] = !_vm.vertical),
-        (_obj[_vm.PREFIX + "mt-6 sm:" + _vm.PREFIX + "mt-5"] = !_vm.first),
+        (_obj[
+          "sm:" +
+            _vm.PREFIX +
+            "border-t sm:" +
+            _vm.PREFIX +
+            "border-separator " +
+            _vm.PREFIX +
+            "mt-6 sm:" +
+            _vm.PREFIX +
+            "pt-5 sm:" +
+            _vm.PREFIX +
+            "mt-5"
+        ] = !_vm.first),
         _obj),
       attrs: { id: "field-" + _vm.labelFor }
     },
@@ -1200,22 +1204,38 @@ __vue_render__$6._withStripped = true;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var script$7 = {
-  props: ['padded']
+  props: ['padded', 'type']
 };
 
 /* script */
 const __vue_script__$7 = script$7;
-
 /* template */
 var __vue_render__$7 = function() {
-  var _obj;
+  var _obj, _obj$1, _obj$2, _obj$3;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
   return _c(
     "div",
     {
+      staticClass: "c-pane",
       class:
         ((_obj = {}),
         (_obj[
@@ -1224,18 +1244,85 @@ var __vue_render__$7 = function() {
             _vm.PREFIX +
             "rounded-lg " +
             _vm.PREFIX +
-            "shadow-md " +
+            "shadow " +
             _vm.PREFIX +
-            "mb-6 " +
+            "mb-8 " +
             _vm.PREFIX +
             "overflow-hidden"
         ] = true),
-        (_obj[_vm.PREFIX + "px-6 " + _vm.PREFIX + "py-5"] =
-          _vm.padded === undefined || _vm.padded === true),
+        (_obj[_vm.PREFIX + "overflow-x-auto"] = _vm.type === "table"),
         _obj)
     },
-    [_vm._t("default")],
-    2
+    [
+      _vm.$slots.header
+        ? _c(
+            "div",
+            {
+              class:
+                ((_obj$1 = {}),
+                (_obj$1[
+                  _vm.PREFIX +
+                    "px-4 " +
+                    _vm.PREFIX +
+                    "py-5 sm:" +
+                    _vm.PREFIX +
+                    "p-6 " +
+                    _vm.PREFIX +
+                    "border-b"
+                ] = !!this.$slots.header),
+                _obj$1)
+            },
+            [_vm._t("header")],
+            2
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          class:
+            ((_obj$2 = {}),
+            (_obj$2[
+              _vm.PREFIX +
+                "px-4 " +
+                _vm.PREFIX +
+                "py-5 sm:" +
+                _vm.PREFIX +
+                "p-6"
+            ] =
+              _vm.type !== "table" &&
+              (_vm.padded === undefined || _vm.padded === true)),
+            _obj$2)
+        },
+        [_vm._t("default")],
+        2
+      ),
+      _vm._v(" "),
+      _vm.$slots.footer
+        ? _c(
+            "div",
+            {
+              class:
+                ((_obj$3 = {}),
+                (_obj$3[
+                  _vm.PREFIX +
+                    "px-4 " +
+                    _vm.PREFIX +
+                    "py-5 sm:" +
+                    _vm.PREFIX +
+                    "p-6 " +
+                    _vm.PREFIX +
+                    "border-t"
+                ] =
+                  !!this.$slots.footer &&
+                  (_vm.padded === undefined || _vm.padded === true)),
+                _obj$3)
+            },
+            [_vm._t("footer")],
+            2
+          )
+        : _vm._e()
+    ]
   )
 };
 var __vue_staticRenderFns__$7 = [];

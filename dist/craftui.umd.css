@@ -405,6 +405,65 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
 .c-lightswitch .c-lightswitch-input label.disabled .slider {
   cursor: default;
 }
+.c-pane table {
+  overflow: hidden;
+  width: 100%;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+
+.c-pane table th {
+  --bg-opacity: 1;
+  background-color: #fbfdfe;
+  background-color: rgba(251, 253, 254, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #64748b;
+  color: rgba(100, 116, 139, var(--text-opacity));
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top-width: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.c-pane table td {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top-width: 1px;
+  border-color: var(--craftui-separator);
+  font-size: 0.875rem;
+}
+
+.c-pane table th, .c-pane table td {
+  text-align: left;
+}
+
+.c-pane table th.thin, .c-pane table td.thin {
+  width: 0.01% !important;
+}
+
+.c-pane table td.icon-col {
+  width: 0.01% !important;
+}
+
+.c-pane table td.icon-col img {
+  width: 40px;
+  height: 40px;
+  max-width: none;
+}
+
+.c-pane table td.name-col {
+  min-width: 220px;
+}
+
+.c-pane table td.date-col {
+  min-width: 200px;
+}
 .c-radio.disabled {
   opacity: 0.5;
 }
