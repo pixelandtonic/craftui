@@ -1,8 +1,8 @@
 <template>
     <div :id="'field-' + labelFor" class="c-field" :class="{
         [`${PREFIX}mb-4`]: true,
-        [`sm:${PREFIX}border-t sm:${PREFIX}border-separator sm:${PREFIX}pt-5 mt-6 sm:${PREFIX}mt-5 sm:${PREFIX}grid sm:${PREFIX}grid-cols-3 sm:${PREFIX}gap-4 sm:${PREFIX}items-start`]: !vertical,
-        [`${PREFIX}mt-6 sm:${PREFIX}mt-5`]: !first
+        [`sm:${PREFIX}grid sm:${PREFIX}grid-cols-3 sm:${PREFIX}gap-4 sm:${PREFIX}items-start`]: !vertical,
+        [`sm:${PREFIX}border-t sm:${PREFIX}border-separator ${PREFIX}mt-6 sm:${PREFIX}pt-5 sm:${PREFIX}mt-5`]: !first
     }">
         <div>
             <label v-if="label" :for="labelFor" :class="{
