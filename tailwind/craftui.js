@@ -1,8 +1,8 @@
 const craftui = require('tailwindcss/plugin')
 const colors = require('../src/colors/colors')
 const { borderColor } = require('tailwindcss/defaultTheme')
-const semanticTailwindColors = require('../src/colors/semanticTailwindColors')
-const semanticColors = require('../src/colors/semanticColors')
+const createSemanticTailwindColors = require('../src/colors/createSemanticTailwindColors')
+const createSemanticColors = require('../src/colors/createSemanticColors')
 
 const rtlPlugin = require('tailwindcss-rtl')
 const customFormsPlugin = require('@tailwindcss/custom-forms')
@@ -15,6 +15,9 @@ module.exports = craftui.withOptions(
             // Call other plugins
             rtlPlugin.handler(options)
             customFormsPlugin(options)
+
+            // Semantic colors
+            const semanticColors = createSemanticColors(pluginOptions)
 
             // Define CSS variables
             let baseStyleColors = {
@@ -89,7 +92,7 @@ module.exports = craftui.withOptions(
         }
     },
 
-    function(options = {}) {
+    function(pluginOptions = {}) {
         const spacing = {
             px: '1px',
             '0': '0',
@@ -154,6 +157,11 @@ module.exports = craftui.withOptions(
             '11/12': '91.666667%',
             full: '100%',
         }
+
+
+        // Semantic colors
+        const semanticColors = createSemanticColors(pluginOptions)
+        const semanticTailwindColors = createSemanticTailwindColors(semanticColors)
 
         return {
             variants: {
