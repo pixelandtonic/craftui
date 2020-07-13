@@ -1,11 +1,10 @@
 import Field from '../../../src/components/Field'
 import {withKnobs, text, array, boolean} from '@storybook/addon-knobs'
-import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Field',
     component: Field,
-    decorators: [withKnobs, withA11y],
+    decorators: [withKnobs],
 }
 
 export const Default = () => ({

@@ -1,11 +1,10 @@
 import Spinner from '../../../src/components/Spinner'
 import {withKnobs, select} from '@storybook/addon-knobs'
-import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Spinner',
     component: Spinner,
-    decorators: [withKnobs, withA11y],
+    decorators: [withKnobs],
 }
 
 export const Default = () => ({

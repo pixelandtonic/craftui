@@ -12,8 +12,10 @@ import craftuiDark from './themes/craftui-dark'
 
 import {addDecorator, addParameters} from '@storybook/vue'
 import {withDirection} from 'storybook-rtl-addon/dist';
+import {withA11y} from '@storybook/addon-a11y';
 
 addDecorator(withDirection)
+addDecorator(withA11y)
 
 addParameters({
     darkMode: {

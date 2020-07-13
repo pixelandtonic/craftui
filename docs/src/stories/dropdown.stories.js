@@ -1,11 +1,10 @@
 import Dropdown from '../../../src/components/Dropdown'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
-import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Dropdown',
     component: Dropdown,
-    decorators: [withKnobs, withA11y],
+    decorators: [withKnobs],
 }
 
 export const Default = () => ({

@@ -1,11 +1,10 @@
 import Lightswitch from '../../../src/components/Lightswitch'
 import {withKnobs, boolean} from '@storybook/addon-knobs'
-import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Lightswitch',
     component: Lightswitch,
-    decorators: [withKnobs, withA11y],
+    decorators: [withKnobs],
 }
 
 export const Default = () => ({

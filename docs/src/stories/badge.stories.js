@@ -1,11 +1,10 @@
 import Badge from '../../../src/components/Badge'
 import {withKnobs, boolean, select, text} from '@storybook/addon-knobs'
-import {withA11y} from '@storybook/addon-a11y'
 
 export default {
     title: 'Components/Badge',
     component: Badge,
-    decorators: [withKnobs, withA11y],
+    decorators: [withKnobs],
 }
 
 export const Default = () => ({
