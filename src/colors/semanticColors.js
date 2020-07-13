@@ -305,28 +305,4 @@ module.exports = {
         light: colors.gray[400],
         dark: colors.gray[600],
     },
-
-
-    // Temp
-    'interactive-nav-text': {
-        light: colors['cool-gray'][800],
-        dark: colors['cool-gray'][200],
-    },
-    'interactive-nav-hover-text': {
-        light: colors['cool-gray'][800],
-        dark: colors['cool-gray'][200],
-    },
-    'interactive-nav-disabled-text': {
-        light: colors['cool-gray'][300],
-        dark: colors['cool-gray'][700],
-    },
-    'interactive-nav-active-background': {
-        light: colors['cool-gray'][100],
-        dark: colors['cool-gray'][600],
-    },
-    'interactive-nav-active-text': {
-        light: colors['cool-gray'][800],
-        dark: colors['cool-gray'][200],
-
-    },
 }
