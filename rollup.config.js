@@ -45,6 +45,42 @@ module.exports = [
         ]
     },
     {
+        input: 'src/craftui.js',
+        output: [
+            {
+                format: 'cjs',
+                file: 'dist/craftui.prefixed.js'
+            },
+            {
+                format: 'es',
+                file: 'dist/craftui.prefixed.esm.js'
+            },
+            {
+                format: 'umd',
+                file: 'dist/craftui.prefixed.umd.js',
+                name: 'CraftUiPrefixed',
+            },
+        ],
+        plugins: [
+            resolve(),
+            babel(),
+            svg(),
+            replace({
+                '__PREFIX__': 'tw-',
+            }),
+            postcss({
+                extract: true,
+                plugins: [
+                    require('tailwindcss')('./tailwind-prefixed.config.js'),
+                ],
+            }),
+            VuePlugin({
+                css: false,
+            }),
+            commonjs(),
+        ]
+    },
+    {
         input: 'src/craftui.standalone.js',
         output: [
             {
