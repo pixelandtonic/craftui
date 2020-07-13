@@ -1,5 +1,7 @@
 import { create } from '@storybook/theming/create';
+import craftuiBase from './base'
 
 export default create({
-    brandTitle: 'Craft UI',
+    ...craftuiBase,
+    base: 'light',
 });
