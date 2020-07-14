@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const craftui = require('tailwindcss/plugin')
 const colors = require('../src/colors/colors')
 const { borderColor } = require('tailwindcss/defaultTheme')
@@ -10,7 +11,7 @@ const customFormsPlugin = require('@tailwindcss/custom-forms')
 module.exports = craftui.withOptions(
     function(pluginOptions) {
         return function(options) {
-            const { addBase, addUtilities, theme } = options
+            const { addBase, addUtilities, theme, variants, e } = options
 
             // Call other plugins
             rtlPlugin.handler(options)
@@ -89,6 +90,19 @@ module.exports = craftui.withOptions(
                     marginBottom: theme('margin.1'),
                 },
             })
+
+            // Gradients
+
+            const gradients = theme('gradients', {})
+            const gradientVariants = variants('gradients', [])
+
+            const utilities = _.map(gradients, ([start, end], name) => ({
+                [`.bg-gradient-${e(name)}`]: {
+                    backgroundImage: `linear-gradient(to bottom, ${start}, ${end})`
+                }
+            }))
+
+            addUtilities(utilities, gradientVariants)
         }
     },
 
@@ -186,12 +200,17 @@ module.exports = craftui.withOptions(
 
                 // Enable group hover
                 textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+
+                gradients: ['responsive', 'hover'],
             },
 
             theme: {
                 colors,
                 spacing,
                 boxShadow,
+                gradients: theme => ({
+                    'primary-gradient': [theme('colors.primary-gradient-1'), theme('colors.primary-gradient-2')]
+                }),
                 extend: {
                     // Add semantic colors to the existing Tailwind color palette
                     colors: semanticTailwindColors,

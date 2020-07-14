@@ -247,13 +247,12 @@ module.exports = {
         highContrast: colors.gray[500]
     },
 
-    // Misc
-    'primary-background-gradient-1': {
+    // Gradients
+    'primary-gradient-1': {
         light: 'rgba(255, 255, 255, 0)',
         dark: 'rgba(26, 32, 44, 0)',
     },
-
-    'primary-background-gradient-2': {
+    'primary-gradient-2': {
         light: 'rgba(255, 255, 255, 1)',
         dark: 'rgba(26, 32, 44, 1)',
     },
