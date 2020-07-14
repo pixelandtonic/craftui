@@ -56,10 +56,6 @@ module.exports = {
         light: colors.orange[100],
         dark: colors.orange[800],
     },
-    'default-background': {
-        light: colors.gray[100],
-        dark: colors.gray[800],
-    },
 
     // Text
     'danger-text': {
@@ -102,10 +98,6 @@ module.exports = {
         light: colors.orange[800],
         dark: colors.orange[200],
     },
-    'default-text': {
-        light: colors.gray[800],
-        dark: colors.gray[200],
-    },
 
     // Separator
     'danger-separator': {
@@ -140,10 +132,6 @@ module.exports = {
     'warning-separator': {
         light: colors.orange[400],
         dark: colors.orange[600],
-    },
-    'default-separator': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
     },
 
     // Interactive
