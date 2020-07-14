@@ -1,3 +1,4 @@
+import Alert from './Alert.vue';
 import Badge from './Badge.vue';
 import Btn from './Btn.vue';
 import Checkbox from './Checkbox.vue';
@@ -11,6 +12,7 @@ import Spinner from './Spinner.vue';
 import Textbox from './Textbox.vue';
 
 const CraftComponents = {
+    Alert,
     Badge,
     Btn,
     Checkbox,
@@ -27,6 +29,7 @@ const CraftComponents = {
 export default CraftComponents;
 
 export {
+    Alert,
     Badge,
     Btn,
     Checkbox,
