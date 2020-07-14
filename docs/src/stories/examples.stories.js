@@ -1,6 +1,6 @@
-import FormsApp from './Forms.vue'
-import BadgesApp from './Badges.vue'
-import PanesApp from './Panes.vue'
+import FormsApp from './examples/Forms.vue'
+import BadgesApp from './examples/Badges.vue'
+import PanesApp from './examples/Panes.vue'
 
 export default {
     title: 'Examples',

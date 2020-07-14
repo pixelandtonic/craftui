@@ -2,7 +2,7 @@
     <div>
         <h1 :class="`text-3xl font-medium mb-2`">Alerts</h1>
 
-        <div v-for="alert in alerts" :class="`rounded-md p-4 mb-4 bg-${alert}-background`">
+        <div v-for="alert in alerts" :class="`rounded-md p-4 mb-4 bg-${alert}-background border border-${alert}-separator`">
             <div class="flex">
                 <div class="flex-shrink-0">
                     <svg :class="`h-5 w-5 text-${alert}-separator`" viewBox="0 0 20 20" fill="currentColor">
@@ -27,7 +27,6 @@
                 alerts: [
                     'danger',
                     'info',
-                    'notice',
                     'success',
                     'warning',
                 ],

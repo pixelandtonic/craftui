@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-secondary-background p-16">
         <pane>
             <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Vertical Form</h2>
 
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </pane>
-        <pane>
+        <pane class="mt-16">
             <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Horizontal Form</h2>
 
             <div class="`${PREFIX}mt-6`">
