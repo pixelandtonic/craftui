@@ -172,6 +172,8 @@
         }
 
         &.primary,
+        &.tertiary,
+        &.success,
         &.danger {
             &:not(.outline) {
                 .c-icon {
@@ -180,7 +182,7 @@
             }
         }
 
-        &.primary:not(.outline) {
+        &.primary {
             @apply .bg-interactive-primary .border-interactive-primary .text-interactive-text-inverse;
 
             &:not([disabled]) {
@@ -190,6 +192,34 @@
 
                 &:active {
                     @apply .bg-interactive-primary-active .border-interactive-primary-active;
+                }
+            }
+        }
+
+        &.tertiary {
+            @apply .bg-interactive-tertiary .border-interactive-tertiary .text-interactive-text-inverse;
+
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-interactive-tertiary-hover .border-interactive-tertiary-hover;
+                }
+
+                &:active {
+                    @apply .bg-interactive-tertiary-active .border-interactive-tertiary-active;
+                }
+            }
+        }
+
+        &.success {
+            @apply .bg-interactive-success .border-interactive-success .text-interactive-text-inverse;
+
+            &:not([disabled]) {
+                &:hover {
+                    @apply .bg-interactive-success-hover .border-interactive-success-hover;
+                }
+
+                &:active {
+                    @apply .bg-interactive-success-active .border-interactive-success-active;
                 }
             }
         }
@@ -216,15 +246,43 @@
             @apply .bg-transparent;
 
             &.primary {
-                @apply .text-blue-500;
+                @apply .text-interactive-primary;
 
                 &:not([disabled]) {
                     &:hover {
-                        @apply .text-white .bg-blue-500;
+                        @apply .text-white .bg-interactive-primary-hover;
                     }
 
                     &:active {
-                        @apply .text-white .bg-blue-800;
+                        @apply .text-white .bg-interactive-primary-active;
+                    }
+                }
+            }
+
+            &.tertiary {
+                @apply .text-interactive-tertiary;
+
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-interactive-tertiary;
+                    }
+
+                    &:active {
+                        @apply .text-white .bg-interactive-tertiary-active;
+                    }
+                }
+            }
+
+            &.success {
+                @apply .text-interactive-success;
+
+                &:not([disabled]) {
+                    &:hover {
+                        @apply .text-white .bg-interactive-success;
+                    }
+
+                    &:active {
+                        @apply .text-white .bg-interactive-success-active;
                     }
                 }
             }
@@ -253,6 +311,8 @@
 
             &:not(.outline) {
                 &.primary,
+                &.tertiary,
+                &.success,
                 &.danger {
                     .c-spinner {
                         & > .animation {
@@ -264,11 +324,19 @@
 
             &.outline {
                 &.primary .c-spinner > .animation {
-                    @apply .border-blue-500;
+                    @apply .border-interactive-primary;
+                }
+
+                &.tertiary .c-spinner > .animation {
+                    @apply .border-interactive-tertiary;
+                }
+
+                &.success .c-spinner > .animation {
+                    @apply .border-interactive-success;
                 }
 
                 &.danger .c-spinner > .animation {
-                    @apply .border-red-500;
+                    @apply .border-interactive-danger;
                 }
             }
 
