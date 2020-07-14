@@ -3,13 +3,18 @@
         [`${PREFIX}inline-block`]: true,
         [size]: true
     }">
-        <div class="animation"></div>
+        <div class="animation" :class="`${animationClass}`"></div>
     </div>
 </template>
 
 <script>
     export default {
         props: {
+            animationClass: {
+                type: String,
+                default: 'border-interactive-text'
+            },
+
             /**
              * 'base' or 'lg'
              */
@@ -28,11 +33,10 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            border: 2px solid transparent;
+            border-width: 2px;
+            border-style: solid;
             border-top-color: transparent !important;
             border-left-color: transparent !important;
-            border-right-color: var(--craftui-opaque-separator);
-            border-bottom-color: var(--craftui-opaque-separator);
         }
 
         &.sm {

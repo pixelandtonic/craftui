@@ -199,9 +199,11 @@ module.exports = craftui.withOptions(
                 inset: ['responsive', 'hover'],
 
                 // Enable group hover
-                textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+                textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
 
                 gradients: ['responsive', 'hover'],
+
+                borderColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
             },
 
             theme: {
