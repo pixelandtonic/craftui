@@ -170,6 +170,9 @@ module.exports = craftui.withOptions(
 
                 // Add `hover` variant to `inset`
                 inset: ['responsive', 'hover'],
+
+                // Enable group hover
+                textColor: ['responsive', 'hover', 'focus', 'group-hover'],
             },
 
             theme: {
