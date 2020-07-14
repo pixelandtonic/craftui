@@ -1,6 +1,8 @@
 <template>
     <div>
-        <pane type="table">
+        <h1 :class="`text-3xl font-medium`">Panes</h1>
+
+        <pane type="table" class="mt-6">
             <table>
                 <thead>
                 <tr>
