@@ -25,10 +25,10 @@
         data() {
             return {
                 alerts: [
-                    'danger',
                     'info',
                     'success',
                     'warning',
+                    'danger',
                 ],
             }
         }

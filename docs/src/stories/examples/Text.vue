@@ -13,16 +13,20 @@
         data() {
             return {
                 texts: [
-                    'danger-text',
                     'dark-text',
-                    'info-text',
                     'interactive-text',
                     'interactive-text-inverse',
                     'light-text',
-                    'success-text',
                     'text',
                     'text-inverse',
+                    'info',
+                    'success',
+                    'warning',
+                    'danger',
+                    'info-text',
+                    'success-text',
                     'warning-text',
+                    'danger-text',
                 ],
             }
         }

@@ -1,19 +1,31 @@
 <template>
     <div>
-        <div>
-            <badge type="default">Badge</badge>
-            <badge type="success">Badge</badge>
-            <badge type="info">Badge</badge>
-            <badge type="warning">Badge</badge>
-            <badge type="danger">Badge</badge>
+        <h1 :class="`text-3xl font-medium`">Badges</h1>
+
+        <h2 :class="`text-2xl font-medium mt-6 mb-2`">Regular</h2>
+        <div class="mt-6 border p-12 max-w-3xl mx-auto space-y-4 flex flex-col items-center justify-start sm:space-y-0 sm:flex-row sm:items-end sm:justify-around">
+            <badge v-for="badgeType in badgeTypes" :type="badgeType">{{badgeType}}</badge>
         </div>
 
-        <div :class="`${PREFIX}mt-8`">
-            <badge type="default" large>Badge</badge>
-            <badge type="success" large>Badge</badge>
-            <badge type="info" large>Badge</badge>
-            <badge type="warning" large>Badge</badge>
-            <badge type="danger" large>Badge</badge>
+        <h2 :class="`text-2xl font-medium mt-6 mb-2`">Large</h2>
+        <div class="mt-6 border p-12 max-w-3xl mx-auto space-y-4 flex flex-col items-center justify-start sm:space-y-0 sm:flex-row sm:items-end sm:justify-around">
+            <badge v-for="badgeType in badgeTypes" :type="badgeType" large>{{badgeType}}</badge>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                badgeTypes: [
+                    'default',
+                    'info',
+                    'success',
+                    'warning',
+                    'danger',
+                ]
+            }
+        }
+    }
+</script>
