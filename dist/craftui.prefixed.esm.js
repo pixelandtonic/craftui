@@ -25,22 +25,16 @@ var CraftIcons = {
 //
 //
 //
+//
 var script = {
   props: {
-    /**
-     * 'default', 'success', 'info', 'warning', or 'danger'
-     */
-    type: {
+    kind: {
       type: String,
-      default: 'default'
+      default: 'info'
     },
-
-    /**
-     * Larger version of badge if set to `true`.
-     */
-    large: {
-      type: Boolean,
-      default: false
+    icon: {
+      type: String,
+      default: 'info-circle'
     }
   }
 };
@@ -133,52 +127,43 @@ const __vue_script__ = script;
 
 /* template */
 var __vue_render__ = function() {
-  var _obj;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
   return _c(
-    "span",
+    "div",
     {
-      class: [
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "inline-flex " +
-            _vm.PREFIX +
-            "items-center " +
-            _vm.PREFIX +
-            "rounded " +
-            _vm.PREFIX +
-            "font-medium"
-        ] = true),
-        (_obj[
-          _vm.PREFIX +
-            "px-2 " +
-            _vm.PREFIX +
-            "py-0.5 " +
-            _vm.PREFIX +
-            "leading-4 " +
-            _vm.PREFIX +
-            "text-xs"
-        ] = !_vm.large),
-        (_obj[
-          _vm.PREFIX +
-            "px-2.5 " +
-            _vm.PREFIX +
-            "py-0.5 " +
-            _vm.PREFIX +
-            "leading-5 " +
-            _vm.PREFIX +
-            "text-sm"
-        ] = _vm.large),
-        (_obj[_vm.PREFIX + "bg-" + _vm.type + "-background"] = true),
-        (_obj[_vm.PREFIX + "text-" + _vm.type + "-text"] = true),
-        _obj)
-      ]
+      class:
+        "rounded-md p-4 mb-4 bg-" +
+        _vm.kind +
+        "-background border border-" +
+        _vm.kind +
+        "-separator"
     },
-    [_vm._t("default")],
-    2
+    [
+      _c("div", { staticClass: "flex" }, [
+        _c(
+          "div",
+          { staticClass: "flex-shrink-0 flex" },
+          [
+            _c("icon", {
+              class: "h-5 w-5 text-" + _vm.kind + "-separator",
+              attrs: { icon: _vm.icon }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "ml-3 flex-1 md:flex md:justify-between" }, [
+          _c(
+            "p",
+            { class: "text-sm leading-5 text-" + _vm.kind + "-text" },
+            [_vm._t("default")],
+            2
+          )
+        ])
+      ])
+    ]
   )
 };
 var __vue_staticRenderFns__ = [];
@@ -227,20 +212,141 @@ __vue_render__._withStripped = true;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var script$1 = {
+  props: {
+    /**
+     * 'default', 'success', 'info', 'warning', or 'danger'
+     */
+    type: {
+      type: String,
+      default: 'default'
+    },
+
+    /**
+     * Larger version of badge if set to `true`.
+     */
+    large: {
+      type: Boolean,
+      default: false
+    }
+  }
+};
+
+/* script */
+const __vue_script__$1 = script$1;
+
+/* template */
+var __vue_render__$1 = function() {
+  var _obj;
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c(
+    "span",
+    {
+      class: [
+        ((_obj = {}),
+        (_obj[
+          _vm.PREFIX +
+            "inline-flex " +
+            _vm.PREFIX +
+            "items-center " +
+            _vm.PREFIX +
+            "rounded " +
+            _vm.PREFIX +
+            "font-medium"
+        ] = true),
+        (_obj[
+          _vm.PREFIX +
+            "px-2 " +
+            _vm.PREFIX +
+            "py-0.5 " +
+            _vm.PREFIX +
+            "leading-4 " +
+            _vm.PREFIX +
+            "text-xs"
+        ] = !_vm.large),
+        (_obj[
+          _vm.PREFIX +
+            "px-2.5 " +
+            _vm.PREFIX +
+            "py-0.5 " +
+            _vm.PREFIX +
+            "leading-5 " +
+            _vm.PREFIX +
+            "text-sm"
+        ] = _vm.large),
+        (_obj[_vm.PREFIX + "bg-" + _vm.type + "-background"] = true),
+        (_obj[_vm.PREFIX + "text-" + _vm.type + "-text"] = true),
+        _obj)
+      ]
+    },
+    [_vm._t("default")],
+    2
+  )
+};
+var __vue_staticRenderFns__$1 = [];
+__vue_render__$1._withStripped = true;
+
+  /* style */
+  const __vue_inject_styles__$1 = undefined;
+  /* scoped */
+  const __vue_scope_id__$1 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$1 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$1 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  const __vue_component__$1 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
+    __vue_inject_styles__$1,
+    __vue_script__$1,
+    __vue_scope_id__$1,
+    __vue_is_functional_template__$1,
+    __vue_module_identifier__$1,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$2 = {
   name: 'Btn',
   props: {
     /**
@@ -256,7 +362,7 @@ var script$1 = {
      */
     kind: {
       type: String,
-      default: 'default'
+      default: 'secondary'
     },
 
     /**
@@ -341,14 +447,60 @@ var script$1 = {
       }
 
       return this.type;
+    },
+    cssClass: function cssClass() {
+      var cssClass = {};
+      cssClass["".concat(this.PREFIX, "inline-block ").concat(this.PREFIX, "px-4 ").concat(this.PREFIX, "py-2 ").concat(this.PREFIX, "text-sm ").concat(this.PREFIX, "leading-5 ").concat(this.PREFIX, "rounded-md ").concat(this.PREFIX, "no-underline ").concat(this.PREFIX, "border ").concat(this.PREFIX, "border-solid")] = true;
+
+      if (this.kind !== 'secondary') {
+        cssClass["".concat(this.PREFIX, "border-interactive-").concat(this.kind)] = true;
+
+        if (this.outline) {
+          cssClass["".concat(this.PREFIX, "text-interactive-").concat(this.kind)] = true;
+
+          if (!this.disabled) {
+            cssClass["hover:".concat(this.PREFIX, "text-interactive-text-inverse hover:").concat(this.PREFIX, "bg-interactive-").concat(this.kind)] = true;
+            cssClass["active:".concat(this.PREFIX, "text-interactive-text-inverse active:").concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-active")] = true;
+          }
+        } else {
+          cssClass["".concat(this.PREFIX, "text-interactive-text-inverse")] = true;
+          cssClass["".concat(this.PREFIX, "bg-interactive-").concat(this.kind)] = true;
+
+          if (!this.disabled) {
+            cssClass["hover:".concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-hover hover:").concat(this.PREFIX, "border-interactive-").concat(this.kind, "-hover")] = true;
+            cssClass["active:".concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-active active:").concat(this.PREFIX, "border-interactive-").concat(this.kind, "-active")] = true;
+          }
+        }
+      } else {
+        cssClass["".concat(this.PREFIX, "border-interactive-secondary ").concat(this.PREFIX, "text-interactive-text")] = true;
+
+        if (!this.disabled) {
+          cssClass["hover:".concat(this.PREFIX, "cursor-pointer hover:").concat(this.PREFIX, "bg-interactive-secondary-hover hover:").concat(this.PREFIX, "border-interactive-secondary-hover hover:").concat(this.PREFIX, "no-underline")] = true;
+          cssClass["active:".concat(this.PREFIX, "cursor-pointer active:").concat(this.PREFIX, "bg-interactive-secondary-active active:").concat(this.PREFIX, "border-interactive-secondary-active")] = true;
+        }
+
+        if (this.outline) {
+          cssClass["".concat(this.PREFIX, "bg-transparent")] = true;
+        } else {
+          cssClass["".concat(this.PREFIX, "bg-interactive-secondary")] = true;
+        }
+      }
+
+      return cssClass;
+    },
+    animationColor: function animationColor() {
+      return this.kind === 'secondary' ? 'interactive-text' : !this.outline ? 'text-inverse' : 'interactive-' + this.kind;
+    },
+    animationColorHover: function animationColorHover() {
+      return this.kind === 'secondary' ? 'interactive-text' : 'text-inverse';
     }
   }
 };
 
 /* script */
-const __vue_script__$1 = script$1;
+const __vue_script__$2 = script$2;
 /* template */
-var __vue_render__$1 = function() {
+var __vue_render__$2 = function() {
   var _obj;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -359,16 +511,20 @@ var __vue_render__$1 = function() {
       tag: "component",
       staticClass: "c-btn",
       class: [
-        ((_obj = {
-          small: _vm.small,
-          large: _vm.large,
-          block: _vm.block,
-          outline: _vm.outline,
-          loading: _vm.loading
-        }),
-        (_obj[_vm.kind] = true),
-        (_obj["c-btn-icon"] = _vm.icon && !_vm.$slots.default),
-        _obj)
+        Object.assign(
+          ((_obj = {
+            small: _vm.small,
+            large: _vm.large,
+            block: _vm.block,
+            outline: _vm.outline,
+            loading: _vm.loading
+          }),
+          (_obj[_vm.kind] = true),
+          { "c-btn-icon": _vm.icon && !_vm.$slots.default },
+          (_obj[_vm.PREFIX + "group"] = true),
+          _obj),
+          _vm.cssClass
+        )
       ],
       attrs: {
         to: _vm.to,
@@ -384,7 +540,22 @@ var __vue_render__$1 = function() {
       }
     },
     [
-      _vm.loading ? [_c("spinner")] : _vm._e(),
+      _vm.loading
+        ? [
+            _c("spinner", {
+              attrs: {
+                animationClass:
+                  _vm.PREFIX +
+                  "border-" +
+                  _vm.animationColor +
+                  " group-hover:" +
+                  _vm.PREFIX +
+                  "border-" +
+                  _vm.animationColorHover
+              }
+            })
+          ]
+        : _vm._e(),
       _vm._v(" "),
       _c(
         "div",
@@ -409,17 +580,17 @@ var __vue_render__$1 = function() {
     2
   )
 };
-var __vue_staticRenderFns__$1 = [];
-__vue_render__$1._withStripped = true;
+var __vue_staticRenderFns__$2 = [];
+__vue_render__$2._withStripped = true;
 
   /* style */
-  const __vue_inject_styles__$1 = undefined;
+  const __vue_inject_styles__$2 = undefined;
   /* scoped */
-  const __vue_scope_id__$1 = undefined;
+  const __vue_scope_id__$2 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$1 = undefined;
+  const __vue_module_identifier__$2 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$1 = false;
+  const __vue_is_functional_template__$2 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -428,13 +599,13 @@ __vue_render__$1._withStripped = true;
   
 
   
-  const __vue_component__$1 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
-    __vue_inject_styles__$1,
-    __vue_script__$1,
-    __vue_scope_id__$1,
-    __vue_is_functional_template__$1,
-    __vue_module_identifier__$1,
+  const __vue_component__$2 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
+    __vue_inject_styles__$2,
+    __vue_script__$2,
+    __vue_scope_id__$2,
+    __vue_is_functional_template__$2,
+    __vue_module_identifier__$2,
     false,
     undefined,
     undefined,
@@ -468,7 +639,7 @@ __vue_render__$1._withStripped = true;
 //
 //
 //
-var script$2 = {
+var script$3 = {
   model: {
     prop: 'checked',
     event: 'input'
@@ -494,9 +665,9 @@ var script$2 = {
 };
 
 /* script */
-const __vue_script__$2 = script$2;
+const __vue_script__$3 = script$3;
 /* template */
-var __vue_render__$2 = function() {
+var __vue_render__$3 = function() {
   var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -573,17 +744,17 @@ var __vue_render__$2 = function() {
     ]
   )
 };
-var __vue_staticRenderFns__$2 = [];
-__vue_render__$2._withStripped = true;
+var __vue_staticRenderFns__$3 = [];
+__vue_render__$3._withStripped = true;
 
   /* style */
-  const __vue_inject_styles__$2 = undefined;
+  const __vue_inject_styles__$3 = undefined;
   /* scoped */
-  const __vue_scope_id__$2 = undefined;
+  const __vue_scope_id__$3 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$2 = undefined;
+  const __vue_module_identifier__$3 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$2 = false;
+  const __vue_is_functional_template__$3 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -592,13 +763,13 @@ __vue_render__$2._withStripped = true;
   
 
   
-  const __vue_component__$2 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-    __vue_inject_styles__$2,
-    __vue_script__$2,
-    __vue_scope_id__$2,
-    __vue_is_functional_template__$2,
-    __vue_module_identifier__$2,
+  const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
+    __vue_inject_styles__$3,
+    __vue_script__$3,
+    __vue_scope_id__$3,
+    __vue_is_functional_template__$3,
+    __vue_module_identifier__$3,
     false,
     undefined,
     undefined,
@@ -622,7 +793,7 @@ __vue_render__$2._withStripped = true;
 //
 //
 //
-var script$3 = {
+var script$4 = {
   props: {
     disabled: {
       type: Boolean,
@@ -654,9 +825,9 @@ var script$3 = {
 };
 
 /* script */
-const __vue_script__$3 = script$3;
+const __vue_script__$4 = script$4;
 /* template */
-var __vue_render__$3 = function() {
+var __vue_render__$4 = function() {
   var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -716,17 +887,17 @@ var __vue_render__$3 = function() {
     ]
   )
 };
-var __vue_staticRenderFns__$3 = [];
-__vue_render__$3._withStripped = true;
+var __vue_staticRenderFns__$4 = [];
+__vue_render__$4._withStripped = true;
 
   /* style */
-  const __vue_inject_styles__$3 = undefined;
+  const __vue_inject_styles__$4 = undefined;
   /* scoped */
-  const __vue_scope_id__$3 = undefined;
+  const __vue_scope_id__$4 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$3 = undefined;
+  const __vue_module_identifier__$4 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$3 = false;
+  const __vue_is_functional_template__$4 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -735,13 +906,13 @@ __vue_render__$3._withStripped = true;
   
 
   
-  const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-    __vue_inject_styles__$3,
-    __vue_script__$3,
-    __vue_scope_id__$3,
-    __vue_is_functional_template__$3,
-    __vue_module_identifier__$3,
+  const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
+    __vue_inject_styles__$4,
+    __vue_script__$4,
+    __vue_scope_id__$4,
+    __vue_is_functional_template__$4,
+    __vue_module_identifier__$4,
     false,
     undefined,
     undefined,
@@ -782,8 +953,7 @@ __vue_render__$3._withStripped = true;
 //
 //
 //
-//
-var script$4 = {
+var script$5 = {
   props: {
     errors: {
       type: Array | Boolean,
@@ -815,10 +985,10 @@ var script$4 = {
 };
 
 /* script */
-const __vue_script__$4 = script$4;
+const __vue_script__$5 = script$5;
 
 /* template */
-var __vue_render__$4 = function() {
+var __vue_render__$5 = function() {
   var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -829,20 +999,9 @@ var __vue_render__$4 = function() {
       staticClass: "c-field",
       class:
         ((_obj = {}),
-        (_obj[_vm.PREFIX + "mb-4"] = true),
         (_obj[
-          "sm:" +
-            _vm.PREFIX +
-            "grid sm:" +
-            _vm.PREFIX +
-            "grid-cols-3 sm:" +
-            _vm.PREFIX +
-            "gap-4 sm:" +
-            _vm.PREFIX +
-            "items-start"
-        ] = !_vm.vertical),
-        (_obj[
-          "sm:" +
+          _vm.PREFIX +
+            "mb-4 sm:" +
             _vm.PREFIX +
             "border-t sm:" +
             _vm.PREFIX +
@@ -852,8 +1011,15 @@ var __vue_render__$4 = function() {
             _vm.PREFIX +
             "pt-5 sm:" +
             _vm.PREFIX +
-            "mt-5"
-        ] = !_vm.first),
+            "grid sm:" +
+            _vm.PREFIX +
+            "grid-cols-3 sm:" +
+            _vm.PREFIX +
+            "gap-4 sm:" +
+            _vm.PREFIX +
+            "items-start"
+        ] = !_vm.vertical),
+        (_obj["sm:" + _vm.PREFIX + "mt-5"] = !_vm.first),
         _obj),
       attrs: { id: "field-" + _vm.labelFor }
     },
@@ -955,113 +1121,6 @@ var __vue_render__$4 = function() {
     ]
   )
 };
-var __vue_staticRenderFns__$4 = [];
-__vue_render__$4._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$4 = undefined;
-  /* scoped */
-  const __vue_scope_id__$4 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$4 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$4 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-  /* style inject shadow dom */
-  
-
-  
-  const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-    __vue_inject_styles__$4,
-    __vue_script__$4,
-    __vue_scope_id__$4,
-    __vue_is_functional_template__$4,
-    __vue_module_identifier__$4,
-    false,
-    undefined,
-    undefined,
-    undefined
-  );
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var script$5 = {
-  props: {
-    /**
-     * The ID of the icon.
-     */
-    icon: {
-      type: String,
-      default: null
-    },
-
-    /**
-     * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
-     */
-    size: {
-      type: String,
-      default: 'base'
-    }
-  }
-};
-
-/* script */
-const __vue_script__$5 = script$5;
-/* template */
-var __vue_render__$5 = function() {
-  var _obj;
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "svg",
-    {
-      staticClass: "c-icon",
-      class:
-        ((_obj = {}),
-        (_obj[_vm.PREFIX + "w-3 " + _vm.PREFIX + "h-3"] = _vm.size === "sm"),
-        (_obj[_vm.PREFIX + "w-4 " + _vm.PREFIX + "h-4"] = _vm.size === "base"),
-        (_obj[_vm.PREFIX + "w-5 " + _vm.PREFIX + "h-5"] = _vm.size === "lg"),
-        (_obj[_vm.PREFIX + "w-6 " + _vm.PREFIX + "h-6"] = _vm.size === "xl"),
-        (_obj[_vm.PREFIX + "w-8 " + _vm.PREFIX + "h-8"] = _vm.size === "2xl"),
-        (_obj[_vm.PREFIX + "w-10 " + _vm.PREFIX + "h-10"] = _vm.size === "3xl"),
-        (_obj[_vm.PREFIX + "w-12 " + _vm.PREFIX + "h-12"] = _vm.size === "4xl"),
-        (_obj[_vm.PREFIX + "w-16 " + _vm.PREFIX + "h-16"] = _vm.size === "5xl"),
-        _obj),
-      attrs: {
-        viewBox: "0 0 18 18",
-        width: "18",
-        height: "18",
-        role: "presentation"
-      }
-    },
-    [
-      _c("use", {
-        attrs: {
-          "xmlns:xlink": "http://www.w3.org/1999/xlink",
-          "xlink:href": "#" + _vm.icon
-        }
-      })
-    ]
-  )
-};
 var __vue_staticRenderFns__$5 = [];
 __vue_render__$5._withStripped = true;
 
@@ -1105,27 +1164,26 @@ __vue_render__$5._withStripped = true;
 //
 //
 //
+//
+//
+//
+//
 var script$6 = {
   props: {
-    checked: {
-      type: Boolean,
-      default: null
-    },
-    disabled: {
-      type: Boolean,
-      default: null
-    },
-    id: {
+    /**
+     * The ID of the icon.
+     */
+    icon: {
       type: String,
-      default: function _default() {
-        return 'c-lightswitch-id-' + this._uid;
-      }
-    }
-  },
-  methods: {
-    onChange: function onChange($event) {
-      this.$emit('update:checked', $event.target.checked);
-      this.$emit('change', $event.target.checked);
+      default: null
+    },
+
+    /**
+     * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
+     */
+    size: {
+      type: String,
+      default: 'base'
     }
   }
 };
@@ -1134,30 +1192,41 @@ var script$6 = {
 const __vue_script__$6 = script$6;
 /* template */
 var __vue_render__$6 = function() {
+  var _obj;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
-  return _c("div", { staticClass: "c-lightswitch mt-1" }, [
-    _c("div", { staticClass: "c-lightswitch-input" }, [
-      _c(
-        "label",
-        {
-          staticClass: "lightswitch",
-          class: { disabled: _vm.disabled },
-          attrs: { for: _vm.id }
-        },
-        [
-          _c("input", {
-            attrs: { id: _vm.id, type: "checkbox", disabled: _vm.disabled },
-            domProps: { checked: _vm.checked },
-            on: { change: _vm.onChange }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "slider round" })
-        ]
-      )
-    ])
-  ])
+  return _c(
+    "svg",
+    {
+      staticClass: "c-icon",
+      class:
+        ((_obj = {}),
+        (_obj[_vm.PREFIX + "w-3 " + _vm.PREFIX + "h-3"] = _vm.size === "sm"),
+        (_obj[_vm.PREFIX + "w-4 " + _vm.PREFIX + "h-4"] = _vm.size === "base"),
+        (_obj[_vm.PREFIX + "w-5 " + _vm.PREFIX + "h-5"] = _vm.size === "lg"),
+        (_obj[_vm.PREFIX + "w-6 " + _vm.PREFIX + "h-6"] = _vm.size === "xl"),
+        (_obj[_vm.PREFIX + "w-8 " + _vm.PREFIX + "h-8"] = _vm.size === "2xl"),
+        (_obj[_vm.PREFIX + "w-10 " + _vm.PREFIX + "h-10"] = _vm.size === "3xl"),
+        (_obj[_vm.PREFIX + "w-12 " + _vm.PREFIX + "h-12"] = _vm.size === "4xl"),
+        (_obj[_vm.PREFIX + "w-16 " + _vm.PREFIX + "h-16"] = _vm.size === "5xl"),
+        _obj),
+      attrs: {
+        viewBox: "0 0 18 18",
+        width: "18",
+        height: "18",
+        role: "presentation"
+      }
+    },
+    [
+      _c("use", {
+        attrs: {
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "xlink:href": "#" + _vm.icon
+        }
+      })
+    ]
+  )
 };
 var __vue_staticRenderFns__$6 = [];
 __vue_render__$6._withStripped = true;
@@ -1202,28 +1271,125 @@ __vue_render__$6._withStripped = true;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var script$7 = {
-  props: ['padded', 'type']
+  props: {
+    checked: {
+      type: Boolean,
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: null
+    },
+    id: {
+      type: String,
+      default: function _default() {
+        return 'c-lightswitch-id-' + this._uid;
+      }
+    }
+  },
+  methods: {
+    onChange: function onChange($event) {
+      this.$emit('update:checked', $event.target.checked);
+      this.$emit('change', $event.target.checked);
+    }
+  }
 };
 
 /* script */
 const __vue_script__$7 = script$7;
 /* template */
 var __vue_render__$7 = function() {
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c("div", { staticClass: "c-lightswitch mt-1" }, [
+    _c("div", { staticClass: "c-lightswitch-input" }, [
+      _c(
+        "label",
+        {
+          staticClass: "lightswitch",
+          class: { disabled: _vm.disabled },
+          attrs: { for: _vm.id }
+        },
+        [
+          _c("input", {
+            attrs: { id: _vm.id, type: "checkbox", disabled: _vm.disabled },
+            domProps: { checked: _vm.checked },
+            on: { change: _vm.onChange }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "slider round" })
+        ]
+      )
+    ])
+  ])
+};
+var __vue_staticRenderFns__$7 = [];
+__vue_render__$7._withStripped = true;
+
+  /* style */
+  const __vue_inject_styles__$7 = undefined;
+  /* scoped */
+  const __vue_scope_id__$7 = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$7 = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$7 = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  const __vue_component__$7 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
+    __vue_inject_styles__$7,
+    __vue_script__$7,
+    __vue_scope_id__$7,
+    __vue_is_functional_template__$7,
+    __vue_module_identifier__$7,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$8 = {
+  props: ['padded', 'type']
+};
+
+/* script */
+const __vue_script__$8 = script$8;
+/* template */
+var __vue_render__$8 = function() {
   var _obj, _obj$1, _obj$2, _obj$3;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -1321,17 +1487,17 @@ var __vue_render__$7 = function() {
     ]
   )
 };
-var __vue_staticRenderFns__$7 = [];
-__vue_render__$7._withStripped = true;
+var __vue_staticRenderFns__$8 = [];
+__vue_render__$8._withStripped = true;
 
   /* style */
-  const __vue_inject_styles__$7 = undefined;
+  const __vue_inject_styles__$8 = undefined;
   /* scoped */
-  const __vue_scope_id__$7 = undefined;
+  const __vue_scope_id__$8 = undefined;
   /* module identifier */
-  const __vue_module_identifier__$7 = undefined;
+  const __vue_module_identifier__$8 = undefined;
   /* functional template */
-  const __vue_is_functional_template__$7 = false;
+  const __vue_is_functional_template__$8 = false;
   /* style inject */
   
   /* style inject SSR */
@@ -1340,13 +1506,13 @@ __vue_render__$7._withStripped = true;
   
 
   
-  const __vue_component__$7 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
-    __vue_inject_styles__$7,
-    __vue_script__$7,
-    __vue_scope_id__$7,
-    __vue_is_functional_template__$7,
-    __vue_module_identifier__$7,
+  const __vue_component__$8 = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+    __vue_inject_styles__$8,
+    __vue_script__$8,
+    __vue_scope_id__$8,
+    __vue_is_functional_template__$8,
+    __vue_module_identifier__$8,
     false,
     undefined,
     undefined,
@@ -1373,7 +1539,7 @@ __vue_render__$7._withStripped = true;
 //
 //
 //
-var script$8 = {
+var script$9 = {
   model: {
     prop: 'modelValue',
     event: 'input'
@@ -1403,9 +1569,9 @@ var script$8 = {
 };
 
 /* script */
-const __vue_script__$8 = script$8;
+const __vue_script__$9 = script$9;
 /* template */
-var __vue_render__$8 = function() {
+var __vue_render__$9 = function() {
   var _obj;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -1464,80 +1630,6 @@ var __vue_render__$8 = function() {
     ]
   )
 };
-var __vue_staticRenderFns__$8 = [];
-__vue_render__$8._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$8 = undefined;
-  /* scoped */
-  const __vue_scope_id__$8 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$8 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$8 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-  /* style inject shadow dom */
-  
-
-  
-  const __vue_component__$8 = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-    __vue_inject_styles__$8,
-    __vue_script__$8,
-    __vue_scope_id__$8,
-    __vue_is_functional_template__$8,
-    __vue_module_identifier__$8,
-    false,
-    undefined,
-    undefined,
-    undefined
-  );
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var script$9 = {
-  props: {
-    /**
-     * 'base' or 'lg'
-     */
-    size: {
-      type: String,
-      default: 'base'
-    }
-  }
-};
-
-/* script */
-const __vue_script__$9 = script$9;
-/* template */
-var __vue_render__$9 = function() {
-  var _obj;
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      staticClass: "c-spinner",
-      class:
-        ((_obj = {}),
-        (_obj[_vm.PREFIX + "inline-block"] = true),
-        (_obj[_vm.size] = true),
-        _obj)
-    },
-    [_c("div", { staticClass: "animation" })]
-  )
-};
 var __vue_staticRenderFns__$9 = [];
 __vue_render__$9._withStripped = true;
 
@@ -1564,6 +1656,85 @@ __vue_render__$9._withStripped = true;
     __vue_scope_id__$9,
     __vue_is_functional_template__$9,
     __vue_module_identifier__$9,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$a = {
+  props: {
+    animationClass: {
+      type: String,
+      default: 'border-interactive-text'
+    },
+
+    /**
+     * 'base' or 'lg'
+     */
+    size: {
+      type: String,
+      default: 'base'
+    }
+  }
+};
+
+/* script */
+const __vue_script__$a = script$a;
+/* template */
+var __vue_render__$a = function() {
+  var _obj;
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c(
+    "div",
+    {
+      staticClass: "c-spinner",
+      class:
+        ((_obj = {}),
+        (_obj[_vm.PREFIX + "inline-block"] = true),
+        (_obj[_vm.size] = true),
+        _obj)
+    },
+    [_c("div", { staticClass: "animation", class: "" + _vm.animationClass })]
+  )
+};
+var __vue_staticRenderFns__$a = [];
+__vue_render__$a._withStripped = true;
+
+  /* style */
+  const __vue_inject_styles__$a = undefined;
+  /* scoped */
+  const __vue_scope_id__$a = undefined;
+  /* module identifier */
+  const __vue_module_identifier__$a = undefined;
+  /* functional template */
+  const __vue_is_functional_template__$a = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  const __vue_component__$a = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
+    __vue_inject_styles__$a,
+    __vue_script__$a,
+    __vue_scope_id__$a,
+    __vue_is_functional_template__$a,
+    __vue_module_identifier__$a,
     false,
     undefined,
     undefined,
@@ -1737,7 +1908,7 @@ function mask (el, binding) {
 }
 
 //
-var script$a = {
+var script$b = {
   directives: {
     mask: {
       bind: function bind(el, binding, vnode) {
@@ -1874,10 +2045,10 @@ var script$a = {
 };
 
 /* script */
-const __vue_script__$a = script$a;
+const __vue_script__$b = script$b;
 
 /* template */
-var __vue_render__$a = function() {
+var __vue_render__$b = function() {
   var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
@@ -2004,17 +2175,17 @@ var __vue_render__$a = function() {
     )
   ])
 };
-var __vue_staticRenderFns__$a = [];
-__vue_render__$a._withStripped = true;
+var __vue_staticRenderFns__$b = [];
+__vue_render__$b._withStripped = true;
 
   /* style */
-  const __vue_inject_styles__$a = undefined;
+  const __vue_inject_styles__$b = undefined;
   /* scoped */
-  const __vue_scope_id__$a = undefined;
+  const __vue_scope_id__$b = undefined;
   /* module identifier */
-  const __vue_module_identifier__$a = undefined;
+  const __vue_module_identifier__$b = undefined;
   /* functional template */
-  const __vue_is_functional_template__$a = false;
+  const __vue_is_functional_template__$b = false;
   /* style inject */
   
   /* style inject SSR */
@@ -2023,13 +2194,13 @@ __vue_render__$a._withStripped = true;
   
 
   
-  const __vue_component__$a = /*#__PURE__*/normalizeComponent(
-    { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
-    __vue_inject_styles__$a,
-    __vue_script__$a,
-    __vue_scope_id__$a,
-    __vue_is_functional_template__$a,
-    __vue_module_identifier__$a,
+  const __vue_component__$b = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
+    __vue_inject_styles__$b,
+    __vue_script__$b,
+    __vue_scope_id__$b,
+    __vue_is_functional_template__$b,
+    __vue_module_identifier__$b,
     false,
     undefined,
     undefined,
@@ -2037,17 +2208,18 @@ __vue_render__$a._withStripped = true;
   );
 
 var CraftComponents = {
-  Badge: __vue_component__,
-  Btn: __vue_component__$1,
-  Checkbox: __vue_component__$2,
-  Dropdown: __vue_component__$3,
-  Field: __vue_component__$4,
-  Icon: __vue_component__$5,
-  Lightswitch: __vue_component__$6,
-  Pane: __vue_component__$7,
-  Radio: __vue_component__$8,
-  Spinner: __vue_component__$9,
-  Textbox: __vue_component__$a
+  Alert: __vue_component__,
+  Badge: __vue_component__$1,
+  Btn: __vue_component__$2,
+  Checkbox: __vue_component__$3,
+  Dropdown: __vue_component__$4,
+  Field: __vue_component__$5,
+  Icon: __vue_component__$6,
+  Lightswitch: __vue_component__$7,
+  Pane: __vue_component__$8,
+  Radio: __vue_component__$9,
+  Spinner: __vue_component__$a,
+  Textbox: __vue_component__$b
 };
 
 var craftUi = {
@@ -2062,4 +2234,4 @@ var craftUi = {
 };
 
 export default craftUi;
-export { __vue_component__ as Badge, __vue_component__$1 as Btn, __vue_component__$2 as Checkbox, __vue_component__$3 as Dropdown, __vue_component__$4 as Field, __vue_component__$5 as Icon, __vue_component__$6 as Lightswitch, __vue_component__$7 as Pane, __vue_component__$8 as Radio, __vue_component__$9 as Spinner, __vue_component__$a as Textbox };
+export { __vue_component__ as Alert, __vue_component__$1 as Badge, __vue_component__$2 as Btn, __vue_component__$3 as Checkbox, __vue_component__$4 as Dropdown, __vue_component__$5 as Field, __vue_component__$6 as Icon, __vue_component__$7 as Lightswitch, __vue_component__$8 as Pane, __vue_component__$9 as Radio, __vue_component__$a as Spinner, __vue_component__$b as Textbox };
