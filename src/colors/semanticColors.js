@@ -53,8 +53,8 @@ module.exports = {
         dark: colors['cool-gray'][900],
     },
     'tertiary-background': {
-        light: colors.gray[100],
-        dark: colors.gray[700],
+        light: colors['cool-gray'][200],
+        dark: colors['cool-gray'][800],
     },
     'success-background': {
         light: colors.green[100],
