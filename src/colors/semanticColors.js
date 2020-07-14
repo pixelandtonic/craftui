@@ -14,10 +14,6 @@ module.exports = {
         light: colors.blue[600],
         dark: colors.blue[400],
     },
-    'notice': {
-        light: colors.gray[600],
-        dark: colors.gray[400],
-    },
     'success': {
         light: colors.green[600],
         dark: colors.green[400],
@@ -39,10 +35,6 @@ module.exports = {
     'info-background': {
         light: colors.blue[100],
         dark: colors.blue[800],
-    },
-    'notice-background': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
     },
     'primary-background': {
         light: colors.white,
@@ -94,10 +86,6 @@ module.exports = {
         light: colors.gray[400],
         dark: colors.gray[600],
     },
-    'notice-text': {
-        light: colors.gray[800],
-        dark: colors.gray[200],
-    },
     'success-text': {
         light: colors.green[800],
         dark: colors.green[200],
@@ -132,10 +120,6 @@ module.exports = {
     'info-separator': {
         light: colors.blue[400],
         dark: colors.blue[400],
-    },
-    'notice-separator': {
-        light: colors.gray[500],
-        dark: colors.gray[500],
     },
     'opaque-separator': {
         light: colors.gray[400],
