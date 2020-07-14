@@ -63,23 +63,6 @@
             </tr>
             </thead>
             <tbody>
-            <template v-for="interactive in interactiveTexts">
-                <tr :key="'interactive-' + interactive" :class="`border-b`">
-                    <td :class="`py-2`">
-                        <button :class="`text-interactive-${interactive}-text`">{{interactive}}</button>
-                    </td>
-                    <td :class="`py-2`">
-                        <button :class="`text-interactive-${interactive}-hover-text border-b-2 border-transparent border-interactive-${interactive}-hover-border`">{{interactive}}</button>
-                    </td>
-                    <td :class="`}py-2`">
-                        <button :class="`text-interactive-${interactive}-active-text border-b-2 border-transparent border-interactive-${interactive}-active-border`">{{interactive}}</button>
-                    </td>
-                    <td :class="`py-2`">
-                        <button :class="`text-interactive-${interactive}-text hover:text-interactive-${interactive}-hover-text active:text-interactive-${interactive}-active-text border-b-2 border-transparent hover:border-interactive-${interactive}-hover-border active:border-interactive-${interactive}-active-border`">{{interactive}}</button>
-                    </td>
-                </tr>
-            </template>
-
             <tr>
                 <td :class="`py-2`">
                     <a href="#" :class="`text-interactive-link`">Link</a>
@@ -192,9 +175,6 @@
                     'tertiary',
                     'danger',
                     'success',
-                ],
-                interactiveTexts: [
-                    'nav-item',
                 ],
                 disabled: [
                     'field-disabled-background',

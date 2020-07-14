@@ -82,10 +82,6 @@ module.exports = {
         light: colors.blue[800],
         dark: colors.blue[200],
     },
-    'interactive-nav-item-text': {
-        light: colors.gray[600],
-        dark: colors.gray[400],
-    },
     'interactive-text': {
         light: colors.black,
         dark: colors.white,
@@ -197,10 +193,6 @@ module.exports = {
         light: colors.red[800],
         dark: colors.red[800],
     },
-    'interactive-nav-item-active-text': {
-        light: colors.red[600],
-        dark: colors.red[600],
-    },
     'interactive-primary-active': {
         light: colors.red[800],
         dark: colors.red[800],
@@ -226,10 +218,6 @@ module.exports = {
     'interactive-link-hover': {
         light: colors.blue[800],
         dark: colors.blue[200],
-    },
-    'interactive-nav-item-hover-text': {
-        light: colors.gray[900],
-        dark: colors.gray[100],
     },
     'interactive-primary-hover': {
         light: colors.red[700],
@@ -257,10 +245,6 @@ module.exports = {
         light: colors.gray[300],
         dark: colors.gray[600],
         highContrast: colors.gray[500]
-    },
-    'interactive-nav-item-disabled-text': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
     },
 
     // Misc
