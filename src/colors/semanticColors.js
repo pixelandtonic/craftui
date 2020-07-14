@@ -24,6 +24,10 @@ module.exports = {
         light: colors.red[100],
         dark: colors.red[800],
     },
+    'default-background': {
+        light: colors.gray[100],
+        dark: colors.gray[800],
+    },
     'field-background': {
         light: colors.white,
         dark: colors.gray[700],
@@ -59,6 +63,10 @@ module.exports = {
         dark: colors.red[200],
     },
     'dark-text': {
+        light: colors.gray[800],
+        dark: colors.gray[200],
+    },
+    'default-text': {
         light: colors.gray[800],
         dark: colors.gray[200],
     },
