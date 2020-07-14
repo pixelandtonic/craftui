@@ -148,8 +148,8 @@ module.exports = {
         dark: colors.blue[400],
     },
     'interactive-primary': {
-        light: colors.red[500],
-        dark: colors.red[500],
+        light: colors.blue[500],
+        dark: colors.blue[500],
     },
     'interactive-secondary': {
         light: colors.gray[200],
@@ -170,8 +170,8 @@ module.exports = {
         dark: colors.red[800],
     },
     'interactive-primary-active': {
-        light: colors.red[800],
-        dark: colors.red[800],
+        light: colors.blue[800],
+        dark: colors.blue[800],
     },
     'interactive-secondary-active': {
         light: colors.gray[400],
@@ -196,8 +196,8 @@ module.exports = {
         dark: colors.blue[200],
     },
     'interactive-primary-hover': {
-        light: colors.red[700],
-        dark: colors.red[700],
+        light: colors.blue[700],
+        dark: colors.blue[700],
     },
     'interactive-secondary-hover': {
         light: colors.gray[300],
