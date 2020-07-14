@@ -2,25 +2,25 @@ const colors = require('./colors.js')
 
 module.exports = {
     // Base
-    'danger': {
-        light: colors.red[600],
-        dark: colors.red[400],
-    },
     'icon': {
         light: colors.gray[500],
         dark: colors.gray[500],
     },
     'info': {
-        light: colors.blue[600],
-        dark: colors.blue[400],
+        light: colors.blue[500],
+        dark: colors.blue[500],
     },
     'success': {
-        light: colors.green[600],
-        dark: colors.green[400],
+        light: colors.green[500],
+        dark: colors.green[500],
     },
     'warning': {
-        light: colors.orange[600],
-        dark: colors.orange[400],
+        light: colors.orange[500],
+        dark: colors.orange[500],
+    },
+    'danger': {
+        light: colors.red[500],
+        dark: colors.red[500],
     },
 
     // Background
