@@ -1,27 +1,45 @@
 <template>
-    <div>
-        <h1 :class="`${PREFIX}text-3xl ${PREFIX}font-medium ${PREFIX}mb-2`">Semantic Colors</h1>
+    <div id="semantic-colors">
+        <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-medium mb-2">Semantic Colors</h1>
+            <div class="text-light-text text-sm">{{totalColors}} colors</div>
+        </div>
 
-        <table :class="`${PREFIX}w-full ${PREFIX}mb-6 ${PREFIX}border-t ${PREFIX}border-b ${PREFIX}border-gray-400 ${PREFIX}table-collapse`">
-            <thead>
-            <tr>
-                <th :class="`${PREFIX}text-left`">Color</th>
-                <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <template v-for="(colorValue, colorName) in semanticColors">
+
+        <textbox placeholder="Filter colors…" v-model="searchQuery"></textbox>
+
+        <pane type="table" class="mt-6">
+            <table>
+                <thead>
                 <tr>
-                    <td :class="`${PREFIX}border-t ${PREFIX}border-gray-400`">{{colorName}}</td>
-                    <td :class="`${PREFIX}w-24 ${PREFIX}border-t ${PREFIX}border-gray-400`">
-                        <div class="color" :class="{
-                            [`${PREFIX}bg-${colorName}`]: true
-                        }"></div>
-                    </td>
+                    <th>Color</th>
+                    <th class="w-1/4">Light</th>
+                    <th class="w-1/4">Dark</th>
                 </tr>
-            </template>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                <template v-for="(colorValue, colorName) in filteredColors">
+                    <tr>
+                        <td>{{colorName}}</td>
+                        <td class="lowercase text-light-text">
+                            <div class="flex items-center">
+                                <div class="block w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.light};`"></div>
+
+                                {{colorValue.light}}
+                            </div>
+                        </td>
+                        <td class="lowercase text-light-text">
+                            <div class="flex items-center">
+                                <div class="block w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.dark};`"></div>
+
+                                {{colorValue.dark}}
+                            </div>
+                        </td>
+                    </tr>
+                </template>
+                </tbody>
+            </table>
+        </pane>
     </div>
 </template>
 
@@ -29,17 +47,40 @@
     import semanticColors from '../../../src/colors/semanticColors'
 
     export default {
+        data() {
+            return {
+                searchQuery: '',
+            }
+        },
+
         computed: {
-            semanticColors() {
-                return semanticColors
+            filteredColors() {
+                let filteredColors = {}
+
+                for (const property in semanticColors) {
+                    let match = false
+
+                    if (property.includes(this.searchQuery)) {
+                        match = true
+                    }
+
+                    if (match) {
+                        filteredColors[property] = semanticColors[property]
+                    }
+                }
+
+                return filteredColors
+            },
+
+            totalColors() {
+                return Object.keys(this.filteredColors).length
             }
         }
     }
 </script>
 
-<style lang="css">
-    .color {
-        width: 100%;
-        height: 40px;
+<style>
+    #semantic-colors div.c-pane table td {
+        padding: 0.5rem 1.5rem;
     }
 </style>
