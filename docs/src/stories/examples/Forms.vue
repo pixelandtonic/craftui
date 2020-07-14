@@ -3,7 +3,7 @@
         <pane>
             <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Vertical Form</h2>
 
-            <div class="`${PREFIX}mt-6`">
+            <div :class="`${PREFIX}mt-6`">
                 <field :vertical="true" instructions="Some instructions." label-for="firstName" label="First Name" :errors="errors" :first="true">
                     <textbox id="firstName" :invalid="!!errors"></textbox>
                 </field>
@@ -27,7 +27,7 @@
         <pane class="mt-16">
             <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Horizontal Form</h2>
 
-            <div class="`${PREFIX}mt-6`">
+            <div :class="`${PREFIX}mt-6`">
 
                 <field label-for="firstName" label="First Name" :errors="errors" :first="true">
                     <textbox id="firstName" :invalid="!!errors"></textbox>
