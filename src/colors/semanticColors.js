@@ -257,16 +257,30 @@ module.exports = {
         light: 'rgba(255, 255, 255, 1)',
         dark: 'rgba(26, 32, 44, 1)',
     },
+
+    // Shadows
     'shadow-1': {
-        light: colors.gray[400],
-        dark: colors.black,
+        light: 'rgba(0, 0, 0, 0.1)',
+        dark: 'rgba(0, 0, 0, 0.1)',
     },
-    'shadow-2': {
-        light: colors.gray[200],
-        dark: colors.gray[900],
+    'shadow-04': {
+        light: 'rgba(0, 0, 0, 0.04)',
+        dark: 'rgba(0, 0, 0, 0.04)',
     },
-    'shadow-3': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
+    'shadow-05': {
+        light: 'rgba(0, 0, 0, 0.05)',
+        dark: 'rgba(0, 0, 0, 0.05)',
+    },
+    'shadow-06': {
+        light: 'rgba(0, 0, 0, 0.06)',
+        dark: 'rgba(0, 0, 0, 0.06)',
+    },
+    'shadow-25': {
+        light: 'rgba(0, 0, 0, 0.25)',
+        dark: 'rgba(0, 0, 0, 0.25)',
+    },
+    'shadow-outline': {
+        light: 'rgba(66, 153, 225, 0.5)',
+        dark: 'rgba(66, 153, 225, 0.5)',
     },
 }
