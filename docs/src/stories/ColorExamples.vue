@@ -175,8 +175,6 @@
                     'danger-text',
                     'dark-text',
                     'info-text',
-                    'interactive-nav-item-text',
-                    'interactive-navbar-item-text',
                     'interactive-text',
                     'interactive-text-inverse',
                     'light-text',
@@ -207,12 +205,10 @@
                 ],
                 interactiveTexts: [
                     'nav-item',
-                    'navbar-item',
                 ],
                 disabled: [
                     'field-disabled-background',
                     'field-disabled-separator',
-                    'interactive-nav-item-disabled-text',
                 ],
                 misc: [
                     'primary-background-gradient-1',

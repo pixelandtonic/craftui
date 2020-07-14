@@ -86,10 +86,6 @@ module.exports = {
         light: colors.gray[600],
         dark: colors.gray[400],
     },
-    'interactive-navbar-item-text': {
-        light: colors.gray[600],
-        dark: colors.gray[400],
-    },
     'interactive-text': {
         light: colors.black,
         dark: colors.white,
@@ -205,14 +201,6 @@ module.exports = {
         light: colors.red[600],
         dark: colors.red[600],
     },
-    'interactive-navbar-item-active-text': {
-        light: colors.gray[900],
-        dark: colors.gray[100],
-    },
-    'interactive-navbar-item-active-border': {
-        light: colors.red[600],
-        dark: colors.red[600],
-    },
     'interactive-primary-active': {
         light: colors.red[800],
         dark: colors.red[800],
@@ -240,14 +228,6 @@ module.exports = {
         dark: colors.blue[200],
     },
     'interactive-nav-item-hover-text': {
-        light: colors.gray[900],
-        dark: colors.gray[100],
-    },
-    'interactive-navbar-item-hover-border': {
-        light: colors.gray[400],
-        dark: colors.gray[600],
-    },
-    'interactive-navbar-item-hover-text': {
         light: colors.gray[900],
         dark: colors.gray[100],
     },
