@@ -2,10 +2,6 @@ const colors = require('./colors.js')
 
 module.exports = {
     // Base
-    'icon': {
-        light: colors.gray[500],
-        dark: colors.gray[500],
-    },
     'info': {
         light: colors.blue[500],
         dark: colors.blue[500],
