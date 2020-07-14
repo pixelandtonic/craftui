@@ -2,8 +2,8 @@ import AlertsApp from './examples/Alerts.vue'
 import BackgroundsApp from './examples/Backgrounds.vue'
 import BadgesApp from './examples/Badges.vue'
 import ButtonsApp from './examples/Buttons.vue'
-import FieldsApp from './examples/Fields.vue'
-import FormsApp from './examples/Forms.vue'
+import InputsApp from './examples/Inputs.vue'
+import FormLayoutsApp from './examples/FormLayouts.vue'
 import GradientsApp from './examples/Gradients.vue'
 import LinksApp from './examples/Links.vue'
 import PanesApp from './examples/Panes.vue'
@@ -31,12 +31,12 @@ export const Buttons = () => ({
     render: h => h(ButtonsApp),
 })
 
-export const Fields = () => ({
-    render: h => h(FieldsApp),
+export const Inputs = () => ({
+    render: h => h(InputsApp),
 })
 
-export const Forms = () => ({
-    render: h => h(FormsApp),
+export const FormLayouts = () => ({
+    render: h => h(FormLayoutsApp),
 })
 
 export const Gradients = () => ({
