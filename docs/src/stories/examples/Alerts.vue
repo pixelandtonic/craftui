@@ -12,7 +12,7 @@
                     </div>
                     <div class="ml-3 flex-1 md:flex md:justify-between">
                         <p :class="`text-sm leading-5 text-${alert}-text`">
-                            A new software update is available. See what’s new in version 2.0.4.
+                            A new software update is available. See what’s new in version 3.5.
                         </p>
                     </div>
                 </div>
