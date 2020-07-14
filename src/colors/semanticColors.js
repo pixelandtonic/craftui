@@ -118,8 +118,8 @@ module.exports = {
         dark: colors.blue[400],
     },
     'opaque-separator': {
-        light: colors.gray[400],
-        highContrast: colors.gray[500],
+        light: colors['cool-gray'][300],
+        highContrast: colors['cool-gray'][700],
         dark: colors.black,
         darkHighContrast: colors.gray[500],
     },
