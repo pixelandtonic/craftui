@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-text">
         <h1 :class="`text-3xl font-medium mb-4`">Separators</h1>
         <template v-for="example in examples">
             <div :key="'example.separator-' + example.separator" :class="`mb-8 shadow-lg`">

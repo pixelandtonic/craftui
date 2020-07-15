@@ -2,7 +2,7 @@
     <div>
         <h1 :class="`text-3xl font-medium`">Gradients</h1>
 
-        <div class="bg-secondary-background mt-6 p-8">
+        <div class="mt-6">
             <pane class="h-64 overflow-hidden relative">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea eos error itaque, maxime mollitia, natus neque nihil nulla pariatur praesentium quis quos rerum sapiente voluptates! Accusamus doloremque nostrum vitae?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea eos error itaque, maxime mollitia, natus neque nihil nulla pariatur praesentium quis quos rerum sapiente voluptates! Accusamus doloremque nostrum vitae?</p>

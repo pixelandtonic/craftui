@@ -2,8 +2,8 @@
     <div>
         <h1 :class="`text-3xl font-medium`">Shadows</h1>
 
-        <template v-for="size in shadows">
-            <div :key="'shadow-' + size" class="bg-secondary-background p-20 mt-6">
+        <template v-for="(size, key) in shadows">
+            <div :key="'shadow-' + size" :class="key !== 0 ? 'mt-12' : 'mt-6'">
                 <div :class="`bg-primary-background p-6 rounded shadow-${size} text-text`">
                     {{size}}
                 </div>

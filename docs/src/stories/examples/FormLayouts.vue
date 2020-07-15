@@ -2,9 +2,9 @@
     <div>
         <h1 :class="`text-3xl font-medium`">Forms</h1>
 
-        <div class="bg-secondary-background mt-6 p-16">
+        <div class="mt-6">
             <pane>
-                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Vertical Form</h2>
+                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium`">Vertical Form</h2>
 
                 <div :class="`${PREFIX}mt-6`">
                     <field :vertical="true" instructions="Some instructions." label-for="firstName" label="First Name" :errors="errors" :first="true">
@@ -27,8 +27,8 @@
                     </div>
                 </div>
             </pane>
-            <pane class="mt-16">
-                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium ${PREFIX}text-gray-900`">Horizontal Form</h2>
+            <pane class="mt-6">
+                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium`">Horizontal Form</h2>
 
                 <div :class="`${PREFIX}mt-6`">
 

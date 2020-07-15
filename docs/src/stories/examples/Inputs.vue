@@ -1,12 +1,14 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Fields</h1>
+        <h1 :class="`text-3xl font-medium`">Inputs</h1>
 
-        <h2 class="text-2xl font-medium mt-6">Checkbox</h2>
-        <checkbox class="mt-4"></checkbox>
-        <checkbox class="mt-4" :disabled="true"></checkbox>
-        <checkbox class="mt-4" :checked="true"></checkbox>
-        <checkbox class="mt-4" :checked="true" :disabled="true"></checkbox>
+        <pane class="mt-6">
+            <h2 class="text-2xl font-medium">Checkbox</h2>
+            <checkbox class="mt-4"></checkbox>
+            <checkbox class="mt-4" :disabled="true"></checkbox>
+            <checkbox class="mt-4" :checked="true"></checkbox>
+            <checkbox class="mt-4" :checked="true" :disabled="true"></checkbox>
+
 
         <h2 class="text-2xl font-medium mt-6">Dropdown</h2>
         
@@ -32,5 +34,6 @@
         <h2 class="text-2xl font-medium mt-6">Textbox</h2>
         <textbox class="mt-5" value="Text input"></textbox>
         <textbox class="mt-5" value="Text input disabled" :disabled="true"></textbox>
+        </pane>
     </div>
 </template>
