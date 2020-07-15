@@ -84,7 +84,7 @@ module.exports = {
     },
     'light-text': {
         light: colors.gray[400],
-        dark: colors.gray[500],
+        dark: colors.gray[400],
     },
     'success-text': {
         light: colors.green[800],
