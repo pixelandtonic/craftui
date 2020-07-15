@@ -11,8 +11,8 @@ module.exports = {
         dark: colors.green[500],
     },
     'warning': {
-        light: colors.orange[500],
-        dark: colors.orange[500],
+        light: colors.yellow[500],
+        dark: colors.yellow[500],
     },
     'danger': {
         light: colors.red[500],
@@ -53,8 +53,8 @@ module.exports = {
         dark: colors.green[800],
     },
     'warning-background': {
-        light: colors.orange[200],
-        dark: colors.orange[800],
+        light: colors.yellow[200],
+        dark: colors.yellow[800],
     },
 
     // Text
@@ -99,8 +99,8 @@ module.exports = {
         dark: colors.black,
     },
     'warning-text': {
-        light: colors.orange[800],
-        dark: colors.orange[200],
+        light: colors.yellow[800],
+        dark: colors.yellow[200],
     },
 
     // Separator
@@ -141,8 +141,8 @@ module.exports = {
         dark: colors.green[400],
     },
     'warning-separator': {
-        light: colors.orange[400],
-        dark: colors.orange[400],
+        light: colors.yellow[400],
+        dark: colors.yellow[400],
     },
 
     // Interactive
