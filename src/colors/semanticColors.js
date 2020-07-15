@@ -45,7 +45,7 @@ module.exports = {
         dark: colors['cool-gray'][900],
     },
     'tertiary-background': {
-        light: colors['cool-gray'][200],
+        light: colors['cool-gray'][50],
         dark: colors['cool-gray'][700],
     },
     'success-background': {
