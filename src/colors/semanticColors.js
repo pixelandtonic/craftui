@@ -21,20 +21,20 @@ module.exports = {
 
     // Background
     'danger-background': {
-        light: colors.red[100],
-        dark: colors.red[800],
+        light: colors.red[200],
+        dark: colors.red[700],
     },
     'default-background': {
-        light: colors.gray[100],
-        dark: colors.gray[800],
+        light: colors.gray[200],
+        dark: colors.gray[600],
     },
     'field-background': {
         light: colors.white,
         dark: colors.gray[700],
     },
     'info-background': {
-        light: colors.blue[100],
-        dark: colors.blue[800],
+        light: colors.blue[200],
+        dark: colors.blue[700],
     },
     'primary-background': {
         light: colors.white,
@@ -46,15 +46,15 @@ module.exports = {
     },
     'tertiary-background': {
         light: colors['cool-gray'][200],
-        dark: colors['cool-gray'][800],
+        dark: colors['cool-gray'][700],
     },
     'success-background': {
-        light: colors.green[100],
-        dark: colors.green[800],
+        light: colors.green[200],
+        dark: colors.green[700],
     },
     'warning-background': {
-        light: colors.orange[100],
-        dark: colors.orange[800],
+        light: colors.orange[200],
+        dark: colors.orange[700],
     },
 
     // Text
@@ -84,7 +84,7 @@ module.exports = {
     },
     'light-text': {
         light: colors.gray[400],
-        dark: colors.gray[600],
+        dark: colors.gray[500],
     },
     'success-text': {
         light: colors.green[800],
@@ -106,24 +106,31 @@ module.exports = {
     // Separator
     'danger-separator': {
         light: colors.red[400],
-        dark: colors.red[600],
+        dark: colors.red[400],
     },
     'field-separator': {
         light: colors['cool-gray'][300],
-        dark: colors['cool-gray'][700],
+        dark: colors['cool-gray'][600],
         highContrast: colors['cool-gray'][500]
     },
     'info-separator': {
         light: colors.blue[400],
         dark: colors.blue[400],
     },
-    'opaque-separator': {
+
+    'separator': {
+        light: colors['cool-gray'][200],
+        dark: colors['cool-gray'][700],
+        highContrast: colors['cool-gray'][500],
+        darkHighContrast: colors['cool-gray'][500],
+    },
+    'ui-opaque-separator': {
         light: colors['cool-gray'][300],
         highContrast: colors['cool-gray'][700],
         dark: colors.black,
         darkHighContrast: colors.gray[500],
     },
-    'separator': {
+    'ui-separator': {
         light: colors['cool-gray'][200],
         dark: colors.black,
         highContrast: colors['cool-gray'][500],
@@ -131,11 +138,11 @@ module.exports = {
     },
     'success-separator': {
         light: colors.green[400],
-        dark: colors.green[600],
+        dark: colors.green[400],
     },
     'warning-separator': {
         light: colors.orange[400],
-        dark: colors.orange[600],
+        dark: colors.orange[400],
     },
 
     // Interactive
@@ -149,11 +156,11 @@ module.exports = {
     },
     'interactive-primary': {
         light: colors.blue[500],
-        dark: colors.blue[500],
+        dark: colors.blue[600],
     },
     'interactive-secondary': {
         light: colors.gray[200],
-        dark: colors.gray[800],
+        dark: colors.gray[700],
     },
     'interactive-success': {
         light: colors.green[500],
@@ -171,11 +178,11 @@ module.exports = {
     },
     'interactive-primary-active': {
         light: colors.blue[800],
-        dark: colors.blue[800],
+        dark: colors.blue[400],
     },
     'interactive-secondary-active': {
         light: colors.gray[400],
-        dark: colors.gray[600],
+        dark: colors.gray[500],
     },
     'interactive-success-active': {
         light: colors.green[800],
@@ -197,11 +204,11 @@ module.exports = {
     },
     'interactive-primary-hover': {
         light: colors.blue[700],
-        dark: colors.blue[700],
+        dark: colors.blue[500],
     },
     'interactive-secondary-hover': {
         light: colors.gray[300],
-        dark: colors.gray[700],
+        dark: colors.gray[600],
     },
     'interactive-success-hover': {
         light: colors.green[600],
@@ -226,11 +233,11 @@ module.exports = {
     // Gradients
     'primary-gradient-1': {
         light: 'rgba(255, 255, 255, 0)',
-        dark: 'rgba(26, 32, 44, 0)',
+        dark: 'rgba(39, 48, 63, 0)',
     },
     'primary-gradient-2': {
         light: 'rgba(255, 255, 255, 1)',
-        dark: 'rgba(26, 32, 44, 1)',
+        dark: 'rgba(39, 48, 63, 1)',
     },
 
     // Shadows
