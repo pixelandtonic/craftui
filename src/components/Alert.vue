@@ -1,5 +1,5 @@
 <template>
-    <div :class="`rounded-md p-4 mb-4 bg-${kind}-background border border-${kind}-separator`">
+    <div :class="`rounded-md p-4 bg-${kind}-background`">
         <div class="flex">
             <div class="flex-shrink-0 flex">
                 <icon :icon="icon" :class="`h-5 w-5 text-${kind}-separator`"></icon>
