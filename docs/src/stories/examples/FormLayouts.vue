@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Forms</h1>
+        <h1 :class="`text-3xl font-medium`">Form Layouts</h1>
 
         <div class="mt-6">
             <pane>
-                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium`">Vertical Form</h2>
+                <h2 class="text-2xl font-medium">Vertical Form</h2>
 
                 <div :class="`${PREFIX}mt-6`">
                     <field :vertical="true" instructions="Some instructions." label-for="firstName" label="First Name" :errors="errors" :first="true">
@@ -28,7 +28,7 @@
                 </div>
             </pane>
             <pane class="mt-6">
-                <h2 :class="`${PREFIX}text-lg ${PREFIX}leading-6 ${PREFIX}font-medium`">Horizontal Form</h2>
+                <h2 class="text-2xl font-medium">Horizontal Form</h2>
 
                 <div :class="`${PREFIX}mt-6`">
 

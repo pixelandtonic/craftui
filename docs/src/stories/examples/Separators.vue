@@ -18,14 +18,14 @@
             return {
                 examples: [
                     {
-                        separator: 'separator',
+                        separator: 'ui-separator',
                         background1: 'bg-primary-background',
                         background2: 'bg-secondary-background',
                     },
                     {
-                        separator: 'opaque-separator',
-                        background1: 'bg-secondary-background',
-                        background2: 'bg-tertiary-background',
+                        separator: 'ui-opaque-separator',
+                        background1: 'bg-primary-background',
+                        background2: 'bg-secondary-background',
                     },
                 ],
             }
