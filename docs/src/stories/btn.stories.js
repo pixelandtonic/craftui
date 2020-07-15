@@ -25,7 +25,7 @@ export const Default = () => ({
     props: {
         kind: {
             type: String,
-            default: select('kind', ['default', 'primary', 'danger'], 'default')
+            default: select('kind', ['primary', 'secondary', 'tertiary', 'success', 'danger'], 'secondary')
         },
         icon: {
             type: String,
