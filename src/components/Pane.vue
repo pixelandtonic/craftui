@@ -37,7 +37,7 @@
             border-collapse: collapse;
 
             th {
-                @apply .bg-cool-gray-50 .text-cool-gray-500 .text-xs .font-medium .uppercase .border-t-0 .px-6 .py-3;
+                @apply .bg-tertiary-background .text-light-text .text-xs .font-medium .uppercase .border-t-0 .px-6 .py-3;
             }
 
             td {
