@@ -5,8 +5,7 @@
             <div class="text-light-text text-sm">{{totalColors}} colors</div>
         </div>
 
-
-        <textbox placeholder="Filter colors…" v-model="searchQuery"></textbox>
+        <textbox placeholder="Filter colors…" v-model="searchQuery" autocomplete="off"></textbox>
 
         <pane type="table" class="mt-6">
             <table>
@@ -23,14 +22,14 @@
                         <td>{{colorName}}</td>
                         <td class="lowercase text-light-text">
                             <div class="flex items-center">
-                                <div class="block w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.light};`"></div>
+                                <div class="block flex-shrink-0 w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.light};`"></div>
 
                                 {{colorValue.light}}
                             </div>
                         </td>
                         <td class="lowercase text-light-text">
                             <div class="flex items-center">
-                                <div class="block w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.dark};`"></div>
+                                <div class="block flex-shrink-0 w-12 h-12 rounded shadow-inner mr-4" :style="`background-color: ${colorValue.dark};`"></div>
 
                                 {{colorValue.dark}}
                             </div>
@@ -44,7 +43,9 @@
 </template>
 
 <script>
-    import semanticColors from '../../../../tailwind/colors/semanticColors'
+    import createSemanticColors from '../../../../tailwind/utils/createSemanticColors'
+    import colors from '../../../../tailwind/colors/colors'
+    const semanticColors = createSemanticColors(colors)
 
     export default {
         data() {

@@ -87,6 +87,12 @@ module.exports = {
             full: '100%',
         },
         extend: {
+            // Tweak default border color
+            borderColor: theme => ({
+                // ...borderColor,
+                default: theme('colors.separator')
+            }),
+
             // Tweak custom form defaults
             customForms: theme => ({
                 default: {

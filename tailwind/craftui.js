@@ -1,7 +1,6 @@
 const _ = require('lodash')
 const craftui = require('tailwindcss/plugin')
-const { borderColor } = require('tailwindcss/defaultTheme')
-const createColors = require('./utils/createColors')
+const colors = require('./colors/colors')
 const createSemanticTailwindColors = require('./utils/createSemanticTailwindColors')
 const createSemanticColors = require('./utils/createSemanticColors')
 const defaultConfig = require('./stubs/defaultConfig.stub')
@@ -18,8 +17,7 @@ module.exports = craftui.withOptions(
             customFormsPlugin(options)
 
             // Colors
-            const colors = createColors(pluginOptions)
-            const semanticColors = createSemanticColors(colors, pluginOptions)
+            const semanticColors = createSemanticColors(colors)
 
             // Define CSS variables
             let baseStyleColors = {
@@ -108,22 +106,16 @@ module.exports = craftui.withOptions(
     },
 
     function(pluginOptions = {}) {
-        const colors = createColors(pluginOptions)
-        const semanticColors = createSemanticColors(colors, pluginOptions)
-        const semanticTailwindColors = createSemanticTailwindColors(semanticColors)
+        const semanticTailwindColors = createSemanticTailwindColors(colors)
 
         return _.merge(defaultConfig, {
             theme: {
-                colors,
-                extend: {
-                    // Add semantic colors to the existing Tailwind color palette
-                    colors: semanticTailwindColors,
+                colors: {
+                    // Customize the Tailwind color palette
+                    ...colors,
 
-                    // Tweak default border color
-                    borderColor: {
-                        ...borderColor,
-                        default: semanticTailwindColors['separator']
-                    },
+                    // Add semantic colors to the Tailwind color palette
+                    ...semanticTailwindColors,
                 },
             },
         })
