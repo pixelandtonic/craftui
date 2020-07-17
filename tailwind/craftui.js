@@ -5,7 +5,6 @@ const createColors = require('./utils/createColors')
 const createSemanticTailwindColors = require('./utils/createSemanticTailwindColors')
 const createSemanticColors = require('./utils/createSemanticColors')
 const defaultConfig = require('./stubs/defaultConfig.stub')
-
 const rtlPlugin = require('tailwindcss-rtl')
 const customFormsPlugin = require('@tailwindcss/custom-forms')
 
