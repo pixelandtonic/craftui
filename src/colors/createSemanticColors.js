@@ -1,6 +1,6 @@
 const baseSemanticColors = require('./semanticColors')
 
-module.exports = function(pluginOptions) {
+module.exports = function(colors, pluginOptions) {
     let optionsSemanticColors = {}
 
     if (pluginOptions && pluginOptions.semanticColors) {
@@ -8,7 +8,7 @@ module.exports = function(pluginOptions) {
     }
 
     return {
-        ...baseSemanticColors,
+        ...baseSemanticColors(colors),
         ...optionsSemanticColors,
     }
 }

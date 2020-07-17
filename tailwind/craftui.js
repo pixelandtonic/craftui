@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const craftui = require('tailwindcss/plugin')
-const colors = require('../src/colors/colors')
 const { borderColor } = require('tailwindcss/defaultTheme')
+const createColors = require('../src/colors/createColors')
 const createSemanticTailwindColors = require('../src/colors/createSemanticTailwindColors')
 const createSemanticColors = require('../src/colors/createSemanticColors')
 
@@ -17,8 +17,9 @@ module.exports = craftui.withOptions(
             rtlPlugin.handler(options)
             customFormsPlugin(options)
 
-            // Semantic colors
-            const semanticColors = createSemanticColors(pluginOptions)
+            // Colors
+            const colors = createColors(pluginOptions)
+            const semanticColors = createSemanticColors(colors, pluginOptions)
 
             // Define CSS variables
             let baseStyleColors = {
@@ -173,8 +174,9 @@ module.exports = craftui.withOptions(
         }
 
 
-        // Semantic colors
-        const semanticColors = createSemanticColors(pluginOptions)
+        // Colors
+        const colors = createColors(pluginOptions)
+        const semanticColors = createSemanticColors(colors, pluginOptions)
         const semanticTailwindColors = createSemanticTailwindColors(semanticColors)
 
         const boxShadow = {
