@@ -1,4 +1,4 @@
-const baseSemanticColors = require('./semanticColors')
+const baseSemanticColors = require('../colors/semanticColors')
 
 module.exports = function(colors, pluginOptions) {
     let optionsSemanticColors = {}

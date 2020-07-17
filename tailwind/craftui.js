@@ -1,9 +1,9 @@
 const _ = require('lodash')
 const craftui = require('tailwindcss/plugin')
 const { borderColor } = require('tailwindcss/defaultTheme')
-const createColors = require('../src/colors/createColors')
-const createSemanticTailwindColors = require('../src/colors/createSemanticTailwindColors')
-const createSemanticColors = require('../src/colors/createSemanticColors')
+const createColors = require('./utils/createColors')
+const createSemanticTailwindColors = require('./utils/createSemanticTailwindColors')
+const createSemanticColors = require('./utils/createSemanticColors')
 
 const rtlPlugin = require('tailwindcss-rtl')
 const customFormsPlugin = require('@tailwindcss/custom-forms')

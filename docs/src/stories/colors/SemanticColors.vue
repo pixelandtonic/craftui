@@ -44,7 +44,7 @@
 </template>
 
 <script>
-    import semanticColors from '../../../../src/colors/semanticColors'
+    import semanticColors from '../../../../tailwind/colors/semanticColors'
 
     export default {
         data() {

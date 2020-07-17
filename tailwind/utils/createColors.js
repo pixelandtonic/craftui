@@ -1,4 +1,4 @@
-const baseColors = require('./colors')
+const baseColors = require('../colors/colors')
 
 module.exports = function(pluginOptions) {
     if (pluginOptions.colors) {
