@@ -239,12 +239,8 @@ body.rtl .c-lightswitch .c-lightswitch-input label .slider:before {
 }
 
 .c-pane table th {
-  --bg-opacity: 1;
-  background-color: #fbfdfe;
-  background-color: rgba(251, 253, 254, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #64748b;
-  color: rgba(100, 116, 139, var(--text-opacity));
+  background-color: var(--craftui-tertiary-background);
+  color: var(--craftui-light-text);
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;

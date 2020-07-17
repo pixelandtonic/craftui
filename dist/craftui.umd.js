@@ -136,41 +136,30 @@
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
-      return _c(
-        "div",
-        {
-          class:
-            "rounded-md p-4 mb-4 bg-" +
-            _vm.kind +
-            "-background border border-" +
-            _vm.kind +
-            "-separator"
-        },
-        [
-          _c("div", { staticClass: "flex" }, [
+      return _c("div", { class: "rounded-md p-4 bg-" + _vm.kind + "-background" }, [
+        _c("div", { staticClass: "flex" }, [
+          _c(
+            "div",
+            { staticClass: "flex-shrink-0 flex" },
+            [
+              _c("icon", {
+                class: "h-5 w-5 text-" + _vm.kind + "-separator",
+                attrs: { icon: _vm.icon }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "ml-3 flex-1 md:flex md:justify-between" }, [
             _c(
-              "div",
-              { staticClass: "flex-shrink-0 flex" },
-              [
-                _c("icon", {
-                  class: "h-5 w-5 text-" + _vm.kind + "-separator",
-                  attrs: { icon: _vm.icon }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "ml-3 flex-1 md:flex md:justify-between" }, [
-              _c(
-                "p",
-                { class: "text-sm leading-5 text-" + _vm.kind + "-text" },
-                [_vm._t("default")],
-                2
-              )
-            ])
+              "p",
+              { class: "text-sm leading-5 text-" + _vm.kind + "-text" },
+              [_vm._t("default")],
+              2
+            )
           ])
-        ]
-      )
+        ])
+      ])
     };
     var __vue_staticRenderFns__ = [];
     __vue_render__._withStripped = true;
