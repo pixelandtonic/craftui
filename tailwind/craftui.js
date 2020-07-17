@@ -17,7 +17,8 @@ module.exports = craftui.withOptions(
             customFormsPlugin(options)
 
             // Colors
-            const semanticColors = createSemanticColors(colors)
+            const semanticColors = createSemanticColors(colors, pluginOptions)
+
 
             // Define CSS variables
             let baseStyleColors = {
@@ -106,7 +107,8 @@ module.exports = craftui.withOptions(
     },
 
     function(pluginOptions = {}) {
-        const semanticTailwindColors = createSemanticTailwindColors(colors)
+        const semanticColors = createSemanticColors(colors, pluginOptions)
+        const semanticTailwindColors = createSemanticTailwindColors(semanticColors)
 
         return _.merge(defaultConfig, {
             theme: {

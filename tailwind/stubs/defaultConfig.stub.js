@@ -89,7 +89,6 @@ module.exports = {
         extend: {
             // Tweak default border color
             borderColor: theme => ({
-                // ...borderColor,
                 default: theme('colors.separator')
             }),
 

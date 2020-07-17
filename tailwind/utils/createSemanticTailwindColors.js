@@ -1,8 +1,4 @@
-const createSemanticColors = require('./createSemanticColors')
-
-module.exports = function(colors) {
-    const semanticColors = createSemanticColors(colors)
-
+module.exports = function(semanticColors) {
     let semanticTailwindColors = {};
 
     // Define a CSS `--craftui-` variable for each semantic color key
