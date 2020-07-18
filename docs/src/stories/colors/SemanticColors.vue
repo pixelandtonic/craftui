@@ -1,11 +1,13 @@
 <template>
     <div id="semantic-colors">
         <div class="flex justify-between items-center">
-            <h1 class="text-3xl font-medium mb-2">Semantic Colors</h1>
+            <h1 class="text-3xl font-medium">Semantic Colors</h1>
             <div class="text-light-text text-sm">{{totalColors}} colors</div>
         </div>
 
-        <textbox placeholder="Filter colors…" v-model="searchQuery" autocomplete="off"></textbox>
+        <div class="mt-6">
+            <textbox placeholder="Filter colors…" v-model="searchQuery" autocomplete="off"></textbox>
+        </div>
 
         <pane type="table" class="mt-6">
             <table>
