@@ -24,12 +24,12 @@ module.exports = function(colors) {
             dark: colors.red[800],
         },
         'default-background': {
-            light: colors.gray[200],
-            dark: colors.gray[600],
+            light: colors['cool-gray'][200],
+            dark: colors['cool-gray'][600],
         },
         'field-background': {
             light: colors.white,
-            dark: colors.gray[700],
+            dark: colors['cool-gray'][700],
         },
         'info-background': {
             light: colors.blue[200],
@@ -62,12 +62,12 @@ module.exports = function(colors) {
             dark: colors.red[200],
         },
         'dark-text': {
-            light: colors.gray[800],
-            dark: colors.gray[200],
+            light: colors['cool-gray'][800],
+            dark: colors['cool-gray'][200],
         },
         'default-text': {
-            light: colors.gray[800],
-            dark: colors.gray[200],
+            light: colors['cool-gray'][800],
+            dark: colors['cool-gray'][200],
         },
         'info-text': {
             light: colors.blue[800],
@@ -82,8 +82,8 @@ module.exports = function(colors) {
             dark: colors.white,
         },
         'light-text': {
-            light: colors.gray[400],
-            dark: colors.gray[400],
+            light: colors['cool-gray'][400],
+            dark: colors['cool-gray'][400],
         },
         'success-text': {
             light: colors.green[800],
@@ -127,7 +127,7 @@ module.exports = function(colors) {
             light: colors['cool-gray'][300],
             highContrast: colors['cool-gray'][700],
             dark: colors.black,
-            darkHighContrast: colors.gray[500],
+            darkHighContrast: colors['cool-gray'][500],
         },
         'ui-separator': {
             light: colors['cool-gray'][200],
@@ -158,16 +158,16 @@ module.exports = function(colors) {
             dark: colors.blue[600],
         },
         'interactive-secondary': {
-            light: colors.gray[200],
-            dark: colors.gray[700],
+            light: colors['cool-gray'][200],
+            dark: colors['cool-gray'][700],
         },
         'interactive-success': {
             light: colors.green[500],
             dark: colors.green[500],
         },
         'interactive-tertiary': {
-            light: colors.gray[600],
-            dark: colors.gray[400],
+            light: colors['cool-gray'][600],
+            dark: colors['cool-gray'][400],
         },
 
         // Interactive Active
@@ -180,16 +180,16 @@ module.exports = function(colors) {
             dark: colors.blue[400],
         },
         'interactive-secondary-active': {
-            light: colors.gray[400],
-            dark: colors.gray[500],
+            light: colors['cool-gray'][400],
+            dark: colors['cool-gray'][500],
         },
         'interactive-success-active': {
             light: colors.green[800],
             dark: colors.green[200],
         },
         'interactive-tertiary-active': {
-            light: colors.gray[900],
-            dark: colors.gray[100],
+            light: colors['cool-gray'][900],
+            dark: colors['cool-gray'][100],
         },
 
         // Interactive Hover
@@ -206,27 +206,27 @@ module.exports = function(colors) {
             dark: colors.blue[500],
         },
         'interactive-secondary-hover': {
-            light: colors.gray[300],
-            dark: colors.gray[600],
+            light: colors['cool-gray'][300],
+            dark: colors['cool-gray'][600],
         },
         'interactive-success-hover': {
             light: colors.green[600],
             dark: colors.green[400],
         },
         'interactive-tertiary-hover': {
-            light: colors.gray[700],
-            dark: colors.gray[300],
+            light: colors['cool-gray'][700],
+            dark: colors['cool-gray'][300],
         },
 
         // Disabled
         'field-disabled-background': {
-            light: colors.gray[100],
-            dark: colors.gray[700],
+            light: colors['cool-gray'][100],
+            dark: colors['cool-gray'][700],
         },
         'field-disabled-separator': {
-            light: colors.gray[300],
-            dark: colors.gray[600],
-            highContrast: colors.gray[500]
+            light: colors['cool-gray'][300],
+            dark: colors['cool-gray'][600],
+            highContrast: colors['cool-gray'][500]
         },
 
         // Gradients
