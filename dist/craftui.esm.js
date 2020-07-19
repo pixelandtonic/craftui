@@ -1159,7 +1159,7 @@ var script$6 = {
      * The ID of the icon.
      */
     icon: {
-      type: String,
+      type: String | Array,
       default: null
     },
 
@@ -1170,17 +1170,23 @@ var script$6 = {
     size: {
       type: String,
       default: 'base'
-    },
-
-    /**
-     * Set of icons
-     */
-    set: {
-      type: String,
-      default: 'regular'
     }
   },
   computed: {
+    computedSet: function computedSet() {
+      if (Array.isArray(this.icon)) {
+        return this.icon[0];
+      }
+
+      return 'regular';
+    },
+    computedIcon: function computedIcon() {
+      if (Array.isArray(this.icon)) {
+        return this.icon[1];
+      }
+
+      return this.icon;
+    },
     computedSize: function computedSize() {
       var predefinedSizes = {
         sm: 3,
@@ -1233,7 +1239,7 @@ var __vue_render__$6 = function() {
       _c("use", {
         attrs: {
           "xmlns:xlink": "http://www.w3.org/1999/xlink",
-          "xlink:href": "#" + _vm.set + "-" + _vm.icon
+          "xlink:href": "#" + _vm.computedSet + "-" + _vm.computedIcon
         }
       })
     ]

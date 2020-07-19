@@ -1,6 +1,6 @@
 <template>
     <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="`${PREFIX}w-${computedSize} ${PREFIX}h-${computedSize}`">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + set + '-' + icon"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + computedSet + '-' + computedIcon"></use>
     </svg>
 </template>
 
@@ -11,7 +11,7 @@
              * The ID of the icon.
              */
             icon: {
-                type: String,
+                type: String | Array,
                 default: null,
             },
 
@@ -23,17 +23,23 @@
                 type: String,
                 default: 'base',
             },
-
-            /**
-             * Set of icons
-             */
-            set: {
-                type: String,
-                default: 'regular'
-            }
         },
 
         computed: {
+            computedSet() {
+                if (Array.isArray(this.icon)) {
+                    return this.icon[0]
+                }
+
+                return 'regular'
+            },
+            computedIcon() {
+                if (Array.isArray(this.icon)) {
+                    return this.icon[1]
+                }
+
+                return this.icon
+            },
             computedSize() {
                 const predefinedSizes = {
                     sm: 3,

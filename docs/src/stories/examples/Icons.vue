@@ -12,7 +12,7 @@
         <h2 :class="`text-2xl font-medium mt-6`">Light</h2>
         <div class="mt-4 grid grid-cols-8 gap-6">
             <div v-for="(icon, key) in lightIcons" :key="'light-' + key">
-                <icon :icon="icon" set="light"></icon>
+                <icon :icon="['light', icon]"></icon>
             </div>
         </div>
     </div>
