@@ -2,6 +2,7 @@ import AlertsApp from './examples/Alerts.vue'
 import BackgroundsApp from './examples/Backgrounds.vue'
 import BadgesApp from './examples/Badges.vue'
 import ButtonsApp from './examples/Buttons.vue'
+import IconsApp from './examples/Icons.vue'
 import InputsApp from './examples/Inputs.vue'
 import FormLayoutsApp from './examples/FormLayouts.vue'
 import GradientsApp from './examples/Gradients.vue'
@@ -29,6 +30,10 @@ export const Badges = () => ({
 
 export const Buttons = () => ({
     render: h => h(ButtonsApp),
+})
+
+export const Icons = () => ({
+    render: h => h(IconsApp),
 })
 
 export const Inputs = () => ({
