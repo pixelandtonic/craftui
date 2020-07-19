@@ -1,15 +1,6 @@
 <template>
-    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="{
-        [`${PREFIX}w-3 ${PREFIX}h-3`]: size === 'sm',
-        [`${PREFIX}w-4 ${PREFIX}h-4`]: size === 'base',
-        [`${PREFIX}w-5 ${PREFIX}h-5`]: size === 'lg',
-        [`${PREFIX}w-6 ${PREFIX}h-6`]: size === 'xl',
-        [`${PREFIX}w-8 ${PREFIX}h-8`]: size === '2xl',
-        [`${PREFIX}w-10 ${PREFIX}h-10`]: size === '3xl',
-        [`${PREFIX}w-12 ${PREFIX}h-12`]: size === '4xl',
-        [`${PREFIX}w-16 ${PREFIX}h-16`]: size === '5xl',
-    }">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + icon"></use>
+    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="`${PREFIX}w-${computedSize} ${PREFIX}h-${computedSize}`">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + set + '-' + icon"></use>
     </svg>
 </template>
 
@@ -23,14 +14,48 @@
                 type: String,
                 default: null,
             },
+
             /**
+             * Size
              * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
              */
             size: {
                 type: String,
                 default: 'base',
             },
+
+            /**
+             * Set of icons
+             */
+            set: {
+                type: String,
+                default: 'regular'
+            }
         },
+
+        computed: {
+            computedSize() {
+                const predefinedSizes = {
+                    sm: 3,
+                    base: 4,
+                    lg: 5,
+                    xl: 6,
+                    '2xl': 8,
+                    '3xl': 10,
+                    '4xl': 12,
+                    '5xl': 16,
+                }
+
+                let size = this.size
+
+                if (predefinedSizes[this.size]) {
+                    size = predefinedSizes[this.size]
+                }
+
+
+                return size
+            }
+        }
     }
 </script>
 

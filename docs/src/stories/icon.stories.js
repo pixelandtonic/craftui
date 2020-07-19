@@ -1,6 +1,6 @@
 import Icon from '../../../src/components/Icon'
 import {withKnobs, select} from '@storybook/addon-knobs'
-import icons from '../../../src/sprites/icons'
+import icons from '../../../src/sprites/regular'
 
 export default {
     title: 'Components/Icon',
