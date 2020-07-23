@@ -1,11 +1,13 @@
 export default [
     'address-card',
+    'check-circle',
     'cog',
     'credit-card',
     'cube',
     'database',
     'info-circle',
     'key',
+    'key-plus',
     'plug',
     'search',
     'shopping-cart',
