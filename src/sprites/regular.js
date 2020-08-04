@@ -15,6 +15,7 @@ export default [
     'exclamation-triangle',
     'external-link',
     'glass-martini',
+    'grip-vertical',
     'handshake',
     'heart',
     'image',
