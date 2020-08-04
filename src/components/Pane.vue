@@ -10,7 +10,7 @@
             <slot name="header"></slot>
         </div>
 
-        <div :class="{
+        <div v-if="$slots.default" :class="{
             [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6`]: type !== 'table' && (padded === undefined||padded === true)
         }">
             <slot></slot>
