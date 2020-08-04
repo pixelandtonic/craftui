@@ -82,7 +82,7 @@
                 default: false,
             },
             icon: {
-                type: String,
+                type: String | Array,
                 default: null,
             },
             trailingIcon: {
