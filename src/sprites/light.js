@@ -5,6 +5,7 @@ export default [
     'credit-card',
     'cube',
     'database',
+    'external-link',
     'info-circle',
     'key',
     'key-plus',
