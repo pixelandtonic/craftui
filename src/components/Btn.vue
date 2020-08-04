@@ -1,5 +1,5 @@
 <template>
-    <component :is="component" class="c-btn" :to="to" :href="href" :target="target" :type="computedType" :class="[{
+    <component :is="component" class="c-btn truncate" :to="to" :href="href" :target="target" :type="computedType" :class="[{
                 small,
                 large,
                 block,
