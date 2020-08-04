@@ -4,7 +4,8 @@
         [`${PREFIX}overflow-x-auto`]: type === 'table',
     }">
         <div v-if="$slots.header" :class="{
-            [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6 ${PREFIX}border-b`]: !!this.$slots.header
+            [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6`]: !!this.$slots.header,
+            [`${PREFIX}border-b`]: !!this.$slots.header && !!$slots.default
         }">
             <slot name="header"></slot>
         </div>
