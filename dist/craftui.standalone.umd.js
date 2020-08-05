@@ -1226,7 +1226,7 @@
       return _c(
         "svg",
         {
-          staticClass: "c-icon inline-block align-middle fill-current",
+          staticClass: "c-icon",
           class:
             _vm.PREFIX +
             "w-" +
@@ -1234,7 +1234,14 @@
             " " +
             _vm.PREFIX +
             "h-" +
-            _vm.computedSize,
+            _vm.computedSize +
+            " " +
+            _vm.PREFIX +
+            "inline-block " +
+            _vm.PREFIX +
+            "align-middle " +
+            _vm.PREFIX +
+            "fill-current",
           attrs: {
             viewBox: "0 0 18 18",
             width: "18",

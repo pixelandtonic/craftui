@@ -1,5 +1,5 @@
 <template>
-    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon inline-block align-middle fill-current" :class="`${PREFIX}w-${computedSize} ${PREFIX}h-${computedSize}`">
+    <svg viewBox="0 0 18 18" width="18" height="18" role="presentation" class="c-icon" :class="`${PREFIX}w-${computedSize} ${PREFIX}h-${computedSize} ${PREFIX}inline-block ${PREFIX}align-middle ${PREFIX}fill-current`">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#' + computedSet + '-' + computedIcon"></use>
     </svg>
 </template>
