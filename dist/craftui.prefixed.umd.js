@@ -1217,6 +1217,7 @@
 
     /* script */
     const __vue_script__$6 = script$6;
+
     /* template */
     var __vue_render__$6 = function() {
       var _vm = this;
@@ -1225,7 +1226,7 @@
       return _c(
         "svg",
         {
-          staticClass: "c-icon",
+          staticClass: "c-icon inline-block align-middle fill-current",
           class:
             _vm.PREFIX +
             "w-" +

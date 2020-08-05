@@ -129,12 +129,6 @@ button.c-btn .c-btn-content {
 [dir=rtl] .c-dropdown select {
   background-position: left 0.5rem center;
 }
-.c-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  fill: currentColor;
-}
 .c-lightswitch .c-lightswitch-input label {
   position: relative;
   display: block;
