@@ -236,39 +236,13 @@ var __vue_render__$1 = function() {
     "span",
     {
       class: [
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "inline-flex " +
-            _vm.PREFIX +
-            "items-center " +
-            _vm.PREFIX +
-            "rounded " +
-            _vm.PREFIX +
-            "font-medium"
-        ] = true),
-        (_obj[
-          _vm.PREFIX +
-            "px-2 " +
-            _vm.PREFIX +
-            "py-0.5 " +
-            _vm.PREFIX +
-            "leading-4 " +
-            _vm.PREFIX +
-            "text-xs"
-        ] = !_vm.large),
-        (_obj[
-          _vm.PREFIX +
-            "px-2.5 " +
-            _vm.PREFIX +
-            "py-0.5 " +
-            _vm.PREFIX +
-            "leading-5 " +
-            _vm.PREFIX +
-            "text-sm"
-        ] = _vm.large),
-        (_obj[_vm.PREFIX + "bg-" + _vm.type + "-background"] = true),
-        (_obj[_vm.PREFIX + "text-" + _vm.type + "-text"] = true),
+        ((_obj = {
+          "inline-flex items-center rounded font-medium": true,
+          "px-2 py-0.5 leading-4 text-xs": !_vm.large,
+          "px-2.5 py-0.5 leading-5 text-sm": _vm.large
+        }),
+        (_obj["bg-" + _vm.type + "-background"] = true),
+        (_obj["text-" + _vm.type + "-text"] = true),
         _obj)
       ]
     },
@@ -441,39 +415,39 @@ var script$2 = {
     },
     cssClass: function cssClass() {
       var cssClass = {};
-      cssClass["".concat(this.PREFIX, "inline-block ").concat(this.PREFIX, "px-4 ").concat(this.PREFIX, "py-2 ").concat(this.PREFIX, "text-sm ").concat(this.PREFIX, "leading-5 ").concat(this.PREFIX, "rounded-md ").concat(this.PREFIX, "no-underline ").concat(this.PREFIX, "border ").concat(this.PREFIX, "border-solid")] = true;
+      cssClass['inline-block px-4 py-2 text-sm leading-5 rounded-md no-underline border border-solid'] = true;
 
       if (this.kind !== 'secondary') {
-        cssClass["".concat(this.PREFIX, "border-interactive-").concat(this.kind)] = true;
+        cssClass["border-interactive-".concat(this.kind)] = true;
 
         if (this.outline) {
-          cssClass["".concat(this.PREFIX, "text-interactive-").concat(this.kind)] = true;
+          cssClass["text-interactive-".concat(this.kind)] = true;
 
           if (!this.disabled) {
-            cssClass["hover:".concat(this.PREFIX, "text-interactive-text-inverse hover:").concat(this.PREFIX, "bg-interactive-").concat(this.kind)] = true;
-            cssClass["active:".concat(this.PREFIX, "text-interactive-text-inverse active:").concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-active")] = true;
+            cssClass["hover:text-interactive-text-inverse hover:bg-interactive-".concat(this.kind)] = true;
+            cssClass["active:text-interactive-text-inverse active:bg-interactive-".concat(this.kind, "-active")] = true;
           }
         } else {
-          cssClass["".concat(this.PREFIX, "text-interactive-text-inverse")] = true;
-          cssClass["".concat(this.PREFIX, "bg-interactive-").concat(this.kind)] = true;
+          cssClass['text-interactive-text-inverse'] = true;
+          cssClass["bg-interactive-".concat(this.kind)] = true;
 
           if (!this.disabled) {
-            cssClass["hover:".concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-hover hover:").concat(this.PREFIX, "border-interactive-").concat(this.kind, "-hover")] = true;
-            cssClass["active:".concat(this.PREFIX, "bg-interactive-").concat(this.kind, "-active active:").concat(this.PREFIX, "border-interactive-").concat(this.kind, "-active")] = true;
+            cssClass["hover:bg-interactive-".concat(this.kind, "-hover hover:border-interactive-").concat(this.kind, "-hover")] = true;
+            cssClass["active:bg-interactive-".concat(this.kind, "-active active:border-interactive-").concat(this.kind, "-active")] = true;
           }
         }
       } else {
-        cssClass["".concat(this.PREFIX, "border-interactive-secondary ").concat(this.PREFIX, "text-interactive-text")] = true;
+        cssClass['border-interactive-secondary text-interactive-text'] = true;
 
         if (!this.disabled) {
-          cssClass["hover:".concat(this.PREFIX, "cursor-pointer hover:").concat(this.PREFIX, "bg-interactive-secondary-hover hover:").concat(this.PREFIX, "border-interactive-secondary-hover hover:").concat(this.PREFIX, "no-underline")] = true;
-          cssClass["active:".concat(this.PREFIX, "cursor-pointer active:").concat(this.PREFIX, "bg-interactive-secondary-active active:").concat(this.PREFIX, "border-interactive-secondary-active")] = true;
+          cssClass['hover:cursor-pointer hover:bg-interactive-secondary-hover hover:border-interactive-secondary-hover hover:no-underline'] = true;
+          cssClass['active:cursor-pointer active:bg-interactive-secondary-active active:border-interactive-secondary-active'] = true;
         }
 
         if (this.outline) {
-          cssClass["".concat(this.PREFIX, "bg-transparent")] = true;
+          cssClass['bg-transparent'] = true;
         } else {
-          cssClass["".concat(this.PREFIX, "bg-interactive-secondary")] = true;
+          cssClass['bg-interactive-secondary'] = true;
         }
       }
 
@@ -511,9 +485,9 @@ var __vue_render__$2 = function() {
             loading: _vm.loading
           }),
           (_obj[_vm.kind] = true),
-          { "c-btn-icon": _vm.icon && !_vm.$slots.default },
-          (_obj[_vm.PREFIX + "group"] = true),
           _obj),
+          { "c-btn-icon": _vm.icon && !_vm.$slots.default },
+          { group: true },
           _vm.cssClass
         )
       ],
@@ -536,12 +510,9 @@ var __vue_render__$2 = function() {
             _c("spinner", {
               attrs: {
                 animationClass:
-                  _vm.PREFIX +
                   "border-" +
                   _vm.animationColor +
-                  " group-hover:" +
-                  _vm.PREFIX +
-                  "border-" +
+                  " group-hover:border-" +
                   _vm.animationColorHover
               }
             })
@@ -659,7 +630,6 @@ var script$3 = {
 const __vue_script__$3 = script$3;
 /* template */
 var __vue_render__$3 = function() {
-  var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
@@ -667,67 +637,31 @@ var __vue_render__$3 = function() {
     "div",
     {
       staticClass: "c-checkbox",
-      class:
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "relative " +
-            _vm.PREFIX +
-            "flex " +
-            _vm.PREFIX +
-            "items-start " +
-            _vm.PREFIX +
-            "my-2"
-        ] = true),
-        (_obj.disabled = _vm.disabled),
-        _obj)
+      class: {
+        "relative flex items-start my-2": true,
+        disabled: _vm.disabled
+      }
     },
     [
-      _c(
-        "div",
-        {
-          class:
-            _vm.PREFIX +
-            "flex " +
-            _vm.PREFIX +
-            "items-center " +
-            _vm.PREFIX +
-            "h-5"
-        },
-        [
-          _c("input", {
-            class:
-              _vm.PREFIX +
-              "form-checkbox " +
-              _vm.PREFIX +
-              "h-4 " +
-              _vm.PREFIX +
-              "w-4",
-            attrs: { type: "checkbox", id: _vm.id, disabled: _vm.disabled },
-            domProps: { value: _vm.value, checked: _vm.checked },
-            on: { input: _vm.onInput }
-          })
-        ]
-      ),
+      _c("div", { staticClass: "flex items-center h-5" }, [
+        _c("input", {
+          staticClass: "form-checkbox h-4 w-4",
+          attrs: { type: "checkbox", id: _vm.id, disabled: _vm.disabled },
+          domProps: { value: _vm.value, checked: _vm.checked },
+          on: { input: _vm.onInput }
+        })
+      ]),
       _vm._v(" "),
       _c(
         "div",
         {
-          class:
-            ((_obj$1 = {}),
-            (_obj$1[
-              _vm.PREFIX +
-                "ms-2 " +
-                _vm.PREFIX +
-                "text-sm " +
-                _vm.PREFIX +
-                "leading-5"
-            ] = true),
-            (_obj$1[_vm.PREFIX + "text-danger"] = _vm.invalid),
-            _obj$1)
+          class: {
+            "ms-2 text-sm leading-5": true,
+            "text-danger": _vm.invalid
+          }
         },
         [
-          _c("label", { class: _vm.PREFIX + "mb-0", attrs: { for: _vm.id } }, [
+          _c("label", { staticClass: "mb-0", attrs: { for: _vm.id } }, [
             _vm._v("\n            " + _vm._s(_vm.label) + "\n        ")
           ])
         ]
@@ -819,7 +753,6 @@ var script$4 = {
 const __vue_script__$4 = script$4;
 /* template */
 var __vue_render__$4 = function() {
-  var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
@@ -827,36 +760,22 @@ var __vue_render__$4 = function() {
     "div",
     {
       staticClass: "c-dropdown",
-      class:
-        ((_obj = {
-          "is-invalid": _vm.invalid
-        }),
-        (_obj[_vm.PREFIX + "w-full"] = _vm.fullwidth),
-        (_obj.disabled = _vm.disabled),
-        _obj)
+      class: {
+        "is-invalid": _vm.invalid,
+        "w-full": _vm.fullwidth,
+        disabled: _vm.disabled
+      }
     },
     [
       _c(
         "select",
         {
-          class:
-            ((_obj$1 = {}),
-            (_obj$1[
-              _vm.PREFIX +
-                "form-select test sm:" +
-                _vm.PREFIX +
-                "text-sm sm:" +
-                _vm.PREFIX +
-                "leading-5 " +
-                _vm.PREFIX +
-                "ps-3 " +
-                _vm.PREFIX +
-                "pe-10"
-            ] = true),
-            (_obj$1[_vm.PREFIX + "w-full"] = _vm.fullwidth),
-            (_obj$1[_vm.PREFIX + "border-danger-separator"] = _vm.invalid),
-            (_obj$1[_vm.PREFIX + "border-field-separator"] = !_vm.invalid),
-            _obj$1),
+          class: {
+            "form-select test sm:text-sm sm:leading-5 ps-3 pe-10": true,
+            "w-full": _vm.fullwidth,
+            "border-danger-separator": _vm.invalid,
+            "border-field-separator": !_vm.invalid
+          },
           attrs: { disabled: _vm.disabled },
           domProps: { value: _vm.value },
           on: {
@@ -981,7 +900,6 @@ const __vue_script__$5 = script$5;
 
 /* template */
 var __vue_render__$5 = function() {
-  var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
@@ -989,32 +907,12 @@ var __vue_render__$5 = function() {
     "div",
     {
       staticClass: "c-field",
-      class:
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "mb-4 sm:" +
-            _vm.PREFIX +
-            "grid sm:" +
-            _vm.PREFIX +
-            "grid-cols-3 sm:" +
-            _vm.PREFIX +
-            "gap-4 sm:" +
-            _vm.PREFIX +
-            "items-start"
-        ] = !_vm.vertical),
-        (_obj[
-          _vm.PREFIX +
-            "mt-6 sm:" +
-            _vm.PREFIX +
-            "pt-5 sm:" +
-            _vm.PREFIX +
-            "border-t sm:" +
-            _vm.PREFIX +
-            "border-separator"
-        ] = !_vm.vertical && !_vm.first),
-        (_obj["sm:" + _vm.PREFIX + "mt-5"] = !_vm.first && _vm.vertical),
-        _obj),
+      class: {
+        "mb-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start": !_vm.vertical,
+        "mt-6 sm:pt-5 sm:border-t sm:border-separator":
+          !_vm.vertical && !_vm.first,
+        "sm:mt-5": !_vm.first && _vm.vertical
+      },
       attrs: { id: "field-" + _vm.labelFor }
     },
     [
@@ -1023,29 +921,10 @@ var __vue_render__$5 = function() {
           ? _c(
               "label",
               {
-                class:
-                  ((_obj$1 = {}),
-                  (_obj$1[
-                    _vm.PREFIX +
-                      "text-sm " +
-                      _vm.PREFIX +
-                      "font-medium " +
-                      _vm.PREFIX +
-                      "text-text " +
-                      _vm.PREFIX +
-                      "mb-0"
-                  ] = true),
-                  (_obj$1[
-                    _vm.PREFIX +
-                      "block " +
-                      _vm.PREFIX +
-                      "leading-5 sm:" +
-                      _vm.PREFIX +
-                      "mt-px sm:" +
-                      _vm.PREFIX +
-                      "pt-2"
-                  ] = !_vm.vertical),
-                  _obj$1),
+                class: {
+                  "text-sm font-medium text-text mb-0": true,
+                  "block leading-5 sm:mt-px sm:pt-2": !_vm.vertical
+                },
                 attrs: { for: _vm.labelFor }
               },
               [_vm._v(_vm._s(_vm.label))]
@@ -1053,65 +932,46 @@ var __vue_render__$5 = function() {
           : _vm._e(),
         _vm._v(" "),
         _vm.instructions
-          ? _c(
-              "div",
-              {
-                staticClass: "instructions",
-                class: _vm.PREFIX + "text-sm " + _vm.PREFIX + "text-light-text"
-              },
-              [_c("p", [_vm._v(_vm._s(_vm.instructions))])]
-            )
+          ? _c("div", { staticClass: "instructions text-sm text-light-text" }, [
+              _c("p", [_vm._v(_vm._s(_vm.instructions))])
+            ])
           : _vm._e()
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { class: _vm.PREFIX + "mt-1 sm:" + _vm.PREFIX + "col-span-2" },
-        [
-          _c(
-            "div",
-            {
-              class: {
-                "${PREFIX}max-w-xs": !_vm.vertical
-              }
-            },
-            [
-              _vm._t("default"),
-              _vm._v(" "),
-              _vm.errors && _vm.errors.length > 0
-                ? [
-                    _c(
-                      "ul",
-                      {
-                        class:
-                          "invalid-feedback " +
-                          _vm.PREFIX +
-                          "text-danger " +
-                          _vm.PREFIX +
-                          "text-sm " +
-                          _vm.PREFIX +
-                          "mt-1 " +
-                          _vm.PREFIX +
-                          "ms-5 " +
-                          _vm.PREFIX +
-                          "list-disc"
-                      },
-                      [
-                        _vm._l(_vm.errors, function(error, key) {
-                          return _vm.errors
-                            ? [_c("li", { key: key }, [_vm._v(_vm._s(error))])]
-                            : _vm._e()
-                        })
-                      ],
-                      2
-                    )
-                  ]
-                : _vm._e()
-            ],
-            2
-          )
-        ]
-      )
+      _c("div", { staticClass: "mt-1 sm:col-span-2" }, [
+        _c(
+          "div",
+          {
+            class: {
+              "max-w-xs": !_vm.vertical
+            }
+          },
+          [
+            _vm._t("default"),
+            _vm._v(" "),
+            _vm.errors && _vm.errors.length > 0
+              ? [
+                  _c(
+                    "ul",
+                    {
+                      staticClass:
+                        "invalid-feedback text-danger text-sm mt-1 ms-5 list-disc"
+                    },
+                    [
+                      _vm._l(_vm.errors, function(error, key) {
+                        return _vm.errors
+                          ? [_c("li", { key: key }, [_vm._v(_vm._s(error))])]
+                          : _vm._e()
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e()
+          ],
+          2
+        )
+      ])
     ]
   )
 };
@@ -1222,20 +1082,11 @@ var __vue_render__$6 = function() {
     {
       staticClass: "c-icon",
       class:
-        _vm.PREFIX +
         "w-" +
         _vm.computedSize +
-        " " +
-        _vm.PREFIX +
-        "h-" +
+        " h-" +
         _vm.computedSize +
-        " " +
-        _vm.PREFIX +
-        "inline-block " +
-        _vm.PREFIX +
-        "align-middle " +
-        _vm.PREFIX +
-        "fill-current",
+        " inline-block align-middle fill-current",
       attrs: {
         viewBox: "0 0 18 18",
         width: "18",
@@ -1416,7 +1267,6 @@ var script$8 = {
 const __vue_script__$8 = script$8;
 /* template */
 var __vue_render__$8 = function() {
-  var _obj, _obj$1, _obj$2, _obj$3;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
@@ -1424,41 +1274,20 @@ var __vue_render__$8 = function() {
     "div",
     {
       staticClass: "c-pane",
-      class:
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "bg-primary-background " +
-            _vm.PREFIX +
-            "rounded-lg " +
-            _vm.PREFIX +
-            "shadow " +
-            _vm.PREFIX +
-            "mb-8 " +
-            _vm.PREFIX +
-            "overflow-hidden"
-        ] = true),
-        (_obj[_vm.PREFIX + "overflow-x-auto"] = _vm.type === "table"),
-        _obj)
+      class: {
+        "bg-primary-background rounded-lg shadow mb-8 overflow-hidden": true,
+        "overflow-x-auto": _vm.type === "table"
+      }
     },
     [
       _vm.$slots.header
         ? _c(
             "div",
             {
-              class:
-                ((_obj$1 = {}),
-                (_obj$1[
-                  _vm.PREFIX +
-                    "px-4 " +
-                    _vm.PREFIX +
-                    "py-5 sm:" +
-                    _vm.PREFIX +
-                    "p-6"
-                ] = !!this.$slots.header),
-                (_obj$1[_vm.PREFIX + "border-b"] =
-                  !!this.$slots.header && !!_vm.$slots.default),
-                _obj$1)
+              class: {
+                "px-4 py-5 sm:p-6": !!this.$slots.header,
+                "border-b": !!this.$slots.header && !!_vm.$slots.default
+              }
             },
             [_vm._t("header")],
             2
@@ -1469,19 +1298,11 @@ var __vue_render__$8 = function() {
         ? _c(
             "div",
             {
-              class:
-                ((_obj$2 = {}),
-                (_obj$2[
-                  _vm.PREFIX +
-                    "px-4 " +
-                    _vm.PREFIX +
-                    "py-5 sm:" +
-                    _vm.PREFIX +
-                    "p-6"
-                ] =
+              class: {
+                "px-4 py-5 sm:p-6":
                   _vm.type !== "table" &&
-                  (_vm.padded === undefined || _vm.padded === true)),
-                _obj$2)
+                  (_vm.padded === undefined || _vm.padded === true)
+              }
             },
             [_vm._t("default")],
             2
@@ -1492,21 +1313,11 @@ var __vue_render__$8 = function() {
         ? _c(
             "div",
             {
-              class:
-                ((_obj$3 = {}),
-                (_obj$3[
-                  _vm.PREFIX +
-                    "px-4 " +
-                    _vm.PREFIX +
-                    "py-5 sm:" +
-                    _vm.PREFIX +
-                    "p-6 " +
-                    _vm.PREFIX +
-                    "border-t"
-                ] =
+              class: {
+                "px-4 py-5 sm:p-6 border-t":
                   !!this.$slots.footer &&
-                  (_vm.padded === undefined || _vm.padded === true)),
-                _obj$3)
+                  (_vm.padded === undefined || _vm.padded === true)
+              }
             },
             [_vm._t("footer")],
             2
@@ -1600,7 +1411,6 @@ var script$9 = {
 const __vue_script__$9 = script$9;
 /* template */
 var __vue_render__$9 = function() {
-  var _obj;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
@@ -1608,53 +1418,24 @@ var __vue_render__$9 = function() {
     "div",
     {
       staticClass: "c-radio",
-      class:
-        ((_obj = {}),
-        (_obj[
-          _vm.PREFIX +
-            "flex " +
-            _vm.PREFIX +
-            "items-center " +
-            _vm.PREFIX +
-            "my-2"
-        ] = true),
-        (_obj.disabled = _vm.disabled),
-        _obj)
+      class: {
+        "flex items-center my-2": true,
+        disabled: _vm.disabled
+      }
     },
     [
       _c("input", {
-        class:
-          _vm.PREFIX + "form-radio " + _vm.PREFIX + "h-4 " + _vm.PREFIX + "w-4",
+        staticClass: "form-radio h-4 w-4",
         attrs: { type: "radio", id: _vm.id, disabled: _vm.disabled },
         domProps: { value: _vm.value, checked: _vm.checked },
         on: { input: _vm.onInput }
       }),
       _vm._v(" "),
-      _c(
-        "label",
-        {
-          class:
-            _vm.PREFIX + "mb-0 " + _vm.PREFIX + "ps-2 " + _vm.PREFIX + "ml-0",
-          attrs: { for: _vm.id }
-        },
-        [
-          _c(
-            "span",
-            {
-              class:
-                _vm.PREFIX +
-                "block " +
-                _vm.PREFIX +
-                "text-sm " +
-                _vm.PREFIX +
-                "leading-5 " +
-                _vm.PREFIX +
-                "text-text"
-            },
-            [_vm._v(_vm._s(_vm.label))]
-          )
-        ]
-      )
+      _c("label", { staticClass: "mb-0 ps-2 ml-0", attrs: { for: _vm.id } }, [
+        _c("span", { staticClass: "block text-sm leading-5 text-text" }, [
+          _vm._v(_vm._s(_vm.label))
+        ])
+      ])
     ]
   )
 };
@@ -1729,8 +1510,9 @@ var __vue_render__$a = function() {
     {
       staticClass: "c-spinner",
       class:
-        ((_obj = {}),
-        (_obj[_vm.PREFIX + "inline-block"] = true),
+        ((_obj = {
+          "inline-block": true
+        }),
         (_obj[_vm.size] = true),
         _obj)
     },
@@ -2077,14 +1859,13 @@ const __vue_script__$b = script$b;
 
 /* template */
 var __vue_render__$b = function() {
-  var _obj, _obj$1;
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
   return _c("div", { staticClass: "c-textbox" }, [
     _c(
       "div",
-      { staticClass: "c-textbox-wrapper", class: _vm.PREFIX + " w-full" },
+      { staticClass: "c-textbox-wrapper w-full" },
       [
         _c(
           _vm.computedComponent,
@@ -2099,33 +1880,17 @@ var __vue_render__$b = function() {
             ],
             ref: "input",
             tag: "component",
-            class:
-              ((_obj = {}),
-              (_obj[
-                _vm.PREFIX +
-                  "form-input " +
-                  _vm.PREFIX +
-                  "block sm:" +
-                  _vm.PREFIX +
-                  "text-sm " +
-                  _vm.PREFIX +
-                  "rounded"
-              ] = true),
-              (_obj[_vm.PREFIX + "w-full"] =
-                !_vm.size && _vm.type !== "number"),
-              (_obj[_vm.PREFIX + "w-16"] = _vm.type === "number"),
-              (_obj["is-invalid " + _vm.PREFIX + "border-danger"] =
-                _vm.invalid),
-              (_obj[_vm.PREFIX + "border-field-separator"] =
-                !_vm.invalid && !_vm.disabled),
-              (_obj[_vm.PREFIX + "text-red-600"] =
-                _vm.max && _vm.max < this.value.length),
-              (_obj[
-                _vm.PREFIX +
-                  "bg-field-disabled-background border-field-disabled-separator"
-              ] = _vm.disabled),
-              (_obj[_vm.PREFIX + "bg-field-background"] = !_vm.disabled),
-              _obj),
+            class: {
+              "form-input block sm:text-sm rounded": true,
+              "w-full": !_vm.size && _vm.type !== "number",
+              "w-16": _vm.type === "number",
+              "is-invalid border-danger": _vm.invalid,
+              "border-field-separator": !_vm.invalid && !_vm.disabled,
+              "text-red-600": _vm.max && _vm.max < this.value.length,
+              "bg-field-disabled-background border-field-disabled-separator":
+                _vm.disabled,
+              "bg-field-background": !_vm.disabled
+            },
             attrs: {
               autocapitalize: _vm.autocapitalize,
               autocomplete: _vm.autocomplete,
@@ -2180,14 +1945,12 @@ var __vue_render__$b = function() {
               "p",
               {
                 staticClass: "max",
-                class:
-                  ((_obj$1 = {}),
-                  (_obj$1[_vm.PREFIX + "text-light-text"] =
-                    _vm.remainingChars >= 20),
-                  (_obj$1[_vm.PREFIX + "text-warning"] =
-                    _vm.remainingChars < 20 && _vm.remainingChars >= 0),
-                  (_obj$1[_vm.PREFIX + "text-danger"] = _vm.remainingChars < 0),
-                  _obj$1)
+                class: {
+                  "text-light-text": _vm.remainingChars >= 20,
+                  "text-warning":
+                    _vm.remainingChars < 20 && _vm.remainingChars >= 0,
+                  "text-danger": _vm.remainingChars < 0
+                }
               },
               [
                 _c("small", [
@@ -2252,7 +2015,6 @@ var CraftComponents = {
 
 var craftUi = {
   install: function install(Vue) {
-    Vue.prototype.PREFIX = '';
     Vue.use(CraftIcons); // Craft Components
 
     Object.keys(CraftComponents).forEach(function (name) {

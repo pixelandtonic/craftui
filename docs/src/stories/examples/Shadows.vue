@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Shadows</h1>
+        <h1 class="text-3xl font-medium">Shadows</h1>
 
         <template v-for="(size, key) in shadows">
             <div :key="'shadow-' + size" :class="key !== 0 ? 'mt-12' : 'mt-6'">

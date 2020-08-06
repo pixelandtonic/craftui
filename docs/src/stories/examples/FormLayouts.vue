@@ -1,12 +1,12 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Form Layouts</h1>
+        <h1 class="text-3xl font-medium">Form Layouts</h1>
 
         <div class="mt-6">
             <pane>
                 <h2 class="text-2xl font-medium">Vertical Form</h2>
 
-                <div :class="`${PREFIX}mt-6`">
+                <div class="mt-6">
                     <field :vertical="true" instructions="Some instructions." label-for="firstName" label="First Name" :errors="errors" :first="true">
                         <textbox id="firstName" :invalid="!!errors"></textbox>
                     </field>
@@ -19,10 +19,10 @@
                         <textbox id="email"></textbox>
                     </field>
 
-                    <div :class="`${PREFIX}mt-8 ${PREFIX}border-t ${PREFIX}border-separator ${PREFIX}pt-5`">
-                        <div :class="`${PREFIX}flex ${PREFIX}justify-end`">
+                    <div class="mt-8 border-t border-separator pt-5">
+                        <div class="flex justify-end">
                             <btn>Cancel</btn>
-                            <btn :class="`${PREFIX}ms-3`" kind="primary">Save</btn>
+                            <btn class="ms-3" kind="primary">Save</btn>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
             <pane class="mt-6">
                 <h2 class="text-2xl font-medium">Horizontal Form</h2>
 
-                <div :class="`${PREFIX}mt-6`">
+                <div class="mt-6">
 
                     <field label-for="firstName" label="First Name" :errors="errors" :first="true">
                         <textbox id="firstName" :invalid="!!errors"></textbox>
@@ -64,10 +64,10 @@
                         <radio v-model="pushNotifications" value="noPushNotifications" label="No push notifications"></radio>
                     </field>
 
-                    <div :class="`${PREFIX}mt-8 ${PREFIX}border-t ${PREFIX}border-separator ${PREFIX}pt-5`">
-                        <div :class="`${PREFIX}flex ${PREFIX}justify-end`">
+                    <div class="mt-8 border-t border-separator pt-5">
+                        <div class="flex justify-end">
                             <btn>Cancel</btn>
-                            <btn :class="`${PREFIX}ms-3`" kind="primary">Save</btn>
+                            <btn class="ms-3" kind="primary">Save</btn>
                         </div>
                     </div>
                 </div>

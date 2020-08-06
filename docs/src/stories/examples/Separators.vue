@@ -1,8 +1,8 @@
 <template>
     <div class="text-text">
-        <h1 :class="`text-3xl font-medium mb-4`">Separators</h1>
+        <h1 class="text-3xl font-medium mb-4">Separators</h1>
         <template v-for="example in examples">
-            <div :key="'example.separator-' + example.separator" :class="`mb-8 shadow-lg`">
+            <div :key="'example.separator-' + example.separator" class="mb-8 shadow-lg">
                 <div class="overflow-hidden shadow-xs">
                     <div :class="`px-6 py-4 border-b ${example.background1} border-${example.separator}`">{{example.separator}}</div>
                     <div :class="`flex-1 p-6 h-48 ${example.background2}`"></div>

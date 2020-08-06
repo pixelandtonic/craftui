@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Inputs</h1>
+        <h1 class="text-3xl font-medium">Inputs</h1>
 
         <pane class="mt-6">
             <h2 class="text-2xl font-medium">Checkbox</h2>

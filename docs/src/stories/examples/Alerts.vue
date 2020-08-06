@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Alerts</h1>
+        <h1 class="text-3xl font-medium">Alerts</h1>
 
         <div class="mt-6">
             <alert v-for="(alert, alertKey) in alerts" :key="`alerts-${alertKey}`" :kind="alert" :class="[{ 'mt-6': alertKey !== 0 }]">

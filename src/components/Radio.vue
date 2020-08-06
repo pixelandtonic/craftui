@@ -1,10 +1,10 @@
 <template>
     <div class="c-radio" :class="{
-        [`${PREFIX}flex ${PREFIX}items-center ${PREFIX}my-2`]: true,
+        'flex items-center my-2': true,
         disabled,
     }">
         <input type="radio"
-               :class="`${PREFIX}form-radio ${PREFIX}h-4 ${PREFIX}w-4`"
+               class="form-radio h-4 w-4"
                :id="id"
                :value="value"
                :checked="checked"
@@ -12,8 +12,8 @@
                @input="onInput"
         />
 
-        <label :for="id" :class="`${PREFIX}mb-0 ${PREFIX}ps-2 ${PREFIX}ml-0`">
-            <span :class="`${PREFIX}block ${PREFIX}text-sm ${PREFIX}leading-5 ${PREFIX}text-text`">{{ label }}</span>
+        <label :for="id" class="mb-0 ps-2 ml-0">
+            <span class="block text-sm leading-5 text-text">{{ label }}</span>
         </label>
     </div>
 </template>

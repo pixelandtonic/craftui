@@ -1,23 +1,23 @@
 <template>
     <div class="c-pane" :class="{
-        [`${PREFIX}bg-primary-background ${PREFIX}rounded-lg ${PREFIX}shadow ${PREFIX}mb-8 ${PREFIX}overflow-hidden`]: true,
-        [`${PREFIX}overflow-x-auto`]: type === 'table',
+        'bg-primary-background rounded-lg shadow mb-8 overflow-hidden': true,
+        'overflow-x-auto': type === 'table',
     }">
         <div v-if="$slots.header" :class="{
-            [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6`]: !!this.$slots.header,
-            [`${PREFIX}border-b`]: !!this.$slots.header && !!$slots.default
+            'px-4 py-5 sm:p-6': !!this.$slots.header,
+            'border-b': !!this.$slots.header && !!$slots.default
         }">
             <slot name="header"></slot>
         </div>
 
         <div v-if="$slots.default" :class="{
-            [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6`]: type !== 'table' && (padded === undefined||padded === true)
+            'px-4 py-5 sm:p-6': type !== 'table' && (padded === undefined||padded === true)
         }">
             <slot></slot>
         </div>
 
         <div v-if="$slots.footer" :class="{
-            [`${PREFIX}px-4 ${PREFIX}py-5 sm:${PREFIX}p-6 ${PREFIX}border-t`]: !!this.$slots.footer && (padded === undefined||padded === true)
+            'px-4 py-5 sm:p-6 border-t': !!this.$slots.footer && (padded === undefined||padded === true)
         }">
             <slot name="footer"></slot>
         </div>

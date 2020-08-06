@@ -7,14 +7,14 @@
                 loading,
                 [kind]: true,
                 'c-btn-icon': icon && !$slots.default,
-                [`${PREFIX}group`]: true,
+                'group': true,
                 ...cssClass,
             }]"
             :disabled="disabled"
             @click="$emit('click')"
     >
         <template v-if="loading">
-            <spinner :animationClass="`${PREFIX}border-${animationColor} group-hover:${PREFIX}border-${animationColorHover}`"></spinner>
+            <spinner :animationClass="`border-${animationColor} group-hover:border-${animationColorHover}`"></spinner>
         </template>
 
         <div class="c-btn-content">
@@ -131,39 +131,39 @@
             cssClass() {
                 let cssClass = {}
 
-                cssClass[`${this.PREFIX}inline-block ${this.PREFIX}px-4 ${this.PREFIX}py-2 ${this.PREFIX}text-sm ${this.PREFIX}leading-5 ${this.PREFIX}rounded-md ${this.PREFIX}no-underline ${this.PREFIX}border ${this.PREFIX}border-solid`] = true
+                cssClass['inline-block px-4 py-2 text-sm leading-5 rounded-md no-underline border border-solid'] = true
 
                 if (this.kind !== 'secondary') {
-                    cssClass[`${this.PREFIX}border-interactive-${this.kind}`] = true
+                    cssClass[`border-interactive-${this.kind}`] = true
 
                     if (this.outline) {
-                        cssClass[`${this.PREFIX}text-interactive-${this.kind}`] = true
+                        cssClass[`text-interactive-${this.kind}`] = true
 
                         if (!this.disabled) {
-                            cssClass[`hover:${this.PREFIX}text-interactive-text-inverse hover:${this.PREFIX}bg-interactive-${this.kind}`] = true
-                            cssClass[`active:${this.PREFIX}text-interactive-text-inverse active:${this.PREFIX}bg-interactive-${this.kind}-active`] = true
+                            cssClass[`hover:text-interactive-text-inverse hover:bg-interactive-${this.kind}`] = true
+                            cssClass[`active:text-interactive-text-inverse active:bg-interactive-${this.kind}-active`] = true
                         }
                     } else {
-                        cssClass[`${this.PREFIX}text-interactive-text-inverse`] = true
-                        cssClass[`${this.PREFIX}bg-interactive-${this.kind}`] = true
+                        cssClass['text-interactive-text-inverse'] = true
+                        cssClass[`bg-interactive-${this.kind}`] = true
 
                         if(!this.disabled) {
-                            cssClass[`hover:${this.PREFIX}bg-interactive-${this.kind}-hover hover:${this.PREFIX}border-interactive-${this.kind}-hover`] = true
-                            cssClass[`active:${this.PREFIX}bg-interactive-${this.kind}-active active:${this.PREFIX}border-interactive-${this.kind}-active`] = true
+                            cssClass[`hover:bg-interactive-${this.kind}-hover hover:border-interactive-${this.kind}-hover`] = true
+                            cssClass[`active:bg-interactive-${this.kind}-active active:border-interactive-${this.kind}-active`] = true
                         }
                     }
                 } else {
-                    cssClass[`${this.PREFIX}border-interactive-secondary ${this.PREFIX}text-interactive-text`] = true
+                    cssClass['border-interactive-secondary text-interactive-text'] = true
 
                     if(!this.disabled) {
-                        cssClass[`hover:${this.PREFIX}cursor-pointer hover:${this.PREFIX}bg-interactive-secondary-hover hover:${this.PREFIX}border-interactive-secondary-hover hover:${this.PREFIX}no-underline`] = true
-                        cssClass[`active:${this.PREFIX}cursor-pointer active:${this.PREFIX}bg-interactive-secondary-active active:${this.PREFIX}border-interactive-secondary-active`] = true
+                        cssClass['hover:cursor-pointer hover:bg-interactive-secondary-hover hover:border-interactive-secondary-hover hover:no-underline'] = true
+                        cssClass['active:cursor-pointer active:bg-interactive-secondary-active active:border-interactive-secondary-active'] = true
                     }
 
                     if (this.outline) {
-                        cssClass[`${this.PREFIX}bg-transparent`] = true
+                        cssClass['bg-transparent'] = true
                     } else {
-                        cssClass[`${this.PREFIX}bg-interactive-secondary`] = true
+                        cssClass['bg-interactive-secondary'] = true
                     }
                 }
 

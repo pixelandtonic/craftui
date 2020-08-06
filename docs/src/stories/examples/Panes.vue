@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Panes</h1>
+        <h1 class="text-3xl font-medium">Panes</h1>
 
         <pane type="table" class="mt-6">
             <table>

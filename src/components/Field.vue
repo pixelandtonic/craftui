@@ -1,28 +1,28 @@
 <template>
     <div :id="'field-' + labelFor" class="c-field" :class="{
-        [`${PREFIX}mb-4 sm:${PREFIX}grid sm:${PREFIX}grid-cols-3 sm:${PREFIX}gap-4 sm:${PREFIX}items-start`]: !vertical,
-        [`${PREFIX}mt-6 sm:${PREFIX}pt-5 sm:${PREFIX}border-t sm:${PREFIX}border-separator`]: !vertical && !first,
-        [`sm:${PREFIX}mt-5`]: !first && vertical,
+        'mb-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start': !vertical,
+        'mt-6 sm:pt-5 sm:border-t sm:border-separator': !vertical && !first,
+        'sm:mt-5': !first && vertical,
     }">
         <div>
             <label v-if="label" :for="labelFor" :class="{
-                [`${PREFIX}text-sm ${PREFIX}font-medium ${PREFIX}text-text ${PREFIX}mb-0`] : true,
-                [`${PREFIX}block ${PREFIX}leading-5 sm:${PREFIX}mt-px sm:${PREFIX}pt-2`]: !vertical
+                'text-sm font-medium text-text mb-0': true,
+                'block leading-5 sm:mt-px sm:pt-2': !vertical
             }">{{label}}</label>
 
-            <div v-if="instructions" class="instructions" :class="`${PREFIX}text-sm ${PREFIX}text-light-text`">
+            <div v-if="instructions" class="instructions text-sm text-light-text">
                 <p>{{ instructions }}</p>
             </div>
         </div>
 
-        <div :class="`${PREFIX}mt-1 sm:${PREFIX}col-span-2`">
+        <div class="mt-1 sm:col-span-2">
             <div :class="{
-                '${PREFIX}max-w-xs': !vertical,
+                'max-w-xs': !vertical,
             }">
                 <slot></slot>
 
                 <template v-if="errors && errors.length > 0">
-                    <ul :class="`invalid-feedback ${PREFIX}text-danger ${PREFIX}text-sm ${PREFIX}mt-1 ${PREFIX}ms-5 ${PREFIX}list-disc`">
+                    <ul class="invalid-feedback text-danger text-sm mt-1 ms-5 list-disc">
                         <template v-if="errors" v-for="(error, key) in errors">
                             <li :key="key">{{ error }}</li>
                         </template>

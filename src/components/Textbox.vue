@@ -1,20 +1,20 @@
 <template>
     <div class="c-textbox">
-        <div class="c-textbox-wrapper" :class="`${PREFIX} w-full`">
+        <div class="c-textbox-wrapper w-full">
             <component
                     :is="computedComponent"
                     :autocapitalize="autocapitalize"
                     :autocomplete="autocomplete"
                     :autofocus="autofocus"
                     :class="{
-                        [`${PREFIX}form-input ${PREFIX}block sm:${PREFIX}text-sm ${PREFIX}rounded`]: true,
-                        [`${PREFIX}w-full`]: !size && type !== 'number',
-                        [`${PREFIX}w-16`]: type === 'number',
-                        [`is-invalid ${PREFIX}border-danger`]: invalid,
-                        [`${PREFIX}border-field-separator`]: !invalid && !disabled,
-                        [`${PREFIX}text-red-600`]: max && max < this.value.length,
-                        [`${PREFIX}bg-field-disabled-background border-field-disabled-separator`]: disabled,
-                        [`${PREFIX}bg-field-background`]: !disabled
+                        'form-input block sm:text-sm rounded': true,
+                        'w-full': !size && type !== 'number',
+                        'w-16': type === 'number',
+                        'is-invalid border-danger': invalid,
+                        'border-field-separator': !invalid && !disabled,
+                        'text-red-600': max && max < this.value.length,
+                        'bg-field-disabled-background border-field-disabled-separator': disabled,
+                        'bg-field-background': !disabled
                     }"
                     :cols="computedCols"
                     :disabled="disabled"
@@ -46,9 +46,9 @@
             <p v-if="max"
                class="max"
                :class="{
-                    [`${PREFIX}text-light-text`]: remainingChars >= 20,
-                    [`${PREFIX}text-warning`]: remainingChars < 20 && remainingChars >= 0,
-                    [`${PREFIX}text-danger`]: remainingChars < 0
+                    'text-light-text': remainingChars >= 20,
+                    'text-warning': remainingChars < 20 && remainingChars >= 0,
+                    'text-danger': remainingChars < 0
                 }"><small>{{ (max - remainingChars) }}/{{max}}</small></p>
         </div>
     </div>

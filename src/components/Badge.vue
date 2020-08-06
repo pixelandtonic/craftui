@@ -1,11 +1,11 @@
 <template>
     <span
             :class="[{
-                [`${PREFIX}inline-flex ${PREFIX}items-center ${PREFIX}rounded ${PREFIX}font-medium`]: true,
-                [`${PREFIX}px-2 ${PREFIX}py-0.5 ${PREFIX}leading-4 ${PREFIX}text-xs`]: !large,
-                [`${PREFIX}px-2.5 ${PREFIX}py-0.5 ${PREFIX}leading-5 ${PREFIX}text-sm`]: large,
-                [`${PREFIX}bg-${type}-background`]: true,
-                [`${PREFIX}text-${type}-text`]: true
+                'inline-flex items-center rounded font-medium': true,
+                'px-2 py-0.5 leading-4 text-xs': !large,
+                'px-2.5 py-0.5 leading-5 text-sm': large,
+                [`bg-${type}-background`]: true,
+                [`text-${type}-text`]: true
             }]"
     >
         <slot></slot>

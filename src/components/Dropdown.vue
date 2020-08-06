@@ -1,14 +1,14 @@
 <template>
     <div class="c-dropdown" :class="{
         'is-invalid': invalid,
-        [`${PREFIX}w-full`]: fullwidth,
+        'w-full': fullwidth,
         disabled,
     }">
             <select :disabled="disabled" :value="value" :class="{
-                [`${PREFIX}form-select test sm:${PREFIX}text-sm sm:${PREFIX}leading-5 ${PREFIX}ps-3 ${PREFIX}pe-10`]: true,
-                [`${PREFIX}w-full`]: fullwidth,
-                [`${PREFIX}border-danger-separator`]: invalid,
-                [`${PREFIX}border-field-separator`]: !invalid,
+                'form-select test sm:text-sm sm:leading-5 ps-3 pe-10': true,
+                'w-full': fullwidth,
+                'border-danger-separator': invalid,
+                'border-field-separator': !invalid,
             }" @input="$emit('input', $event.target[$event.target.selectedIndex].value)">
                 <option v-for="(option, key) in options" :value="option.value" :key="key">{{ option.label }}</option>
             </select>

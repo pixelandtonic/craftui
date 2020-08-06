@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="`text-3xl font-medium`">Gradients</h1>
+        <h1 class="text-3xl font-medium">Gradients</h1>
 
         <div class="mt-6">
             <pane class="h-64 overflow-hidden relative">
