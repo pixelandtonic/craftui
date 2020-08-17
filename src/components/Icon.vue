@@ -23,7 +23,7 @@ export default {
          * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
          */
         size: {
-            type: String,
+            type: String | Number,
             default: 'base',
         },
     },
@@ -60,6 +60,10 @@ export default {
         },
 
         computedSize() {
+            if (Number.isInteger(this.size)) {
+                return this.size
+            }
+
             const predefinedSizes = {
                 sm: 3,
                 base: 4,
