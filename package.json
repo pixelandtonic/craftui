@@ -39,7 +39,9 @@
     "sass-loader": "^8.0.2",
     "storybook-dark-mode": "^0.3.0",
     "storybook-rtl-addon": "^0.1.5",
-    "vue-loader": "^15.9.0"
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11",
+    "heroicons": "tailwindlabs/heroicons"
   },
   "eslintConfig": {
     "root": true,
