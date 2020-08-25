@@ -5684,7 +5684,7 @@ var script$8 = {
      * 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', or '5xl'
      */
     size: {
-      type: String,
+      type: String | Number,
       default: 'base'
     }
   },
@@ -5719,6 +5719,10 @@ var script$8 = {
       return this.icon;
     },
     computedSize: function computedSize() {
+      if (Number.isInteger(this.size)) {
+        return this.size;
+      }
+
       var predefinedSizes = {
         sm: 3,
         base: 4,
