@@ -9,9 +9,10 @@
         <div v-for="(source, sourceKey) in sources" :key="'source' + sourceKey">
             <div v-for="(set, setKey) in source" :key="'set' + sourceKey + setKey">
                 <h2 class="text-2xl font-medium mt-6">{{ sourceKey }}/{{setKey}} ({{filteredIcons(set).length}})</h2>
-                <div class="mt-4 grid grid-cols-8 gap-6">
-                    <div v-for="(icon, iconKey) in filteredIcons(set)" :key="'icons' + sourceKey + setKey + iconKey">
+                <div class="mt-4 grid grid-cols-6 gap-6">
+                    <div v-for="(icon, iconKey) in filteredIcons(set)" :key="'icons' + sourceKey + setKey + iconKey" class="text-center">
                         <icon :source="sourceKey" :icon="[setKey, icon]" size="lg"></icon>
+                        <div class="text-sm">{{ icon }}</div>
                     </div>
                 </div>
             </div>
