@@ -120,6 +120,9 @@ module.exports = craftui.withOptions(
                     ...semanticTailwindColors,
                 },
             },
+            future: {
+                removeDeprecatedGapUtilities: true,
+            },
         })
     }
 )
