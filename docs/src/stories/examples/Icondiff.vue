@@ -94,7 +94,7 @@ export default {
         computedCraftIcons() {
             return this.getComputedIcons(this.craftIcons)
         },
-        
+
         computedCraftFont() {
             return this.getComputedIcons(this.craftFont)
         }
