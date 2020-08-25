@@ -37,11 +37,11 @@ module.exports = function(colors) {
         },
         'primary-background': {
             light: colors.white,
-            dark: colors['cool-gray'][800],
+            dark: colors['cool-gray'][900],
         },
         'secondary-background': {
             light: colors['cool-gray'][100],
-            dark: colors['cool-gray'][900],
+            dark: colors['cool-gray'][1000],
         },
         'tertiary-background': {
             light: colors['cool-gray'][50],
