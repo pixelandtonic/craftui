@@ -60,6 +60,7 @@ export default {
     'image': require('./CraftImage.vue'),
     'info-circle': require('./CraftInfoCircle.vue'),
     'info': require('./CraftInfo.vue'),
+    'key-plus': require('./CraftKeyPlus.vue'),
     'layout': require('./CraftLayout.vue'),
     'left-angle': require('./CraftLeftAngle.vue'),
     'lightbulb': require('./CraftLightbulb.vue'),
