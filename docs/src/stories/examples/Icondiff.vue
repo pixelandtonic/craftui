@@ -67,7 +67,6 @@ export default {
 
     computed: {
         computedCraftIcons() {
-            console.log('this.craftIcons', this.craftIcons)
             return this.getComputedIcons(this.craftIcons)
         },
     }
