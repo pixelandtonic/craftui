@@ -1,5 +1,5 @@
 <template>
-    <component :is="component" :set="computedSet" :icon="computedIcon" :size="computedSize"></component>
+    <component :is="component" :source="source" :icon="computedIcon" :size="computedSize"></component>
 </template>
 
 <script>
@@ -31,23 +31,12 @@ export default {
     computed: {
         component() {
             switch (this.source) {
-                case 'heroicons':
-                    return 'hero-icon'
+                case 'craft':
+                case 'heroicons/outline':
+                case 'heroicons/solid':
+                    return 'svg-icon'
                 default:
-                    return 'craft-icon'
-            }
-        },
-
-        computedSet() {
-            if (Array.isArray(this.icon)) {
-                return this.icon[0]
-            }
-
-            switch (this.source) {
-                case 'heroicons':
-                    return 'solid'
-                default:
-                    return 'regular'
+                    return 'sprite-icon'
             }
         },
 

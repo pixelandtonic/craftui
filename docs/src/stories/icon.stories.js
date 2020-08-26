@@ -1,6 +1,6 @@
 import Icon from '../../../src/components/Icon'
 import {withKnobs, select} from '@storybook/addon-knobs'
-import icons from '../../../src/icons/craft/regular'
+import icons from '../../../src/icons/craft/vue'
 
 export default {
     title: 'Components/Icon',
@@ -14,7 +14,7 @@ export const Default = () => ({
     props: {
         icon: {
             type: String,
-            default: select('icon', icons, 'glass-martini')
+            default: select('icon', Object.keys(icons), 'alert')
         },
         size: {
             type: String,

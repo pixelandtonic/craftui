@@ -1,5 +1,5 @@
-import iconsRegularSvg from '../icons/craft/regular.svg'
-import iconsLightSvg from '../icons/craft/light.svg'
+import iconsRegularSvg from '../icons/fontawesome/regular.svg'
+import iconsLightSvg from '../icons/fontawesome/light.svg'
 
 export default {
     install () {

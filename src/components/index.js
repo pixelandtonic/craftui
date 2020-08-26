@@ -4,8 +4,8 @@ import Btn from './Btn.vue';
 import Checkbox from './Checkbox.vue';
 import Dropdown from './Dropdown.vue';
 import Field from './Field.vue';
-import CraftIcon from './CraftIcon.vue';
-import HeroIcon from './HeroIcon.vue';
+import SpriteIcon from './SpriteIcon.vue';
+import SvgIcon from './SvgIcon.vue';
 import Icon from './Icon.vue';
 import Lightswitch from './Lightswitch.vue';
 import Pane from './Pane.vue';
@@ -20,8 +20,8 @@ const CraftComponents = {
     Checkbox,
     Dropdown,
     Field,
-    CraftIcon,
-    HeroIcon,
+    SpriteIcon,
+    SvgIcon,
     Icon,
     Lightswitch,
     Pane,
@@ -39,8 +39,8 @@ export {
     Checkbox,
     Dropdown,
     Field,
-    CraftIcon,
-    HeroIcon,
+    SpriteIcon,
+    SvgIcon,
     Icon,
     Lightswitch,
     Pane,

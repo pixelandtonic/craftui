@@ -7,13 +7,11 @@
         </div>
 
         <div v-for="(source, sourceKey) in sources" :key="'source' + sourceKey">
-            <div v-for="(set, setKey) in source" :key="'set' + sourceKey + setKey">
-                <h2 class="text-2xl font-medium mt-6">{{ sourceKey }}/{{setKey}} ({{filteredIcons(set).length}})</h2>
-                <div class="mt-4 grid grid-cols-6 gap-6">
-                    <div v-for="(icon, iconKey) in filteredIcons(set)" :key="'icons' + sourceKey + setKey + iconKey" class="text-center">
-                        <icon :source="sourceKey" :icon="[setKey, icon]" size="lg"></icon>
-                        <div class="text-sm">{{ icon }}</div>
-                    </div>
+            <h2 class="text-2xl font-medium mt-6">{{ sourceKey }} ({{filteredIcons(source).length}})</h2>
+            <div class="mt-4 grid grid-cols-6 gap-6">
+                <div v-for="(icon, iconKey) in filteredIcons(source)" :key="'icons' + sourceKey + iconKey" class="text-center">
+                    <icon :source="`${sourceKey}`" :icon="icon" size="lg"></icon>
+                    <div class="text-sm">{{ icon }}</div>
                 </div>
             </div>
         </div>
@@ -21,8 +19,9 @@
 </template>
 
 <script>
-    import craftRegular from '../../../../src/icons/craft/regular'
-    import craftLight from '../../../../src/icons/craft/light'
+    import craftIcons from '../../../../src/icons/craft/vue'
+    import fontawesomeRegular from '../../../../src/icons/fontawesome/regular'
+    import fontawesomeLight from '../../../../src/icons/fontawesome/light'
     import heroSolid from '../../../../src/icons/heroicons/solid'
     import heroOutline from '../../../../src/icons/heroicons/outline'
 
@@ -31,15 +30,12 @@
             return {
                 q: '',
                 sources: {
-                    craft: {
-                        regular: craftRegular,
-                        light: craftLight,
-                    },
-                    heroicons: {
-                        solid: Object.keys(heroSolid),
-                        outline: Object.keys(heroOutline),
-                    },
-                }
+                    'craft': Object.keys(craftIcons),
+                    'fontawesome/regular': fontawesomeRegular,
+                    'fontawesome/light': fontawesomeLight,
+                    'heroicons/solid': Object.keys(heroSolid),
+                    'heroicons/outline': Object.keys(heroOutline),
+                },
             }
         },
 
@@ -50,14 +46,5 @@
                 }
             }
         }
-/*
-        computed: {
-            regularIcons() {
-                return regularIcons
-            },
-            lightIcons() {
-                return lightIcons
-            }
-        }*/
     }
 </script>
