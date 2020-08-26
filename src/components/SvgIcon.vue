@@ -1,5 +1,5 @@
 <template>
-    <component :is="computedIcon" :class="`c-icon inline-block w-${this.size} h-${this.size}`" />
+    <component v-if="computedIcon" :is="computedIcon" :class="`c-icon inline-block w-${size} h-${size}`" />
 </template>
 <script>
 import craftIcons from '../icons/craft/vue'
@@ -7,6 +7,29 @@ import solidIcons from '../icons/heroicons/solid'
 import outlineIcons from '../icons/heroicons/outline'
 
 export default {
+    props: {
+        /**
+         * Source
+         */
+        source: {
+            type: String,
+        },
+
+        /**
+         * Icon
+         */
+        icon: {
+            type: String,
+        },
+
+        /**
+         * Size
+         */
+        size: {
+            type: Number,
+        },
+    },
+
     computed: {
         computedIcon() {
             switch (this.source) {

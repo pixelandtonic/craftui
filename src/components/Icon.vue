@@ -1,12 +1,8 @@
 <template>
-    <component :is="computedIcon" :class="`c-icon inline-block w-${computedSize} h-${computedSize}`" />
+    <svg-icon :source="source" :icon="icon" :size="computedSize"></svg-icon>
 </template>
 
 <script>
-import craftIcons from '../icons/craft/vue';
-import outlineIcons from '../icons/heroicons/outline';
-import solidIcons from '../icons/heroicons/solid';
-
 export default {
     props: {
         source: {
@@ -33,21 +29,7 @@ export default {
     },
 
     computed: {
-        computedIcon() {
-            switch (this.source) {
-                case 'craft':
-                    return craftIcons[this.icon]
-                case 'heroicons/outline':
-                    return outlineIcons[this.icon]
-                case 'heroicons/solid':
-                    return solidIcons[this.icon]
-                default:
-                    return solidIcons[this.icon]
-            }
-        },
-
         computedSize() {
-            console.log('size', this.size)
             if (Number.isInteger(this.size)) {
                 return this.size
             }

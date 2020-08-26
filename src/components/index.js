@@ -9,6 +9,7 @@ import Lightswitch from './Lightswitch.vue';
 import Pane from './Pane.vue';
 import Radio from './Radio.vue';
 import Spinner from './Spinner.vue';
+import SvgIcon from './SvgIcon.vue';
 import Textbox from './Textbox.vue';
 
 const CraftComponents = {
@@ -23,6 +24,7 @@ const CraftComponents = {
     Pane,
     Radio,
     Spinner,
+    SvgIcon,
     Textbox,
 };
 
@@ -40,5 +42,6 @@ export {
     Pane,
     Radio,
     Spinner,
+    SvgIcon,
     Textbox,
 }

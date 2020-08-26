@@ -36,12 +36,6 @@ function builder(prefix, svgsPath, componentsPath) {
             fs.writeFileSync(output(fullname + '.vue'), `<template>
 ${fs.readFileSync(file)}
 </template>
-<script>
-import Vue from 'vue'
-export default Vue.extend({
-  name: "${fullname}"
-})
-</script>
       `);
 
             index.push({
