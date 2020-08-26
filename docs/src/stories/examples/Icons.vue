@@ -20,8 +20,6 @@
 
 <script>
     import craftIcons from '../../../../src/icons/craft/vue'
-    import fontawesomeRegular from '../../../../src/icons/fontawesome/regular'
-    import fontawesomeLight from '../../../../src/icons/fontawesome/light'
     import heroSolid from '../../../../src/icons/heroicons/solid'
     import heroOutline from '../../../../src/icons/heroicons/outline'
 
@@ -31,8 +29,6 @@
                 q: '',
                 sources: {
                     'craft': Object.keys(craftIcons),
-                    'fontawesome/regular': fontawesomeRegular,
-                    'fontawesome/light': fontawesomeLight,
                     'heroicons/solid': Object.keys(heroSolid),
                     'heroicons/outline': Object.keys(heroOutline),
                 },
