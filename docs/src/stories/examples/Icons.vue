@@ -20,8 +20,8 @@
 
 <script>
     import craftIcons from '../../../../src/icons/craft/vue'
-    import heroSolid from '../../../../src/icons/heroicons/solid'
-    import heroOutline from '../../../../src/icons/heroicons/outline'
+    import heroSolid from '../../../../src/icons/heroicons/vue/solid'
+    import heroOutline from '../../../../src/icons/heroicons/vue/outline'
 
     export default {
         data() {

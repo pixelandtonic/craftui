@@ -55,5 +55,5 @@ ${fs.readFileSync(file)}
 }
 
 builder('Craft', 'src/icons/craft/svg', 'src/icons/craft/vue');
-builder('HeroOutline', 'node_modules/heroicons/outline', 'src/icons/heroicons/outline');
-builder('HeroSolid', 'node_modules/heroicons/solid', 'src/icons/heroicons/solid');
+builder('HeroOutline', 'src/icons/heroicons/svg/outline', 'src/icons/heroicons/vue/outline');
+builder('HeroSolid', 'src/icons/heroicons/svg/solid', 'src/icons/heroicons/vue/solid');

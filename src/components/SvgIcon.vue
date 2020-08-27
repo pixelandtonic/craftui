@@ -3,8 +3,8 @@
 </template>
 <script>
 import craftIcons from '../icons/craft/vue'
-import solidIcons from '../icons/heroicons/solid'
-import outlineIcons from '../icons/heroicons/outline'
+import solidIcons from '../icons/heroicons/vue/solid'
+import outlineIcons from '../icons/heroicons/vue/outline'
 
 export default {
     props: {

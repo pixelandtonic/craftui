@@ -5,7 +5,7 @@
   "module": "dist/craftui.esm.min.js",
   "scripts": {
     "build": "rollup --config",
-    "build:icons": "node scripts/svg-to-component.js",
+    "build:icons": "node scripts/copy-heroicons.js && node scripts/svg-to-component.js",
     "watch": "rollup --config --watch",
     "serve:docs": "start-storybook -p 6006 -c docs/.storybook",
     "build:docs": "build-storybook -c docs/.storybook -o docs/dist"
