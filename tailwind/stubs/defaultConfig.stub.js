@@ -1,5 +1,6 @@
 module.exports = {
     variants: {
+        display: ['responsive', 'group-hover'],
         backgroundColor: ['responsive', 'hover', 'focus', 'active'],
         inset: ['responsive', 'hover'],
         textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
