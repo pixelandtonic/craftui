@@ -2,7 +2,9 @@
     <div>
         <h1 class="text-3xl font-medium">Icondiff ({{ computedCraftIcons.length }})</h1>
 
-        <checkbox v-model="missingOnly" label="Only show missing icons"></checkbox>
+        <field label="Only show missing icons" :vertical="true">
+            <lightswitch v-model="missingOnly"></lightswitch>
+        </field>
 
         <table class="mt-4 w-full">
             <thead>
