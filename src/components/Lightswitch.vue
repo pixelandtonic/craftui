@@ -2,7 +2,12 @@
     <div class="c-lightswitch mt-1">
         <div class="c-lightswitch-input">
             <label :for="id" class="lightswitch" :class="{disabled: disabled}">
-                <input :id="id" type="checkbox" :checked="checked" :disabled="disabled" @change="onChange" />
+                <input type="checkbox"
+                       :id="id"
+                       :value="value"
+                       :checked="checked"
+                       :disabled="disabled"
+                       @input="onInput"/>
                 <div class="slider round"></div>
             </label>
         </div>
@@ -11,6 +16,11 @@
 
 <script>
     export default {
+        model: {
+            prop: 'checked',
+            event: 'input'
+        },
+
         props: {
             checked: {
                 type: Boolean,
@@ -26,14 +36,15 @@
                     return 'c-lightswitch-id-' + this._uid;
                 },
             },
+            value: String,
         },
 
         methods: {
-            onChange($event) {
+            onInput($event) {
                 this.$emit('update:checked', $event.target.checked)
-                this.$emit('change', $event.target.checked)
+                this.$emit('input', $event.target.checked)
             },
-        }
+        },
     }
 </script>
 
