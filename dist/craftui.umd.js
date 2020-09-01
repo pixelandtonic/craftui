@@ -1108,7 +1108,16 @@
     //
     //
     //
+    //
+    //
+    //
+    //
+    //
     var script$7 = {
+      model: {
+        prop: 'checked',
+        event: 'input'
+      },
       props: {
         checked: {
           type: Boolean,
@@ -1123,12 +1132,13 @@
           default: function _default() {
             return 'c-lightswitch-id-' + this._uid;
           }
-        }
+        },
+        value: String
       },
       methods: {
-        onChange: function onChange($event) {
+        onInput: function onInput($event) {
           this.$emit('update:checked', $event.target.checked);
-          this.$emit('change', $event.target.checked);
+          this.$emit('input', $event.target.checked);
         }
       }
     };
@@ -1151,9 +1161,9 @@
             },
             [
               _c("input", {
-                attrs: { id: _vm.id, type: "checkbox", disabled: _vm.disabled },
-                domProps: { checked: _vm.checked },
-                on: { change: _vm.onChange }
+                attrs: { type: "checkbox", id: _vm.id, disabled: _vm.disabled },
+                domProps: { value: _vm.value, checked: _vm.checked },
+                on: { input: _vm.onInput }
               }),
               _vm._v(" "),
               _c("div", { staticClass: "slider round" })
@@ -4438,7 +4448,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -4512,7 +4523,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "22",
             height: "28",
-            viewBox: "0 0 22 28"
+            viewBox: "0 0 22 28",
+            fill: "currentColor"
           }
         },
         [
@@ -4579,7 +4591,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -4744,7 +4757,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -4811,7 +4825,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -4946,7 +4961,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5101,7 +5117,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5168,7 +5185,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5395,7 +5413,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5606,7 +5625,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M369.5,297.9c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8\r\n\t\tC373.5,259.9,379.2,281.2,369.5,297.9"
+                  "M369.5,297.9c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8\r\nC373.5,259.9,379.2,281.2,369.5,297.9"
               }
             }),
             _vm._v(" "),
@@ -5614,7 +5633,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M90.9,137c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8\r\n\t\tC94.8,99,100.5,120.3,90.9,137"
+                  "M90.9,137c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8\r\nC94.8,99,100.5,120.3,90.9,137"
               }
             }),
             _vm._v(" "),
@@ -5622,7 +5641,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M30.5,297.9c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7\r\n\t\tC61.4,320.3,40.1,314.6,30.5,297.9"
+                  "M30.5,297.9c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7\r\nC61.4,320.3,40.1,314.6,30.5,297.9"
               }
             }),
             _vm._v(" "),
@@ -5630,7 +5649,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M309.1,137c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7\r\n\t\tC340.1,159.4,318.7,153.7,309.1,137"
+                  "M309.1,137c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7\r\nC340.1,159.4,318.7,153.7,309.1,137"
               }
             }),
             _vm._v(" "),
@@ -5638,7 +5657,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M200,395.8c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9\r\n\t\tC234.9,380.1,219.3,395.8,200,395.8"
+                  "M200,395.8c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9\r\nC234.9,380.1,219.3,395.8,200,395.8"
               }
             }),
             _vm._v(" "),
@@ -5646,7 +5665,7 @@
               attrs: {
                 fill: "currentColor",
                 d:
-                  "M200,74c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9\r\n\t\tC234.9,58.4,219.3,74,200,74"
+                  "M200,74c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9\r\nC234.9,58.4,219.3,74,200,74"
               }
             })
           ])
@@ -5705,7 +5724,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "30",
             height: "28",
-            viewBox: "0 0 30 28"
+            viewBox: "0 0 30 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5775,7 +5795,8 @@
             x: "0px",
             y: "0px",
             viewBox: "0 0 448 448",
-            "xml:space": "preserve"
+            "xml:space": "preserve",
+            fill: "currentColor"
           }
         },
         [
@@ -5840,7 +5861,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "26",
             height: "28",
-            viewBox: "0 0 26 28"
+            viewBox: "0 0 26 28",
+            fill: "currentColor"
           }
         },
         [
@@ -5907,7 +5929,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "30",
             height: "28",
-            viewBox: "0 0 30 28"
+            viewBox: "0 0 30 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6062,7 +6085,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6128,18 +6152,15 @@
             width: "640",
             height: "512",
             viewBox: "0 0 640 512",
-            fill: "none",
+            fill: "currentColor",
             xmlns: "http://www.w3.org/2000/svg"
           }
         },
         [
           _c("path", {
             attrs: {
-              "fill-rule": "evenodd",
-              "clip-rule": "evenodd",
               d:
-                "M480 176C480 96.471 415.529 32 336 32C256.471 32 192 96.471 192 176C192 194.968 195.675 213.076 202.339 229.661L32 400V480H128V416H192V352H240L282.339 309.661C298.924 316.325 317.032 320 336 320C415.529 320 480 255.529 480 176ZM160 176C160 78.769 238.816 0 336 0C433.231 0 512 78.816 512 176C512 273.231 433.184 352 336 352C320.693 352 305.648 350.055 291.054 346.202L260.285 376.971C255.784 381.471 249.679 384 243.314 384H224V424C224 437.255 213.255 448 200 448H160V488C160 501.255 149.255 512 136 512H24C10.745 512 0 501.255 0 488V396.686C0.000362772 390.321 2.5287 384.217 7.029 379.716L165.798 220.947C161.945 206.352 160 191.307 160 176ZM404 128C404 116.972 395.028 108 384 108C372.972 108 364 116.972 364 128C364 139.028 372.972 148 384 148C395.028 148 404 139.028 404 128ZM336 128C336 101.49 357.49 80 384 80C410.51 80 432 101.49 432 128C432 154.51 410.51 176 384 176C357.49 176 336 154.51 336 128ZM544 384H632C636.4 384 640 387.6 640 392V408C640 412.4 636.4 416 632 416H544V504C544 508.4 540.4 512 536 512H520C515.6 512 512 508.4 512 504V416H424C419.6 416 416 412.4 416 408V392C416 387.6 419.6 384 424 384H512V296C512 291.6 515.6 288 520 288H536C540.4 288 544 291.6 544 296V384Z",
-              fill: "black"
+                "M480 176C480 96.471 415.529 32 336 32C256.471 32 192 96.471 192 176C192 194.968 195.675 213.076 202.339 229.661L32 400V480H128V416H192V352H240L282.339 309.661C298.924 316.325 317.032 320 336 320C415.529 320 480 255.529 480 176ZM160 176C160 78.769 238.816 0 336 0C433.231 0 512 78.816 512 176C512 273.231 433.184 352 336 352C320.693 352 305.648 350.055 291.054 346.202L260.285 376.971C255.784 381.471 249.679 384 243.314 384H224V424C224 437.255 213.255 448 200 448H160V488C160 501.255 149.255 512 136 512H24C10.745 512 0 501.255 0 488V396.686C0.000362772 390.321 2.5287 384.217 7.029 379.716L165.798 220.947C161.945 206.352 160 191.307 160 176ZM404 128C404 116.972 395.028 108 384 108C372.972 108 364 116.972 364 128C364 139.028 372.972 148 384 148C395.028 148 404 139.028 404 128ZM336 128C336 101.49 357.49 80 384 80C410.51 80 432 101.49 432 128C432 154.51 410.51 176 384 176C357.49 176 336 154.51 336 128ZM544 384H632C636.4 384 640 387.6 640 392V408C640 412.4 636.4 416 632 416H544V504C544 508.4 540.4 512 536 512H520C515.6 512 512 508.4 512 504V416H424C419.6 416 416 412.4 416 408V392C416 387.6 419.6 384 424 384H512V296C512 291.6 515.6 288 520 288H536C540.4 288 544 291.6 544 296V384Z"
             }
           })
         ]
@@ -6197,7 +6218,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "23",
             height: "28",
-            viewBox: "0 0 23 28"
+            viewBox: "0 0 23 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6264,7 +6286,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "11",
             height: "28",
-            viewBox: "0 0 11 28"
+            viewBox: "0 0 11 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6331,7 +6354,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "28",
-            viewBox: "0 0 16 28"
+            viewBox: "0 0 16 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6398,7 +6422,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -6465,7 +6490,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7297,7 +7323,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "22",
             height: "28",
-            viewBox: "0 0 22 28"
+            viewBox: "0 0 22 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7530,7 +7557,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "22",
             height: "28",
-            viewBox: "0 0 22 28"
+            viewBox: "0 0 22 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7597,7 +7625,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7664,7 +7693,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7731,7 +7761,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "22",
             height: "28",
-            viewBox: "0 0 22 28"
+            viewBox: "0 0 22 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7798,7 +7829,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "9",
             height: "28",
-            viewBox: "0 0 9 28"
+            viewBox: "0 0 9 28",
+            fill: "currentColor"
           }
         },
         [
@@ -7963,7 +7995,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8030,7 +8063,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "26",
             height: "28",
-            viewBox: "0 0 26 28"
+            viewBox: "0 0 26 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8097,7 +8131,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "28",
-            viewBox: "0 0 32 28"
+            viewBox: "0 0 32 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8164,7 +8199,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8231,7 +8267,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8292,7 +8329,13 @@
       var _c = _vm._self._c || _h;
       return _c(
         "svg",
-        { attrs: { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 576 512" } },
+        {
+          attrs: {
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 576 512",
+            fill: "currentColor"
+          }
+        },
         [
           _c("path", {
             attrs: {
@@ -8355,7 +8398,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8422,7 +8466,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8489,7 +8534,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8556,7 +8602,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8623,7 +8670,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8690,7 +8738,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8757,7 +8806,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8824,7 +8874,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "30",
             height: "28",
-            viewBox: "0 0 30 28"
+            viewBox: "0 0 30 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8891,7 +8942,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
-            viewBox: "0 0 24 28"
+            viewBox: "0 0 24 28",
+            fill: "currentColor"
           }
         },
         [
@@ -8958,7 +9010,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "26",
             height: "28",
-            viewBox: "0 0 26 28"
+            viewBox: "0 0 26 28",
+            fill: "currentColor"
           }
         },
         [
@@ -9025,7 +9078,8 @@
             xmlns: "http://www.w3.org/2000/svg",
             width: "28",
             height: "28",
-            viewBox: "0 0 28 28"
+            viewBox: "0 0 28 28",
+            fill: "currentColor"
           }
         },
         [
@@ -9095,7 +9149,8 @@
             x: "0px",
             y: "0px",
             viewBox: "0 0 256 448",
-            "xml:space": "preserve"
+            "xml:space": "preserve",
+            fill: "currentColor"
           }
         },
         [
