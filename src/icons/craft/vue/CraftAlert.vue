@@ -8,4 +8,3 @@
 </svg>
 
 </template>
-      
