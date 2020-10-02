@@ -37,7 +37,7 @@ module.exports = function(colors) {
         },
         'primary-background': {
             light: colors.white,
-            dark: colors['cool-gray'][900],
+            dark: colors['cool-gray'][800],
         },
         'secondary-background': {
             light: colors['cool-gray'][100],
@@ -81,9 +81,13 @@ module.exports = function(colors) {
             light: colors.white,
             dark: colors.white,
         },
+        'ultralight-text': {
+            light: colors['cool-gray'][300],
+            dark: colors['cool-gray'][600],
+        },
         'light-text': {
-            light: colors['cool-gray'][400],
-            dark: colors['cool-gray'][400],
+            light: colors['cool-gray'][500],
+            dark: colors['cool-gray'][500],
         },
         'success-text': {
             light: colors.green[800],
