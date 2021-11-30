@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -302,3 +302,95 @@ patch:
         patched: '2020-08-12T05:00:38.527Z'
     - babel-preset-env > babel-plugin-transform-es2015-modules-umd > babel-plugin-transform-es2015-modules-amd > babel-plugin-transform-es2015-modules-commonjs > babel-template > babel-traverse > babel-types > lodash:
         patched: '2020-08-12T05:00:38.527Z'
+    - node-sass > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - tailwindcss > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @babel/core > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/addon-knobs > react-color > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > css-loader > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/core > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > eslint > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > html-webpack-plugin > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > webpack-bundle-analyzer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > webpack-merge > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > @storybook/ui > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/addon-knobs > react-color > reactcss > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - rollup-plugin-babel > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > babel-preset-minify > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > css-loader > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > html-webpack-plugin > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > inquirer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > eslint > inquirer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > eslint > table > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > eslint-plugin-vue > vue-eslint-parser > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > webpack-dev-server > http-proxy-middleware > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > @storybook/ui > @storybook/react-komposer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/generator > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > rollup-plugin-babel > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > babel-preset-minify > babel-plugin-minify-dead-code-elimination > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > react-dev-utils > inquirer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-service > @vue/cli-shared-utils > request-promise-native > request-promise-core > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > @storybook/ui > @storybook/mantra-core > @storybook/react-komposer > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@storybook/vue > @storybook/core > @storybook/ui > react-treebeard > velocity-react > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2021-11-30T05:31:34.609Z'
+    - bili > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2021-11-30T05:31:34.609Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2021-11-30T05:31:34.609Z'

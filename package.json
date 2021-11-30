@@ -14,7 +14,7 @@
     "watch": "bili --config bili.config.js --watch",
     "serve:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js start-storybook -p 6006 -c docs/config",
     "build:docs": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/docs/vue.config.js build-storybook -c docs/config -o docs/dist",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
@@ -24,31 +24,31 @@
     "babel-preset-env": "^1.7.0",
     "vue": "^2.6.7",
     "vue-the-mask": "^0.11.1",
-    "snyk": "^1.373.0"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
     "@storybook/addon-knobs": "^4.1.11",
     "@storybook/addon-links": "4.0.0-alpha.20",
-    "@storybook/addon-notes": "^4.1.11",
+    "@storybook/addon-notes": "^5.0.0",
     "@storybook/addon-options": "^4.1.11",
-    "@storybook/addon-storysource": "^4.1.11",
+    "@storybook/addon-storysource": "^6.1.0",
     "@storybook/addon-viewport": "^4.1.11",
-    "@storybook/vue": "^4.1.13",
+    "@storybook/vue": "^6.2.0",
     "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.2.0",
     "babel-preset-vue": "^2.0.2",
-    "bili": "^3.4.2",
-    "node-sass": "^4.11.0",
+    "bili": "^4.9.1",
+    "node-sass": "^6.0.1",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-vue": "^4.7.2",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.7.3",
+    "tailwindcss": "^2.2.0",
     "vue-template-compiler": "^2.6.7",
-    "serialize-javascript": "2.1.1"
+    "serialize-javascript": "3.1.0"
   },
   "eslintConfig": {
     "root": true,
