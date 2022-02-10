@@ -40,7 +40,7 @@
     "@vue/cli-service": "^3.0.1",
     "babel-preset-vue": "^2.0.2",
     "bili": "^3.4.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-string": "^3.0.0",
